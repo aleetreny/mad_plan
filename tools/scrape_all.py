@@ -1,16 +1,18 @@
 """
-Madrid Events Aggregator — run all scrapers and produce a unified output.
+Madrid aggregator — run all scrapers and produce unified outputs.
 
-Combines events from:
-  - Fever (fever.py)
-  - Eventbrite (eventbrite.py)
-  - Datos Abiertos Madrid (datos_madrid.py)
+Events sources:
+    - Fever (fever.py)
+    - Eventbrite (eventbrite.py)
+    - Datos Abiertos Madrid (datos_madrid.py)
+    - Madrid Secreto plans (madrid_secreto.py)
 
-All sources use the same schema:
-  id, titulo, precio, moneda, lugar, direccion, latitud, longitud,
-  fecha_inicio, fecha_fin, categorias, url, imagen, descripcion, fuente
+News sources:
+    - Time Out Madrid (timeout.py)
 
-Output: eventos_madrid_all.json
+Outputs:
+    - eventos_madrid_all.json
+    - noticias_madrid_all.json
 """
 
 import json
@@ -21,7 +23,8 @@ from pathlib import Path
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
-OUTPUT_FILE = Path(__file__).parent / "eventos_madrid_all.json"
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_madrid_all.json"
+NEWS_OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "noticias_madrid_all.json"
 
 
 def explode_by_datetime(events: list[dict]) -> list[dict]:
@@ -62,6 +65,7 @@ def explode_by_datetime(events: list[dict]) -> list[dict]:
 
 def run_all():
     source_events: list[dict] = []
+    source_news: list[dict] = []
 
     # --- Fever ---
     log.info("=" * 60)
@@ -99,10 +103,38 @@ def run_all():
     except Exception as e:
         log.error("Datos Madrid scraper failed: %s", e)
 
+    # --- Madrid Secreto ---
+    log.info("=" * 60)
+    log.info("MADRID SECRETO")
+    log.info("=" * 60)
+    try:
+        from madrid_secreto import scrape_madrid_secreto
+        ms_events = scrape_madrid_secreto()
+        source_events.extend(ms_events)
+        log.info("Madrid Secreto: %d events", len(ms_events))
+    except Exception as e:
+        log.error("Madrid Secreto scraper failed: %s", e)
+
+    # --- Time Out news ---
+    log.info("=" * 60)
+    log.info("TIME OUT NEWS")
+    log.info("=" * 60)
+    try:
+        from timeout import scrape_timeout_news
+        timeout_news = scrape_timeout_news()
+        source_news.extend(timeout_news)
+        log.info("Time Out: %d news items", len(timeout_news))
+    except Exception as e:
+        log.error("Time Out scraper failed: %s", e)
+
     # --- Save combined ---
     all_events = explode_by_datetime(source_events)
     OUTPUT_FILE.write_text(
         json.dumps(all_events, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+    NEWS_OUTPUT_FILE.write_text(
+        json.dumps(source_news, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
     # --- Summary ---
@@ -127,6 +159,18 @@ def run_all():
     log.info("  %-15s: %4d total", "SOURCE ROWS", len(source_events))
     log.info("  %-15s: %4d total", "SESSION ROWS", len(all_events))
     log.info("Saved to %s", OUTPUT_FILE)
+
+    if source_news:
+        log.info("=" * 60)
+        log.info("NEWS SUMMARY")
+        log.info("=" * 60)
+        news_by_source: dict[str, int] = {}
+        for item in source_news:
+            source = item.get("fuente", "unknown")
+            news_by_source[source] = news_by_source.get(source, 0) + 1
+        for source, total in news_by_source.items():
+            log.info("  %-15s: %4d total", source, total)
+        log.info("Saved to %s", NEWS_OUTPUT_FILE)
 
 
 if __name__ == "__main__":

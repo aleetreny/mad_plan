@@ -27,7 +27,7 @@ CITY = "madrid"
 LISTING_URL = f"{BASE}/{LANG}/{CITY}"
 REQUEST_DELAY = 1.0  # seconds between requests
 MAX_PAGES_PER_CATEGORY = 6  # each page = 48 plans
-OUTPUT_FILE = Path(__file__).parent / "eventos_fever.json"
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_fever.json"
 
 # ---------------------------------------------------------------------------
 # Helpers

@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
 API_URL = "https://datos.madrid.es/api/3/action/package_show?id=206974-0-agenda-eventos-culturales-100"
-OUTPUT_FILE = Path(__file__).parent / "eventos_datos_madrid.json"
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_datos_madrid.json"
 
 
 def _parse_price(item: dict) -> tuple[float | None, str | None]:

@@ -20,7 +20,7 @@ log = logging.getLogger(__name__)
 
 PAGES_PER_CATEGORY = 3
 REQUEST_DELAY = 1.0
-OUTPUT_FILE = Path(__file__).parent / "eventos_eventbrite.json"
+OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_eventbrite.json"
 
 CATEGORIAS = {
     "Negocios": "business",
