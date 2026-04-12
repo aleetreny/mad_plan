@@ -15,6 +15,11 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 
+try:
+    from .normalization import normalize_plan_records
+except ImportError:
+    from normalization import normalize_plan_records
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
@@ -154,6 +159,8 @@ def scrape_eventbrite() -> list[dict]:
 
         if cat_count > 0:
             log.info("%-20s: %3d events", nombre, cat_count)
+
+    events = normalize_plan_records(events, source="eventbrite")
 
     # Save
     OUTPUT_FILE.write_text(

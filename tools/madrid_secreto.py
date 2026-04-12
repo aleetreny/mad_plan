@@ -24,6 +24,11 @@ from urllib.parse import urlparse
 import requests
 from bs4 import BeautifulSoup, Tag
 
+try:
+    from .normalization import normalize_plan_records
+except ImportError:
+    from normalization import normalize_plan_records
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
@@ -746,6 +751,7 @@ def scrape_madrid_secreto() -> list[dict]:
 
     raw_output = list(events_by_key.values())
     output = _filter_current_events(raw_output)
+    output = normalize_plan_records(output, source="madrid_secreto")
 
     OUTPUT_FILE.write_text(
         json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8"

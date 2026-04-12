@@ -1,176 +1,235 @@
-"""
-Madrid aggregator — run all scrapers and produce unified outputs.
+"""Run all scrapers, merge them into web feeds and emit a daily-run manifest."""
 
-Events sources:
-    - Fever (fever.py)
-    - Eventbrite (eventbrite.py)
-    - Datos Abiertos Madrid (datos_madrid.py)
-    - Madrid Secreto plans (madrid_secreto.py)
-
-News sources:
-    - Time Out Madrid (timeout.py)
-
-Outputs:
-    - eventos_madrid_all.json
-    - noticias_madrid_all.json
-"""
-
+import copy
 import json
 import logging
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
+
+try:
+    from .normalization import (
+        merge_news_records,
+        merge_plan_records,
+        utc_now_iso,
+        validate_news_records,
+        validate_plan_records,
+    )
+except ImportError:
+    from normalization import (
+        merge_news_records,
+        merge_plan_records,
+        utc_now_iso,
+        validate_news_records,
+        validate_plan_records,
+    )
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
 OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_madrid_all.json"
 NEWS_OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "noticias_madrid_all.json"
+RUN_MANIFEST_FILE = Path(__file__).resolve().parent.parent / "outputs" / "pipeline_diario.json"
+
+BASE_SCRAPER_JOBS = [
+    {
+        "name": "fever",
+        "kind": "plan",
+        "import": "fever",
+        "callable": "main",
+        "output": "outputs/eventos_fever.json",
+    },
+    {
+        "name": "eventbrite",
+        "kind": "plan",
+        "import": "eventbrite",
+        "callable": "scrape_eventbrite",
+        "output": "outputs/eventos_eventbrite.json",
+    },
+    {
+        "name": "datos_madrid",
+        "kind": "plan",
+        "import": "datos_madrid",
+        "callable": "scrape_datos_madrid",
+        "output": "outputs/eventos_datos_madrid.json",
+    },
+    {
+        "name": "madrid_secreto",
+        "kind": "plan",
+        "import": "madrid_secreto",
+        "callable": "scrape_madrid_secreto",
+        "output": "outputs/eventos_madrid_secreto.json",
+    },
+    {
+        "name": "timeout",
+        "kind": "news",
+        "import": "timeout",
+        "callable": "scrape_timeout_news",
+        "output": "outputs/noticias_timeout.json",
+    },
+]
 
 
-def explode_by_datetime(events: list[dict]) -> list[dict]:
-    """
-    Expand each event into one row per available datetime.
-
-    Priority:
-      1) fechas_disponibles (list from source)
-      2) fecha_inicio
-      3) keep one row with fecha_evento=None
-    """
-    expanded: list[dict] = []
-    for event in events:
-        datetimes = event.get("fechas_disponibles") or []
-        if not datetimes:
-            fallback = event.get("fecha_inicio")
-            datetimes = [fallback] if fallback else [None]
-
-        seen = set()
-        ordered_datetimes = []
-        for dt in datetimes:
-            if dt in seen:
-                continue
-            seen.add(dt)
-            ordered_datetimes.append(dt)
-
-        source = event.get("fuente", "src")
-        base_id = str(event.get("id"))
-        for idx, dt in enumerate(ordered_datetimes, start=1):
-            row = dict(event)
-            row["evento_id_base"] = base_id
-            row["fecha_evento"] = dt
-            row["sesion_index"] = idx
-            row["id"] = f"{source}::{base_id}::s{idx}"
-            expanded.append(row)
-    return expanded
+def _build_scraper_jobs(*, fever_mode: str) -> list[dict]:
+    jobs = copy.deepcopy(BASE_SCRAPER_JOBS)
+    for job in jobs:
+        if job["name"] == "fever":
+            job["callable"] = "main" if fever_mode == "full" else "fast_main"
+            break
+    return jobs
 
 
-def run_all():
+def _import_callable(module_name: str, callable_name: str):
+    module = __import__(module_name, fromlist=[callable_name])
+    return getattr(module, callable_name)
+
+
+def _run_job(job: dict) -> dict:
+    started_at = utc_now_iso()
+    try:
+        scraper = _import_callable(job["import"], job["callable"])
+        records = scraper()
+        finished_at = utc_now_iso()
+        return {
+            "name": job["name"],
+            "kind": job["kind"],
+            "status": "ok",
+            "count": len(records),
+            "records": records,
+            "output": job["output"],
+            "started_at": started_at,
+            "finished_at": finished_at,
+        }
+    except Exception as error:
+        finished_at = utc_now_iso()
+        return {
+            "name": job["name"],
+            "kind": job["kind"],
+            "status": "error",
+            "count": 0,
+            "records": [],
+            "output": job["output"],
+            "started_at": started_at,
+            "finished_at": finished_at,
+            "error": str(error),
+        }
+
+
+def run_all(
+    *,
+    trigger_type: str = "scheduled",
+    trigger_schedule: str = "0 6 * * * Europe/Madrid",
+    trigger_source: str = "simulated-cron",
+    fever_mode: str = "full",
+):
+    if fever_mode not in {"full", "fast"}:
+        raise ValueError(f"Unsupported fever mode: {fever_mode}")
+
+    scraper_jobs = _build_scraper_jobs(fever_mode=fever_mode)
+    started_at = time.time()
+    log.info("=" * 60)
+    log.info("PIPELINE DIARIO")
+    log.info("=" * 60)
+    log.info(
+        "Trigger %s (%s) lanzando %d scrapers en paralelo",
+        trigger_source,
+        trigger_schedule,
+        len(scraper_jobs),
+    )
+    log.info("Fever mode for this run: %s", fever_mode)
+
+    results: list[dict] = []
     source_events: list[dict] = []
     source_news: list[dict] = []
 
-    # --- Fever ---
-    log.info("=" * 60)
-    log.info("FEVER")
-    log.info("=" * 60)
-    try:
-        from fever import main as fever_main
-        fever_events = fever_main()
-        source_events.extend(fever_events)
-        log.info("Fever: %d events", len(fever_events))
-    except Exception as e:
-        log.error("Fever scraper failed: %s", e)
+    with ThreadPoolExecutor(max_workers=len(scraper_jobs)) as executor:
+        futures = {executor.submit(_run_job, job): job for job in scraper_jobs}
+        for future in as_completed(futures):
+            result = future.result()
+            results.append(result)
+            if result["status"] == "ok":
+                if result["kind"] == "plan":
+                    source_events.extend(result["records"])
+                else:
+                    source_news.extend(result["records"])
+                log.info("%-15s: %4d items", result["name"], result["count"])
+            else:
+                log.error("%-15s: failed - %s", result["name"], result.get("error"))
 
-    # --- Eventbrite ---
-    log.info("=" * 60)
-    log.info("EVENTBRITE")
-    log.info("=" * 60)
-    try:
-        from eventbrite import scrape_eventbrite
-        eb_events = scrape_eventbrite()
-        source_events.extend(eb_events)
-        log.info("Eventbrite: %d events", len(eb_events))
-    except Exception as e:
-        log.error("Eventbrite scraper failed: %s", e)
+    merged_events = merge_plan_records(source_events)
+    merged_news = merge_news_records(source_news)
 
-    # --- Datos Madrid ---
-    log.info("=" * 60)
-    log.info("DATOS MADRID")
-    log.info("=" * 60)
-    try:
-        from datos_madrid import scrape_datos_madrid
-        dm_events = scrape_datos_madrid()
-        source_events.extend(dm_events)
-        log.info("Datos Madrid: %d events", len(dm_events))
-    except Exception as e:
-        log.error("Datos Madrid scraper failed: %s", e)
-
-    # --- Madrid Secreto ---
-    log.info("=" * 60)
-    log.info("MADRID SECRETO")
-    log.info("=" * 60)
-    try:
-        from madrid_secreto import scrape_madrid_secreto
-        ms_events = scrape_madrid_secreto()
-        source_events.extend(ms_events)
-        log.info("Madrid Secreto: %d events", len(ms_events))
-    except Exception as e:
-        log.error("Madrid Secreto scraper failed: %s", e)
-
-    # --- Time Out news ---
-    log.info("=" * 60)
-    log.info("TIME OUT NEWS")
-    log.info("=" * 60)
-    try:
-        from timeout import scrape_timeout_news
-        timeout_news = scrape_timeout_news()
-        source_news.extend(timeout_news)
-        log.info("Time Out: %d news items", len(timeout_news))
-    except Exception as e:
-        log.error("Time Out scraper failed: %s", e)
-
-    # --- Save combined ---
-    all_events = explode_by_datetime(source_events)
     OUTPUT_FILE.write_text(
-        json.dumps(all_events, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(merged_events, indent=2, ensure_ascii=False), encoding="utf-8"
     )
-
     NEWS_OUTPUT_FILE.write_text(
-        json.dumps(source_news, indent=2, ensure_ascii=False), encoding="utf-8"
+        json.dumps(merged_news, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
-    # --- Summary ---
-    log.info("=" * 60)
-    log.info("COMBINED SUMMARY")
-    log.info("=" * 60)
-    by_source = {}
-    for e in source_events:
-        src = e.get("fuente", "unknown")
-        by_source.setdefault(src, {"total": 0, "coords": 0, "price": 0})
-        by_source[src]["total"] += 1
-        if e.get("latitud"):
-            by_source[src]["coords"] += 1
-        if e.get("precio") is not None:
-            by_source[src]["price"] += 1
+    plan_validation = validate_plan_records(merged_events)
+    news_validation = validate_news_records(merged_news)
+    duration_seconds = round(time.time() - started_at, 2)
 
-    for src, stats in by_source.items():
-        log.info(
-            "  %-15s: %4d total, %4d coords, %4d price",
-            src, stats["total"], stats["coords"], stats["price"],
-        )
-    log.info("  %-15s: %4d total", "SOURCE ROWS", len(source_events))
-    log.info("  %-15s: %4d total", "SESSION ROWS", len(all_events))
+    manifest = {
+        "trigger": {
+            "type": trigger_type,
+            "source": trigger_source,
+            "schedule": trigger_schedule,
+            "simulated_at": utc_now_iso(),
+            "fever_mode": fever_mode,
+        },
+        "started_at": results[0]["started_at"] if results else utc_now_iso(),
+        "finished_at": utc_now_iso(),
+        "duration_seconds": duration_seconds,
+        "sources": [
+            {
+                "name": result["name"],
+                "kind": result["kind"],
+                "status": result["status"],
+                "count": result["count"],
+                "output": result["output"],
+                "started_at": result["started_at"],
+                "finished_at": result["finished_at"],
+                "error": result.get("error"),
+            }
+            for result in sorted(results, key=lambda item: item["name"])
+        ],
+        "feeds": {
+            "planes": {
+                "output": str(OUTPUT_FILE.relative_to(OUTPUT_FILE.parent.parent)),
+                "count": len(merged_events),
+                "validation": plan_validation,
+            },
+            "noticias": {
+                "output": str(NEWS_OUTPUT_FILE.relative_to(NEWS_OUTPUT_FILE.parent.parent)),
+                "count": len(merged_news),
+                "validation": news_validation,
+            },
+        },
+    }
+    RUN_MANIFEST_FILE.write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+    log.info("=" * 60)
+    log.info("PLANES WEB")
+    log.info("=" * 60)
+    log.info("Items finales: %d", len(merged_events))
+    log.info("Validacion: %s", "OK" if plan_validation["valid"] else "ERROR")
     log.info("Saved to %s", OUTPUT_FILE)
+    log.info("=" * 60)
+    log.info("NOTICIAS WEB")
+    log.info("=" * 60)
+    log.info("Items finales: %d", len(merged_news))
+    log.info("Validacion: %s", "OK" if news_validation["valid"] else "ERROR")
+    log.info("Saved to %s", NEWS_OUTPUT_FILE)
+    log.info("Manifest saved to %s", RUN_MANIFEST_FILE)
 
-    if source_news:
-        log.info("=" * 60)
-        log.info("NEWS SUMMARY")
-        log.info("=" * 60)
-        news_by_source: dict[str, int] = {}
-        for item in source_news:
-            source = item.get("fuente", "unknown")
-            news_by_source[source] = news_by_source.get(source, 0) + 1
-        for source, total in news_by_source.items():
-            log.info("  %-15s: %4d total", source, total)
-        log.info("Saved to %s", NEWS_OUTPUT_FILE)
+    return {
+        "plans": merged_events,
+        "news": merged_news,
+        "manifest": manifest,
+    }
 
 
 if __name__ == "__main__":

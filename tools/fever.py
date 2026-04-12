@@ -18,6 +18,11 @@ from pathlib import Path
 import cloudscraper
 from bs4 import BeautifulSoup
 
+try:
+    from .normalization import normalize_plan_records
+except ImportError:
+    from normalization import normalize_plan_records
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
@@ -322,6 +327,8 @@ def save_results(plans: dict[int, dict]):
             "fuente": "fever",
         })
 
+    output = normalize_plan_records(output, source="fever")
+
     OUTPUT_FILE.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
     log.info("Saved %d events to %s", len(output), OUTPUT_FILE)
     return output
@@ -331,7 +338,7 @@ def save_results(plans: dict[int, dict]):
 # Main
 # ---------------------------------------------------------------------------
 
-def main():
+def main(resolve_coordinates: bool = True):
     scraper = _create_scraper()
 
     # Phase 1: collect plan listings + categories
@@ -341,10 +348,17 @@ def main():
         return []
 
     # Phase 2: resolve venue coordinates
-    enrich_coordinates(scraper, plans)
+    if resolve_coordinates:
+        enrich_coordinates(scraper, plans)
+    else:
+        log.info("Skipping Fever coordinate enrichment for fast pipeline mode")
 
     # Save
     return save_results(plans)
+
+
+def fast_main():
+    return main(resolve_coordinates=False)
 
 
 if __name__ == "__main__":

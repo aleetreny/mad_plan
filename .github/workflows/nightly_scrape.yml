@@ -1,0 +1,49 @@
+name: Nightly Madrid Scrape
+
+on:
+  schedule:
+    # GitHub Actions cron runs in UTC.
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nightly-madrid-scrape
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Run nightly scraper
+        env:
+          MAD_PLAN_TRIGGER_TYPE: scheduled
+          MAD_PLAN_TRIGGER_SOURCE: github-actions
+          MAD_PLAN_TRIGGER_SCHEDULE: "0 1 * * * UTC"
+          MAD_PLAN_FEVER_MODE: full
+        run: python tools/daily_trigger.py
+
+      - name: Upload outputs
+        uses: actions/upload-artifact@v4
+        with:
+          name: madrid-scrape-outputs
+          path: outputs/*.json
+          retention-days: 14

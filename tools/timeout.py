@@ -24,6 +24,11 @@ from bs4 import BeautifulSoup, Tag
 from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
 from playwright.sync_api import sync_playwright
 
+try:
+    from .normalization import normalize_news_records
+except ImportError:
+    from normalization import normalize_news_records
+
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
@@ -556,7 +561,10 @@ def _write_news_output(news_items: list[dict]) -> None:
     ordered_items = sorted(
         news_items,
         key=lambda item: (
-            item.get("fecha_publicacion") or "",
+            item.get("sort_datetime")
+            or item.get("publicado_en")
+            or item.get("fecha_publicacion")
+            or "",
             item.get("id") or "",
         ),
         reverse=True,
@@ -726,6 +734,7 @@ def scrape_timeout_news() -> list[dict]:
             if index % 100 == 0 or index == total:
                 log.info("Processed %d/%d Time Out articles", index, total)
 
+    news_items = normalize_news_records(news_items, source="timeout")
     _write_news_output(news_items)
     log.info("Saved %d news items to %s", len(news_items), OUTPUT_FILE)
     return news_items

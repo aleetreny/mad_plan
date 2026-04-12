@@ -67,3 +67,14 @@
 - En la salida final de Madrid Secreto, `274` planes llevan `fecha_inicio` y `255` llevan precio.
 - El filtro final de Madrid Secreto conserva planes activos o futuros hasta `365` dias por delante y solo deja planes sin fecha si fueron publicados o actualizados en los ultimos `45` dias.
 - Se anadio deduplicacion final orientada a feed para colapsar planes repetidos entre roundups, posts y embeds; solo quedan duplicados residuales muy puntuales.
+- Se normalizaron todas las salidas de `tools/` con una capa comun para web: `fuente_id`, `tipo`, `slug`, `resumen`, `categoria_principal`, `modo_fecha`, `estado_temporal`, `proxima_fecha`, `proximo_datetime`, `sort_datetime`, `publicado_en`, `actualizado_en`, `sesiones`, `timezone` y `metadata`.
+- Las fechas de dia completo ahora se distinguen de horas reales: timestamps placeholders como `00:00` o `23:59` ya no se exponen como horas en la capa web.
+- Para planes recurrentes largos, las `sesiones` publicadas se recortan a fechas futuras/relevantes y el orden del feed usa la `proxima_fecha` en vez del inicio historico del evento.
+- Se creo `tools/daily_trigger.py` como entrada de trigger habitual y se dejo `outputs/pipeline_diario.json` como manifiesto de la ultima ejecucion para la web.
+- El trigger diario ya no usa Fever rapido por defecto: queda preparado para correr con Fever completo en ejecuciones nocturnas.
+- Se dejo el trigger apto para GitHub Actions con configuracion por CLI/env (`MAD_PLAN_FEVER_MODE`, `MAD_PLAN_TRIGGER_SOURCE`, `MAD_PLAN_TRIGGER_SCHEDULE`, `MAD_PLAN_TRIGGER_TYPE`).
+- Se anadio `.github/workflows/nightly_scrape.yml` para la ejecucion nocturna programada en GitHub Actions, instalando dependencias y Playwright antes del run.
+- Fever rapido se mantiene solo como override explicito para pruebas locales o ejecuciones de humo.
+- Se valido el ensamblado final de producto desde los outputs actualizados de fuente.
+- Salidas finales listas para web: `outputs/eventos_madrid_all.json` con `2628` planes y `outputs/noticias_madrid_all.json` con `95` noticias.
+- Validacion final de producto: sin errores en `pipeline_diario.json`, `0` IDs duplicados en noticias, `0` IDs duplicados en planes tras corregir el caso `madrid-secreto`, `51` planes fusionados entre multiples fuentes, `1771` planes con precio y `1739` con coordenadas.
