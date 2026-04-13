@@ -16,11 +16,25 @@ PLAN_UNDATED_LOOKBACK_DAYS = 45
 NEWS_LOOKBACK_DAYS = 21
 
 SOURCE_PRIORITY = {
+    "matadero": -1,
+    "teatros_canal": -1,
+    "circulo_bellas_artes": -1,
+    "ifema_madrid": -1,
+    "casa_mexico": -1,
+    "espacio_fundacion_telefonica": -1,
+    "museo_reina_sofia": -1,
+    "biblioteca_nacional": -1,
+    "fundacion_canal": -1,
+    "fundacion_mapfre": -1,
+    "sala_el_sol": -1,
     "datos_madrid": 0,
+    "esmadrid": 0,
     "fever": 1,
     "eventbrite": 2,
-    "madrid_secreto": 3,
-    "timeout": 4,
+    "wegow": 3,
+    "ticketmaster": 4,
+    "madrid_secreto": 5,
+    "timeout": 6,
 }
 
 GENERIC_PLAN_SOURCE_IDS = {
@@ -646,13 +660,18 @@ def normalize_news_records(
 
 
 def _candidate_merge_url(record: dict[str, Any]) -> str | None:
+    source = _clean_text(record.get("fuente")).casefold()
     for field in ("url_compra", "url"):
         value = _clean_text(record.get(field))
         if not value:
             continue
+        if source == "esmadrid":
+            continue
         parsed = urlparse(value)
         host = parsed.netloc.lower()
-        if "madridsecreto.co" in host and field == "url":
+        if field == "url" and (
+            "madridsecreto.co" in host or "esmadrid.com" in host
+        ):
             continue
         return value.rstrip("/").lower()
     return None
@@ -870,8 +889,12 @@ def merge_news_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
         merged_by_key[key] = merged
 
+    merged_records = [
+        record for record in merged_by_key.values() if is_recent_news_record(record)
+    ]
+
     return sorted(
-        merged_by_key.values(),
+        merged_records,
         key=lambda item: (
             item.get("sort_datetime") or "",
             _clean_text(item.get("titulo")).casefold(),

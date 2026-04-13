@@ -9,8 +9,11 @@ Output: eventos_datos_madrid.json
 
 import json
 import logging
+import os
 from pathlib import Path
 from datetime import datetime, timedelta
+import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 import requests
 
@@ -24,6 +27,22 @@ log = logging.getLogger(__name__)
 
 API_URL = "https://datos.madrid.es/api/3/action/package_show?id=206974-0-agenda-eventos-culturales-100"
 OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_datos_madrid.json"
+JINA_PREFIX = "https://r.jina.ai/http://"
+IMAGE_LINK_RE = re.compile(r"!\[Image[^\]]*\]\(([^)]+)\)")
+GENERIC_IMAGE_TOKENS = (
+    "logo-madrid",
+    "Actualidad_1400X351",
+    "infoVisitas.jsp",
+)
+IMAGE_ENRICHMENT_WORKERS = 6
+IMAGE_ENRICHMENT_ENABLED = os.getenv("DATOS_MADRID_IMAGE_ENRICHMENT") == "1"
+HEADERS = {
+    "User-Agent": (
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
+    ),
+    "Accept-Language": "es-ES,es;q=0.9,en;q=0.8",
+}
 
 
 def _parse_price(item: dict) -> tuple[float | None, str | None]:
@@ -141,6 +160,80 @@ def _build_available_datetimes(item: dict) -> list[str]:
     return expanded
 
 
+def _build_jina_url(url: str | None) -> str | None:
+    if not url:
+        return None
+    cleaned = str(url).strip()
+    if not cleaned:
+        return None
+    cleaned = cleaned.removeprefix("http://").removeprefix("https://")
+    return f"{JINA_PREFIX}{cleaned}"
+
+
+def _extract_image_from_markdown(markdown: str) -> str | None:
+    for image_url in IMAGE_LINK_RE.findall(markdown or ""):
+        if any(token in image_url for token in GENERIC_IMAGE_TOKENS):
+            continue
+        return image_url
+    return None
+
+
+def _fetch_event_image(*urls: str | None) -> str | None:
+    for url in urls:
+        jina_url = _build_jina_url(url)
+        if not jina_url:
+            continue
+
+        try:
+            response = requests.get(jina_url, headers=HEADERS, timeout=30)
+            response.raise_for_status()
+        except requests.RequestException:
+            continue
+
+        image = _extract_image_from_markdown(response.text)
+        if image:
+            return image
+
+    return None
+
+
+def _enrich_images(events: list[dict]) -> None:
+    pending_by_url: dict[tuple[str, str], list[int]] = {}
+    for index, event in enumerate(events):
+        if event.get("imagen") or not event.get("url"):
+            continue
+        key = (event["url"], event.get("referencia_url") or "")
+        pending_by_url.setdefault(key, []).append(index)
+
+    if not pending_by_url:
+        return
+
+    total = len(pending_by_url)
+    log.info("Resolving %d datos.madrid images via r.jina.ai …", total)
+    resolved = 0
+
+    with ThreadPoolExecutor(max_workers=IMAGE_ENRICHMENT_WORKERS) as executor:
+        future_to_url = {
+            executor.submit(_fetch_event_image, url, reference_url): (url, reference_url)
+            for url, reference_url in pending_by_url
+        }
+        for processed, future in enumerate(as_completed(future_to_url), start=1):
+            key = future_to_url[future]
+            image = future.result()
+            if image:
+                for index in pending_by_url[key]:
+                    events[index]["imagen"] = image
+                resolved += len(pending_by_url[key])
+
+            if processed % 100 == 0 or processed == total:
+                log.info(
+                    "  datos.madrid image enrichment: %d/%d urls processed, %d events resolved",
+                    processed,
+                    total,
+                    resolved,
+                )
+
+
 def scrape_datos_madrid() -> list[dict]:
     """Fetch and parse Madrid open data cultural events."""
     log.info("Fetching API metadata …")
@@ -186,7 +279,7 @@ def scrape_datos_madrid() -> list[dict]:
         addr_parts = [p for p in [street, district] if p]
         venue = item.get("event-location", "")
 
-        events.append({
+        event = {
             "id": str(item.get("id", item.get("@id", ""))),
             "titulo": item.get("title", ""),
             "precio": price,
@@ -203,7 +296,16 @@ def scrape_datos_madrid() -> list[dict]:
             "imagen": None,
             "descripcion": (item.get("description") or "")[:500],
             "fuente": "datos_madrid",
-        })
+        }
+        if IMAGE_ENRICHMENT_ENABLED:
+            event["referencia_url"] = (item.get("references") or {}).get("@id")
+        events.append(event)
+
+    if IMAGE_ENRICHMENT_ENABLED:
+        log.info("datos.madrid image enrichment enabled via DATOS_MADRID_IMAGE_ENRICHMENT=1")
+        _enrich_images(events)
+        for event in events:
+            event.pop("referencia_url", None)
 
     events = normalize_plan_records(events, source="datos_madrid")
 

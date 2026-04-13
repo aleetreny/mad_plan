@@ -11,6 +11,7 @@ import json
 import logging
 import time
 from pathlib import Path
+from typing import Any
 
 import requests
 from bs4 import BeautifulSoup
@@ -57,6 +58,13 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
     )
 }
+GENERIC_IMAGE_TOKENS = (
+    "eb_orange_on_white_1200x630",
+    "/django/images/logos/",
+    "/static/media/map.",
+    "map.84ed7a7f",
+)
+DETAIL_IMAGE_CACHE: dict[str, str | None] = {}
 
 
 def _extract_price(info: dict) -> tuple[float | None, str | None]:
@@ -88,8 +96,121 @@ def _extract_price(info: dict) -> tuple[float | None, str | None]:
     return None, currency
 
 
+def _extract_eventbrite_image(value: Any) -> str | None:
+    if isinstance(value, str):
+        text = value.strip()
+        return text or None
+
+    if isinstance(value, list):
+        for item in value:
+            image = _extract_eventbrite_image(item)
+            if image:
+                return image
+        return None
+
+    if isinstance(value, dict):
+        for key in ("url", "src", "original", "image"):
+            if key not in value:
+                continue
+            image = _extract_eventbrite_image(value.get(key))
+            if image:
+                return image
+    return None
+
+
+def _is_generic_image(url: str | None) -> bool:
+    text = (url or "").strip().casefold()
+    if not text:
+        return True
+    return any(token in text for token in GENERIC_IMAGE_TOKENS)
+
+
+def _pick_first_real_image(candidates: list[str | None]) -> str | None:
+    for candidate in candidates:
+        if candidate and not _is_generic_image(candidate):
+            return candidate
+    return None
+
+
+def _walk_eventbrite_values(value: Any):
+    if isinstance(value, str):
+        text = value.strip()
+        if text:
+            yield text
+        return
+
+    if isinstance(value, list):
+        for item in value:
+            yield from _walk_eventbrite_values(item)
+        return
+
+    if isinstance(value, dict):
+        for item in value.values():
+            yield from _walk_eventbrite_values(item)
+
+
+def _extract_eventbrite_page_props_image(page_props: Any) -> str | None:
+    seen: set[str] = set()
+    for candidate in _walk_eventbrite_values(page_props):
+        if candidate in seen or not candidate.startswith("http"):
+            continue
+        seen.add(candidate)
+
+        lowered = candidate.casefold()
+        if _is_generic_image(candidate):
+            continue
+        if (
+            "img.evbuc.com" in lowered
+            or "cdn.evbuc.com/images/" in lowered
+            or lowered.endswith((".jpg", ".jpeg", ".png", ".webp"))
+            or any(token in lowered for token in (".jpg?", ".jpeg?", ".png?", ".webp?"))
+        ):
+            return candidate
+    return None
+
+
+def _extract_eventbrite_detail_image(session: requests.Session, url: str | None) -> str | None:
+    link = (url or "").strip()
+    if not link:
+        return None
+    if link in DETAIL_IMAGE_CACHE:
+        return DETAIL_IMAGE_CACHE[link]
+
+    image = None
+    try:
+        response = session.get(link, timeout=15)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        next_tag = soup.find("script", id="__NEXT_DATA__")
+        if next_tag and next_tag.string:
+            data = json.loads(next_tag.string)
+            page_props = data.get("props", {}).get("pageProps", {})
+            context = page_props.get("context", {})
+            basic_info = context.get("basicInfo") or {}
+            gallery = context.get("gallery") or {}
+            organizer = basic_info.get("organizer") or {}
+            candidates = [
+                _extract_eventbrite_image(basic_info.get("image")),
+                *[
+                    _extract_eventbrite_image(item)
+                    for item in gallery.get("images") or []
+                ],
+                _extract_eventbrite_image(organizer.get("image")),
+            ]
+            image = _pick_first_real_image(candidates)
+            if not image:
+                image = _extract_eventbrite_page_props_image(page_props)
+    except (requests.RequestException, json.JSONDecodeError, TypeError, ValueError):
+        image = None
+
+    DETAIL_IMAGE_CACHE[link] = image
+    return image
+
+
 def scrape_eventbrite() -> list[dict]:
     """Scrape Eventbrite Madrid events across all categories."""
+    session = requests.Session()
+    session.headers.update(HEADERS)
     seen_urls: set[str] = set()
     events: list[dict] = []
 
@@ -100,7 +221,7 @@ def scrape_eventbrite() -> list[dict]:
         for page in range(1, PAGES_PER_CATEGORY + 1):
             url = f"{base_url}&page={page}"
             try:
-                res = requests.get(url, headers=HEADERS, timeout=15)
+                res = session.get(url, timeout=15)
                 if res.status_code != 200:
                     break
             except requests.RequestException as e:
@@ -129,6 +250,7 @@ def scrape_eventbrite() -> list[dict]:
                     geo = loc.get("geo", {})
                     addr = loc.get("address", {})
                     price, currency = _extract_price(info)
+                    image = info.get("image") or _extract_eventbrite_detail_image(session, link)
 
                     events.append({
                         "id": link.split("-")[-1] if link else None,
@@ -148,7 +270,7 @@ def scrape_eventbrite() -> list[dict]:
                         }),
                         "categorias": [nombre],
                         "url": link,
-                        "imagen": info.get("image"),
+                        "imagen": image,
                         "descripcion": (info.get("description") or "")[:500],
                         "fuente": "eventbrite",
                     })

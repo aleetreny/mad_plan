@@ -26,8 +26,10 @@ from bs4 import BeautifulSoup, Tag
 
 try:
     from .normalization import normalize_plan_records
+    from .remote_images import extract_page_image
 except ImportError:
     from normalization import normalize_plan_records
+    from remote_images import extract_page_image
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
@@ -47,6 +49,7 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0 Safari/537.36"
     )
 }
+EXTERNAL_IMAGE_CACHE: dict[str, str | None] = {}
 
 MONTHS = {
     "enero": 1,
@@ -88,6 +91,69 @@ ROUNDUP_SLUG_RE = re.compile(
     rf"^planes-(?:{MONTH_PATTERN})(?:-\d{{4}})?$", re.IGNORECASE
 )
 LOCATION_INLINE_RE = re.compile(r"([A-ZÁÉÍÓÚÜÑ][^.!?\n]{1,80}\|[^.!?\n]{3,140})")
+KNOWN_LOCATION_NAMES = (
+    "Movistar Arena",
+    "Fabrik",
+    "Teatro Real",
+    "Círculo de Bellas Artes",
+    "Circulo de Bellas Artes",
+    "Auditorio Nacional de Música",
+    "Hipódromo de la Zarzuela",
+    "Mercado de las Ranas",
+    "Mercado de Motores",
+    "Planetario de Madrid",
+    "Banco de España",
+    "Café Central",
+    "Cafe Central",
+    "Teatro Luchana",
+    "Teatro Magno",
+    "Espacio Perón",
+    "Espacio Peron",
+    "Westfield Parquesur",
+    "La Vaguada",
+    "Banca March",
+    "Palacio de Santa Bárbara",
+    "Palacio de Santa Barbara",
+    "Museo del Ferrocarril",
+    "Parroquia de Santa Cruz",
+    "Ateneo de Madrid",
+    "MADRING",
+    "Callao",
+    "Recoletos",
+    "Atocha",
+)
+KNOWN_LOCATION_PATTERN = "|".join(re.escape(name) for name in KNOWN_LOCATION_NAMES)
+LOCATION_VENUE_PATTERN = (
+    rf"(?:{KNOWN_LOCATION_PATTERN}"
+    rf"|(?:Mercado|Mercadillo)\s+de\s+[A-ZÁÉÍÓÚÜÑ][^.;:()\n]{{2,80}}"
+    rf"|(?:Recinto Ferial|Centro Comercial|Westfield|Plaza|Calle|Paseo|Avenida|Auditorio|Teatro|Museo|Palacio|Parroquia|Iglesia|Espacio)\s+(?:de\s+|del\s+|la\s+|las\s+|los\s+)?[A-ZÁÉÍÓÚÜÑ][^.;:()\n]{{2,80}})"
+)
+LOCATION_CONTEXT_RE = re.compile(
+    rf"(?:lo harán en|lo haran en|se celebrará en|se celebrara en|se celebra en|tendrá lugar en|tendra lugar en|acogerá(?: el)?|acogera(?: el)?|acoge(?: el)?|ocurrirá[^.]*? en|ocurrira[^.]*? en|en el|en la|en los|en las|desde el|desde la|al|del|de la|de los|de las)\s+(?P<location>{LOCATION_VENUE_PATTERN})",
+    re.IGNORECASE,
+)
+LOCATION_VENUE_RE = re.compile(rf"(?P<location>{LOCATION_VENUE_PATTERN})", re.IGNORECASE)
+LOCATION_ADDRESS_RE = re.compile(
+    r"(?P<address>(?:calle|c/|plaza|paseo|avenida|avda\.?|pza\.?)\s+(?:de\s+|del\s+|de la\s+)?[^.;:\n)]{5,100})",
+    re.IGNORECASE,
+)
+GENERIC_LOCATION_VALUES = {
+    "madrid",
+    "la capital",
+    "la ciudad",
+    "el centro",
+    "centro",
+    "mercado",
+    "mercadillo",
+    "plaza",
+    "museo",
+    "teatro",
+    "auditorio",
+    "arena",
+    "iglesia",
+    "centro comercial",
+    "recinto ferial",
+}
 
 IGNORED_PARAGRAPH_SNIPPETS = {
     "mantente al tanto",
@@ -273,6 +339,122 @@ def _extract_first_image(container: BeautifulSoup | Tag) -> str | None:
     return None
 
 
+def _extract_structured_image(value) -> str | None:
+    if isinstance(value, str):
+        text = _clean_text(value)
+        return text or None
+
+    if isinstance(value, list):
+        for item in value:
+            image = _extract_structured_image(item)
+            if image:
+                return image
+        return None
+
+    if isinstance(value, dict):
+        for key in ("url", "contentUrl", "thumbnailUrl", "image"):
+            if key not in value:
+                continue
+            image = _extract_structured_image(value.get(key))
+            if image:
+                return image
+    return None
+
+
+def _extract_fever_page_image(url: str) -> str | None:
+    try:
+        soup = BeautifulSoup(_get_response(url).text, "html.parser")
+    except requests.RequestException:
+        return None
+
+    normalized_url = url.rstrip("/")
+    for tag in soup.find_all("script", type="application/ld+json"):
+        raw = tag.get_text(strip=True)
+        if not raw:
+            continue
+        try:
+            payload = json.loads(raw)
+        except json.JSONDecodeError:
+            continue
+
+        nodes = payload if isinstance(payload, list) else [payload]
+        for node in nodes:
+            graph = node.get("@graph") if isinstance(node, dict) else None
+            graph_nodes = graph if isinstance(graph, list) else [node]
+            for item in graph_nodes:
+                if not isinstance(item, dict):
+                    continue
+
+                if item.get("@type") == "Place":
+                    place_url = _clean_text(item.get("url") or item.get("@id"))
+                    if place_url and place_url.rstrip("/") != normalized_url:
+                        continue
+                    events = item.get("event") or []
+                    if isinstance(events, dict):
+                        events = [events]
+                    for event in events:
+                        image = _extract_structured_image((event or {}).get("image"))
+                        if image:
+                            return image
+
+                if item.get("@type") == "Event":
+                    location = item.get("location") or {}
+                    location_url = _clean_text((location or {}).get("url"))
+                    if location_url.rstrip("/") != normalized_url:
+                        continue
+                    image = _extract_structured_image(item.get("image"))
+                    if image:
+                        return image
+
+    return None
+
+
+def _extract_external_image(url: str | None) -> str | None:
+    link = _clean_text(url)
+    if not link or not link.startswith("http"):
+        return None
+    if link in EXTERNAL_IMAGE_CACHE:
+        return EXTERNAL_IMAGE_CACHE[link]
+
+    host = urlparse(link).netloc.lower()
+    image = None
+    if "feverup.com" in host:
+        image = _extract_fever_page_image(link)
+        if not image:
+            image = extract_page_image(
+                link,
+                headers=HEADERS,
+                preferred_url_tokens=("fever2/plan/photo",),
+                use_render=True,
+            )
+    elif "beerstation.com" in host:
+        image = extract_page_image(
+            link,
+            headers=HEADERS,
+            preferred_url_tokens=("bannerweb", "imagenprincipal", "beerstation"),
+            use_render=True,
+        )
+    else:
+        image = extract_page_image(link, headers=HEADERS)
+
+    EXTERNAL_IMAGE_CACHE[link] = image
+    return image
+
+
+def _extract_external_source_image(*urls: str | None) -> str | None:
+    for candidate in urls:
+        link = _clean_text(candidate)
+        if not link:
+            continue
+        host = urlparse(link).netloc.lower()
+        if "madridsecreto.co" in host:
+            continue
+        image = _extract_external_image(link)
+        if image:
+            return image
+    return None
+
+
 def _extract_paragraphs(container: BeautifulSoup | Tag) -> list[str]:
     paragraphs: list[str] = []
     for paragraph in container.find_all("p"):
@@ -374,7 +556,7 @@ def _extract_price_text(container: BeautifulSoup | Tag) -> str:
     return _clean_text(match.group(0)) if match else ""
 
 
-def _extract_location_text(container: BeautifulSoup | Tag) -> str:
+def _extract_location_text(container: BeautifulSoup | Tag, *fallback_texts: str) -> str:
     selectors = [
         ".module-direction-location",
         ".fever-plan__location-link",
@@ -384,17 +566,106 @@ def _extract_location_text(container: BeautifulSoup | Tag) -> str:
         node = container.select_one(selector)
         if node:
             text = _clean_text(node.get_text(" ", strip=True))
-            if text:
+            if text and _is_valid_location_candidate(text):
                 return text
 
     for node in container.find_all(class_=re.compile("location|direction", re.IGNORECASE)):
         text = _clean_text(node.get_text(" ", strip=True))
-        if text and 5 <= len(text) <= 180 and "enter location" not in text.lower():
+        if (
+            text
+            and 5 <= len(text) <= 180
+            and "enter location" not in text.lower()
+            and _is_valid_location_candidate(text)
+        ):
             return text
 
     text = _clean_text(container.get_text(" ", strip=True))
     match = LOCATION_INLINE_RE.search(text)
-    return _clean_text(match.group(1)) if match else ""
+    if match:
+        candidate = _clean_text(match.group(1))
+        if _is_valid_location_candidate(candidate):
+            return candidate
+
+    return _infer_location_text(text, *fallback_texts)
+
+
+def _clean_location_candidate(value: str | None) -> str:
+    text = _clean_text(value)
+    if not text:
+        return ""
+
+    text = text.replace("[…]", "")
+    text = re.sub(r"\s*[-–—]\s*junto.*$", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s*[-–—]\s*.*$", "", text)
+    text = re.sub(r"\s+\([^)]*?(?:\d{1,2}\s+de|€).*?\)$", "", text, flags=re.IGNORECASE)
+    text = re.sub(
+        r",\s*(?:con|que|donde|durante|para|hasta|desde|coincidiendo|un|una)\b.*$",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"\s+(?:con|que|donde|durante|para|hasta|desde|coincidiendo|solo|este|esta|estos|estas)\b.*$",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"\s+el\s+\d{1,2}\s+de\s+[A-Za-zÁÉÍÓÚáéíóúñÑ]+.*$",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    return text.strip(" .,;:-")
+
+
+def _is_valid_location_candidate(value: str | None) -> bool:
+    normalized = _clean_location_candidate(value).casefold()
+    if not normalized or len(normalized) < 4:
+        return False
+    return normalized not in GENERIC_LOCATION_VALUES
+
+
+def _format_location_text(location: str | None, address: str | None = None) -> str:
+    place = _clean_location_candidate(location)
+    direction = _clean_location_candidate(address)
+
+    if place and not _is_valid_location_candidate(place):
+        place = ""
+    if direction and not _is_valid_location_candidate(direction):
+        direction = ""
+
+    if place and direction and place.casefold() != direction.casefold():
+        return f"{place} | {direction}"
+    return place or direction
+
+
+def _infer_location_text(*texts: str) -> str:
+    blob = _clean_text(" ".join(text for text in texts if text))
+    if not blob:
+        return ""
+
+    address_match = LOCATION_ADDRESS_RE.search(blob)
+    address = _clean_location_candidate(address_match.group("address")) if address_match else ""
+
+    for pattern in (LOCATION_CONTEXT_RE, LOCATION_VENUE_RE):
+        for match in pattern.finditer(blob):
+            candidate = _clean_location_candidate(match.group("location"))
+            if not _is_valid_location_candidate(candidate):
+                continue
+            return _format_location_text(candidate, address)
+
+    return _format_location_text(address)
+
+
+def _split_location_text(location_text: str) -> tuple[str, str]:
+    text = _clean_text(location_text)
+    if not text:
+        return "", ""
+    if "|" in text:
+        place, address = [part.strip() for part in text.split("|", 1)]
+        return place or address, address or place
+    return text, text
 
 
 def _extract_dates_text(container: BeautifulSoup | Tag) -> str:
@@ -462,7 +733,8 @@ def _build_post_event(post: dict, content_soup: BeautifulSoup) -> dict:
 
     price_text = _extract_price_text(content_soup)
     price, currency = _parse_price(price_text)
-    location = _extract_location_text(content_soup)
+    location = _extract_location_text(content_soup, title, description, content)
+    place, address = _split_location_text(location)
     dates_text = _extract_dates_text(content_soup)
     start, end, available = _parse_spanish_dates(dates_text or content)
     image = _extract_featured_image(post) or _extract_first_image(content_soup)
@@ -473,8 +745,8 @@ def _build_post_event(post: dict, content_soup: BeautifulSoup) -> dict:
         "titulo": title,
         "precio": price,
         "moneda": currency,
-        "lugar": location.split("|", 1)[0].strip() if "|" in location else location,
-        "direccion": location,
+        "lugar": place,
+        "direccion": address,
         "latitud": None,
         "longitud": None,
         "fecha_inicio": start,
@@ -499,7 +771,12 @@ def _build_module_event(post: dict, heading: Tag, section: BeautifulSoup) -> dic
     if not title:
         return None
 
-    location = _extract_location_text(section)
+    location = _extract_location_text(
+        section,
+        _clean_text(post.get("title", {}).get("rendered")),
+        title,
+    )
+    place, address = _split_location_text(location)
     dates_text = _extract_dates_text(section)
     price_text = _extract_price_text(section)
     action_url = _extract_action_url(section)
@@ -513,14 +790,16 @@ def _build_module_event(post: dict, heading: Tag, section: BeautifulSoup) -> dic
     content = _extract_post_content(section, max_length=2500)
     article_url = title_link.get("href") if title_link and title_link.get("href") else post.get("link")
     image = _extract_first_image(section) or _extract_featured_image(post)
+    if not image:
+        image = _extract_external_source_image(action_url, article_url)
 
     event = {
         "id": _slugify(urlparse(article_url).path.rsplit("/", 1)[-1] if article_url else title),
         "titulo": title,
         "precio": price,
         "moneda": currency,
-        "lugar": location.split("|", 1)[0].strip() if "|" in location else location,
-        "direccion": location,
+        "lugar": place,
+        "direccion": address,
         "latitud": None,
         "longitud": None,
         "fecha_inicio": start,
@@ -562,8 +841,15 @@ def _extract_embedded_plan_events(post: dict, content_soup: BeautifulSoup) -> li
             continue
 
         date_start = node.get("data-fever-plan-date")
-        location = _extract_location_text(node)
-        address = _clean_text(node.get("data-fever-plan-brand")) or location
+        location = _extract_location_text(
+            node,
+            _clean_text(post.get("title", {}).get("rendered")),
+            title,
+            description,
+            content,
+        )
+        place, inferred_address = _split_location_text(location)
+        address = _clean_text(node.get("data-fever-plan-brand")) or inferred_address or place
         price_raw = node.get("data-fever-plan-price")
         price = float(price_raw) if price_raw else None
         currency = node.get("data-fever-plan-currency") or ("EUR" if price is not None else None)
@@ -575,7 +861,7 @@ def _extract_embedded_plan_events(post: dict, content_soup: BeautifulSoup) -> li
             "titulo": title,
             "precio": price,
             "moneda": currency,
-            "lugar": location,
+            "lugar": place,
             "direccion": address,
             "latitud": None,
             "longitud": None,
@@ -699,6 +985,20 @@ def _filter_current_events(events: list[dict]) -> list[dict]:
     return output
 
 
+def _drop_locationless_events(events: list[dict]) -> list[dict]:
+    filtered: list[dict] = []
+    dropped = 0
+    for event in events:
+        if event.get("lugar") or event.get("direccion"):
+            filtered.append(event)
+            continue
+        dropped += 1
+
+    if dropped:
+        log.info("Dropped %d Madrid Secreto events without usable location", dropped)
+    return filtered
+
+
 def scrape_madrid_secreto() -> list[dict]:
     """Scrape a current/future Madrid Secreto plans feed."""
     category_id = _get_que_hacer_category_id()
@@ -751,6 +1051,7 @@ def scrape_madrid_secreto() -> list[dict]:
 
     raw_output = list(events_by_key.values())
     output = _filter_current_events(raw_output)
+    output = _drop_locationless_events(output)
     output = normalize_plan_records(output, source="madrid_secreto")
 
     OUTPUT_FILE.write_text(

@@ -53,6 +53,122 @@ def _parse_state(soup: BeautifulSoup) -> dict | None:
     return None
 
 
+def _clean_text(value) -> str:
+    if value is None:
+        return ""
+    return " ".join(str(value).replace("\xa0", " ").split())
+
+
+def _response_soup(response) -> BeautifulSoup:
+    apparent = (getattr(response, "apparent_encoding", "") or "").lower().replace("_", "-")
+    current = (getattr(response, "encoding", "") or "").lower().replace("_", "-")
+    if apparent == "utf-8" and current in {"iso-8859-1", "latin-1", "windows-1252"}:
+        response.encoding = "utf-8"
+    return BeautifulSoup(response.text, "html.parser")
+
+
+def _build_address(address: dict | None) -> str | None:
+    if not isinstance(address, dict):
+        return None
+
+    parts = [
+        _clean_text(address.get("streetAddress")),
+        _clean_text(address.get("addressLocality")),
+        _clean_text(address.get("postalCode")),
+    ]
+    values = [part for part in parts if part]
+    if values:
+        return ", ".join(values)
+    return None
+
+
+def _clean_inline_location(value: str | None) -> str | None:
+    text = _clean_text(value)
+    if not text:
+        return None
+    text = re.split(r"[📱👉⌛👤📅⏳]", text, maxsplit=1)[0]
+    text = re.split(r"\b(?:Información|Informacion|Descripción|Descripcion|Menú|Menu)\b", text, maxsplit=1)[0]
+    text = text.strip(" .,;:-")
+    return text or None
+
+
+def _extract_visible_location(soup: BeautifulSoup) -> dict | None:
+    lines = [
+        _clean_text(line)
+        for line in soup.get_text("\n").splitlines()
+        if _clean_text(line)
+    ]
+    if not lines:
+        return None
+
+    info_location = None
+    route_venue = None
+    route_address = None
+
+    stop_tokens = (
+        "información",
+        "informacion",
+        "descripción",
+        "descripcion",
+        "menú",
+        "menu",
+        "¿cómo llegar?",
+        "como llegar?",
+    )
+
+    for index, line in enumerate(lines):
+        lowered = line.casefold()
+        if "lugar:" in lowered:
+            inline_location = _clean_inline_location(line.split(":", 1)[1] if ":" in line else "")
+            if inline_location:
+                info_location = inline_location
+                break
+
+            collected_lines = []
+            for candidate in lines[index + 1 :]:
+                candidate_lowered = candidate.casefold()
+                if any(token in candidate_lowered for token in stop_tokens):
+                    break
+                collected_lines.append(candidate)
+
+            if collected_lines:
+                info_location = _clean_inline_location(" ".join(collected_lines))
+            continue
+        if "¿cómo llegar?" in lowered or "como llegar?" in lowered:
+            continue
+
+    for index, line in enumerate(lines):
+        lowered = line.casefold()
+        if "¿cómo llegar?" not in lowered and "como llegar?" not in lowered:
+            continue
+
+        for candidate in lines[index + 1 :]:
+            if not route_venue:
+                route_venue = _clean_inline_location(candidate)
+                continue
+            route_address = _clean_inline_location(candidate)
+            break
+        break
+
+    venue_name = route_venue or info_location
+    if venue_name and venue_name.casefold() in {"madrid", "varias localizaciones"}:
+        venue_name = info_location if info_location and info_location != venue_name else None
+
+    address = route_address
+    if not address and info_location and "," in info_location:
+        address = info_location
+
+    if not any((venue_name, address)):
+        return None
+
+    return {
+        "venue_name": venue_name,
+        "address": address,
+        "latitude": None,
+        "longitude": None,
+    }
+
+
 def _extract_plans_from_state(state: dict) -> tuple[list[dict], int]:
     """Return (plans_list, total_plans) from a WPF skeleton in the state."""
     for key in state:
@@ -93,7 +209,7 @@ def collect_plans(scraper) -> dict[int, dict]:
         log.error("Main page returned %d", resp.status_code)
         return plans
 
-    soup = BeautifulSoup(resp.text, "html.parser")
+    soup = _response_soup(resp)
     state = _parse_state(soup)
     if not state:
         log.error("No state data on main page")
@@ -173,7 +289,7 @@ def collect_plans(scraper) -> dict[int, dict]:
         r = scraper.get(f"{LISTING_URL}/que-hacer?page={page_num}")
         if r.status_code != 200:
             break
-        st = _parse_state(BeautifulSoup(r.text, "html.parser"))
+        st = _parse_state(_response_soup(r))
         if not st:
             break
         pp, _ = _extract_plans_from_state(st)
@@ -194,7 +310,7 @@ def collect_plans(scraper) -> dict[int, dict]:
         if r.status_code != 200:
             log.warning("Category %s returned %d", slug, r.status_code)
             continue
-        st = _parse_state(BeautifulSoup(r.text, "html.parser"))
+        st = _parse_state(_response_soup(r))
         if not st:
             continue
         pp, total = _extract_plans_from_state(st)
@@ -224,7 +340,7 @@ def _fetch_coords_from_detail(scraper, plan_id: int) -> dict | None:
     except Exception:
         return None
 
-    soup = BeautifulSoup(r.text, "html.parser")
+    soup = _response_soup(r)
     for tag in soup.find_all("script", type="application/ld+json"):
         try:
             ld = json.loads(tag.string)
@@ -236,15 +352,17 @@ def _fetch_coords_from_detail(scraper, plan_id: int) -> dict | None:
         geo = loc.get("geo", {})
         lat = geo.get("latitude")
         lon = geo.get("longitude")
-        if lat is not None and lon is not None:
-            addr = loc.get("address", {})
+        address = _build_address(loc.get("address"))
+        venue_name = _clean_text(loc.get("name")) or None
+        if any((lat is not None and lon is not None, venue_name, address)):
             return {
                 "latitude": lat,
                 "longitude": lon,
-                "venue_name": loc.get("name", ""),
-                "address": addr.get("addressLocality", ""),
+                "venue_name": venue_name,
+                "address": address,
             }
-    return None
+
+    return _extract_visible_location(soup)
 
 
 def enrich_coordinates(scraper, plans: dict[int, dict]):
@@ -254,21 +372,24 @@ def enrich_coordinates(scraper, plans: dict[int, dict]):
     """
     # Group plans by venue name
     venue_plans: dict[str, list[int]] = {}
+    unknown_plans: list[int] = []
     for pid, p in plans.items():
-        vname = p["venue_name"] or f"__unknown_{pid}"
-        venue_plans.setdefault(vname, []).append(pid)
+        if p["venue_name"]:
+            venue_plans.setdefault(p["venue_name"], []).append(pid)
+        else:
+            unknown_plans.append(pid)
 
-    log.info("Phase 2: %d unique venues to resolve", len(venue_plans))
+    log.info(
+        "Phase 2: %d unique venues to resolve, %d plans without venue name",
+        len(venue_plans),
+        len(unknown_plans),
+    )
 
     coords_cache: dict[str, dict] = {}
     resolved = 0
     failed = 0
 
     for vname, pids in venue_plans.items():
-        if vname.startswith("__unknown_"):
-            failed += 1
-            continue
-
         # Check cache
         if vname in coords_cache:
             for pid in pids:
@@ -284,15 +405,29 @@ def enrich_coordinates(scraper, plans: dict[int, dict]):
                 "latitude": result["latitude"],
                 "longitude": result["longitude"],
                 "address": result["address"],
+                "venue_name": result.get("venue_name") or vname,
             }
             for pid in pids:
                 plans[pid].update(coords_cache[vname])
             resolved += len(pids)
-            log.info("  ✓ %s → (%.4f, %.4f) [%d plans]",
-                     vname[:40], result["latitude"], result["longitude"], len(pids))
+            if result["latitude"] is not None and result["longitude"] is not None:
+                log.info("  ✓ %s → (%.4f, %.4f) [%d plans]",
+                         vname[:40], result["latitude"], result["longitude"], len(pids))
+            else:
+                log.info("  ✓ %s → venue/address resolved [%d plans]", vname[:40], len(pids))
         else:
             failed += len(pids)
             log.debug("  ✗ %s (no coords)", vname[:40])
+
+    for pid in unknown_plans:
+        time.sleep(REQUEST_DELAY)
+        result = _fetch_coords_from_detail(scraper, pid)
+        if result:
+            plans[pid].update(result)
+            resolved += 1
+            log.info("  ✓ plan %s → venue/address recovered", pid)
+        else:
+            failed += 1
 
     log.info("Coordinates resolved for %d plans, %d without coords", resolved, failed)
 
