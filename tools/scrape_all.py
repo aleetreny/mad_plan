@@ -160,6 +160,20 @@ BASE_SCRAPER_JOBS = [
         "output": "outputs/eventos_madrid_secreto.json",
     },
     {
+        "name": "rockthesport",
+        "kind": "plan",
+        "import": "rockthesport",
+        "callable": "scrape_rockthesport",
+        "output": "outputs/eventos_rockthesport.json",
+    },
+    {
+        "name": "meetup",
+        "kind": "plan",
+        "import": "meetup",
+        "callable": "scrape_meetup",
+        "output": "outputs/eventos_meetup.json",
+    },
+    {
         "name": "timeout",
         "kind": "news",
         "import": "timeout",

@@ -15,8 +15,8 @@
 
 - Candidatas prioridad alta para implementar: Matadero Madrid, Teatros del Canal, Circulo de Bellas Artes, IFEMA Madrid, Casa de Mexico, Espacio Fundacion Telefonica, Museo Reina Sofia, Biblioteca Nacional, Fundacion Canal, Sapos y Princesas, Somos Madrid y Gacetin Madrid.
 - Estado de validacion actual del roadmap: Matadero Madrid, Teatros del Canal, Circulo de Bellas Artes, IFEMA Madrid, Casa de Mexico, Espacio Fundacion Telefonica, Museo Reina Sofia, Biblioteca Nacional, Fundacion Canal, Fundacion MAPFRE, Sala El Sol, Wegow, Ticketmaster Madrid y Gacetin Madrid quedan aceptadas para el pipeline; Sapos y Princesas y Somos Madrid quedan descartadas tras validacion real.
-- Candidatas de segunda ola pendientes: esMadrid Agenda, RockTheSport y Meetup Madrid.
-- Candidatas valiosas pero con mas friccion tecnica: La Casa Encendida, CaixaForum Madrid, Museo del Prado, Filmoteca Espanola y agendas heterogeneas de madrid.es / Comunidad de Madrid.
+- Candidatas de segunda ola pendientes: La Casa Encendida, CaixaForum Madrid.
+- Candidatas valiosas pero con mas friccion tecnica: Museo del Prado, Filmoteca Espanola y agendas heterogeneas de madrid.es / Comunidad de Madrid.
 - Descartes o no prioritarias por baja calidad, rotura o poca senal: somoschueca.com, madridfree.com, madriddiario.es, guiadelocio.com, verydiferente.com, Sapos y Princesas y Somos Madrid.
 - Regla de producto para nuevas fuentes: priorizar fuentes primarias de venue o institucion; usar agregadores solo como capa secundaria de discovery.
 - Regla de deduplicacion para nuevas fuentes: cada nueva integracion debe entrar en la capa comun `normalize_plan_records` y juzgarse por su merge real frente a Fever, Eventbrite, datos.madrid y Madrid Secreto antes de quedarse en el pipeline diario.
@@ -199,3 +199,44 @@
 - Validacion final de `esMadrid`: `241` planes, `241` con imagen, `241` con ubicacion y `0` con precio. Frente al stack previo (`3112` planes) aporta `234` candidatos aproximadamente exclusivos por `titulo + fecha + lugar`, con `7` solapes semanticos aproximados.
 - Decision: `esMadrid` se queda en el pipeline diario como agenda oficial secundaria. Aporta mucho discovery limpio y visualmente completo, aunque su merge comun todavia conserva un pequeno riesgo de duplicado semantico mientras el dedupe global del producto siga priorizando URL en el resto de fuentes.
 - Recomposicion manual de planes tras integrar `esMadrid`: `outputs/eventos_madrid_all.json` queda en `3352` planes validos, con `0` huecos de categoria, `0` huecos de ubicacion y la misma deuda absoluta de imagen (`1176`, aun concentrada en `datos_madrid`).
+
+### 2026-04-13 (continuacion)
+
+- Se implementaron las dos ultimas fuentes de la segunda ola: `RockTheSport` (deportes) y `Meetup` (comunidad).
+- Hallazgo tecnico relevante en RockTheSport: la web publica (`web.rockthesport.com`) es una SPA Next.js; el backend real es `publicservice.rockthesport.com` con Swagger docs y 84 endpoints REST. Todos requieren `X-API-Key` que se encontro embebida en los chunks JS del frontend: `rts_public_web_2024_a8f3d9e1c4b7`. Espana es `countryId=65` y Madrid `provinceId=61`.
+- `RockTheSport` quedo integrado en `tools/rockthesport.py`, `tools/scrape_all.py` y en `SOURCE_PRIORITY` de `tools/normalization.py` como agregador secundario de deportes (prioridad 4, misma que Ticketmaster).
+- Validacion real del output de RockTheSport: `13` planes normalizados en `outputs/eventos_rockthesport.json`, con `13` coordenadas, `0` precios (la API no expone precio en el listado/detalle publico) y categorias automaticas de deporte (Running, Trail Running, Triatlon, Ciclismo).
+- Hallazgo tecnico relevante en Meetup: la web usa Next.js con Apollo cache SSR que expone ~31 eventos en `__NEXT_DATA__`. El GraphQL endpoint real es `https://www.meetup.com/gql2` con query `recommendedEvents` (no `rankedEvents`). El tipo `Venue` usa `lon` (no `lng`). Se requiere warm-up de cookies via la pagina de busqueda antes de hacer requests al GQL.
+- `Meetup` quedo integrado en `tools/meetup.py`, `tools/scrape_all.py` y en `SOURCE_PRIORITY` de `tools/normalization.py` como agregador de comunidad (prioridad 5, misma que Madrid Secreto).
+- Ajustes de calidad aplicados en Meetup: se filtro events con `lat` lejana a Madrid (>2 grados, tipicamente eventos online globales), se infirieron categorias automaticas (Tecnologia, Networking, Idiomas, Deportes, Baile, Musica, Arte y Cultura, Bienestar, Ocio, Social) a partir de titulo y grupo, y se limpio el HTML de descripciones.
+- Validacion real del output de Meetup: `407` planes normalizados en `outputs/eventos_meetup.json`, con `363` coordenadas, `35` con precio y `0` gratuitos declarados.
+- Se creo la primera version del frontend web en `frontend/index.html`: SPA estatica con dark theme, grid de tarjetas filtrables, sidebar con filtros de categoria/fuente/precio/fecha, buscador de texto, vista de mapa Leaflet con tiles Carto oscuros, tab de noticias, paginacion incremental y boton scroll-to-top.
+- Se creo `serve.py` como servidor de desarrollo local que sirve `frontend/` y `outputs/` bajo un mismo origen para evitar problemas de CORS.
+- El frontend lee directamente `outputs/eventos_madrid_all.json` y `outputs/noticias_madrid_all.json` y renderiza todo en cliente con JS vanilla, sin dependencias de build.
+- Estado del frontend v1: funcional y visualmente atractivo en desktop y movil, con ~3400 eventos cargados y filtros interactivos. Pendiente: integrar los nuevos scrapers en el merge `all` regenerando `scrape_all.py`.
+
+### 2026-04-13 (frontend v2 y recompocision)
+
+- Se rediseño por completo `frontend/` hacia un flujo de discovery mas orientado a producto: hero editorial, presets por mood, shelves rapidos (`Para hoy`, `Este finde`, `Gratis o muy faciles`, `Con senal de grupo`), vista de tarjetas + mapa, shortlist persistente en `localStorage` y modal de detalle para cada plan.
+- La nueva UI se reorganizo en assets separados (`frontend/index.html`, `frontend/styles.css`, `frontend/app.js`, `frontend/favicon.svg`) para simplificar iteracion y validacion sin meter tooling de build.
+- La decision de producto elegida para esta iteracion fue un explorador por `moods + shortlist`, porque oculta mejor la fragmentacion real de categorias y deja preparada la futura capa de comparacion entre amigos sin imponer todavia embeddings ni matching complejo en el frontend.
+- Se anadio compatibilidad de favicon al servidor local: `serve.py` ahora responde tambien a `/favicon.ico` sirviendo `frontend/favicon.svg`, eliminando el `404` que salia en las pruebas del navegador.
+- Se detecto una inconsistencia de entorno en Windows/Python 3.13: `ZoneInfo("Europe/Madrid")` fallaba sin base IANA local. Se soluciono a nivel de dependencia anadiendo `tzdata==2026.1` a `requirements.txt` e instalando el paquete en la `.venv`.
+- Se anadio `tools/rebuild_feeds.py` para recomponer `outputs/eventos_madrid_all.json`, `outputs/noticias_madrid_all.json` y `outputs/pipeline_diario.json` a partir de los JSON de fuente ya existentes, sin necesidad de re-scrapear todo el stack.
+- Se anadio `tools/smoke_frontend.py` como smoke test minimo de runtime: levanta un servidor temporal y valida `index.html`, `app.js`, `styles.css`, `favicon.ico` y ambos feeds web.
+- Se regeneraron las fuentes afectadas por la auditoria reciente: `RockTheSport` paso de `68` a `61` planes validos tras filtrar mejor formaciones/online, y `Meetup` quedo en `401` planes aceptados tras descartar `82` nodos online o fuera de Madrid. `esMadrid` se intento refrescar tambien, pero mantuvo ejecucion larga con algunos `403` puntuales en detalle; para el merge final se reutilizo el output validado ya presente (`241` planes).
+- Recompocision final de feeds web con `tools/rebuild_feeds.py`: `outputs/eventos_madrid_all.json` queda en `3832` planes validos y `outputs/noticias_madrid_all.json` en `137` noticias validas.
+- Verificacion de cobertura tras la recompocision: el feed final ya expone `20` fuentes de planes, incluyendo `398` planes de `Meetup` y `61` de `RockTheSport`, que antes no estaban presentes en la capa `all` usada por la web.
+- Validacion automatica del frontend v2: `tools/smoke_frontend.py` devolvio `ok=true`, `3832` planes y `137` noticias. En verificacion visual adicional, la home cargo correctamente, renderizo `4` shelves editoriales, mostro `24` tarjetas iniciales, activo la shortlist y dibujo `2646` marcadores en el mapa.
+- Ajuste de copy posterior en frontend: se retiraron del hero los contadores publicos (`planes listos`, `gratis`, etc.) y los bloques que explicaban decisiones internas de producto o pasos futuros; ese contexto queda documentado en `STATUS.md` y no en la interfaz publica.
+
+### 2026-04-13 (madplan pulse ux)
+
+- Se reoriento la interfaz publica a `MadPlan | Madrid en vivo`: `frontend/app.js` se reemplazo por un controller nuevo con theming por franja (`morning`, `afternoon`, `night`), ranking por cercania temporal y estado compartible via query params (`q`, `mood`, `day`, `pulse`, `source`, `category`, `price`, `sort`, `view`).
+- Se reforzo la idea de relevancia temporal en la UI con filtros Madrid-native (`Hoy`, `Esta noche`, `Este finde`, `De mananeo`, `Al fresquito`, `Gratis total`), nuevos shelves rapidos, randomizador `Tirada de dados`, shortlist persistente y boton `Copiar vista`.
+- Se audito la calidad geografica del feed final y aparecieron `87` outliers de coordenadas (dominados por `Eventbrite` y `RockTheSport`). En vez de mutar el feed origen, el frontend ahora aplica una envolvente estricta de Madrid ciudad y solo usa puntos city-safe para tarjetas y mapa.
+- Se activaron smart cards reales para planes mergeados: `tools/normalization.py` ya conservaba `metadata.source_links`, se recompusieron los feeds con `tools/rebuild_feeds.py` y `outputs/eventos_madrid_all.json` pasa a exponer enlaces por fuente en el `100%` de los planes (`3783` con `1` acceso, `48` con `2`, `1` con `3`).
+- La capa visual se amplio en `frontend/styles.css` con acentos por fuente, badges de confianza (`Fuente oficial`, `Agenda publica`, `Varias fuentes`, `Agregador`), comparacion de accesos, portadas generadas para planes sin imagen y pulso visual distinto por manana, tarde y noche.
+- Se completo la capa mapa con `leaflet.markercluster`, clusters reales, tarjetas de pulso por barrio (`Lavapies`, `Legazpi`, `Malasana`, `La Latina`, `Salamanca`, etc.) y listado lateral sincronizado con los puntos geocodificados limpios.
+- Se alineo la validacion automatica con el rebrand: `tools/smoke_frontend.py` ya comprueba `MadPlan` y `share-view`; el smoke paso de nuevo tras la recomposicion con `3832` planes y `136` noticias.
+- Validacion final en navegador sobre `http://127.0.0.1:8000/`: el estado inicial mostro `3745` planes city-safe y `2559` puntos limpios de mapa; tambien se validaron `Gratis total`, `De mananeo`, `Tirada de dados`, la vista de mapa clusterizada y un caso real de tarjeta mergeada (`Museo de la Felicidad`) con comparacion `Madrid Secreto 14 EUR` frente a `Fever 16 EUR`.

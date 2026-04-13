@@ -64,6 +64,12 @@ TICKET_KEYWORDS = (
 IGNORED_PURCHASE_PATHS = {
     "/compras-madrid",
 }
+AMBIGUOUS_LOCATION_HINTS = (
+    "varios locales",
+    "varias salas",
+    "varios espacios",
+    "varias estaciones",
+)
 
 
 def _clean_text(value: Any) -> str:
@@ -167,22 +173,18 @@ def _extract_description(schema: dict[str, Any] | None, soup: BeautifulSoup) -> 
     return _clean_text(title.get_text(" ", strip=True) if title else "")
 
 
-def _infer_location_from_description(description: str) -> tuple[str | None, str | None]:
+def _description_has_ambiguous_location(description: str) -> bool:
     text = _clean_text(description).casefold()
     if not text:
-        return None, None
+        return False
+    return any(token in text for token in AMBIGUOUS_LOCATION_HINTS)
 
-    if "varios locales" in text:
-        return "Varios locales de Madrid", "Madrid"
-    if "varias salas" in text:
-        return "Varias salas de Madrid", "Madrid"
-    if "varios espacios" in text:
-        return "Varios espacios de Madrid", "Madrid"
-    if "varias estaciones" in text:
-        return "Varias estaciones de Madrid", "Madrid"
-    if "madrid" in text:
-        return "Madrid", "Madrid"
-    return None, None
+
+def _build_source_id(page_url: str) -> str:
+    path = urlparse(page_url).path.rstrip("/")
+    if path:
+        return path.rsplit("/", 1)[-1]
+    return page_url.rstrip("/").rsplit("/", 1)[-1]
 
 
 def _build_address(location: dict[str, Any]) -> str | None:
@@ -272,11 +274,19 @@ def _extract_record(
     ticket_url = _extract_purchase_url(soup, page_url)
     location_name = _clean_text(location.get("name")) or None
     address = _build_address(location)
+    location_ambiguous = False
     if not (location_name or address):
-        location_name, address = _infer_location_from_description(description)
+        location_ambiguous = _description_has_ambiguous_location(description)
+
+    metadata: dict[str, Any] = {}
+    schema_id = _clean_text(schema.get("@id")) or None
+    if schema_id:
+        metadata["schema_id"] = schema_id
+    if location_ambiguous:
+        metadata["ubicacion_ambigua"] = True
 
     return {
-        "id": _clean_text(schema.get("@id") or page_url),
+        "id": _build_source_id(page_url),
         "titulo": title,
         "precio": price,
         "moneda": currency,
@@ -297,6 +307,7 @@ def _extract_record(
         "descripcion": description,
         "contenido": description,
         "fuente": SOURCE_NAME,
+        "metadata": metadata,
     }
 
 

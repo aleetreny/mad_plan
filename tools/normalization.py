@@ -33,6 +33,8 @@ SOURCE_PRIORITY = {
     "eventbrite": 2,
     "wegow": 3,
     "ticketmaster": 4,
+    "rockthesport": 4,
+    "meetup": 5,
     "madrid_secreto": 5,
     "timeout": 6,
 }
@@ -44,10 +46,18 @@ GENERIC_PLAN_SOURCE_IDS = {
     "evento",
     "event",
 }
+GENERIC_MERGE_PLACE_SLUGS = {
+    "madrid",
+    "online",
+    "varias-localizaciones",
+    "varios-locales-de-madrid",
+    "varias-salas-de-madrid",
+    "varios-espacios-de-madrid",
+    "varias-estaciones-de-madrid",
+}
 
 DATE_ONLY_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 TIME_PRESENT_RE = re.compile(r"\d{2}:\d{2}")
-EXPLICIT_TIMEZONE_RE = re.compile(r"(?:Z|[+-]\d{2}:\d{2})$")
 
 
 def utc_now_iso() -> str:
@@ -201,7 +211,7 @@ def _parse_temporal(value: Any) -> dict[str, Any] | None:
             time.min,
             time(23, 59),
             time(23, 59, 59),
-        } and not EXPLICIT_TIMEZONE_RE.search(text):
+        }:
             has_time = False
 
     return {
@@ -365,11 +375,16 @@ def _collect_source_metadata(item: dict[str, Any], *, kind: str) -> dict[str, An
         "secciones",
     }
     metadata: dict[str, Any] = {}
+    existing_metadata = item.get("metadata")
+    if isinstance(existing_metadata, dict):
+        metadata = deepcopy(existing_metadata)
+
     for key in allowed_keys:
         value = item.get(key)
         if value in (None, "", []):
             continue
-        metadata[key] = value
+        if key not in metadata or metadata[key] in (None, "", []):
+            metadata[key] = value
 
     if kind == "noticia" and item.get("categoria"):
         metadata["categoria_original"] = item.get("categoria")
@@ -668,6 +683,8 @@ def _candidate_merge_url(record: dict[str, Any]) -> str | None:
         if source == "esmadrid":
             continue
         parsed = urlparse(value)
+        if parsed.scheme not in {"http", "https"} or not parsed.netloc:
+            continue
         host = parsed.netloc.lower()
         if field == "url" and (
             "madridsecreto.co" in host or "esmadrid.com" in host
@@ -677,6 +694,15 @@ def _candidate_merge_url(record: dict[str, Any]) -> str | None:
     return None
 
 
+def _merge_place_key(record: dict[str, Any]) -> str | None:
+    place = _slugify(
+        _clean_text(record.get("lugar") or record.get("direccion") or "")
+    )
+    if not place or place in GENERIC_MERGE_PLACE_SLUGS:
+        return None
+    return place
+
+
 def plan_merge_key(record: dict[str, Any]) -> str:
     candidate_url = _candidate_merge_url(record)
     if candidate_url:
@@ -684,8 +710,15 @@ def plan_merge_key(record: dict[str, Any]) -> str:
 
     title = _slugify(_clean_text(record.get("titulo")))
     when = record.get("fecha_inicio") or record.get("fecha_fin") or record.get("sort_datetime") or "sin-fecha"
-    place = _slugify(_clean_text(record.get("lugar") or record.get("direccion") or "madrid"))
-    return f"{title}::{when}::{place}"
+    place = _merge_place_key(record)
+    if place:
+        return f"{title}::{when}::{place}"
+
+    source = _slugify(_clean_text(record.get("fuente"))) or "fuente"
+    source_id = _slugify(
+        _clean_text(record.get("fuente_id") or record.get("id"))
+    ) or "sin-lugar"
+    return f"{title}::{when}::{source}:{source_id}"
 
 
 def _related_ids(record: dict[str, Any]) -> list[str]:
@@ -704,11 +737,95 @@ def _merge_metadata(current: dict[str, Any], incoming: dict[str, Any]) -> dict[s
     for key, value in incoming.items():
         if value in (None, "", []):
             continue
+        if key == "source_links":
+            merged[key] = _merge_source_links(
+                merged.get(key) if isinstance(merged.get(key), list) else [],
+                value if isinstance(value, list) else [],
+            )
+            continue
         if key not in merged or merged[key] in (None, "", []):
             merged[key] = value
             continue
         if isinstance(value, list) and isinstance(merged[key], list):
             merged[key] = _dedupe_strings(list(merged[key]) + list(value))
+    return merged
+
+
+def _source_link_entry(record: dict[str, Any]) -> dict[str, Any] | None:
+    source = _clean_text(record.get("fuente"))
+    if not source:
+        return None
+
+    metadata = record.get("metadata") if isinstance(record.get("metadata"), dict) else {}
+    url = (
+        _clean_text(record.get("url_compra"))
+        or _clean_text(record.get("url"))
+        or _clean_text(record.get("url_articulo"))
+        or _clean_text(metadata.get("url_fuente_editorial"))
+    )
+    if not url:
+        return None
+
+    if _clean_text(record.get("url_compra")):
+        kind = "compra"
+    elif _clean_text(record.get("url")):
+        kind = "detalle"
+    else:
+        kind = "editorial"
+
+    price = _as_float(record.get("precio"))
+    is_free = price == 0.0 if price is not None else record.get("es_gratis")
+
+    return {
+        "fuente": source,
+        "url": url,
+        "kind": kind,
+        "precio": price,
+        "moneda": _clean_text(record.get("moneda")) or None,
+        "es_gratis": is_free,
+    }
+
+
+def _merge_source_links(
+    current: list[dict[str, Any]], incoming: list[dict[str, Any]]
+) -> list[dict[str, Any]]:
+    merged: list[dict[str, Any]] = []
+    index_by_key: dict[str, int] = {}
+
+    for entry in list(current) + list(incoming):
+        if not isinstance(entry, dict):
+            continue
+        source = _clean_text(entry.get("fuente"))
+        url = _clean_text(entry.get("url"))
+        kind = _clean_text(entry.get("kind")) or "detalle"
+        if not source or not url:
+            continue
+        key = f"{source.casefold()}::{url.rstrip('/').lower()}"
+        normalized_entry = {
+            "fuente": source,
+            "url": url,
+            "kind": kind,
+            "precio": _as_float(entry.get("precio")),
+            "moneda": _clean_text(entry.get("moneda")) or None,
+            "es_gratis": entry.get("es_gratis"),
+        }
+
+        existing_index = index_by_key.get(key)
+        if existing_index is None:
+            index_by_key[key] = len(merged)
+            merged.append(normalized_entry)
+            continue
+
+        existing = merged[existing_index]
+        if existing.get("kind") != "compra" and normalized_entry["kind"] == "compra":
+            existing["kind"] = "compra"
+        if existing.get("precio") is None and normalized_entry.get("precio") is not None:
+            existing["precio"] = normalized_entry["precio"]
+        if not existing.get("moneda") and normalized_entry.get("moneda"):
+            existing["moneda"] = normalized_entry["moneda"]
+        if existing.get("es_gratis") is None and normalized_entry.get("es_gratis") is not None:
+            existing["es_gratis"] = normalized_entry["es_gratis"]
+
     return merged
 
 
@@ -756,13 +873,17 @@ def merge_plan_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
             base = dict(record)
             base["fuentes_relacionadas"] = _dedupe_strings([record.get("fuente")])
             base["ids_relacionados"] = _related_ids(record)
+            base["metadata"] = _merge_metadata(
+                base.get("metadata") or {},
+                {"source_links": _merge_source_links([], [_source_link_entry(record)] if _source_link_entry(record) else [])},
+            )
             merged_by_key[key] = base
             continue
 
         primary, secondary = _prefer_primary(current, record)
         merged = dict(primary)
 
-        for list_field in ("categorias", "etiquetas", "fechas_disponibles", "fuentes_relacionadas"):
+        for list_field in ("categorias", "etiquetas", "fechas_disponibles"):
             merged[list_field] = _dedupe_strings(
                 list(primary.get(list_field) or []) + list(secondary.get(list_field) or [])
             )
@@ -781,10 +902,20 @@ def merge_plan_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
             _related_ids(primary) + _related_ids(secondary)
         )
         merged["fuentes_relacionadas"] = _dedupe_strings(
-            list(merged.get("fuentes_relacionadas") or []) + [secondary.get("fuente")]
+            list(primary.get("fuentes_relacionadas") or [primary.get("fuente")])
+            + list(secondary.get("fuentes_relacionadas") or [secondary.get("fuente")])
         )
         merged["metadata"] = _merge_metadata(
             primary.get("metadata") or {}, secondary.get("metadata") or {}
+        )
+        merged["metadata"] = _merge_metadata(
+            merged.get("metadata") or {},
+            {
+                "source_links": _merge_source_links(
+                    (primary.get("metadata") or {}).get("source_links") or [],
+                    ([link] if (link := _source_link_entry(secondary)) else []),
+                )
+            },
         )
 
         for field in (
