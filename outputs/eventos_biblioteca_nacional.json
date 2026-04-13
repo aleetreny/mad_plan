@@ -1,0 +1,410 @@
+[
+  {
+    "id": "plan:biblioteca_nacional:construimos-imprenta-2-edicion",
+    "titulo": "Construimos una imprenta (2.ª edición)",
+    "descripcion": "El objetivo de esta actividad es profundizar en los conocimientos en torno al origen histórico de la imprenta y la evolución de las diferentes tipografías a lo largo de la historia. A través de una metodología teórico-práctica, se pretende fomentar el aprendizaje activo en pequeños grupos, contando con los recursos que ofrecen las colecciones de la BNE. Investigar y descubrir tipografías diferentes que servirán de inspiración para crear diseños propios. La actividad forma parte de las propuestas recogidas en el portal BNEscolar , que tiene como objetivo que se conozca y utilice el patrimonio digital de la BNE en la enseñanza y aprendizaje escolar. Para la realización de la actividad se utilizarán gubias, tijeras y pintura escolar.",
+    "contenido": "El objetivo de esta actividad es profundizar en los conocimientos en torno al origen histórico de la imprenta y la evolución de las diferentes tipografías a lo largo de la historia. A través de una metodología teórico-práctica, se pretende fomentar el aprendizaje activo en pequeños grupos, contando con los recursos que ofrecen las colecciones de la BNE. Investigar y descubrir tipografías diferentes que servirán de inspiración para crear diseños propios. La actividad forma parte de las propuestas recogidas en el portal BNEscolar , que tiene como objetivo que se conozca y utilice el patrimonio digital de la BNE en la enseñanza y aprendizaje escolar. Para la realización de la actividad se utilizarán gubias, tijeras y pintura escolar. Actividad recomendada para público escolar de Educación Primaria, entre 10 y 12 años y 1º de la ESO. No es posible acceder con objetos como reglas, tijeras, compases, etc… Punto de encuentro: vestíbulo planta 0. 15 minutos antes de comenzar la actividad. Martes, desde el 20 de enero al 26 de mayo de 2026, a las 10 h",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala de Talleres",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2026-01-20",
+    "fecha_fin": "2026-05-26",
+    "fechas_disponibles": [
+      "2026-04-14T10:00:00+02:00",
+      "2026-04-21T10:00:00+02:00",
+      "2026-04-28T10:00:00+02:00",
+      "2026-05-05T10:00:00+02:00",
+      "2026-05-12T10:00:00+02:00",
+      "2026-05-19T10:00:00+02:00",
+      "2026-05-26T10:00:00+02:00"
+    ],
+    "categorias": [
+      "Taller",
+      "Visita guiada"
+    ],
+    "etiquetas": [
+      "Construimos una imprenta",
+      "90 minutos aprox."
+    ],
+    "url": "https://www.bne.es/es/agenda/construimos-imprenta-2-edicion",
+    "url_compra": "https://www.bne.es/EVE_web/irListadoSesiones.do?oqTewPLGTIIggePwAldWbo1u0Jplsm3i",
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/actividad_educativa_imprenta.jpg?h=9f42badc&itok=wiH6qc-l",
+    "metadata": {
+      "sesiones_total_fuente": 19,
+      "sesiones_publicadas": 7
+    },
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "construimos-imprenta-2-edicion",
+    "tipo": "plan",
+    "slug": "construimos-una-imprenta-2-a-edicion",
+    "subtitulo": null,
+    "resumen": "El objetivo de esta actividad es profundizar en los conocimientos en torno al origen histórico de la imprenta y la evolución de las diferentes tipografías a lo largo de la historia. A través de una metodología teórico-práctica, se pretende fomentar el aprendizaje activo en pequeños grupos, contando con los recursos que",
+    "categoria_principal": "Taller",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": "2026-01-20T10:00:00+01:00",
+    "datetime_fin": "2026-05-26T10:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-14",
+        "datetime": "2026-04-14T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-21",
+        "datetime": "2026-04-21T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-28",
+        "datetime": "2026-04-28T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-05",
+        "datetime": "2026-05-05T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-12",
+        "datetime": "2026-05-12T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-19",
+        "datetime": "2026-05-19T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-26",
+        "datetime": "2026-05-26T10:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-14",
+    "proximo_datetime": "2026-04-14T10:00:00+02:00",
+    "sort_datetime": "2026-04-14T10:00:00+02:00",
+    "vigente_hasta": "2026-05-26T10:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:biblioteca_nacional:maria-teresa-leon-rafael-alberti",
+    "titulo": "María Teresa León y Rafael Alberti",
+    "descripcion": "Cuando, en 1977, María Teresa León y Rafael Alberti regresaron a España tras casi cuatro décadas de exilio, la prensa, la opinión pública y las instituciones españolas celebraron a Rafael, pero dejaron en la sombra a María Teresa. Sin embargo, la que ahora aparecía como simple compañera o musa del poeta había querido, ella también, y en parte logrado, ser una gran escritora. ¿Cómo fue que sus carreras públicas divergieron tanto? Para hallar una respuesta, es muy útil analizar las autobiografías de ambos. Memorias de la melancolía , de León, y L a arboleda perdida , de Alberti, nos permiten observar las sutiles, pero abismales diferencias entre cómo trata la sociedad, cómo se moldea, una futura creadora y un futuro creador, en ámbitos como los modelos, la relación con el espacio público, la actitud frente a la sexualidad o la relación con maestras/os y pares. Laura Freixas estudió Derecho, pero se ha dedicado siempre a la literatura. Es autora de novelas, relatos, ensayos, y varios volúmenes de diario. Destaca también como estudiosa y promotora de la literatura escrita por mujeres. Fue una de las fundadoras, y la primera presidenta (2009-2017) de la asociación Clásicas y Modernas. Sus libros más recientes son A mí no me iba a pasar (2019), autobiografía en forma de novela, ¿Qué hacemos con Lolita? Argumentos y batallas en torno a las mujeres y la cultura (2022) y A todos nos falta algo. Diario 2000-2002 (2024).",
+    "contenido": "Cuando, en 1977, María Teresa León y Rafael Alberti regresaron a España tras casi cuatro décadas de exilio, la prensa, la opinión pública y las instituciones españolas celebraron a Rafael, pero dejaron en la sombra a María Teresa. Sin embargo, la que ahora aparecía como simple compañera o musa del poeta había querido, ella también, y en parte logrado, ser una gran escritora. ¿Cómo fue que sus carreras públicas divergieron tanto? Para hallar una respuesta, es muy útil analizar las autobiografías de ambos. Memorias de la melancolía , de León, y L a arboleda perdida , de Alberti, nos permiten observar las sutiles, pero abismales diferencias entre cómo trata la sociedad, cómo se moldea, una futura creadora y un futuro creador, en ámbitos como los modelos, la relación con el espacio público, la actitud frente a la sexualidad o la relación con maestras/os y pares. Laura Freixas estudió Derecho, pero se ha dedicado siempre a la literatura. Es autora de novelas, relatos, ensayos, y varios volúmenes de diario. Destaca también como estudiosa y promotora de la literatura escrita por mujeres. Fue una de las fundadoras, y la primera presidenta (2009-2017) de la asociación Clásicas y Modernas. Sus libros más recientes son A mí no me iba a pasar (2019), autobiografía en forma de novela, ¿Qué hacemos con Lolita? Argumentos y batallas en torno a las mujeres y la cultura (2022) y A todos nos falta algo. Diario 2000-2002 (2024). Entrada libre hasta completar aforo",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala de Conferencias del Museo Arqueológico Nacional",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2026-04-14",
+    "fecha_fin": "2026-04-14",
+    "fechas_disponibles": [
+      "2026-04-14T18:00:00+02:00"
+    ],
+    "categorias": [
+      "Conferencia"
+    ],
+    "etiquetas": [
+      "Las parejas del Lyceum Club"
+    ],
+    "url": "https://www.bne.es/es/agenda/maria-teresa-leon-rafael-alberti",
+    "url_compra": "https://youtube.com/live/ybtSYFjD9iA",
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/1366x420-acto-teresa-leon-alberti-parejas-del-lyceum.jpg?itok=-nDFQY_m",
+    "metadata": {},
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "maria-teresa-leon-rafael-alberti",
+    "tipo": "plan",
+    "slug": "maria-teresa-leon-y-rafael-alberti",
+    "subtitulo": null,
+    "resumen": "Cuando, en 1977, María Teresa León y Rafael Alberti regresaron a España tras casi cuatro décadas de exilio, la prensa, la opinión pública y las instituciones españolas celebraron a Rafael, pero dejaron en la sombra a María Teresa. Sin embargo, la que ahora aparecía como simple compañera o musa del poeta había querido, ",
+    "categoria_principal": "Conferencia",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-14T18:00:00+02:00",
+    "datetime_fin": "2026-04-14T19:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-14",
+        "datetime": "2026-04-14T18:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-14",
+    "proximo_datetime": "2026-04-14T18:00:00+02:00",
+    "sort_datetime": "2026-04-14T18:00:00+02:00",
+    "vigente_hasta": "2026-04-14T19:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:biblioteca_nacional:memoria-escrita-novohispana-manuscritos-bne",
+    "titulo": "La memoria escrita novohispana en los manuscritos de la BNE",
+    "descripcion": "Inauguramos nuestra colaboración con el Instituto Cultural de México con una primera sesión dedicada a la memoria escrita novohispana. Acudir a las fuentes es necesario y reconfortante. Las circunstancias de cada documento informan al investigador sobre la validez del contenido y las posibilidades de su uso para la reconstrucción del pasado. La Biblioteca Nacional de España conserva tres importantes manuscritos de origen novohispano de enorme valor histórico y cultural: el Códice Osuna, el Códice Durán y el Catecismo de Gante. Gracias a los textos y a las imágenes que los acompañan, estos documentos nos acercan al contexto social en que se produjeron, aportando el testimonio más fiel de las tradiciones mesoamericanas. Cada documento aporta información importante sobre diversos aspectos del pasado mexicano, ya sea la historia prehispánica, la evangelización o el trabajo de los indígenas en la Nueva España. Conocer a los autores, sus motivos y destinatarios nos ayuda a conocer cada obra y el mundo que permitió concebirlas y realizarlas. Con esta conferencia y el coloquio posterior el Instituto Mexicano de Cultura y la Biblioteca Nacional de España reafirman su compromiso con la difusión cultural y la cooperación internacional, poniendo en valor el patrimonio documental compartido entre España y México. José Luis de Rojas, profesor titular de la Universidad Complutense de Madrid. Experto en Historia de América. María José Rucio, jefa de servicio de Manuscritos y Archivos Personales de la BNE.",
+    "contenido": "Inauguramos nuestra colaboración con el Instituto Cultural de México con una primera sesión dedicada a la memoria escrita novohispana. Acudir a las fuentes es necesario y reconfortante. Las circunstancias de cada documento informan al investigador sobre la validez del contenido y las posibilidades de su uso para la reconstrucción del pasado. La Biblioteca Nacional de España conserva tres importantes manuscritos de origen novohispano de enorme valor histórico y cultural: el Códice Osuna, el Códice Durán y el Catecismo de Gante. Gracias a los textos y a las imágenes que los acompañan, estos documentos nos acercan al contexto social en que se produjeron, aportando el testimonio más fiel de las tradiciones mesoamericanas. Cada documento aporta información importante sobre diversos aspectos del pasado mexicano, ya sea la historia prehispánica, la evangelización o el trabajo de los indígenas en la Nueva España. Conocer a los autores, sus motivos y destinatarios nos ayuda a conocer cada obra y el mundo que permitió concebirlas y realizarlas. Con esta conferencia y el coloquio posterior el Instituto Mexicano de Cultura y la Biblioteca Nacional de España reafirman su compromiso con la difusión cultural y la cooperación internacional, poniendo en valor el patrimonio documental compartido entre España y México. José Luis de Rojas, profesor titular de la Universidad Complutense de Madrid. Experto en Historia de América. María José Rucio, jefa de servicio de Manuscritos y Archivos Personales de la BNE. Entrada libre hasta completar aforo.",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Salón de Actos del Instituto Cultural de México",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2026-04-15",
+    "fecha_fin": "2026-04-15",
+    "fechas_disponibles": [
+      "2026-04-15T18:00:00+02:00"
+    ],
+    "categorias": [
+      "Coloquio",
+      "Conferencia"
+    ],
+    "etiquetas": [
+      "México en la BNE"
+    ],
+    "url": "https://www.bne.es/es/agenda/memoria-escrita-novohispana-manuscritos-bne",
+    "url_compra": null,
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/bne-icme.jpg?h=c7afda12&itok=4uFGG4vj",
+    "metadata": {},
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "memoria-escrita-novohispana-manuscritos-bne",
+    "tipo": "plan",
+    "slug": "la-memoria-escrita-novohispana-en-los-manuscritos-de-la-bne",
+    "subtitulo": null,
+    "resumen": "Inauguramos nuestra colaboración con el Instituto Cultural de México con una primera sesión dedicada a la memoria escrita novohispana. Acudir a las fuentes es necesario y reconfortante. Las circunstancias de cada documento informan al investigador sobre la validez del contenido y las posibilidades de su uso para la rec",
+    "categoria_principal": "Coloquio",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-15T18:00:00+02:00",
+    "datetime_fin": "2026-04-15T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-15",
+        "datetime": "2026-04-15T18:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-15",
+    "proximo_datetime": "2026-04-15T18:00:00+02:00",
+    "sort_datetime": "2026-04-15T18:00:00+02:00",
+    "vigente_hasta": "2026-04-15T20:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:biblioteca_nacional:carmen-martin-gaite-paradigma-mujer-letras",
+    "titulo": "Carmen Martín Gaite. Un paradigma de mujer de letras",
+    "descripcion": "Esta exposición, con motivo del centenario del nacimiento de Carmen Martín Gaite (Salamanca, 1925 – Madrid, 2000), muestra los hitos de su trayectoria vital e intelectual y su legado cultural a través de la selección de fotografías, retratos, manuscritos y mecanoscritos de sus principales títulos y cuadernos, cartas, collages, libros de su biblioteca personal, materiales audiovisuales, objetos personales, y la proyección internacional de la escritora por medio de las traducciones de su obra a lenguas comunitarias y extracomunitarias. Las distintas áreas de la muestra recorrerán sus antecedentes familiares, su infancia y juventud salmantinas (Guerra Civil, Instituto Femenino de Segunda Enseñanza, primeros escritos y lecturas, Universidad de Salamanca), su llegada a Madrid en 1948 y la aventura de Revista Española (núcleo del grupo de jóvenes prosistas madrileños de los años 50), su matrimonio con Rafael Sánchez Ferlosio, el Premio Nadal de 1957 por Entre visillos , la llamada del ensayo tras la publicación de Ritmo lento , la elección de su lugar en el mundo al final de la década de 1970: habitar la soledad con todas sus fructíferas consecuencias, la significación de Estados Unidos en su vida y obra, la narración del duelo tras la muerte de su hija Marta, y los reconocimientos públicos en el último decenio de su vida o lo que ella llamaba «la edad de merecer». Esta trayectoria pondrá de manifiesto la heterogeneidad de sus intereses literarios y cómo se desplegaron en distintas direcciones: desde los géneros consabidos (poesía, cuento, novela corta, novela, ensayo y teatro) a ese híbrido que su hija bautizó como cuaderno de todo , desde la investigación histórica a la crítica literaria, desde el artículo de opinión al collage , desde las adaptaciones teatrales de los clásicos y los guiones para televisión a la traducción literaria de seis lenguas (inglés, francés, italiano, portugués, gallego y rumano). Con una mirada presidida por la curiosidad y con una vocación de testigo del devenir de la España en la que le tocó vivir, su trayectoria intelectual constituye un paradigma de lo que se podría denominar «mujer de letras». Es difícil encontrar otro ejemplo de escritora con mayor variedad de intereses en la cultura española del siglo pasado. Igualmente, esta exposición se propone abordar el papel que Martín Gaite desempeñó de copartícipe, testigo y legataria tanto del perfil humano como de la trayectoria creadora de su grupo de amigos de los años 1950, cuya memoria quiso transferir a los más jóvenes, demostrando a su vez una fuerte sensibilización con los conflictos intergeneracionales. Martín Gaite ocupó un lugar central entre los presupuestos vitales y literarios de la llamada generación del medio siglo y su obra llevó a cabo un recorrido de autoafirmación de su propia poética, comunicativa y afectiva, frente a los grandes iconos masculinos de su época. Hacer literatura presuponía para ella la presencia del otro, siempre había un destinatario. Entendió que la realidad artística es una representación compartida y que la literatura era todo lo contrario al discurso de los locos o de los vanidosos. Quizá sea la autora del medio siglo más atenta y preocupada por conocer a qué tipo de público se dirigía y cómo hacerlo. Por ello, esta muestra pondrá de relieve que celebramos el centenario de una escritora aún viva culturalmente. Comisario José Teruel",
+    "contenido": "Esta exposición, con motivo del centenario del nacimiento de Carmen Martín Gaite (Salamanca, 1925 – Madrid, 2000), muestra los hitos de su trayectoria vital e intelectual y su legado cultural a través de la selección de fotografías, retratos, manuscritos y mecanoscritos de sus principales títulos y cuadernos, cartas, collages, libros de su biblioteca personal, materiales audiovisuales, objetos personales, y la proyección internacional de la escritora por medio de las traducciones de su obra a lenguas comunitarias y extracomunitarias. Las distintas áreas de la muestra recorrerán sus antecedentes familiares, su infancia y juventud salmantinas (Guerra Civil, Instituto Femenino de Segunda Enseñanza, primeros escritos y lecturas, Universidad de Salamanca), su llegada a Madrid en 1948 y la aventura de Revista Española (núcleo del grupo de jóvenes prosistas madrileños de los años 50), su matrimonio con Rafael Sánchez Ferlosio, el Premio Nadal de 1957 por Entre visillos , la llamada del ensayo tras la publicación de Ritmo lento , la elección de su lugar en el mundo al final de la década de 1970: habitar la soledad con todas sus fructíferas consecuencias, la significación de Estados Unidos en su vida y obra, la narración del duelo tras la muerte de su hija Marta, y los reconocimientos públicos en el último decenio de su vida o lo que ella llamaba «la edad de merecer». Esta trayectoria pondrá de manifiesto la heterogeneidad de sus intereses literarios y cómo se desplegaron en distintas direcciones: desde los géneros consabidos (poesía, cuento, novela corta, novela, ensayo y teatro) a ese híbrido que su hija bautizó como cuaderno de todo , desde la investigación histórica a la crítica literaria, desde el artículo de opinión al collage , desde las adaptaciones teatrales de los clásicos y los guiones para televisión a la traducción literaria de seis lenguas (inglés, francés, italiano, portugués, gallego y rumano). Con una mirada presidida por la curiosidad y con una vocación de testigo del devenir de la España en la que le tocó vivir, su trayectoria intelectual constituye un paradigma de lo que se podría denominar «mujer de letras». Es difícil encontrar otro ejemplo de escritora con mayor variedad de intereses en la cultura española del siglo pasado. Igualmente, esta exposición se propone abordar el papel que Martín Gaite desempeñó de copartícipe, testigo y legataria tanto del perfil humano como de la trayectoria creadora de su grupo de amigos de los años 1950, cuya memoria quiso transferir a los más jóvenes, demostrando a su vez una fuerte sensibilización con los conflictos intergeneracionales. Martín Gaite ocupó un lugar central entre los presupuestos vitales y literarios de la llamada generación del medio siglo y su obra llevó a cabo un recorrido de autoafirmación de su propia poética, comunicativa y afectiva, frente a los grandes iconos masculinos de su época. Hacer literatura presuponía para ella la presencia del otro, siempre había un destinatario. Entendió que la realidad artística es una representación compartida y que la literatura era todo lo contrario al discurso de los locos o de los vanidosos. Quizá sea la autora del medio siglo más atenta y preocupada por conocer a qué tipo de público se dirigía y cómo hacerlo. Por ello, esta muestra pondrá de relieve que celebramos el centenario de una escritora aún viva culturalmente. Comisario José Teruel Entrada gratuita. Aforo limitado. Acceso: planta 0 Sala Recoletos Horario De lunes a sábado, de 10:00 a 20:00 h. Domingos y festivos, de 10:00 a 14:00 h. Último pase media hora antes del cierre Horarios especiales y cierre de exposiciones Horarios especiales Calendario de horarios especiales y días de cierre",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala Recoletos",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2025-12-18",
+    "fecha_fin": "2026-05-17",
+    "fechas_disponibles": [
+      "2025-12-18T10:00:00+01:00",
+      "2026-05-17T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Exposición"
+    ],
+    "etiquetas": [],
+    "url": "https://www.bne.es/es/agenda/carmen-martin-gaite-paradigma-mujer-letras",
+    "url_compra": null,
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/grafica-expo-cmg_1366x420.jpg?itok=ifYK0JUq",
+    "metadata": {},
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "carmen-martin-gaite-paradigma-mujer-letras",
+    "tipo": "plan",
+    "slug": "carmen-martin-gaite-un-paradigma-de-mujer-de-letras",
+    "subtitulo": null,
+    "resumen": "Esta exposición, con motivo del centenario del nacimiento de Carmen Martín Gaite (Salamanca, 1925 – Madrid, 2000), muestra los hitos de su trayectoria vital e intelectual y su legado cultural a través de la selección de fotografías, retratos, manuscritos y mecanoscritos de sus principales títulos y cuadernos, cartas, c",
+    "categoria_principal": "Exposición",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": "2025-12-18T10:00:00+01:00",
+    "datetime_fin": "2026-05-17T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2025-12-18",
+        "datetime": "2025-12-18T10:00:00+01:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-17",
+        "datetime": "2026-05-17T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-17",
+    "proximo_datetime": "2026-05-17T20:00:00+02:00",
+    "sort_datetime": "2026-05-17T20:00:00+02:00",
+    "vigente_hasta": "2026-05-17T20:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:biblioteca_nacional:ignacio-aldecoa-oficio-escribir",
+    "titulo": "Ignacio Aldecoa. El oficio de escribir",
+    "descripcion": "El 24 de julio de 2025 se han cumplido los cien años del nacimiento de Ignacio Aldecoa, uno de los más destacados escritores de la llamada «generación del medio siglo» o «generación de los 50», y sin duda uno de los grandes maestros de la novela y del cuento moderno en lengua española. Con el fin de celebrar su centenario, la exposición «Ignacio Aldecoa. El oficio de escribir» tiene como objetivo acercar su figura y su obra al gran público, y para ello propone un recorrido por sus antecedentes familiares, sus años de formación, su etapa universitaria en Salamanca y Madrid, sus primeros pasos en el mundo de las letras y su consolidación definitiva en el campo literario durante las décadas de los años 50 y 60. Sin olvidar, por supuesto, su vinculación con el mundo del cine, su pasión por los viajes y la aventura y la búsqueda incesante de un paraíso personal que encontró en gran medida en las islas Canarias y en Ibiza. Con ello, los visitantes podrán hacerse una idea cabal de su importante producción cuentística y de una brillante labor como novelista que, lamentablemente, quedó truncada por su inesperado fallecimiento en 1969, cuando contaba apenas con 44 años. Además de fotografías e imágenes de diferentes momentos de la vida de Aldecoa, el visitante podrá conocer las primeras ediciones de sus textos, la publicación original de algunos de sus cuentos en las revistas de época en las que los dio a conocer, las reediciones y estudios de su obra y alguno de los mecanoscritos que se han conservado, así como una pequeña selección de objetos personales que le acompañaron a lo largo de una fructífera carrera dedicada en cuerpo y alma al oficio de escribir. De esta forma se rinde homenaje a un autor imprescindible cuya obra sigue interpelando al lector de nuestro tiempo, porque, más allá de lo que tiene de testimonio de época, es literatura exigente, rigurosa, honesta y consciente que alcanza a tocar la sensibilidad de cualquiera que se interese por la lectura, independientemente de su edad o su formación. La Biblioteca Nacional de España contribuye así a reivindicar una figura fundamental de nuestra historia literaria más reciente y abre un espacio para que quienes ya conozcan la obra de Ignacio Aldecoa puedan reencontrarse con ella y con el autor, y para que quienes todavía no lo conocen, o no lo han leído, puedan descubrir algunas de las muchas razones que explican su vigencia. Comisario José Ramón González",
+    "contenido": "El 24 de julio de 2025 se han cumplido los cien años del nacimiento de Ignacio Aldecoa, uno de los más destacados escritores de la llamada «generación del medio siglo» o «generación de los 50», y sin duda uno de los grandes maestros de la novela y del cuento moderno en lengua española. Con el fin de celebrar su centenario, la exposición «Ignacio Aldecoa. El oficio de escribir» tiene como objetivo acercar su figura y su obra al gran público, y para ello propone un recorrido por sus antecedentes familiares, sus años de formación, su etapa universitaria en Salamanca y Madrid, sus primeros pasos en el mundo de las letras y su consolidación definitiva en el campo literario durante las décadas de los años 50 y 60. Sin olvidar, por supuesto, su vinculación con el mundo del cine, su pasión por los viajes y la aventura y la búsqueda incesante de un paraíso personal que encontró en gran medida en las islas Canarias y en Ibiza. Con ello, los visitantes podrán hacerse una idea cabal de su importante producción cuentística y de una brillante labor como novelista que, lamentablemente, quedó truncada por su inesperado fallecimiento en 1969, cuando contaba apenas con 44 años. Además de fotografías e imágenes de diferentes momentos de la vida de Aldecoa, el visitante podrá conocer las primeras ediciones de sus textos, la publicación original de algunos de sus cuentos en las revistas de época en las que los dio a conocer, las reediciones y estudios de su obra y alguno de los mecanoscritos que se han conservado, así como una pequeña selección de objetos personales que le acompañaron a lo largo de una fructífera carrera dedicada en cuerpo y alma al oficio de escribir. De esta forma se rinde homenaje a un autor imprescindible cuya obra sigue interpelando al lector de nuestro tiempo, porque, más allá de lo que tiene de testimonio de época, es literatura exigente, rigurosa, honesta y consciente que alcanza a tocar la sensibilidad de cualquiera que se interese por la lectura, independientemente de su edad o su formación. La Biblioteca Nacional de España contribuye así a reivindicar una figura fundamental de nuestra historia literaria más reciente y abre un espacio para que quienes ya conozcan la obra de Ignacio Aldecoa puedan reencontrarse con ella y con el autor, y para que quienes todavía no lo conocen, o no lo han leído, puedan descubrir algunas de las muchas razones que explican su vigencia. Comisario José Ramón González Entrada gratuita Aforo limitado Acceso: planta 0 Sala Jorge Juan Horario De lunes a sábado, de 10:00 a 20:00 h. Domingos y festivos, de 10:00 a 14:00 h. Último pase media hora antes del cierre Horarios especiales y cierre de exposiciones Horarios especiales Calendario de horarios especiales y días de cierre",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala Jorge Juan",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2025-12-18",
+    "fecha_fin": "2026-05-17",
+    "fechas_disponibles": [
+      "2025-12-18T10:00:00+01:00",
+      "2026-05-17T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Exposición"
+    ],
+    "etiquetas": [],
+    "url": "https://www.bne.es/es/agenda/ignacio-aldecoa-oficio-escribir",
+    "url_compra": null,
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/grafica-expo-ignacio-aldecoa_1366x420.jpg?itok=mbiX7wOM",
+    "metadata": {},
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "ignacio-aldecoa-oficio-escribir",
+    "tipo": "plan",
+    "slug": "ignacio-aldecoa-el-oficio-de-escribir",
+    "subtitulo": null,
+    "resumen": "El 24 de julio de 2025 se han cumplido los cien años del nacimiento de Ignacio Aldecoa, uno de los más destacados escritores de la llamada «generación del medio siglo» o «generación de los 50», y sin duda uno de los grandes maestros de la novela y del cuento moderno en lengua española. Con el fin de celebrar su centena",
+    "categoria_principal": "Exposición",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": "2025-12-18T10:00:00+01:00",
+    "datetime_fin": "2026-05-17T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2025-12-18",
+        "datetime": "2025-12-18T10:00:00+01:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-17",
+        "datetime": "2026-05-17T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-17",
+    "proximo_datetime": "2026-05-17T20:00:00+02:00",
+    "sort_datetime": "2026-05-17T20:00:00+02:00",
+    "vigente_hasta": "2026-05-17T20:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:biblioteca_nacional:caminos-mapa-espiritualidad-arte-manuscrito-armenio",
+    "titulo": "Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio",
+    "descripcion": "La Biblioteca Nacional de España, junto con el Ministerio de Educación, Ciencia, Cultura y Deporte de la República de Armenia, organiza la exposición Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio , donde se mostrarán algunos de los manuscritos armenios más importantes conservados en el Instituto Matenadaran Mesrop Mashtots de Manuscritos Antiguos. A través de las obras expuestas y los textos que las acompañan, el visitante podrá descubrir diversos aspectos de la cultura armenia, incluyendo su historia, sus creencias, los asentamientos de la diáspora y la creación e iluminación de los códices manuscritos en sus scriptoria. La mayor parte de las obras expuestas salen de Armenia por primera vez, por lo que esta exposición será una ocasión excepcional para admirar la belleza de estas obras, sus miniaturas y encuadernaciones. Los manuscritos armenios son reconocidos internacionalmente por sus pinturas en miniatura, una característica central de la cultura manuscrita armenia, que evolucionó a través de diversas escuelas regionales, cada una de ellas marcada por rasgos estilísticos y tradiciones iconográficas distintivas. La importancia de esta diversidad refleja la vasta geografía del patrimonio escrito armenio: estos manuscritos se produjeron en múltiples centros de aprendizaje y actividad artística dentro de la Armenia histórica y más allá, y hoy en día se conservan en bibliotecas y museos de todo el mundo, lo que demuestra tanto la amplitud geográfica e intelectual de la cultura armenia como su perdurable influencia global. La exposición Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio les invita a descubrir este patrimonio único, así como la cultura y riqueza del pueblo Armenio. El Instituto Matenadaran Mesrop Mashtots de Manuscritos Antiguos, situado en Ereván (Armenia), es la mayor colección de manuscritos armenios del mundo y uno de los centros de manuscritos más importantes a nivel internacional. Con cerca de 23 000 manuscritos en armenio y en otros idiomas, así como extensas colecciones de archivos e impresos, el Matenadaran funciona simultáneamente como repositorio, instituto de investigación, biblioteca, centro de restauración y museo. La colección de manuscritos armenios refleja casi todos los campos de la vida intelectual medieval y moderna, incluyendo la teología, la historia, la filosofía, el derecho, la medicina, la geografía, las matemáticas, la astronomía, la música y las ciencias naturales. Una parte importante de este patrimonio consiste en literatura traducida, que comenzó inmediatamente después de la creación del alfabeto armenio en el siglo V. Gracias a las traducciones armenias conservadas en el Matenadaran, varias obras de autores clásicos y de la Antigüedad tardía, como Eusebio de Cesarea, Filón de Alejandría y Efrén el Sirio, han sobrevivido exclusivamente o en su mayor parte en armenio, lo que confiere a la colección un valor excepcional para la erudición mundial. Comisaria Dra. Yvette Tajarian",
+    "contenido": "La Biblioteca Nacional de España, junto con el Ministerio de Educación, Ciencia, Cultura y Deporte de la República de Armenia, organiza la exposición Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio , donde se mostrarán algunos de los manuscritos armenios más importantes conservados en el Instituto Matenadaran Mesrop Mashtots de Manuscritos Antiguos. A través de las obras expuestas y los textos que las acompañan, el visitante podrá descubrir diversos aspectos de la cultura armenia, incluyendo su historia, sus creencias, los asentamientos de la diáspora y la creación e iluminación de los códices manuscritos en sus scriptoria. La mayor parte de las obras expuestas salen de Armenia por primera vez, por lo que esta exposición será una ocasión excepcional para admirar la belleza de estas obras, sus miniaturas y encuadernaciones. Los manuscritos armenios son reconocidos internacionalmente por sus pinturas en miniatura, una característica central de la cultura manuscrita armenia, que evolucionó a través de diversas escuelas regionales, cada una de ellas marcada por rasgos estilísticos y tradiciones iconográficas distintivas. La importancia de esta diversidad refleja la vasta geografía del patrimonio escrito armenio: estos manuscritos se produjeron en múltiples centros de aprendizaje y actividad artística dentro de la Armenia histórica y más allá, y hoy en día se conservan en bibliotecas y museos de todo el mundo, lo que demuestra tanto la amplitud geográfica e intelectual de la cultura armenia como su perdurable influencia global. La exposición Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio les invita a descubrir este patrimonio único, así como la cultura y riqueza del pueblo Armenio. El Instituto Matenadaran Mesrop Mashtots de Manuscritos Antiguos, situado en Ereván (Armenia), es la mayor colección de manuscritos armenios del mundo y uno de los centros de manuscritos más importantes a nivel internacional. Con cerca de 23 000 manuscritos en armenio y en otros idiomas, así como extensas colecciones de archivos e impresos, el Matenadaran funciona simultáneamente como repositorio, instituto de investigación, biblioteca, centro de restauración y museo. La colección de manuscritos armenios refleja casi todos los campos de la vida intelectual medieval y moderna, incluyendo la teología, la historia, la filosofía, el derecho, la medicina, la geografía, las matemáticas, la astronomía, la música y las ciencias naturales. Una parte importante de este patrimonio consiste en literatura traducida, que comenzó inmediatamente después de la creación del alfabeto armenio en el siglo V. Gracias a las traducciones armenias conservadas en el Matenadaran, varias obras de autores clásicos y de la Antigüedad tardía, como Eusebio de Cesarea, Filón de Alejandría y Efrén el Sirio, han sobrevivido exclusivamente o en su mayor parte en armenio, lo que confiere a la colección un valor excepcional para la erudición mundial. Comisaria Dra. Yvette Tajarian Entrada gratuita Aforo limitado Acceso: planta 0 Sala Hipóstila Horario De lunes a sábado, de 10:00 a 20:00 h. Domingos y festivos, de 10:00 a 14:00 h. Último pase media hora antes del cierre. Horarios especiales y cierre de exposiciones Horarios especiales Calendario de horarios especiales y días de cierre",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala Hipóstila",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2026-03-26",
+    "fecha_fin": "2026-06-21",
+    "fechas_disponibles": [
+      "2026-03-26T15:00:00+01:00",
+      "2026-06-21T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Exposición"
+    ],
+    "etiquetas": [],
+    "url": "https://www.bne.es/es/agenda/caminos-mapa-espiritualidad-arte-manuscrito-armenio",
+    "url_compra": null,
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/grafica_manuscritos_armenios.png?itok=M0YOaXy_",
+    "metadata": {},
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "caminos-mapa-espiritualidad-arte-manuscrito-armenio",
+    "tipo": "plan",
+    "slug": "por-los-caminos-del-mapa-de-la-espiritualidad-el-arte-manuscrito-armenio",
+    "subtitulo": null,
+    "resumen": "La Biblioteca Nacional de España, junto con el Ministerio de Educación, Ciencia, Cultura y Deporte de la República de Armenia, organiza la exposición Por los caminos del mapa de la espiritualidad: el arte manuscrito armenio , donde se mostrarán algunos de los manuscritos armenios más importantes conservados en el Insti",
+    "categoria_principal": "Exposición",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": "2026-03-26T15:00:00+01:00",
+    "datetime_fin": "2026-06-21T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-03-26",
+        "datetime": "2026-03-26T15:00:00+01:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-21",
+        "datetime": "2026-06-21T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-21",
+    "proximo_datetime": "2026-06-21T20:00:00+02:00",
+    "sort_datetime": "2026-06-21T20:00:00+02:00",
+    "vigente_hasta": "2026-06-21T20:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:13:45Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  }
+]

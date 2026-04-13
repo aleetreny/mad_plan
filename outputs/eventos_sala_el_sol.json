@@ -1,0 +1,3248 @@
+[
+  {
+    "id": "plan:sala_el_sol:leo-middea",
+    "titulo": "LEO MIDDEA – SOLD OUT",
+    "subtitulo": null,
+    "descripcion": "LEO MIDDEA vuelve a Madrid con su banda a Sala Sol para celebrar el lanzamiento de su nuevo álbum, Notícias de Puglia. Con más de 400 conciertos en 16 países en los últimos años y más de 20 millones de reproducciones en Spotify, el cantautor se ha convertido en una de las voces brasileñas más activas y resonantes de Europa. Su música fusiona MPB, samba, bossa nova y pop brasileño contemporáneo, creando una atmósfera cálida y sincera en la que las historias y las melodías conectan Brasil con el mundo.",
+    "contenido": "LEO MIDDEA vuelve a Madrid con su banda a Sala Sol para celebrar el lanzamiento de su nuevo álbum, Notícias de Puglia. Con más de 400 conciertos en 16 países en los últimos años y más de 20 millones de reproducciones en Spotify, el cantautor se ha convertido en una de las voces brasileñas más activas y resonantes de Europa. Su música fusiona MPB, samba, bossa nova y pop brasileño contemporáneo, creando una atmósfera cálida y sincera en la que las historias y las melodías conectan Brasil con el mundo.",
+    "precio": 25.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-14",
+    "fecha_fin": "2026-04-14",
+    "fechas_disponibles": [
+      "2026-04-14T20:30:00+02:00",
+      "2026-04-14T23:00:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/leo-middea/",
+    "url_articulo": "https://salaelsol.com/eventos/leo-middea/",
+    "url_compra": "https://shotgun.live/es/events/leo-middea-live-sala-sol-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/02/Untitled_design_sc7wxc.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "leo-middea",
+    "tipo": "plan",
+    "slug": "leo-middea-sold-out",
+    "resumen": "LEO MIDDEA vuelve a Madrid con su banda a Sala Sol para celebrar el lanzamiento de su nuevo álbum, Notícias de Puglia. Con más de 400 conciertos en 16 países en los últimos años y más de 20 millones de reproducciones en Spotify, el cantautor se ha convertido en una de las voces brasileñas más activas y resonantes de Eu",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-14T20:30:00+02:00",
+    "datetime_fin": "2026-04-14T23:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-14",
+        "datetime": "2026-04-14T20:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-14",
+        "datetime": "2026-04-14T23:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-14",
+    "proximo_datetime": "2026-04-14T20:30:00+02:00",
+    "sort_datetime": "2026-04-14T20:30:00+02:00",
+    "vigente_hasta": "2026-04-14T23:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:neeus",
+    "titulo": "NEEUS",
+    "subtitulo": null,
+    "descripcion": "Se acabó la espera Madrid!!! Tendremos a el gran Neeus en vivo cantando todos sus temas que lo han ido posicionando y convirtiéndolo en una futura estrella !!! ¿cuando? Miércoles 15 de abril ¿Donde? Sala El Sol – C. de los Jardines, 3, Centro, 28013 Madrid entradas a la venta ya!!!",
+    "contenido": "Se acabó la espera Madrid!!! Tendremos a el gran Neeus en vivo cantando todos sus temas que lo han ido posicionando y convirtiéndolo en una futura estrella !!! ¿cuando? Miércoles 15 de abril ¿Donde? Sala El Sol – C. de los Jardines, 3, Centro, 28013 Madrid entradas a la venta ya!!!",
+    "precio": 20.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-15",
+    "fecha_fin": "2026-04-15",
+    "fechas_disponibles": [
+      "2026-04-15T21:00:00+02:00",
+      "2026-04-15T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/neeus/",
+    "url_articulo": "https://salaelsol.com/eventos/neeus/",
+    "url_compra": "https://entradas.vamosarumbear.es/events/entradas-neuus-en-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/neeus.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "neeus",
+    "tipo": "plan",
+    "slug": "neeus",
+    "resumen": "Se acabó la espera Madrid!!! Tendremos a el gran Neeus en vivo cantando todos sus temas que lo han ido posicionando y convirtiéndolo en una futura estrella !!! ¿cuando? Miércoles 15 de abril ¿Donde? Sala El Sol – C. de los Jardines, 3, Centro, 28013 Madrid entradas a la venta ya!!!",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-15T21:00:00+02:00",
+    "datetime_fin": "2026-04-15T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-15",
+        "datetime": "2026-04-15T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-15",
+        "datetime": "2026-04-15T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-15",
+    "proximo_datetime": "2026-04-15T21:00:00+02:00",
+    "sort_datetime": "2026-04-15T21:00:00+02:00",
+    "vigente_hasta": "2026-04-15T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:mad-rave-by-elements-cave-11",
+    "titulo": "MAD RAVE BY ELEMENTS CAVE",
+    "subtitulo": null,
+    "descripcion": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "contenido": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-15",
+    "fecha_fin": "2026-04-16",
+    "fechas_disponibles": [
+      "2026-04-15",
+      "2026-04-16T06:00:00+02:00"
+    ],
+    "categorias": [
+      "Clubbing",
+      "Musica",
+      "Noche"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/mad-rave-by-elements-cave-11/",
+    "url_articulo": "https://salaelsol.com/eventos/mad-rave-by-elements-cave-11/",
+    "url_compra": "https://link.dice.fm/r83746868a58",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/MADRAVE_logo-scaled.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "mad-rave-by-elements-cave-11",
+    "tipo": "plan",
+    "slug": "mad-rave-by-elements-cave",
+    "resumen": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "categoria_principal": "Clubbing",
+    "autor": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": "2026-04-16T06:00:00+02:00",
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-04-16",
+        "datetime": "2026-04-16T06:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-15",
+    "proximo_datetime": "2026-04-15T23:59:00+02:00",
+    "sort_datetime": "2026-04-15T23:59:00+02:00",
+    "vigente_hasta": "2026-04-16T06:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:baywaves-sound-isidro",
+    "titulo": "BAYWAVES [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Baywaves en Sound Isidro",
+    "contenido": "Baywaves en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-16",
+    "fecha_fin": "2026-04-16",
+    "fechas_disponibles": [
+      "2026-04-16T20:00:00+02:00",
+      "2026-04-16T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/baywaves-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/baywaves-sound-isidro/",
+    "url_compra": "https://dice.fm/event/926x97-baywaves-en-sound-isidro-16th-apr-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/baywaves.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "baywaves-sound-isidro",
+    "tipo": "plan",
+    "slug": "baywaves-sound-isidro",
+    "resumen": "Baywaves en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-16T20:00:00+02:00",
+    "datetime_fin": "2026-04-16T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-16",
+        "datetime": "2026-04-16T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-16",
+        "datetime": "2026-04-16T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-16",
+    "proximo_datetime": "2026-04-16T20:00:00+02:00",
+    "sort_datetime": "2026-04-16T20:00:00+02:00",
+    "vigente_hasta": "2026-04-16T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:lovebombing",
+    "titulo": "LoveBombing",
+    "subtitulo": null,
+    "descripcion": "Love Bombing es un colectivo creativo con base en Madrid enfocado en la curaduría de experiencias de club donde la música, la estética y la energía de la pista conectan de forma orgánica. Nuestro concepto se centra en construir una identidad sonora contemporánea, moviéndonos entre house, garage y electrónica underground, siempre priorizando la musicalidad y la narrativa del set por encima del formato tradicional de evento. Para esta tercera edición, presentaremos un line up cuidadosamente seleccionado que combina talento local e internacional, alineado con la visión del proyecto: artistas con sensibilidad de club, capaces de leer la pista y generar una experiencia dinámica y envolvente. Más que una fiesta, Love Bombing propone un espacio donde la música vuelve a ser el eje central y la comunidad se construye desde la pista de baile. ¡Entradas + consumición desde 5€!",
+    "contenido": "Love Bombing es un colectivo creativo con base en Madrid enfocado en la curaduría de experiencias de club donde la música, la estética y la energía de la pista conectan de forma orgánica. Nuestro concepto se centra en construir una identidad sonora contemporánea, moviéndonos entre house, garage y electrónica underground, siempre priorizando la musicalidad y la narrativa del set por encima del formato tradicional de evento. Para esta tercera edición, presentaremos un line up cuidadosamente seleccionado que combina talento local e internacional, alineado con la visión del proyecto: artistas con sensibilidad de club, capaces de leer la pista y generar una experiencia dinámica y envolvente. Más que una fiesta, Love Bombing propone un espacio donde la música vuelve a ser el eje central y la comunidad se construye desde la pista de baile. ¡Entradas + consumición desde 5€!",
+    "precio": 5.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-16",
+    "fecha_fin": "2026-04-16",
+    "fechas_disponibles": [
+      "2026-04-16"
+    ],
+    "categorias": [
+      "Clubbing",
+      "Musica",
+      "Noche"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/lovebombing/",
+    "url_articulo": "https://salaelsol.com/eventos/lovebombing/",
+    "url_compra": "https://link.dice.fm/Weac245fbf12",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/87bc2eda-7ae9-4f16-bccf-b3e142537617.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "lovebombing",
+    "tipo": "plan",
+    "slug": "lovebombing",
+    "resumen": "Love Bombing es un colectivo creativo con base en Madrid enfocado en la curaduría de experiencias de club donde la música, la estética y la energía de la pista conectan de forma orgánica. Nuestro concepto se centra en construir una identidad sonora contemporánea, moviéndonos entre house, garage y electrónica undergroun",
+    "categoria_principal": "Clubbing",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-04-16",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-04-16",
+    "proximo_datetime": "2026-04-16T23:59:00+02:00",
+    "sort_datetime": "2026-04-16T23:59:00+02:00",
+    "vigente_hasta": "2026-04-16T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:kaelan-mikla",
+    "titulo": "KAELAN MIKLA",
+    "subtitulo": null,
+    "descripcion": "Kælan Mikla es una banda islandesa de post-punk, formada en 2013 en Reykjavík, Islandia. El trío está formado por el vocalista principal Laufey Soffía, la bajista Margrét Rósa Dóru-Harrýsdóttir y el teclista Sólveig Matthildur Kristjánsdóttir. Su música ha sido descrita como post-punk, dark wave, cold wave y gótica.",
+    "contenido": "Kælan Mikla es una banda islandesa de post-punk, formada en 2013 en Reykjavík, Islandia. El trío está formado por el vocalista principal Laufey Soffía, la bajista Margrét Rósa Dóru-Harrýsdóttir y el teclista Sólveig Matthildur Kristjánsdóttir. Su música ha sido descrita como post-punk, dark wave, cold wave y gótica.",
+    "precio": 25.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-17",
+    "fecha_fin": "2026-04-17",
+    "fechas_disponibles": [
+      "2026-04-17"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/kaelan-mikla/",
+    "url_articulo": "https://salaelsol.com/eventos/kaelan-mikla/",
+    "url_compra": "https://mutick.com/e/entradas-kaelan-mikla-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/c339dfe9-634a-4882-9a9b-9f99bf36ac5a_contenido.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "kaelan-mikla",
+    "tipo": "plan",
+    "slug": "kaelan-mikla",
+    "resumen": "Kælan Mikla es una banda islandesa de post-punk, formada en 2013 en Reykjavík, Islandia. El trío está formado por el vocalista principal Laufey Soffía, la bajista Margrét Rósa Dóru-Harrýsdóttir y el teclista Sólveig Matthildur Kristjánsdóttir. Su música ha sido descrita como post-punk, dark wave, cold wave y gótica.",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-04-17",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-04-17",
+    "proximo_datetime": "2026-04-17T00:00:00+02:00",
+    "sort_datetime": "2026-04-17T00:00:00+02:00",
+    "vigente_hasta": "2026-04-17T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:rocio-saiz-megarollo",
+    "titulo": "ROCÍO SAIZ + MEGAROLLO",
+    "subtitulo": null,
+    "descripcion": "Bee Week presenta ROCÍO SAIZ + MEGAROLLO en Madrid",
+    "contenido": "Bee Week presenta ROCÍO SAIZ + MEGAROLLO en Madrid",
+    "precio": 15.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-18",
+    "fecha_fin": "2026-04-18",
+    "fechas_disponibles": [
+      "2026-04-18T21:00:00+02:00",
+      "2026-04-18T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/rocio-saiz-megarollo/",
+    "url_articulo": "https://salaelsol.com/eventos/rocio-saiz-megarollo/",
+    "url_compra": "https://mutick.com/e/entradas-rocio-saiz-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/rocio-saiz.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "rocio-saiz-megarollo",
+    "tipo": "plan",
+    "slug": "rocio-saiz-megarollo",
+    "resumen": "Bee Week presenta ROCÍO SAIZ + MEGAROLLO en Madrid",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-18T21:00:00+02:00",
+    "datetime_fin": "2026-04-18T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-18",
+        "datetime": "2026-04-18T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-18",
+        "datetime": "2026-04-18T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-18",
+    "proximo_datetime": "2026-04-18T21:00:00+02:00",
+    "sort_datetime": "2026-04-18T21:00:00+02:00",
+    "vigente_hasta": "2026-04-18T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:guacamayo-tropical-presenta-la-poderosa",
+    "titulo": "Guacamayo Tropical presenta: La Poderosa",
+    "subtitulo": null,
+    "descripcion": "Guacamayo Tropical presenta: La Poderosa LA PODEROSA : Aquí se viene a sudar 🔊🔥 Ya saben cómo es: cumbia de la buena, mucha psicodelia y todo el sabor que nos corre por la sangre. No es la típica fiesta de siempre; es el lugar para soltarse con lo que sea que nos pongan: desde un mambo elegante hasta un cumbiatón para romperla, pasando por punta y merengue del que quema el piso. Traigan sed y ganas de bailar, que del resto nos encargamos nosotros. ¡Nos vemos en la pista Preparamos una selección fina de puro viaje tropical. Vamos a estar saltando de la cumbia amazónica a la salsa brava, sin olvidarnos de la punta, el merengue y esos ritmos que nos hacen sentir en casa. Cero poses, solo buena música y esa energía que solo tiene lo nuestro. Si te gusta el mambo y quieres terminar la noche arriba con un cumbiatón, este es tu sitio. ¡No dejes que te lo cuenten! ¡ENTRADAS DESDE 16€!",
+    "contenido": "Guacamayo Tropical presenta: La Poderosa LA PODEROSA : Aquí se viene a sudar 🔊🔥 Ya saben cómo es: cumbia de la buena, mucha psicodelia y todo el sabor que nos corre por la sangre. No es la típica fiesta de siempre; es el lugar para soltarse con lo que sea que nos pongan: desde un mambo elegante hasta un cumbiatón para romperla, pasando por punta y merengue del que quema el piso. Traigan sed y ganas de bailar, que del resto nos encargamos nosotros. ¡Nos vemos en la pista Preparamos una selección fina de puro viaje tropical. Vamos a estar saltando de la cumbia amazónica a la salsa brava, sin olvidarnos de la punta, el merengue y esos ritmos que nos hacen sentir en casa. Cero poses, solo buena música y esa energía que solo tiene lo nuestro. Si te gusta el mambo y quieres terminar la noche arriba con un cumbiatón, este es tu sitio. ¡No dejes que te lo cuenten! ¡ENTRADAS DESDE 16€!",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-18",
+    "fecha_fin": "2026-04-18",
+    "fechas_disponibles": [
+      "2026-04-18"
+    ],
+    "categorias": [
+      "Clubbing",
+      "Musica",
+      "Noche"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/guacamayo-tropical-presenta-la-poderosa/",
+    "url_articulo": "https://salaelsol.com/eventos/guacamayo-tropical-presenta-la-poderosa/",
+    "url_compra": "https://link.dice.fm/v2b62973665e",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/250ce2e4-94a6-4093-ba81-f6207984eedd.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "guacamayo-tropical-presenta-la-poderosa",
+    "tipo": "plan",
+    "slug": "guacamayo-tropical-presenta-la-poderosa",
+    "resumen": "Guacamayo Tropical presenta: La Poderosa LA PODEROSA : Aquí se viene a sudar 🔊🔥 Ya saben cómo es: cumbia de la buena, mucha psicodelia y todo el sabor que nos corre por la sangre. No es la típica fiesta de siempre; es el lugar para soltarse con lo que sea que nos pongan: desde un mambo elegante hasta un cumbiatón para ",
+    "categoria_principal": "Clubbing",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-04-18",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-04-18",
+    "proximo_datetime": "2026-04-18T23:59:00+02:00",
+    "sort_datetime": "2026-04-18T23:59:00+02:00",
+    "vigente_hasta": "2026-04-18T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:minicaries-en-la-sala-sol-fiesta-de-los-oficios",
+    "titulo": "MINICARIES EN LA SALA SOL: FIESTA DE LOS OFICIOS",
+    "subtitulo": null,
+    "descripcion": "MiniCaries en la Sala Sol, especial «Fiesta de los Oficios» con Construimos Escaleras y Natalia Ferviú. · Edad recomendada: a partir de 3 años. · No está permitida la entrada a mayores si no van acompañando a un menor. · Esta actividad es para el público familiar por lo que deben comprar entrada todos los asistentes sin importar la edad. Caries (Natalia Ferviú y Carlangas) presentan la «Fiesta de los Oficios», un evento donde la música, el baile y la participación activa del público serán las protagonistas. Un espectáculo para familias en el que madres y padres disfrutarán tanto —o más— que sus hijxs. ¿Bomberx? ¿DJ? ¿Peluquerx de unicornios? ¿Abogadx de dragones? En esta fiesta lxs peques no vienen disfrazados, vienen ensayando su futuro. «La Fiesta de los Oficios» es un plan para bailar en familia, imaginar en grande y recordar que, antes de elegir “a qué te dedicas”, lo importante es jugar a serlo todo. Así que, seas menor o mayor, vente como lo que quieras ser: con casco, bata, traje, capa ¡o con una caja de herramientas! Porque en esta ocasión las familias tomaremos la mítica Sala Sol para que nuestrxs peques puedan fardar de haber estado en unos de los clubs más legendarios de la capital viendo a Construimos Escaleras, la nueva sensación punk que llega desde Málaga. No faltes, y ya sabes, vente vestidx de tu oficio favorito. Va en serio.",
+    "contenido": "MiniCaries en la Sala Sol, especial «Fiesta de los Oficios» con Construimos Escaleras y Natalia Ferviú. · Edad recomendada: a partir de 3 años. · No está permitida la entrada a mayores si no van acompañando a un menor. · Esta actividad es para el público familiar por lo que deben comprar entrada todos los asistentes sin importar la edad. Caries (Natalia Ferviú y Carlangas) presentan la «Fiesta de los Oficios», un evento donde la música, el baile y la participación activa del público serán las protagonistas. Un espectáculo para familias en el que madres y padres disfrutarán tanto —o más— que sus hijxs. ¿Bomberx? ¿DJ? ¿Peluquerx de unicornios? ¿Abogadx de dragones? En esta fiesta lxs peques no vienen disfrazados, vienen ensayando su futuro. «La Fiesta de los Oficios» es un plan para bailar en familia, imaginar en grande y recordar que, antes de elegir “a qué te dedicas”, lo importante es jugar a serlo todo. Así que, seas menor o mayor, vente como lo que quieras ser: con casco, bata, traje, capa ¡o con una caja de herramientas! Porque en esta ocasión las familias tomaremos la mítica Sala Sol para que nuestrxs peques puedan fardar de haber estado en unos de los clubs más legendarios de la capital viendo a Construimos Escaleras, la nueva sensación punk que llega desde Málaga. No faltes, y ya sabes, vente vestidx de tu oficio favorito. Va en serio.",
+    "precio": 8.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-19",
+    "fecha_fin": "2026-04-19",
+    "fechas_disponibles": [
+      "2026-04-19T12:00:00+02:00",
+      "2026-04-19T14:00:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica",
+      "Familia"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/minicaries-en-la-sala-sol-fiesta-de-los-oficios/",
+    "url_articulo": "https://salaelsol.com/eventos/minicaries-en-la-sala-sol-fiesta-de-los-oficios/",
+    "url_compra": "https://dice.fm/event/l85blr-minicaries-en-la-sala-sol-fiesta-de-los-oficios-19th-apr-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/minicaries.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "minicaries-en-la-sala-sol-fiesta-de-los-oficios",
+    "tipo": "plan",
+    "slug": "minicaries-en-la-sala-sol-fiesta-de-los-oficios",
+    "resumen": "MiniCaries en la Sala Sol, especial «Fiesta de los Oficios» con Construimos Escaleras y Natalia Ferviú. · Edad recomendada: a partir de 3 años. · No está permitida la entrada a mayores si no van acompañando a un menor. · Esta actividad es para el público familiar por lo que deben comprar entrada todos los asistentes si",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-19T12:00:00+02:00",
+    "datetime_fin": "2026-04-19T14:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-19",
+        "datetime": "2026-04-19T12:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-19",
+        "datetime": "2026-04-19T14:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-19",
+    "proximo_datetime": "2026-04-19T12:00:00+02:00",
+    "sort_datetime": "2026-04-19T12:00:00+02:00",
+    "vigente_hasta": "2026-04-19T14:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:midweek-sessions",
+    "titulo": "MIDWEEK SESSIONS",
+    "subtitulo": null,
+    "descripcion": "🌌🎆Midweek Sessions🎆🌌 🪂🪂🪂 ☀️ Sala El Sol.☀️ Será increíbleeee, temones y Muchos Invitadosss toppp Nos vemos el día 21 de abril Apertura de puertas 20:00 hs ¿Quienes Somos? La Midweek Band: Julian Seijas, bajo electrico. Stefano Franco, guitarra y voz. Coke Torres, Bateria. Marina Arceiz, teclado y voz. Iker Mazón, percusión. Músicos de escena actual madrileña que se juntan para acercarse a sonidos finos y extravagantes de artistas de la talla de Tame Impala, Jamiroquai, Bandalos Chinos, CA7RIEL y Paco Amoroso… entre otros. ¿Qué son las Midweek Sessions? Ademas de un repertorio amplio de la Midweek Band “cool y extravagante” que Hostea el evento. Se suman varios artistas de escena nacional que traen sus canciones elevándolas al Sonido Midweek. Tu evento de moderneo y escena madrileña. De momento es gratis, aprovecha. ¡Bienvenid@s!",
+    "contenido": "🌌🎆Midweek Sessions🎆🌌 🪂🪂🪂 ☀️ Sala El Sol.☀️ Será increíbleeee, temones y Muchos Invitadosss toppp Nos vemos el día 21 de abril Apertura de puertas 20:00 hs ¿Quienes Somos? La Midweek Band: Julian Seijas, bajo electrico. Stefano Franco, guitarra y voz. Coke Torres, Bateria. Marina Arceiz, teclado y voz. Iker Mazón, percusión. Músicos de escena actual madrileña que se juntan para acercarse a sonidos finos y extravagantes de artistas de la talla de Tame Impala, Jamiroquai, Bandalos Chinos, CA7RIEL y Paco Amoroso… entre otros. ¿Qué son las Midweek Sessions? Ademas de un repertorio amplio de la Midweek Band “cool y extravagante” que Hostea el evento. Se suman varios artistas de escena nacional que traen sus canciones elevándolas al Sonido Midweek. Tu evento de moderneo y escena madrileña. De momento es gratis, aprovecha. ¡Bienvenid@s!",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-21",
+    "fecha_fin": "2026-04-21",
+    "fechas_disponibles": [
+      "2026-04-21T20:00:00+02:00",
+      "2026-04-21T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/midweek-sessions/",
+    "url_articulo": "https://salaelsol.com/eventos/midweek-sessions/",
+    "url_compra": "https://dice.fm/event/6dllo8-midweek-sessions-21st-apr-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/midweek.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "midweek-sessions",
+    "tipo": "plan",
+    "slug": "midweek-sessions",
+    "resumen": "🌌🎆Midweek Sessions🎆🌌 🪂🪂🪂 ☀️ Sala El Sol.☀️ Será increíbleeee, temones y Muchos Invitadosss toppp Nos vemos el día 21 de abril Apertura de puertas 20:00 hs ¿Quienes Somos? La Midweek Band: Julian Seijas, bajo electrico. Stefano Franco, guitarra y voz. Coke Torres, Bateria. Marina Arceiz, teclado y voz. Iker Mazón, percu",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": true,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-21T20:00:00+02:00",
+    "datetime_fin": "2026-04-21T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-21",
+        "datetime": "2026-04-21T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-21",
+        "datetime": "2026-04-21T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-21",
+    "proximo_datetime": "2026-04-21T20:00:00+02:00",
+    "sort_datetime": "2026-04-21T20:00:00+02:00",
+    "vigente_hasta": "2026-04-21T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:mad-rave-by-elements-cave-12",
+    "titulo": "MAD RAVE BY ELEMENTS CAVE",
+    "subtitulo": null,
+    "descripcion": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "contenido": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-22",
+    "fecha_fin": "2026-04-23",
+    "fechas_disponibles": [
+      "2026-04-22",
+      "2026-04-23T06:00:00+02:00"
+    ],
+    "categorias": [
+      "Clubbing",
+      "Musica",
+      "Noche"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/mad-rave-by-elements-cave-12/",
+    "url_articulo": "https://salaelsol.com/eventos/mad-rave-by-elements-cave-12/",
+    "url_compra": "https://link.dice.fm/Q9a5d14ea07e",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/MADRAVE_logo-scaled.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "mad-rave-by-elements-cave-12",
+    "tipo": "plan",
+    "slug": "mad-rave-by-elements-cave",
+    "resumen": "Lo mejor del Neo Rave y el hardtechno underground en Elements Cave, los miércoles en El Sol 🖤 ¡Listas Free! ¡Bono copa 2×15! ¡Reservado + Botella! Apertura de puertas: 23.59 Hasta Cierre.",
+    "categoria_principal": "Clubbing",
+    "autor": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": "2026-04-23T06:00:00+02:00",
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-04-23",
+        "datetime": "2026-04-23T06:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-22",
+    "proximo_datetime": "2026-04-22T23:59:00+02:00",
+    "sort_datetime": "2026-04-22T23:59:00+02:00",
+    "vigente_hasta": "2026-04-23T06:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:huracan-romantica",
+    "titulo": "HURACÁN ROMÁNTICA #GPS16",
+    "subtitulo": null,
+    "descripcion": "HURACÁN ROMÁNTICA En la Sala El Sol, Madrid, concierto especial enmarcado en el circuito estatal Girando por Salas (GPS) del INAEM. GIRA PRESENTACIÓN CAMINO DE VUELTA. Hay varios tipos de viaje. Están las escapadas al campo de fin de semana y los viajes en los que conoces culturas distantes y distintas. Viajes de los que vuelves conociendo un poquito mejor el mundo y a ti mismo. Ese es el Camino de Vuelta. Huracán Romántica nació de la necesidad de explorar un montón de canciones que no tenían cabida en el repertorio de La Pulquería. Y tras muchos paseos por esos paisajes, de repente un día vuelves al lugar que te vieron nacer y te sientes tan en casa que no quieres que ese sentimiento termine. Ese es el Camino de Vuelta. Publicado el 5 de febrero de 2026, el disco recoge 9 canciones sabrosas y bien condimentadas. Canciones que nos devuelven a la época de los festivales, del baile y de la luz. Canciones de viajes con amigos y música en el coche. Canciones herederas de la Mala vida de Mano Negra, la Milonga del marinero y el capitán de Los Rodríguez, la Escuela de calor de Radio Futura o el Sabor Salado de Los Ronaldos. Canciones que recuperan los lugares a los que fuimos y que definieron lo que somos. Canciones que vuelven a ser, después de un gran rodeo tratando de esquivarlas, las canciones de nuestra vida. Una gira en la que contaremos con la presencia estelar de Natxo Tamarit, bajista de Zigarros y un tótem de la música en valencia y en todo el estado.",
+    "contenido": "HURACÁN ROMÁNTICA En la Sala El Sol, Madrid, concierto especial enmarcado en el circuito estatal Girando por Salas (GPS) del INAEM. GIRA PRESENTACIÓN CAMINO DE VUELTA. Hay varios tipos de viaje. Están las escapadas al campo de fin de semana y los viajes en los que conoces culturas distantes y distintas. Viajes de los que vuelves conociendo un poquito mejor el mundo y a ti mismo. Ese es el Camino de Vuelta. Huracán Romántica nació de la necesidad de explorar un montón de canciones que no tenían cabida en el repertorio de La Pulquería. Y tras muchos paseos por esos paisajes, de repente un día vuelves al lugar que te vieron nacer y te sientes tan en casa que no quieres que ese sentimiento termine. Ese es el Camino de Vuelta. Publicado el 5 de febrero de 2026, el disco recoge 9 canciones sabrosas y bien condimentadas. Canciones que nos devuelven a la época de los festivales, del baile y de la luz. Canciones de viajes con amigos y música en el coche. Canciones herederas de la Mala vida de Mano Negra, la Milonga del marinero y el capitán de Los Rodríguez, la Escuela de calor de Radio Futura o el Sabor Salado de Los Ronaldos. Canciones que recuperan los lugares a los que fuimos y que definieron lo que somos. Canciones que vuelven a ser, después de un gran rodeo tratando de esquivarlas, las canciones de nuestra vida. Una gira en la que contaremos con la presencia estelar de Natxo Tamarit, bajista de Zigarros y un tótem de la música en valencia y en todo el estado.",
+    "precio": 12.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-23",
+    "fecha_fin": "2026-04-23",
+    "fechas_disponibles": [
+      "2026-04-23T21:00:00+02:00",
+      "2026-04-23T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/huracan-romantica/",
+    "url_articulo": "https://salaelsol.com/eventos/huracan-romantica/",
+    "url_compra": "https://woutick.com/es/entradas/huracan-romantica-en-madrid-gira-gps",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/811e7576-12e2-48cf-bc79-eaf00165fcc3.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "huracan-romantica",
+    "tipo": "plan",
+    "slug": "huracan-romantica-gps16",
+    "resumen": "HURACÁN ROMÁNTICA En la Sala El Sol, Madrid, concierto especial enmarcado en el circuito estatal Girando por Salas (GPS) del INAEM. GIRA PRESENTACIÓN CAMINO DE VUELTA. Hay varios tipos de viaje. Están las escapadas al campo de fin de semana y los viajes en los que conoces culturas distantes y distintas. Viajes de los q",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-23T21:00:00+02:00",
+    "datetime_fin": "2026-04-23T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-23",
+        "datetime": "2026-04-23T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-23",
+        "datetime": "2026-04-23T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-23",
+    "proximo_datetime": "2026-04-23T21:00:00+02:00",
+    "sort_datetime": "2026-04-23T21:00:00+02:00",
+    "vigente_hasta": "2026-04-23T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:el-diablo-de-shanghai-sound-isidro",
+    "titulo": "EL DIABLO DE SHANGHAI [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "El diablo de Shanghai en Sound Isidro",
+    "contenido": "El diablo de Shanghai en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-24",
+    "fecha_fin": "2026-04-24",
+    "fechas_disponibles": [
+      "2026-04-24T21:00:00+02:00",
+      "2026-04-24T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/el-diablo-de-shanghai-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/el-diablo-de-shanghai-sound-isidro/",
+    "url_compra": "https://dice.fm/event/v3gv56-el-diablo-de-shanghai-en-sound-isidro-24th-apr-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/eldiablo.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "el-diablo-de-shanghai-sound-isidro",
+    "tipo": "plan",
+    "slug": "el-diablo-de-shanghai-sound-isidro",
+    "resumen": "El diablo de Shanghai en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-24T21:00:00+02:00",
+    "datetime_fin": "2026-04-24T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-24",
+        "datetime": "2026-04-24T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-24",
+        "datetime": "2026-04-24T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-24",
+    "proximo_datetime": "2026-04-24T21:00:00+02:00",
+    "sort_datetime": "2026-04-24T21:00:00+02:00",
+    "vigente_hasta": "2026-04-24T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:resaca-5",
+    "titulo": "RESAC:A",
+    "subtitulo": null,
+    "descripcion": "✨ RESAC:A llega a la mítica Sala El Sol. Lo nuestro es simple: poner la música que está sonando ahora mismo en el mundo, mezclada con esos himnos recientes que nunca pasan de moda. Indie, electrónica y pop alternativo para que se lo goce tu colega pureta, tu hermano fabrikero y tu novia tumblr, todo en la misma pista. 🔮 DJ set con lo mejor de la escena internacional actual. 🔮 Una nueva residencia mensual en uno de los templos de la música en Madrid. 🔮 Sesiones distintas en cada edición, con artistas invitados o conceptos como “It’s still …”, en el que bailarás los mayores hits de un determinado año en un viaje celebratorio y nostálgico. 100 gecs / Alvvays / Amyl and the Sniffers / bar italia / Blood Orange / Caroline Polachek / Carolina Durante / Charli XCX / Chappell Roan / CHVRCHES / Confidence Man / DIIV / Dua Lipa / El Último Vecino / FKA twigs / Fontaines D.C. / Grimes / HAIM / Hot Chip / IDLES / Jamie xx / LCD Soundsystem / Lorde / Magdalena Bay / Mount Kimbie / Nation of Language / New Order / Parcels / Phoenix / Pitbull / Robyn / Sabrina Carpenter / Shame / Sky Ferreira / Tame Impala / The Horrors / The Strokes / Vampire Weekend / VVV [Trippin’you] / Warpaint / Wet Leg / Wolf Alice / Yung Lean RESAC:A es el sitio donde bailar lo que escuchas en tu día a día, pero a lo grande y hasta el amanecer. ¡ENTRADAS DESDE 14€!",
+    "contenido": "✨ RESAC:A llega a la mítica Sala El Sol. Lo nuestro es simple: poner la música que está sonando ahora mismo en el mundo, mezclada con esos himnos recientes que nunca pasan de moda. Indie, electrónica y pop alternativo para que se lo goce tu colega pureta, tu hermano fabrikero y tu novia tumblr, todo en la misma pista. 🔮 DJ set con lo mejor de la escena internacional actual. 🔮 Una nueva residencia mensual en uno de los templos de la música en Madrid. 🔮 Sesiones distintas en cada edición, con artistas invitados o conceptos como “It’s still …”, en el que bailarás los mayores hits de un determinado año en un viaje celebratorio y nostálgico. 100 gecs / Alvvays / Amyl and the Sniffers / bar italia / Blood Orange / Caroline Polachek / Carolina Durante / Charli XCX / Chappell Roan / CHVRCHES / Confidence Man / DIIV / Dua Lipa / El Último Vecino / FKA twigs / Fontaines D.C. / Grimes / HAIM / Hot Chip / IDLES / Jamie xx / LCD Soundsystem / Lorde / Magdalena Bay / Mount Kimbie / Nation of Language / New Order / Parcels / Phoenix / Pitbull / Robyn / Sabrina Carpenter / Shame / Sky Ferreira / Tame Impala / The Horrors / The Strokes / Vampire Weekend / VVV [Trippin’you] / Warpaint / Wet Leg / Wolf Alice / Yung Lean RESAC:A es el sitio donde bailar lo que escuchas en tu día a día, pero a lo grande y hasta el amanecer. ¡ENTRADAS DESDE 14€!",
+    "precio": 14.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-24",
+    "fecha_fin": "2026-04-24",
+    "fechas_disponibles": [
+      "2026-04-24"
+    ],
+    "categorias": [
+      "Clubbing",
+      "Musica",
+      "Noche"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/resaca-5/",
+    "url_articulo": "https://salaelsol.com/eventos/resaca-5/",
+    "url_compra": "https://link.dice.fm/ee2b7e29ddaf",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/89514ecc-50eb-4975-b167-46d43fb74c24.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "resaca-5",
+    "tipo": "plan",
+    "slug": "resac-a",
+    "resumen": "✨ RESAC:A llega a la mítica Sala El Sol. Lo nuestro es simple: poner la música que está sonando ahora mismo en el mundo, mezclada con esos himnos recientes que nunca pasan de moda. Indie, electrónica y pop alternativo para que se lo goce tu colega pureta, tu hermano fabrikero y tu novia tumblr, todo en la misma pista. ",
+    "categoria_principal": "Clubbing",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-04-24",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-04-24",
+    "proximo_datetime": "2026-04-24T23:59:00+02:00",
+    "sort_datetime": "2026-04-24T23:59:00+02:00",
+    "vigente_hasta": "2026-04-24T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:gara-duran-sound-isidro",
+    "titulo": "GARA DURÁN [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Gara Durán en Sound Isidro",
+    "contenido": "Gara Durán en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-25",
+    "fecha_fin": "2026-04-25",
+    "fechas_disponibles": [
+      "2026-04-25T21:00:00+02:00",
+      "2026-04-25T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/gara-duran-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/gara-duran-sound-isidro/",
+    "url_compra": "https://dice.fm/event/dka8lo-gara-durn-en-sound-isidro-25th-apr-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/gara.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "gara-duran-sound-isidro",
+    "tipo": "plan",
+    "slug": "gara-duran-sound-isidro",
+    "resumen": "Gara Durán en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-25T21:00:00+02:00",
+    "datetime_fin": "2026-04-25T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-25",
+        "datetime": "2026-04-25T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-25",
+        "datetime": "2026-04-25T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-25",
+    "proximo_datetime": "2026-04-25T21:00:00+02:00",
+    "sort_datetime": "2026-04-25T21:00:00+02:00",
+    "vigente_hasta": "2026-04-25T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:sin-soda-homenaje-a-soda-stereo",
+    "titulo": "SIN SODA (Homenaje a Soda Stereo)",
+    "subtitulo": null,
+    "descripcion": "Después de diez años recorriendo este viaje emocional junto a todos vosotros, rindiendo homenaje a la banda más icónica del pop rock argentino, Soda Stereo, dan un nuevo paso y vuelven a Madrid para seguir celebrando la música, la memoria y la emoción que nos une. Sin Soda nace en 2015 como un homenaje vivo a la trayectoria de una de las bandas más influyentes del rock y pop iberoamericano: Soda Stereo. Nuestro repertorio reúne sus grandes éxitos y esas joyas ocultas que forman parte de su legado musical y de nuestras propias historias. Integrantes: Sebastián “Nano” Radice – Voz y guitarra acústica // Pedro “Botella” Merighi – Guitarra eléctrica //Miguel Valderrama – Bajo //Sebastián Limongi – Batería //Kaku Gennaro – Teclados",
+    "contenido": "Después de diez años recorriendo este viaje emocional junto a todos vosotros, rindiendo homenaje a la banda más icónica del pop rock argentino, Soda Stereo, dan un nuevo paso y vuelven a Madrid para seguir celebrando la música, la memoria y la emoción que nos une. Sin Soda nace en 2015 como un homenaje vivo a la trayectoria de una de las bandas más influyentes del rock y pop iberoamericano: Soda Stereo. Nuestro repertorio reúne sus grandes éxitos y esas joyas ocultas que forman parte de su legado musical y de nuestras propias historias. Integrantes: Sebastián “Nano” Radice – Voz y guitarra acústica // Pedro “Botella” Merighi – Guitarra eléctrica //Miguel Valderrama – Bajo //Sebastián Limongi – Batería //Kaku Gennaro – Teclados",
+    "precio": 20.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-26",
+    "fecha_fin": "2026-04-26",
+    "fechas_disponibles": [
+      "2026-04-26T21:00:00+02:00",
+      "2026-04-26T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/sin-soda-homenaje-a-soda-stereo/",
+    "url_articulo": "https://salaelsol.com/eventos/sin-soda-homenaje-a-soda-stereo/",
+    "url_compra": "https://ticketib.com/es/events/sin-soda-homenaje-a-soda-stereo-sala-sol-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/event_m_ENTRADIUM_MADRID.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "sin-soda-homenaje-a-soda-stereo",
+    "tipo": "plan",
+    "slug": "sin-soda-homenaje-a-soda-stereo",
+    "resumen": "Después de diez años recorriendo este viaje emocional junto a todos vosotros, rindiendo homenaje a la banda más icónica del pop rock argentino, Soda Stereo, dan un nuevo paso y vuelven a Madrid para seguir celebrando la música, la memoria y la emoción que nos une. Sin Soda nace en 2015 como un homenaje vivo a la trayec",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-26T21:00:00+02:00",
+    "datetime_fin": "2026-04-26T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-26",
+        "datetime": "2026-04-26T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-26",
+        "datetime": "2026-04-26T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-26",
+    "proximo_datetime": "2026-04-26T21:00:00+02:00",
+    "sort_datetime": "2026-04-26T21:00:00+02:00",
+    "vigente_hasta": "2026-04-26T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:madrid-en-vivo-%c2%b7-25-anos-sidecars",
+    "titulo": "MADRID EN VIVO · 25 AÑOS: SIDECARS",
+    "subtitulo": null,
+    "descripcion": "El martes 28 de abril, disfrutaremos de Sidecars en directo, con un concierto único, diferente y exclusivo para sus seguidores más fieles en El Sol , inaugurando el ciclo MADRID EN VIVO · 25 AÑOS . ¿Quieres asistir? SIDECARS, MADRID EN VIVO e INVERFEST invitan a todas las personas que hayan comprado entradas para el concierto del 29 de enero de 2027 en el Movistar Arena a participar en el sorteo de 125 invitaciones dobles para disfrutarlos en la cercanía de las salas, con un concierto más íntimo sobre el escenario de El Sol. Si aún no tienes tu entrada, cómprala en INVERFEST.COM antes del 29 de marzo, y recibirás un correo para participar en el sorteo y asistir al primer concierto del ciclo MADRID EN VIVO · 25 AÑOS con SIDECARS: https://inverfest.com/events/sidecars/ Juancho, Ruly y Gerbas: SIDECARS. Picapedreros de los escenarios, ejemplifican a la perfección esa “mili de la música” (como ellos mismos la definen) que todo artista debe hacer para curtirse y establecer los cimientos de una carrera sólida. Desde ese descarado disco debut homónimo en 2008, hasta el flamante y emocional Everest (2025), pasando por el estrellato que supuso en 2010 el lanzamiento de Cremalleras y ese “Fan de ti” que nos volvió a todos fanáticos de ellos, y los sucesivos Fuego Cruzado (2014), Cuestión de Gravedad (2018), Ruido de Fondo (2020), y Trece (2022). SIDECARS es historia viva de las salas madrileñas, y un ejemplo de compromiso con la música en vivo. Madrid en Vivo celebra su 25 aniversario, 25 años latiendo por las salas de conciertos, con el ciclo MADRID EN VIVO · 25 AÑOS. Como los cumpleaños de los buenos amigos, queremos que sea una celebración común, de la que todos os sintáis parte. Poniendo en el centro el valor de nuestras salas, este aniversario es para ellas, si; pero también para vosotros, el público que acude cada semana a sus conciertos; y también para los artistas, que desarrollan y proyectan sus carreras sobre nuestros escenarios. Una celebración dedicada a la experiencia catártica de la música en vivo, con la colaboración de entradas.com.",
+    "contenido": "El martes 28 de abril, disfrutaremos de Sidecars en directo, con un concierto único, diferente y exclusivo para sus seguidores más fieles en El Sol , inaugurando el ciclo MADRID EN VIVO · 25 AÑOS . ¿Quieres asistir? SIDECARS, MADRID EN VIVO e INVERFEST invitan a todas las personas que hayan comprado entradas para el concierto del 29 de enero de 2027 en el Movistar Arena a participar en el sorteo de 125 invitaciones dobles para disfrutarlos en la cercanía de las salas, con un concierto más íntimo sobre el escenario de El Sol. Si aún no tienes tu entrada, cómprala en INVERFEST.COM antes del 29 de marzo, y recibirás un correo para participar en el sorteo y asistir al primer concierto del ciclo MADRID EN VIVO · 25 AÑOS con SIDECARS: https://inverfest.com/events/sidecars/ Juancho, Ruly y Gerbas: SIDECARS. Picapedreros de los escenarios, ejemplifican a la perfección esa “mili de la música” (como ellos mismos la definen) que todo artista debe hacer para curtirse y establecer los cimientos de una carrera sólida. Desde ese descarado disco debut homónimo en 2008, hasta el flamante y emocional Everest (2025), pasando por el estrellato que supuso en 2010 el lanzamiento de Cremalleras y ese “Fan de ti” que nos volvió a todos fanáticos de ellos, y los sucesivos Fuego Cruzado (2014), Cuestión de Gravedad (2018), Ruido de Fondo (2020), y Trece (2022). SIDECARS es historia viva de las salas madrileñas, y un ejemplo de compromiso con la música en vivo. Madrid en Vivo celebra su 25 aniversario, 25 años latiendo por las salas de conciertos, con el ciclo MADRID EN VIVO · 25 AÑOS. Como los cumpleaños de los buenos amigos, queremos que sea una celebración común, de la que todos os sintáis parte. Poniendo en el centro el valor de nuestras salas, este aniversario es para ellas, si; pero también para vosotros, el público que acude cada semana a sus conciertos; y también para los artistas, que desarrollan y proyectan sus carreras sobre nuestros escenarios. Una celebración dedicada a la experiencia catártica de la música en vivo, con la colaboración de entradas.com.",
+    "precio": null,
+    "moneda": null,
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-28",
+    "fecha_fin": "2026-04-28",
+    "fechas_disponibles": [
+      "2026-04-28T20:00:00+02:00",
+      "2026-04-28T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/madrid-en-vivo-%c2%b7-25-anos-sidecars/",
+    "url_articulo": "https://salaelsol.com/eventos/madrid-en-vivo-%c2%b7-25-anos-sidecars/",
+    "url_compra": "https://inverfest.com/events/sidecars/",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/WhatsApp-Image-2026-03-24-at-17.36.20.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "madrid-en-vivo-%c2%b7-25-anos-sidecars",
+    "tipo": "plan",
+    "slug": "madrid-en-vivo-25-anos-sidecars",
+    "resumen": "El martes 28 de abril, disfrutaremos de Sidecars en directo, con un concierto único, diferente y exclusivo para sus seguidores más fieles en El Sol , inaugurando el ciclo MADRID EN VIVO · 25 AÑOS . ¿Quieres asistir? SIDECARS, MADRID EN VIVO e INVERFEST invitan a todas las personas que hayan comprado entradas para el co",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-28T20:00:00+02:00",
+    "datetime_fin": "2026-04-28T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-28",
+        "datetime": "2026-04-28T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-28",
+        "datetime": "2026-04-28T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-28",
+    "proximo_datetime": "2026-04-28T20:00:00+02:00",
+    "sort_datetime": "2026-04-28T20:00:00+02:00",
+    "vigente_hasta": "2026-04-28T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:the-hangmen",
+    "titulo": "THE HANGMEN + DIESEL DOGS [40º Aniversario]",
+    "subtitulo": null,
+    "descripcion": "THE HANGMEN (1986 Los Angeles) Liderados por Bryan Small son una de las leyendas vivas del Punk Rock – Cow Punk de Estados unidos, originalmente tuvieron a Keith Morris Black Flag/Circle Jerks de Manager y esto les llevo a pasar por sellos como Capitol Records y empezar a trabajar con productores como Vic Maile de Motöhead o Rob Yonger de Radio Birdmana. tras la firma con el sello independiente Acetate Records en 2001 emperazon a girar con Supersuckers y posteriormente una temporada Bryan Small sustituyó al guitarra de Social Distortion, Mike Ness, quien de alguna manera le devolvería el favor produciendo su siguiente disco en 2007: In the city. Midnight Riders fué el primer Single de lo que sería Stories To Tell el Septimo álbum en estudio de The Hangmen con su publicación en 2023 la banda giro por todo Europa y Estados unidos y acompaño en gira a bandas como Social Distortion o Supersuckers. En 2026 se cumple el 40 Aniversario de The HANGMEN y la banda vuelve con una gira para celebrar los 40 años de actividad en los escenarios. Desde su formación en Madrid en 2005, The Diesel Dogs han construido una trayectoria marcada por la urgencia, la carretera y una fidelidad absoluta al espíritu del rock and roll. Con seis discos a sus espaldas y una intensa actividad en directo por España, Reino Unido, Europa y Estados Unidos, la banda ha ido consolidando un sonido propio donde conviven la electricidad del punk, la épica americana y una sensibilidad melódica que bebe tanto de The Clash como de los Replacements, Tom Petty o Bowie. Su último larga duración, The Shipwreck (Ghost Highway Recordings), supone un punto de madurez en su carrera: un trabajo sólido, directo y sin relleno que reafirma su lugar dentro del rock independiente europeo. Entre la crudeza y la elegancia, The Diesel Dogs continúan defendiendo un cancionero honesto, donde cada canción funciona como un pequeño acto de resistencia. “….recorre la espina dorsal inquebrantablemente haciendo sacudir todos los nervios que se encuentra por el camino…muestran oficio y pulso en este reinicio que los acerca a los sectores habitados, entre otros, por Drive-By Truckers, Social Distortion, Replacements y toda la ortodoxia de las últimas seis décadas del rock americano Producido por Fernando Pardo y Álvaro Escribano, poca broma.” Ruta 66 Apertura de puerta: 20:00h Diesel Dogs: 20:30h The Hangmen 21:30h",
+    "contenido": "THE HANGMEN (1986 Los Angeles) Liderados por Bryan Small son una de las leyendas vivas del Punk Rock – Cow Punk de Estados unidos, originalmente tuvieron a Keith Morris Black Flag/Circle Jerks de Manager y esto les llevo a pasar por sellos como Capitol Records y empezar a trabajar con productores como Vic Maile de Motöhead o Rob Yonger de Radio Birdmana. tras la firma con el sello independiente Acetate Records en 2001 emperazon a girar con Supersuckers y posteriormente una temporada Bryan Small sustituyó al guitarra de Social Distortion, Mike Ness, quien de alguna manera le devolvería el favor produciendo su siguiente disco en 2007: In the city. Midnight Riders fué el primer Single de lo que sería Stories To Tell el Septimo álbum en estudio de The Hangmen con su publicación en 2023 la banda giro por todo Europa y Estados unidos y acompaño en gira a bandas como Social Distortion o Supersuckers. En 2026 se cumple el 40 Aniversario de The HANGMEN y la banda vuelve con una gira para celebrar los 40 años de actividad en los escenarios. Desde su formación en Madrid en 2005, The Diesel Dogs han construido una trayectoria marcada por la urgencia, la carretera y una fidelidad absoluta al espíritu del rock and roll. Con seis discos a sus espaldas y una intensa actividad en directo por España, Reino Unido, Europa y Estados Unidos, la banda ha ido consolidando un sonido propio donde conviven la electricidad del punk, la épica americana y una sensibilidad melódica que bebe tanto de The Clash como de los Replacements, Tom Petty o Bowie. Su último larga duración, The Shipwreck (Ghost Highway Recordings), supone un punto de madurez en su carrera: un trabajo sólido, directo y sin relleno que reafirma su lugar dentro del rock independiente europeo. Entre la crudeza y la elegancia, The Diesel Dogs continúan defendiendo un cancionero honesto, donde cada canción funciona como un pequeño acto de resistencia. “….recorre la espina dorsal inquebrantablemente haciendo sacudir todos los nervios que se encuentra por el camino…muestran oficio y pulso en este reinicio que los acerca a los sectores habitados, entre otros, por Drive-By Truckers, Social Distortion, Replacements y toda la ortodoxia de las últimas seis décadas del rock americano Producido por Fernando Pardo y Álvaro Escribano, poca broma.” Ruta 66 Apertura de puerta: 20:00h Diesel Dogs: 20:30h The Hangmen 21:30h",
+    "precio": 18.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-04-30",
+    "fecha_fin": "2026-04-30",
+    "fechas_disponibles": [
+      "2026-04-30T20:00:00+02:00",
+      "2026-04-30T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/the-hangmen/",
+    "url_articulo": "https://salaelsol.com/eventos/the-hangmen/",
+    "url_compra": "https://tickets.bomberbooking.com/web/?menu=1162&pagina=entradas&item=60037&siteID=bomberbooking",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/02/TH_MADRID-scaled.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "the-hangmen",
+    "tipo": "plan",
+    "slug": "the-hangmen-diesel-dogs-40o-aniversario",
+    "resumen": "THE HANGMEN (1986 Los Angeles) Liderados por Bryan Small son una de las leyendas vivas del Punk Rock – Cow Punk de Estados unidos, originalmente tuvieron a Keith Morris Black Flag/Circle Jerks de Manager y esto les llevo a pasar por sellos como Capitol Records y empezar a trabajar con productores como Vic Maile de Motö",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-04-30T20:00:00+02:00",
+    "datetime_fin": "2026-04-30T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-04-30",
+        "datetime": "2026-04-30T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-04-30",
+        "datetime": "2026-04-30T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-04-30",
+    "proximo_datetime": "2026-04-30T20:00:00+02:00",
+    "sort_datetime": "2026-04-30T20:00:00+02:00",
+    "vigente_hasta": "2026-04-30T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:esplendor-geometrico-azote-mental",
+    "titulo": "ESPLENDOR GEOMÉTRICO + AZOTE MENTAL",
+    "subtitulo": null,
+    "descripcion": "Esplendor Geométrico nace en 1980 como trío, y actualmente dúo formado por Arturo Lanz (miembro fundador) y Saverio Evangelista (miembro desde 1991).Es una pionera banda de música electrónica de culto internacional, y también un caso raro en la escena musical española, ya que han desarrollado su propio camino independiente al margen de etiquetas, modas o tendencias, a pesar de ser a menudo clasificados como música industrial. Su carrera, de más de cuatro décadas, no ha tenido interrupciones. No han dejado de componer, editar álbumes ni tocar en directo. Su influencia y legado ha marcado a muchos artistas posteriores, normalmente clasificados dentro de la música industrial o rhythm & noise, así como a artistas del techno actual y ciertos tipos de música noise experimental. Azote Mental abrirá el show de Madrid.",
+    "contenido": "Esplendor Geométrico nace en 1980 como trío, y actualmente dúo formado por Arturo Lanz (miembro fundador) y Saverio Evangelista (miembro desde 1991).Es una pionera banda de música electrónica de culto internacional, y también un caso raro en la escena musical española, ya que han desarrollado su propio camino independiente al margen de etiquetas, modas o tendencias, a pesar de ser a menudo clasificados como música industrial. Su carrera, de más de cuatro décadas, no ha tenido interrupciones. No han dejado de componer, editar álbumes ni tocar en directo. Su influencia y legado ha marcado a muchos artistas posteriores, normalmente clasificados dentro de la música industrial o rhythm & noise, así como a artistas del techno actual y ciertos tipos de música noise experimental. Azote Mental abrirá el show de Madrid.",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-02",
+    "fecha_fin": "2026-05-02",
+    "fechas_disponibles": [
+      "2026-05-02T20:30:00+02:00",
+      "2026-05-02T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/esplendor-geometrico-azote-mental/",
+    "url_articulo": "https://salaelsol.com/eventos/esplendor-geometrico-azote-mental/",
+    "url_compra": "https://www.ticketmaster.es/event/1445237903?brand=base_mb_es",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/01/ESPLENDOR-GEOMETRICO_Instagram.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "esplendor-geometrico-azote-mental",
+    "tipo": "plan",
+    "slug": "esplendor-geometrico-azote-mental",
+    "resumen": "Esplendor Geométrico nace en 1980 como trío, y actualmente dúo formado por Arturo Lanz (miembro fundador) y Saverio Evangelista (miembro desde 1991).Es una pionera banda de música electrónica de culto internacional, y también un caso raro en la escena musical española, ya que han desarrollado su propio camino independi",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-02T20:30:00+02:00",
+    "datetime_fin": "2026-05-02T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-02",
+        "datetime": "2026-05-02T20:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-02",
+        "datetime": "2026-05-02T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-02",
+    "proximo_datetime": "2026-05-02T20:30:00+02:00",
+    "sort_datetime": "2026-05-02T20:30:00+02:00",
+    "vigente_hasta": "2026-05-02T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:callum-beattie",
+    "titulo": "CALLUM BEATTIE",
+    "subtitulo": null,
+    "descripcion": "CALLUM BEATTIE",
+    "contenido": "CALLUM BEATTIE",
+    "precio": 23.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-06",
+    "fecha_fin": "2026-05-06",
+    "fechas_disponibles": [
+      "2026-05-06T20:00:00+02:00",
+      "2026-05-06T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/callum-beattie/",
+    "url_articulo": "https://salaelsol.com/eventos/callum-beattie/",
+    "url_compra": "https://tickets.oneboxtds.com/bem/select/2780656",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/CallumBeatie_Creativitats_Madrid_Square.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "callum-beattie",
+    "tipo": "plan",
+    "slug": "callum-beattie",
+    "resumen": "CALLUM BEATTIE",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-06T20:00:00+02:00",
+    "datetime_fin": "2026-05-06T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-06",
+        "datetime": "2026-05-06T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-06",
+        "datetime": "2026-05-06T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-06",
+    "proximo_datetime": "2026-05-06T20:00:00+02:00",
+    "sort_datetime": "2026-05-06T20:00:00+02:00",
+    "vigente_hasta": "2026-05-06T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:nueva-tragedia",
+    "titulo": "NUEVA TRAGEDIA",
+    "subtitulo": null,
+    "descripcion": "NUEVA TRAGEDIA en Madrid",
+    "contenido": "NUEVA TRAGEDIA en Madrid",
+    "precio": 12.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-07",
+    "fecha_fin": "2026-05-07",
+    "fechas_disponibles": [
+      "2026-05-07T21:00:00+02:00",
+      "2026-05-07T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/nueva-tragedia/",
+    "url_articulo": "https://salaelsol.com/eventos/nueva-tragedia/",
+    "url_compra": "https://mutick.com/e/entradas-nueva-tragedia-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/NUEVA-TRAGEDIA.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "nueva-tragedia",
+    "tipo": "plan",
+    "slug": "nueva-tragedia",
+    "resumen": "NUEVA TRAGEDIA en Madrid",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-07T21:00:00+02:00",
+    "datetime_fin": "2026-05-07T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-07",
+        "datetime": "2026-05-07T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-07",
+        "datetime": "2026-05-07T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-07",
+    "proximo_datetime": "2026-05-07T21:00:00+02:00",
+    "sort_datetime": "2026-05-07T21:00:00+02:00",
+    "vigente_hasta": "2026-05-07T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:cervatana-sound-isidro",
+    "titulo": "CERVATANA [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Cervatana en Sound Isidro",
+    "contenido": "Cervatana en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-08",
+    "fecha_fin": "2026-05-08",
+    "fechas_disponibles": [
+      "2026-05-08T21:00:00+02:00",
+      "2026-05-08T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/cervatana-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/cervatana-sound-isidro/",
+    "url_compra": "https://dice.fm/event/k6nwpo-cervatana-en-sound-isidro-8th-may-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/cervatana.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "cervatana-sound-isidro",
+    "tipo": "plan",
+    "slug": "cervatana-sound-isidro",
+    "resumen": "Cervatana en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-08T21:00:00+02:00",
+    "datetime_fin": "2026-05-08T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-08",
+        "datetime": "2026-05-08T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-08",
+        "datetime": "2026-05-08T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-08",
+    "proximo_datetime": "2026-05-08T21:00:00+02:00",
+    "sort_datetime": "2026-05-08T21:00:00+02:00",
+    "vigente_hasta": "2026-05-08T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:priest-dead-lights",
+    "titulo": "PRIEST + DEAD LIGHTS",
+    "subtitulo": null,
+    "descripcion": "Priest , la banda nacida de ex-componentes de Ghost, es una de las bandas más originales y carismáticas por el singular misterio del cual se rodean. Profundamente inspirados en el cyberpunk y la cultura gótica, Priest revela sueños eléctricos absolutamente brillantes y cautivadores, listos para tentar los sentidos y desatar la imaginación para quienes buscan algo diferente y que los despierte del aburrimiento. Con una estética con máscaras sado-religiosas y un sonido heredado de grupos como Depeche Mode y la fiebre del electropop de los 80, rodeado de simbolismo, mitología, historia, tecnología y ocultismo, no dejan indiferentes con su potencial directo. Después de arrasar por su paso en Nocturna Festival y quedarnos con ganas de más, los suecos regresan para presentar el nuevo álbum en dos shows exclusivos en nuestro país. Compartirán escenario con Dead Lights con su magnetismo vibrante y un cóctel personal y minimalista con aluvión de éxitos. Dead Lights, con sus miembros andróginos, es un gran descubrimiento para los amantes del EBM que buscan algo actual y diferente. Electrónica pegadiza llena de fuerza punk y voces profundas e inquietantes. Sonido oscuro, electrónica sórdida desde la primera nota hasta el último grito. Su esperado debut en nuestro país será inolvidable.",
+    "contenido": "Priest , la banda nacida de ex-componentes de Ghost, es una de las bandas más originales y carismáticas por el singular misterio del cual se rodean. Profundamente inspirados en el cyberpunk y la cultura gótica, Priest revela sueños eléctricos absolutamente brillantes y cautivadores, listos para tentar los sentidos y desatar la imaginación para quienes buscan algo diferente y que los despierte del aburrimiento. Con una estética con máscaras sado-religiosas y un sonido heredado de grupos como Depeche Mode y la fiebre del electropop de los 80, rodeado de simbolismo, mitología, historia, tecnología y ocultismo, no dejan indiferentes con su potencial directo. Después de arrasar por su paso en Nocturna Festival y quedarnos con ganas de más, los suecos regresan para presentar el nuevo álbum en dos shows exclusivos en nuestro país. Compartirán escenario con Dead Lights con su magnetismo vibrante y un cóctel personal y minimalista con aluvión de éxitos. Dead Lights, con sus miembros andróginos, es un gran descubrimiento para los amantes del EBM que buscan algo actual y diferente. Electrónica pegadiza llena de fuerza punk y voces profundas e inquietantes. Sonido oscuro, electrónica sórdida desde la primera nota hasta el último grito. Su esperado debut en nuestro país será inolvidable.",
+    "precio": 26.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-09",
+    "fecha_fin": "2026-05-09",
+    "fechas_disponibles": [
+      "2026-05-09T21:00:00+02:00",
+      "2026-05-09T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/priest-dead-lights/",
+    "url_articulo": "https://salaelsol.com/eventos/priest-dead-lights/",
+    "url_compra": "https://www.ticketmaster.es/event/684743296?brand=base_mb_es",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/06/PRIEST_Web.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "priest-dead-lights",
+    "tipo": "plan",
+    "slug": "priest-dead-lights",
+    "resumen": "Priest , la banda nacida de ex-componentes de Ghost, es una de las bandas más originales y carismáticas por el singular misterio del cual se rodean. Profundamente inspirados en el cyberpunk y la cultura gótica, Priest revela sueños eléctricos absolutamente brillantes y cautivadores, listos para tentar los sentidos y de",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-09T21:00:00+02:00",
+    "datetime_fin": "2026-05-09T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-09",
+        "datetime": "2026-05-09T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-09",
+        "datetime": "2026-05-09T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-09",
+    "proximo_datetime": "2026-05-09T21:00:00+02:00",
+    "sort_datetime": "2026-05-09T21:00:00+02:00",
+    "vigente_hasta": "2026-05-09T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:maria-ruiz-mocchi",
+    "titulo": "MARÍA RUIZ & MOCCHI",
+    "subtitulo": null,
+    "descripcion": "Tras dos encuentros a ambos lados del océano, Mocchi y María presentan en España un formato único y muy especial en el que habrá sorpresas. Un oasis para refugiarnos un ratito entre canciones y palabras. Ven a disfrutarlo! María Ruiz & Mocchi en Madrid Domingo, 10 Mayo · Sala El Sol 19:00h Apertura de puertas 19:30h Inicio show Entrada: 15€ + GG Anticipada / 18€ Taquilla",
+    "contenido": "Tras dos encuentros a ambos lados del océano, Mocchi y María presentan en España un formato único y muy especial en el que habrá sorpresas. Un oasis para refugiarnos un ratito entre canciones y palabras. Ven a disfrutarlo! María Ruiz & Mocchi en Madrid Domingo, 10 Mayo · Sala El Sol 19:00h Apertura de puertas 19:30h Inicio show Entrada: 15€ + GG Anticipada / 18€ Taquilla",
+    "precio": 15.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-10",
+    "fecha_fin": "2026-05-10",
+    "fechas_disponibles": [
+      "2026-05-10T19:00:00+02:00",
+      "2026-05-10T22:00:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/maria-ruiz-mocchi/",
+    "url_articulo": "https://salaelsol.com/eventos/maria-ruiz-mocchi/",
+    "url_compra": "https://entradium.com/events/maria-ruiz-mocchi-en-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/Afiche_Mocchi_Gira_madrid_1x1.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "maria-ruiz-mocchi",
+    "tipo": "plan",
+    "slug": "maria-ruiz-mocchi",
+    "resumen": "Tras dos encuentros a ambos lados del océano, Mocchi y María presentan en España un formato único y muy especial en el que habrá sorpresas. Un oasis para refugiarnos un ratito entre canciones y palabras. Ven a disfrutarlo! María Ruiz & Mocchi en Madrid Domingo, 10 Mayo · Sala El Sol 19:00h Apertura de puertas 19:30h In",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-10T19:00:00+02:00",
+    "datetime_fin": "2026-05-10T22:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-10",
+        "datetime": "2026-05-10T19:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-10",
+        "datetime": "2026-05-10T22:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-10",
+    "proximo_datetime": "2026-05-10T19:00:00+02:00",
+    "sort_datetime": "2026-05-10T19:00:00+02:00",
+    "vigente_hasta": "2026-05-10T22:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:anouck-the-band-sound-isidro",
+    "titulo": "ARIZONA BABY [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Arizona Baby en Sound Isidro",
+    "contenido": "Arizona Baby en Sound Isidro",
+    "precio": 19.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-14",
+    "fecha_fin": "2026-05-14",
+    "fechas_disponibles": [
+      "2026-05-14T21:00:00+02:00",
+      "2026-05-14T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/anouck-the-band-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/anouck-the-band-sound-isidro/",
+    "url_compra": "https://dice.fm/event/q283ko-arizona-baby-en-sound-isidro-14th-may-el-sol-madrid-tickets?lng=es",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/fc59723f-d9c4-420f-8181-94098b438ba7.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "anouck-the-band-sound-isidro",
+    "tipo": "plan",
+    "slug": "arizona-baby-sound-isidro",
+    "resumen": "Arizona Baby en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-14T21:00:00+02:00",
+    "datetime_fin": "2026-05-14T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-14",
+        "datetime": "2026-05-14T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-14",
+        "datetime": "2026-05-14T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-14",
+    "proximo_datetime": "2026-05-14T21:00:00+02:00",
+    "sort_datetime": "2026-05-14T21:00:00+02:00",
+    "vigente_hasta": "2026-05-14T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:joshua-idehen",
+    "titulo": "JOSHUA IDEHEN",
+    "subtitulo": null,
+    "descripcion": "Joshua Idehen presentará su nuevo disco el 15 de mayo en El Sol. El poeta y músico británico-nigeriano llevará a Madrid su espiritual propuesta.",
+    "contenido": "Joshua Idehen presentará su nuevo disco el 15 de mayo en El Sol. El poeta y músico británico-nigeriano llevará a Madrid su espiritual propuesta.",
+    "precio": 17.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-15",
+    "fecha_fin": "2026-05-15",
+    "fechas_disponibles": [
+      "2026-05-15T20:00:00+02:00",
+      "2026-05-15T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/joshua-idehen/",
+    "url_articulo": "https://salaelsol.com/eventos/joshua-idehen/",
+    "url_compra": "https://feverup.com/m/476584",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/4f843376-a289-11f0-af03-7e95863acbfd.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "joshua-idehen",
+    "tipo": "plan",
+    "slug": "joshua-idehen",
+    "resumen": "Joshua Idehen presentará su nuevo disco el 15 de mayo en El Sol. El poeta y músico británico-nigeriano llevará a Madrid su espiritual propuesta.",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-15T20:00:00+02:00",
+    "datetime_fin": "2026-05-15T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-15",
+        "datetime": "2026-05-15T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-15",
+        "datetime": "2026-05-15T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-15",
+    "proximo_datetime": "2026-05-15T20:00:00+02:00",
+    "sort_datetime": "2026-05-15T20:00:00+02:00",
+    "vigente_hasta": "2026-05-15T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:asilo-fest",
+    "titulo": "ASILO FEST [1ª FECHA]",
+    "subtitulo": null,
+    "descripcion": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ellas internacionales, para recaudar fondos para Escuela de Skate Bogotá , una fundación que se encarga de enseñar y dar clases de skate a niños y adolescentes de bajos recursos, con el objetivo de ofrecerles un espacio seguro dentro de este deporte. PEACE OF MIND : Hardcore de Sonneberg, Alemania, con un sonido pesado que toma inspiración del thrash y el metal, y que ya ha dejado huella en Europa tras más de una década de trayectoria. Para fans de Hatebreed, Meraude o Terror. DEFIANCE : Grupo de hardcore originario de Stuttgart, Alemania, formado en 2024 y con un EP aún fresco pero ya notoriamemte aclamado titulado «BLOSSOM», en el que mezclan las bases clásicas del género con sonidos más modernos, sumado a un mensaje firme contra todo tipo de discriminación y que busca realzar las voces femeninas dentro de la escena. F.A.C.A : Basados en New York pero con integrantes colombianos, este quinteto viene desde la gran manzana por primera vez a Europa con un repertorio de hardcoremetal pesado con raíces latinas. COMIC SANS : Cuarteto de midwest emo de Donosti, cuyo sonido, ya bastante conocido a nivel nacional, nace de la inspiración de bandas legado del género como American Football y Cap n’ Jazz. CALATHEA : Screamo y post-hardcore desde Bizkaia, con un sonido emocional y agresivo característico no solo del género sino de la escena del norte de España. BOYS KISSING BOYS : Dueto de Sants e Iruña, autodenominados como midwest emo charnego. Nacen en 2019, y desde entonces se han hecho paso en la escena con dos álbumes y un EP cargados de emociones y energía que nacen de la cotidianidad, el amor y el desamor. FIRSTLINE : Banda de hardcore formada en 2022 en Madrid por latinos migrantes, en una incesante búsqueda de dejar huella en este lado del charco con su hardcore energético mezclado con sonidos latinos. NOGATO : Basados en Madrid, pero originarios de Galicia, toman el lugar como una de las bandas del género más notorias y con más trayectoria de la península, con un sonido nostálgico pero enérgetico entre el pop punk y el emo. BENÉVOLA : Trío madrileño que mezcla post-hardcore, el screamo y sonidos del shoegaze en una propuesta honesta y cruda pintada por voces y melodías desgarradoras. SENTENCIA : Nacidos en 2023 como parte de la nueva ola de bandas de hardcore de la capital, listos para hacer temblar Madrid con sus riffs pesados recién salidos del horno.",
+    "contenido": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ellas internacionales, para recaudar fondos para Escuela de Skate Bogotá , una fundación que se encarga de enseñar y dar clases de skate a niños y adolescentes de bajos recursos, con el objetivo de ofrecerles un espacio seguro dentro de este deporte. PEACE OF MIND : Hardcore de Sonneberg, Alemania, con un sonido pesado que toma inspiración del thrash y el metal, y que ya ha dejado huella en Europa tras más de una década de trayectoria. Para fans de Hatebreed, Meraude o Terror. DEFIANCE : Grupo de hardcore originario de Stuttgart, Alemania, formado en 2024 y con un EP aún fresco pero ya notoriamemte aclamado titulado «BLOSSOM», en el que mezclan las bases clásicas del género con sonidos más modernos, sumado a un mensaje firme contra todo tipo de discriminación y que busca realzar las voces femeninas dentro de la escena. F.A.C.A : Basados en New York pero con integrantes colombianos, este quinteto viene desde la gran manzana por primera vez a Europa con un repertorio de hardcoremetal pesado con raíces latinas. COMIC SANS : Cuarteto de midwest emo de Donosti, cuyo sonido, ya bastante conocido a nivel nacional, nace de la inspiración de bandas legado del género como American Football y Cap n’ Jazz. CALATHEA : Screamo y post-hardcore desde Bizkaia, con un sonido emocional y agresivo característico no solo del género sino de la escena del norte de España. BOYS KISSING BOYS : Dueto de Sants e Iruña, autodenominados como midwest emo charnego. Nacen en 2019, y desde entonces se han hecho paso en la escena con dos álbumes y un EP cargados de emociones y energía que nacen de la cotidianidad, el amor y el desamor. FIRSTLINE : Banda de hardcore formada en 2022 en Madrid por latinos migrantes, en una incesante búsqueda de dejar huella en este lado del charco con su hardcore energético mezclado con sonidos latinos. NOGATO : Basados en Madrid, pero originarios de Galicia, toman el lugar como una de las bandas del género más notorias y con más trayectoria de la península, con un sonido nostálgico pero enérgetico entre el pop punk y el emo. BENÉVOLA : Trío madrileño que mezcla post-hardcore, el screamo y sonidos del shoegaze en una propuesta honesta y cruda pintada por voces y melodías desgarradoras. SENTENCIA : Nacidos en 2023 como parte de la nueva ola de bandas de hardcore de la capital, listos para hacer temblar Madrid con sus riffs pesados recién salidos del horno.",
+    "precio": 30.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-16",
+    "fecha_fin": "2026-05-16",
+    "fechas_disponibles": [
+      "2026-05-16T20:00:00+02:00",
+      "2026-05-16T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/asilo-fest/",
+    "url_articulo": "https://salaelsol.com/eventos/asilo-fest/",
+    "url_compra": null,
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/asilofest.webp",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "asilo-fest",
+    "tipo": "plan",
+    "slug": "asilo-fest-1a-fecha",
+    "resumen": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ella",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-16T20:00:00+02:00",
+    "datetime_fin": "2026-05-16T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-16",
+        "datetime": "2026-05-16T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-16",
+        "datetime": "2026-05-16T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-16",
+    "proximo_datetime": "2026-05-16T20:00:00+02:00",
+    "sort_datetime": "2026-05-16T20:00:00+02:00",
+    "vigente_hasta": "2026-05-16T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:asilo-fest-2",
+    "titulo": "ASILO FEST [2ª FECHA]",
+    "subtitulo": null,
+    "descripcion": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ellas internacionales, para recaudar fondos para Escuela de Skate Bogotá , una fundación que se encarga de enseñar y dar clases de skate a niños y adolescentes de bajos recursos, con el objetivo de ofrecerles un espacio seguro dentro de este deporte. PEACE OF MIND : Hardcore de Sonneberg, Alemania, con un sonido pesado que toma inspiración del thrash y el metal, y que ya ha dejado huella en Europa tras más de una década de trayectoria. Para fans de Hatebreed, Meraude o Terror. DEFIANCE : Grupo de hardcore originario de Stuttgart, Alemania, formado en 2024 y con un EP aún fresco pero ya notoriamemte aclamado titulado «BLOSSOM», en el que mezclan las bases clásicas del género con sonidos más modernos, sumado a un mensaje firme contra todo tipo de discriminación y que busca realzar las voces femeninas dentro de la escena. F.A.C.A : Basados en New York pero con integrantes colombianos, este quinteto viene desde la gran manzana por primera vez a Europa con un repertorio de hardcoremetal pesado con raíces latinas. COMIC SANS : Cuarteto de midwest emo de Donosti, cuyo sonido, ya bastante conocido a nivel nacional, nace de la inspiración de bandas legado del género como American Football y Cap n’ Jazz. CALATHEA : Screamo y post-hardcore desde Bizkaia, con un sonido emocional y agresivo característico no solo del género sino de la escena del norte de España. BOYS KISSING BOYS : Dueto de Sants e Iruña, autodenominados como midwest emo charnego. Nacen en 2019, y desde entonces se han hecho paso en la escena con dos álbumes y un EP cargados de emociones y energía que nacen de la cotidianidad, el amor y el desamor. FIRSTLINE : Banda de hardcore formada en 2022 en Madrid por latinos migrantes, en una incesante búsqueda de dejar huella en este lado del charco con su hardcore energético mezclado con sonidos latinos. NOGATO : Basados en Madrid, pero originarios de Galicia, toman el lugar como una de las bandas del género más notorias y con más trayectoria de la península, con un sonido nostálgico pero enérgetico entre el pop punk y el emo. BENÉVOLA : Trío madrileño que mezcla post-hardcore, el screamo y sonidos del shoegaze en una propuesta honesta y cruda pintada por voces y melodías desgarradoras. SENTENCIA : Nacidos en 2023 como parte de la nueva ola de bandas de hardcore de la capital, listos para hacer temblar Madrid con sus riffs pesados recién salidos del horno.",
+    "contenido": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ellas internacionales, para recaudar fondos para Escuela de Skate Bogotá , una fundación que se encarga de enseñar y dar clases de skate a niños y adolescentes de bajos recursos, con el objetivo de ofrecerles un espacio seguro dentro de este deporte. PEACE OF MIND : Hardcore de Sonneberg, Alemania, con un sonido pesado que toma inspiración del thrash y el metal, y que ya ha dejado huella en Europa tras más de una década de trayectoria. Para fans de Hatebreed, Meraude o Terror. DEFIANCE : Grupo de hardcore originario de Stuttgart, Alemania, formado en 2024 y con un EP aún fresco pero ya notoriamemte aclamado titulado «BLOSSOM», en el que mezclan las bases clásicas del género con sonidos más modernos, sumado a un mensaje firme contra todo tipo de discriminación y que busca realzar las voces femeninas dentro de la escena. F.A.C.A : Basados en New York pero con integrantes colombianos, este quinteto viene desde la gran manzana por primera vez a Europa con un repertorio de hardcoremetal pesado con raíces latinas. COMIC SANS : Cuarteto de midwest emo de Donosti, cuyo sonido, ya bastante conocido a nivel nacional, nace de la inspiración de bandas legado del género como American Football y Cap n’ Jazz. CALATHEA : Screamo y post-hardcore desde Bizkaia, con un sonido emocional y agresivo característico no solo del género sino de la escena del norte de España. BOYS KISSING BOYS : Dueto de Sants e Iruña, autodenominados como midwest emo charnego. Nacen en 2019, y desde entonces se han hecho paso en la escena con dos álbumes y un EP cargados de emociones y energía que nacen de la cotidianidad, el amor y el desamor. FIRSTLINE : Banda de hardcore formada en 2022 en Madrid por latinos migrantes, en una incesante búsqueda de dejar huella en este lado del charco con su hardcore energético mezclado con sonidos latinos. NOGATO : Basados en Madrid, pero originarios de Galicia, toman el lugar como una de las bandas del género más notorias y con más trayectoria de la península, con un sonido nostálgico pero enérgetico entre el pop punk y el emo. BENÉVOLA : Trío madrileño que mezcla post-hardcore, el screamo y sonidos del shoegaze en una propuesta honesta y cruda pintada por voces y melodías desgarradoras. SENTENCIA : Nacidos en 2023 como parte de la nueva ola de bandas de hardcore de la capital, listos para hacer temblar Madrid con sus riffs pesados recién salidos del horno.",
+    "precio": 30.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-17",
+    "fecha_fin": "2026-05-17",
+    "fechas_disponibles": [
+      "2026-05-17T20:00:00+02:00",
+      "2026-05-17T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/asilo-fest-2/",
+    "url_articulo": "https://salaelsol.com/eventos/asilo-fest-2/",
+    "url_compra": null,
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/asilofest.webp",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "asilo-fest-2",
+    "tipo": "plan",
+    "slug": "asilo-fest-2a-fecha",
+    "resumen": "ASILO RECORDS presenta la tercera edición de su ASILO FEST, un festival que busca realzar distintos géneros del underground, como el hardcore, el punk y el emo, por medio de lo que ya es una fiesta anual imprescindible para la escena madrileña. Este 16 y 17 de mayo, unimos fuerzas con una decena de bandas, tres de ella",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-17T20:00:00+02:00",
+    "datetime_fin": "2026-05-17T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-17",
+        "datetime": "2026-05-17T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-17",
+        "datetime": "2026-05-17T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-17",
+    "proximo_datetime": "2026-05-17T20:00:00+02:00",
+    "sort_datetime": "2026-05-17T20:00:00+02:00",
+    "vigente_hasta": "2026-05-17T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:unpinguinoenmiascensor",
+    "titulo": "ESTACIÓN PODCAST MUSIC presenta – UN PINGÜINO EN MI ASCENSOR",
+    "subtitulo": null,
+    "descripcion": "Presentación de “Mi único deseo es matar”, el disco que recopila todas las canciones de Un Pingüino en mi Ascensor con víctimas mortales. Existen pocos artistas en el mundo que hayan matado a tanta gente en sus canciones como Un Pingüino en mi Ascensor . En muchos de sus hits, “El sangriento final de Bobby Johnson”, “El balneario”, “Arqueología en mi jardín” o “Tu me induces al mal”, por citar solo algunos, acaba muriendo alguien. Ahora, la banda, que acaba de cumplir 40 años, ha juntado todos esos temas, y alguno inédito, en un álbum que se presenta oficialmente el 20 de mayo en la Sala El Sol de Madrid, en el marco de Estación Podcast Music, el festival de creación sonora organizado por Subterfuge Radio.",
+    "contenido": "Presentación de “Mi único deseo es matar”, el disco que recopila todas las canciones de Un Pingüino en mi Ascensor con víctimas mortales. Existen pocos artistas en el mundo que hayan matado a tanta gente en sus canciones como Un Pingüino en mi Ascensor . En muchos de sus hits, “El sangriento final de Bobby Johnson”, “El balneario”, “Arqueología en mi jardín” o “Tu me induces al mal”, por citar solo algunos, acaba muriendo alguien. Ahora, la banda, que acaba de cumplir 40 años, ha juntado todos esos temas, y alguno inédito, en un álbum que se presenta oficialmente el 20 de mayo en la Sala El Sol de Madrid, en el marco de Estación Podcast Music, el festival de creación sonora organizado por Subterfuge Radio.",
+    "precio": 23.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-20",
+    "fecha_fin": "2026-05-20",
+    "fechas_disponibles": [
+      "2026-05-20T21:00:00+02:00",
+      "2026-05-20T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/unpinguinoenmiascensor/",
+    "url_articulo": "https://salaelsol.com/eventos/unpinguinoenmiascensor/",
+    "url_compra": "https://mutick.com/e/estacion-podcast-presenta-un-pinguino-en-mi-ascensor",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/3b707d48-cabb-4828-acf3-55d3a4f04d29_cartel.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "unpinguinoenmiascensor",
+    "tipo": "plan",
+    "slug": "estacion-podcast-music-presenta-un-pinguino-en-mi-ascensor",
+    "resumen": "Presentación de “Mi único deseo es matar”, el disco que recopila todas las canciones de Un Pingüino en mi Ascensor con víctimas mortales. Existen pocos artistas en el mundo que hayan matado a tanta gente en sus canciones como Un Pingüino en mi Ascensor . En muchos de sus hits, “El sangriento final de Bobby Johnson”, “E",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-20T21:00:00+02:00",
+    "datetime_fin": "2026-05-20T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-20",
+        "datetime": "2026-05-20T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-20",
+        "datetime": "2026-05-20T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-20",
+    "proximo_datetime": "2026-05-20T21:00:00+02:00",
+    "sort_datetime": "2026-05-20T21:00:00+02:00",
+    "vigente_hasta": "2026-05-20T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:holy-fuck-sound-isidro",
+    "titulo": "HOLY FUCK [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Holy Fuck en Sound Isidro",
+    "contenido": "Holy Fuck en Sound Isidro",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-21",
+    "fecha_fin": "2026-05-21",
+    "fechas_disponibles": [
+      "2026-05-21T20:00:00+02:00",
+      "2026-05-21T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/holy-fuck-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/holy-fuck-sound-isidro/",
+    "url_compra": "https://dice.fm/event/nvw7lq-holy-fuck-en-sound-isidro-21st-may-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/holyfuck.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "holy-fuck-sound-isidro",
+    "tipo": "plan",
+    "slug": "holy-fuck-sound-isidro",
+    "resumen": "Holy Fuck en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-21T20:00:00+02:00",
+    "datetime_fin": "2026-05-21T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-21",
+        "datetime": "2026-05-21T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-21",
+        "datetime": "2026-05-21T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-21",
+    "proximo_datetime": "2026-05-21T20:00:00+02:00",
+    "sort_datetime": "2026-05-21T20:00:00+02:00",
+    "vigente_hasta": "2026-05-21T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:bariri-sound-isidro",
+    "titulo": "BARIRI [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Bariri en Sound Isidro",
+    "contenido": "Bariri en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-23",
+    "fecha_fin": "2026-05-23",
+    "fechas_disponibles": [
+      "2026-05-23T21:00:00+02:00",
+      "2026-05-23T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/bariri-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/bariri-sound-isidro/",
+    "url_compra": "https://dice.fm/event/6dwbg8-bariri-en-sound-isidro-23rd-may-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/bariri_si_IG-scaled.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "bariri-sound-isidro",
+    "tipo": "plan",
+    "slug": "bariri-sound-isidro",
+    "resumen": "Bariri en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-23T21:00:00+02:00",
+    "datetime_fin": "2026-05-23T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-23",
+        "datetime": "2026-05-23T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-23",
+        "datetime": "2026-05-23T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-23",
+    "proximo_datetime": "2026-05-23T21:00:00+02:00",
+    "sort_datetime": "2026-05-23T21:00:00+02:00",
+    "vigente_hasta": "2026-05-23T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:yoli-saa",
+    "titulo": "YOLI SAA",
+    "subtitulo": null,
+    "descripcion": "Yoly Saa en Acústico.",
+    "contenido": "Yoly Saa en Acústico.",
+    "precio": 18.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-27",
+    "fecha_fin": "2026-05-27",
+    "fechas_disponibles": [
+      "2026-05-27T20:30:00+02:00",
+      "2026-05-27T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/yoli-saa/",
+    "url_articulo": "https://salaelsol.com/eventos/yoli-saa/",
+    "url_compra": "https://mutick.com/e/yoly-saa-en-madrid-2",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/yolisaa.webp",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "yoli-saa",
+    "tipo": "plan",
+    "slug": "yoli-saa",
+    "resumen": "Yoly Saa en Acústico.",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-27T20:30:00+02:00",
+    "datetime_fin": "2026-05-27T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-27",
+        "datetime": "2026-05-27T20:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-27",
+        "datetime": "2026-05-27T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-27",
+    "proximo_datetime": "2026-05-27T20:30:00+02:00",
+    "sort_datetime": "2026-05-27T20:30:00+02:00",
+    "vigente_hasta": "2026-05-27T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:laaza",
+    "titulo": "LAAZA",
+    "subtitulo": null,
+    "descripcion": "¡Laaza promete una noche inolvidable en la Sala El Sol, en Madrid! Un espectáculo único el 28 de mayo de 2026.",
+    "contenido": "¡Laaza promete una noche inolvidable en la Sala El Sol, en Madrid! Un espectáculo único el 28 de mayo de 2026.",
+    "precio": 17.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-28",
+    "fecha_fin": "2026-05-28",
+    "fechas_disponibles": [
+      "2026-05-28T21:00:00+02:00",
+      "2026-05-28T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/laaza/",
+    "url_articulo": "https://salaelsol.com/eventos/laaza/",
+    "url_compra": "https://feverup.com/m/455960",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/c0deacd0-aa9b-11f0-84b3-d2b84d9cbeff.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "laaza",
+    "tipo": "plan",
+    "slug": "laaza",
+    "resumen": "¡Laaza promete una noche inolvidable en la Sala El Sol, en Madrid! Un espectáculo único el 28 de mayo de 2026.",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-28T21:00:00+02:00",
+    "datetime_fin": "2026-05-28T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-28",
+        "datetime": "2026-05-28T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-28",
+        "datetime": "2026-05-28T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-28",
+    "proximo_datetime": "2026-05-28T21:00:00+02:00",
+    "sort_datetime": "2026-05-28T21:00:00+02:00",
+    "vigente_hasta": "2026-05-28T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:terror-milk-pablo-solo",
+    "titulo": "TERROR MILK + PABLO SOLO",
+    "subtitulo": null,
+    "descripcion": "¡SERÁ EL 29 DE MAYO DEL 2026 EN LA SALA EL SOL CUANDO SE CUMPLA LA PROFECÍA! ¡Oh gran Dios de los Dioses aztecas. Hemos seguido tus directrices a rajatabla. Les hemos ido soltando todo tipo de cuentos chinos a los humanos del mañana, un millón de profecías sobre meteoritos, plagas y otras chorradas del fin del mundo para distraerles y que no se lo esperen. ¡Bajarán la guardia y jamás se la verán venir! Nunca se esperarán que en la fecha señalada, el eclipse irrepetible de los Terror Milk y Pablo Solo Trio traerá el caos y las tinieblas a los reinos de este mundo. El día más especial de los días especiales. El día del sacrificio definitivo. ¡Oh gran Tezcatlipoca! ¡Esperamos tu llegada! ¡Que se abran los suelos desde la Sala El Sol! TERROR MILK PABLO SOLO",
+    "contenido": "¡SERÁ EL 29 DE MAYO DEL 2026 EN LA SALA EL SOL CUANDO SE CUMPLA LA PROFECÍA! ¡Oh gran Dios de los Dioses aztecas. Hemos seguido tus directrices a rajatabla. Les hemos ido soltando todo tipo de cuentos chinos a los humanos del mañana, un millón de profecías sobre meteoritos, plagas y otras chorradas del fin del mundo para distraerles y que no se lo esperen. ¡Bajarán la guardia y jamás se la verán venir! Nunca se esperarán que en la fecha señalada, el eclipse irrepetible de los Terror Milk y Pablo Solo Trio traerá el caos y las tinieblas a los reinos de este mundo. El día más especial de los días especiales. El día del sacrificio definitivo. ¡Oh gran Tezcatlipoca! ¡Esperamos tu llegada! ¡Que se abran los suelos desde la Sala El Sol! TERROR MILK PABLO SOLO",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-05-29",
+    "fecha_fin": "2026-05-29",
+    "fechas_disponibles": [
+      "2026-05-29T20:30:00+02:00",
+      "2026-05-29T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/terror-milk-pablo-solo/",
+    "url_articulo": "https://salaelsol.com/eventos/terror-milk-pablo-solo/",
+    "url_compra": "https://dice.fm/event/yoallv-terror-milk-pablo-solo-29th-may-el-sol-madrid-tickets?lng=es",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/ce9e56ad-794f-43ab-8816-6612b738707b.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "terror-milk-pablo-solo",
+    "tipo": "plan",
+    "slug": "terror-milk-pablo-solo",
+    "resumen": "¡SERÁ EL 29 DE MAYO DEL 2026 EN LA SALA EL SOL CUANDO SE CUMPLA LA PROFECÍA! ¡Oh gran Dios de los Dioses aztecas. Hemos seguido tus directrices a rajatabla. Les hemos ido soltando todo tipo de cuentos chinos a los humanos del mañana, un millón de profecías sobre meteoritos, plagas y otras chorradas del fin del mundo pa",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-05-29T20:30:00+02:00",
+    "datetime_fin": "2026-05-29T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-05-29",
+        "datetime": "2026-05-29T20:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-05-29",
+        "datetime": "2026-05-29T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-05-29",
+    "proximo_datetime": "2026-05-29T20:30:00+02:00",
+    "sort_datetime": "2026-05-29T20:30:00+02:00",
+    "vigente_hasta": "2026-05-29T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:memocracia",
+    "titulo": "MEMOCRACIA",
+    "subtitulo": null,
+    "descripcion": "Memocracia en Madrid",
+    "contenido": "Memocracia en Madrid",
+    "precio": 12.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-05",
+    "fecha_fin": "2026-06-05",
+    "fechas_disponibles": [
+      "2026-06-05T21:00:00+02:00",
+      "2026-06-05T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/memocracia/",
+    "url_articulo": "https://salaelsol.com/eventos/memocracia/",
+    "url_compra": "https://mutick.com/e/entradas-memocracia-en-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/MEMOCRACIA.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "memocracia",
+    "tipo": "plan",
+    "slug": "memocracia",
+    "resumen": "Memocracia en Madrid",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-05T21:00:00+02:00",
+    "datetime_fin": "2026-06-05T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-05",
+        "datetime": "2026-06-05T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-05",
+        "datetime": "2026-06-05T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-05",
+    "proximo_datetime": "2026-06-05T21:00:00+02:00",
+    "sort_datetime": "2026-06-05T21:00:00+02:00",
+    "vigente_hasta": "2026-06-05T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:los-modelos-2",
+    "titulo": "LOS MODELOS",
+    "subtitulo": null,
+    "descripcion": "Tras el gran éxito de su concierto de hace un año, los Modelos regresan a la Sala El Sol para presentar su nuevo disco “Bajo el radar”. Y bajo el radar se sigue manteniendo este “grupo de culto” de aquellos ya lejanos años 80, que también quiere mirar al futuro, porque ningún grupo debe vivir exclusivamente de los viejos temas, aunque sean tan queridos por ese público escogido y fiel que, desde luego, viene a escuchar esos “clásicos”, como “Noche de lluvia en Madrid”, “Tenemos que hablarlo otra vez” y “Detrás de unas gafas negras”. Si ciertamente esos temas seguirán sonando, poco a poco se abren camino otros de álbum de los Modelos de 2024 (“Días y Noches”), que marcó un punto de inflexión en el regreso del grupo en su nueva formación. Y ahora se presenta este nuevo minielepé (un formato que traerá buenos recuerdos a los seguidores veteranos del grupo), con seis canciones en las que intervienen los excelentes músicos que acompañan ahora a los dos miembros supervivientes de la formación original. Este nuevo disco, con la extraordinaria producción de Pablo Solana, que también ha enriquecido la instrumentación y ha colaborado decisivamente en los arreglos, debe marcar un nuevo rumbo, sin perder en ningún caso las raíces de pop intenso que siempre han caracterizado a los Modelos. Seis nuevos temas, con un sonido a veces más “ácido”, otras veces teñido de melancolía, cada vez más rotundo y eficaz, que en algunos casos quizá sorprendan a los seguidores del grupo pero que demuestran que, pese al paso del tiempo, hay que evolucionar y buscar también caminos y sonidos nuevos.",
+    "contenido": "Tras el gran éxito de su concierto de hace un año, los Modelos regresan a la Sala El Sol para presentar su nuevo disco “Bajo el radar”. Y bajo el radar se sigue manteniendo este “grupo de culto” de aquellos ya lejanos años 80, que también quiere mirar al futuro, porque ningún grupo debe vivir exclusivamente de los viejos temas, aunque sean tan queridos por ese público escogido y fiel que, desde luego, viene a escuchar esos “clásicos”, como “Noche de lluvia en Madrid”, “Tenemos que hablarlo otra vez” y “Detrás de unas gafas negras”. Si ciertamente esos temas seguirán sonando, poco a poco se abren camino otros de álbum de los Modelos de 2024 (“Días y Noches”), que marcó un punto de inflexión en el regreso del grupo en su nueva formación. Y ahora se presenta este nuevo minielepé (un formato que traerá buenos recuerdos a los seguidores veteranos del grupo), con seis canciones en las que intervienen los excelentes músicos que acompañan ahora a los dos miembros supervivientes de la formación original. Este nuevo disco, con la extraordinaria producción de Pablo Solana, que también ha enriquecido la instrumentación y ha colaborado decisivamente en los arreglos, debe marcar un nuevo rumbo, sin perder en ningún caso las raíces de pop intenso que siempre han caracterizado a los Modelos. Seis nuevos temas, con un sonido a veces más “ácido”, otras veces teñido de melancolía, cada vez más rotundo y eficaz, que en algunos casos quizá sorprendan a los seguidores del grupo pero que demuestran que, pese al paso del tiempo, hay que evolucionar y buscar también caminos y sonidos nuevos.",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-06",
+    "fecha_fin": "2026-06-06",
+    "fechas_disponibles": [
+      "2026-06-06T20:30:00+02:00",
+      "2026-06-06T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/los-modelos-2/",
+    "url_articulo": "https://salaelsol.com/eventos/los-modelos-2/",
+    "url_compra": "https://dice.fm/event/3o6y5v-los-modelos-6th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/IMG-20260313-WA0023.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "los-modelos-2",
+    "tipo": "plan",
+    "slug": "los-modelos",
+    "resumen": "Tras el gran éxito de su concierto de hace un año, los Modelos regresan a la Sala El Sol para presentar su nuevo disco “Bajo el radar”. Y bajo el radar se sigue manteniendo este “grupo de culto” de aquellos ya lejanos años 80, que también quiere mirar al futuro, porque ningún grupo debe vivir exclusivamente de los viej",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-06T20:30:00+02:00",
+    "datetime_fin": "2026-06-06T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-06",
+        "datetime": "2026-06-06T20:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-06",
+        "datetime": "2026-06-06T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-06",
+    "proximo_datetime": "2026-06-06T20:30:00+02:00",
+    "sort_datetime": "2026-06-06T20:30:00+02:00",
+    "vigente_hasta": "2026-06-06T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:austin-tv-indra-tour",
+    "titulo": "AUSTIN TV [Indra Tour]",
+    "subtitulo": null,
+    "descripcion": "Austin TV presenta Indra en Madrid con support de Pájaros Vampiro . —",
+    "contenido": "Austin TV presenta Indra en Madrid con support de Pájaros Vampiro . —",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-07",
+    "fecha_fin": "2026-06-07",
+    "fechas_disponibles": [
+      "2026-06-07T19:00:00+02:00",
+      "2026-06-07T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/austin-tv-indra-tour/",
+    "url_articulo": "https://salaelsol.com/eventos/austin-tv-indra-tour/",
+    "url_compra": "https://dice.fm/event/k6gybq-austin-tv-en-madrid-indra-tour-7th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/AM_1036.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "austin-tv-indra-tour",
+    "tipo": "plan",
+    "slug": "austin-tv-indra-tour",
+    "resumen": "Austin TV presenta Indra en Madrid con support de Pájaros Vampiro . —",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-07T19:00:00+02:00",
+    "datetime_fin": "2026-06-07T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-07",
+        "datetime": "2026-06-07T19:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-07",
+        "datetime": "2026-06-07T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-07",
+    "proximo_datetime": "2026-06-07T19:00:00+02:00",
+    "sort_datetime": "2026-06-07T19:00:00+02:00",
+    "vigente_hasta": "2026-06-07T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:losgalgos",
+    "titulo": "LOS GALGOS",
+    "subtitulo": null,
+    "descripcion": "Como buenos madrileños, Los Galgos presentan su primer disco en la mítica Sala El Sol. Una propuesta rompedora de letras ingeniosas y melodías pegadizas arropadas por una instrumental y directo arrollador. Este concierto contendrá todos los tracks de su nuevo trabajo (producido por Iñigo Bregel de Los Estanques), así como su single ‘’Hacerlo Contigo’’ en colaboración con Nat Simons (producido por José Nortes y mezclado por Alain Johannes: QOSTA, Chris Cornell, Them Crooked Vultures, Arctic Monkeys…) Un concierto de rock acelerado defendido por músicos de gran experiencia que tocan para artistas como Miguel Ríos, Carlangas, Alejo Stivel, Gara Durán, Hipergéminis, Grex, Drugos, Lucas Colman, Fontán … y un largo etcétera. Samuel Terroso, Victor Torrecilla, Carlos Alfaya, Carlos Kalatayud.",
+    "contenido": "Como buenos madrileños, Los Galgos presentan su primer disco en la mítica Sala El Sol. Una propuesta rompedora de letras ingeniosas y melodías pegadizas arropadas por una instrumental y directo arrollador. Este concierto contendrá todos los tracks de su nuevo trabajo (producido por Iñigo Bregel de Los Estanques), así como su single ‘’Hacerlo Contigo’’ en colaboración con Nat Simons (producido por José Nortes y mezclado por Alain Johannes: QOSTA, Chris Cornell, Them Crooked Vultures, Arctic Monkeys…) Un concierto de rock acelerado defendido por músicos de gran experiencia que tocan para artistas como Miguel Ríos, Carlangas, Alejo Stivel, Gara Durán, Hipergéminis, Grex, Drugos, Lucas Colman, Fontán … y un largo etcétera. Samuel Terroso, Victor Torrecilla, Carlos Alfaya, Carlos Kalatayud.",
+    "precio": 14.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-11",
+    "fecha_fin": "2026-06-11",
+    "fechas_disponibles": [
+      "2026-06-11T21:00:00+02:00",
+      "2026-06-11T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/losgalgos/",
+    "url_articulo": "https://salaelsol.com/eventos/losgalgos/",
+    "url_compra": "https://dice.fm/event/v3y6gd-los-galgos-11th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/01/1c492895-e021-4b48-854e-3c38dbb8189c.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "losgalgos",
+    "tipo": "plan",
+    "slug": "los-galgos",
+    "resumen": "Como buenos madrileños, Los Galgos presentan su primer disco en la mítica Sala El Sol. Una propuesta rompedora de letras ingeniosas y melodías pegadizas arropadas por una instrumental y directo arrollador. Este concierto contendrá todos los tracks de su nuevo trabajo (producido por Iñigo Bregel de Los Estanques), así c",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-11T21:00:00+02:00",
+    "datetime_fin": "2026-06-11T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-11",
+        "datetime": "2026-06-11T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-11",
+        "datetime": "2026-06-11T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-11",
+    "proximo_datetime": "2026-06-11T21:00:00+02:00",
+    "sort_datetime": "2026-06-11T21:00:00+02:00",
+    "vigente_hasta": "2026-06-11T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:bariri-sound-isidro-2",
+    "titulo": "TEO PLANELL [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Teo Planell en Sound Isidro",
+    "contenido": "Teo Planell en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-12",
+    "fecha_fin": "2026-06-12",
+    "fechas_disponibles": [
+      "2026-06-12T21:00:00+02:00",
+      "2026-06-12T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/bariri-sound-isidro-2/",
+    "url_articulo": "https://salaelsol.com/eventos/bariri-sound-isidro-2/",
+    "url_compra": "https://dice.fm/event/oeqnkm-teo-planell-en-sound-isidro-12th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/teo.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "bariri-sound-isidro-2",
+    "tipo": "plan",
+    "slug": "teo-planell-sound-isidro",
+    "resumen": "Teo Planell en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-12T21:00:00+02:00",
+    "datetime_fin": "2026-06-12T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-12",
+        "datetime": "2026-06-12T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-12",
+        "datetime": "2026-06-12T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-12",
+    "proximo_datetime": "2026-06-12T21:00:00+02:00",
+    "sort_datetime": "2026-06-12T21:00:00+02:00",
+    "vigente_hasta": "2026-06-12T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:travesia-amarte-2",
+    "titulo": "TRAVESÍA AMARTE",
+    "subtitulo": null,
+    "descripcion": "Travesía Amarte en un concierto muy especial en la Sala El Sol, presentando las nuevas canciones de su nuevo trabajo. Una noche llena de sorpresas y musica.",
+    "contenido": "Travesía Amarte en un concierto muy especial en la Sala El Sol, presentando las nuevas canciones de su nuevo trabajo. Una noche llena de sorpresas y musica.",
+    "precio": 12.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-13",
+    "fecha_fin": "2026-06-13",
+    "fechas_disponibles": [
+      "2026-06-13T21:00:00+02:00",
+      "2026-06-13T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/travesia-amarte-2/",
+    "url_articulo": "https://salaelsol.com/eventos/travesia-amarte-2/",
+    "url_compra": "https://entradium.com/events/concierto-travesia-amarte",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/travesia.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "travesia-amarte-2",
+    "tipo": "plan",
+    "slug": "travesia-amarte",
+    "resumen": "Travesía Amarte en un concierto muy especial en la Sala El Sol, presentando las nuevas canciones de su nuevo trabajo. Una noche llena de sorpresas y musica.",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-13T21:00:00+02:00",
+    "datetime_fin": "2026-06-13T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-13",
+        "datetime": "2026-06-13T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-13",
+        "datetime": "2026-06-13T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-13",
+    "proximo_datetime": "2026-06-13T21:00:00+02:00",
+    "sort_datetime": "2026-06-13T21:00:00+02:00",
+    "vigente_hasta": "2026-06-13T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:un-pinguino-en-mi-ascensor-3",
+    "titulo": "UN PINGÜINO EN MI ASCENSOR",
+    "subtitulo": null,
+    "descripcion": "Un pingüino en mi ascensor, el dúo de nasalpop que cuenta sus conciertos por soldouts, regresa a El Sol como cada primavera. Esta vez, en una única fecha, en la que repasarán todos su éxitos -al menos… en los que alguien muere-. ¡No os despisteis! Los pingüinos son aves que no despegan; las entradas anticipadas no son aves, pero vuelan.",
+    "contenido": "Un pingüino en mi ascensor, el dúo de nasalpop que cuenta sus conciertos por soldouts, regresa a El Sol como cada primavera. Esta vez, en una única fecha, en la que repasarán todos su éxitos -al menos… en los que alguien muere-. ¡No os despisteis! Los pingüinos son aves que no despegan; las entradas anticipadas no son aves, pero vuelan.",
+    "precio": 26.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-18",
+    "fecha_fin": "2026-06-18",
+    "fechas_disponibles": [
+      "2026-06-18T20:00:00+02:00",
+      "2026-06-18T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/un-pinguino-en-mi-ascensor-3/",
+    "url_articulo": "https://salaelsol.com/eventos/un-pinguino-en-mi-ascensor-3/",
+    "url_compra": "https://dice.fm/partner/tickets/event/53b7dy-un-pingino-en-mi-ascensor-18th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/Un-Pinguino_junio-2026.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "un-pinguino-en-mi-ascensor-3",
+    "tipo": "plan",
+    "slug": "un-pinguino-en-mi-ascensor",
+    "resumen": "Un pingüino en mi ascensor, el dúo de nasalpop que cuenta sus conciertos por soldouts, regresa a El Sol como cada primavera. Esta vez, en una única fecha, en la que repasarán todos su éxitos -al menos… en los que alguien muere-. ¡No os despisteis! Los pingüinos son aves que no despegan; las entradas anticipadas no son ",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-18T20:00:00+02:00",
+    "datetime_fin": "2026-06-18T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-18",
+        "datetime": "2026-06-18T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-18",
+        "datetime": "2026-06-18T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-18",
+    "proximo_datetime": "2026-06-18T20:00:00+02:00",
+    "sort_datetime": "2026-06-18T20:00:00+02:00",
+    "vigente_hasta": "2026-06-18T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:mohama-saz-sound-isidro",
+    "titulo": "MOHAMA SAZ [Sound Isidro]",
+    "subtitulo": null,
+    "descripcion": "Mohama Saz en Sound Isidro",
+    "contenido": "Mohama Saz en Sound Isidro",
+    "precio": 16.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-20",
+    "fecha_fin": "2026-06-20",
+    "fechas_disponibles": [
+      "2026-06-20T21:00:00+02:00",
+      "2026-06-20T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/mohama-saz-sound-isidro/",
+    "url_articulo": "https://salaelsol.com/eventos/mohama-saz-sound-isidro/",
+    "url_compra": "https://dice.fm/event/ww5m5r-mohama-saz-en-sound-isidro-20th-jun-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/12/mohama.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "mohama-saz-sound-isidro",
+    "tipo": "plan",
+    "slug": "mohama-saz-sound-isidro",
+    "resumen": "Mohama Saz en Sound Isidro",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-20T21:00:00+02:00",
+    "datetime_fin": "2026-06-20T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-20",
+        "datetime": "2026-06-20T21:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-20",
+        "datetime": "2026-06-20T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-20",
+    "proximo_datetime": "2026-06-20T21:00:00+02:00",
+    "sort_datetime": "2026-06-20T21:00:00+02:00",
+    "vigente_hasta": "2026-06-20T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:duro-galvan-el-corral-de-los-quietos",
+    "titulo": "DURO GALVÁN + EL CORRAL DE LOS QUIETOS",
+    "subtitulo": null,
+    "descripcion": "Si buscas una noche de etiquetas finas, te has equivocado de puerta. Duro Galván y El Corral de los Quietos se alían en una noche donde se juntan el hambre y las ganas de fumar. El grupo vallecano pone las cartas sobre el tapete para presentar su primer álbum, 20 pesetas: rock con percha que no necesita permiso para entrar. Del otro lado de la moneda, vuestro cenicero musical de confianza vuelve a la carga para que gastéis el Camel en la puerta y las suelas en el pogo. Filtros, fuego y nada de discreción. Quien no esté preparao que se prepare… y AL LORO!",
+    "contenido": "Si buscas una noche de etiquetas finas, te has equivocado de puerta. Duro Galván y El Corral de los Quietos se alían en una noche donde se juntan el hambre y las ganas de fumar. El grupo vallecano pone las cartas sobre el tapete para presentar su primer álbum, 20 pesetas: rock con percha que no necesita permiso para entrar. Del otro lado de la moneda, vuestro cenicero musical de confianza vuelve a la carga para que gastéis el Camel en la puerta y las suelas en el pogo. Filtros, fuego y nada de discreción. Quien no esté preparao que se prepare… y AL LORO!",
+    "precio": 12.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-06-26",
+    "fecha_fin": "2026-06-26",
+    "fechas_disponibles": [
+      "2026-06-26T20:00:00+02:00",
+      "2026-06-26T22:00:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/duro-galvan-el-corral-de-los-quietos/",
+    "url_articulo": "https://salaelsol.com/eventos/duro-galvan-el-corral-de-los-quietos/",
+    "url_compra": "https://dice.fm/partner/tickets/event/dkm93q-duro-galvn-el-corral-de-los-quietos-26th-jun-el-sol-madrid-tickets?dice_id=8737669&dice_channel=web&dice_tags=organic&dice_campaign=El+Sol&dice_feature=mio_marketing&_branch_match_id=1383834468064672699&utm_source=web&utm_campaign=El+Sol&utm_medium=mio_marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXz8nMy9ZLyUxO1UvL1Xc3TUk2MTU0MDcxNrevK0pNSy0qysxLj08qyi8vTi2ydc4oys9NBQCuN%2BWUOwAAAA%3D%3D",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/2def9080-fdc1-4c92-a89c-03285c636825.avif",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "duro-galvan-el-corral-de-los-quietos",
+    "tipo": "plan",
+    "slug": "duro-galvan-el-corral-de-los-quietos",
+    "resumen": "Si buscas una noche de etiquetas finas, te has equivocado de puerta. Duro Galván y El Corral de los Quietos se alían en una noche donde se juntan el hambre y las ganas de fumar. El grupo vallecano pone las cartas sobre el tapete para presentar su primer álbum, 20 pesetas: rock con percha que no necesita permiso para en",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-06-26T20:00:00+02:00",
+    "datetime_fin": "2026-06-26T22:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-06-26",
+        "datetime": "2026-06-26T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-06-26",
+        "datetime": "2026-06-26T22:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-06-26",
+    "proximo_datetime": "2026-06-26T20:00:00+02:00",
+    "sort_datetime": "2026-06-26T20:00:00+02:00",
+    "vigente_hasta": "2026-06-26T22:00:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:white-denim",
+    "titulo": "WHITE DENIM",
+    "subtitulo": null,
+    "descripcion": "Los estadounidenses White Denim presentarán su próximo disco, que llevará por título “13” (y saldrá el 24 de abril), el 18 de septiembre en Barcelona ( Upload ) y dos días más tarde, el 20 , en Madrid ( El Sol ). Las entradas para ambas fechas saldrán a la venta este jueves 2 de abril a las 11 horas . Con anterioridad, el miércoles 1 de abril a las 11 horas se pondrán en marcha una preventa exclusiva, que estará vigente hasta el inicio de la venta general. Para participar en esta preventa hay que registrarse aquí antes del miércoles 1 de abril a las 10 horas. White Denim siempre ha sido una banda difícil de encasillar. Formada en 2006 y debutando discográficamente en 2008 con el LP “Workout Holiday” , ha recorrido un amplio espectro musical, desde el garage rock más estridente hasta el indie más sutil, pasando por toques de psicodelia, rock progresivo, soul y boogie sureño. Sin miedo a los cambios de formación, y con estos habiendo sumado más que restado, tanto han ido moviéndose que en “12” (2024), su último disco hasta la fecha, y duodécimo, como indica su título, también lograron sorprender con algo completamente distinto. Y es que con “12” , absorbiendo influencias estéticas de la escena new wave británica a través de grupos como Scritti Politti , Orange Juice y Aztec Camera , a la vez que asimilando las magistrales producciones dub de Lee ‘Scratch’ Perry y Dennis Bovell , y estudiando la destreza compositiva de Nick Lowe y Jonathan Richman , crearon un álbum de pop brillante, art.rock sofisticado, funk soleado y soul excéntrico. En el corazón de la visión de la banda se encuentra el líder James Petralli , cuya voz inconfundible, su virtuosismo con la guitarra y su ingeniosa composición son la base del sonido de White Denim . Su presencia dinámica, tanto en el estudio como en el escenario, lo ha convertido en uno de los vocalistas más cautivadores del rock moderno, asegurando que White Denim siga siendo una fuerza singular e impredecible de la música contemporánea. El 24 de abril de este 2026 van a publicar su decimotercer disco, que va a titularse, muy propiamente, “13” . De momento han sacado dos singles de adelanto, “(God Created) Lock And Key” , que salió el 21 de enero, y “Hire Hand # 2” , que lo ha hecho el 3 de marzo. Finalmente, y antes de cerrar este texto, recordar este extracto de una reseña sobre ellos, tan ilustrativa : “Son una de esas bandas que pertenecen a una categoría muy rara: son consistentemente excelentes de un disco a otro” ( Clash ).",
+    "contenido": "Los estadounidenses White Denim presentarán su próximo disco, que llevará por título “13” (y saldrá el 24 de abril), el 18 de septiembre en Barcelona ( Upload ) y dos días más tarde, el 20 , en Madrid ( El Sol ). Las entradas para ambas fechas saldrán a la venta este jueves 2 de abril a las 11 horas . Con anterioridad, el miércoles 1 de abril a las 11 horas se pondrán en marcha una preventa exclusiva, que estará vigente hasta el inicio de la venta general. Para participar en esta preventa hay que registrarse aquí antes del miércoles 1 de abril a las 10 horas. White Denim siempre ha sido una banda difícil de encasillar. Formada en 2006 y debutando discográficamente en 2008 con el LP “Workout Holiday” , ha recorrido un amplio espectro musical, desde el garage rock más estridente hasta el indie más sutil, pasando por toques de psicodelia, rock progresivo, soul y boogie sureño. Sin miedo a los cambios de formación, y con estos habiendo sumado más que restado, tanto han ido moviéndose que en “12” (2024), su último disco hasta la fecha, y duodécimo, como indica su título, también lograron sorprender con algo completamente distinto. Y es que con “12” , absorbiendo influencias estéticas de la escena new wave británica a través de grupos como Scritti Politti , Orange Juice y Aztec Camera , a la vez que asimilando las magistrales producciones dub de Lee ‘Scratch’ Perry y Dennis Bovell , y estudiando la destreza compositiva de Nick Lowe y Jonathan Richman , crearon un álbum de pop brillante, art.rock sofisticado, funk soleado y soul excéntrico. En el corazón de la visión de la banda se encuentra el líder James Petralli , cuya voz inconfundible, su virtuosismo con la guitarra y su ingeniosa composición son la base del sonido de White Denim . Su presencia dinámica, tanto en el estudio como en el escenario, lo ha convertido en uno de los vocalistas más cautivadores del rock moderno, asegurando que White Denim siga siendo una fuerza singular e impredecible de la música contemporánea. El 24 de abril de este 2026 van a publicar su decimotercer disco, que va a titularse, muy propiamente, “13” . De momento han sacado dos singles de adelanto, “(God Created) Lock And Key” , que salió el 21 de enero, y “Hire Hand # 2” , que lo ha hecho el 3 de marzo. Finalmente, y antes de cerrar este texto, recordar este extracto de una reseña sobre ellos, tan ilustrativa : “Son una de esas bandas que pertenecen a una categoría muy rara: son consistentemente excelentes de un disco a otro” ( Clash ).",
+    "precio": 30.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-09-20",
+    "fecha_fin": "2026-09-20",
+    "fechas_disponibles": [
+      "2026-09-20T20:00:00+02:00",
+      "2026-09-20T22:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/white-denim/",
+    "url_articulo": "https://salaelsol.com/eventos/white-denim/",
+    "url_compra": "https://www.ticketmaster.es/event/261469794?subchannel_id=11806&brand=es_houstonparty&_gl=1*3rijj0*_ga*MTU2MzQ5NjI2Ny4xNzc1MzAxNjcx*_ga_LF9H42R1YT*czE3NzUzMDE2NzAkbzEkZzEkdDE3NzUzMDE4ODIkajYwJGwwJGgw",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/WhiteDenim_Madrid_square.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "white-denim",
+    "tipo": "plan",
+    "slug": "white-denim",
+    "resumen": "Los estadounidenses White Denim presentarán su próximo disco, que llevará por título “13” (y saldrá el 24 de abril), el 18 de septiembre en Barcelona ( Upload ) y dos días más tarde, el 20 , en Madrid ( El Sol ). Las entradas para ambas fechas saldrán a la venta este jueves 2 de abril a las 11 horas . Con anterioridad,",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-09-20T20:00:00+02:00",
+    "datetime_fin": "2026-09-20T22:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-09-20",
+        "datetime": "2026-09-20T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-09-20",
+        "datetime": "2026-09-20T22:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-09-20",
+    "proximo_datetime": "2026-09-20T20:00:00+02:00",
+    "sort_datetime": "2026-09-20T20:00:00+02:00",
+    "vigente_hasta": "2026-09-20T22:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:las-novias-serch",
+    "titulo": "LAS NOVIAS + SERCH.",
+    "subtitulo": null,
+    "descripcion": "LAS NOVIAS regresan para presentar su esperado nuevo álbum Anatomía De Un Frío Universo. Con una trayectoria que arranca a finales de los años 80, Las Novias se consolidaron como una de las bandas esenciales del rock oscuro en España. Su sonido mezcla post-punk, gothic rock y una personalidad arrolladora que los convirtió en grupo de culto dentro y fuera del país. Tras varias etapas y regresos celebrados por sus seguidores, la banda ha sabido mantener intacta su intensidad y magnetismo sobre el escenario. Sus álbumes forman parte de la historia underground nacional y siguen sumando nuevas generaciones de fans. Cada concierto es una experiencia única cargada de energía, emoción y atmósferas envolventes. SERCH. abrirán la velada.",
+    "contenido": "LAS NOVIAS regresan para presentar su esperado nuevo álbum Anatomía De Un Frío Universo. Con una trayectoria que arranca a finales de los años 80, Las Novias se consolidaron como una de las bandas esenciales del rock oscuro en España. Su sonido mezcla post-punk, gothic rock y una personalidad arrolladora que los convirtió en grupo de culto dentro y fuera del país. Tras varias etapas y regresos celebrados por sus seguidores, la banda ha sabido mantener intacta su intensidad y magnetismo sobre el escenario. Sus álbumes forman parte de la historia underground nacional y siguen sumando nuevas generaciones de fans. Cada concierto es una experiencia única cargada de energía, emoción y atmósferas envolventes. SERCH. abrirán la velada.",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-10-03",
+    "fecha_fin": "2026-10-03",
+    "fechas_disponibles": [
+      "2026-10-03T19:30:00+02:00",
+      "2026-10-03T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/las-novias-serch/",
+    "url_articulo": "https://salaelsol.com/eventos/las-novias-serch/",
+    "url_compra": "https://www.ticketmaster.es/event/1222467315?brand=base_mb_es",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/lasnovias.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "las-novias-serch",
+    "tipo": "plan",
+    "slug": "las-novias-serch",
+    "resumen": "LAS NOVIAS regresan para presentar su esperado nuevo álbum Anatomía De Un Frío Universo. Con una trayectoria que arranca a finales de los años 80, Las Novias se consolidaron como una de las bandas esenciales del rock oscuro en España. Su sonido mezcla post-punk, gothic rock y una personalidad arrolladora que los convir",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-10-03T19:30:00+02:00",
+    "datetime_fin": "2026-10-03T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-10-03",
+        "datetime": "2026-10-03T19:30:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-10-03",
+        "datetime": "2026-10-03T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-10-03",
+    "proximo_datetime": "2026-10-03T19:30:00+02:00",
+    "sort_datetime": "2026-10-03T19:30:00+02:00",
+    "vigente_hasta": "2026-10-03T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:gutalax-2",
+    "titulo": "GUTALAX",
+    "subtitulo": null,
+    "descripcion": "Madrid DeathFest Presenta: GUTALAX + invitado Apertura de Puertas: 20:00 / Conciertos: 20:30 Entrada 22,5€+gg Ant / Taquilla 25€",
+    "contenido": "Madrid DeathFest Presenta: GUTALAX + invitado Apertura de Puertas: 20:00 / Conciertos: 20:30 Entrada 22,5€+gg Ant / Taquilla 25€",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-10-18",
+    "fecha_fin": "2026-10-18",
+    "fechas_disponibles": [
+      "2026-10-18T20:00:00+02:00",
+      "2026-10-18T23:30:00+02:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/gutalax-2/",
+    "url_articulo": "https://salaelsol.com/eventos/gutalax-2/",
+    "url_compra": "https://entradium.com/events/gutalax-mas-invitado-en-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2025/09/IMG-20250911-WA0022.jpg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "gutalax-2",
+    "tipo": "plan",
+    "slug": "gutalax",
+    "resumen": "Madrid DeathFest Presenta: GUTALAX + invitado Apertura de Puertas: 20:00 / Conciertos: 20:30 Entrada 22,5€+gg Ant / Taquilla 25€",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-10-18T20:00:00+02:00",
+    "datetime_fin": "2026-10-18T23:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-10-18",
+        "datetime": "2026-10-18T20:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-10-18",
+        "datetime": "2026-10-18T23:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-10-18",
+    "proximo_datetime": "2026-10-18T20:00:00+02:00",
+    "sort_datetime": "2026-10-18T20:00:00+02:00",
+    "vigente_hasta": "2026-10-18T23:30:00+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:celia-becks",
+    "titulo": "CELIA BECKS",
+    "subtitulo": null,
+    "descripcion": "Celia Becks ha retomó su carrera en solitario con el lanzamiento de su primer LP, «Ve a Terapia», en el año 2023. Celia desempeñó un papel fundamental como bajista y compositora de La La Love You desde 2014 hasta 2023. Celia Becks ha colaborado con artistas como Nena Daconte, Fran Perea, Chica Sobresalto, shakeitmila, Jonathan Pons, STRANGEL0VE y Liz Forte. Su segundo LP ya está disponible, NO NECESITAMOS SABERLO TODO, producido por Guille Mostaza en los estudios Alamo Shock y la propia Celia. También podemo encontrar a Celia en la actualidad acompañando a BILLY FLAMINGOS como bajista y capitaneando Supersónica Podcast, un formato de entrevistas musicales centradas en la industria musical y sus entresijos.",
+    "contenido": "Celia Becks ha retomó su carrera en solitario con el lanzamiento de su primer LP, «Ve a Terapia», en el año 2023. Celia desempeñó un papel fundamental como bajista y compositora de La La Love You desde 2014 hasta 2023. Celia Becks ha colaborado con artistas como Nena Daconte, Fran Perea, Chica Sobresalto, shakeitmila, Jonathan Pons, STRANGEL0VE y Liz Forte. Su segundo LP ya está disponible, NO NECESITAMOS SABERLO TODO, producido por Guille Mostaza en los estudios Alamo Shock y la propia Celia. También podemo encontrar a Celia en la actualidad acompañando a BILLY FLAMINGOS como bajista y capitaneando Supersónica Podcast, un formato de entrevistas musicales centradas en la industria musical y sus entresijos.",
+    "precio": 13.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2026-12-02",
+    "fecha_fin": "2026-12-02",
+    "fechas_disponibles": [
+      "2026-12-02T20:30:00+01:00",
+      "2026-12-02T23:00:00+01:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/celia-becks/",
+    "url_articulo": "https://salaelsol.com/eventos/celia-becks/",
+    "url_compra": "https://dice.fm/partner/tickets/event/xeaqxl-celia-becks-2nd-dec-el-sol-madrid-tickets",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/03/celia-becks.jpeg",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "celia-becks",
+    "tipo": "plan",
+    "slug": "celia-becks",
+    "resumen": "Celia Becks ha retomó su carrera en solitario con el lanzamiento de su primer LP, «Ve a Terapia», en el año 2023. Celia desempeñó un papel fundamental como bajista y compositora de La La Love You desde 2014 hasta 2023. Celia Becks ha colaborado con artistas como Nena Daconte, Fran Perea, Chica Sobresalto, shakeitmila, ",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-12-02T20:30:00+01:00",
+    "datetime_fin": "2026-12-02T23:00:00+01:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-12-02",
+        "datetime": "2026-12-02T20:30:00+01:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2026-12-02",
+        "datetime": "2026-12-02T23:00:00+01:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-12-02",
+    "proximo_datetime": "2026-12-02T20:30:00+01:00",
+    "sort_datetime": "2026-12-02T20:30:00+01:00",
+    "vigente_hasta": "2026-12-02T23:00:00+01:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  },
+  {
+    "id": "plan:sala_el_sol:the-ultimate-stone-roses",
+    "titulo": "THE ULTIMATE STONE ROSES",
+    "subtitulo": null,
+    "descripcion": "La banda tributo más fiel y electrizante de la mítica formación de Manchester, The Ultimate Stone Roses , anuncia su esperada llegada a España con dos fechas imprescindibles para cualquier amante del sonido Manchester. Con una trayectoria consolidada en Reino Unido y Europa, The Ultimate Stone Roses se han ganado la reputación de ofrecer el show más auténtico, detallado y apasionado dedicado a los legendarios The Stone Roses . Su puesta en escena, su sonido y su energía capturan la esencia de Ian Brown, John Squire, Mani y Reni como ninguna otra banda tributo. Durante estos conciertos, el público podrá disfrutar de himnos generacionales como I Wanna Be Adored , She Bangs the Drums , Waterfall , I Am the Resurrection , así como joyas tempranas como Sally Cinnamon o Mersey Paradise . Cada actuación es un viaje directo a la época dorada del indie británico. UNA EXPERIENCIA IMPERDIBLE PARA LOS FANS Si creciste con The Stone Roses, si vibraste con su primer álbum o si simplemente quieres vivir la magia de una de las bandas más influyentes del Reino Unido, no puedes perderte esta gira . Los conciertos de The Ultimate Stone Roses no son solo un tributo: son una celebración. Una noche para cantar, saltar y revivir la banda sonora de toda una generación.",
+    "contenido": "La banda tributo más fiel y electrizante de la mítica formación de Manchester, The Ultimate Stone Roses , anuncia su esperada llegada a España con dos fechas imprescindibles para cualquier amante del sonido Manchester. Con una trayectoria consolidada en Reino Unido y Europa, The Ultimate Stone Roses se han ganado la reputación de ofrecer el show más auténtico, detallado y apasionado dedicado a los legendarios The Stone Roses . Su puesta en escena, su sonido y su energía capturan la esencia de Ian Brown, John Squire, Mani y Reni como ninguna otra banda tributo. Durante estos conciertos, el público podrá disfrutar de himnos generacionales como I Wanna Be Adored , She Bangs the Drums , Waterfall , I Am the Resurrection , así como joyas tempranas como Sally Cinnamon o Mersey Paradise . Cada actuación es un viaje directo a la época dorada del indie británico. UNA EXPERIENCIA IMPERDIBLE PARA LOS FANS Si creciste con The Stone Roses, si vibraste con su primer álbum o si simplemente quieres vivir la magia de una de las bandas más influyentes del Reino Unido, no puedes perderte esta gira . Los conciertos de The Ultimate Stone Roses no son solo un tributo: son una celebración. Una noche para cantar, saltar y revivir la banda sonora de toda una generación.",
+    "precio": 22.0,
+    "moneda": "EUR",
+    "lugar": "Sala El Sol",
+    "direccion": "Calle de los Jardines 3, 28013 Madrid",
+    "latitud": 40.419056529364845,
+    "longitud": -3.703834384604002,
+    "fecha_inicio": "2027-01-01",
+    "fecha_fin": "2027-01-01",
+    "fechas_disponibles": [
+      "2027-01-01T20:00:00+01:00",
+      "2027-01-01T22:30:00+01:00"
+    ],
+    "categorias": [
+      "Conciertos",
+      "Musica"
+    ],
+    "etiquetas": [
+      "Sala El Sol"
+    ],
+    "url": "https://salaelsol.com/eventos/the-ultimate-stone-roses/",
+    "url_articulo": "https://salaelsol.com/eventos/the-ultimate-stone-roses/",
+    "url_compra": "https://mutick.com/e/entradas-the-ultimate-stone-roses-madrid",
+    "imagen": "https://salaelsol.com/wp-content/uploads/2026/04/theultimatestoneroses.png",
+    "fecha_publicacion": null,
+    "fecha_actualizacion": null,
+    "fuente": "sala_el_sol",
+    "metadata": {},
+    "fuente_id": "the-ultimate-stone-roses",
+    "tipo": "plan",
+    "slug": "the-ultimate-stone-roses",
+    "resumen": "La banda tributo más fiel y electrizante de la mítica formación de Manchester, The Ultimate Stone Roses , anuncia su esperada llegada a España con dos fechas imprescindibles para cualquier amante del sonido Manchester. Con una trayectoria consolidada en Reino Unido y Europa, The Ultimate Stone Roses se han ganado la re",
+    "categoria_principal": "Conciertos",
+    "autor": null,
+    "es_gratis": false,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2027-01-01T20:00:00+01:00",
+    "datetime_fin": "2027-01-01T22:30:00+01:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2027-01-01",
+        "datetime": "2027-01-01T20:00:00+01:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2027-01-01",
+        "datetime": "2027-01-01T22:30:00+01:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2027-01-01",
+    "proximo_datetime": "2027-01-01T20:00:00+01:00",
+    "sort_datetime": "2027-01-01T20:00:00+01:00",
+    "vigente_hasta": "2027-01-01T22:30:00+01:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-04-13T08:14:17Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  }
+]

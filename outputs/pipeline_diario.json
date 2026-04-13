@@ -1,0 +1,269 @@
+{
+  "trigger": {
+    "type": "manual",
+    "source": "hygiene-pass-ticketmaster",
+    "schedule": null,
+    "simulated_at": "2026-04-13T09:35:23Z",
+    "fever_mode": "full"
+  },
+  "started_at": "2026-04-13T09:35:22Z",
+  "finished_at": "2026-04-13T09:35:23Z",
+  "duration_seconds": 0.9,
+  "sources": [
+    {
+      "name": "biblioteca_nacional",
+      "kind": "plan",
+      "status": "ok",
+      "count": 6,
+      "output": "outputs/eventos_biblioteca_nacional.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "casa_mexico",
+      "kind": "plan",
+      "status": "ok",
+      "count": 74,
+      "output": "outputs/eventos_casa_mexico.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "circulo_bellas_artes",
+      "kind": "plan",
+      "status": "ok",
+      "count": 42,
+      "output": "outputs/eventos_circulo_bellas_artes.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:22Z",
+      "error": null
+    },
+    {
+      "name": "datos_madrid",
+      "kind": "plan",
+      "status": "ok",
+      "count": 1167,
+      "output": "outputs/eventos_datos_madrid.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "espacio_fundacion_telefonica",
+      "kind": "plan",
+      "status": "ok",
+      "count": 12,
+      "output": "outputs/eventos_espacio_fundacion_telefonica.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "eventbrite",
+      "kind": "plan",
+      "status": "ok",
+      "count": 545,
+      "output": "outputs/eventos_eventbrite.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "fever",
+      "kind": "plan",
+      "status": "ok",
+      "count": 416,
+      "output": "outputs/eventos_fever.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "fundacion_canal",
+      "kind": "plan",
+      "status": "ok",
+      "count": 4,
+      "output": "outputs/eventos_fundacion_canal.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "fundacion_mapfre",
+      "kind": "plan",
+      "status": "ok",
+      "count": 2,
+      "output": "outputs/eventos_fundacion_mapfre.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "gacetin_madrid",
+      "kind": "news",
+      "status": "ok",
+      "count": 54,
+      "output": "outputs/noticias_gacetin_madrid.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "ifema_madrid",
+      "kind": "plan",
+      "status": "ok",
+      "count": 52,
+      "output": "outputs/eventos_ifema_madrid.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:22Z",
+      "error": null
+    },
+    {
+      "name": "madrid_secreto",
+      "kind": "plan",
+      "status": "ok",
+      "count": 381,
+      "output": "outputs/eventos_madrid_secreto.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "matadero",
+      "kind": "plan",
+      "status": "ok",
+      "count": 138,
+      "output": "outputs/eventos_matadero.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:22Z",
+      "error": null
+    },
+    {
+      "name": "museo_reina_sofia",
+      "kind": "plan",
+      "status": "ok",
+      "count": 44,
+      "output": "outputs/eventos_museo_reina_sofia.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "sala_el_sol",
+      "kind": "plan",
+      "status": "ok",
+      "count": 48,
+      "output": "outputs/eventos_sala_el_sol.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "teatros_canal",
+      "kind": "plan",
+      "status": "ok",
+      "count": 20,
+      "output": "outputs/eventos_teatros_canal.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:22Z",
+      "error": null
+    },
+    {
+      "name": "ticketmaster",
+      "kind": "plan",
+      "status": "ok",
+      "count": 143,
+      "output": "outputs/eventos_ticketmaster.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "timeout",
+      "kind": "news",
+      "status": "ok",
+      "count": 93,
+      "output": "outputs/noticias_timeout.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    },
+    {
+      "name": "wegow",
+      "kind": "plan",
+      "status": "ok",
+      "count": 108,
+      "output": "outputs/eventos_wegow.json",
+      "started_at": "2026-04-13T09:35:22Z",
+      "finished_at": "2026-04-13T09:35:23Z",
+      "error": null
+    }
+  ],
+  "feeds": {
+    "planes": {
+      "output": "outputs/eventos_madrid_all.json",
+      "count": 3112,
+      "validation": {
+        "valid": true,
+        "total": 3112,
+        "with_price": 1926,
+        "with_location": 3112,
+        "by_source": {
+          "datos_madrid": 1167,
+          "matadero": 129,
+          "fever": 415,
+          "eventbrite": 545,
+          "circulo_bellas_artes": 42,
+          "ticketmaster": 143,
+          "ifema_madrid": 52,
+          "madrid_secreto": 301,
+          "museo_reina_sofia": 44,
+          "wegow": 108,
+          "casa_mexico": 74,
+          "biblioteca_nacional": 6,
+          "espacio_fundacion_telefonica": 12,
+          "sala_el_sol": 48,
+          "teatros_canal": 20,
+          "fundacion_canal": 4,
+          "fundacion_mapfre": 2
+        },
+        "by_mode": {
+          "multiple": 438,
+          "rango": 729,
+          "puntual": 578,
+          "puntual_con_hora": 1281,
+          "sin_fecha": 86
+        },
+        "errors": []
+      }
+    },
+    "noticias": {
+      "output": "outputs/noticias_madrid_all.json",
+      "count": 145,
+      "validation": {
+        "valid": true,
+        "total": 145,
+        "by_source": {
+          "gacetin_madrid": 54,
+          "timeout": 91
+        },
+        "by_category": {
+          "Cultura y Ocio": 54,
+          "Arte": 9,
+          "Qué hacer": 32,
+          "Tiendas": 10,
+          "Comedia": 1,
+          "Restaurantes": 15,
+          "Viaje": 5,
+          "Música": 12,
+          "Niños": 4,
+          "Teatro": 2,
+          "Cine": 1
+        },
+        "errors": []
+      }
+    }
+  }
+}
