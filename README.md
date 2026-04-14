@@ -40,12 +40,33 @@ pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
-## Run
+## Run Data Pipeline (Backend)
 
 Run all scrapers:
 
 ```bash
 python tools/scrape_all.py
+```
+
+Then, run the processing pipeline to normalize and enhance the data:
+
+```bash
+# Merge feeds
+python tools/rebuild_feeds.py
+# Normalize categories to 18 canonical buckets
+python tools/normalize_categories.py
+# Geocode missing coordinates (safe/rate-limited)
+python tools/geocode_events.py
+# Fix missing photos with deterministic Unsplash placeholders
+python tools/fix_missing_photos.py
+```
+
+## Run Frontend
+
+```bash
+cd frontend_new
+npm install
+npm run dev
 ```
 
 Simulate the scheduled daily trigger:

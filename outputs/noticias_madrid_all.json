@@ -44,7 +44,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356699"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:gacetin_madrid:356685",
@@ -91,7 +95,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356685"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:vuelve-el-festival-de-arte-urbano-que-transforma-lavapies-murales-y-grafitis-llenan-las-calles-de-color-esta-primavera-041226",
@@ -161,7 +171,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-el-festival-de-arte-urbano-que-transforma-lavapies-murales-y-grafitis-llenan-las-calles-de-color-esta-primavera-041226"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:vuelve-a-madrid-esta-feria-del-libro-dedicada-a-las-publicaciones-independientes-con-su-edicion-mas-grande-hasta-la-fecha-041226",
@@ -234,7 +250,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-a-madrid-esta-feria-del-libro-dedicada-a-las-publicaciones-independientes-con-su-edicion-mas-grande-hasta-la-fecha-041226"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Talleres y Cursos",
+      "Mercados y Ferias",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Talleres y Cursos"
   },
   {
     "id": "noticia:gacetin_madrid:356680",
@@ -281,7 +303,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356680"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Vida Nocturna"
   },
   {
     "id": "noticia:gacetin_madrid:356638",
@@ -329,7 +355,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356638"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:el-mercadillo-dentro-de-una-casa-de-lujo-en-madrid-donde-todo-esta-a-la-venta-muebles-de-cocina-decoracion-e-incluso-las-puertas-041126",
@@ -400,7 +430,11 @@
     ],
     "ids_relacionados": [
       "timeout:el-mercadillo-dentro-de-una-casa-de-lujo-en-madrid-donde-todo-esta-a-la-venta-muebles-de-cocina-decoracion-e-incluso-las-puertas-041126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:timeout:desde-la-finca-vista-alegre-hasta-la-colonia-de-la-prensa-ya-puedes-reservar-estas-visitas-guiadas-gratuitas-para-descubrir-todos-los-secretos-de-carabanchel-041126",
@@ -472,7 +506,13 @@
     ],
     "ids_relacionados": [
       "timeout:desde-la-finca-vista-alegre-hasta-la-colonia-de-la-prensa-ya-puedes-reservar-estas-visitas-guiadas-gratuitas-para-descubrir-todos-los-secretos-de-carabanchel-041126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Naturaleza y Aire Libre",
+      "Visitas y Rutas",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Naturaleza y Aire Libre"
   },
   {
     "id": "noticia:timeout:madrid-vuelve-a-celebrar-su-gran-feria-de-libros-antiguos-con-de-miles-de-ejemplares-clasicos-desde-1-041126",
@@ -544,7 +584,13 @@
     ],
     "ids_relacionados": [
       "timeout:madrid-vuelve-a-celebrar-su-gran-feria-de-libros-antiguos-con-de-miles-de-ejemplares-clasicos-desde-1-041126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias",
+      "Comunidad y Social",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:gacetin_madrid:356610",
@@ -590,7 +636,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356610"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:356621",
@@ -637,7 +687,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356621"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Arte y Exposiciones",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356569",
@@ -684,7 +740,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356569"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Comunidad y Social"
   },
   {
     "id": "noticia:timeout:la-real-fabrica-de-tapices-acoge-un-festival-de-comedia-unico-con-entradas-gratis-y-photocall-tematico-041026",
@@ -754,7 +814,12 @@
     ],
     "ids_relacionados": [
       "timeout:la-real-fabrica-de-tapices-acoge-un-festival-de-comedia-unico-con-entradas-gratis-y-photocall-tematico-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:malasana-se-convierte-en-un-lienzo-al-aire-libre-con-la-celebracion-de-este-gran-festival-de-arte-urbano-041026",
@@ -827,7 +892,13 @@
     ],
     "ids_relacionados": [
       "timeout:malasana-se-convierte-en-un-lienzo-al-aire-libre-con-la-celebracion-de-este-gran-festival-de-arte-urbano-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:the-champions-burger-vuelve-a-madrid-con-un-nuevo-espectaculo-mas-de-20-food-trucks-y-las-mejores-hamburguesas-de-espana-041026",
@@ -901,7 +972,13 @@
     ],
     "ids_relacionados": [
       "timeout:the-champions-burger-vuelve-a-madrid-con-un-nuevo-espectaculo-mas-de-20-food-trucks-y-las-mejores-hamburguesas-de-espana-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Gastronomía",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:gacetin_madrid:356589",
@@ -949,7 +1026,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356589"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:quesos-verduras-y-aceites-los-mejores-productos-locales-protagonizan-este-mercado-de-proximidad-en-madrid-041026",
@@ -1023,7 +1105,13 @@
     ],
     "ids_relacionados": [
       "timeout:quesos-verduras-y-aceites-los-mejores-productos-locales-protagonizan-este-mercado-de-proximidad-en-madrid-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:el-tren-de-cervantes-vuelve-a-las-vias-en-primavera-descubre-todos-los-secretos-de-alcala-de-henares-en-este-recorrido-guiado-unico-041026",
@@ -1098,7 +1186,12 @@
     ],
     "ids_relacionados": [
       "timeout:el-tren-de-cervantes-vuelve-a-las-vias-en-primavera-descubre-todos-los-secretos-de-alcala-de-henares-en-este-recorrido-guiado-unico-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:planazos-para-comer-este-abril-ultimas-sorpresas-gastro-en-madrid-una-terraza-escondida-un-dulce-emblematico-y-nuevo-puesto-de-mercado-infalible-041026",
@@ -1171,7 +1264,12 @@
     ],
     "ids_relacionados": [
       "timeout:planazos-para-comer-este-abril-ultimas-sorpresas-gastro-en-madrid-una-terraza-escondida-un-dulce-emblematico-y-nuevo-puesto-de-mercado-infalible-041026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:gacetin_madrid:356536",
@@ -1217,7 +1315,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356536"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:reabre-una-taberna-legendaria-la-joya-mas-importante-de-madrid-para-irse-de-tapas-este-2026-asi-es-la-resurreccion-mas-espectacular-del-barrio-de-las-letras-040926",
@@ -1288,7 +1391,13 @@
     ],
     "ids_relacionados": [
       "timeout:reabre-una-taberna-legendaria-la-joya-mas-importante-de-madrid-para-irse-de-tapas-este-2026-asi-es-la-resurreccion-mas-espectacular-del-barrio-de-las-letras-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356529",
@@ -1334,7 +1443,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356529"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Ocio y Entretenimiento"
+    ],
+    "categoria_principal_norm": "Ocio y Entretenimiento"
   },
   {
     "id": "noticia:gacetin_madrid:356479",
@@ -1381,7 +1494,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356479"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Vida Nocturna"
   },
   {
     "id": "noticia:gacetin_madrid:356475",
@@ -1428,7 +1545,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356475"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Comunidad y Social"
   },
   {
     "id": "noticia:timeout:vuelve-este-gran-mercadillo-medieval-a-menos-de-1-hora-de-madrid-con-gastronomia-local-musica-de-epoca-y-juegos-para-ninos-040926",
@@ -1502,7 +1623,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-este-gran-mercadillo-medieval-a-menos-de-1-hora-de-madrid-con-gastronomia-local-musica-de-epoca-y-juegos-para-ninos-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:una-de-las-mejores-colecciones-de-armaduras-del-mundo-esta-en-madrid-y-acaba-de-reabrir-sus-puertas-040926",
@@ -1578,7 +1705,13 @@
     ],
     "ids_relacionados": [
       "timeout:una-de-las-mejores-colecciones-de-armaduras-del-mundo-esta-en-madrid-y-acaba-de-reabrir-sus-puertas-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:las-salas-y-clubs-de-madrid-celebran-el-dia-internacional-del-jazz-con-mas-de-15-conciertos-040926",
@@ -1648,7 +1781,12 @@
     ],
     "ids_relacionados": [
       "timeout:las-salas-y-clubs-de-madrid-celebran-el-dia-internacional-del-jazz-con-mas-de-15-conciertos-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:llega-a-esta-sala-de-madrid-el-tardeo-mas-entretenido-con-mucho-petardeo-musica-en-directo-y-pizza-gratis-040926",
@@ -1723,7 +1861,13 @@
     ],
     "ids_relacionados": [
       "timeout:llega-a-esta-sala-de-madrid-el-tardeo-mas-entretenido-con-mucho-petardeo-musica-en-directo-y-pizza-gratis-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:este-centro-comercial-de-madrid-celebra-su-propia-feria-del-libro-con-encuentros-lecturas-y-firmas-040926",
@@ -1795,7 +1939,13 @@
     ],
     "ids_relacionados": [
       "timeout:este-centro-comercial-de-madrid-celebra-su-propia-feria-del-libro-con-encuentros-lecturas-y-firmas-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Mercados y Ferias",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:este-restaurante-del-barrio-de-las-letras-nuevo-rey-de-la-cocina-asturiana-en-madrid-mejor-cachopo-del-mundo-2026-y-mejor-fabada-de-espana-040926",
@@ -1863,7 +2013,12 @@
     ],
     "ids_relacionados": [
       "timeout:este-restaurante-del-barrio-de-las-letras-nuevo-rey-de-la-cocina-asturiana-en-madrid-mejor-cachopo-del-mundo-2026-y-mejor-fabada-de-espana-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:el-gran-competidor-de-primor-abre-una-nueva-macrotienda-de-mas-de-1-000-metros-cuadrados-en-plena-gran-via-040926",
@@ -1931,7 +2086,11 @@
     ],
     "ids_relacionados": [
       "timeout:el-gran-competidor-de-primor-abre-una-nueva-macrotienda-de-mas-de-1-000-metros-cuadrados-en-plena-gran-via-040926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Comunidad y Social"
   },
   {
     "id": "noticia:timeout:guitarricadelafuente-dara-un-concierto-gratuito-por-sorpresa-en-una-centrica-plaza-de-madrid-040826",
@@ -2000,7 +2159,13 @@
     ],
     "ids_relacionados": [
       "timeout:guitarricadelafuente-dara-un-concierto-gratuito-por-sorpresa-en-una-centrica-plaza-de-madrid-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:este-baratisimo-y-conocido-bufet-asiatico-de-madrid-esconde-platos-de-un-masterchef-con-estrella-michelin-040826",
@@ -2067,7 +2232,12 @@
     ],
     "ids_relacionados": [
       "timeout:este-baratisimo-y-conocido-bufet-asiatico-de-madrid-esconde-platos-de-un-masterchef-con-estrella-michelin-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:un-espectaculo-aereo-estrenos-absolutos-y-mas-de-50-propuestas-escenicas-estas-son-todas-las-novedades-del-festival-clasicos-de-alcala-040826",
@@ -2140,7 +2310,13 @@
     ],
     "ids_relacionados": [
       "timeout:un-espectaculo-aereo-estrenos-absolutos-y-mas-de-50-propuestas-escenicas-estas-son-todas-las-novedades-del-festival-clasicos-de-alcala-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:el-ultimo-gran-rey-del-imperio-asirio-protagoniza-la-nueva-exposicion-del-caixaforum-madrid-con-mas-de-150-piezas-del-british-museum-040826",
@@ -2217,7 +2393,13 @@
     ],
     "ids_relacionados": [
       "timeout:el-ultimo-gran-rey-del-imperio-asirio-protagoniza-la-nueva-exposicion-del-caixaforum-madrid-con-mas-de-150-piezas-del-british-museum-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:llega-a-madrid-la-gran-mariscada-popular-la-feria-de-entrada-gratuita-con-marisco-barato-y-de-calidad-directo-de-o-grove-040826",
@@ -2283,7 +2465,13 @@
     ],
     "ids_relacionados": [
       "timeout:llega-a-madrid-la-gran-mariscada-popular-la-feria-de-entrada-gratuita-con-marisco-barato-y-de-calidad-directo-de-o-grove-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Familia e Infantil",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:nace-en-este-museo-de-madrid-un-nuevo-festival-literario-con-performances-mesas-redondas-y-entradas-gratis-040826",
@@ -2356,7 +2544,13 @@
     ],
     "ids_relacionados": [
       "timeout:nace-en-este-museo-de-madrid-un-nuevo-festival-literario-con-performances-mesas-redondas-y-entradas-gratis-040826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Teatro y Danza",
+      "Conferencias y Charlas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:tenemos-una-nueva-y-espectacular-azotea-en-gran-via-asi-es-la-terraza-mas-deseada-este-verano-en-madrid-040726",
@@ -2419,7 +2613,12 @@
     ],
     "ids_relacionados": [
       "timeout:tenemos-una-nueva-y-espectacular-azotea-en-gran-via-asi-es-la-terraza-mas-deseada-este-verano-en-madrid-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Vida Nocturna",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Vida Nocturna"
   },
   {
     "id": "noticia:gacetin_madrid:356361",
@@ -2465,7 +2664,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356361"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:gacetin_madrid:356350",
@@ -2513,7 +2716,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356350"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:el-portobello-road-de-uno-de-los-barrios-mas-bonitos-de-madrid-regresa-este-fin-de-semana-040726",
@@ -2583,7 +2790,13 @@
     ],
     "ids_relacionados": [
       "timeout:el-portobello-road-de-uno-de-los-barrios-mas-bonitos-de-madrid-regresa-este-fin-de-semana-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:este-restaurante-de-madrid-es-el-quinto-mejor-asador-del-mundo-segun-esta-influyente-guia-internacional-040726",
@@ -2652,7 +2865,11 @@
     ],
     "ids_relacionados": [
       "timeout:este-restaurante-de-madrid-es-el-quinto-mejor-asador-del-mundo-segun-esta-influyente-guia-internacional-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:juegos-teatro-en-miniatura-y-talleres-creativos-vuelve-este-festival-al-aire-libre-con-planes-gratis-para-los-mas-pequenos-040726",
@@ -2728,7 +2945,13 @@
     ],
     "ids_relacionados": [
       "timeout:juegos-teatro-en-miniatura-y-talleres-creativos-vuelve-este-festival-al-aire-libre-con-planes-gratis-para-los-mas-pequenos-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Cine",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:gladiadores-carreras-de-cuadrigas-y-un-mercado-artesano-alcala-de-henares-viaja-en-el-tiempo-hasta-la-antigua-roma-040726",
@@ -2800,7 +3023,13 @@
     ],
     "ids_relacionados": [
       "timeout:gladiadores-carreras-de-cuadrigas-y-un-mercado-artesano-alcala-de-henares-viaja-en-el-tiempo-hasta-la-antigua-roma-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:este-restaurante-asturiano-pegado-al-templo-de-debod-gana-el-premio-a-los-mejores-callos-del-mundo-2026-040726",
@@ -2860,7 +3089,12 @@
     ],
     "ids_relacionados": [
       "timeout:este-restaurante-asturiano-pegado-al-templo-de-debod-gana-el-premio-a-los-mejores-callos-del-mundo-2026-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Música y Conciertos"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:dos-joyas-historicas-de-estos-bonitos-jardines-de-madrid-recuperan-su-esplendor-040726",
@@ -2927,7 +3161,13 @@
     ],
     "ids_relacionados": [
       "timeout:dos-joyas-historicas-de-estos-bonitos-jardines-de-madrid-recuperan-su-esplendor-040726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Naturaleza y Aire Libre",
+      "Visitas y Rutas",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Naturaleza y Aire Libre"
   },
   {
     "id": "noticia:gacetin_madrid:356309",
@@ -2974,7 +3214,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356309"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:gacetin_madrid:356307",
@@ -3020,7 +3264,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356307"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:gacetin_madrid:356294",
@@ -3067,7 +3316,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356294"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:timeout:madrid-celebra-el-dia-internacional-de-la-danza-con-una-gran-fiesta-djs-chotis-y-entradas-gratis-040626",
@@ -3136,7 +3390,13 @@
     ],
     "ids_relacionados": [
       "timeout:madrid-celebra-el-dia-internacional-de-la-danza-con-una-gran-fiesta-djs-chotis-y-entradas-gratis-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Arte y Exposiciones",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:este-parque-de-madrid-acoge-una-gran-fiesta-reivindicativa-con-salsodromo-talleres-picnic-vecinal-y-jornada-de-running-gratuita-040626",
@@ -3201,7 +3461,13 @@
     ],
     "ids_relacionados": [
       "timeout:este-parque-de-madrid-acoge-una-gran-fiesta-reivindicativa-con-salsodromo-talleres-picnic-vecinal-y-jornada-de-running-gratuita-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Deportes y Aventura",
+      "Vida Nocturna",
+      "Talleres y Cursos"
+    ],
+    "categoria_principal_norm": "Deportes y Aventura"
   },
   {
     "id": "noticia:timeout:un-mercadillo-medieval-se-celebra-este-fin-de-semana-a-media-hora-de-madrid-con-pasacalles-mercaderes-exhibiciones-de-vuelo-de-aves-y-talleres-040626",
@@ -3273,7 +3539,13 @@
     ],
     "ids_relacionados": [
       "timeout:un-mercadillo-medieval-se-celebra-este-fin-de-semana-a-media-hora-de-madrid-con-pasacalles-mercaderes-exhibiciones-de-vuelo-de-aves-y-talleres-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:esta-biblioteca-del-centro-de-madrid-celebra-el-dia-internacional-del-jazz-con-un-concierto-gratis-040626",
@@ -3344,7 +3616,13 @@
     ],
     "ids_relacionados": [
       "timeout:esta-biblioteca-del-centro-de-madrid-celebra-el-dia-internacional-del-jazz-con-un-concierto-gratis-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:vuelven-las-visitas-guiadas-a-la-imprenta-donde-nacio-don-quijote-esta-en-pleno-barrio-de-las-letras-y-ya-se-pueden-reservar-las-entradas-040626",
@@ -3419,7 +3697,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelven-las-visitas-guiadas-a-la-imprenta-donde-nacio-don-quijote-esta-en-pleno-barrio-de-las-letras-y-ya-se-pueden-reservar-las-entradas-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Visitas y Rutas",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:una-nave-de-matadero-se-convierte-en-un-gran-espacio-de-juego-gratuito-durante-un-fin-de-semana-040626",
@@ -3487,7 +3771,12 @@
     ],
     "ids_relacionados": [
       "timeout:una-nave-de-matadero-se-convierte-en-un-gran-espacio-de-juego-gratuito-durante-un-fin-de-semana-040626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:356266",
@@ -3534,7 +3823,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356266"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:gacetin_madrid:356250",
@@ -3581,7 +3874,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356250"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:la-plaza-de-cibeles-volvera-a-acoger-este-gran-festival-de-musica-gratuito-040526",
@@ -3650,7 +3948,11 @@
     ],
     "ids_relacionados": [
       "timeout:la-plaza-de-cibeles-volvera-a-acoger-este-gran-festival-de-musica-gratuito-040526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:madrid-celebrara-el-festival-del-eclipse-con-planes-familiares-y-food-trucks-en-una-piscina-natural-en-plena-sierra-040526",
@@ -3711,7 +4013,13 @@
     ],
     "ids_relacionados": [
       "timeout:madrid-celebrara-el-festival-del-eclipse-con-planes-familiares-y-food-trucks-en-una-piscina-natural-en-plena-sierra-040526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:gacetin_madrid:356239",
@@ -3757,7 +4065,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356239"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356229",
@@ -3804,7 +4117,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356229"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:gacetin_madrid:356226",
@@ -3852,7 +4169,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356226"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356220",
@@ -3898,7 +4221,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356220"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:reabre-uno-de-los-miradores-secretos-mas-bonitos-de-madrid-esta-junto-a-la-plaza-mayor-y-a-mas-de-260-escalones-de-altura-040426",
@@ -3964,7 +4293,13 @@
     ],
     "ids_relacionados": [
       "timeout:reabre-uno-de-los-miradores-secretos-mas-bonitos-de-madrid-esta-junto-a-la-plaza-mayor-y-a-mas-de-260-escalones-de-altura-040426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:un-taller-para-crear-un-herbario-recorridos-teatralizados-por-lavapies-y-camas-rodeadas-de-plantas-aromaticas-vuelve-este-festival-dedicado-a-la-naturaleza-urbana-040426",
@@ -4029,7 +4364,13 @@
     ],
     "ids_relacionados": [
       "timeout:un-taller-para-crear-un-herbario-recorridos-teatralizados-por-lavapies-y-camas-rodeadas-de-plantas-aromaticas-vuelve-este-festival-dedicado-a-la-naturaleza-urbana-040426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Talleres y Cursos"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:356197",
@@ -4076,7 +4417,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356197"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:gacetin_madrid:356194",
@@ -4123,7 +4468,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356194"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Vida Nocturna",
+      "Visitas y Rutas",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Vida Nocturna"
   },
   {
     "id": "noticia:gacetin_madrid:356187",
@@ -4170,7 +4521,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356187"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:esta-ubicacion-unica-a-las-afueras-de-madrid-acogera-un-mercadillo-artesanal-con-mas-de-30-puestos-moda-vintage-y-zona-gastro-040326",
@@ -4239,7 +4594,13 @@
     ],
     "ids_relacionados": [
       "timeout:esta-ubicacion-unica-a-las-afueras-de-madrid-acogera-un-mercadillo-artesanal-con-mas-de-30-puestos-moda-vintage-y-zona-gastro-040326"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Bienestar y Salud",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:las-esculturas-toman-este-impresionante-claustro-historico-del-museo-del-prado-040326",
@@ -4318,7 +4679,13 @@
     ],
     "ids_relacionados": [
       "timeout:las-esculturas-toman-este-impresionante-claustro-historico-del-museo-del-prado-040326"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:356151",
@@ -4365,7 +4732,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356151"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Ocio y Entretenimiento"
+    ],
+    "categoria_principal_norm": "Ocio y Entretenimiento"
   },
   {
     "id": "noticia:gacetin_madrid:356147",
@@ -4411,7 +4782,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356147"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356136",
@@ -4458,7 +4833,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356136"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:gacetin_madrid:356124",
@@ -4504,7 +4883,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356124"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Talleres y Cursos",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:abren-dos-nuevos-espacios-del-palacio-real-de-madrid-tras-una-impresionante-reforma-040226",
@@ -4580,7 +4965,12 @@
     ],
     "ids_relacionados": [
       "timeout:abren-dos-nuevos-espacios-del-palacio-real-de-madrid-tras-una-impresionante-reforma-040226"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:rutas-guiadas-al-aire-libre-conciertos-exclusivos-peliculas-y-talleres-para-toda-la-familia-asi-sera-la-segunda-edicion-de-biophest-en-matadero-madrid-040226",
@@ -4652,7 +5042,13 @@
     ],
     "ids_relacionados": [
       "timeout:rutas-guiadas-al-aire-libre-conciertos-exclusivos-peliculas-y-talleres-para-toda-la-familia-asi-sera-la-segunda-edicion-de-biophest-en-matadero-madrid-040226"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Arte y Exposiciones",
+      "Cine"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:356081",
@@ -4698,7 +5094,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356081"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:gacetin_madrid:356068",
@@ -4745,7 +5145,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356068"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:gacetin_madrid:356065",
@@ -4792,7 +5197,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356065"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:el-popular-festival-brunch-electronik-vuelve-a-madrid-con-varias-novedades-cartel-fechas-y-como-conseguir-entradas-040126",
@@ -4865,7 +5274,12 @@
     ],
     "ids_relacionados": [
       "timeout:el-popular-festival-brunch-electronik-vuelve-a-madrid-con-varias-novedades-cartel-fechas-y-como-conseguir-entradas-040126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:mas-de-10-horas-de-conciertos-para-los-amantes-de-la-musica-electronica-asi-celebra-space-of-sound-su-gran-aniversario-040126",
@@ -4934,7 +5348,13 @@
     ],
     "ids_relacionados": [
       "timeout:mas-de-10-horas-de-conciertos-para-los-amantes-de-la-musica-electronica-asi-celebra-space-of-sound-su-gran-aniversario-040126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:este-bonito-jardin-del-centro-de-madrid-reabre-sus-puertas-con-una-espectacular-exposicion-040126",
@@ -5001,7 +5421,13 @@
     ],
     "ids_relacionados": [
       "timeout:este-bonito-jardin-del-centro-de-madrid-reabre-sus-puertas-con-una-espectacular-exposicion-040126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:una-centrica-estacion-de-metro-en-madrid-cerrara-durante-varias-horas-este-viernes-040126",
@@ -5064,7 +5490,11 @@
     ],
     "ids_relacionados": [
       "timeout:una-centrica-estacion-de-metro-en-madrid-cerrara-durante-varias-horas-este-viernes-040126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Ocio y Entretenimiento"
+    ],
+    "categoria_principal_norm": "Ocio y Entretenimiento"
   },
   {
     "id": "noticia:gacetin_madrid:356033",
@@ -5111,7 +5541,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356033"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Comunidad y Social"
   },
   {
     "id": "noticia:gacetin_madrid:356031",
@@ -5158,7 +5592,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356031"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:gacetin_madrid:356017",
@@ -5204,7 +5642,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:356017"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355995",
@@ -5250,7 +5693,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355995"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:asi-sera-la-nueva-temporada-de-espectaculos-acuaticos-de-las-fuentes-de-la-granja-de-san-ildefonso-033126",
@@ -5321,7 +5768,13 @@
     ],
     "ids_relacionados": [
       "timeout:asi-sera-la-nueva-temporada-de-espectaculos-acuaticos-de-las-fuentes-de-la-granja-de-san-ildefonso-033126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:vuelve-el-festival-de-artes-escenicas-para-bebes-a-mas-de-20-escenarios-de-madrid-033126",
@@ -5380,7 +5833,12 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-el-festival-de-artes-escenicas-para-bebes-a-mas-de-20-escenarios-de-madrid-033126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:la-montana-artificial-del-retiro-acoge-una-exposicion-gratuita-con-fotografias-de-algunas-de-las-infraestructuras-mas-impresionantes-de-madrid-033126",
@@ -5453,7 +5911,12 @@
     ],
     "ids_relacionados": [
       "timeout:la-montana-artificial-del-retiro-acoge-una-exposicion-gratuita-con-fotografias-de-algunas-de-las-infraestructuras-mas-impresionantes-de-madrid-033126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:vuelven-las-impresionantes-exhibiciones-aereas-a-este-aeropuerto-de-madrid-aviones-historicos-surcaran-el-cielo-y-asi-puedes-conseguir-entradas-033126",
@@ -5523,7 +5986,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelven-las-impresionantes-exhibiciones-aereas-a-este-aeropuerto-de-madrid-aviones-historicos-surcaran-el-cielo-y-asi-puedes-conseguir-entradas-033126"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Talleres y Cursos",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:gacetin_madrid:355942",
@@ -5570,7 +6039,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355942"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Talleres y Cursos"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355932",
@@ -5617,7 +6092,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355932"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355921",
@@ -5664,7 +6144,13 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355921"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Gastronomía",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:mayra-gomez-kemp-mariano-ozores-marisa-paredes-o-jaime-de-arminan-ya-tienen-sus-placas-conmemorativas-en-el-parque-de-el-retiro-033026",
@@ -5722,7 +6208,12 @@
     ],
     "ids_relacionados": [
       "timeout:mayra-gomez-kemp-mariano-ozores-marisa-paredes-o-jaime-de-arminan-ya-tienen-sus-placas-conmemorativas-en-el-parque-de-el-retiro-033026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Naturaleza y Aire Libre"
   },
   {
     "id": "noticia:timeout:un-t-rex-de-siete-metros-rugidos-y-movimientos-realistas-los-dinosaurios-mas-sorprendentes-toman-este-bonito-jardin-de-madrid-033026",
@@ -5800,7 +6291,13 @@
     ],
     "ids_relacionados": [
       "timeout:un-t-rex-de-siete-metros-rugidos-y-movimientos-realistas-los-dinosaurios-mas-sorprendentes-toman-este-bonito-jardin-de-madrid-033026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:busqueda-de-huevos-de-pascua-talleres-de-pintura-y-juegos-al-aire-libre-asi-es-el-plan-para-toda-la-familia-mas-entretenido-durante-la-semana-santa-033026",
@@ -5870,7 +6367,13 @@
     ],
     "ids_relacionados": [
       "timeout:busqueda-de-huevos-de-pascua-talleres-de-pintura-y-juegos-al-aire-libre-asi-es-el-plan-para-toda-la-familia-mas-entretenido-durante-la-semana-santa-033026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:todos-los-autobuses-y-bicimad-gratis-durante-dos-dias-el-transporte-publico-de-madrid-se-prepara-para-la-vuelta-de-semana-santa-033026",
@@ -5929,7 +6432,12 @@
     ],
     "ids_relacionados": [
       "timeout:todos-los-autobuses-y-bicimad-gratis-durante-dos-dias-el-transporte-publico-de-madrid-se-prepara-para-la-vuelta-de-semana-santa-033026"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Deportes y Aventura",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Deportes y Aventura"
   },
   {
     "id": "noticia:gacetin_madrid:355911",
@@ -5975,7 +6483,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355911"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Cine",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Cine"
   },
   {
     "id": "noticia:gacetin_madrid:355897",
@@ -6022,7 +6535,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355897"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:asi-es-el-cartel-completo-del-nuevo-festival-de-musica-que-se-celebrara-en-uno-de-los-parques-mas-bonitos-de-madrid-032926",
@@ -6093,7 +6610,13 @@
     ],
     "ids_relacionados": [
       "timeout:asi-es-el-cartel-completo-del-nuevo-festival-de-musica-que-se-celebrara-en-uno-de-los-parques-mas-bonitos-de-madrid-032926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:este-es-el-plan-mas-original-para-celebrar-el-dia-del-libro-asi-es-el-curioso-picnic-literario-con-entrada-gratuita-que-se-celebrara-en-madrid-032926",
@@ -6162,7 +6685,13 @@
     ],
     "ids_relacionados": [
       "timeout:este-es-el-plan-mas-original-para-celebrar-el-dia-del-libro-asi-es-el-curioso-picnic-literario-con-entrada-gratuita-que-se-celebrara-en-madrid-032926"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Vida Nocturna",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:355859",
@@ -6209,7 +6738,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355859"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:madrid-estrena-una-sorprendente-exposicion-sobre-relojes-historicos-procedentes-de-varios-palacios-032826",
@@ -6285,7 +6818,13 @@
     ],
     "ids_relacionados": [
       "timeout:madrid-estrena-una-sorprendente-exposicion-sobre-relojes-historicos-procedentes-de-varios-palacios-032826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Familia e Infantil",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:la-musica-barroca-conquista-madrid-en-primavera-vuelve-este-festival-con-mas-de-15-conciertos-por-algunos-de-los-escenarios-mas-bonitos-de-madrid-032826",
@@ -6355,7 +6894,13 @@
     ],
     "ids_relacionados": [
       "timeout:la-musica-barroca-conquista-madrid-en-primavera-vuelve-este-festival-con-mas-de-15-conciertos-por-algunos-de-los-escenarios-mas-bonitos-de-madrid-032826"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Arte y Exposiciones",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:355813",
@@ -6401,7 +6946,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355813"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355810",
@@ -6447,7 +6996,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355810"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355784",
@@ -6493,7 +7046,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355784"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:gacetin_madrid:355786",
@@ -6540,7 +7097,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355786"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:mas-de-30-marcas-de-moda-productos-vintage-zona-gastro-y-un-concierto-asi-es-este-mercadillo-primaveral-y-secreto-que-se-celebrara-en-madrid-032726",
@@ -6609,7 +7171,11 @@
     ],
     "ids_relacionados": [
       "timeout:mas-de-30-marcas-de-moda-productos-vintage-zona-gastro-y-un-concierto-asi-es-este-mercadillo-primaveral-y-secreto-que-se-celebrara-en-madrid-032726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Mercados y Ferias"
   },
   {
     "id": "noticia:timeout:este-mural-con-mas-de-350-azulejos-en-el-centro-de-madrid-sera-declarado-bien-de-interes-patrimonial-032726",
@@ -6674,7 +7240,13 @@
     ],
     "ids_relacionados": [
       "timeout:este-mural-con-mas-de-350-azulejos-en-el-centro-de-madrid-sera-declarado-bien-de-interes-patrimonial-032726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Naturaleza y Aire Libre",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:cortes-y-desvios-en-varias-lineas-de-autobus-de-madrid-durante-la-semana-santa-esto-es-todo-lo-que-debes-saber-032726",
@@ -6732,7 +7304,12 @@
     ],
     "ids_relacionados": [
       "timeout:cortes-y-desvios-en-varias-lineas-de-autobus-de-madrid-durante-la-semana-santa-esto-es-todo-lo-que-debes-saber-032726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:vuelve-el-famoso-macro-mercadillo-con-plantas-por-menos-de-1-euro-a-madrid-mas-de-150-variedades-macetas-y-entradas-gratis-032726",
@@ -6801,7 +7378,12 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-el-famoso-macro-mercadillo-con-plantas-por-menos-de-1-euro-a-madrid-mas-de-150-variedades-macetas-y-entradas-gratis-032726"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Naturaleza y Aire Libre",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Naturaleza y Aire Libre"
   },
   {
     "id": "noticia:timeout:abre-el-restaurante-que-mas-brilla-en-madrid-asi-es-lo-ultimo-del-lider-en-experiencias-inmersivas-para-comer-en-el-barrio-de-las-letras-032526",
@@ -6867,7 +7449,11 @@
     ],
     "ids_relacionados": [
       "timeout:abre-el-restaurante-que-mas-brilla-en-madrid-asi-es-lo-ultimo-del-lider-en-experiencias-inmersivas-para-comer-en-el-barrio-de-las-letras-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:gacetin_madrid:355764",
@@ -6914,7 +7500,11 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355764"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Visitas y Rutas"
   },
   {
     "id": "noticia:timeout:musica-electronica-combinada-con-flamenco-una-capilla-para-bodas-expres-y-ocho-escenarios-asi-sera-la-nueva-edicion-del-festival-elrow-town-madrid-032626",
@@ -6987,7 +7577,13 @@
     ],
     "ids_relacionados": [
       "timeout:musica-electronica-combinada-con-flamenco-una-capilla-para-bodas-expres-y-ocho-escenarios-asi-sera-la-nueva-edicion-del-festival-elrow-town-madrid-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Visitas y Rutas"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:asi-es-la-nueva-e-impresionante-flagship-de-una-de-las-firmas-de-vestidos-de-invitada-mas-famosas-de-madrid-032626",
@@ -7057,7 +7653,11 @@
     ],
     "ids_relacionados": [
       "timeout:asi-es-la-nueva-e-impresionante-flagship-de-una-de-las-firmas-de-vestidos-de-invitada-mas-famosas-de-madrid-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Vida Nocturna"
+    ],
+    "categoria_principal_norm": "Vida Nocturna"
   },
   {
     "id": "noticia:timeout:el-mercadillo-mas-querido-por-los-vecinos-de-este-municipio-de-madrid-regresa-este-fin-de-semana-con-120-stands-032626",
@@ -7126,7 +7726,13 @@
     ],
     "ids_relacionados": [
       "timeout:el-mercadillo-mas-querido-por-los-vecinos-de-este-municipio-de-madrid-regresa-este-fin-de-semana-con-120-stands-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:abre-una-pasteleria-en-madrid-especializada-en-este-clasico-frances-con-una-edicion-especial-para-rosalia-032626",
@@ -7189,7 +7795,12 @@
     ],
     "ids_relacionados": [
       "timeout:abre-una-pasteleria-en-madrid-especializada-en-este-clasico-frances-con-una-edicion-especial-para-rosalia-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:abre-en-madrid-una-tienda-con-paquetes-sorpresa-por-5-euros-devoluciones-de-amazon-y-aliexpress-y-electrodomesticos-low-cost-032626",
@@ -7261,7 +7872,11 @@
     ],
     "ids_relacionados": [
       "timeout:abre-en-madrid-una-tienda-con-paquetes-sorpresa-por-5-euros-devoluciones-de-amazon-y-aliexpress-y-electrodomesticos-low-cost-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Ocio y Entretenimiento"
+    ],
+    "categoria_principal_norm": "Ocio y Entretenimiento"
   },
   {
     "id": "noticia:timeout:los-paradores-mas-bonitos-de-espana-acogen-un-ciclo-de-exclusivos-conciertos-este-verano-032626",
@@ -7336,7 +7951,12 @@
     ],
     "ids_relacionados": [
       "timeout:los-paradores-mas-bonitos-de-espana-acogen-un-ciclo-de-exclusivos-conciertos-este-verano-032626"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Gastronomía"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:355627",
@@ -7383,7 +8003,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355627"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Teatro y Danza",
+      "Mercados y Ferias"
+    ],
+    "categoria_principal_norm": "Teatro y Danza"
   },
   {
     "id": "noticia:timeout:el-legendario-cafe-central-celebra-su-esperada-reapertura-con-una-marcha-musical-032526",
@@ -7452,7 +8077,13 @@
     ],
     "ids_relacionados": [
       "timeout:el-legendario-cafe-central-celebra-su-esperada-reapertura-con-una-marcha-musical-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:timeout:vuelve-a-ponerse-en-marcha-el-tren-de-arganda-el-unico-ferrocarril-a-vapor-de-madrid-asi-puedes-conseguir-billetes-para-este-viaje-lleno-de-historia-032526",
@@ -7523,7 +8154,13 @@
     ],
     "ids_relacionados": [
       "timeout:vuelve-a-ponerse-en-marcha-el-tren-de-arganda-el-unico-ferrocarril-a-vapor-de-madrid-asi-puedes-conseguir-billetes-para-este-viaje-lleno-de-historia-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Visitas y Rutas",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:de-discoteca-a-sala-de-exposiciones-reabre-este-emblematico-palacio-junto-a-la-puerta-del-sol-con-una-muestra-dedicada-a-dali-032526",
@@ -7600,7 +8237,13 @@
     ],
     "ids_relacionados": [
       "timeout:de-discoteca-a-sala-de-exposiciones-reabre-este-emblematico-palacio-junto-a-la-puerta-del-sol-con-una-muestra-dedicada-a-dali-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Ciencia y Tecnología",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:ayer-con-uniqlo-hoy-los-reyes-del-aperitivo-lanzan-las-carcasas-mas-pintonas-en-madrid-donde-conseguirlas-032526",
@@ -7657,7 +8300,12 @@
     ],
     "ids_relacionados": [
       "timeout:ayer-con-uniqlo-hoy-los-reyes-del-aperitivo-lanzan-las-carcasas-mas-pintonas-en-madrid-donde-conseguirlas-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Naturaleza y Aire Libre"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:obras-de-teatro-recitales-de-poesia-y-conciertos-gratis-en-la-primera-edicion-de-este-nuevo-festival-en-madrid-032526",
@@ -7731,7 +8379,13 @@
     ],
     "ids_relacionados": [
       "timeout:obras-de-teatro-recitales-de-poesia-y-conciertos-gratis-en-la-primera-edicion-de-este-nuevo-festival-en-madrid-032526"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Arte y Exposiciones",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   },
   {
     "id": "noticia:gacetin_madrid:355576",
@@ -7778,7 +8432,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355576"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Comunidad y Social"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:gacetin_madrid:355572",
@@ -7824,7 +8483,12 @@
     ],
     "ids_relacionados": [
       "gacetin_madrid:355572"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Ciencia y Tecnología"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:danza-robotica-talleres-de-escritura-con-ia-y-marionetas-computacionales-nace-en-madrid-un-nuevo-festival-sobre-ciencia-y-arte-032426",
@@ -7895,7 +8559,13 @@
     ],
     "ids_relacionados": [
       "timeout:danza-robotica-talleres-de-escritura-con-ia-y-marionetas-computacionales-nace-en-madrid-un-nuevo-festival-sobre-ciencia-y-arte-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Arte y Exposiciones",
+      "Teatro y Danza",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Arte y Exposiciones"
   },
   {
     "id": "noticia:timeout:las-obras-de-renovacion-de-la-linea-6-se-prolongaran-varios-meses-mas-motivos-y-todo-lo-que-debes-saber-032426",
@@ -7960,7 +8630,11 @@
     ],
     "ids_relacionados": [
       "timeout:las-obras-de-renovacion-de-la-linea-6-se-prolongaran-varios-meses-mas-motivos-y-todo-lo-que-debes-saber-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Ocio y Entretenimiento"
+    ],
+    "categoria_principal_norm": "Ocio y Entretenimiento"
   },
   {
     "id": "noticia:timeout:una-espectacular-vidriera-y-un-cubo-inmersivo-gigante-se-instalan-en-madrid-por-el-estreno-de-super-mario-galaxy-la-pelicula-032426",
@@ -8030,7 +8704,12 @@
     ],
     "ids_relacionados": [
       "timeout:una-espectacular-vidriera-y-un-cubo-inmersivo-gigante-se-instalan-en-madrid-por-el-estreno-de-super-mario-galaxy-la-pelicula-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Cine",
+      "Familia e Infantil"
+    ],
+    "categoria_principal_norm": "Cine"
   },
   {
     "id": "noticia:timeout:dos-planes-baratos-y-escondidos-para-comer-en-el-barrio-de-salamanca-en-una-tienda-de-zapatillas-de-moda-y-un-concesionario-sui-generis-032426",
@@ -8100,7 +8779,12 @@
     ],
     "ids_relacionados": [
       "timeout:dos-planes-baratos-y-escondidos-para-comer-en-el-barrio-de-salamanca-en-una-tienda-de-zapatillas-de-moda-y-un-concesionario-sui-generis-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Gastronomía",
+      "Música y Conciertos"
+    ],
+    "categoria_principal_norm": "Gastronomía"
   },
   {
     "id": "noticia:timeout:los-tulipanes-de-madrid-comienzan-su-espectacular-floracion-donde-ver-este-bonito-fenomeno-natural-en-pleno-centro-de-la-ciudad-032426",
@@ -8167,7 +8851,13 @@
     ],
     "ids_relacionados": [
       "timeout:los-tulipanes-de-madrid-comienzan-su-espectacular-floracion-donde-ver-este-bonito-fenomeno-natural-en-pleno-centro-de-la-ciudad-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Familia e Infantil",
+      "Naturaleza y Aire Libre",
+      "Lectura y Literatura"
+    ],
+    "categoria_principal_norm": "Familia e Infantil"
   },
   {
     "id": "noticia:timeout:mas-de-240-bicicletas-electricas-y-20-nuevas-estaciones-de-bicimad-llegan-a-estos-distritos-de-madrid-032426",
@@ -8234,7 +8924,11 @@
     ],
     "ids_relacionados": [
       "timeout:mas-de-240-bicicletas-electricas-y-20-nuevas-estaciones-de-bicimad-llegan-a-estos-distritos-de-madrid-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Deportes y Aventura"
+    ],
+    "categoria_principal_norm": "Deportes y Aventura"
   },
   {
     "id": "noticia:timeout:ca7riel-y-paco-amoroso-daran-un-concierto-unico-en-madrid-fecha-y-como-conseguir-entradas-para-el-free-spirits-world-tour-032426",
@@ -8303,6 +8997,11 @@
     ],
     "ids_relacionados": [
       "timeout:ca7riel-y-paco-amoroso-daran-un-concierto-unico-en-madrid-fecha-y-como-conseguir-entradas-para-el-free-spirits-world-tour-032426"
-    ]
+    ],
+    "categorias_normalizadas": [
+      "Música y Conciertos",
+      "Teatro y Danza"
+    ],
+    "categoria_principal_norm": "Música y Conciertos"
   }
 ]

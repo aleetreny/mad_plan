@@ -48,19 +48,6 @@
 ### 2026-04-10
 
 - Se revisaron las scrapers existentes para copiar el estilo y el esquema de salida.
-- Se exploro Time Out Madrid y Madrid Secreto con fetch remoto y pruebas reales desde Python.
-- Se confirmo que Madrid Secreto es mejor via REST y Time Out mejor via listado HTML + JSON-LD en detalle.
-- Se preparo la base del repo con `requirements.txt`, `.gitignore` y `README.md`.
-- Se implemento `timeout.py` para noticias de Time Out con listado HTML + detalle `NewsArticle` JSON-LD.
-- Se implemento `madrid_secreto.py` para planes de Madrid Secreto con REST + roundup mensual + bloques `data-fever-plan-*`.
-- Validacion real de `timeout.py`: 8 noticias guardadas, 6 categorias utiles detectadas.
-- Validacion real de `madrid_secreto.py`: 18 planes guardados, 16 con precio y 15 con fechas.
-- `scrape_all.py` se actualizo para incluir Madrid Secreto en eventos y Time Out en una salida separada de noticias.
-- El runner completo arranca correctamente; la fase lenta sigue siendo Fever, en concreto la resolucion de venues/coords.
-
-### 2026-04-11
-
-- Se reorganizo el repo para guardar las scrapers en `tools/`.
 - Se centralizaron las salidas JSON en `outputs/`.
 - Se ajustaron todas las rutas de salida y los comandos de `README.md` a la nueva estructura.
 - `madrid_secreto.py` se amplio para recorrer todo el archivo `que-hacer`, no solo posts recientes.
@@ -236,6 +223,31 @@
 - Se reforzo la idea de relevancia temporal en la UI con filtros Madrid-native (`Hoy`, `Esta noche`, `Este finde`, `De mananeo`, `Al fresquito`, `Gratis total`), nuevos shelves rapidos, randomizador `Tirada de dados`, shortlist persistente y boton `Copiar vista`.
 - Se audito la calidad geografica del feed final y aparecieron `87` outliers de coordenadas (dominados por `Eventbrite` y `RockTheSport`). En vez de mutar el feed origen, el frontend ahora aplica una envolvente estricta de Madrid ciudad y solo usa puntos city-safe para tarjetas y mapa.
 - Se activaron smart cards reales para planes mergeados: `tools/normalization.py` ya conservaba `metadata.source_links`, se recompusieron los feeds con `tools/rebuild_feeds.py` y `outputs/eventos_madrid_all.json` pasa a exponer enlaces por fuente en el `100%` de los planes (`3783` con `1` acceso, `48` con `2`, `1` con `3`).
+
+### 2026-04-14 (UI Rebuild & Data Processing Pipeline)
+
+- **Frontend Rewrite**: Reconstruido todo el frontend en base a un mockup (`madplan_aistudio.zip`) usando React 19, Vite 8 y Tailwind v4.
+- **Categorización y Machine Learning NLP Básico**:
+  - Creado `tools/normalize_categories.py`. Unifica >40 categorías fragmentadas en 18 canónicas ("Música y Conciertos", "Arte y Exposiciones", etc.).
+  - Implementado sistema de clasificación de *2-tiers* (señales fuertes en título/tags vs señales débiles en descripción).
+  - Limita a máximo 3 categorías por evento. Creados campos `categorias_normalizadas` y `categoria_principal_norm`.
+- **Geocodificación**:
+  - Creada herramienta de geocoding `tools/geocode_events.py` apoyada en `Nominatim` (gratuita, sin API key).
+  - Incluye guardado en caché local (`outputs/geocode_cache.json`) con límite de ratio (1.1s/req) para no abusar del servidor libre.
+  - Implementada caja de contención estricta ("bounding box") de Madrid [LAT: 40.30-40.55, LON: -3.85--3.55] que previene falsos positivos en el mapa (ej. calles homónimas en otras ciudades españolas). Limpieza de 120 coordenadas pre-existentes erróneas.
+- **Asignación de Imágenes**:
+  - Creado `tools/fix_missing_photos.py`. Unsplash asigna un placeholder determinista (usando hash md5 del ID del evento) dependiendo de su categoría principal normalizada, garantizando que el 100% de planes ahora tienen foto de portada en UI.
+- **Frontend Features List**:
+  - **Map View Minimalista**: Mapa Leaflet integrado con un tile limpio de CARTO (Positron). Restringe el zoom out extremo y obliga centrado en el perímetro de Madrid. Marcadores simplificados como círculos.
+  - Creado panel de **Búsqueda Avanzada**: Soporta búsqueda "full-text" + filtrado estricto por rango de fechas (Desde/Hasta).
+  - **Filtrado por Barrio**: Botonera lateral de filtrado con 15 barrios principales de Madrid (Chueca, Malasaña, La Latina, etc.).
+  - Filtro estricto temporal: Solo se muestran eventos pasados (modificado `isFutureOrToday()`) a nivel UI.
+  - **Quiz de "Vibe" Gamificado**: Reescrito con emojis, selector multidireccional animado (Framer Motion) y barra de progreso. El UI de respuesta incluye botón de "Atrás". 
+  - El resultado del Quiz aplica un motor de priorización `useMatchScore` que ordena los planes recomendados de 0 a 100% según el mix de respuestas aportadas por el usuario (combinando "vibe" genérico y una sub-matriz de intereses específicos).
+- **Hallazgos técnicos (Fixes)**:
+  - Vite Proxy: Para servir datos JSON locales de `/outputs/` a Vite, se usa proxy de escritura a path físico superior `http://localhost:5173/../outputs` (bypass de public folder predecible).
+  - Caracteres y Encoding Windows: Archivo `Dashboard.tsx` introdujo strings corruptos como `Malasaña` o `Chamberí` desde outputs UTF-8 leídos mal en un entorno local CP1252. Corregido unificando la codificación. Los python scripts asumen explícitamente `encoding='utf-8'`.
+  - Node.js PATH issue: Powershell persistente requería refresco estricto manual: `$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User");`.
 - La capa visual se amplio en `frontend/styles.css` con acentos por fuente, badges de confianza (`Fuente oficial`, `Agenda publica`, `Varias fuentes`, `Agregador`), comparacion de accesos, portadas generadas para planes sin imagen y pulso visual distinto por manana, tarde y noche.
 - Se completo la capa mapa con `leaflet.markercluster`, clusters reales, tarjetas de pulso por barrio (`Lavapies`, `Legazpi`, `Malasana`, `La Latina`, `Salamanca`, etc.) y listado lateral sincronizado con los puntos geocodificados limpios.
 - Se alineo la validacion automatica con el rebrand: `tools/smoke_frontend.py` ya comprueba `MadPlan` y `share-view`; el smoke paso de nuevo tras la recomposicion con `3832` planes y `136` noticias.

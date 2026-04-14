@@ -1,0 +1,2637 @@
+{
+  "del partenón, 5, madrid, 28042, españa": {
+    "lat": 40.466017,
+    "lon": -3.613176,
+    "query": "del Partenón, 5, Madrid, 28042"
+  },
+  "madrid, españa": {
+    "lat": 40.416782,
+    "lon": -3.703507,
+    "query": "Madrid"
+  },
+  "centro de alto rendimiento movistar koi, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Centro de Alto Rendimiento Movistar KOI"
+  },
+  "centro de alto rendimiento movistar koi esports center, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Centro de alto rendimiento Movistar KOI eSports Center"
+  },
+  "calle de alcalá, 42, madrid, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "Calle de Alcalá, 42, Madrid"
+  },
+  "de san vicente, 44, madrid, 28008, españa": {
+    "lat": 40.420854,
+    "lon": -3.718751,
+    "query": "de San Vicente, 44, Madrid, 28008"
+  },
+  "avenida del partenon 5, 28042, madrid, españa": {
+    "lat": 40.466017,
+    "lon": -3.613176,
+    "query": "Avenida del Partenon 5, 28042, Madrid"
+  },
+  "av. del partenón, 5 (barajas), madrid, españa": {
+    "lat": 40.467495,
+    "lon": -3.619367,
+    "query": "Av. del Partenón, 5 (Barajas)"
+  },
+  "c. del carmen, madrid, 28013, españa": {
+    "lat": 40.418465,
+    "lon": -3.704462,
+    "query": "C. del Carmen, Madrid, 28013"
+  },
+  "calle de fernando el santo, 21, madrid, 28010, españa": {
+    "lat": 40.428204,
+    "lon": -3.691705,
+    "query": "Calle de Fernando el Santo, 21, Madrid, 28010"
+  },
+  "puerta del sol, 1, madrid, 28013, españa": {
+    "lat": 40.416863,
+    "lon": -3.703876,
+    "query": "Puerta del Sol, 1, Madrid, 28013"
+  },
+  "c. santa isabel, 52, 28012 madrid, españa": {
+    "lat": 40.408049,
+    "lon": -3.694422,
+    "query": "C. Santa Isabel, 52, 28012 Madrid"
+  },
+  "calle isla malaita, 14, madrid, 28035, españa": {
+    "lat": 40.473833,
+    "lon": -3.721883,
+    "query": "Calle Isla Malaita, 14, Madrid, 28035"
+  },
+  "cra de s. jerónimo, 2, centro, 28014 madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cra de S. Jerónimo, 2, Centro, 28014 Madrid, 28014"
+  },
+  "calle de bailén, s/n, madrid, 28071, españa": {
+    "lat": 40.421885,
+    "lon": -3.712842,
+    "query": "Calle de Bailén, s/n, Madrid, 28071"
+  },
+  "hotel wellington, calle de velázquez, 6, 28001, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Hotel Wellington, Calle de Velázquez, 6, 28001"
+  },
+  "c. de sta. cruz de marcenado, 12, madrid, 28015, españa": {
+    "lat": 40.429135,
+    "lon": -3.711016,
+    "query": "C. de Sta. Cruz de Marcenado, 12, Madrid, 28015"
+  },
+  "calle. cadarso 16, 28008, madrid, españa": {
+    "lat": 40.421988,
+    "lon": -3.714811,
+    "query": "Calle. Cadarso 16, 28008"
+  },
+  "calle gran vía, 12, 28013, 28013, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Gran Vía, 12, 28013, 28013"
+  },
+  "museo de la felicidad müf, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo de la Felicidad MüF"
+  },
+  "calle de los jardines, 12, 28013, madrid, españa": {
+    "lat": 40.41891,
+    "lon": -3.701248,
+    "query": "Calle de los Jardines, 12, 28013"
+  },
+  "galería de las colecciones reales, madrid, españa": {
+    "lat": 40.415657,
+    "lon": -3.715326,
+    "query": "Galería de las Colecciones Reales"
+  },
+  "c. zamora, nº5, local 2, móstoles, 28931, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Zamora, Nº5, Local 2, Móstoles, 28931"
+  },
+  "ikono madrid, españa": {
+    "lat": 40.408906,
+    "lon": -3.693369,
+    "query": "IKONO Madrid"
+  },
+  "calle santiago 18, 28013, madrid, españa": {
+    "lat": 40.416508,
+    "lon": -3.710437,
+    "query": "Calle Santiago 18, 28013"
+  },
+  "museo de las ilusiones, madrid, españa": {
+    "lat": 40.413251,
+    "lon": -3.703916,
+    "query": "Museo de las Ilusiones"
+  },
+  "calle de fernando el católico, 23, madrid, 28015, españa": {
+    "lat": 40.433924,
+    "lon": -3.709236,
+    "query": "Calle de Fernando el Católico, 23, Madrid, 28015"
+  },
+  "calle del arenal, 26, 28013, madrid, españa": {
+    "lat": 40.417809,
+    "lon": -3.70836,
+    "query": "Calle del Arenal, 26, 28013"
+  },
+  "calle gran vía, 16, 28013, madrid, españa": {
+    "lat": 40.468297,
+    "lon": -3.870709,
+    "query": "Calle Gran Vía, 16, 28013"
+  },
+  "avenida gran bretaña, s/n, leganés, madrid, 28916, españa": {
+    "lat": 40.334907,
+    "lon": -3.736808,
+    "query": "Avenida Gran Bretaña, s/n, Leganés, Madrid, 28916"
+  },
+  "preciados33, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Preciados33"
+  },
+  "calle de fuencarral, 58, madrid, 28004, españa": {
+    "lat": 40.423979,
+    "lon": -3.70057,
+    "query": "Calle de Fuencarral, 58, Madrid, 28004"
+  },
+  "c. de joaquín maría lópez, 29, madrid, 28015, españa": {
+    "lat": 40.437554,
+    "lon": -3.712491,
+    "query": "C. de Joaquín María López, 29, Madrid, 28015"
+  },
+  "calle gran vía, 55, madrid, 28013, españa": {
+    "lat": 40.468297,
+    "lon": -3.870709,
+    "query": "Calle Gran Vía, 55, Madrid, 28013"
+  },
+  "abc serrano, madrid, españa": {
+    "lat": 40.432177,
+    "lon": -3.688144,
+    "query": "ABC Serrano"
+  },
+  "camino de la zarzuela, 23, madrid, 28023, españa": {
+    "lat": 40.464522,
+    "lon": -3.786366,
+    "query": "Camino de la Zarzuela, 23, Madrid, 28023"
+  },
+  "buzzattack en madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "BuzzAttack en Madrid"
+  },
+  "c. de la flor baja, 3, madrid, 28013, españa": {
+    "lat": 40.422042,
+    "lon": -3.709687,
+    "query": "C. de la Flor Baja, 3, Madrid, 28013"
+  },
+  "calle de sancho dávila, 8, madrid, 28028, españa": {
+    "lat": 40.42834,
+    "lon": -3.662318,
+    "query": "Calle de Sancho Dávila, 8, Madrid, 28028"
+  },
+  "calle de mesonero romanos, 11, madrid, 28013, españa": {
+    "lat": 40.419769,
+    "lon": -3.70427,
+    "query": "Calle de Mesonero Romanos, 11, Madrid, 28013"
+  },
+  "ella sky bar madrid, españa": {
+    "lat": 40.420444,
+    "lon": -3.705199,
+    "query": "Ella Sky Bar Madrid"
+  },
+  "calle de la cruz, 26, madrid, 28012, españa": {
+    "lat": 40.414689,
+    "lon": -3.7031,
+    "query": "Calle de la Cruz, 26, Madrid, 28012"
+  },
+  "teatro tablao flamenco torero, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Tablao Flamenco TORERO"
+  },
+  "plaza mayor, 28012, madrid, españa": {
+    "lat": 40.415395,
+    "lon": -3.706997,
+    "query": "Plaza Mayor, 28012"
+  },
+  "costanilla de los desamparados, 11, madrid, 28014, españa": {
+    "lat": 40.41197,
+    "lon": -3.696671,
+    "query": "Costanilla de los Desamparados, 11, Madrid, 28014"
+  },
+  "c. nueva, 15, las rozas de madrid, 28231, españa": {
+    "lat": 40.493155,
+    "lon": -3.871748,
+    "query": "C. Nueva, 15, Las Rozas de Madrid, 28231"
+  },
+  "c. de san benito, 20, madrid, 28029, españa": {
+    "lat": 40.468391,
+    "lon": -3.690646,
+    "query": "C. de San Benito, 20, Madrid, 28029"
+  },
+  "av del santuario de valverde, 1, madrid, 28949, españa": {
+    "lat": 40.504124,
+    "lon": -3.709075,
+    "query": "Av del Santuario de Valverde, 1, Madrid, 28949"
+  },
+  "c. de san bernardo, 48, madrid, 28013, españa": {
+    "lat": 40.424906,
+    "lon": -3.707177,
+    "query": "C. de San Bernardo, 48, Madrid, 28013"
+  },
+  "gran vía 29, 28013, madrid, españa": {
+    "lat": 40.419947,
+    "lon": -3.703251,
+    "query": "Gran Vía 29, 28013"
+  },
+  "calle del postigo de san martín, 8, centro, madrid, 28013, españa": {
+    "lat": 40.419312,
+    "lon": -3.706016,
+    "query": "Calle del Postigo de San Martín, 8, Centro, Madrid, 28013"
+  },
+  "c. de la victoria, 4, local 2, 28012 madrid, 28012, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de la Victoria, 4, local 2, 28012 Madrid, 28012"
+  },
+  "genko restaurante, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Genko Restaurante"
+  },
+  "calle del príncipe, 20, madrid, 28012, españa": {
+    "lat": 40.415131,
+    "lon": -3.700559,
+    "query": "Calle del Príncipe, 20, Madrid, 28012"
+  },
+  "calle principe 12, 28012, madrid, españa": {
+    "lat": 40.415787,
+    "lon": -3.700572,
+    "query": "calle principe 12, 28012"
+  },
+  "calle de la cabeza, 11, madrid, 28012, españa": {
+    "lat": 40.411843,
+    "lon": -3.703482,
+    "query": "Calle de la Cabeza, 11, Madrid, 28012"
+  },
+  "de luis aragonés, s/n, madrid, 28022, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Luis Aragonés, s/n, Madrid, 28022"
+  },
+  "de felipe ii, s/n, madrid, 28009, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Felipe II, s/n, Madrid, 28009"
+  },
+  "movistar arena, en la calle de goya, 90 (barrio de salamanca), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Movistar Arena, en la calle de Goya, 90 (barrio de Salamanca)"
+  },
+  "pl. de legazpi, 8 (arganzuela), madrid, españa": {
+    "lat": 40.39136,
+    "lon": -3.694899,
+    "query": "Pl. de Legazpi, 8 (Arganzuela)"
+  },
+  "de la villa, 2 - 3, madrid, 28005, españa": {
+    "lat": 40.414969,
+    "lon": -3.710384,
+    "query": "de la Villa, 2 - 3, Madrid, 28005"
+  },
+  "c. de alberto aguilera, 20, chamberi, 28015 madrid, españa": {
+    "lat": 40.430132,
+    "lon": -3.70942,
+    "query": "C. de Alberto Aguilera, 20, Chamberi, 28015 Madrid"
+  },
+  "de legazpi, 8, madrid, 28045, españa": {
+    "lat": 40.391438,
+    "lon": -3.69513,
+    "query": "de Legazpi, 8, Madrid, 28045"
+  },
+  "del conde duque, 11, madrid, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Conde Duque, 11, Madrid, 28015"
+  },
+  "calle de serrano, 13, madrid, 28001, españa": {
+    "lat": 40.423429,
+    "lon": -3.688889,
+    "query": "Calle de Serrano, 13, Madrid, 28001"
+  },
+  "calle de bailén, 4, 28013, madrid, españa": {
+    "lat": 40.330828,
+    "lon": -3.764835,
+    "query": "Calle de Bailén, 4, 28013"
+  },
+  "calle de serrano, 100, madrid, 28006, españa": {
+    "lat": 40.433614,
+    "lon": -3.68636,
+    "query": "Calle de Serrano, 100, Madrid, 28006"
+  },
+  "paseo de recoletos, 20-22, 28071 madrid, españa": {
+    "lat": 40.423728,
+    "lon": -3.689904,
+    "query": "Paseo de Recoletos, 20-22, 28071 Madrid"
+  },
+  "idealine center, paseo olivos, 102, madrid, 28011, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Idealine Center, Paseo Olivos, 102, Madrid, 28011"
+  },
+  "palacio real de aranjuez, madrid, españa": {
+    "lat": 40.036336,
+    "lon": -3.608262,
+    "query": "Palacio Real de Aranjuez"
+  },
+  "palacio real de el pardo, madrid, españa": {
+    "lat": 40.521296,
+    "lon": -3.775075,
+    "query": "Palacio Real de El Pardo"
+  },
+  "real monasterio de san lorenzo de el escorial, madrid, españa": {
+    "lat": 40.589066,
+    "lon": -4.147395,
+    "query": "Real Monasterio de San Lorenzo de El Escorial"
+  },
+  "calle de lope de rueda, 4, sotano derecha, madrid, 28009, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Lope de Rueda, 4, SOTANO DERECHA, Madrid, 28009"
+  },
+  "c. de bailén, 25, centro, madrid, 28013, españa": {
+    "lat": 40.421885,
+    "lon": -3.712842,
+    "query": "C. de Bailén, 25, Centro, Madrid, 28013"
+  },
+  "pl. de las comendadoras, 10, madrid, 28015, españa": {
+    "lat": 40.427418,
+    "lon": -3.708993,
+    "query": "Pl. de las Comendadoras, 10, Madrid, 28015"
+  },
+  "gran vía, 61, 1-5, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Gran Vía, 61, 1-5, Madrid, 28013"
+  },
+  "paseo del prado, 11, madrid, 28014, españa": {
+    "lat": 40.41653,
+    "lon": -3.693554,
+    "query": "Paseo del Prado, 11, Madrid, 28014"
+  },
+  "c. de josé maría roquero, 7, madrid, 28045, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de José María Roquero, 7, Madrid, 28045"
+  },
+  "cost.ª de san andrés, 16, madrid, 28005, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cost.ª de San Andrés, 16, Madrid, 28005"
+  },
+  "c. de lope de vega, 31, madrid, 28014, españa": {
+    "lat": 40.413854,
+    "lon": -3.6965,
+    "query": "C. de Lope de Vega, 31, Madrid, 28014"
+  },
+  "calle de campoamor, 13, madrid, 28004, españa": {
+    "lat": 40.426412,
+    "lon": -3.695706,
+    "query": "Calle de Campoamor, 13, Madrid, 28004"
+  },
+  "n-502 km. 93,7, velada, toledo, 45612, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "N-502 Km. 93,7, Velada, Toledo, 45612"
+  },
+  "hotel mayorazgo, calle de la flor baja, 3, 28013, madrid, españa": {
+    "lat": 40.422042,
+    "lon": -3.709687,
+    "query": "Hotel Mayorazgo, Calle de la Flor Baja, 3, 28013"
+  },
+  "carretera nacional, m-607, km 58, navacerrada, 28491, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Carretera Nacional, M-607, KM 58, Navacerrada, 28491"
+  },
+  "calle de sebastián elcano, 21, local, madrid, 28012, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Sebastián Elcano, 21, Local, Madrid, 28012"
+  },
+  "calle de campezo, 3, madrid, 28022, españa": {
+    "lat": 40.444292,
+    "lon": -3.582943,
+    "query": "Calle de Campezo, 3, Madrid, 28022"
+  },
+  "calle de domenico scarlatti, 5, madrid, 28003, españa": {
+    "lat": 40.441533,
+    "lon": -3.716051,
+    "query": "Calle de Domenico Scarlatti, 5, Madrid, 28003"
+  },
+  "c/ fuencarral, 3, 28004 madrid, españa": {
+    "lat": 40.420412,
+    "lon": -3.7016,
+    "query": "C/ Fuencarral, 3, 28004 Madrid"
+  },
+  "plaza de santa ana, 15, madrid, 28012, españa": {
+    "lat": 40.414971,
+    "lon": -3.701445,
+    "query": "Plaza de Santa Ana, 15, Madrid, 28012"
+  },
+  "calle de cea bermúdez, 1, madrid, españa": {
+    "lat": 40.438995,
+    "lon": -3.713478,
+    "query": "Calle de Cea Bermúdez, 1, Madrid"
+  },
+  "dolores armengot , 31, madrid, 28025, españa": {
+    "lat": 40.38576,
+    "lon": -3.74325,
+    "query": "Dolores Armengot , 31, Madrid, 28025"
+  },
+  "m-607, km 15, madrid, 28049, españa": {
+    "lat": 40.523483,
+    "lon": -3.688226,
+    "query": "M-607, km 15, Madrid, 28049"
+  },
+  "hqvx+hf, albolleque, 19160, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "HQVX+HF, Albolleque, 19160"
+  },
+  "pl. de isabel ii, 28013, madrid, españa": {
+    "lat": 40.418152,
+    "lon": -3.709463,
+    "query": "Pl. de Isabel II, 28013"
+  },
+  "calle de padilla, 5, 3º izquierda, madrid, 28006, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Padilla, 5, 3º Izquierda, Madrid, 28006"
+  },
+  "calle de raimundo fernández villaverde, 57, madrid, 28003, españa": {
+    "lat": 40.446675,
+    "lon": -3.696248,
+    "query": "Calle de Raimundo Fernández Villaverde, 57, Madrid, 28003"
+  },
+  "fever hub madrid | experiencias inmersivas, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fever Hub Madrid | Experiencias Inmersivas"
+  },
+  "bodegas y viñedos tavera, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Bodegas y Viñedos Tavera"
+  },
+  "a-4, salida 22, san martín de la vega, 28330, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "A-4, salida 22, San Martín de la Vega, 28330"
+  },
+  "c/ de sta hortensia, 20, madrid, 28002, españa": {
+    "lat": 40.444686,
+    "lon": -3.669463,
+    "query": "C/ de Sta Hortensia, 20, Madrid, 28002"
+  },
+  "calle del barco, 42, madrid, 28004, españa": {
+    "lat": 40.42362,
+    "lon": -3.702146,
+    "query": "Calle del Barco, 42, Madrid, 28004"
+  },
+  "paseo de la castellana, 6, madrid, 28046, españa": {
+    "lat": 40.427217,
+    "lon": -3.689078,
+    "query": "Paseo de la Castellana, 6, Madrid, 28046"
+  },
+  "avenida ntra. señora del retamar, 16, las rozas de madrid, 28232, españa": {
+    "lat": 40.506014,
+    "lon": -3.888515,
+    "query": "Avenida Ntra. Señora del Retamar, 16, Las Rozas de Madrid, 28232"
+  },
+  "fuencarral-el pardo, 28029, madrid, españa": {
+    "lat": 40.556346,
+    "lon": -3.77859,
+    "query": "Fuencarral-El Pardo, 28029"
+  },
+  "plaza de , 15, real sitio de san ildefonso, 40100, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de España, 15, Real Sitio de San Ildefonso, 40100"
+  },
+  "pintor rosales 30, madrid, españa": {
+    "lat": 40.42717,
+    "lon": -3.71973,
+    "query": "Pintor Rosales 30"
+  },
+  "cl. de josé antonio de armona, 28, madrid, 28012, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cl. de José Antonio de Armona, 28, Madrid, 28012"
+  },
+  "calle de bretón de los herreros, 21, madrid, 28003, españa": {
+    "lat": 40.439454,
+    "lon": -3.696143,
+    "query": "Calle de Bretón de los Herreros, 21, Madrid, 28003"
+  },
+  "calle de garcía luna, 13, madrid, 28002, españa": {
+    "lat": 40.44619,
+    "lon": -3.675075,
+    "query": "Calle de García Luna, 13, Madrid, 28002"
+  },
+  "paseo de la esperanza, 17, madrid, 28005, españa": {
+    "lat": 40.402168,
+    "lon": -3.705094,
+    "query": "Paseo de la Esperanza, 17, Madrid, 28005"
+  },
+  "calle de eguilaz, 7, madrid, 28010, españa": {
+    "lat": 40.429249,
+    "lon": -3.700773,
+    "query": "Calle de Eguilaz, 7, Madrid, 28010"
+  },
+  "teatro kapital, madrid, españa": {
+    "lat": 40.409774,
+    "lon": -3.693224,
+    "query": "Teatro Kapital"
+  },
+  "av. de alfonso xiii, 97, ['chamartín', 'madrid'], 28016, españa": {
+    "lat": 40.457142,
+    "lon": -3.667522,
+    "query": "Av. de Alfonso XIII, 97, ['Chamartín', 'Madrid'], 28016"
+  },
+  "momentum, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Momentum"
+  },
+  "de cibeles, 1, madrid, 28014, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "de Cibeles, 1, Madrid, 28014"
+  },
+  "sala but, en la calle de barceló, 11 (malasaña), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala BUT, en la calle de Barceló, 11 (Malasaña)"
+  },
+  "pl. cibeles, 1 (retiro), madrid, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "Pl. Cibeles, 1 (Retiro)"
+  },
+  "plaza de la lealtad, 1, madrid, 28014, españa": {
+    "lat": 40.416947,
+    "lon": -3.691934,
+    "query": "Plaza de la Lealtad, 1, Madrid, 28014"
+  },
+  "calle de ercilla, 48, madrid, 28005, españa": {
+    "lat": 40.400691,
+    "lon": -3.701318,
+    "query": "Calle de Ercilla, 48, Madrid, 28005"
+  },
+  "calle de atocha, 14, madrid, 28012, españa": {
+    "lat": 40.414286,
+    "lon": -3.704216,
+    "query": "Calle de Atocha, 14, Madrid, 28012"
+  },
+  "gran vía, 69, centro, madrid, 28013, españa": {
+    "lat": 40.422878,
+    "lon": -3.710394,
+    "query": "Gran Vía, 69, Centro, Madrid, 28013"
+  },
+  "calle de josefa díaz, 4, madrid, 28038, españa": {
+    "lat": 40.393231,
+    "lon": -3.657984,
+    "query": "Calle de Josefa Díaz, 4, Madrid, 28038"
+  },
+  "calle de velarde, 5, madrid, 28004, españa": {
+    "lat": 40.426608,
+    "lon": -3.702524,
+    "query": "Calle de Velarde, 5, Madrid, 28004"
+  },
+  "ifema madrid, españa": {
+    "lat": 40.466371,
+    "lon": -3.617214,
+    "query": "IFEMA Madrid"
+  },
+  "pl. del conde del valle de súchil, 8, local, chamberí, 28015, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Pl. del Conde del Valle de Súchil, 8, Local, Chamberí, 28015"
+  },
+  "calle de núñez de arce, 9, madrid, 28012, españa": {
+    "lat": 40.415458,
+    "lon": -3.701028,
+    "query": "Calle de Núñez de Arce, 9, Madrid, 28012"
+  },
+  "calle manuela malasaña 31, 28004, madrid, españa": {
+    "lat": 40.322054,
+    "lon": -3.711974,
+    "query": "Calle Manuela Malasaña 31, 28004"
+  },
+  "de portugal, s/n, madrid, 28011, españa": {
+    "lat": 40.410151,
+    "lon": -3.739814,
+    "query": "de Portugal, s/n, Madrid, 28011"
+  },
+  "de granada, 10, madrid, 28007, españa": {
+    "lat": 40.404885,
+    "lon": -3.679959,
+    "query": "de Granada, 10, Madrid, 28007"
+  },
+  "de palos de la frontera, 4, madrid, 28012, españa": {
+    "lat": 40.402551,
+    "lon": -3.700015,
+    "query": "de Palos de la Frontera, 4, Madrid, 28012"
+  },
+  "c. del conde duque, 11 (centro), madrid, españa": {
+    "lat": 40.428497,
+    "lon": -3.71074,
+    "query": "C. del Conde Duque, 11 (Centro)"
+  },
+  "de san pol de mar, 1, madrid, 28008, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de San Pol de Mar, 1, Madrid, 28008"
+  },
+  "agustín de foxa, s/n, madrid, 28036, españa": {
+    "lat": 40.468109,
+    "lon": -3.687328,
+    "query": "Agustín de Foxa, s/n, Madrid, 28036"
+  },
+  "c. de sta. isabel, 52 (centro), madrid, españa": {
+    "lat": 40.408049,
+    "lon": -3.694422,
+    "query": "C. de Sta. Isabel, 52 (Centro)"
+  },
+  "casa de campo, s/n, madrid, 28011, españa": {
+    "lat": 40.425683,
+    "lon": -3.752432,
+    "query": "Casa de Campo, s/n, Madrid, 28011"
+  },
+  "parque de atracciones de madrid, españa": {
+    "lat": 40.411603,
+    "lon": -3.749912,
+    "query": "Parque de Atracciones de Madrid"
+  },
+  "puerta del sol, madrid, 28013, españa": {
+    "lat": 40.416863,
+    "lon": -3.703876,
+    "query": "Puerta del Sol, Madrid, 28013"
+  },
+  "calle de tomás bretón, 52, madrid, 28045, españa": {
+    "lat": 40.396872,
+    "lon": -3.691699,
+    "query": "Calle de Tomás Bretón, 52, Madrid, 28045"
+  },
+  "calle de antonio toledano, 25, madrid, 28028, españa": {
+    "lat": 40.423871,
+    "lon": -3.665703,
+    "query": "Calle de Antonio Toledano, 25, Madrid, 28028"
+  },
+  "madrid, 28054, españa": {
+    "lat": 40.369246,
+    "lon": -3.754169,
+    "query": "Madrid, 28054"
+  },
+  "círculo de bellas artes, madrid, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "Círculo de Bellas Artes"
+  },
+  "calle de vallehermoso, 75, madrid, 28015, españa": {
+    "lat": 40.438283,
+    "lon": -3.708456,
+    "query": "Calle de Vallehermoso, 75, Madrid, 28015"
+  },
+  "plaza del callao, 4, 28013, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza del Callao, 4, 28013"
+  },
+  "sala fundación unicaja mª cristina, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Fundación Unicaja Mª Cristina"
+  },
+  "calle de julián camarillo, 19, 28037, madrid, españa": {
+    "lat": 40.435114,
+    "lon": -3.631266,
+    "query": "Calle de Julián Camarillo, 19, 28037"
+  },
+  "calle de arrieta, 6, madrid, 28013, españa": {
+    "lat": 40.418784,
+    "lon": -3.710184,
+    "query": "Calle de Arrieta, 6, Madrid, 28013"
+  },
+  "el café de la ópera, madrid, españa": {
+    "lat": 40.418784,
+    "lon": -3.710184,
+    "query": "El Café de la Ópera"
+  },
+  "calle del pez, 38, madrid, 28004, españa": {
+    "lat": 40.42442,
+    "lon": -3.706901,
+    "query": "Calle del Pez, 38, Madrid, 28004"
+  },
+  "ya'sta club c. de valverde, 10, centro, 28004 madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "YA'STA CLUB C. de Valverde, 10, Centro, 28004 Madrid, 28004"
+  },
+  "gran teatro caixabank príncipe pío, madrid, españa": {
+    "lat": 40.420854,
+    "lon": -3.718751,
+    "query": "Gran Teatro CaixaBank Príncipe Pío"
+  },
+  "puerta del sol, 13, madrid, 28013, españa": {
+    "lat": 40.417149,
+    "lon": -3.702824,
+    "query": "Puerta del Sol, 13, Madrid, 28013"
+  },
+  "avenida rosario manzaneque, 25, madrid, españa": {
+    "lat": 40.584936,
+    "lon": -3.952469,
+    "query": "avenida Rosario Manzaneque, 25"
+  },
+  "avenidable luisaragones, 4, madrid, 28022, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "AVENIDABLE LUISARAGONES, 4, Madrid, 28022"
+  },
+  "de serrano, 104, madrid, 28006, españa": {
+    "lat": 40.43439,
+    "lon": -3.685986,
+    "query": "de Serrano, 104, Madrid, 28006"
+  },
+  "de canarias, 16, madrid, 28045, españa": {
+    "lat": 40.401799,
+    "lon": -3.69653,
+    "query": "de Canarias, 16, Madrid, 28045"
+  },
+  "de , 6, 1 planta, madrid, 28008, españa": {
+    "lat": 40.544818,
+    "lon": -3.898963,
+    "query": "de España, 6, 1 planta, Madrid, 28008"
+  },
+  "de utebo , 1, madrid, 28025, españa": {
+    "lat": 40.386651,
+    "lon": -3.738526,
+    "query": "de Utebo , 1, Madrid, 28025"
+  },
+  "de santa isabel, 44, madrid, 28012, españa": {
+    "lat": 40.409648,
+    "lon": -3.697197,
+    "query": "de Santa Isabel, 44, Madrid, 28012"
+  },
+  "del marqués de casa riera, 2, madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Marqués de Casa Riera, 2, Madrid, 28014"
+  },
+  "de colón, madrid, 28004, españa": {
+    "lat": 40.425348,
+    "lon": -3.690513,
+    "query": "de Colón, Madrid, 28004"
+  },
+  "c. de potosí, 8, chamartín, 28016 madrid, 28016, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de Potosí, 8, Chamartín, 28016 Madrid, 28016"
+  },
+  "calle de santa ana, 3, madrid, 28005, españa": {
+    "lat": 40.4101,
+    "lon": -3.707926,
+    "query": "Calle de Santa Ana, 3, Madrid, 28005"
+  },
+  "habanera restaurante, madrid, españa": {
+    "lat": 40.425343,
+    "lon": -3.691758,
+    "query": "Habanera Restaurante"
+  },
+  "c. del cardenal cisneros, 64, madrid, 28010, españa": {
+    "lat": 40.43541,
+    "lon": -3.703136,
+    "query": "C. del Cardenal Cisneros, 64, Madrid, 28010"
+  },
+  "descaro madrid, españa": {
+    "lat": 40.394557,
+    "lon": -3.677703,
+    "query": "Descaro Madrid"
+  },
+  "perrachica, madrid, españa": {
+    "lat": 40.433758,
+    "lon": -3.702907,
+    "query": "Perrachica"
+  },
+  "calle del marqués de casa riera, 4, 28014, madrid, españa": {
+    "lat": 40.417899,
+    "lon": -3.696253,
+    "query": "Calle del Marqués de Casa Riera, 4, 28014"
+  },
+  "c. aeronáutica, 33, alcorcón, 28923, madrid, españa": {
+    "lat": 40.333658,
+    "lon": -3.818192,
+    "query": "C. Aeronáutica, 33, Alcorcón, 28923"
+  },
+  "calle de silva, 25, 28004, madrid, españa": {
+    "lat": 40.421866,
+    "lon": -3.70571,
+    "query": "Calle de Silva, 25, 28004"
+  },
+  "c. de la isla de java, 2, madrid, 28034, españa": {
+    "lat": 40.484831,
+    "lon": -3.677728,
+    "query": "C. de la Isla de Java, 2, Madrid, 28034"
+  },
+  "paseo de las yeserías, 55, madrid, 28005, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Paseo de las Yeserías, 55, Madrid, 28005"
+  },
+  "plaza de cascorro, 15, madrid, 28005, españa": {
+    "lat": 40.410203,
+    "lon": -3.70745,
+    "query": "Plaza de Cascorro, 15, Madrid, 28005"
+  },
+  "lola 09, madrid, españa": {
+    "lat": 40.396423,
+    "lon": -3.716686,
+    "query": "Lola 09"
+  },
+  "calle núñez morgado, 15, puerta 1, madrid. espacio nodo., 28036, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Núñez Morgado, 15, Puerta 1, Madrid. Espacio Nodo., 28036"
+  },
+  "pista del cristo de el pardo, 3, fuencarral-el pardo, 28048 madrid, 28048, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Pista del Cristo de El Pardo, 3, Fuencarral-El Pardo, 28048 Madrid, 28048"
+  },
+  "frente al parking, calle ibiza 33, calle de fernán gonzález, 59, entrada por, madrid, 28009, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Frente al parking, Calle Ibiza 33, Calle de Fernán González, 59, Entrada por, Madrid, 28009"
+  },
+  "calle de los mancebos, 4, madrid, 28005, españa": {
+    "lat": 40.412042,
+    "lon": -3.711952,
+    "query": "Calle de los Mancebos, 4, Madrid, 28005"
+  },
+  "auditorio mar rojo - oceanogràfic valència, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Auditorio Mar Rojo - Oceanogràfic València"
+  },
+  "c. cardenal solís, 5, madrid, 28012, españa": {
+    "lat": 40.402125,
+    "lon": -3.699465,
+    "query": "C. Cardenal Solís, 5, Madrid, 28012"
+  },
+  "pintor rosales 30 (esquina con calle quintana), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Pintor Rosales 30 (esquina con Calle Quintana)"
+  },
+  "avenida de la industria, 82, humanes de madrid, 28970, españa": {
+    "lat": 40.265301,
+    "lon": -3.840565,
+    "query": "Avenida de la Industria, 82, Humanes de Madrid, 28970"
+  },
+  "sala roja concha velasco de teatros del canal, en la calle cea de bermúdez 1, (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Roja Concha Velasco de Teatros del Canal, en la calle Cea de Bermúdez 1, (Chamberí)"
+  },
+  "de ercilla, 20, madrid, 28005, españa": {
+    "lat": 40.40269,
+    "lon": -3.702877,
+    "query": "de Ercilla, 20, Madrid, 28005"
+  },
+  "de las delicias, 61, madrid, 28045, españa": {
+    "lat": 40.399322,
+    "lon": -3.692149,
+    "query": "de las Delicias, 61, Madrid, 28045"
+  },
+  "sala galileo galilei / café berlín, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Galileo Galilei / Café Berlín"
+  },
+  "de manuela malasaña, 6, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Manuela Malasaña, 6, Madrid, 28004"
+  },
+  "de monforte de lemos, 36, madrid, 28029, españa": {
+    "lat": 40.479696,
+    "lon": -3.707884,
+    "query": "de Monforte de Lemos, 36, Madrid, 28029"
+  },
+  "corredera baja de san pablo, 15, madrid, 28004, españa": {
+    "lat": 40.42213,
+    "lon": -3.704366,
+    "query": "Corredera Baja de San Pablo, 15, Madrid, 28004"
+  },
+  "sala clamores, en la calle de alburquerque, 14 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Clamores, en la calle de Alburquerque, 14 (Chamberí)"
+  },
+  "rda. de valencia, 2 (centro), madrid, españa": {
+    "lat": 40.406071,
+    "lon": -3.699885,
+    "query": "Rda. de Valencia, 2 (Centro)"
+  },
+  "la casa encendida. rda. de valencia, 2 (centro), madrid, españa": {
+    "lat": 40.406071,
+    "lon": -3.699885,
+    "query": "La Casa Encendida. Rda. de Valencia, 2 (Centro)"
+  },
+  "la riviera, en el paseo bajo de la virgen del puerto, 3a (arganzuela), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "La Riviera, en el Paseo Bajo de la Virgen del Puerto, 3A (Arganzuela)"
+  },
+  "de alcalá, 31, madrid, 28014, españa": {
+    "lat": 40.418666,
+    "lon": -3.698406,
+    "query": "de Alcalá, 31, Madrid, 28014"
+  },
+  "calle alcalá, 31 (centro), madrid, españa": {
+    "lat": 40.418666,
+    "lon": -3.698406,
+    "query": "Calle Alcalá, 31 (Centro)"
+  },
+  "oslo, 53, alcorcón, 28922, madrid, españa": {
+    "lat": 40.339843,
+    "lon": -3.848346,
+    "query": "Oslo, 53, Alcorcón, 28922"
+  },
+  "de cea bermúdez, 1, madrid, 28003, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Cea Bermúdez, 1, Madrid, 28003"
+  },
+  "del planetario esquina a c/ meneses, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Planetario esquina a C/ Meneses, Madrid"
+  },
+  "hotel wellington, madrid, españa": {
+    "lat": 40.42199,
+    "lon": -3.684113,
+    "query": "Hotel Wellington"
+  },
+  "four seasons hotel madrid, españa": {
+    "lat": 40.417272,
+    "lon": -3.700392,
+    "query": "Four Seasons Hotel Madrid"
+  },
+  "calle del pez, 17, madrid, 28004, españa": {
+    "lat": 40.423754,
+    "lon": -3.70555,
+    "query": "Calle del Pez, 17, Madrid, 28004"
+  },
+  "ateneo de madrid, españa": {
+    "lat": 40.41819,
+    "lon": -3.702315,
+    "query": "Ateneo de Madrid"
+  },
+  "c, costanilla de los ángeles, 20, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C, Costanilla de los Ángeles, 20, Madrid, 28013"
+  },
+  "café berlín, madrid, españa": {
+    "lat": 40.419538,
+    "lon": -3.707963,
+    "query": "Café Berlín"
+  },
+  "museo reina sofía, madrid, españa": {
+    "lat": 40.408049,
+    "lon": -3.694422,
+    "query": "Museo Reina Sofía"
+  },
+  "de san justo, 4, madrid, 28005, españa": {
+    "lat": 40.414394,
+    "lon": -3.709659,
+    "query": "de San Justo, 4, Madrid, 28005"
+  },
+  "camino de perales, 23 (usera), madrid, españa": {
+    "lat": 40.368642,
+    "lon": -3.684334,
+    "query": "Camino de Perales, 23 (Usera)"
+  },
+  "de perales, 23, madrid, 28041, españa": {
+    "lat": 40.368642,
+    "lon": -3.684334,
+    "query": "de Perales, 23, Madrid, 28041"
+  },
+  "de montalbán, 1, madrid, 28014, españa": {
+    "lat": 40.418046,
+    "lon": -3.68971,
+    "query": "de Montalbán, 1, Madrid, 28014"
+  },
+  "de castilla, km. 2, madrid, 28040, españa": {
+    "lat": 40.439484,
+    "lon": -3.743923,
+    "query": "De Castilla, km. 2, Madrid, 28040"
+  },
+  "calle de castelló, 31, 1º izq, salamanca, 28001, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Castelló, 31, 1º izq, Salamanca, 28001"
+  },
+  "avenida de concha espina, 1, madrid, 28036, españa": {
+    "lat": 40.452219,
+    "lon": -3.688908,
+    "query": "AVENIDA DE CONCHA ESPINA, 1, Madrid, 28036"
+  },
+  "calle de hilarión eslava, 36, bajo, chamberí, madrid, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Hilarión Eslava, 36, bajo, Chamberí, Madrid, 28015"
+  },
+  "salal b, en la calle de trafalgar, 6 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Salal B, en la calle de Trafalgar, 6 (Chamberí)"
+  },
+  "c. alcalá, 42 (centro), madrid, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "C. Alcalá, 42 (Centro)"
+  },
+  "diferentes ubicaciones (comunidad de madrid), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes ubicaciones (Comunidad de Madrid)"
+  },
+  "estación de chamartín planta ático, 28036 madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Estación de Chamartín Planta Ático, 28036 Madrid"
+  },
+  "de atocha, 35, madrid, 28012, españa": {
+    "lat": 40.413735,
+    "lon": -3.702105,
+    "query": "de Atocha, 35, Madrid, 28012"
+  },
+  "movistar arena, madrid, españa": {
+    "lat": 40.423862,
+    "lon": -3.671788,
+    "query": "Movistar Arena"
+  },
+  "calle de la montera, 24, 4º i, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de la Montera, 24, 4º i, Madrid, 28013"
+  },
+  "ilustre colegio oficial de médicos de madrid (icomem), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Ilustre Colegio Oficial de Médicos de Madrid (ICOMEM)"
+  },
+  "de la esperanza, 23 - 25, madrid, 28005, españa": {
+    "lat": 40.40088,
+    "lon": -3.704052,
+    "query": "de la Esperanza, 23 - 25, Madrid, 28005"
+  },
+  "teresa de calcuta, s/n, getafe, 28903, madrid, españa": {
+    "lat": 40.322302,
+    "lon": -3.711192,
+    "query": "Teresa de Calcuta, s/n, Getafe, 28903"
+  },
+  "del arenal, 11, madrid, 28013, españa": {
+    "lat": 40.417167,
+    "lon": -3.706542,
+    "query": "del Arenal, 11, Madrid, 28013"
+  },
+  "santa ana, s/n, madrid, 28012, españa": {
+    "lat": 40.414804,
+    "lon": -3.700791,
+    "query": "Santa Ana, s/n, Madrid, 28012"
+  },
+  "de ercilla, 29, madrid, 28005, españa": {
+    "lat": 40.401947,
+    "lon": -3.702051,
+    "query": "de Ercilla, 29, Madrid, 28005"
+  },
+  "de serrano, 56, madrid, 28004, españa": {
+    "lat": 40.428369,
+    "lon": -3.687121,
+    "query": "de Serrano, 56, Madrid, 28004"
+  },
+  "de hortaleza, 63, madrid, 28004, españa": {
+    "lat": 40.423931,
+    "lon": -3.698712,
+    "query": "de Hortaleza, 63, Madrid, 28004"
+  },
+  "de moret, 2, madrid, 28008, españa": {
+    "lat": 40.434723,
+    "lon": -3.720065,
+    "query": "de Moret, 2, Madrid, 28008"
+  },
+  "de requena, 1, madrid, 28013, españa": {
+    "lat": 40.416941,
+    "lon": -3.712172,
+    "query": "de Requena, 1, Madrid, 28013"
+  },
+  "via regina, 40, cernobbio, 22012, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Via Regina, 40, Cernobbio, 22012"
+  },
+  "calle del marqués de monteagudo, 24, atico, madrid, 28028, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Marqués de Monteagudo, 24, ATICO, Madrid, 28028"
+  },
+  "ateneo mercantil de valencia, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Ateneo Mercantil de Valencia"
+  },
+  "calle de san bernardino, 8, madrid, 28015, españa": {
+    "lat": 40.425057,
+    "lon": -3.71,
+    "query": "Calle de San Bernardino, 8, Madrid, 28015"
+  },
+  "de atocha, 18, madrid, 28012, españa": {
+    "lat": 40.406572,
+    "lon": -3.697498,
+    "query": "de Atocha, 18, Madrid, 28012"
+  },
+  "c/ mateo inurria, 2, 28036 madrid, españa": {
+    "lat": 40.465709,
+    "lon": -3.687949,
+    "query": "C/ Mateo Inurria, 2, 28036 Madrid"
+  },
+  "de murillo, 2, madrid, 28014, españa": {
+    "lat": 40.434042,
+    "lon": -3.704155,
+    "query": "de Murillo, 2, Madrid, 28014"
+  },
+  "paseo de colombia, 1, madrid, españa": {
+    "lat": 40.419211,
+    "lon": -3.684099,
+    "query": "paseo de Colombia, 1"
+  },
+  "gran vía, 41, madrid, 28013, españa": {
+    "lat": 40.420416,
+    "lon": -3.706622,
+    "query": "Gran Vía, 41, Madrid, 28013"
+  },
+  "de embajadores, 9, madrid, 28012, españa": {
+    "lat": 40.410109,
+    "lon": -3.706106,
+    "query": "de Embajadores, 9, Madrid, 28012"
+  },
+  "de san bernardo , 5, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de San Bernardo , 5, Madrid, 28013"
+  },
+  "del príncipe, 25, madrid, 28012, españa": {
+    "lat": 40.414896,
+    "lon": -3.699895,
+    "query": "del Príncipe, 25, Madrid, 28012"
+  },
+  "plaza francisco de asís cabrero, madrid, 28055, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza Francisco de Asís Cabrero, Madrid, 28055"
+  },
+  "barrio de malasaña, madrid, 28004, españa": {
+    "lat": 40.426444,
+    "lon": -3.703682,
+    "query": "Barrio de Malasaña, Madrid, 28004"
+  },
+  "diferentes ubicaciones (barrio de malasaña), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes ubicaciones (barrio de Malasaña)"
+  },
+  "del payaso fofó, s/n, madrid, 28018, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Payaso Fofó, s/n, Madrid, 28018"
+  },
+  "de fuerzas armadas, 402, madrid, 28055, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Fuerzas Armadas, 402, Madrid, 28055"
+  },
+  "del prado, 36, madrid, 28014, españa": {
+    "lat": 40.41114,
+    "lon": -3.693568,
+    "query": "del Prado, 36, Madrid, 28014"
+  },
+  "c. del príncipe 25 (centro), madrid, españa": {
+    "lat": 40.414896,
+    "lon": -3.699895,
+    "query": "C. del Príncipe 25 (Centro)"
+  },
+  "de tamayo y baus, 4, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Tamayo y Baus, 4, Madrid, 28004"
+  },
+  "antonio nebrija, s/n, madrid, 28007, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Antonio Nebrija, s/n, Madrid, 28007"
+  },
+  "de jorge juan, 62, madrid, 28009, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Jorge Juan, 62, Madrid, 28009"
+  },
+  "sala nazca live, en la calle de orense, 24 (tetuán), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Nazca Live, en la calle de Orense, 24 (Tetuán)"
+  },
+  "gran vía, 78, madrid, 28013, españa": {
+    "lat": 40.423276,
+    "lon": -3.710327,
+    "query": "Gran Vía, 78, Madrid, 28013"
+  },
+  "c. del marqués de casa riera, 2 (centro), madrid, españa": {
+    "lat": 40.418173,
+    "lon": -3.696326,
+    "query": "C. del Marqués de Casa Riera, 2 (Centro)"
+  },
+  "de colombia, 1, madrid, 28009, españa": {
+    "lat": 40.419211,
+    "lon": -3.684099,
+    "query": "de Colombia, 1, Madrid, 28009"
+  },
+  "de recoletos, s/n, madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Recoletos, s/n, Madrid, 28014"
+  },
+  "de amaniel, 29 - 31, madrid, 28015, españa": {
+    "lat": 40.427683,
+    "lon": -3.709674,
+    "query": "de Amaniel, 29 - 31, Madrid, 28015"
+  },
+  "puerta del sol,, madrid, 28013, españa": {
+    "lat": 40.416863,
+    "lon": -3.703876,
+    "query": "Puerta del Sol,, Madrid, 28013"
+  },
+  "de fernán núñez, 30, madrid, 28009, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Fernán Núñez, 30, Madrid, 28009"
+  },
+  "calle del príncipe, 14 (centro), madrid, españa": {
+    "lat": 40.415616,
+    "lon": -3.700399,
+    "query": "Calle del Príncipe, 14 (Centro)"
+  },
+  "hotel nh collection a coruña finisterre, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Hotel NH Collection A Coruña Finisterre"
+  },
+  "avenida capital de  7, 28042, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida Capital de España 7, 28042, Madrid"
+  },
+  "del prado, s/n, madrid, 28014, españa": {
+    "lat": 40.408993,
+    "lon": -3.691759,
+    "query": "del Prado, s/n, Madrid, 28014"
+  },
+  "del general pardiñas, 73, madrid, 28006, españa": {
+    "lat": 40.434078,
+    "lon": -3.678034,
+    "query": "del General Pardiñas, 73, Madrid, 28006"
+  },
+  "sala el sol, en la calle jardines, 3 (centro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala El Sol, en la calle Jardines, 3 (Centro)"
+  },
+  "del general vara del rey, madrid, 28005, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del General Vara del Rey, Madrid, 28005"
+  },
+  "varias localizaciones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Varias localizaciones"
+  },
+  "calle de ramón de aguinaga, 15, madrid, 28028, españa": {
+    "lat": 40.426972,
+    "lon": -3.662389,
+    "query": "Calle de Ramón de Aguinaga, 15, Madrid, 28028"
+  },
+  "seminari conciliar de barcelona, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Seminari Conciliar de Barcelona"
+  },
+  "restaurante descaro, madrid, españa": {
+    "lat": 40.422614,
+    "lon": -3.711864,
+    "query": "Restaurante Descaro"
+  },
+  "de mateo inurria, 2, madrid, 28036, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Mateo Inurria, 2, Madrid, 28036"
+  },
+  "gustavo adolfo bécquer, 64, alcalá de henares, 28806, madrid, españa": {
+    "lat": 40.512203,
+    "lon": -3.37738,
+    "query": "Gustavo Adolfo Bécquer, 64, Alcalá de Henares, 28806"
+  },
+  "de colón , 4, madrid, 28001, españa": {
+    "lat": 40.424943,
+    "lon": -3.689877,
+    "query": "de Colón , 4, Madrid, 28001"
+  },
+  "del barquillo, 24, madrid, 28004, españa": {
+    "lat": 40.42219,
+    "lon": -3.695386,
+    "query": "del Barquillo, 24, Madrid, 28004"
+  },
+  "fundación canal, madrid, españa": {
+    "lat": 40.465709,
+    "lon": -3.687949,
+    "query": "Fundación Canal"
+  },
+  "de la ermita del santo, 74, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Ermita del Santo, 74, Madrid"
+  },
+  "de fernández de los ríos, 42, madrid, 28015, españa": {
+    "lat": 40.435356,
+    "lon": -3.709591,
+    "query": "de Fernández de los Ríos, 42, Madrid, 28015"
+  },
+  "rios rosas, 21, madrid, 28003, españa": {
+    "lat": 40.442136,
+    "lon": -3.700327,
+    "query": "Rios Rosas, 21, Madrid, 28003"
+  },
+  "de alcalá galiano, 6, madrid, 28071, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Alcalá Galiano, 6, Madrid, 28071"
+  },
+  "de américa, 13, madrid, 28002, españa": {
+    "lat": 40.438577,
+    "lon": -3.676317,
+    "query": "de América, 13, Madrid, 28002"
+  },
+  "centrocentro. pl. cibeles, 1 (retiro), madrid, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "CentroCentro. Pl. Cibeles, 1 (Retiro)"
+  },
+  "centrocentro (plaza de cibeles, 1), madrid, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "CentroCentro (plaza de Cibeles, 1)"
+  },
+  "sala villanos, en la calle de bernardino obregón, 18 (embajadores), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Villanos, en la calle de Bernardino Obregón, 18 (Embajadores)"
+  },
+  "de isabel ii, s/n, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Isabel II, s/n, Madrid, 28013"
+  },
+  "carrer de ponent, 143, badalona, 08912, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Carrer de Ponent, 143, Badalona, 08912"
+  },
+  "calle del espíritu santo 21, 28004, 28004, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Espíritu Santo 21, 28004, 28004"
+  },
+  "padre huidobro , s/n, madrid, 28023, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Padre Huidobro , s/n, Madrid, 28023"
+  },
+  "calle del amor de dios, 13, centro, madrid, 28014, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Amor de Dios, 13, Centro, Madrid, 28014, 28014"
+  },
+  "sala mon, en la calle hilarión eslava, 36 (moncloa), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala MON, en la calle Hilarión Eslava, 36 (Moncloa)"
+  },
+  "de agustín de foxa, s/n, madrid, 28036, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Agustín de Foxa, s/n, Madrid, 28036"
+  },
+  "del rey, madrid, 28008, españa": {
+    "lat": 40.47247,
+    "lon": -3.648961,
+    "query": "del Rey, Madrid, 28008"
+  },
+  "de la paz, 11, madrid, 28012, españa": {
+    "lat": 40.415422,
+    "lon": -3.704023,
+    "query": "de la Paz, 11, Madrid, 28012"
+  },
+  "de alcalá, 42, madrid, 28014, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "de Alcalá, 42, Madrid, 28014"
+  },
+  "c. de zorrilla, 3 (centro), madrid, españa": {
+    "lat": 40.416836,
+    "lon": -3.697774,
+    "query": "C. de Zorrilla, 3 (Centro)"
+  },
+  "de serrano, 13, madrid, 28001, españa": {
+    "lat": 40.423429,
+    "lon": -3.688889,
+    "query": "de Serrano, 13, Madrid, 28001"
+  },
+  "cam. del molino, fuenlabrada, 28942, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cam. del Molino, Fuenlabrada, 28942"
+  },
+  "de zorrilla, 3, madrid, 28014, españa": {
+    "lat": 40.416836,
+    "lon": -3.697774,
+    "query": "de Zorrilla, 3, Madrid, 28014"
+  },
+  "teatro real, madrid, españa": {
+    "lat": 40.41822,
+    "lon": -3.710579,
+    "query": "Teatro Real"
+  },
+  "sala copérnico, en la calle de fernández de los ríos, 67, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Copérnico, en la calle de Fernández de los Ríos, 67"
+  },
+  "sala copérnico, en la calle de fernández de los ríos, 67 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Copérnico, en la calle de Fernández de los Ríos, 67 (Chamberí)"
+  },
+  "paseo de recoletos 23, 28004, madrid, españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "Paseo de Recoletos 23, 28004, Madrid"
+  },
+  "de recoletos, 23, madrid, 28004, españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "de Recoletos, 23, Madrid, 28004"
+  },
+  "sala recoletos fundación mapfre (paseo de recoletos, 23), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Recoletos Fundación MAPFRE (paseo de Recoletos, 23)"
+  },
+  "biblioteca nacional de  (paseo de recoletos, 20-22), madrid, españa": {
+    "lat": 40.423728,
+    "lon": -3.689904,
+    "query": "Biblioteca Nacional de España (paseo de Recoletos, 20-22)"
+  },
+  "paseo recoletos 23, madrid, españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "Paseo Recoletos 23"
+  },
+  "pº de recoletos, 23 (centro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Pº de Recoletos, 23 (Centro)"
+  },
+  "paseo recoletos, 23 (centro), madrid, españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "Paseo Recoletos, 23 (Centro)"
+  },
+  "teatro maravillas, madrid, españa": {
+    "lat": 40.42869,
+    "lon": -3.703263,
+    "query": "Teatro maravillas"
+  },
+  "calle del prado, 19, madrid, 28014, españa": {
+    "lat": 40.41513,
+    "lon": -3.698304,
+    "query": "CALLE DEL PRADO, 19, Madrid, 28014"
+  },
+  "baja de san pablo, 15, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Baja de San Pablo, 15, Madrid, 28004"
+  },
+  "basílica pontificia de san miguel, madrid, españa": {
+    "lat": 40.414394,
+    "lon": -3.709659,
+    "query": "Basílica Pontificia de San Miguel"
+  },
+  "palacio real de madrid, centro, 28013 madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Palacio Real de Madrid, Centro, 28013 Madrid, 28013"
+  },
+  "shoko madrid, españa": {
+    "lat": 40.408822,
+    "lon": -3.710862,
+    "query": "Shoko Madrid"
+  },
+  "38, calle hilarión eslava, madrid, 28015, españa": {
+    "lat": 40.43616,
+    "lon": -3.716501,
+    "query": "38, Calle Hilarión Eslava, Madrid, 28015"
+  },
+  "sala la riviera, madrid, españa": {
+    "lat": 40.412955,
+    "lon": -3.722134,
+    "query": "Sala La Riviera"
+  },
+  "estadio riyadh air metropolitano, en la avenida de luis aragonés, 4 (san blas – canillejas), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Estadio Riyadh Air Metropolitano, en la Avenida de Luis Aragonés, 4 (San Blas – Canillejas)"
+  },
+  "de cibeles, 2, madrid, 28014, españa": {
+    "lat": 40.419363,
+    "lon": -3.692769,
+    "query": "de Cibeles, 2, Madrid, 28014"
+  },
+  "plaza de cibeles, s/n, madrid, españa": {
+    "lat": 40.41942,
+    "lon": -3.692538,
+    "query": "plaza de Cibeles, s/n"
+  },
+  "calle san agustín, 11 (las letras), madrid, españa": {
+    "lat": 40.41444,
+    "lon": -3.69671,
+    "query": "Calle San Agustín, 11 (Las Letras)"
+  },
+  "san agustín, 11, madrid, 28014, españa": {
+    "lat": 40.41444,
+    "lon": -3.69671,
+    "query": "San Agustín, 11, Madrid, 28014"
+  },
+  "c. de san agustín, 11 (centro), madrid, españa": {
+    "lat": 40.41444,
+    "lon": -3.69671,
+    "query": "C. de San Agustín, 11 (Centro)"
+  },
+  "de alfonso xii, 68, madrid, 28014, españa": {
+    "lat": 40.407757,
+    "lon": -3.689019,
+    "query": "de Alfonso XII, 68, Madrid, 28014"
+  },
+  "de fuencarral, 78, madrid, 28004, españa": {
+    "lat": 40.42579,
+    "lon": -3.70076,
+    "query": "de Fuencarral, 78, Madrid, 28004"
+  },
+  "calle de fuencarral, 78, madrid, españa": {
+    "lat": 40.42579,
+    "lon": -3.70076,
+    "query": "Calle de Fuencarral, 78"
+  },
+  "calle del rector royo-villanova, 4, 28040, madrid, españa": {
+    "lat": 40.451211,
+    "lon": -3.71497,
+    "query": "Calle del Rector Royo-Villanova, 4, 28040"
+  },
+  "del prado, 8, madrid, 28014, españa": {
+    "lat": 40.416216,
+    "lon": -3.694932,
+    "query": "del Prado, 8, Madrid, 28014"
+  },
+  "infinito delicias (auditorio daniel y nina), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Infinito Delicias (Auditorio Daniel y Nina)"
+  },
+  "de valdelaparra, 12, ['alcobendas', 'madrid'], 28108, españa": {
+    "lat": 40.537711,
+    "lon": -3.64285,
+    "query": "de Valdelaparra, 12, ['Alcobendas', 'Madrid'], 28108"
+  },
+  "calle de luchana, 38 (chamberí), madrid, españa": {
+    "lat": 40.431847,
+    "lon": -3.698119,
+    "query": "Calle de Luchana, 38 (Chamberí)"
+  },
+  "de la independencia, 7, madrid, 28001, españa": {
+    "lat": 40.420237,
+    "lon": -3.689092,
+    "query": "de la Independencia, 7, Madrid, 28001"
+  },
+  "sala wagon, en la planta ático de la estación de chamartín (chamartín), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Wagon, en la planta ático de la estación de Chamartín (Chamartín)"
+  },
+  "avenida mundial 82, s/n, valladolid, 47014, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida Mundial 82, s/n, Valladolid, 47014"
+  },
+  "estadio josé zorrilla, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Estadio José Zorrilla"
+  },
+  "de alcalá, 48, madrid, 28012, españa": {
+    "lat": 40.499107,
+    "lon": -3.655407,
+    "query": "de Alcalá, 48, Madrid, 28012"
+  },
+  "del carmen, 1, madrid, 28013, españa": {
+    "lat": 40.418366,
+    "lon": -3.703275,
+    "query": "del Carmen, 1, Madrid, 28013"
+  },
+  "de alcalá, 13, madrid, 28014, españa": {
+    "lat": 40.417975,
+    "lon": -3.700855,
+    "query": "de Alcalá, 13, Madrid, 28014"
+  },
+  "calle de alcalá, 13, madrid, españa": {
+    "lat": 40.417975,
+    "lon": -3.700855,
+    "query": "calle de Alcalá, 13"
+  },
+  "de la alameda, 15, madrid, 28014, españa": {
+    "lat": 40.410395,
+    "lon": -3.693721,
+    "query": "de la Alameda, 15, Madrid, 28014"
+  },
+  "paseo de la castellana, 214, 28046 madrid, españa": {
+    "lat": 40.464444,
+    "lon": -3.688202,
+    "query": "Paseo de la Castellana, 214, 28046 Madrid"
+  },
+  "de la castellana, 214, madrid, 28046, españa": {
+    "lat": 40.435794,
+    "lon": -3.688518,
+    "query": "de la Castellana, 214, Madrid, 28046"
+  },
+  "museo nacional thyssen-bornemisza (paseo del prado, 8), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo Nacional Thyssen-Bornemisza (paseo del Prado, 8)"
+  },
+  "de callao, 3 y 4, madrid, 28013, españa": {
+    "lat": 40.419857,
+    "lon": -3.705812,
+    "query": "de Callao, 3 y 4, Madrid, 28013"
+  },
+  "de la cebada, 2, madrid, 28005, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Cebada, 2, Madrid, 28005"
+  },
+  "de la castellana, madrid, 28046, españa": {
+    "lat": 40.450598,
+    "lon": -3.691765,
+    "query": "de la Castellana, Madrid, 28046"
+  },
+  "de la princesa, 20, madrid, 28008, españa": {
+    "lat": 40.427726,
+    "lon": -3.7124,
+    "query": "de la Princesa, 20, Madrid, 28008"
+  },
+  "c. de la princesa, 20 (centro), madrid, españa": {
+    "lat": 40.427726,
+    "lon": -3.7124,
+    "query": "C. de la Princesa, 20 (Centro)"
+  },
+  "de alberto aguilera, 20, madrid, 28015, españa": {
+    "lat": 40.430132,
+    "lon": -3.70942,
+    "query": "de Alberto Aguilera, 20, Madrid, 28015"
+  },
+  "gran vía, 54, madrid, 28013, españa": {
+    "lat": 40.421301,
+    "lon": -3.707239,
+    "query": "Gran Vía, 54, Madrid, 28013"
+  },
+  "de callao, madrid, 28013, españa": {
+    "lat": 40.419857,
+    "lon": -3.705812,
+    "query": "de Callao, Madrid, 28013"
+  },
+  "museo del ferrocarril (paseo de las delicias, 61), madrid, españa": {
+    "lat": 40.399322,
+    "lon": -3.692149,
+    "query": "Museo del Ferrocarril (paseo de las Delicias, 61)"
+  },
+  "p.º del prado, 8 (centro), madrid, españa": {
+    "lat": 40.416216,
+    "lon": -3.694932,
+    "query": "P.º del Prado, 8 (Centro)"
+  },
+  "plaza de ópera se puede disfrutar gratis de obras como otello , el 2026 arranca, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Ópera se puede disfrutar gratis de obras como Otello , el 2026 arranca"
+  },
+  "fuenterrabía, 2, madrid, 28014, españa": {
+    "lat": 40.405767,
+    "lon": -3.682397,
+    "query": "Fuenterrabía, 2, Madrid, 28014"
+  },
+  "del pintor rosales, 30, madrid, 28008, españa": {
+    "lat": 40.427129,
+    "lon": -3.719656,
+    "query": "del Pintor Rosales, 30, Madrid, 28008"
+  },
+  "auditorio miguel ríos de rivas vaciamadrid, españa": {
+    "lat": 40.345375,
+    "lon": -3.513502,
+    "query": "Auditorio Miguel Ríos de Rivas Vaciamadrid"
+  },
+  "de san mateo, 13, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de San Mateo, 13, Madrid, 28004"
+  },
+  "museo del romanticismo (calle de san mateo, 13), madrid, españa": {
+    "lat": 40.426022,
+    "lon": -3.698939,
+    "query": "Museo del Romanticismo (calle de San Mateo, 13)"
+  },
+  "calle de san mateo, 13, madrid, españa": {
+    "lat": 40.426022,
+    "lon": -3.698939,
+    "query": "calle de San Mateo, 13"
+  },
+  "eurostars hotel de la reconquista, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Eurostars Hotel de La Reconquista"
+  },
+  "de santa isabel, 52, madrid, 28012, españa": {
+    "lat": 40.408049,
+    "lon": -3.694422,
+    "query": "de Santa Isabel, 52, Madrid, 28012"
+  },
+  "sala la riviera, en el paseo bajo de la virgen del puerto, s/n (arganzuela), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala La Riviera, en el Paseo Bajo de la Virgen del Puerto, S/N (Arganzuela)"
+  },
+  "virgen del puerto, s/n, madrid, 28005, españa": {
+    "lat": 40.403721,
+    "lon": -3.721947,
+    "query": "Virgen del Puerto, s/n, Madrid, 28005"
+  },
+  "de la chopera, 14, madrid, 28045, españa": {
+    "lat": 40.392338,
+    "lon": -3.697404,
+    "query": "de la Chopera, 14, Madrid, 28045"
+  },
+  "sala copérnico, en la calle de fernández de los ríos, 67 (gaztambide), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Copérnico, en la calle de Fernández de los Ríos, 67 (Gaztambide)"
+  },
+  "wurlitzer ballroom, en la calle de las tres cruces, 12 (centro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Wurlitzer Ballroom, en la calle de las Tres Cruces, 12 (Centro)"
+  },
+  "mon madrid calle hilarión eslava, 36 (moncloa), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Mon Madrid Calle Hilarión Eslava, 36 (Moncloa)"
+  },
+  "| crédito editorial: oriol maspons / © vegap la exposición puede visitarse en la sala de fotografía de la real academia de bellas artes de sa, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "| Crédito editorial: Oriol Maspons / © VEGAP La exposición puede visitarse en la sala de fotografía de la Real Academia de Bellas Artes de Sa"
+  },
+  "recinto mendizabala, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Mendizabala"
+  },
+  "sala nazca live calle de orense, 24 (, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala Nazca Live Calle de Orense, 24 ("
+  },
+  "sala but, en la calle barceló, 11 (tribunal), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala But, en la calle Barceló, 11 (Tribunal)"
+  },
+  "la casa de la luz, madrid, españa": {
+    "lat": 40.247676,
+    "lon": -3.241351,
+    "query": "La Casa de la Luz"
+  },
+  "p. del prado, 8 (centro), madrid, españa": {
+    "lat": 40.416216,
+    "lon": -3.694932,
+    "query": "P. del Prado, 8 (Centro)"
+  },
+  "de recoletos, 20 - 22, madrid, 28071, españa": {
+    "lat": 40.423728,
+    "lon": -3.689904,
+    "query": "de Recoletos, 20 - 22, Madrid, 28071"
+  },
+  "c. conde duque, 9 (centro), madrid, españa": {
+    "lat": 40.427602,
+    "lon": -3.710535,
+    "query": "C. Conde Duque, 9 (Centro)"
+  },
+  "de ramírez de prado, 3, madrid, 28045, españa": {
+    "lat": 40.400206,
+    "lon": -3.690249,
+    "query": "de Ramírez de Prado, 3, Madrid, 28045"
+  },
+  "alicia alonso, s/n, rivas vaciamadrid, 28522, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Alicia Alonso, s/n, Rivas Vaciamadrid, 28522"
+  },
+  "auditorio miguel ríos, rivas-vaciamadrid (madrid), españa": {
+    "lat": 40.345375,
+    "lon": -3.513502,
+    "query": "Auditorio Miguel Ríos, Rivas-Vaciamadrid (Madrid)."
+  },
+  "del general arrando, 38, madrid, 28010, españa": {
+    "lat": 40.43173,
+    "lon": -3.694648,
+    "query": "del General Arrando, 38, Madrid, 28010"
+  },
+  "parque tierno galván, madrid, españa": {
+    "lat": 40.389898,
+    "lon": -3.682853,
+    "query": "Parque Tierno Galván"
+  },
+  "plaza de pedro zerolo, plaza del rey, puerta del sol, plaza de ., madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Pedro Zerolo, Plaza del Rey, Puerta del Sol, Plaza de España., Madrid"
+  },
+  "parque enrique tierno galván, en la calle meneses, 4 (arganzuela), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parque Enrique Tierno Galván, en la calle Meneses, 4 (Arganzuela)"
+  },
+  "castillo de san marcos, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Castillo de San Marcos"
+  },
+  "calle claudio coello, 4 (salamanca), madrid, españa": {
+    "lat": 40.420828,
+    "lon": -3.687081,
+    "query": "Calle Claudio Coello, 4 (Salamanca)"
+  },
+  "teatros luchana. c. de luchana, 38 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatros Luchana. C. de Luchana, 38 (Chamberí)"
+  },
+  "de luchana, 38, madrid, 28010, españa": {
+    "lat": 40.431847,
+    "lon": -3.698119,
+    "query": "de Luchana, 38, Madrid, 28010"
+  },
+  "teatro lara, madrid, españa": {
+    "lat": 40.42213,
+    "lon": -3.704366,
+    "query": "Teatro Lara"
+  },
+  "de la chopera, 6, madrid, 28045, españa": {
+    "lat": 40.394435,
+    "lon": -3.700345,
+    "query": "de la Chopera, 6, Madrid, 28045"
+  },
+  "raimundo fernández villaverde, 57, madrid, 28003, españa": {
+    "lat": 40.446441,
+    "lon": -3.695613,
+    "query": "Raimundo Fernández Villaverde, 57, Madrid, 28003"
+  },
+  "serrería belga (calle de la alameda, 15), madrid, españa": {
+    "lat": 40.410395,
+    "lon": -3.693721,
+    "query": "Serrería Belga (calle de la Alameda, 15)"
+  },
+  "de méxico, 4, madrid, 28009, españa": {
+    "lat": 40.596524,
+    "lon": -3.705372,
+    "query": "de México, 4, Madrid, 28009"
+  },
+  "recoletos, 18, madrid, 28001, españa": {
+    "lat": 40.423342,
+    "lon": -3.684053,
+    "query": "Recoletos, 18, Madrid, 28001"
+  },
+  "rda. de valencia, 2 (centro)enter location, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Rda. de Valencia, 2 (Centro)Enter location"
+  },
+  "calle de quiñones, 13, local, madrid, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Quiñones, 13, local, Madrid, 28015"
+  },
+  "de tirso de molina, 1, madrid, 28012, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Tirso de Molina, 1, Madrid, 28012"
+  },
+  "de daoíz y velarde, 4, madrid, 28007, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Daoíz y Velarde, 4, Madrid, 28007"
+  },
+  "laguna dalga, madrid, 28021, españa": {
+    "lat": 40.331858,
+    "lon": -3.709784,
+    "query": "Laguna Dalga, Madrid, 28021"
+  },
+  "parque kobetamendi / kobetamendi parkea, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parque Kobetamendi / Kobetamendi Parkea"
+  },
+  "de santa engracia, 125, madrid, 28003, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Santa Engracia, 125, Madrid, 28003"
+  },
+  "calle santa engracia, 125 (chamberí), madrid, españa": {
+    "lat": 40.436858,
+    "lon": -3.699545,
+    "query": "Calle Santa Engracia, 125 (Chamberí)"
+  },
+  "de melquíades álvarez, 19, madrid, 28003, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Melquíades Álvarez, 19, Madrid, 28003"
+  },
+  "ilustre colegio oficial de médicos de madrid y palacio de la prensa, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Ilustre Colegio Oficial de Médicos de Madrid y Palacio de la Prensa"
+  },
+  "calle magdalena, 10, en el centro de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Magdalena, 10, en el centro de Madrid"
+  },
+  "de la magdalena, 10, madrid, 28012, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Magdalena, 10, Madrid, 28012"
+  },
+  "de la independencia, 5, madrid, 28001, españa": {
+    "lat": 40.420709,
+    "lon": -3.688044,
+    "query": "de la Independencia, 5, Madrid, 28001"
+  },
+  "de menéndez pidal, 5, madrid, 28036, españa": {
+    "lat": 40.448409,
+    "lon": -3.720251,
+    "query": "de Menéndez Pidal, 5, Madrid, 28036"
+  },
+  "calle de juan de mariana, 15, madrid, 28045, españa": {
+    "lat": 40.398369,
+    "lon": -3.686264,
+    "query": "Calle de Juan de Mariana, 15, Madrid, 28045"
+  },
+  "av. de la constitución, 23 (móstoles), madrid, españa": {
+    "lat": 40.324713,
+    "lon": -3.863302,
+    "query": "Av. de la Constitución, 23 (Móstoles)"
+  },
+  "ca2m. museo centro de arte dos de mayo en la avenida de la constitución, 23 (móstoles), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "CA2M. Museo Centro de Arte Dos de Mayo en la Avenida de la Constitución, 23 (Móstoles)"
+  },
+  "valencia, madrid, españa": {
+    "lat": 40.488675,
+    "lon": -3.701696,
+    "query": "Valencia"
+  },
+  "del embarcadero, recinto ferial de la casa de campo, madrid, 28011, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Embarcadero, Recinto Ferial de la Casa de Campo, Madrid, 28011"
+  },
+  "av. del partenón, 28042, madrid, españa": {
+    "lat": 40.463943,
+    "lon": -3.614322,
+    "query": "Av. del Partenón, 28042"
+  },
+  "de gran vía, 66, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Gran Vía, 66, Madrid, 28013"
+  },
+  "teatro lara (corredera baja de san pablo, 15), madrid, españa": {
+    "lat": 40.42213,
+    "lon": -3.704366,
+    "query": "Teatro Lara (corredera Baja de San Pablo, 15)"
+  },
+  "laguna dalga (estadio shakira), madrid, 28021, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Laguna Dalga (Estadio Shakira), Madrid, 28021"
+  },
+  "de los reyes católicos, 6, madrid, 28040, españa": {
+    "lat": 40.438287,
+    "lon": -3.721583,
+    "query": "de los Reyes Católicos, 6, Madrid, 28040"
+  },
+  "de la constitución , 23, (móstoles), 28931, madrid, españa": {
+    "lat": 40.324713,
+    "lon": -3.863302,
+    "query": "de la Constitución , 23, (Móstoles), 28931"
+  },
+  "gran vía, 57, madrid, 28013, españa": {
+    "lat": 40.421777,
+    "lon": -3.70869,
+    "query": "Gran Vía, 57, Madrid, 28013"
+  },
+  "de valencia, 2, madrid, 28012, españa": {
+    "lat": 40.406071,
+    "lon": -3.699885,
+    "query": "de Valencia, 2, Madrid, 28012"
+  },
+  "de arrieta, 12, madrid, 28012, españa": {
+    "lat": 40.419367,
+    "lon": -3.710725,
+    "query": "de Arrieta, 12, Madrid, 28012"
+  },
+  "movistar arena madrid, españa": {
+    "lat": 40.423862,
+    "lon": -3.671788,
+    "query": "Movistar Arena Madrid"
+  },
+  "caixaforum madrid (paseo del prado, 36), españa": {
+    "lat": 40.41114,
+    "lon": -3.693568,
+    "query": "CaixaForum Madrid (paseo del Prado, 36)"
+  },
+  "calle gran vía,10, madrid, 28013, españa": {
+    "lat": 40.468297,
+    "lon": -3.870709,
+    "query": "Calle Gran Vía,10, Madrid, 28013"
+  },
+  "de prim, 11, madrid, 28004, españa": {
+    "lat": 40.421954,
+    "lon": -3.693824,
+    "query": "de Prim, 11, Madrid, 28004"
+  },
+  "calle castelló, será la localización en la, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Castelló, será la localización en la"
+  },
+  "de josé ortega y gasset, 32, madrid, 28006, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de José Ortega y Gasset, 32, Madrid, 28006"
+  },
+  "de bailén, 10, madrid, 28013, españa": {
+    "lat": 40.331103,
+    "lon": -3.764354,
+    "query": "de Bailén, 10, Madrid, 28013"
+  },
+  "de la capital de , 7, madrid, 28042, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Capital de España, 7, Madrid, 28042"
+  },
+  "calle de francisco silvela, 25, 28028, madrid, españa": {
+    "lat": 40.428745,
+    "lon": -3.669532,
+    "query": "Calle de Francisco Silvela, 25, 28028"
+  },
+  "calle del cerrillo del caño, s/n, el boalo, madrid, 28413, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Cerrillo del Caño, s/n, El Boalo, Madrid, 28413"
+  },
+  "calle de los reyes, 6, madrid, 28015, españa": {
+    "lat": 40.424289,
+    "lon": -3.709278,
+    "query": "Calle de los Reyes, 6, Madrid, 28015"
+  },
+  "pl. del conde de barajas, 3, centro,, 28005, madrid, españa": {
+    "lat": 40.414339,
+    "lon": -3.708871,
+    "query": "Pl. del Conde de Barajas, 3, Centro,, 28005"
+  },
+  "c/general zabala 21, bajo., 28002, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C/General Zabala 21, Bajo., 28002"
+  },
+  "varios espacios de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Varios espacios de Madrid"
+  },
+  "del arroyo del monte, 5, madrid, 28035, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Arroyo del Monte, 5, Madrid, 28035"
+  },
+  "mayor, madrid, 28012, españa": {
+    "lat": 40.416714,
+    "lon": -3.704493,
+    "query": "Mayor, Madrid, 28012"
+  },
+  "calle desengaño, madrid, españa": {
+    "lat": 40.420927,
+    "lon": -3.703429,
+    "query": "calle Desengaño"
+  },
+  "de bailén , s/n, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Bailén , s/n, Madrid, 28013"
+  },
+  "paseo del prado, s/n (cortes/centro), madrid, españa": {
+    "lat": 40.413849,
+    "lon": -3.693903,
+    "query": "Paseo del Prado, s/n (Cortes/Centro)"
+  },
+  "parque de el retiro, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parque de El Retiro"
+  },
+  "del postigo de san martín, 8, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Postigo de San Martín, 8, Madrid, 28013"
+  },
+  "de rafaela ybarra, 41, usera, 28026 madrid, , madrid, españa": {
+    "lat": 40.382441,
+    "lon": -3.71057,
+    "query": "de Rafaela Ybarra, 41, Usera, 28026 Madrid, Spain, Madrid"
+  },
+  "de gallur, 2 (acceso pista atletismo por avenida de ángel sanz briz), madrid, 28047, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Gallur, 2 (Acceso pista atletismo por Avenida de Ángel Sanz Briz), Madrid, 28047"
+  },
+  "calle de los artistas, 43, madrid, 28020, españa": {
+    "lat": 40.447477,
+    "lon": -3.700284,
+    "query": "Calle de los Artistas, 43, Madrid, 28020"
+  },
+  "parque de el retiro, plaza maestro villa, 28009, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parque de El Retiro, Plaza Maestro Villa, 28009"
+  },
+  "pl. mayor, madrid, 28012, españa": {
+    "lat": 40.415395,
+    "lon": -3.706997,
+    "query": "Pl. Mayor, Madrid, 28012"
+  },
+  "c. de cuchilleros, 17, madrid, 28005, españa": {
+    "lat": 40.414175,
+    "lon": -3.707981,
+    "query": "C. de Cuchilleros, 17, Madrid, 28005"
+  },
+  "calle de santiago, 24, 28013, madrid, españa": {
+    "lat": 40.416784,
+    "lon": -3.711191,
+    "query": "Calle de Santiago, 24, 28013"
+  },
+  "calle del balandro, 40, local dcha, madrid, 28042, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Balandro, 40, Local dcha, Madrid, 28042"
+  },
+  "de serrano , 61, madrid, 28006, españa": {
+    "lat": 40.432063,
+    "lon": -3.687416,
+    "query": "de Serrano , 61, Madrid, 28006"
+  },
+  "pºruperto chapí-moncloa, 28008, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "PºRuperto Chapí-Moncloa, 28008"
+  },
+  "calle de recoletos, 13, madrid, españa": {
+    "lat": 40.421837,
+    "lon": -3.689824,
+    "query": "Calle de Recoletos, 13"
+  },
+  "centro comercial bulevar, madrid, españa": {
+    "lat": 40.326098,
+    "lon": -3.72061,
+    "query": "Centro Comercial Bulevar"
+  },
+  "turismo de alcalá la ciudad se llenará además de recreaciones históricas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Turismo de Alcalá La ciudad se llenará además de recreaciones históricas"
+  },
+  "calle lo mejor de la artesanía, la gastronomía y el comercio local entre las 12h y las 20h, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle lo mejor de la artesanía, la gastronomía y el comercio local entre las 12h y las 20h"
+  },
+  "avenida de valdelaparra, madrid, españa": {
+    "lat": 40.538529,
+    "lon": -3.645087,
+    "query": "avenida de Valdelaparra"
+  },
+  "villa d’este, madrid, españa": {
+    "lat": 40.2228,
+    "lon": -3.759924,
+    "query": "Villa d’Este"
+  },
+  "avenida de betanzos, 74 (fuencarral-el pardo), madrid, españa": {
+    "lat": 40.482371,
+    "lon": -3.713617,
+    "query": "Avenida de Betanzos, 74 (Fuencarral-El Pardo)"
+  },
+  "avenida méxico, 4 (retiro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida México, 4 (Retiro)"
+  },
+  "calle de ercilla, 17 (arganzuela), madrid, españa": {
+    "lat": 40.402808,
+    "lon": -3.702671,
+    "query": "Calle de Ercilla, 17 (Arganzuela)"
+  },
+  "calle de serrano, 61 (salamanca), madrid, españa": {
+    "lat": 40.432022,
+    "lon": -3.687457,
+    "query": "Calle de Serrano, 61 (Salamanca)"
+  },
+  "postigo de san martín, 8 (sol), madrid, españa": {
+    "lat": 40.419312,
+    "lon": -3.706016,
+    "query": "Postigo de San Martín, 8 (Sol)"
+  },
+  "calle del pintor velázquez, 5 (alcobendas), madrid, españa": {
+    "lat": 40.537724,
+    "lon": -3.641368,
+    "query": "Calle del Pintor Velázquez, 5 (Alcobendas)"
+  },
+  "calle de josé gutiérrez abascal, 2 (república argentina), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de José Gutiérrez Abascal, 2 (República Argentina)"
+  },
+  "plaza de colón, 1 (centro), madrid, españa": {
+    "lat": 40.424771,
+    "lon": -3.690527,
+    "query": "Plaza de Colón, 1 (Centro)"
+  },
+  "calle de salvador de madariaga, s/n (san sebastián de los reyes), madrid, españa": {
+    "lat": 40.568132,
+    "lon": -3.61092,
+    "query": "Calle de Salvador de Madariaga, S/N (San Sebastián de los Reyes)"
+  },
+  "plaza de legazpi, 5 (arganzuela), madrid, españa": {
+    "lat": 40.390949,
+    "lon": -3.694858,
+    "query": "Plaza de Legazpi, 5 (Arganzuela)"
+  },
+  "ronda de valencia, 2 (embajadores), madrid, españa": {
+    "lat": 40.406071,
+    "lon": -3.699885,
+    "query": "Ronda de Valencia, 2 (Embajadores)"
+  },
+  "m-600, km 5,800 (san lorenzo de el escorial), madrid, españa": {
+    "lat": 40.615264,
+    "lon": -4.114366,
+    "query": "M-600, Km 5,800 (San Lorenzo de El Escorial)"
+  },
+  "avenida de la memoria, 2 (moncloa), madrid, españa": {
+    "lat": 40.436933,
+    "lon": -3.722434,
+    "query": "Avenida de la Memoria, 2 (Moncloa)"
+  },
+  "calle juan ignacio luca de tena, 20 (san blas), madrid, españa": {
+    "lat": 40.447769,
+    "lon": -3.632157,
+    "query": "Calle Juan Ignacio Luca de Tena, 20 (San Blas)"
+  },
+  "calle del arenal, 8 (centro), madrid, españa": {
+    "lat": 40.417198,
+    "lon": -3.705495,
+    "query": "Calle del Arenal, 8 (Centro)"
+  },
+  "lago de la casa de campo, madrid, españa": {
+    "lat": 40.4188,
+    "lon": -3.732686,
+    "query": "Lago de la Casa de Campo"
+  },
+  "plaza de la constitución y las calles de los alrededores, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de la Constitución y las calles de los alrededores"
+  },
+  "calle antonio hernández, plaza del pradillo, plaza de la cultura, agustina de aragón y alrededores, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Antonio Hernández, Plaza del Pradillo, Plaza de la Cultura, Agustina de Aragón y alrededores"
+  },
+  "c. de las tres cruces, 8 (centro), madrid, españa": {
+    "lat": 40.419582,
+    "lon": -3.702624,
+    "query": "C. de las Tres Cruces, 8 (Centro)"
+  },
+  "gran vía, 41 (centro), madrid, españa": {
+    "lat": 40.420416,
+    "lon": -3.706622,
+    "query": "Gran Vía, 41 (Centro)"
+  },
+  "c. de las minas, 1 (centro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de las Minas, 1 (Centro)"
+  },
+  "c. de lavapiés, 9 (lavapiés), madrid, españa": {
+    "lat": 40.411358,
+    "lon": -3.702847,
+    "query": "C. de Lavapiés, 9 (Lavapiés)"
+  },
+  "av. de brasil, 17 (tetuán) y c. del dr. urquiola, 23 (carabanchel), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Av. de Brasil, 17 (Tetuán) y C. del Dr. Urquiola, 23 (Carabanchel)"
+  },
+  "c. goya, 43 (barrio de salamanca) y c. del príncipe de vergara, 128 (chamartín), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Goya, 43 (Barrio de Salamanca) y C. del Príncipe de Vergara, 128 (Chamartín)"
+  },
+  "cuesta de sto. domingo, 22 (centro), madrid, españa": {
+    "lat": 40.419705,
+    "lon": -3.708524,
+    "query": "Cuesta de Sto. Domingo, 22 (Centro)"
+  },
+  "centro comercial debería ser siempre un plan en sí mismo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "centro comercial debería ser siempre un plan en sí mismo"
+  },
+  "hipódromo de la zarzuela, madrid, españa": {
+    "lat": 40.469311,
+    "lon": -3.759068,
+    "query": "Hipódromo de la Zarzuela"
+  },
+  "calle de atocha, la antigua imprenta de madrid ha abierto sus puertas, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle de Atocha, la antigua imprenta de Madrid ha abierto sus puertas"
+  },
+  "plaza de callao los días 11 y 12 de abril, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Callao los días 11 y 12 de abril"
+  },
+  "calle del príncipe de vergara, 146, madrid, españa": {
+    "lat": 40.445983,
+    "lon": -3.677678,
+    "query": "calle del Príncipe de Vergara, 146"
+  },
+  "plaza de  de los molinos, a las 18, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de España de Los Molinos, a las 18"
+  },
+  "plaza de la ermita de el álamo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de la Ermita de El Álamo"
+  },
+  "diversas ubicaciones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diversas ubicaciones"
+  },
+  "plaza del ángel, finalmente el próximo 16 de abril el mítico café central comienza una nueva andadura de la ma, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del Ángel, finalmente el próximo 16 de abril el mítico Café Central comienza una nueva andadura de la ma"
+  },
+  "calle atocha se encuentra la parroquia de santa cruz, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Atocha se encuentra la Parroquia de Santa Cruz"
+  },
+  "recinto ferial torrejón de ardoz el próximo 1 de mayo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "recinto ferial Torrejón de Ardoz el próximo 1 de mayo"
+  },
+  "jardines del campo del moro, madrid, españa": {
+    "lat": 40.418076,
+    "lon": -3.717771,
+    "query": "Jardines del campo del moro"
+  },
+  "plaza del ayuntamiento , aunque también habrá actuaciones de la orquesta la misión y de orquesta panorama los, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del Ayuntamiento , aunque también habrá actuaciones de la orquesta La Misión y de Orquesta Panorama los"
+  },
+  "paseo al aire libre por la mejor artesanía hecha en, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo al aire libre por la mejor artesanía hecha en España"
+  },
+  "auditorio joaquín sabina, madrid, españa": {
+    "lat": 40.286402,
+    "lon": -3.772621,
+    "query": "Auditorio Joaquín Sabina"
+  },
+  "museo vivo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "museo vivo"
+  },
+  "plaza en, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza en"
+  },
+  "recinto ferial de la casa de campo, madrid, españa": {
+    "lat": 40.413041,
+    "lon": -3.739662,
+    "query": "Recinto Ferial de la Casa de Campo"
+  },
+  "plaza de murillo, 2, madrid, españa": {
+    "lat": 40.412627,
+    "lon": -3.692557,
+    "query": "plaza de Murillo, 2"
+  },
+  "plaza de san martín, 1, madrid, españa": {
+    "lat": 40.418385,
+    "lon": -3.706912,
+    "query": "Plaza de San Martín, 1"
+  },
+  "espacio, madrid, españa": {
+    "lat": 40.479002,
+    "lon": -3.686974,
+    "query": "espacio"
+  },
+  "teatro inspirado en charlie y la fábrica de chocolate, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro inspirado en Charlie y la fábrica de chocolate"
+  },
+  "calle de sevilla, 3 más información sobre el four seasons hotel madrid aquí, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Sevilla, 3 Más información sobre el Four Seasons Hotel Madrid aquí"
+  },
+  "calle de cedaceros a pocos minutos andando del círculo de bellas artes, su edificio nace a principios del sig, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle de Cedaceros a pocos minutos andando del Círculo de Bellas Artes, su edificio nace a principios del sig"
+  },
+  "paseo de alcobendas, 10, madrid, españa": {
+    "lat": 40.527088,
+    "lon": -3.627803,
+    "query": "paseo de Alcobendas, 10"
+  },
+  "plaza de, madrid, españa": {
+    "lat": 40.423449,
+    "lon": -3.710881,
+    "query": "Plaza de España"
+  },
+  "plaza a arganzuela , distrito, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza a Arganzuela , distrito"
+  },
+  "plaza del callao, 4 (centro, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del Callao, 4 (Centro"
+  },
+  "| crédito editorial: ayuntamiento de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "| Crédito editorial: Ayuntamiento de Madrid"
+  },
+  "recinto ferial del municipio y las entradas ya se pueden comprar, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "recinto ferial del municipio y las entradas ya se pueden comprar"
+  },
+  "atocha, madrid, españa": {
+    "lat": 40.406975,
+    "lon": -3.688582,
+    "query": "Atocha"
+  },
+  "calle de hilarión eslava, 38, madrid, españa": {
+    "lat": 40.43616,
+    "lon": -3.716501,
+    "query": "calle de Hilarión Eslava, 38"
+  },
+  "banco de, madrid, españa": {
+    "lat": 40.41907,
+    "lon": -3.694928,
+    "query": "Banco de España"
+  },
+  "recinto ferial de ifema y contará, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial de Ifema y contará"
+  },
+  "fabrik, madrid, españa": {
+    "lat": 40.380873,
+    "lon": -3.709209,
+    "query": "Fabrik"
+  },
+  "plaza en la primera categoría, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza en la primera categoría"
+  },
+  "plaza 2 de majadahonda ( calle de los químicos, 1, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza 2 de Majadahonda ( calle de los Químicos, 1"
+  },
+  "calle de hortaleza, 87, madrid, españa": {
+    "lat": 40.426312,
+    "lon": -3.697119,
+    "query": "calle de Hortaleza, 87"
+  },
+  "espacio perón, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Espacio Perón"
+  },
+  "calle de cea bermúdez (chamberí), madrid, españa": {
+    "lat": 40.439104,
+    "lon": -3.716279,
+    "query": "Calle de Cea Bermúdez (Chamberí)"
+  },
+  "plaza de isabel ii (centro), madrid, españa": {
+    "lat": 40.418152,
+    "lon": -3.709463,
+    "query": "Plaza de Isabel II (Centro)"
+  },
+  "calle de jovellanos, 4 (centro), madrid, españa": {
+    "lat": 40.417257,
+    "lon": -3.697193,
+    "query": "Calle de Jovellanos, 4 (Centro)"
+  },
+  "varias ubicaciones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Varias ubicaciones"
+  },
+  "paseo de la chopera, 14 (nave 11), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Paseo de la Chopera, 14 (Nave 11)"
+  },
+  "calle mayor está llena de casas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Mayor está llena de casas"
+  },
+  "museo se convierten en un gran escaparate de moda vintage, segunda mano cuidada y diseñ, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "museo se convierten en un gran escaparate de moda vintage, segunda mano cuidada y diseñ"
+  }
+}
