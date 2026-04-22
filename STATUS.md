@@ -262,3 +262,7 @@
 - `tools/smoke_frontend.py` se sustituyo por un smoke end-to-end con Playwright que valida home, busqueda, modal, agenda y vista de mapa.
 - La auditoria y la propuesta de Clean Architecture quedaron documentadas en `docs/frontend-audit.md`.
 - Verificacion local completada: `npm run lint` y `npm run build` pasan en `frontend_new`.
+
+### 2026-04-22 (workflow nightly desactivado)
+
+- Se desactivo el disparo manual de GitHub Actions en `.github/workflows/nightly_scrape.yml` comentando `workflow_dispatch` y se dejo un cron imposible (`0 0 31 2 *`) para que no haya ejecuciones nocturnas reales ni consumo de minutos.

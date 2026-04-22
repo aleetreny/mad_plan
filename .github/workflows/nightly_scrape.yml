@@ -3,8 +3,10 @@ name: Nightly Madrid Scrape
 on:
   schedule:
     # GitHub Actions cron runs in UTC.
-    # - cron: "0 1 * * *"
-  workflow_dispatch:
+    # Disabled: impossible date so the workflow never runs.
+    - cron: "0 0 31 2 *"
+  # workflow_dispatch:
+  # Workflow disabled to avoid accidental manual runs.
 
 permissions:
   contents: read
