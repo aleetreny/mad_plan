@@ -69,6 +69,13 @@ npm install
 npm run dev
 ```
 
+Build the production bundle used by `serve.py`:
+
+```bash
+cd frontend_new
+npm run build
+```
+
 Simulate the scheduled daily trigger:
 
 ```bash
@@ -101,13 +108,15 @@ python tools/rebuild_feeds.py
 
 ## Frontend
 
-Start the local dev server:
+Start the local static server for the current production frontend:
 
 ```bash
 python serve.py
 ```
 
-Then open http://127.0.0.1:8000 in a browser. The frontend reads from `outputs/` and shows:
+Then open http://127.0.0.1:8000 in a browser. `serve.py` now serves `frontend_new/dist` and reads live data from `outputs/`.
+
+The current frontend shows:
 - **Pulse-driven discovery**: day-part theming, quick filters like `Hoy`, `Esta noche`, `De mananeo`, `Al fresquito`, `Gratis total`, editorial shelves, search, shortlist saving, and shareable URL state.
 - **Smart plan cards**: merged plans render once, compare multiple access links per source, show trust badges, and generate covers when an image is missing.
 - **Madrid-native map view**: Leaflet map with marker clustering, barrio pulse cards, side list sync, and city-safe coordinate clipping so out-of-city points do not pollute the UI.
@@ -118,6 +127,8 @@ Run the frontend smoke test:
 ```bash
 python tools/smoke_frontend.py
 ```
+
+Architecture notes for the new frontend live in `docs/frontend-audit.md`.
 
 ## Outputs
 

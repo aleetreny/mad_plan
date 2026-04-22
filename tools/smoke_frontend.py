@@ -1,4 +1,4 @@
-"""Small runtime smoke test for the static frontend."""
+"""End-to-end smoke test for the built MadPlan frontend."""
 
 from __future__ import annotations
 
@@ -7,8 +7,8 @@ import socket
 import sys
 import threading
 from pathlib import Path
-from urllib.request import urlopen
 
+from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
@@ -23,43 +23,67 @@ def _free_port() -> int:
         return int(sock.getsockname()[1])
 
 
-def _fetch_text(url: str) -> str:
-    with urlopen(url, timeout=20) as response:
-        if response.status != 200:
-            raise RuntimeError(f"Unexpected status for {url}: {response.status}")
-        return response.read().decode("utf-8")
-
-
 def main() -> None:
     port = _free_port()
-    server = serve.http.server.HTTPServer(("127.0.0.1", port), serve.Handler)
+    server = serve.SERVER_CLASS(("127.0.0.1", port), serve.Handler)
     thread = threading.Thread(target=server.serve_forever, daemon=True)
     thread.start()
     base_url = f"http://127.0.0.1:{port}"
 
     try:
-        index = _fetch_text(f"{base_url}/")
-        script = _fetch_text(f"{base_url}/app.js")
-        styles = _fetch_text(f"{base_url}/styles.css")
-        favicon = _fetch_text(f"{base_url}/favicon.ico")
-        plans = json.loads(_fetch_text(f"{base_url}/outputs/eventos_madrid_all.json"))
-        news = json.loads(_fetch_text(f"{base_url}/outputs/noticias_madrid_all.json"))
+        with sync_playwright() as playwright:
+            browser = playwright.chromium.launch(headless=True)
+            page = browser.new_page(viewport={"width": 1440, "height": 1600})
+            console_errors: list[str] = []
+            page_errors: list[str] = []
 
-        assert "MadPlan" in index
-        assert "mood-grid" in index
-        assert "share-view" in index
-        assert "loadData" in script
-        assert ".hero" in styles
-        assert "<svg" in favicon
-        assert isinstance(plans, list) and len(plans) > 1000
-        assert isinstance(news, list) and len(news) > 0
+            page.on("console", lambda message: console_errors.append(message.text) if message.type == "error" else None)
+            page.on("pageerror", lambda error: page_errors.append(str(error)))
+
+            page.goto(base_url, wait_until="domcontentloaded", timeout=30_000)
+
+            page.get_by_text("Encuentra un plan bueno en minutos").wait_for(timeout=30_000)
+            page.locator('[data-testid="search-input"]').wait_for(timeout=30_000)
+            page.locator('[data-testid="event-card"]').first.wait_for(timeout=30_000)
+
+            first_title = page.locator('[data-testid="event-card"] h3').first.inner_text(timeout=10_000).split()[0]
+            page.locator('[data-testid="search-input"]').fill(first_title)
+            page.wait_for_timeout(350)
+            assert page.locator('[data-testid="event-card"]').count() > 0
+            assert "q=" in page.url
+
+            page.locator('[data-testid="event-card"]').first.click()
+            assert page.get_by_role("dialog").is_visible(timeout=10_000)
+            page.get_by_role("button", name="Añadir a mi agenda").click(timeout=10_000)
+            page.get_by_role("button", name="Cerrar detalle del evento").click(timeout=10_000)
+
+            page.locator('[data-testid="open-agenda"]').click(timeout=10_000)
+            assert page.get_by_text("Tu agenda").is_visible(timeout=10_000)
+            page.get_by_role("button", name="Cerrar agenda").click(timeout=10_000)
+
+            page.get_by_role("button", name="Vista mapa").click(timeout=10_000)
+            page.wait_for_timeout(1200)
+            assert page.locator(".leaflet-container").is_visible()
+            assert "view=map" in page.url
+
+            browser.close()
+
+        assert not console_errors, f"Console errors detected: {console_errors}"
+        assert not page_errors, f"Page errors detected: {page_errors}"
 
         print(
             json.dumps(
                 {
                     "ok": True,
-                    "planes": len(plans),
-                    "noticias": len(news),
+                    "url": base_url,
+                    "checks": [
+                        "home_loaded",
+                        "search_works",
+                        "url_state_works",
+                        "modal_works",
+                        "agenda_works",
+                        "map_works",
+                    ],
                 },
                 ensure_ascii=False,
             )

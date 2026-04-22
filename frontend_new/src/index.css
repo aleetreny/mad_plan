@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Fraunces", serif;
+  --font-sans: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
 }
 
 @theme inline {
@@ -29,43 +29,81 @@
 
 @layer base {
   :root {
-    --radius: 0.75rem;
+    --radius: 1rem;
     --card: var(--background);
     --card-foreground: var(--foreground);
+    --hero-from: #f59e0b;
+    --hero-to: #92400e;
   }
   .theme-morning {
-    --background: #fdfcf9; --foreground: #1c1917;
-    --primary: #d97706; --primary-foreground: #ffffff;
-    --secondary: #fef3c7; --secondary-foreground: #92400e;
-    --muted: #f5f5f4; --muted-foreground: #78716c;
-    --accent: #fbbf24; --accent-foreground: #78350f;
-    --border: #e7e5e4; --input: #e7e5e4; --ring: #d97706;
+    --background: #fbf6ee; --foreground: #22160f;
+    --primary: #c96f2d; --primary-foreground: #fffdf8;
+    --secondary: #f5dfb6; --secondary-foreground: #73411e;
+    --muted: #f3ebe0; --muted-foreground: #7a6656;
+    --accent: #d8a24d; --accent-foreground: #4d2b12;
+    --border: #ead8c5; --input: #ead8c5; --ring: #c96f2d;
+    --hero-from: #f59e0b; --hero-to: #9a3412;
   }
   .theme-afternoon {
-    --background: #f0fdf4; --foreground: #14532d;
-    --primary: #16a34a; --primary-foreground: #ffffff;
-    --secondary: #dcfce7; --secondary-foreground: #166534;
-    --muted: #f0fdf4; --muted-foreground: #166534;
-    --accent: #4ade80; --accent-foreground: #064e3b;
-    --border: #bbf7d0; --input: #bbf7d0; --ring: #16a34a;
+    --background: #f2f7f1; --foreground: #153629;
+    --primary: #1d7a54; --primary-foreground: #f6fcf8;
+    --secondary: #dbeee0; --secondary-foreground: #21523e;
+    --muted: #eaf3eb; --muted-foreground: #527160;
+    --accent: #91b67c; --accent-foreground: #1c3f2f;
+    --border: #d6e4d7; --input: #d6e4d7; --ring: #1d7a54;
+    --hero-from: #2f855a; --hero-to: #14532d;
   }
   .theme-evening {
-    --background: #fff7ed; --foreground: #7c2d12;
-    --primary: #ea580c; --primary-foreground: #ffffff;
-    --secondary: #ffedd5; --secondary-foreground: #9a3412;
-    --muted: #fff7ed; --muted-foreground: #9a3412;
-    --accent: #fb923c; --accent-foreground: #7c2d12;
-    --border: #fed7aa; --input: #fed7aa; --ring: #ea580c;
+    --background: #fff4ee; --foreground: #5a2618;
+    --primary: #d46333; --primary-foreground: #fffaf6;
+    --secondary: #f7ddd1; --secondary-foreground: #79361e;
+    --muted: #f9ece6; --muted-foreground: #8f5f4d;
+    --accent: #ef9c67; --accent-foreground: #602612;
+    --border: #efd2c5; --input: #efd2c5; --ring: #d46333;
+    --hero-from: #ea580c; --hero-to: #7c2d12;
   }
   .theme-night {
-    --background: #0c0a09; --foreground: #fafaf9;
-    --primary: #8b5cf6; --primary-foreground: #ffffff;
-    --secondary: #1e1b4b; --secondary-foreground: #c4b5fd;
-    --muted: #1c1917; --muted-foreground: #a8a29e;
-    --accent: #6366f1; --accent-foreground: #ffffff;
-    --border: #292524; --input: #292524; --ring: #8b5cf6;
+    --background: #0f1720; --foreground: #edf4f4;
+    --primary: #e86f51; --primary-foreground: #fff8f5;
+    --secondary: #16323d; --secondary-foreground: #cce4e3;
+    --muted: #12212b; --muted-foreground: #9db3ba;
+    --accent: #2e8b88; --accent-foreground: #eefbfb;
+    --border: #233946; --input: #233946; --ring: #e86f51;
+    --hero-from: #103447; --hero-to: #081a24;
   }
-  * { @apply border-border; }
-  body { @apply bg-background text-foreground font-sans transition-colors duration-1000; }
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased transition-colors duration-700;
+    background-image:
+      radial-gradient(circle at top left, rgba(255,255,255,0.32), transparent 28%),
+      linear-gradient(180deg, rgba(255,255,255,0.1), transparent 26%);
+  }
+  .app-shell {
+    background-image:
+      radial-gradient(circle at 100% 0%, rgba(255,255,255,0.18), transparent 24%),
+      linear-gradient(180deg, rgba(255,255,255,0.05), transparent 30%);
+  }
   h1,h2,h3,h4,h5,h6 { @apply font-display font-semibold tracking-tight; }
+  ::selection {
+    background: color-mix(in srgb, var(--primary) 24%, white);
+  }
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+@layer utilities {
+  .surface-grid {
+    background-image:
+      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
 }

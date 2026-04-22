@@ -252,3 +252,13 @@
 - Se completo la capa mapa con `leaflet.markercluster`, clusters reales, tarjetas de pulso por barrio (`Lavapies`, `Legazpi`, `Malasana`, `La Latina`, `Salamanca`, etc.) y listado lateral sincronizado con los puntos geocodificados limpios.
 - Se alineo la validacion automatica con el rebrand: `tools/smoke_frontend.py` ya comprueba `MadPlan` y `share-view`; el smoke paso de nuevo tras la recomposicion con `3832` planes y `136` noticias.
 - Validacion final en navegador sobre `http://127.0.0.1:8000/`: el estado inicial mostro `3745` planes city-safe y `2559` puntos limpios de mapa; tambien se validaron `Gratis total`, `De mananeo`, `Tirada de dados`, la vista de mapa clusterizada y un caso real de tarjeta mergeada (`Museo de la Felicidad`) con comparacion `Madrid Secreto 14 EUR` frente a `Fever 16 EUR`.
+
+### 2026-04-21 (frontend architecture hardening)
+
+- Se rehizo `frontend_new` con una estructura por capas: `app`, `domain`, `features` y `shared`, separando normalizacion, scoring, filtros, estado de usuario, theming y componentes de interfaz.
+- Se blindo la UX principal: filtros sincronizados en URL, agenda persistente, modal con share real y comparacion de accesos, mapa lazy-loaded con limites validos de Madrid y estados vacios coherentes.
+- Se mejoro la capa tecnica: `vite.config.ts` ahora empaqueta `outputs/` dentro de `dist`, `index.html` incorpora metadatos SEO base y `SeoHead` genera descripcion/canonical/JSON-LD dinamicos.
+- `serve.py` deja de servir el frontend legacy y pasa a exponer `frontend_new/dist` con los feeds vivos de `outputs/`.
+- `tools/smoke_frontend.py` se sustituyo por un smoke end-to-end con Playwright que valida home, busqueda, modal, agenda y vista de mapa.
+- La auditoria y la propuesta de Clean Architecture quedaron documentadas en `docs/frontend-audit.md`.
+- Verificacion local completada: `npm run lint` y `npm run build` pasan en `frontend_new`.
