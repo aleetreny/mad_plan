@@ -72,6 +72,7 @@
 - El trigger diario ya no usa Fever rapido por defecto: queda preparado para correr con Fever completo en ejecuciones nocturnas.
 - Se dejo el trigger apto para GitHub Actions con configuracion por CLI/env (`MAD_PLAN_FEVER_MODE`, `MAD_PLAN_TRIGGER_SOURCE`, `MAD_PLAN_TRIGGER_SCHEDULE`, `MAD_PLAN_TRIGGER_TYPE`).
 - Se anadio `.github/workflows/nightly_scrape.yml` para la ejecucion nocturna programada en GitHub Actions, instalando dependencias y Playwright antes del run.
+- La GitHub Action nocturna quedo desactivada para evitar consumo de runner; el workflow permanece en el repo pero el job ya no puede ejecutarse.
 - Fever rapido se mantiene solo como override explicito para pruebas locales o ejecuciones de humo.
 - Se valido el ensamblado final de producto desde los outputs actualizados de fuente.
 - Salidas finales listas para web: `outputs/eventos_madrid_all.json` con `2628` planes y `outputs/noticias_madrid_all.json` con `95` noticias.
