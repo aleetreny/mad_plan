@@ -19,7 +19,8 @@ function sanitizeDateFilter(value: string | null): DiscoveryDateFilter {
 }
 
 function sanitizeView(value: string | null): DiscoveryView {
-  return value === 'map' ? 'map' : 'list';
+  if (value === 'map' || value === 'news') return value;
+  return 'list';
 }
 
 function readInitialState(): DiscoveryState {

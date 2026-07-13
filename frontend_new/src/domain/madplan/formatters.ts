@@ -43,18 +43,47 @@ export function isWithinMadrid(lat?: number | null, lon?: number | null): boolea
   );
 }
 
-export function pickPrimaryDate(event: RawMadPlanEvent): Date | null {
-  return (
-    parseMadPlanDate(event.sort_datetime) ||
-    parseMadPlanDate(event.proximo_datetime) ||
-    parseMadPlanDate(event.datetime_inicio) ||
-    parseMadPlanDate(event.fecha_inicio) ||
-    parseMadPlanDate(event.fecha_fin)
-  );
+export interface EventDates {
+  /** Next relevant date for the user: never in the past for ongoing plans. */
+  primary: Date | null;
+  end: Date | null;
+  isOngoing: boolean;
 }
 
-export function pickSecondaryDate(event: RawMadPlanEvent): Date | null {
-  return parseMadPlanDate(event.fecha_fin) || parseMadPlanDate(event.datetime_fin);
+/**
+ * Compute the effective dates client-side. The feed's `proxima_fecha` is
+ * computed at scrape time and can lag a few days behind, so it is
+ * recalculated here against the real "today".
+ */
+export function resolveEventDates(event: RawMadPlanEvent, now = new Date()): EventDates {
+  const todayStart = getStartOfToday(now);
+  const start = parseMadPlanDate(event.datetime_inicio || event.fecha_inicio);
+  const end = parseMadPlanDate(event.fecha_fin);
+
+  const futureSession = (event.sesiones || [])
+    .map((session) => parseMadPlanDate(session.datetime || session.fecha))
+    .filter((date): date is Date => Boolean(date && date >= todayStart))
+    .sort((a, b) => a.getTime() - b.getTime())[0] || null;
+
+  const rangeCoversToday = Boolean(
+    start && end && start < todayStart && end >= todayStart,
+  );
+
+  if (futureSession) {
+    return { primary: futureSession, end, isOngoing: rangeCoversToday };
+  }
+  if (start && start >= todayStart) {
+    return { primary: start, end, isOngoing: false };
+  }
+  const noonToday = new Date(todayStart.getTime() + 12 * 3600000);
+  if (rangeCoversToday) {
+    return { primary: noonToday, end, isOngoing: true };
+  }
+  if (end && end >= todayStart) {
+    return { primary: noonToday, end, isOngoing: true };
+  }
+  const fallback = parseMadPlanDate(event.proximo_datetime || event.proxima_fecha || event.sort_datetime);
+  return { primary: fallback && fallback >= todayStart ? fallback : null, end, isOngoing: false };
 }
 
 export function formatShortDate(raw?: string | Date | null): string {
@@ -86,6 +115,7 @@ export function formatTime(raw?: string | Date | null): string {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   if (hours === 0 && minutes === 0) return '';
+  if (hours === 12 && minutes === 0) return '';
 
   return new Intl.DateTimeFormat('es-ES', {
     hour: '2-digit',
@@ -93,65 +123,93 @@ export function formatTime(raw?: string | Date | null): string {
   }).format(date);
 }
 
-export function formatEventSchedule(event: RawMadPlanEvent, primaryDate: Date | null): string {
-  if (!primaryDate) return 'Fecha por confirmar';
+/** Card-level label: "Hoy · 20:30", "En curso · hasta 24 sep", "vie, 17 jul"… */
+export function formatEventSchedule(event: RawMadPlanEvent, dates: EventDates, now = new Date()): string {
+  if (dates.isOngoing) {
+    const until = dates.end ? ` · hasta ${formatShortDate(dates.end)}` : '';
+    return `En curso${until}`;
+  }
+  if (!dates.primary) return 'Fecha por confirmar';
 
-  const time = formatTime(event.sort_datetime || event.proximo_datetime || event.datetime_inicio);
-  const dateLabel = formatShortDate(primaryDate);
-  return time ? `${dateLabel} · ${time}` : dateLabel;
+  const dayLabel = formatRelativeDay(dates.primary, now);
+  const time = formatTime(event.proximo_datetime || event.datetime_inicio);
+  return time ? `${dayLabel} · ${time}` : dayLabel;
 }
 
-export function formatRelativeDate(date: Date | null, now = new Date()): string {
-  if (!date) return 'Sin fecha concreta';
+/** "Hoy", "Mañana", "vie, 17 jul" */
+export function formatRelativeDay(date: Date | null, now = new Date()): string {
+  if (!date) return 'Fecha por confirmar';
 
   const today = getStartOfToday(now);
-  const target = new Date(date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0, 0);
+  const target = new Date(date.getFullYear(), date.getMonth(), date.getDate());
   const diff = Math.round((target.getTime() - today.getTime()) / 86400000);
 
   if (diff === 0) return 'Hoy';
   if (diff === 1) return 'Mañana';
-  if (diff > 1 && diff < 7) {
-    return `En ${diff} días`;
-  }
 
-  return formatLongDate(date);
+  const sameYear = date.getFullYear() === now.getFullYear();
+  return new Intl.DateTimeFormat('es-ES', {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    year: sameYear ? undefined : 'numeric',
+  }).format(date);
 }
 
-export function normalizePriceLabel(price?: number | string | null, isFree?: boolean | null, currency?: string | null): string {
+export function normalizePriceLabel(
+  price?: number | string | null,
+  isFree?: boolean | null,
+): string | null {
   if (isFree || price === 0 || price === '0' || price === '0.0') return 'Gratis';
-  if (price == null || price === '') return 'Precio pendiente';
-  if (typeof price === 'number') {
+  if (price == null || price === '') return null;
+
+  const numeric = typeof price === 'number' ? price : Number(String(price).replace(',', '.'));
+  if (!Number.isNaN(numeric)) {
+    if (numeric === 0) return 'Gratis';
     return new Intl.NumberFormat('es-ES', {
       style: 'currency',
-      currency: currency || 'EUR',
-      maximumFractionDigits: Number.isInteger(price) ? 0 : 2,
-    }).format(price);
+      currency: 'EUR',
+      maximumFractionDigits: Number.isInteger(numeric) ? 0 : 2,
+    }).format(numeric);
   }
 
   return String(price);
 }
 
 export function formatLocationLabel(event: RawMadPlanEvent): string {
-  if (event.lugar && event.direccion) return `${event.lugar} · ${event.direccion}`;
+  if (event.lugar && event.direccion && event.lugar !== event.direccion) {
+    return `${event.lugar} · ${event.direccion}`;
+  }
   return event.lugar || event.direccion || 'Ubicación por confirmar';
 }
 
 export function getSearchBlob(parts: Array<string | null | undefined | string[]>): string {
   return parts
-    .flatMap((part) => Array.isArray(part) ? part : [part])
+    .flatMap((part) => (Array.isArray(part) ? part : [part]))
     .filter(Boolean)
     .join(' ')
     .toLocaleLowerCase('es-ES');
 }
 
-export function isUpcomingEvent(event: RawMadPlanEvent, now = new Date()): boolean {
-  const today = getStartOfToday(now);
-  const end = pickSecondaryDate(event);
-  if (end) {
-    return end >= today;
-  }
-
-  const start = pickPrimaryDate(event);
-  return start ? start >= today : true;
+/** Distance in km between two coordinates (equirectangular approx, fine at city scale). */
+export function distanceKm(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const degToKmLat = 111.32;
+  const degToKmLon = 111.32 * Math.cos(((lat1 + lat2) / 2) * (Math.PI / 180));
+  const dLat = (lat2 - lat1) * degToKmLat;
+  const dLon = (lon2 - lon1) * degToKmLon;
+  return Math.sqrt(dLat * dLat + dLon * dLon);
 }
 
+export function isUpcomingEvent(event: RawMadPlanEvent, now = new Date()): boolean {
+  const today = getStartOfToday(now);
+
+  const end = parseMadPlanDate(event.vigente_hasta || event.fecha_fin);
+  if (end) return end >= today;
+
+  const start = parseMadPlanDate(event.datetime_inicio || event.fecha_inicio);
+  if (start) return start >= today;
+
+  // Undated editorial plans stay visible; the backend already limits how old
+  // they can be.
+  return true;
+}

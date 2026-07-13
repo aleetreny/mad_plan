@@ -10,6 +10,7 @@ Output: eventos_fever.json
 """
 
 import json
+import os
 import time
 import re
 import logging
@@ -497,7 +498,8 @@ def fast_main():
 
 
 if __name__ == "__main__":
-    events = main()
+    fever_mode = os.getenv("MAD_PLAN_FEVER_MODE", "full").strip().lower()
+    events = main(resolve_coordinates=fever_mode != "fast")
     if events:
         # Quick summary
         with_coords = sum(1 for e in events if e["latitud"] is not None)

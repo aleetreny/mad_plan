@@ -30,7 +30,9 @@ log = logging.getLogger(__name__)
 BASE_URL = "https://www.esmadrid.com"
 OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_esmadrid.json"
 REQUEST_DELAY = 0.2
-REQUEST_TIMEOUT = 30
+REQUEST_TIMEOUT = 45
+REQUEST_RETRIES = 3
+RETRY_BACKOFF_SECONDS = 4.0
 SOURCE_NAME = "esmadrid"
 HEADERS = {
     "User-Agent": (
@@ -94,16 +96,35 @@ def _dedupe_strings(values: list[Any]) -> list[str]:
 
 
 def _request_soup(session: requests.Session, url: str) -> BeautifulSoup:
-    response = session.get(url, timeout=REQUEST_TIMEOUT)
-    response.raise_for_status()
-    return BeautifulSoup(response.text, "html.parser")
+    last_error: Exception | None = None
+    for attempt in range(1, REQUEST_RETRIES + 1):
+        try:
+            response = session.get(url, timeout=REQUEST_TIMEOUT)
+            response.raise_for_status()
+            return BeautifulSoup(response.text, "html.parser")
+        except requests.RequestException as error:
+            last_error = error
+            if attempt < REQUEST_RETRIES:
+                wait = RETRY_BACKOFF_SECONDS * attempt
+                log.warning(
+                    "esMadrid request failed (%d/%d) %s: %s — retrying in %.0fs",
+                    attempt, REQUEST_RETRIES, url, error, wait,
+                )
+                time.sleep(wait)
+    raise last_error  # type: ignore[misc]
 
 
 def _extract_discovery_links(session: requests.Session) -> dict[str, set[str]]:
     links_to_categories: dict[str, set[str]] = {}
+    failed_pages = 0
 
     for category, url in DISCOVERY_PAGES.items():
-        soup = _request_soup(session, url)
+        try:
+            soup = _request_soup(session, url)
+        except requests.RequestException as error:
+            failed_pages += 1
+            log.warning("Skipping esMadrid discovery page %s: %s", url, error)
+            continue
         found = 0
         for anchor in soup.find_all("a", href=True):
             href = urljoin(url, anchor["href"])
@@ -115,6 +136,9 @@ def _extract_discovery_links(session: requests.Session) -> dict[str, set[str]]:
             found += 1
         log.info("esMadrid %s: %d agenda links", category, len(links_to_categories))
         time.sleep(REQUEST_DELAY)
+
+    if failed_pages == len(DISCOVERY_PAGES):
+        raise RuntimeError("All esMadrid discovery pages failed")
 
     return links_to_categories
 
@@ -327,9 +351,9 @@ def scrape_esmadrid() -> list[dict[str, Any]]:
 
     links_to_categories = _extract_discovery_links(session)
     if not links_to_categories:
-        log.warning("No esMadrid agenda links discovered")
-        OUTPUT_FILE.write_text("[]\n", encoding="utf-8")
-        return []
+        # Do not overwrite the previous good output with an empty list: a
+        # discovery failure is a scrape failure, not "no events in Madrid".
+        raise RuntimeError("No esMadrid agenda links discovered")
 
     log.info("esMadrid unique agenda pages: %d", len(links_to_categories))
     records: list[dict[str, Any]] = []

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 import fs from 'fs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const OUTPUT_FILES = ['eventos_madrid_all.json', 'noticias_madrid_all.json'];
+const OUTPUT_FILES = ['eventos_web.json', 'noticias_web.json', 'pipeline_diario.json'];
 
 function outputsPlugin() {
   return {

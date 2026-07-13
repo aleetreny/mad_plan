@@ -194,17 +194,17 @@ export function QuizModal({ open, onClose, onFinish }: QuizModalProps) {
                   <p className="mt-1 text-sm text-muted-foreground">Elige una o varias áreas para ajustar los resultados.</p>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {ZONES.map((zone) => {
-                      const selected = zones.includes(zone);
+                      const selected = zones.includes(zone.name);
                       return (
                         <button
-                          key={zone}
-                          onClick={() => setZones((current) => selected ? current.filter((item) => item !== zone) : [...current, zone])}
+                          key={zone.name}
+                          onClick={() => setZones((current) => selected ? current.filter((item) => item !== zone.name) : [...current, zone.name])}
                           className={cn(
                             'rounded-full border border-border/70 px-4 py-2 text-sm font-semibold transition-colors',
                             selected ? 'border-primary bg-primary text-primary-foreground' : 'bg-card/75 hover:border-primary/45',
                           )}
                         >
-                          {zone}
+                          {zone.name}
                         </button>
                       );
                     })}

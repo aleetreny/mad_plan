@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Aptos", "Segoe UI Variable", "Trebuchet MS", sans-serif;
+  --font-sans: "Aptos", "Segoe UI Variable", "Segoe UI", "Trebuchet MS", sans-serif;
   --font-display: "Fraunces", "Iowan Old Style", Georgia, serif;
 }
 
@@ -42,7 +42,8 @@
     --muted: #f3ebe0; --muted-foreground: #7a6656;
     --accent: #d8a24d; --accent-foreground: #4d2b12;
     --border: #ead8c5; --input: #ead8c5; --ring: #c96f2d;
-    --hero-from: #f59e0b; --hero-to: #9a3412;
+    --card: #fffdf8;
+    --hero-from: #e8912d; --hero-to: #9a3412;
   }
   .theme-afternoon {
     --background: #f2f7f1; --foreground: #153629;
@@ -51,6 +52,7 @@
     --muted: #eaf3eb; --muted-foreground: #527160;
     --accent: #91b67c; --accent-foreground: #1c3f2f;
     --border: #d6e4d7; --input: #d6e4d7; --ring: #1d7a54;
+    --card: #fbfdfa;
     --hero-from: #2f855a; --hero-to: #14532d;
   }
   .theme-evening {
@@ -60,16 +62,18 @@
     --muted: #f9ece6; --muted-foreground: #8f5f4d;
     --accent: #ef9c67; --accent-foreground: #602612;
     --border: #efd2c5; --input: #efd2c5; --ring: #d46333;
+    --card: #fffaf7;
     --hero-from: #ea580c; --hero-to: #7c2d12;
   }
   .theme-night {
     --background: #0f1720; --foreground: #edf4f4;
     --primary: #e86f51; --primary-foreground: #fff8f5;
     --secondary: #16323d; --secondary-foreground: #cce4e3;
-    --muted: #12212b; --muted-foreground: #9db3ba;
+    --muted: #172530; --muted-foreground: #9db3ba;
     --accent: #2e8b88; --accent-foreground: #eefbfb;
     --border: #233946; --input: #233946; --ring: #e86f51;
-    --hero-from: #103447; --hero-to: #081a24;
+    --card: #141f2a;
+    --hero-from: #1d4a63; --hero-to: #0a1c27;
   }
   * {
     @apply border-border;
@@ -79,31 +83,55 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-background text-foreground font-sans antialiased transition-colors duration-700;
-    background-image:
-      radial-gradient(circle at top left, rgba(255,255,255,0.32), transparent 28%),
-      linear-gradient(180deg, rgba(255,255,255,0.1), transparent 26%);
-  }
-  .app-shell {
-    background-image:
-      radial-gradient(circle at 100% 0%, rgba(255,255,255,0.18), transparent 24%),
-      linear-gradient(180deg, rgba(255,255,255,0.05), transparent 30%);
+    @apply bg-background text-foreground font-sans antialiased;
+    text-rendering: optimizeLegibility;
   }
   h1,h2,h3,h4,h5,h6 { @apply font-display font-semibold tracking-tight; }
   ::selection {
-    background: color-mix(in srgb, var(--primary) 24%, white);
+    background: color-mix(in srgb, var(--primary) 26%, transparent);
   }
   :focus-visible {
     outline: 2px solid var(--ring);
     outline-offset: 2px;
   }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @layer utilities {
-  .surface-grid {
-    background-image:
-      linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
-    background-size: 18px 18px;
+  .scrollbar-none {
+    scrollbar-width: none;
   }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none;
+  }
+  .h-13 {
+    height: 3.25rem;
+  }
+}
+
+/* Leaflet popup, restyled to match the app. */
+.madplan-popup .leaflet-popup-content-wrapper {
+  border-radius: 16px;
+  background: var(--card);
+  color: var(--foreground);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--border);
+}
+.madplan-popup .leaflet-popup-content {
+  margin: 14px 16px;
+  font-family: var(--font-sans);
+  line-height: 1.4;
+}
+.madplan-popup .leaflet-popup-tip {
+  background: var(--card);
+  border: 1px solid var(--border);
+}
+.leaflet-container {
+  font-family: var(--font-sans);
 }

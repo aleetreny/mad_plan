@@ -1,4 +1,9 @@
-"""End-to-end smoke test for the built MadPlan frontend."""
+"""End-to-end smoke test for the built MadPlan frontend.
+
+Serves `frontend_new/dist` plus the live `outputs/` feeds with the same
+handler used by serve.py, then drives the real UI with Playwright:
+search, event modal, agenda, map view and news view.
+"""
 
 from __future__ import annotations
 
@@ -42,29 +47,35 @@ def main() -> None:
 
             page.goto(base_url, wait_until="domcontentloaded", timeout=30_000)
 
-            page.get_by_text("Encuentra un plan bueno en minutos").wait_for(timeout=30_000)
+            page.get_by_text("¿Qué plan hay hoy en Madrid?").wait_for(timeout=30_000)
             page.locator('[data-testid="search-input"]').wait_for(timeout=30_000)
             page.locator('[data-testid="event-card"]').first.wait_for(timeout=30_000)
 
             first_title = page.locator('[data-testid="event-card"] h3').first.inner_text(timeout=10_000).split()[0]
             page.locator('[data-testid="search-input"]').fill(first_title)
-            page.wait_for_timeout(350)
-            assert page.locator('[data-testid="event-card"]').count() > 0
-            assert "q=" in page.url
+            page.wait_for_timeout(400)
+            assert page.locator('[data-testid="event-card"]').count() > 0, "search returned no cards"
+            assert "q=" in page.url, "query not synced to URL"
 
-            page.locator('[data-testid="event-card"]').first.click()
-            assert page.get_by_role("dialog").is_visible(timeout=10_000)
-            page.get_by_role("button", name="Añadir a mi agenda").click(timeout=10_000)
+            page.locator('[data-testid="event-card"]').first.locator("button").first.click()
+            dialog = page.get_by_role("dialog")
+            assert dialog.is_visible(timeout=10_000)
+            dialog.get_by_role("button", name="Guardar en mi agenda").click(timeout=10_000)
             page.get_by_role("button", name="Cerrar detalle del evento").click(timeout=10_000)
 
             page.locator('[data-testid="open-agenda"]').click(timeout=10_000)
-            assert page.get_by_text("Tu agenda").is_visible(timeout=10_000)
+            assert page.get_by_text("Mi agenda").first.is_visible(timeout=10_000)
             page.get_by_role("button", name="Cerrar agenda").click(timeout=10_000)
 
-            page.get_by_role("button", name="Vista mapa").click(timeout=10_000)
-            page.wait_for_timeout(1200)
-            assert page.locator(".leaflet-container").is_visible()
+            page.get_by_role("navigation", name="Secciones").get_by_role("button").nth(1).click(timeout=10_000)
+            page.wait_for_timeout(1500)
+            assert page.locator(".leaflet-container").is_visible(), "map did not render"
             assert "view=map" in page.url
+
+            page.get_by_role("navigation", name="Secciones").get_by_role("button").nth(2).click(timeout=10_000)
+            page.wait_for_timeout(500)
+            assert page.get_by_text("Actualidad de Madrid").is_visible(timeout=10_000)
+            assert "view=news" in page.url
 
             browser.close()
 
@@ -83,6 +94,7 @@ def main() -> None:
                         "modal_works",
                         "agenda_works",
                         "map_works",
+                        "news_works",
                     ],
                 },
                 ensure_ascii=False,

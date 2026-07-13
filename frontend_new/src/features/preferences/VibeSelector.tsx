@@ -9,22 +9,28 @@ interface VibeSelectorProps {
 
 export function VibeSelector({ current, onSelect }: VibeSelectorProps) {
   return (
-    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-      {Object.entries(VIBE_META).map(([key, meta]) => (
-        <button
-          key={key}
-          onClick={() => onSelect(current === key ? null : (key as Exclude<VibeMode, null>))}
-          className={cn(
-            'rounded-[28px] border border-border/70 bg-card/75 p-4 text-left transition-transform duration-300 hover:-translate-y-0.5 hover:border-primary/50',
-            current === key ? 'border-primary bg-primary/10 shadow-[0_18px_45px_rgba(0,0,0,0.08)]' : '',
-          )}
-        >
-          <div className="mb-3 text-2xl">{meta.emoji}</div>
-          <p className="text-lg font-display font-bold">{meta.label}</p>
-          <p className="mt-1 text-sm leading-6 text-muted-foreground">{meta.description}</p>
-        </button>
-      ))}
+    <div className="scrollbar-none -mx-1 flex gap-2.5 overflow-x-auto px-1 py-1">
+      {Object.entries(VIBE_META).map(([key, meta]) => {
+        const active = current === key;
+        return (
+          <button
+            key={key}
+            onClick={() => onSelect(active ? null : (key as Exclude<VibeMode, null>))}
+            aria-pressed={active}
+            aria-label={`${meta.label}: ${meta.description}`}
+            title={meta.description}
+            className={cn(
+              'inline-flex flex-shrink-0 items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-all duration-200',
+              active
+                ? 'border-primary bg-primary text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.14)]'
+                : 'border-border/70 bg-card/75 text-foreground hover:-translate-y-0.5 hover:border-primary/50',
+            )}
+          >
+            <span aria-hidden="true" className="text-base">{meta.emoji}</span>
+            {meta.label}
+          </button>
+        );
+      })}
     </div>
   );
 }
-

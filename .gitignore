@@ -2,3 +2,13 @@
 __pycache__/
 *.pyc
 .DS_Store
+.claude/
+
+# Outputs intermedios: se regeneran con `python tools/scrape_all.py`.
+# Solo se versionan los feeds web finales, el manifest y la cache de geocoding.
+outputs/eventos_*.json
+outputs/noticias_timeout.json
+outputs/noticias_gacetin_madrid.json
+outputs/eventos_madrid_all.json
+outputs/noticias_madrid_all.json
+!outputs/eventos_web.json

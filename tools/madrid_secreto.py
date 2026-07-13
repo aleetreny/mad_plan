@@ -13,6 +13,7 @@ Output: outputs/eventos_madrid_secreto.json
 
 import json
 import logging
+import os
 import re
 import time
 import unicodedata
@@ -50,6 +51,11 @@ HEADERS = {
     )
 }
 EXTERNAL_IMAGE_CACHE: dict[str, str | None] = {}
+
+# Rendering external pages with Playwright costs 5-10s per URL and the merge
+# step already recovers most of these images from the Fever scraper itself,
+# so the expensive render pass is opt-in via MAD_PLAN_RENDER_IMAGES=1.
+RENDER_EXTERNAL_IMAGES = os.getenv("MAD_PLAN_RENDER_IMAGES", "0").strip() == "1"
 
 MONTHS = {
     "enero": 1,
@@ -420,7 +426,7 @@ def _extract_external_image(url: str | None) -> str | None:
     image = None
     if "feverup.com" in host:
         image = _extract_fever_page_image(link)
-        if not image:
+        if not image and RENDER_EXTERNAL_IMAGES:
             image = extract_page_image(
                 link,
                 headers=HEADERS,
@@ -432,7 +438,7 @@ def _extract_external_image(url: str | None) -> str | None:
             link,
             headers=HEADERS,
             preferred_url_tokens=("bannerweb", "imagenprincipal", "beerstation"),
-            use_render=True,
+            use_render=RENDER_EXTERNAL_IMAGES,
         )
     else:
         image = extract_page_image(link, headers=HEADERS)

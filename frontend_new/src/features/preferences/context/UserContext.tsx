@@ -34,17 +34,19 @@ function loadProfile(): UserProfile {
 export function UserProvider({ children }: { children: ReactNode }) {
   const [profile, setProfile] = useState<UserProfile>(loadProfile);
 
-  function persist(next: UserProfile) {
-    setProfile(next);
-    try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
-    } catch {
-      // Ignore storage failures and keep the in-memory state.
-    }
-  }
-
-  function update(partial: Partial<UserProfile>) {
-    persist({ ...profile, ...partial });
+  // Functional updates so several setters fired in the same event handler
+  // (e.g. when the quiz finishes) never clobber each other.
+  function update(partial: Partial<UserProfile> | ((current: UserProfile) => Partial<UserProfile>)) {
+    setProfile((current) => {
+      const patch = typeof partial === 'function' ? partial(current) : partial;
+      const next = { ...current, ...patch };
+      try {
+        window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+      } catch {
+        // Ignore storage failures and keep the in-memory state.
+      }
+      return next;
+    });
   }
 
   return (
@@ -52,11 +54,12 @@ export function UserProvider({ children }: { children: ReactNode }) {
       value={{
         profile,
         addToAgenda: (eventId) => {
-          if (profile.agenda.includes(eventId)) return;
-          update({ agenda: [...profile.agenda, eventId] });
+          update((current) =>
+            current.agenda.includes(eventId) ? {} : { agenda: [...current.agenda, eventId] },
+          );
         },
         removeFromAgenda: (eventId) => {
-          update({ agenda: profile.agenda.filter((item) => item !== eventId) });
+          update((current) => ({ agenda: current.agenda.filter((item) => item !== eventId) }));
         },
         isInAgenda: (eventId) => profile.agenda.includes(eventId),
         setVibe: (vibe) => update({ vibe }),

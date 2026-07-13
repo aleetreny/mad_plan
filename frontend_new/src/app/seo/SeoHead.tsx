@@ -18,9 +18,11 @@ function ensureMeta(selector: string, create: () => HTMLElement): HTMLElement {
 
 export function SeoHead({ events, news }: SeoHeadProps) {
   useEffect(() => {
-    const freeToday = events.filter((event) => event.isToday && event.isFree).length;
-    const title = `MadPlan | ${events.length} planes y ${news.length} noticias para vivir Madrid`;
-    const description = `Explora planes en Madrid con filtros útiles, mapa en tiempo real y actualidad curada. ${freeToday} propuestas gratis para hoy.`;
+    const freeToday = events.filter((event) => (event.isToday || event.isOngoing) && event.isFree).length;
+    const title = events.length > 0
+      ? `MadPlan · ${events.length.toLocaleString('es-ES')} planes en Madrid`
+      : 'MadPlan · Planes y agenda de Madrid';
+    const description = `La agenda de Madrid en un solo sitio: conciertos, expos, mercados y rutas con mapa y filtros útiles. ${freeToday} planes gratis hoy.`;
 
     document.title = title;
 

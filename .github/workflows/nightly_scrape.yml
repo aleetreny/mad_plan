@@ -1,52 +1,97 @@
-name: Nightly Madrid Scrape
+name: Actualizar datos MadPlan
 
+# Presupuesto (GitHub Pro, repo privado): 3.000 min/mes de Actions.
+# Este workflow corre 1 vez al día con tope duro de 45 min:
+#   peor caso 45 x 31 = 1.395 min/mes (~46% del presupuesto).
+# En la práctica una ejecución normal tarda 12-20 min.
 on:
   schedule:
-    # GitHub Actions cron runs in UTC.
-    # Disabled: impossible date so the workflow never runs.
-    - cron: "0 0 31 2 *"
-  # workflow_dispatch:
-  # Workflow disabled to avoid accidental manual runs.
+    # Cron en UTC: 04:15 UTC = 06:15 Madrid (verano). Minuto impar para
+    # evitar los picos en punta de hora de GitHub.
+    - cron: "15 4 * * *"
+  workflow_dispatch:
+    inputs:
+      fever_mode:
+        description: "Modo Fever (full resuelve coordenadas, fast no)"
+        type: choice
+        default: full
+        options: [full, fast]
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
-  group: nightly-madrid-scrape
+  group: madplan-scrape
   cancel-in-progress: false
 
 jobs:
   scrape:
-    if: ${{ false }}
     runs-on: ubuntu-latest
-    timeout-minutes: 180
+    timeout-minutes: 45
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.13"
+          python-version: "3.12"
+          cache: pip
 
-      - name: Install dependencies
+      - name: Restaurar outputs por fuente (último dato bueno)
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            outputs/eventos_*.json
+            outputs/noticias_timeout.json
+            outputs/noticias_gacetin_madrid.json
+          key: madplan-sources-${{ github.run_id }}
+          restore-keys: |
+            madplan-sources-
+
+      - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
           python -m pip install -r requirements.txt
-          python -m playwright install --with-deps chromium
 
-      - name: Run nightly scraper
+      - name: Cache de navegadores Playwright
+        id: playwright-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+
+      - name: Instalar Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Ejecutar pipeline
         env:
           MAD_PLAN_TRIGGER_TYPE: scheduled
           MAD_PLAN_TRIGGER_SOURCE: github-actions
-          MAD_PLAN_TRIGGER_SCHEDULE: "0 1 * * * UTC"
-          MAD_PLAN_FEVER_MODE: full
+          MAD_PLAN_TRIGGER_SCHEDULE: "15 4 * * * UTC"
+          MAD_PLAN_FEVER_MODE: ${{ inputs.fever_mode || 'full' }}
         run: python tools/daily_trigger.py
 
-      - name: Upload outputs
-        uses: actions/upload-artifact@v4
+      - name: Guardar outputs por fuente en cache
+        if: always()
+        uses: actions/cache/save@v4
         with:
-          name: madrid-scrape-outputs
-          path: outputs/*.json
-          retention-days: 14
+          path: |
+            outputs/eventos_*.json
+            outputs/noticias_timeout.json
+            outputs/noticias_gacetin_madrid.json
+          key: madplan-sources-${{ github.run_id }}
+
+      - name: Publicar feeds web en el repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f outputs/eventos_web.json outputs/noticias_web.json outputs/pipeline_diario.json outputs/geocode_cache.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios en los feeds; no se crea commit."
+            exit 0
+          fi
+          git commit -m "data: actualización diaria de feeds"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}

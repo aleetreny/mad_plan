@@ -1,79 +1,97 @@
-import { getEndOfToday, getSearchBlob, getStartOfToday, isUpcomingEvent, isWithinMadrid, formatEventSchedule, formatLocationLabel, formatRelativeDate, normalizePriceLabel, pickPrimaryDate, pickSecondaryDate, sourceLabel } from './formatters';
+import {
+  formatEventSchedule,
+  formatLocationLabel,
+  formatRelativeDay,
+  getEndOfToday,
+  getSearchBlob,
+  getStartOfToday,
+  isUpcomingEvent,
+  isWithinMadrid,
+  normalizePriceLabel,
+  parseMadPlanDate,
+  resolveEventDates,
+  sourceLabel,
+} from './formatters';
 import type { MadPlanEvent, MadPlanNews, RawMadPlanEvent, RawMadPlanNews, SourceLink } from './types';
 
 function sanitizeText(value?: string | null): string | undefined {
   if (!value) return undefined;
-  return value.replace(/\s+/g, ' ').trim();
-}
-
-function dedupe(values: Array<string | null | undefined>): string[] {
-  return Array.from(new Set(values.map((value) => sanitizeText(value)).filter(Boolean) as string[]));
+  return value.replace(/\s+/g, ' ').trim() || undefined;
 }
 
 function normalizeSourceLinks(event: RawMadPlanEvent): SourceLink[] {
-  const links = event.metadata?.source_links || [];
-  const withPrimary = event.url && !links.some((link) => link.url === event.url)
-    ? [{ fuente: event.fuente, url: event.url, kind: event.url_compra ? 'detalle' : 'detalle' }, ...links]
-    : links;
-
-  return withPrimary.filter((link) => Boolean(link?.url));
+  const links = (event.source_links || []).filter((link) => Boolean(link?.url));
+  if (event.url && !links.some((link) => link.url === event.url)) {
+    links.unshift({ fuente: event.fuente, url: event.url, kind: 'detalle' });
+  }
+  if (event.url_compra && !links.some((link) => link.url === event.url_compra)) {
+    links.unshift({ fuente: event.fuente, url: event.url_compra, kind: 'compra' });
+  }
+  return links;
 }
 
 export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPlanEvent {
-  const primaryDate = pickPrimaryDate(event);
-  const secondaryDate = pickSecondaryDate(event);
+  const dates = resolveEventDates(event, now);
   const primaryCategory =
     sanitizeText(event.categoria_principal_norm) ||
-    sanitizeText(event.categoria_principal) ||
     sanitizeText(event.categorias_normalizadas?.[0]) ||
-    sanitizeText(event.categorias?.[0]) ||
-    'Plan en Madrid';
-  const categoriesList = dedupe([
-    ...(event.categorias_normalizadas || []),
-    ...(event.categorias || []),
-    event.categoria_principal_norm,
-    event.categoria_principal,
-  ]);
+    'Ocio y Entretenimiento';
+  const categoriesList = event.categorias_normalizadas?.length
+    ? Array.from(new Set(event.categorias_normalizadas))
+    : [primaryCategory];
+
+  const titulo = sanitizeText(event.titulo) || 'Plan sin título';
+  const resumen = sanitizeText(event.resumen);
+  const descripcion = sanitizeText(event.descripcion);
+
   const searchBlob = getSearchBlob([
-    event.titulo,
+    titulo,
     event.subtitulo,
-    event.resumen,
-    event.descripcion,
-    event.contenido,
+    resumen,
+    descripcion,
     event.lugar,
     event.direccion,
     categoriesList,
-    event.etiquetas || [],
   ]);
+
   const todayStart = getStartOfToday(now);
   const todayEnd = getEndOfToday(now);
+  // Upcoming weekend: next Saturday 00:00 (or today if already Sat/Sun) to Sunday 23:59.
   const weekendEnd = new Date(todayEnd);
-  weekendEnd.setDate(weekendEnd.getDate() + (6 - weekendEnd.getDay() + 7) % 7 + 1);
+  weekendEnd.setDate(weekendEnd.getDate() + ((7 - weekendEnd.getDay()) % 7));
   weekendEnd.setHours(23, 59, 59, 999);
+  const weekendStart = new Date(weekendEnd);
+  weekendStart.setDate(weekendStart.getDate() - 1);
+  weekendStart.setHours(0, 0, 0, 0);
+  const effectiveWeekendStart = weekendStart < todayStart ? todayStart : weekendStart;
   const weekEnd = new Date(todayEnd);
   weekEnd.setDate(weekEnd.getDate() + 7);
   const monthEnd = new Date(todayEnd);
   monthEnd.setMonth(monthEnd.getMonth() + 1);
 
+  const primaryDate = dates.primary;
+  const isThisWeekend = Boolean(
+    (primaryDate && primaryDate >= effectiveWeekendStart && primaryDate <= weekendEnd) ||
+    (dates.isOngoing && (!dates.end || dates.end >= effectiveWeekendStart)),
+  );
+
   return {
     ...event,
-    titulo: sanitizeText(event.titulo) || 'Plan sin título',
+    titulo,
     subtitulo: sanitizeText(event.subtitulo),
-    resumen: sanitizeText(event.resumen),
-    descripcion: sanitizeText(event.descripcion),
-    contenido: sanitizeText(event.contenido),
+    resumen,
+    descripcion,
     lugar: sanitizeText(event.lugar),
     direccion: sanitizeText(event.direccion),
     imagen: sanitizeText(event.imagen),
     url: sanitizeText(event.url),
     url_compra: sanitizeText(event.url_compra),
-    fuente: event.fuente,
     primaryDate,
-    secondaryDate,
-    primaryDateLabel: primaryDate ? formatRelativeDate(primaryDate, now) : 'Sin fecha concreta',
-    scheduleLabel: formatEventSchedule(event, primaryDate),
-    relativeLabel: formatRelativeDate(primaryDate, now),
-    priceLabel: normalizePriceLabel(event.precio, event.es_gratis, event.moneda),
+    endDate: dates.end,
+    isOngoing: dates.isOngoing,
+    scheduleLabel: formatEventSchedule(event, dates, now),
+    relativeLabel: dates.isOngoing ? 'En curso' : formatRelativeDay(primaryDate, now),
+    priceLabel: normalizePriceLabel(event.precio, event.es_gratis),
     locationLabel: formatLocationLabel(event),
     primaryCategory,
     categoriesList,
@@ -82,7 +100,7 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
     hasCoordinates: isWithinMadrid(event.latitud, event.longitud),
     isToday: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= todayEnd),
     isThisWeek: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= weekEnd),
-    isThisWeekend: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= weekendEnd),
+    isThisWeekend,
     isThisMonth: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= monthEnd),
     sourceLabel: sourceLabel(event.fuente),
     sourceLinks: normalizeSourceLinks(event),
@@ -90,38 +108,22 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
 }
 
 export function normalizeNewsItem(news: RawMadPlanNews): MadPlanNews {
-  const publishedDate = pickPrimaryDate({
-    id: news.id,
-    titulo: news.titulo,
-    fuente: news.fuente,
-    sort_datetime: news.sort_datetime,
-    fecha_inicio: news.publicado_en,
-  });
-
   return {
     ...news,
     titulo: sanitizeText(news.titulo) || 'Noticia sin título',
-    subtitulo: sanitizeText(news.subtitulo),
     resumen: sanitizeText(news.resumen),
-    descripcion: sanitizeText(news.descripcion),
-    contenido: sanitizeText(news.contenido),
     imagen: sanitizeText(news.imagen),
     url: sanitizeText(news.url),
-    publishedDate,
-    primaryCategory:
-      sanitizeText(news.categoria_principal_norm) ||
-      sanitizeText(news.categoria_principal) ||
-      sanitizeText(news.categorias_normalizadas?.[0]) ||
-      sanitizeText(news.categorias?.[0]) ||
-      'Actualidad',
+    publishedDate: parseMadPlanDate(news.sort_datetime || news.publicado_en),
+    primaryCategory: sanitizeText(news.categoria_principal_norm) || 'Actualidad',
     sourceLabel: sourceLabel(news.fuente),
   };
 }
 
-export function normalizeEvents(events: RawMadPlanEvent[]): MadPlanEvent[] {
+export function normalizeEvents(events: RawMadPlanEvent[], now = new Date()): MadPlanEvent[] {
   return events
-    .filter((event) => Boolean(event?.id && event?.titulo) && isUpcomingEvent(event))
-    .map((event) => normalizeEvent(event))
+    .filter((event) => Boolean(event?.id && event?.titulo) && isUpcomingEvent(event, now))
+    .map((event) => normalizeEvent(event, now))
     .sort((left, right) => {
       const leftValue = left.primaryDate?.getTime() || Number.MAX_SAFE_INTEGER;
       const rightValue = right.primaryDate?.getTime() || Number.MAX_SAFE_INTEGER;
@@ -135,4 +137,3 @@ export function normalizeNews(news: RawMadPlanNews[]): MadPlanNews[] {
     .map(normalizeNewsItem)
     .sort((left, right) => (right.publishedDate?.getTime() || 0) - (left.publishedDate?.getTime() || 0));
 }
-

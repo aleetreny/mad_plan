@@ -65,9 +65,15 @@ def _in_madrid_area(lat: float, lon: float) -> bool:
     )
 
 
-def geocode_events(events: list[dict], *, force: bool = False) -> tuple[int, int]:
+def geocode_events(
+    events: list[dict], *, force: bool = False, max_new_lookups: int | None = None
+) -> tuple[int, int]:
     """
     Geocode events in-place. Returns (geocoded_count, failed_count).
+
+    `max_new_lookups` caps how many *network* lookups a single run may do;
+    cached addresses are always applied. This keeps scheduled runs fast while
+    the persisted cache converges over a few days.
     """
     cache = _load_cache()
     geolocator = Nominatim(
@@ -95,6 +101,7 @@ def geocode_events(events: list[dict], *, force: bool = False) -> tuple[int, int
 
     geocoded = 0
     failed = 0
+    network_lookups = 0
 
     for i, (event, raw_query) in enumerate(to_geocode):
         clean_q = _clean_address(raw_query)
@@ -110,6 +117,10 @@ def geocode_events(events: list[dict], *, force: bool = False) -> tuple[int, int
             else:
                 failed += 1
             continue
+
+        if max_new_lookups is not None and network_lookups >= max_new_lookups:
+            continue
+        network_lookups += 1
 
         # Rate limit
         time.sleep(RATE_LIMIT_SECONDS)

@@ -8,34 +8,38 @@ export type BudgetPreference = 'free' | 'moderate' | 'flexible' | null;
 
 export type CompanionMode = 'solo' | 'pair' | 'friends' | 'family' | null;
 
-export type DiscoveryView = 'list' | 'map';
+export type DiscoveryView = 'list' | 'map' | 'news';
 
 export type DiscoveryDateFilter = 'all' | 'today' | 'weekend' | 'week' | 'month';
 
 export interface SourceLink {
-  fuente: string;
+  fuente?: string | null;
   url: string;
   kind?: string | null;
   precio?: number | string | null;
-  moneda?: string | null;
   es_gratis?: boolean | null;
 }
 
+export interface EventSession {
+  fecha: string;
+  datetime?: string | null;
+  tiene_hora: boolean;
+}
+
+/** Shape of `outputs/eventos_web.json` records (slim feed). */
 export interface RawMadPlanEvent {
   id: string;
   titulo: string;
   subtitulo?: string | null;
   resumen?: string | null;
   descripcion?: string | null;
-  contenido?: string | null;
   imagen?: string | null;
-  datetime_inicio?: string | null;
-  datetime_fin?: string | null;
-  fecha_inicio?: string | null;
-  fecha_fin?: string | null;
-  sort_datetime?: string | null;
-  proxima_fecha?: string | null;
-  proximo_datetime?: string | null;
+  fuente: string;
+  fuentes_relacionadas?: string[] | null;
+  categorias_normalizadas?: string[] | null;
+  categoria_principal_norm?: string | null;
+  url?: string | null;
+  url_compra?: string | null;
   lugar?: string | null;
   direccion?: string | null;
   latitud?: number | null;
@@ -43,51 +47,46 @@ export interface RawMadPlanEvent {
   precio?: number | string | null;
   moneda?: string | null;
   es_gratis?: boolean | null;
-  fuente: string;
-  fuente_id?: string | null;
-  categorias?: string[] | null;
-  categoria_principal?: string | null;
-  categorias_normalizadas?: string[] | null;
-  categoria_principal_norm?: string | null;
-  etiquetas?: string[] | null;
-  url?: string | null;
-  url_compra?: string | null;
-  tipo?: string | null;
+  modo_fecha?: string | null;
   estado_temporal?: string | null;
-  sesiones?: { fecha: string; datetime?: string | null; tiene_hora: boolean }[] | null;
-  fechas_disponibles?: string[] | null;
-  metadata?: {
-    source_links?: SourceLink[];
-    [key: string]: unknown;
-  } | null;
+  fecha_inicio?: string | null;
+  fecha_fin?: string | null;
+  datetime_inicio?: string | null;
+  proxima_fecha?: string | null;
+  proximo_datetime?: string | null;
+  sort_datetime?: string | null;
+  vigente_hasta?: string | null;
+  sesiones?: EventSession[] | null;
+  source_links?: SourceLink[] | null;
+  valoracion?: number | null;
 }
 
+/** Shape of `outputs/noticias_web.json` records (slim feed). */
 export interface RawMadPlanNews {
   id: string;
   titulo: string;
-  subtitulo?: string | null;
   resumen?: string | null;
-  descripcion?: string | null;
-  contenido?: string | null;
   imagen?: string | null;
   fuente: string;
-  categoria_principal?: string | null;
-  categorias?: string[] | null;
-  categorias_normalizadas?: string[] | null;
   categoria_principal_norm?: string | null;
-  publicado_en?: string | null;
-  actualizado_en?: string | null;
-  sort_datetime?: string | null;
   url?: string | null;
+  publicado_en?: string | null;
+  sort_datetime?: string | null;
+}
+
+export interface PipelineManifest {
+  finished_at?: string | null;
+  sources?: Array<{ name: string; status: string; count: number }> | null;
 }
 
 export interface MadPlanEvent extends RawMadPlanEvent {
+  /** Next relevant date computed client-side (never in the past for ongoing plans). */
   primaryDate: Date | null;
-  secondaryDate: Date | null;
-  primaryDateLabel: string;
+  endDate: Date | null;
+  isOngoing: boolean;
   scheduleLabel: string;
   relativeLabel: string;
-  priceLabel: string;
+  priceLabel: string | null;
   locationLabel: string;
   primaryCategory: string;
   categoriesList: string[];
@@ -128,4 +127,3 @@ export interface DiscoveryState {
   view: DiscoveryView;
   showCount: number;
 }
-

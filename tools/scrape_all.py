@@ -1,9 +1,22 @@
-"""Run all scrapers, merge them into web feeds and emit a daily-run manifest."""
+"""Run every scraper in an isolated subprocess, merge feeds and build the web outputs.
 
-import copy
-import importlib
+Design goals:
+  - One flaky source can never break the pipeline: each scraper runs in its own
+    subprocess with a hard timeout and a single retry.
+  - A failed or empty scrape never destroys data: the previous per-source output
+    is restored, so the merge always works with the last good snapshot.
+  - The merge step re-applies category normalization, geocoding (rate limited and
+    capped) and finally emits the slim web feeds consumed by the frontend.
+"""
+
+from __future__ import annotations
+
+import argparse
 import json
 import logging
+import os
+import subprocess
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -16,6 +29,9 @@ try:
         validate_news_records,
         validate_plan_records,
     )
+    from .normalize_categories import normalize_categories
+    from .geocode_events import geocode_events
+    from .build_web_feeds import build_web_feeds, strip_placeholder_images
 except ImportError:
     from normalization import (
         merge_news_records,
@@ -24,275 +40,181 @@ except ImportError:
         validate_news_records,
         validate_plan_records,
     )
+    from normalize_categories import normalize_categories
+    from geocode_events import geocode_events
+    from build_web_feeds import build_web_feeds, strip_placeholder_images
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s | %(message)s")
 log = logging.getLogger(__name__)
 
-OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "eventos_madrid_all.json"
-NEWS_OUTPUT_FILE = Path(__file__).resolve().parent.parent / "outputs" / "noticias_madrid_all.json"
-RUN_MANIFEST_FILE = Path(__file__).resolve().parent.parent / "outputs" / "pipeline_diario.json"
+ROOT = Path(__file__).resolve().parent.parent
+TOOLS_DIR = Path(__file__).resolve().parent
+OUTPUTS_DIR = ROOT / "outputs"
 
-BASE_SCRAPER_JOBS = [
-    {
-        "name": "matadero",
-        "kind": "plan",
-        "import": "matadero",
-        "callable": "scrape_matadero",
-        "output": "outputs/eventos_matadero.json",
-    },
-    {
-        "name": "teatros_canal",
-        "kind": "plan",
-        "import": "teatros_canal",
-        "callable": "scrape_teatros_canal",
-        "output": "outputs/eventos_teatros_canal.json",
-    },
-    {
-        "name": "circulo_bellas_artes",
-        "kind": "plan",
-        "import": "circulo_bellas_artes",
-        "callable": "scrape_circulo_bellas_artes",
-        "output": "outputs/eventos_circulo_bellas_artes.json",
-    },
-    {
-        "name": "ifema_madrid",
-        "kind": "plan",
-        "import": "ifema_madrid",
-        "callable": "scrape_ifema_madrid",
-        "output": "outputs/eventos_ifema_madrid.json",
-    },
-    {
-        "name": "casa_mexico",
-        "kind": "plan",
-        "import": "casa_mexico",
-        "callable": "scrape_casa_mexico",
-        "output": "outputs/eventos_casa_mexico.json",
-    },
-    {
-        "name": "espacio_fundacion_telefonica",
-        "kind": "plan",
-        "import": "espacio_fundacion_telefonica",
-        "callable": "scrape_espacio_fundacion_telefonica",
-        "output": "outputs/eventos_espacio_fundacion_telefonica.json",
-    },
-    {
-        "name": "museo_reina_sofia",
-        "kind": "plan",
-        "import": "museo_reina_sofia",
-        "callable": "scrape_museo_reina_sofia",
-        "output": "outputs/eventos_museo_reina_sofia.json",
-    },
-    {
-        "name": "biblioteca_nacional",
-        "kind": "plan",
-        "import": "biblioteca_nacional",
-        "callable": "scrape_biblioteca_nacional",
-        "output": "outputs/eventos_biblioteca_nacional.json",
-    },
-    {
-        "name": "fundacion_canal",
-        "kind": "plan",
-        "import": "fundacion_canal",
-        "callable": "scrape_fundacion_canal",
-        "output": "outputs/eventos_fundacion_canal.json",
-    },
-    {
-        "name": "fundacion_mapfre",
-        "kind": "plan",
-        "import": "fundacion_mapfre",
-        "callable": "scrape_fundacion_mapfre",
-        "output": "outputs/eventos_fundacion_mapfre.json",
-    },
-    {
-        "name": "sala_el_sol",
-        "kind": "plan",
-        "import": "sala_el_sol",
-        "callable": "scrape_sala_el_sol",
-        "output": "outputs/eventos_sala_el_sol.json",
-    },
-    {
-        "name": "fever",
-        "kind": "plan",
-        "import": "fever",
-        "callable": "main",
-        "output": "outputs/eventos_fever.json",
-    },
-    {
-        "name": "eventbrite",
-        "kind": "plan",
-        "import": "eventbrite",
-        "callable": "scrape_eventbrite",
-        "output": "outputs/eventos_eventbrite.json",
-    },
-    {
-        "name": "wegow",
-        "kind": "plan",
-        "import": "wegow",
-        "callable": "scrape_wegow",
-        "output": "outputs/eventos_wegow.json",
-    },
-    {
-        "name": "ticketmaster",
-        "kind": "plan",
-        "import": "ticketmaster",
-        "callable": "scrape_ticketmaster_madrid",
-        "output": "outputs/eventos_ticketmaster.json",
-    },
-    {
-        "name": "datos_madrid",
-        "kind": "plan",
-        "import": "datos_madrid",
-        "callable": "scrape_datos_madrid",
-        "output": "outputs/eventos_datos_madrid.json",
-    },
-    {
-        "name": "esmadrid",
-        "kind": "plan",
-        "import": "esmadrid",
-        "callable": "scrape_esmadrid",
-        "output": "outputs/eventos_esmadrid.json",
-    },
-    {
-        "name": "madrid_secreto",
-        "kind": "plan",
-        "import": "madrid_secreto",
-        "callable": "scrape_madrid_secreto",
-        "output": "outputs/eventos_madrid_secreto.json",
-    },
-    {
-        "name": "rockthesport",
-        "kind": "plan",
-        "import": "rockthesport",
-        "callable": "scrape_rockthesport",
-        "output": "outputs/eventos_rockthesport.json",
-    },
-    {
-        "name": "meetup",
-        "kind": "plan",
-        "import": "meetup",
-        "callable": "scrape_meetup",
-        "output": "outputs/eventos_meetup.json",
-    },
-    {
-        "name": "timeout",
-        "kind": "news",
-        "import": "timeout",
-        "callable": "scrape_timeout_news",
-        "output": "outputs/noticias_timeout.json",
-    },
-    {
-        "name": "gacetin_madrid",
-        "kind": "news",
-        "import": "gacetin_madrid",
-        "callable": "scrape_gacetin_madrid_news",
-        "output": "outputs/noticias_gacetin_madrid.json",
-    },
+OUTPUT_FILE = OUTPUTS_DIR / "eventos_madrid_all.json"
+NEWS_OUTPUT_FILE = OUTPUTS_DIR / "noticias_madrid_all.json"
+RUN_MANIFEST_FILE = OUTPUTS_DIR / "pipeline_diario.json"
+
+MAX_PARALLEL_SCRAPERS = 4
+GEOCODE_MAX_NEW_LOOKUPS = 150
+
+# timeout: hard per-subprocess limit in seconds (generous multiples of the
+# durations observed in real runs, so slow days do not read as failures).
+SCRAPER_JOBS: list[dict] = [
+    {"name": "matadero", "kind": "plan", "timeout": 240},
+    {"name": "teatros_canal", "kind": "plan", "timeout": 240},
+    {"name": "circulo_bellas_artes", "kind": "plan", "timeout": 240},
+    {"name": "ifema_madrid", "kind": "plan", "timeout": 300},
+    {"name": "casa_mexico", "kind": "plan", "timeout": 420},
+    {"name": "espacio_fundacion_telefonica", "kind": "plan", "timeout": 240},
+    {"name": "museo_reina_sofia", "kind": "plan", "timeout": 300},
+    {"name": "biblioteca_nacional", "kind": "plan", "timeout": 240},
+    {"name": "fundacion_canal", "kind": "plan", "timeout": 300},
+    {"name": "fundacion_mapfre", "kind": "plan", "timeout": 240},
+    {"name": "sala_el_sol", "kind": "plan", "timeout": 240},
+    {"name": "fever", "kind": "plan", "timeout": 1200},
+    {"name": "eventbrite", "kind": "plan", "timeout": 600},
+    {"name": "wegow", "kind": "plan", "timeout": 300},
+    {"name": "ticketmaster", "kind": "plan", "timeout": 420},
+    {"name": "datos_madrid", "kind": "plan", "timeout": 180},
+    {"name": "esmadrid", "kind": "plan", "timeout": 900},
+    {"name": "madrid_secreto", "kind": "plan", "timeout": 900},
+    {"name": "rockthesport", "kind": "plan", "timeout": 300},
+    {"name": "meetup", "kind": "plan", "timeout": 600},
+    {"name": "timeout", "kind": "news", "timeout": 900},
+    {"name": "gacetin_madrid", "kind": "news", "timeout": 240},
 ]
 
-
-def _build_scraper_jobs(*, fever_mode: str) -> list[dict]:
-    jobs = copy.deepcopy(BASE_SCRAPER_JOBS)
-    for job in jobs:
-        if job["name"] == "fever":
-            job["callable"] = "main" if fever_mode == "full" else "fast_main"
-            break
-    return jobs
+OUTPUT_BY_KIND = {"plan": "eventos_{name}.json", "news": "noticias_{name}.json"}
 
 
-def _import_callable(module_name: str, callable_name: str):
-    candidates = [module_name]
-    if __package__:
-        candidates.insert(0, f"{__package__}.{module_name}")
-
-    last_error: Exception | None = None
-    for candidate in candidates:
-        try:
-            module = importlib.import_module(candidate)
-            return getattr(module, callable_name)
-        except ModuleNotFoundError as error:
-            last_error = error
-            if error.name != candidate:
-                raise
-
-    if last_error:
-        raise last_error
-    raise ModuleNotFoundError(module_name)
+def _job_output_path(job: dict) -> Path:
+    return OUTPUTS_DIR / OUTPUT_BY_KIND[job["kind"]].format(name=job["name"])
 
 
-def _run_job(job: dict) -> dict:
-    started_at = utc_now_iso()
+def _load_records(path: Path) -> list[dict] | None:
+    if not path.exists():
+        return None
     try:
-        scraper = _import_callable(job["import"], job["callable"])
-        records = scraper()
-        finished_at = utc_now_iso()
+        payload = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return None
+    return payload if isinstance(payload, list) else None
+
+
+def _run_scraper_subprocess(job: dict, *, fever_mode: str) -> dict:
+    """Run one scraper as `python tools/<name>.py` with a hard timeout."""
+    script = TOOLS_DIR / f"{job['name']}.py"
+    env = dict(os.environ)
+    env.setdefault("PYTHONIOENCODING", "utf-8")
+    env["MAD_PLAN_FEVER_MODE"] = fever_mode
+
+    started = time.time()
+    try:
+        proc = subprocess.run(
+            [sys.executable, str(script)],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=job["timeout"],
+            cwd=str(ROOT),
+            env=env,
+        )
+        duration = round(time.time() - started, 1)
+        if proc.returncode != 0:
+            tail = "\n".join((proc.stderr or "").strip().splitlines()[-4:])
+            return {"ok": False, "error": f"exit {proc.returncode}: {tail[-500:]}", "duration": duration}
+        return {"ok": True, "duration": duration}
+    except subprocess.TimeoutExpired:
         return {
-            "name": job["name"],
-            "kind": job["kind"],
-            "status": "ok",
-            "count": len(records),
-            "records": records,
-            "output": job["output"],
-            "started_at": started_at,
-            "finished_at": finished_at,
+            "ok": False,
+            "error": f"timeout after {job['timeout']}s",
+            "duration": round(time.time() - started, 1),
         }
-    except Exception as error:
-        finished_at = utc_now_iso()
+    except Exception as error:  # pragma: no cover - defensive
         return {
-            "name": job["name"],
-            "kind": job["kind"],
-            "status": "error",
-            "count": 0,
-            "records": [],
-            "output": job["output"],
-            "started_at": started_at,
-            "finished_at": finished_at,
+            "ok": False,
             "error": str(error),
+            "duration": round(time.time() - started, 1),
         }
 
 
-def run_all(
-    *,
-    trigger_type: str = "scheduled",
-    trigger_schedule: str = "0 6 * * * Europe/Madrid",
-    trigger_source: str = "simulated-cron",
-    fever_mode: str = "full",
-):
-    if fever_mode not in {"full", "fast"}:
-        raise ValueError(f"Unsupported fever mode: {fever_mode}")
+def _execute_job(job: dict, *, fever_mode: str, retries: int = 1) -> dict:
+    """Run a scraper, keep the previous output when the fresh run is unusable."""
+    output_path = _job_output_path(job)
+    previous_bytes = output_path.read_bytes() if output_path.exists() else None
+    previous_records = _load_records(output_path) or []
 
-    scraper_jobs = _build_scraper_jobs(fever_mode=fever_mode)
-    started_at = time.time()
-    log.info("=" * 60)
-    log.info("PIPELINE DIARIO")
-    log.info("=" * 60)
-    log.info(
-        "Trigger %s (%s) lanzando %d scrapers en paralelo",
-        trigger_source,
-        trigger_schedule,
-        len(scraper_jobs),
-    )
-    log.info("Fever mode for this run: %s", fever_mode)
+    attempt = 0
+    result: dict = {"ok": False, "error": "not run", "duration": 0.0}
+    while attempt <= retries:
+        if attempt > 0:
+            log.warning("Retrying %s (attempt %d)…", job["name"], attempt + 1)
+            time.sleep(5)
+        result = _run_scraper_subprocess(job, fever_mode=fever_mode)
+        if result["ok"]:
+            fresh = _load_records(output_path)
+            if fresh:
+                return {
+                    "name": job["name"],
+                    "kind": job["kind"],
+                    "status": "ok",
+                    "count": len(fresh),
+                    "duration_seconds": result["duration"],
+                    "error": None,
+                    "stale": False,
+                }
+            result = {**result, "ok": False, "error": "scraper finished but produced no records"}
+        attempt += 1
 
-    results: list[dict] = []
-    source_events: list[dict] = []
-    source_news: list[dict] = []
+    # Restore the last good output so the merge never loses a source.
+    if previous_bytes is not None:
+        output_path.write_bytes(previous_bytes)
+    stale_since = None
+    if previous_records:
+        stale_since = previous_records[0].get("scraped_en")
 
-    with ThreadPoolExecutor(max_workers=len(scraper_jobs)) as executor:
-        futures = {executor.submit(_run_job, job): job for job in scraper_jobs}
-        for future in as_completed(futures):
-            result = future.result()
-            results.append(result)
-            if result["status"] == "ok":
-                if result["kind"] == "plan":
-                    source_events.extend(result["records"])
-                else:
-                    source_news.extend(result["records"])
-                log.info("%-15s: %4d items", result["name"], result["count"])
-            else:
-                log.error("%-15s: failed - %s", result["name"], result.get("error"))
+    log.error("%s failed: %s (using last good output: %d records)",
+              job["name"], result.get("error"), len(previous_records))
+    return {
+        "name": job["name"],
+        "kind": job["kind"],
+        "status": "failed",
+        "count": len(previous_records),
+        "duration_seconds": result["duration"],
+        "error": result.get("error"),
+        "stale": bool(previous_records),
+        "stale_since": stale_since,
+    }
 
-    merged_events = merge_plan_records(source_events)
-    merged_news = merge_news_records(source_news)
+
+def merge_and_publish(source_results: list[dict] | None = None, *, geocode: bool = True) -> dict:
+    """Merge per-source outputs, post-process and emit the web feeds."""
+    plan_records: list[dict] = []
+    news_records: list[dict] = []
+    for job in SCRAPER_JOBS:
+        records = _load_records(_job_output_path(job)) or []
+        if job["kind"] == "plan":
+            plan_records.extend(records)
+        else:
+            news_records.extend(records)
+
+    merged_events = merge_plan_records(plan_records)
+    merged_news = merge_news_records(news_records)
+
+    # Post-processing on the merged feed.
+    strip_placeholder_images(merged_events)
+    normalize_categories(merged_events, force_all=True)
+    normalize_categories(merged_news, force_all=True)
+    if geocode:
+        try:
+            geocoded, failed = geocode_events(
+                merged_events, max_new_lookups=GEOCODE_MAX_NEW_LOOKUPS
+            )
+            log.info("Geocoding: +%d resolved, %d failed", geocoded, failed)
+        except Exception as error:
+            log.warning("Geocoding skipped: %s", error)
 
     OUTPUT_FILE.write_text(
         json.dumps(merged_events, indent=2, ensure_ascii=False), encoding="utf-8"
@@ -303,69 +225,120 @@ def run_all(
 
     plan_validation = validate_plan_records(merged_events)
     news_validation = validate_news_records(merged_news)
-    duration_seconds = round(time.time() - started_at, 2)
 
-    manifest = {
-        "trigger": {
-            "type": trigger_type,
-            "source": trigger_source,
-            "schedule": trigger_schedule,
-            "simulated_at": utc_now_iso(),
-            "fever_mode": fever_mode,
-        },
-        "started_at": results[0]["started_at"] if results else utc_now_iso(),
-        "finished_at": utc_now_iso(),
-        "duration_seconds": duration_seconds,
-        "sources": [
-            {
-                "name": result["name"],
-                "kind": result["kind"],
-                "status": result["status"],
-                "count": result["count"],
-                "output": result["output"],
-                "started_at": result["started_at"],
-                "finished_at": result["finished_at"],
-                "error": result.get("error"),
-            }
-            for result in sorted(results, key=lambda item: item["name"])
-        ],
+    web_stats = build_web_feeds(merged_events, merged_news)
+
+    manifest_sources = source_results or [
+        {
+            "name": job["name"],
+            "kind": job["kind"],
+            "status": "ok" if _job_output_path(job).exists() else "missing",
+            "count": len(_load_records(_job_output_path(job)) or []),
+        }
+        for job in SCRAPER_JOBS
+    ]
+
+    return {
+        "sources": manifest_sources,
         "feeds": {
             "planes": {
-                "output": str(OUTPUT_FILE.relative_to(OUTPUT_FILE.parent.parent)),
+                "output": "outputs/eventos_madrid_all.json",
+                "web_output": "outputs/eventos_web.json",
                 "count": len(merged_events),
+                "web_count": web_stats["events"],
                 "validation": plan_validation,
             },
             "noticias": {
-                "output": str(NEWS_OUTPUT_FILE.relative_to(NEWS_OUTPUT_FILE.parent.parent)),
+                "output": "outputs/noticias_madrid_all.json",
+                "web_output": "outputs/noticias_web.json",
                 "count": len(merged_news),
+                "web_count": web_stats["news"],
                 "validation": news_validation,
             },
         },
+    }
+
+
+def run_all(
+    *,
+    trigger_type: str = "scheduled",
+    trigger_schedule: str = "15 4 * * * UTC",
+    trigger_source: str = "local",
+    fever_mode: str = "full",
+    merge_only: bool = False,
+    geocode: bool = True,
+) -> dict:
+    if fever_mode not in {"full", "fast"}:
+        raise ValueError(f"Unsupported fever mode: {fever_mode}")
+
+    started_at = utc_now_iso()
+    started_clock = time.time()
+    results: list[dict] = []
+
+    if not merge_only:
+        log.info("=" * 60)
+        log.info("PIPELINE MADPLAN — %d scrapers (%d en paralelo, fever=%s)",
+                 len(SCRAPER_JOBS), MAX_PARALLEL_SCRAPERS, fever_mode)
+        log.info("=" * 60)
+        with ThreadPoolExecutor(max_workers=MAX_PARALLEL_SCRAPERS) as executor:
+            futures = {
+                executor.submit(_execute_job, job, fever_mode=fever_mode): job
+                for job in SCRAPER_JOBS
+            }
+            for future in as_completed(futures):
+                outcome = future.result()
+                results.append(outcome)
+                marker = "OK " if outcome["status"] == "ok" else "FAIL"
+                log.info("%s %-30s %4d items (%.0fs)", marker, outcome["name"],
+                         outcome["count"], outcome["duration_seconds"])
+        results.sort(key=lambda item: item["name"])
+
+    feeds = merge_and_publish(results or None, geocode=geocode)
+
+    manifest = {
+        "trigger": {
+            "type": trigger_type if not merge_only else "merge-only",
+            "source": trigger_source,
+            "schedule": trigger_schedule if not merge_only else None,
+            "fever_mode": fever_mode if not merge_only else None,
+        },
+        "started_at": started_at,
+        "finished_at": utc_now_iso(),
+        "duration_seconds": round(time.time() - started_clock, 1),
+        "sources": feeds["sources"],
+        "feeds": feeds["feeds"],
     }
     RUN_MANIFEST_FILE.write_text(
         json.dumps(manifest, indent=2, ensure_ascii=False), encoding="utf-8"
     )
 
+    ok_sources = sum(1 for s in feeds["sources"] if s.get("status") == "ok")
     log.info("=" * 60)
-    log.info("PLANES WEB")
-    log.info("=" * 60)
-    log.info("Items finales: %d", len(merged_events))
-    log.info("Validacion: %s", "OK" if plan_validation["valid"] else "ERROR")
-    log.info("Saved to %s", OUTPUT_FILE)
-    log.info("=" * 60)
-    log.info("NOTICIAS WEB")
-    log.info("=" * 60)
-    log.info("Items finales: %d", len(merged_news))
-    log.info("Validacion: %s", "OK" if news_validation["valid"] else "ERROR")
-    log.info("Saved to %s", NEWS_OUTPUT_FILE)
-    log.info("Manifest saved to %s", RUN_MANIFEST_FILE)
+    log.info("Fuentes OK: %d/%d | Planes web: %d | Noticias web: %d",
+             ok_sources, len(feeds["sources"]),
+             manifest["feeds"]["planes"]["web_count"],
+             manifest["feeds"]["noticias"]["web_count"])
+    log.info("Manifest: %s", RUN_MANIFEST_FILE)
+    return manifest
 
-    return {
-        "plans": merged_events,
-        "news": merged_news,
-        "manifest": manifest,
-    }
+
+def _parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description="Run the MadPlan scraping pipeline")
+    parser.add_argument("--merge-only", action="store_true",
+                        help="Skip scraping; rebuild feeds from existing per-source outputs")
+    parser.add_argument("--no-geocode", action="store_true",
+                        help="Skip the geocoding pass")
+    parser.add_argument("--fever-mode", choices=("full", "fast"),
+                        default=os.getenv("MAD_PLAN_FEVER_MODE", "full"))
+    return parser.parse_args()
 
 
 if __name__ == "__main__":
-    run_all()
+    args = _parse_args()
+    run_all(
+        trigger_type="manual",
+        trigger_source="cli",
+        fever_mode=args.fever_mode,
+        merge_only=args.merge_only,
+        geocode=not args.no_geocode,
+    )

@@ -1,232 +1,281 @@
 {
   "trigger": {
-    "type": "manual-rebuild",
-    "source": "existing-outputs",
-    "schedule": null,
-    "simulated_at": "2026-04-13T16:46:55Z",
-    "fever_mode": null
+    "type": "scheduled",
+    "source": "local-verify",
+    "schedule": "15 4 * * * UTC",
+    "fever_mode": "full"
   },
-  "started_at": "2026-04-13T16:46:53Z",
-  "finished_at": "2026-04-13T16:46:55Z",
+  "started_at": "2026-07-13T17:51:22Z",
+  "finished_at": "2026-07-13T18:06:44Z",
+  "duration_seconds": 921.2,
   "sources": [
     {
-      "name": "matadero",
+      "name": "biblioteca_nacional",
       "kind": "plan",
       "status": "ok",
-      "count": 138,
-      "output": "outputs/eventos_matadero.json"
-    },
-    {
-      "name": "teatros_canal",
-      "kind": "plan",
-      "status": "ok",
-      "count": 20,
-      "output": "outputs/eventos_teatros_canal.json"
-    },
-    {
-      "name": "circulo_bellas_artes",
-      "kind": "plan",
-      "status": "ok",
-      "count": 42,
-      "output": "outputs/eventos_circulo_bellas_artes.json"
-    },
-    {
-      "name": "ifema_madrid",
-      "kind": "plan",
-      "status": "ok",
-      "count": 52,
-      "output": "outputs/eventos_ifema_madrid.json"
+      "count": 1,
+      "duration_seconds": 1.4,
+      "error": null,
+      "stale": false
     },
     {
       "name": "casa_mexico",
       "kind": "plan",
       "status": "ok",
-      "count": 74,
-      "output": "outputs/eventos_casa_mexico.json"
+      "count": 33,
+      "duration_seconds": 45.7,
+      "error": null,
+      "stale": false
     },
     {
-      "name": "espacio_fundacion_telefonica",
+      "name": "circulo_bellas_artes",
       "kind": "plan",
       "status": "ok",
-      "count": 12,
-      "output": "outputs/eventos_espacio_fundacion_telefonica.json"
-    },
-    {
-      "name": "museo_reina_sofia",
-      "kind": "plan",
-      "status": "ok",
-      "count": 44,
-      "output": "outputs/eventos_museo_reina_sofia.json"
-    },
-    {
-      "name": "biblioteca_nacional",
-      "kind": "plan",
-      "status": "ok",
-      "count": 6,
-      "output": "outputs/eventos_biblioteca_nacional.json"
-    },
-    {
-      "name": "fundacion_canal",
-      "kind": "plan",
-      "status": "ok",
-      "count": 4,
-      "output": "outputs/eventos_fundacion_canal.json"
-    },
-    {
-      "name": "fundacion_mapfre",
-      "kind": "plan",
-      "status": "ok",
-      "count": 2,
-      "output": "outputs/eventos_fundacion_mapfre.json"
-    },
-    {
-      "name": "sala_el_sol",
-      "kind": "plan",
-      "status": "ok",
-      "count": 48,
-      "output": "outputs/eventos_sala_el_sol.json"
-    },
-    {
-      "name": "fever",
-      "kind": "plan",
-      "status": "ok",
-      "count": 416,
-      "output": "outputs/eventos_fever.json"
-    },
-    {
-      "name": "eventbrite",
-      "kind": "plan",
-      "status": "ok",
-      "count": 557,
-      "output": "outputs/eventos_eventbrite.json"
-    },
-    {
-      "name": "wegow",
-      "kind": "plan",
-      "status": "ok",
-      "count": 108,
-      "output": "outputs/eventos_wegow.json"
-    },
-    {
-      "name": "ticketmaster",
-      "kind": "plan",
-      "status": "ok",
-      "count": 144,
-      "output": "outputs/eventos_ticketmaster.json"
+      "count": 20,
+      "duration_seconds": 4.3,
+      "error": null,
+      "stale": false
     },
     {
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 1167,
-      "output": "outputs/eventos_datos_madrid.json"
+      "count": 710,
+      "duration_seconds": 1.9,
+      "error": null,
+      "stale": false
     },
     {
       "name": "esmadrid",
       "kind": "plan",
       "status": "ok",
-      "count": 241,
-      "output": "outputs/eventos_esmadrid.json"
+      "count": 235,
+      "duration_seconds": 378.9,
+      "error": null,
+      "stale": false
     },
     {
-      "name": "madrid_secreto",
+      "name": "espacio_fundacion_telefonica",
       "kind": "plan",
       "status": "ok",
-      "count": 383,
-      "output": "outputs/eventos_madrid_secreto.json"
+      "count": 11,
+      "duration_seconds": 10.5,
+      "error": null,
+      "stale": false
     },
     {
-      "name": "rockthesport",
+      "name": "eventbrite",
       "kind": "plan",
       "status": "ok",
-      "count": 61,
-      "output": "outputs/eventos_rockthesport.json"
+      "count": 444,
+      "duration_seconds": 154.3,
+      "error": null,
+      "stale": false
     },
     {
-      "name": "meetup",
+      "name": "fever",
       "kind": "plan",
       "status": "ok",
-      "count": 401,
-      "output": "outputs/eventos_meetup.json"
+      "count": 414,
+      "duration_seconds": 458.2,
+      "error": null,
+      "stale": false
     },
     {
-      "name": "timeout",
-      "kind": "news",
+      "name": "fundacion_canal",
+      "kind": "plan",
       "status": "ok",
-      "count": 93,
-      "output": "outputs/noticias_timeout.json"
+      "count": 1,
+      "duration_seconds": 3.0,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "fundacion_mapfre",
+      "kind": "plan",
+      "status": "ok",
+      "count": 1,
+      "duration_seconds": 1.5,
+      "error": null,
+      "stale": false
     },
     {
       "name": "gacetin_madrid",
       "kind": "news",
       "status": "ok",
-      "count": 54,
-      "output": "outputs/noticias_gacetin_madrid.json"
+      "count": 61,
+      "duration_seconds": 3.4,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "ifema_madrid",
+      "kind": "plan",
+      "status": "ok",
+      "count": 48,
+      "duration_seconds": 8.3,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "madrid_secreto",
+      "kind": "plan",
+      "status": "ok",
+      "count": 248,
+      "duration_seconds": 541.9,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "matadero",
+      "kind": "plan",
+      "status": "ok",
+      "count": 59,
+      "duration_seconds": 3.0,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "meetup",
+      "kind": "plan",
+      "status": "ok",
+      "count": 387,
+      "duration_seconds": 14.7,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "museo_reina_sofia",
+      "kind": "plan",
+      "status": "ok",
+      "count": 8,
+      "duration_seconds": 9.9,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "rockthesport",
+      "kind": "plan",
+      "status": "ok",
+      "count": 41,
+      "duration_seconds": 6.1,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "sala_el_sol",
+      "kind": "plan",
+      "status": "ok",
+      "count": 25,
+      "duration_seconds": 10.7,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "teatros_canal",
+      "kind": "plan",
+      "status": "ok",
+      "count": 31,
+      "duration_seconds": 4.8,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "ticketmaster",
+      "kind": "plan",
+      "status": "ok",
+      "count": 27,
+      "duration_seconds": 87.9,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "timeout",
+      "kind": "news",
+      "status": "ok",
+      "count": 108,
+      "duration_seconds": 32.1,
+      "error": null,
+      "stale": false
+    },
+    {
+      "name": "wegow",
+      "kind": "plan",
+      "status": "ok",
+      "count": 46,
+      "duration_seconds": 15.7,
+      "error": null,
+      "stale": false
     }
   ],
   "feeds": {
     "planes": {
-      "output": "outputs\\eventos_madrid_all.json",
-      "count": 3832,
+      "output": "outputs/eventos_madrid_all.json",
+      "web_output": "outputs/eventos_web.json",
+      "count": 2742,
+      "web_count": 2742,
       "validation": {
         "valid": true,
-        "total": 3832,
-        "with_price": 1966,
-        "with_location": 3791,
+        "total": 2742,
+        "with_price": 1371,
+        "with_location": 2692,
         "by_source": {
-          "datos_madrid": 1167,
-          "matadero": 136,
-          "esmadrid": 241,
-          "fever": 415,
-          "eventbrite": 557,
-          "circulo_bellas_artes": 42,
-          "ticketmaster": 144,
-          "ifema_madrid": 52,
-          "madrid_secreto": 301,
-          "museo_reina_sofia": 44,
-          "meetup": 398,
-          "wegow": 108,
-          "casa_mexico": 74,
-          "biblioteca_nacional": 6,
-          "espacio_fundacion_telefonica": 12,
-          "sala_el_sol": 48,
-          "rockthesport": 61,
-          "teatros_canal": 20,
-          "fundacion_canal": 4,
-          "fundacion_mapfre": 2
+          "eventbrite": 444,
+          "datos_madrid": 710,
+          "matadero": 59,
+          "ticketmaster": 27,
+          "circulo_bellas_artes": 20,
+          "esmadrid": 235,
+          "fever": 414,
+          "madrid_secreto": 204,
+          "museo_reina_sofia": 8,
+          "meetup": 383,
+          "espacio_fundacion_telefonica": 11,
+          "sala_el_sol": 25,
+          "casa_mexico": 33,
+          "wegow": 46,
+          "rockthesport": 41,
+          "ifema_madrid": 48,
+          "biblioteca_nacional": 1,
+          "fundacion_canal": 1,
+          "fundacion_mapfre": 1,
+          "teatros_canal": 31
         },
         "by_mode": {
-          "multiple": 441,
-          "rango": 923,
-          "puntual": 704,
-          "puntual_con_hora": 1679,
-          "sin_fecha": 85
+          "puntual": 517,
+          "multiple": 221,
+          "rango": 798,
+          "puntual_con_hora": 1143,
+          "sin_fecha": 63
         },
         "errors": []
       }
     },
     "noticias": {
-      "output": "outputs\\noticias_madrid_all.json",
-      "count": 136,
+      "output": "outputs/noticias_madrid_all.json",
+      "web_output": "outputs/noticias_web.json",
+      "count": 168,
+      "web_count": 168,
       "validation": {
         "valid": true,
-        "total": 136,
+        "total": 168,
         "by_source": {
-          "gacetin_madrid": 51,
-          "timeout": 85
+          "timeout": 107,
+          "gacetin_madrid": 61
         },
         "by_category": {
-          "Cultura y Ocio": 51,
-          "Arte": 9,
+          "Restaurantes": 13,
+          "Cultura y Ocio": 61,
+          "Cine": 11,
           "Qué hacer": 29,
-          "Tiendas": 10,
-          "Comedia": 1,
-          "Restaurantes": 12,
-          "Viaje": 5,
-          "Música": 12,
-          "Niños": 4,
+          "Tiendas": 8,
+          "Arte": 13,
+          "Deportes": 5,
+          "Música": 14,
+          "Viaje": 4,
           "Teatro": 2,
-          "Cine": 1
+          "Niños": 5,
+          "Gay y lésbico": 3
         },
         "errors": []
       }

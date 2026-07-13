@@ -1,4 +1,5 @@
 import { PAGE_SIZE, ZONES } from './constants';
+import { distanceKm } from './formatters';
 import type {
   DiscoveryDateFilter,
   DiscoveryState,
@@ -39,8 +40,9 @@ export function scoreEvent(event: MadPlanEvent, profile: UserProfile): number {
   }
 
   if (profile.budget === 'free' && event.isFree) score += 18;
-  if (profile.budget === 'moderate' && (event.isFree || /€|eur|desde|[0-2]?\d(?:[.,]\d+)?/.test(event.priceLabel.toLocaleLowerCase('es-ES')))) {
-    score += 12;
+  if (profile.budget === 'moderate') {
+    const numericPrice = typeof event.precio === 'number' ? event.precio : null;
+    if (event.isFree || (numericPrice !== null && numericPrice <= 25)) score += 12;
   }
   if (profile.budget === 'flexible') score += 4;
 
@@ -49,7 +51,7 @@ export function scoreEvent(event: MadPlanEvent, profile: UserProfile): number {
   if (profile.companion === 'pair') score += includesAny(event.searchBlob, PAIR_HINTS) * 7;
   if (profile.companion === 'solo') score += includesAny(event.searchBlob, SOLO_HINTS) * 7;
 
-  if (profile.zones.length > 0 && profile.zones.some((zone) => event.locationLabel.toLocaleLowerCase('es-ES').includes(zone.toLocaleLowerCase('es-ES')))) {
+  if (profile.zones.length > 0 && profile.zones.some((zone) => matchesZone(event, zone))) {
     score += 10;
   }
 
@@ -62,10 +64,26 @@ export function scoreEvent(event: MadPlanEvent, profile: UserProfile): number {
 
 function matchesDateFilter(event: MadPlanEvent, filter: DiscoveryDateFilter): boolean {
   if (filter === 'all') return true;
-  if (filter === 'today') return event.isToday;
+  if (filter === 'today') return event.isToday || event.isOngoing;
   if (filter === 'weekend') return event.isThisWeekend;
-  if (filter === 'week') return event.isThisWeek;
-  return event.isThisMonth;
+  if (filter === 'week') return event.isThisWeek || event.isOngoing;
+  return event.isThisMonth || event.isOngoing;
+}
+
+/**
+ * Zone match by real distance when the event has coordinates, with a
+ * text-match fallback for events that mention the barrio in their venue
+ * or address.
+ */
+export function matchesZone(event: MadPlanEvent, zoneName: string): boolean {
+  const zone = ZONES.find((item) => item.name === zoneName);
+  if (!zone) return true;
+
+  if (event.hasCoordinates && event.latitud != null && event.longitud != null) {
+    return distanceKm(event.latitud, event.longitud, zone.lat, zone.lon) <= zone.radiusKm;
+  }
+
+  return event.locationLabel.toLocaleLowerCase('es-ES').includes(zoneName.toLocaleLowerCase('es-ES'));
 }
 
 export function filterAndRankEvents(events: MadPlanEvent[], state: DiscoveryState, profile: UserProfile) {
@@ -73,22 +91,25 @@ export function filterAndRankEvents(events: MadPlanEvent[], state: DiscoveryStat
 
   return events
     .filter((event) => {
-      if (state.source && event.fuente !== state.source) return false;
-      if (state.category && !event.categoriesList.includes(state.category) && event.primaryCategory !== state.category) return false;
+      if (state.source && event.fuente !== state.source && !(event.fuentes_relacionadas || []).includes(state.source)) return false;
+      if (state.category && !event.categoriesList.includes(state.category)) return false;
       if (state.freeOnly && !event.isFree) return false;
-      if (state.zone) {
-        const zone = state.zone.toLocaleLowerCase('es-ES');
-        if (!event.locationLabel.toLocaleLowerCase('es-ES').includes(zone)) return false;
-      }
+      if (state.zone && !matchesZone(event, state.zone)) return false;
       if (normalizedQuery && !event.searchBlob.includes(normalizedQuery)) return false;
       return matchesDateFilter(event, state.dateFilter);
     })
     .map((event) => ({ event, score: scoreEvent(event, profile) }))
     .sort((left, right) => {
       if (profile.answeredQuiz && right.score !== left.score) return right.score - left.score;
-      const leftDate = left.event.primaryDate?.getTime() || Number.MAX_SAFE_INTEGER;
-      const rightDate = right.event.primaryDate?.getTime() || Number.MAX_SAFE_INTEGER;
-      if (leftDate !== rightDate) return leftDate - rightDate;
+      const leftDay = left.event.primaryDate ? Math.floor(left.event.primaryDate.getTime() / 86400000) : Number.MAX_SAFE_INTEGER;
+      const rightDay = right.event.primaryDate ? Math.floor(right.event.primaryDate.getTime() / 86400000) : Number.MAX_SAFE_INTEGER;
+      if (leftDay !== rightDay) return leftDay - rightDay;
+      // Same day: one-off events with a real date beat long-running "en curso"
+      // exhibitions, so the front page feels alive instead of static.
+      if (left.event.isOngoing !== right.event.isOngoing) return left.event.isOngoing ? 1 : -1;
+      const leftTime = left.event.primaryDate?.getTime() || 0;
+      const rightTime = right.event.primaryDate?.getTime() || 0;
+      if (leftTime !== rightTime) return leftTime - rightTime;
       return left.event.titulo.localeCompare(right.event.titulo, 'es-ES');
     });
 }
@@ -123,15 +144,22 @@ export function deriveFeaturedEvents(events: MadPlanEvent[], profile: UserProfil
     .slice(0, 6);
 }
 
-export function deriveCityStats(events: MadPlanEvent[], news: MadPlanNews[]) {
-  const freeToday = events.filter((event) => event.isToday && event.isFree).length;
-  const withCoordinates = events.filter((event) => event.hasCoordinates).length;
-  return [
-    { label: 'Planes activos', value: String(events.length) },
-    { label: 'Gratis hoy', value: String(freeToday) },
-    { label: 'En el mapa', value: String(withCoordinates) },
-    { label: 'Noticias frescas', value: String(news.length) },
-  ];
+export interface CityStats {
+  total: number;
+  freeToday: number;
+  today: number;
+  withCoordinates: number;
+  news: number;
+}
+
+export function deriveCityStats(events: MadPlanEvent[], news: MadPlanNews[]): CityStats {
+  return {
+    total: events.length,
+    freeToday: events.filter((event) => (event.isToday || event.isOngoing) && event.isFree).length,
+    today: events.filter((event) => event.isToday || event.isOngoing).length,
+    withCoordinates: events.filter((event) => event.hasCoordinates).length,
+    news: news.length,
+  };
 }
 
 export function deriveVisibleEvents(scoredEvents: Array<{ event: MadPlanEvent; score: number }>, showCount: number) {
@@ -145,6 +173,3 @@ export function hasActiveFilters(state: DiscoveryState): boolean {
 export function nextShowCount(current: number): number {
   return current + PAGE_SIZE;
 }
-
-export const zoneOptions = [...ZONES];
-

@@ -1,10 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { CalendarDays, ExternalLink, MapPin, Share2, Ticket, X } from 'lucide-react';
+import {
+  Bookmark,
+  BookmarkCheck,
+  CalendarDays,
+  CalendarPlus,
+  ExternalLink,
+  MapPin,
+  Navigation,
+  Share2,
+  X,
+} from 'lucide-react';
 import { formatLongDate, formatTime } from '../../domain/madplan/formatters';
+import { sourceLabel } from '../../domain/madplan/formatters';
 import type { MadPlanEvent } from '../../domain/madplan/types';
 import { cn } from '../lib/cn';
-import { MediaCover } from './MediaCover';
+import { CategoryCover } from './CategoryCover';
 
 interface EventModalProps {
   event: MadPlanEvent | null;
@@ -14,11 +25,59 @@ interface EventModalProps {
   onToggleAgenda: () => void;
 }
 
+function directionsUrl(event: MadPlanEvent): string | null {
+  if (event.hasCoordinates && event.latitud != null && event.longitud != null) {
+    return `https://www.google.com/maps/search/?api=1&query=${event.latitud},${event.longitud}`;
+  }
+  const query = [event.lugar, event.direccion, 'Madrid'].filter(Boolean).join(', ');
+  if (!query || query === 'Madrid') return null;
+  return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
+}
+
+function googleCalendarUrl(event: MadPlanEvent): string | null {
+  if (!event.primaryDate) return null;
+  const start = event.primaryDate;
+  const end = new Date(start.getTime() + 2 * 3600000);
+  const fmt = (date: Date) =>
+    `${date.getFullYear()}${String(date.getMonth() + 1).padStart(2, '0')}${String(date.getDate()).padStart(2, '0')}` +
+    `T${String(date.getHours()).padStart(2, '0')}${String(date.getMinutes()).padStart(2, '0')}00`;
+  const params = new URLSearchParams({
+    action: 'TEMPLATE',
+    text: event.titulo,
+    dates: `${fmt(start)}/${fmt(end)}`,
+    details: (event.resumen || event.descripcion || '').slice(0, 400) + (event.url ? `\n${event.url}` : ''),
+    location: [event.lugar, event.direccion].filter(Boolean).join(', ') || 'Madrid',
+  });
+  return `https://calendar.google.com/calendar/render?${params.toString()}`;
+}
+
+const LINK_KIND_LABELS: Record<string, string> = {
+  compra: 'Comprar entradas',
+  detalle: 'Ver detalle',
+  editorial: 'Artículo',
+};
+
 export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgenda }: EventModalProps) {
   const [feedback, setFeedback] = useState<string | null>(null);
 
+  useEffect(() => {
+    if (!event) return;
+    function onKeyDown(keyEvent: KeyboardEvent) {
+      if (keyEvent.key === 'Escape') onClose();
+    }
+    window.addEventListener('keydown', onKeyDown);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      window.removeEventListener('keydown', onKeyDown);
+      document.body.style.overflow = '';
+    };
+  }, [event, onClose]);
+
   if (!event) return null;
   const activeEvent = event;
+  const maps = directionsUrl(activeEvent);
+  const calendar = googleCalendarUrl(activeEvent);
+  const body = activeEvent.descripcion || activeEvent.resumen;
 
   async function handleShare() {
     const shareUrl = activeEvent.url || activeEvent.sourceLinks[0]?.url;
@@ -28,7 +87,7 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
       if (navigator.share) {
         await navigator.share({
           title: activeEvent.titulo,
-          text: activeEvent.resumen || activeEvent.descripcion || activeEvent.primaryCategory,
+          text: activeEvent.resumen || activeEvent.primaryCategory,
           url: shareUrl,
         });
       } else {
@@ -44,13 +103,16 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6" onClick={onClose}>
+      <div
+        className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6"
+        onClick={onClose}
+      >
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 32 }}
-          transition={{ duration: 0.24 }}
-          className="relative max-h-[92vh] w-full max-w-4xl overflow-hidden rounded-t-[32px] bg-background shadow-[0_40px_90px_rgba(0,0,0,0.35)] sm:rounded-[32px]"
+          transition={{ duration: 0.22 }}
+          className="relative max-h-[94vh] w-full max-w-3xl overflow-y-auto rounded-t-3xl bg-background shadow-[0_40px_90px_rgba(0,0,0,0.35)] sm:rounded-3xl"
           onClick={(dialogEvent) => dialogEvent.stopPropagation()}
           role="dialog"
           aria-modal="true"
@@ -58,141 +120,170 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
         >
           <button
             onClick={onClose}
-            className="absolute right-4 top-4 z-10 inline-flex h-11 w-11 items-center justify-center rounded-full bg-black/55 text-white backdrop-blur-md hover:bg-black/70"
+            className="absolute right-4 top-4 z-10 inline-flex h-10 w-10 items-center justify-center rounded-full bg-black/55 text-white backdrop-blur-md hover:bg-black/70"
             aria-label="Cerrar detalle del evento"
           >
             <X className="h-5 w-5" />
           </button>
 
-          <div className="grid gap-0 lg:grid-cols-[1.15fr_0.85fr]">
-            <div className="relative aspect-[16/11] min-h-[280px] lg:min-h-full">
-              <MediaCover src={event.imagen} alt={event.titulo} className="h-full w-full object-cover" fallbackLabel={event.primaryCategory} />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <div className="mb-3 flex flex-wrap gap-2">
-                  <span className="rounded-full bg-white/16 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.14em]">{event.primaryCategory}</span>
-                  <span className={cn(
-                    'rounded-full px-3 py-1 text-[11px] font-semibold',
-                    event.isFree ? 'bg-emerald-500 text-white' : 'bg-white/88 text-foreground',
-                  )}>
-                    {event.priceLabel}
-                  </span>
-                  {matchScore && matchScore > 0 ? (
-                    <span className="rounded-full bg-primary px-3 py-1 text-[11px] font-semibold text-primary-foreground">
-                      {matchScore}% encaje
-                    </span>
-                  ) : null}
-                </div>
-                <h2 id="event-modal-title" className="max-w-2xl text-3xl font-display font-bold leading-tight">
-                  {event.titulo}
-                </h2>
-                {event.subtitulo ? <p className="mt-2 max-w-2xl text-sm text-white/85">{event.subtitulo}</p> : null}
-              </div>
-            </div>
-
-            <div className="max-h-[92vh] overflow-y-auto p-6">
-              <div className="space-y-5">
-                <div className="grid gap-3 rounded-[28px] border border-border/70 bg-card/75 p-5">
-                  <div className="flex items-start gap-3">
-                    <CalendarDays className="mt-0.5 h-5 w-5 text-primary" />
-                    <div>
-                      <p className="text-sm font-semibold">{formatLongDate(event.primaryDate)}</p>
-                      <p className="text-sm text-muted-foreground">{event.scheduleLabel}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <MapPin className="mt-0.5 h-5 w-5 text-primary" />
-                    <div>
-                      <p className="text-sm font-semibold">{event.locationLabel}</p>
-                      <p className="text-sm text-muted-foreground">{event.sourceLabel}</p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <h3 className="text-lg font-display font-bold">Por qué merece la pena</h3>
-                  <p className="text-sm leading-7 text-muted-foreground">
-                    {event.contenido || event.descripcion || event.resumen || 'Plan destacado dentro de la agenda cultural y de ocio de Madrid.'}
-                  </p>
-                </div>
-
-                {event.sesiones && event.sesiones.length > 0 ? (
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-display font-bold">Próximas sesiones</h3>
-                    <div className="grid gap-2">
-                      {event.sesiones.slice(0, 5).map((session) => (
-                        <div key={`${event.id}-${session.fecha}-${session.datetime || 'all-day'}`} className="flex items-center justify-between rounded-2xl border border-border/70 bg-background/80 px-4 py-3 text-sm">
-                          <span>{formatLongDate(session.datetime || session.fecha)}</span>
-                          <span className="font-semibold text-primary">
-                            {session.datetime ? formatTime(session.datetime) : 'Todo el día'}
-                          </span>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-
-                {event.sourceLinks.length > 0 ? (
-                  <div className="space-y-3">
-                    <h3 className="text-lg font-display font-bold">Dónde verlo o comprar</h3>
-                    <div className="grid gap-2">
-                      {event.sourceLinks.map((link) => (
-                        <a
-                          key={`${event.id}-${link.fuente}-${link.url}`}
-                          href={link.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="flex items-center justify-between rounded-2xl border border-border/70 bg-card/70 px-4 py-3 hover:bg-card"
-                        >
-                          <div>
-                            <p className="text-sm font-semibold">{link.fuente.replace(/_/g, ' ')}</p>
-                            <p className="text-xs text-muted-foreground">
-                              {link.kind || 'detalle'} · {link.es_gratis ? 'Gratis' : event.priceLabel}
-                            </p>
-                          </div>
-                          <ExternalLink className="h-4 w-4" />
-                        </a>
-                      ))}
-                    </div>
-                  </div>
-                ) : null}
-
-                {event.categoriesList.length > 0 ? (
-                  <div className="flex flex-wrap gap-2">
-                    {event.categoriesList.slice(0, 6).map((category) => (
-                      <span key={category} className="rounded-full bg-secondary px-3 py-1 text-xs font-medium text-secondary-foreground">
-                        {category}
-                      </span>
-                    ))}
-                  </div>
-                ) : null}
-
-                <div className="flex flex-col gap-3 sm:flex-row">
-                  <button
-                    onClick={onToggleAgenda}
+          <div className="relative aspect-[16/8] min-h-[220px] overflow-hidden">
+            <CategoryCover
+              src={activeEvent.imagen}
+              alt=""
+              category={activeEvent.primaryCategory}
+              seed={activeEvent.id}
+              iconSize={64}
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/25 to-transparent" />
+            <div className="absolute bottom-0 left-0 right-0 p-5 text-white sm:p-6">
+              <div className="mb-2.5 flex flex-wrap gap-2">
+                <span className="rounded-full bg-white/18 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] backdrop-blur-sm">
+                  {activeEvent.primaryCategory}
+                </span>
+                {activeEvent.priceLabel ? (
+                  <span
                     className={cn(
-                      'inline-flex w-full items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold',
-                      inAgenda ? 'bg-foreground text-background' : 'bg-primary text-primary-foreground',
+                      'rounded-full px-3 py-1 text-[11px] font-bold',
+                      activeEvent.isFree ? 'bg-emerald-500 text-white' : 'bg-white/90 text-slate-900',
                     )}
                   >
-                    <Ticket className="h-4 w-4" />
-                    {inAgenda ? 'Guardado en agenda' : 'Añadir a mi agenda'}
-                  </button>
-                  <button
-                    onClick={handleShare}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border/80 px-5 py-3 text-sm font-semibold hover:bg-muted/60"
-                  >
-                    <Share2 className="h-4 w-4" />
-                    Compartir plan
-                  </button>
-                </div>
+                    {activeEvent.priceLabel}
+                  </span>
+                ) : null}
+                {matchScore && matchScore > 20 ? (
+                  <span className="rounded-full bg-primary px-3 py-1 text-[11px] font-bold text-primary-foreground">
+                    {matchScore}% para ti
+                  </span>
+                ) : null}
+              </div>
+              <h2 id="event-modal-title" className="max-w-2xl font-display text-2xl font-bold leading-tight sm:text-3xl">
+                {activeEvent.titulo}
+              </h2>
+              {activeEvent.subtitulo ? (
+                <p className="mt-1.5 max-w-2xl text-sm text-white/85">{activeEvent.subtitulo}</p>
+              ) : null}
+            </div>
+          </div>
 
-                {feedback ? <p className="text-sm font-medium text-primary">{feedback}</p> : null}
-                <p className="text-xs text-muted-foreground">
-                  Actualizado para la navegación de hoy. {event.relativeLabel !== 'Sin fecha concreta' ? `Se celebra ${event.relativeLabel.toLocaleLowerCase('es-ES')}.` : 'La fecha exacta está por confirmar.'}
-                </p>
+          <div className="space-y-5 p-5 sm:p-6">
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div className="flex items-start gap-3 rounded-2xl border border-border/70 bg-card/75 p-4">
+                <CalendarDays className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold">
+                    {activeEvent.isOngoing
+                      ? `En curso${activeEvent.endDate ? ` · hasta el ${formatLongDate(activeEvent.endDate)}` : ''}`
+                      : formatLongDate(activeEvent.primaryDate)}
+                  </p>
+                  <p className="text-sm text-muted-foreground">{activeEvent.scheduleLabel}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3 rounded-2xl border border-border/70 bg-card/75 p-4">
+                <MapPin className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold">{activeEvent.lugar || 'Madrid'}</p>
+                  {activeEvent.direccion ? (
+                    <p className="text-sm text-muted-foreground">{activeEvent.direccion}</p>
+                  ) : null}
+                  {maps ? (
+                    <a
+                      href={maps}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:underline"
+                    >
+                      <Navigation className="h-3.5 w-3.5" />
+                      Cómo llegar
+                    </a>
+                  ) : null}
+                </div>
               </div>
             </div>
+
+            {body ? (
+              <div className="space-y-2">
+                <h3 className="font-display text-lg font-bold">El plan</h3>
+                <p className="text-sm leading-7 text-muted-foreground">{body}</p>
+              </div>
+            ) : null}
+
+            {activeEvent.sesiones && activeEvent.sesiones.length > 1 ? (
+              <div className="space-y-2">
+                <h3 className="font-display text-lg font-bold">Próximas fechas</h3>
+                <div className="grid gap-2 sm:grid-cols-2">
+                  {activeEvent.sesiones.slice(0, 6).map((session) => (
+                    <div
+                      key={`${activeEvent.id}-${session.fecha}-${session.datetime || 'all-day'}`}
+                      className="flex items-center justify-between rounded-xl border border-border/70 bg-background/80 px-3.5 py-2.5 text-sm"
+                    >
+                      <span>{formatLongDate(session.datetime || session.fecha)}</span>
+                      <span className="font-semibold text-primary">
+                        {session.datetime ? formatTime(session.datetime) : ''}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            {activeEvent.sourceLinks.length > 0 ? (
+              <div className="space-y-2">
+                <h3 className="font-display text-lg font-bold">Entradas e info oficial</h3>
+                <div className="grid gap-2">
+                  {activeEvent.sourceLinks.map((link) => (
+                    <a
+                      key={`${activeEvent.id}-${link.fuente}-${link.url}`}
+                      href={link.url}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center justify-between gap-3 rounded-xl border border-border/70 bg-card/70 px-4 py-3 transition-colors hover:border-primary/40 hover:bg-card"
+                    >
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold">
+                          {LINK_KIND_LABELS[link.kind || 'detalle'] || 'Ver detalle'} · {sourceLabel(link.fuente)}
+                        </p>
+                        <p className="line-clamp-1 text-xs text-muted-foreground">{link.url.replace(/^https?:\/\//, '')}</p>
+                      </div>
+                      <ExternalLink className="h-4 w-4 flex-shrink-0 text-muted-foreground" />
+                    </a>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+
+            <div className="flex flex-col gap-2.5 sm:flex-row">
+              <button
+                onClick={onToggleAgenda}
+                className={cn(
+                  'inline-flex h-12 w-full items-center justify-center gap-2 rounded-full px-5 text-sm font-semibold transition-colors',
+                  inAgenda ? 'bg-foreground text-background' : 'bg-primary text-primary-foreground',
+                )}
+              >
+                {inAgenda ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
+                {inAgenda ? 'Guardado en tu agenda' : 'Guardar en mi agenda'}
+              </button>
+              {calendar ? (
+                <a
+                  href={calendar}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-border/80 px-5 text-sm font-semibold hover:bg-muted/60"
+                >
+                  <CalendarPlus className="h-4 w-4" />
+                  Añadir al calendario
+                </a>
+              ) : null}
+              <button
+                onClick={handleShare}
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full border border-border/80 px-5 text-sm font-semibold hover:bg-muted/60"
+              >
+                <Share2 className="h-4 w-4" />
+                Compartir
+              </button>
+            </div>
+
+            {feedback ? <p className="text-sm font-medium text-primary">{feedback}</p> : null}
           </div>
         </motion.div>
       </div>

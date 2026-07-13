@@ -20,12 +20,12 @@ def _parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--trigger-source",
-        default=os.getenv("MAD_PLAN_TRIGGER_SOURCE", "simulated-cron"),
+        default=os.getenv("MAD_PLAN_TRIGGER_SOURCE", "local"),
         help="Trigger source stored in the run manifest",
     )
     parser.add_argument(
         "--trigger-schedule",
-        default=os.getenv("MAD_PLAN_TRIGGER_SCHEDULE", "0 6 * * * Europe/Madrid"),
+        default=os.getenv("MAD_PLAN_TRIGGER_SCHEDULE", "15 4 * * * UTC"),
         help="Schedule label stored in the run manifest",
     )
     parser.add_argument(
@@ -33,6 +33,11 @@ def _parse_args() -> argparse.Namespace:
         choices=("full", "fast"),
         default=os.getenv("MAD_PLAN_FEVER_MODE", "full"),
         help="Whether Fever runs in full or fast mode",
+    )
+    parser.add_argument(
+        "--no-geocode",
+        action="store_true",
+        help="Skip the geocoding pass",
     )
     return parser.parse_args()
 
@@ -44,4 +49,5 @@ if __name__ == "__main__":
         trigger_schedule=args.trigger_schedule,
         trigger_source=args.trigger_source,
         fever_mode=args.fever_mode,
+        geocode=not args.no_geocode,
     )
