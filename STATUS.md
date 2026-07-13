@@ -1,6 +1,31 @@
 # STATUS
 
-Última revisión: 2026-07-13 (overhaul de producto final).
+Última revisión: 2026-07-14 (ronda de QA profunda tras el overhaul).
+
+## QA 2026-07-14 — fallos encontrados y corregidos
+
+- **Fechas**: los planes de rango "en curso" se ordenaban por su fecha de
+  clausura; la hora mostrada podía venir de una sesión ya caducada; los
+  programas municipales eternos decían "hasta 2032"; los planes editoriales
+  sin fecha decían "Fecha por confirmar" (ahora "Cuando quieras"); los eventos
+  puntuales con hora sobrevivían hasta medianoche tras empezar (ahora caducan
+  a las 3 h). `resolveEventDates` es ahora consciente de `modo_fecha`.
+- **Mapa**: 137 eventos con dirección genérica apilados en Puerta del Sol
+  (geocoding genérico eliminado y coords sin venue concreto anuladas); 67
+  eventos con coordenadas fuera de Madrid (anuladas); venues con 50+ eventos
+  bajo un marcador que solo abría uno (ahora un marcador por sitio con lista
+  de planes en el popup).
+- **Variedad**: ~320 tarjetas duplicadas fusionadas — mismo evento recurrente
+  en fechas distintas (una tarjeta con sesiones), títulos reordenados o
+  subconjunto el mismo día, variantes de nombre del mismo venue, duplicados
+  inglés/español de Matadero (scraper filtra `/schedule/`); portada
+  diversificada (máx. 2 tarjetas seguidas de la misma categoría).
+- **Búsqueda**: insensible a acentos ("musica" = "música") y multi-palabra
+  con AND ("jazz retiro").
+- **Otros**: 147 títulos EN MAYÚSCULAS pasados a sentence-case; el quiz ya
+  ordena resultados también con solo un vibe elegido; los destacados excluyen
+  artículos editoriales sin fecha; contador de agenda coherente con los planes
+  aún vigentes.
 
 ## Estado del producto
 

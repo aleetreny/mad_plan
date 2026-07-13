@@ -406,6 +406,13 @@ def scrape_matadero() -> list[dict[str, Any]]:
         lookup = item["lookup"]
         attributes = resource.get("attributes", {})
 
+        # The JSON:API also returns the English translation of each activity
+        # (alias under /schedule/); keep only the Spanish edition.
+        alias = (attributes.get("path") or {}).get("alias") or ""
+        langcode = attributes.get("langcode")
+        if langcode == "en" or alias.startswith("/schedule/"):
+            continue
+
         institution = _extract_institution(resource, lookup)
         purchase_url = _extract_purchase_url(attributes)
         info_url = _extract_info_url(attributes)

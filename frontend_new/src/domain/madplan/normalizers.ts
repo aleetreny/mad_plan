@@ -90,7 +90,13 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
     endDate: dates.end,
     isOngoing: dates.isOngoing,
     scheduleLabel: formatEventSchedule(event, dates, now),
-    relativeLabel: dates.isOngoing ? 'En curso' : formatRelativeDay(primaryDate, now),
+    relativeLabel: dates.isOngoing
+      ? 'En curso'
+      : primaryDate
+        ? formatRelativeDay(primaryDate, now)
+        : event.modo_fecha === 'sin_fecha'
+          ? 'Cuando quieras'
+          : 'Fecha por confirmar',
     priceLabel: normalizePriceLabel(event.precio, event.es_gratis),
     locationLabel: formatLocationLabel(event),
     primaryCategory,

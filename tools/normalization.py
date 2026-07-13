@@ -863,6 +863,284 @@ def _prefer_primary(current: dict[str, Any], incoming: dict[str, Any]) -> tuple[
     return dict(current), incoming
 
 
+def _init_merge_base(record: dict[str, Any]) -> dict[str, Any]:
+    base = dict(record)
+    base["fuentes_relacionadas"] = _dedupe_strings([record.get("fuente")])
+    base["ids_relacionados"] = _related_ids(record)
+    base["metadata"] = _merge_metadata(
+        base.get("metadata") or {},
+        {"source_links": _merge_source_links([], [entry] if (entry := _source_link_entry(record)) else [])},
+    )
+    return base
+
+
+def _merge_pair(current: dict[str, Any], incoming: dict[str, Any]) -> dict[str, Any]:
+    """Merge two records describing the same plan, keeping the richest data."""
+    primary, secondary = _prefer_primary(current, incoming)
+    merged = dict(primary)
+
+    for list_field in ("categorias", "etiquetas", "fechas_disponibles"):
+        merged[list_field] = _dedupe_strings(
+            list(primary.get(list_field) or []) + list(secondary.get(list_field) or [])
+        )
+
+    session_map: dict[str, dict[str, Any]] = {}
+    for session in (primary.get("sesiones") or []) + (secondary.get("sesiones") or []):
+        key_session = session.get("datetime") or session.get("fecha")
+        if not key_session:
+            continue
+        session_map[key_session] = session
+    merged["sesiones"] = [session_map[key] for key in sorted(session_map)]
+
+    merged["ids_relacionados"] = _dedupe_strings(
+        _related_ids(primary) + _related_ids(secondary)
+    )
+    merged["fuentes_relacionadas"] = _dedupe_strings(
+        list(primary.get("fuentes_relacionadas") or [primary.get("fuente")])
+        + list(secondary.get("fuentes_relacionadas") or [secondary.get("fuente")])
+    )
+    merged["metadata"] = _merge_metadata(
+        primary.get("metadata") or {}, secondary.get("metadata") or {}
+    )
+    merged["metadata"] = _merge_metadata(
+        merged.get("metadata") or {},
+        {
+            "source_links": _merge_source_links(
+                (primary.get("metadata") or {}).get("source_links") or [],
+                ([link] if (link := _source_link_entry(secondary)) else []),
+            )
+        },
+    )
+
+    for field in (
+        "subtitulo",
+        "resumen",
+        "descripcion",
+        "contenido",
+        "url_articulo",
+        "url_compra",
+        "url",
+        "imagen",
+        "lugar",
+        "direccion",
+        "latitud",
+        "longitud",
+        "precio",
+        "moneda",
+        "es_gratis",
+        "publicado_en",
+        "actualizado_en",
+        "fecha_inicio",
+        "fecha_fin",
+        "datetime_inicio",
+        "datetime_fin",
+        "tiene_hora_inicio",
+        "tiene_hora_fin",
+        "modo_fecha",
+        "estado_temporal",
+        "categoria_principal",
+        "proxima_fecha",
+        "proximo_datetime",
+        "sort_datetime",
+        "vigente_hasta",
+    ):
+        current_value = merged.get(field)
+        incoming_value = secondary.get(field)
+        if current_value in (None, "", [], False) and incoming_value not in (None, "", []):
+            merged[field] = incoming_value
+
+    if len(_clean_text(secondary.get("contenido"))) > len(_clean_text(merged.get("contenido"))):
+        merged["contenido"] = secondary.get("contenido")
+    if len(_clean_text(secondary.get("descripcion"))) > len(_clean_text(merged.get("descripcion"))):
+        merged["descripcion"] = secondary.get("descripcion")
+    if len(_clean_text(secondary.get("resumen"))) > len(_clean_text(merged.get("resumen"))):
+        merged["resumen"] = secondary.get("resumen")
+
+    merged["es_gratis"] = merged.get("precio") == 0.0 if merged.get("precio") is not None else merged.get("es_gratis")
+    return merged
+
+
+def _title_token_key(record: dict[str, Any]) -> str | None:
+    """Order-insensitive title fingerprint for fuzzy dedupe.
+
+    Returns None for titles too short/generic to be safely fuzzy-matched
+    ("Concierto", "Taller"…). Two distinctive words are enough: "Elements
+    Cave" or "Home Sweet Home" must fingerprint equal across sources.
+    """
+    slug = _slugify(_clean_text(record.get("titulo")))
+    tokens = sorted({token for token in slug.split("-") if token})
+    if len(tokens) < 2 or len(slug.replace("-", "")) < 10:
+        return None
+    return " ".join(tokens)
+
+
+def _compatible_places(left: dict[str, Any], right: dict[str, Any]) -> bool:
+    left_place = _merge_place_key(left)
+    right_place = _merge_place_key(right)
+    if not left_place or not right_place:
+        return True
+    # Sources annotate the same venue differently ("Casa del Reloj" vs
+    # "Casa del Reloj (Arganzuela)"): prefix equality catches those variants.
+    return left_place.startswith(right_place) or right_place.startswith(left_place)
+
+
+def _fuzzy_dedupe_same_day(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Merge same-day records whose titles are reorderings or subsets.
+
+    Catches near-duplicates coming from different feeds: "Acto Solemne de
+    Izado de la Bandera Nacional" vs "Acto de izado solemne de la Bandera
+    Nacional en honor a…" share the same day and venue-compatible location,
+    and one title's word set is contained in the other's.
+    """
+    by_day: dict[str, list[tuple[set[str], dict[str, Any]]]] = {}
+    passthrough: list[dict[str, Any]] = []
+    for record in records:
+        token_key = _title_token_key(record)
+        day = record.get("fecha_inicio") or ""
+        if not token_key or not day:
+            passthrough.append(record)
+            continue
+        by_day.setdefault(day, []).append((set(token_key.split()), record))
+
+    result = list(passthrough)
+    for items in by_day.values():
+        # Richest titles first so subsets fold into them.
+        items.sort(key=lambda item: -len(item[0]))
+        accepted: list[list[Any]] = []  # [token_set, record]
+        for tokens, record in items:
+            target = next(
+                (
+                    entry
+                    for entry in accepted
+                    if tokens <= entry[0]
+                    and (len(tokens) >= 3 or tokens == entry[0])
+                    and _compatible_places(entry[1], record)
+                ),
+                None,
+            )
+            if target is None:
+                accepted.append([tokens, record])
+            else:
+                target[1] = _merge_pair(target[1], record)
+        result.extend(record for _, record in accepted)
+    return result
+
+
+def _session_from_record(record: dict[str, Any]) -> dict[str, Any] | None:
+    day = record.get("fecha_inicio")
+    if not day:
+        return None
+    has_time = bool(record.get("tiene_hora_inicio")) and bool(record.get("datetime_inicio"))
+    return {
+        "fecha": day,
+        "datetime": record.get("datetime_inicio") if has_time else None,
+        "tiene_hora": has_time,
+    }
+
+
+def _combine_recurring(group: list[dict[str, Any]], *, today: date) -> dict[str, Any]:
+    """Collapse several dated editions of the same plan at the same venue."""
+    ordered = sorted(group, key=lambda item: item.get("fecha_inicio") or "")
+    upcoming = [item for item in ordered if (item.get("fecha_inicio") or "") >= today.isoformat()]
+    base = upcoming[0] if upcoming else ordered[0]
+
+    merged = base
+    for record in ordered:
+        if record is base:
+            continue
+        merged = _merge_pair(merged, record)
+
+    session_map: dict[str, dict[str, Any]] = {}
+    for record in ordered:
+        for session in record.get("sesiones") or []:
+            key = session.get("datetime") or session.get("fecha")
+            if key:
+                session_map[key] = session
+        own = _session_from_record(record)
+        if own:
+            key = own["datetime"] or own["fecha"]
+            session_map.setdefault(key, own)
+    sessions = [session_map[key] for key in sorted(session_map)]
+
+    days = sorted({session["fecha"] for session in sessions})
+    future_sessions = [session for session in sessions if session["fecha"] >= today.isoformat()]
+    next_session = future_sessions[0] if future_sessions else None
+
+    merged["sesiones"] = future_sessions or sessions[-1:]
+    merged["fechas_disponibles"] = [
+        session["datetime"] or session["fecha"] for session in merged["sesiones"]
+    ]
+    merged["fecha_inicio"] = days[0] if days else merged.get("fecha_inicio")
+    last_end = max(
+        [record.get("fecha_fin") or record.get("fecha_inicio") or "" for record in ordered]
+        + ([days[-1]] if days else [])
+    )
+    merged["fecha_fin"] = last_end or merged.get("fecha_fin")
+    if len(days) > 2:
+        merged["modo_fecha"] = "multiple"
+    if next_session:
+        merged["proxima_fecha"] = next_session["fecha"]
+        merged["proximo_datetime"] = next_session["datetime"] or _start_of_day_iso(
+            date.fromisoformat(next_session["fecha"])
+        )
+        merged["sort_datetime"] = merged["proximo_datetime"]
+        merged["datetime_inicio"] = next_session["datetime"]
+        merged["tiene_hora_inicio"] = bool(next_session["datetime"])
+    if merged.get("fecha_fin"):
+        merged["vigente_hasta"] = _effective_end_iso(
+            _parsed_temporal_from_day(date.fromisoformat(merged["fecha_fin"]))
+        )
+    start_parsed = _parse_temporal(merged.get("fecha_inicio"))
+    end_parsed = _parse_temporal(merged.get("fecha_fin"))
+    merged["estado_temporal"] = _plan_temporal_status(start_parsed, end_parsed, today=today)
+    return merged
+
+
+def _group_recurring_events(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """One card per recurring plan: same title + same venue, several dates."""
+    today = date.today()
+    grouped: dict[str, list[dict[str, Any]]] = {}
+    passthrough: list[dict[str, Any]] = []
+    for record in records:
+        token_key = _title_token_key(record)
+        if not token_key:
+            passthrough.append(record)
+            continue
+        distinctive = len(token_key.split()) >= 4
+        if not _merge_place_key(record) and not distinctive:
+            # Short title and no venue: too ambiguous to fuzzy-group.
+            passthrough.append(record)
+            continue
+        grouped.setdefault(token_key, []).append(record)
+
+    result = list(passthrough)
+    for group in grouped.values():
+        # Cluster by venue compatibility inside each title group, so the same
+        # film shown at different cinemas stays as separate cards while venue
+        # naming variants ("X" vs "X (Arganzuela)") collapse together.
+        clusters: list[list[dict[str, Any]]] = []
+        for record in group:
+            target = next(
+                (
+                    cluster
+                    for cluster in clusters
+                    if all(_compatible_places(item, record) for item in cluster)
+                ),
+                None,
+            )
+            if target is None:
+                clusters.append([record])
+            else:
+                target.append(record)
+
+        for cluster in clusters:
+            if len(cluster) == 1:
+                result.append(cluster[0])
+            else:
+                result.append(_combine_recurring(cluster, today=today))
+    return result
+
+
 def merge_plan_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     merged_by_key: dict[str, dict[str, Any]] = {}
 
@@ -870,102 +1148,13 @@ def merge_plan_records(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
         key = plan_merge_key(record)
         current = merged_by_key.get(key)
         if current is None:
-            base = dict(record)
-            base["fuentes_relacionadas"] = _dedupe_strings([record.get("fuente")])
-            base["ids_relacionados"] = _related_ids(record)
-            base["metadata"] = _merge_metadata(
-                base.get("metadata") or {},
-                {"source_links": _merge_source_links([], [_source_link_entry(record)] if _source_link_entry(record) else [])},
-            )
-            merged_by_key[key] = base
-            continue
+            merged_by_key[key] = _init_merge_base(record)
+        else:
+            merged_by_key[key] = _merge_pair(current, record)
 
-        primary, secondary = _prefer_primary(current, record)
-        merged = dict(primary)
+    merged_records = _fuzzy_dedupe_same_day(list(merged_by_key.values()))
+    merged_records = _group_recurring_events(merged_records)
 
-        for list_field in ("categorias", "etiquetas", "fechas_disponibles"):
-            merged[list_field] = _dedupe_strings(
-                list(primary.get(list_field) or []) + list(secondary.get(list_field) or [])
-            )
-
-        primary_sessions = primary.get("sesiones") or []
-        secondary_sessions = secondary.get("sesiones") or []
-        session_map: dict[str, dict[str, Any]] = {}
-        for session in primary_sessions + secondary_sessions:
-            key_session = session.get("datetime") or session.get("fecha")
-            if not key_session:
-                continue
-            session_map[key_session] = session
-        merged["sesiones"] = [session_map[key] for key in sorted(session_map)]
-
-        merged["ids_relacionados"] = _dedupe_strings(
-            _related_ids(primary) + _related_ids(secondary)
-        )
-        merged["fuentes_relacionadas"] = _dedupe_strings(
-            list(primary.get("fuentes_relacionadas") or [primary.get("fuente")])
-            + list(secondary.get("fuentes_relacionadas") or [secondary.get("fuente")])
-        )
-        merged["metadata"] = _merge_metadata(
-            primary.get("metadata") or {}, secondary.get("metadata") or {}
-        )
-        merged["metadata"] = _merge_metadata(
-            merged.get("metadata") or {},
-            {
-                "source_links": _merge_source_links(
-                    (primary.get("metadata") or {}).get("source_links") or [],
-                    ([link] if (link := _source_link_entry(secondary)) else []),
-                )
-            },
-        )
-
-        for field in (
-            "subtitulo",
-            "resumen",
-            "descripcion",
-            "contenido",
-            "url_articulo",
-            "url_compra",
-            "url",
-            "imagen",
-            "lugar",
-            "direccion",
-            "latitud",
-            "longitud",
-            "precio",
-            "moneda",
-            "es_gratis",
-            "publicado_en",
-            "actualizado_en",
-            "fecha_inicio",
-            "fecha_fin",
-            "datetime_inicio",
-            "datetime_fin",
-            "tiene_hora_inicio",
-            "tiene_hora_fin",
-            "modo_fecha",
-            "estado_temporal",
-            "categoria_principal",
-            "proxima_fecha",
-            "proximo_datetime",
-            "sort_datetime",
-            "vigente_hasta",
-        ):
-            current_value = merged.get(field)
-            incoming_value = secondary.get(field)
-            if current_value in (None, "", [], False) and incoming_value not in (None, "", []):
-                merged[field] = incoming_value
-
-        if len(_clean_text(secondary.get("contenido"))) > len(_clean_text(merged.get("contenido"))):
-            merged["contenido"] = secondary.get("contenido")
-        if len(_clean_text(secondary.get("descripcion"))) > len(_clean_text(merged.get("descripcion"))):
-            merged["descripcion"] = secondary.get("descripcion")
-        if len(_clean_text(secondary.get("resumen"))) > len(_clean_text(merged.get("resumen"))):
-            merged["resumen"] = secondary.get("resumen")
-
-        merged["es_gratis"] = merged.get("precio") == 0.0 if merged.get("precio") is not None else merged.get("es_gratis")
-        merged_by_key[key] = merged
-
-    merged_records = list(merged_by_key.values())
     for record in merged_records:
         related_sources = _dedupe_strings(record.get("fuentes_relacionadas") or [])
         record["fuentes_relacionadas"] = related_sources

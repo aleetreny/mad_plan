@@ -48,42 +48,62 @@ export interface EventDates {
   primary: Date | null;
   end: Date | null;
   isOngoing: boolean;
+  /** ISO string whose hour matches `primary` (null when there is no real hour). */
+  timeSource: string | null;
 }
 
 /**
  * Compute the effective dates client-side. The feed's `proxima_fecha` is
- * computed at scrape time and can lag a few days behind, so it is
+ * computed at scrape time and can lag a few days behind, so everything is
  * recalculated here against the real "today".
  */
 export function resolveEventDates(event: RawMadPlanEvent, now = new Date()): EventDates {
   const todayStart = getStartOfToday(now);
+  const noonToday = new Date(todayStart.getTime() + 12 * 3600000);
   const start = parseMadPlanDate(event.datetime_inicio || event.fecha_inicio);
   const end = parseMadPlanDate(event.fecha_fin);
+  const rangeCoversToday = Boolean(start && end && start < todayStart && end >= todayStart);
 
-  const futureSession = (event.sesiones || [])
-    .map((session) => parseMadPlanDate(session.datetime || session.fecha))
-    .filter((date): date is Date => Boolean(date && date >= todayStart))
-    .sort((a, b) => a.getTime() - b.getTime())[0] || null;
+  const futureSessions = (event.sesiones || [])
+    .map((session) => ({
+      date: parseMadPlanDate(session.datetime || session.fecha),
+      iso: session.datetime || null,
+    }))
+    .filter((entry): entry is { date: Date; iso: string | null } =>
+      Boolean(entry.date && entry.date >= todayStart),
+    )
+    .sort((a, b) => a.date.getTime() - b.date.getTime());
+  const nextSession = futureSessions[0] || null;
 
-  const rangeCoversToday = Boolean(
-    start && end && start < todayStart && end >= todayStart,
-  );
-
-  if (futureSession) {
-    return { primary: futureSession, end, isOngoing: rangeCoversToday };
+  // Multi-date plans: the next real session is what the user can attend.
+  if (event.modo_fecha === 'multiple' && nextSession) {
+    return { primary: nextSession.date, end, isOngoing: false, timeSource: nextSession.iso };
   }
-  if (start && start >= todayStart) {
-    return { primary: start, end, isOngoing: false };
-  }
-  const noonToday = new Date(todayStart.getTime() + 12 * 3600000);
+
+  // Window plans already open: they are "En curso" today, regardless of the
+  // stored window endpoints.
   if (rangeCoversToday) {
-    return { primary: noonToday, end, isOngoing: true };
+    return { primary: noonToday, end, isOngoing: true, timeSource: null };
   }
+
+  if (start && start >= todayStart) {
+    return { primary: start, end, isOngoing: false, timeSource: event.datetime_inicio || null };
+  }
+
+  if (nextSession) {
+    return { primary: nextSession.date, end, isOngoing: false, timeSource: nextSession.iso };
+  }
+
   if (end && end >= todayStart) {
-    return { primary: noonToday, end, isOngoing: true };
+    return { primary: noonToday, end, isOngoing: true, timeSource: null };
   }
+
   const fallback = parseMadPlanDate(event.proximo_datetime || event.proxima_fecha || event.sort_datetime);
-  return { primary: fallback && fallback >= todayStart ? fallback : null, end, isOngoing: false };
+  if (fallback && fallback >= todayStart) {
+    const fallbackIso = event.proximo_datetime || null;
+    return { primary: fallback, end, isOngoing: false, timeSource: fallbackIso };
+  }
+  return { primary: null, end, isOngoing: false, timeSource: null };
 }
 
 export function formatShortDate(raw?: string | Date | null): string {
@@ -115,7 +135,6 @@ export function formatTime(raw?: string | Date | null): string {
   const hours = date.getHours();
   const minutes = date.getMinutes();
   if (hours === 0 && minutes === 0) return '';
-  if (hours === 12 && minutes === 0) return '';
 
   return new Intl.DateTimeFormat('es-ES', {
     hour: '2-digit',
@@ -123,16 +142,23 @@ export function formatTime(raw?: string | Date | null): string {
   }).format(date);
 }
 
+/** Ongoing plans ending further out than this read as "permanent" to users. */
+const ONGOING_FAR_FUTURE_MS = 456 * 86400000; // ~15 meses
+
 /** Card-level label: "Hoy · 20:30", "En curso · hasta 24 sep", "vie, 17 jul"… */
 export function formatEventSchedule(event: RawMadPlanEvent, dates: EventDates, now = new Date()): string {
   if (dates.isOngoing) {
-    const until = dates.end ? ` · hasta ${formatShortDate(dates.end)}` : '';
+    const farFuture = dates.end && dates.end.getTime() - now.getTime() > ONGOING_FAR_FUTURE_MS;
+    const until = dates.end && !farFuture ? ` · hasta ${formatShortDate(dates.end)}` : '';
     return `En curso${until}`;
   }
-  if (!dates.primary) return 'Fecha por confirmar';
+  if (!dates.primary) {
+    // Undated editorial picks are open plans, not events pending a date.
+    return event.modo_fecha === 'sin_fecha' ? 'Cuando quieras' : 'Fecha por confirmar';
+  }
 
   const dayLabel = formatRelativeDay(dates.primary, now);
-  const time = formatTime(event.proximo_datetime || event.datetime_inicio);
+  const time = formatTime(dates.timeSource);
   return time ? `${dayLabel} · ${time}` : dayLabel;
 }
 
@@ -183,12 +209,21 @@ export function formatLocationLabel(event: RawMadPlanEvent): string {
   return event.lugar || event.direccion || 'Ubicación por confirmar';
 }
 
+/** Lowercase + accent-insensitive, so "musica" matches "música". */
+export function foldSearchText(text: string): string {
+  return text
+    .toLocaleLowerCase('es-ES')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '');
+}
+
 export function getSearchBlob(parts: Array<string | null | undefined | string[]>): string {
-  return parts
-    .flatMap((part) => (Array.isArray(part) ? part : [part]))
-    .filter(Boolean)
-    .join(' ')
-    .toLocaleLowerCase('es-ES');
+  return foldSearchText(
+    parts
+      .flatMap((part) => (Array.isArray(part) ? part : [part]))
+      .filter(Boolean)
+      .join(' '),
+  );
 }
 
 /** Distance in km between two coordinates (equirectangular approx, fine at city scale). */
@@ -200,11 +235,29 @@ export function distanceKm(lat1: number, lon1: number, lat2: number, lon2: numbe
   return Math.sqrt(dLat * dLat + dLon * dLon);
 }
 
+/** Grace period before a timed event that already started stops being shown. */
+const STARTED_EVENT_GRACE_MS = 3 * 3600000;
+
+function hasRealTime(iso: string): boolean {
+  const match = iso.match(/T(\d{2}):(\d{2}):?(\d{2})?/);
+  if (!match) return false;
+  const stamp = `${match[1]}:${match[2]}`;
+  return stamp !== '00:00' && stamp !== '23:59';
+}
+
 export function isUpcomingEvent(event: RawMadPlanEvent, now = new Date()): boolean {
   const today = getStartOfToday(now);
 
-  const end = parseMadPlanDate(event.vigente_hasta || event.fecha_fin);
-  if (end) return end >= today;
+  const endIso = event.vigente_hasta || event.fecha_fin;
+  const end = parseMadPlanDate(endIso);
+  if (end) {
+    // A one-off timed plan (concert at 21:00) should disappear a few hours
+    // after it starts, not survive until midnight looking bookable.
+    if (endIso && hasRealTime(endIso)) {
+      return now.getTime() <= end.getTime() + STARTED_EVENT_GRACE_MS;
+    }
+    return end >= today;
+  }
 
   const start = parseMadPlanDate(event.datetime_inicio || event.fecha_inicio);
   if (start) return start >= today;

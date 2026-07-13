@@ -1,5 +1,5 @@
 import { PAGE_SIZE, ZONES } from './constants';
-import { distanceKm } from './formatters';
+import { distanceKm, foldSearchText } from './formatters';
 import type {
   DiscoveryDateFilter,
   DiscoveryState,
@@ -86,21 +86,57 @@ export function matchesZone(event: MadPlanEvent, zoneName: string): boolean {
   return event.locationLabel.toLocaleLowerCase('es-ES').includes(zoneName.toLocaleLowerCase('es-ES'));
 }
 
-export function filterAndRankEvents(events: MadPlanEvent[], state: DiscoveryState, profile: UserProfile) {
-  const normalizedQuery = state.query.trim().toLocaleLowerCase('es-ES');
+/**
+ * Avoid monotonous walls of near-identical plans: caps consecutive cards of
+ * the same category at two, deferring the excess a little further down.
+ */
+function diversifyByCategory<T extends { event: MadPlanEvent }>(entries: T[]): T[] {
+  const result: T[] = [];
+  const pending: T[] = [];
 
-  return events
+  const lastTwoAre = (category: string) =>
+    result.length >= 2 &&
+    result[result.length - 1].event.primaryCategory === category &&
+    result[result.length - 2].event.primaryCategory === category;
+
+  const drainPending = () => {
+    for (let index = 0; index < pending.length; index += 1) {
+      if (!lastTwoAre(pending[index].event.primaryCategory)) {
+        result.push(pending.splice(index, 1)[0]);
+        index = -1; // rescan from the start after each successful insert
+      }
+    }
+  };
+
+  for (const entry of entries) {
+    if (lastTwoAre(entry.event.primaryCategory)) {
+      pending.push(entry);
+    } else {
+      result.push(entry);
+      drainPending();
+    }
+  }
+  return result.concat(pending);
+}
+
+export function filterAndRankEvents(events: MadPlanEvent[], state: DiscoveryState, profile: UserProfile) {
+  // Word-level AND matching: "jazz retiro" finds plans mentioning both
+  // words anywhere, in any order.
+  const queryTokens = foldSearchText(state.query.trim()).split(/\s+/).filter(Boolean);
+  const personalized = profile.answeredQuiz || Boolean(profile.vibe);
+
+  const ranked = events
     .filter((event) => {
       if (state.source && event.fuente !== state.source && !(event.fuentes_relacionadas || []).includes(state.source)) return false;
       if (state.category && !event.categoriesList.includes(state.category)) return false;
       if (state.freeOnly && !event.isFree) return false;
       if (state.zone && !matchesZone(event, state.zone)) return false;
-      if (normalizedQuery && !event.searchBlob.includes(normalizedQuery)) return false;
+      if (queryTokens.length > 0 && !queryTokens.every((token) => event.searchBlob.includes(token))) return false;
       return matchesDateFilter(event, state.dateFilter);
     })
     .map((event) => ({ event, score: scoreEvent(event, profile) }))
     .sort((left, right) => {
-      if (profile.answeredQuiz && right.score !== left.score) return right.score - left.score;
+      if (personalized && right.score !== left.score) return right.score - left.score;
       const leftDay = left.event.primaryDate ? Math.floor(left.event.primaryDate.getTime() / 86400000) : Number.MAX_SAFE_INTEGER;
       const rightDay = right.event.primaryDate ? Math.floor(right.event.primaryDate.getTime() / 86400000) : Number.MAX_SAFE_INTEGER;
       if (leftDay !== rightDay) return leftDay - rightDay;
@@ -112,6 +148,13 @@ export function filterAndRankEvents(events: MadPlanEvent[], state: DiscoveryStat
       if (leftTime !== rightTime) return leftTime - rightTime;
       return left.event.titulo.localeCompare(right.event.titulo, 'es-ES');
     });
+
+  // Only the neutral browse view gets diversified; explicit filters or a
+  // personal profile mean the user already chose what they want to see.
+  if (!personalized && !state.category && queryTokens.length === 0) {
+    return diversifyByCategory(ranked);
+  }
+  return ranked;
 }
 
 export function deriveFacetOptions(events: MadPlanEvent[]) {
@@ -138,9 +181,15 @@ export function deriveFacetOptions(events: MadPlanEvent[]) {
 export function deriveFeaturedEvents(events: MadPlanEvent[], profile: UserProfile) {
   if (!profile.answeredQuiz && !profile.vibe) return [];
   return events
+    // Featured picks must be concrete, dated plans — undated editorial
+    // guides score high on keywords but are not something you can attend.
+    .filter((event) => event.modo_fecha !== 'sin_fecha' && event.primaryDate)
     .map((event) => ({ event, score: scoreEvent(event, profile) }))
     .filter((entry) => entry.score > 20)
-    .sort((left, right) => right.score - left.score)
+    .sort((left, right) => {
+      if (right.score !== left.score) return right.score - left.score;
+      return (left.event.primaryDate?.getTime() || 0) - (right.event.primaryDate?.getTime() || 0);
+    })
     .slice(0, 6);
 }
 

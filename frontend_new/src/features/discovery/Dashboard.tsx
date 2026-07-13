@@ -115,7 +115,7 @@ export function Dashboard() {
       <Navbar
         view={state.view}
         onViewChange={setView}
-        agendaCount={profile.agenda.length}
+        agendaCount={agendaEvents.length}
         onOpenAgenda={() => setAgendaOpen(true)}
       />
 

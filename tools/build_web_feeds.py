@@ -9,6 +9,7 @@ capped sessions and no placeholder images — roughly 4x smaller on disk.
 from __future__ import annotations
 
 import json
+import unicodedata
 from datetime import date
 from pathlib import Path
 from typing import Any
@@ -29,6 +30,12 @@ MAX_SESSIONS = 8
 MAX_SOURCE_LINKS = 6
 
 PLACEHOLDER_IMAGE_TOKENS = ("images.unsplash.com", "source.unsplash.com")
+
+# Madrid metro bounding box: coordinates outside it are either wrong venue
+# data or events genuinely outside the city; both pollute the map.
+MADRID_BOUNDS = {"lat": (40.25, 40.60), "lon": (-3.92, -3.48)}
+
+GENERIC_PLACES = {"madrid", "madrid centro", "centro", "online", "espana", "comunidad de madrid"}
 
 
 def strip_placeholder_images(events: list[dict]) -> int:
@@ -54,6 +61,49 @@ def _cap(text: Any, limit: int) -> str | None:
     return value[: limit - 1].rsplit(" ", 1)[0] + "…"
 
 
+def _smart_title(title: str) -> str:
+    """Sentence-case shouty ALL-CAPS titles ("DINOLANDIA…" → "Dinolandia…")."""
+    if len(title) <= 12 or not title.isupper():
+        return title
+    lowered = title.lower()
+    chars = list(lowered)
+    capitalize_next = True
+    for index, char in enumerate(chars):
+        if capitalize_next and char.isalpha():
+            chars[index] = char.upper()
+            capitalize_next = False
+        elif char in ":.¡!¿?":
+            capitalize_next = True
+    return "".join(chars)
+
+
+def _normalize_place_token(value: Any) -> str:
+    text = " ".join(str(value or "").lower().split())
+    return (
+        unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().strip(" .,")
+    )
+
+
+def _clean_coordinates(event: dict) -> tuple[float | None, float | None]:
+    lat = _round_coord(event.get("latitud"))
+    lon = _round_coord(event.get("longitud"))
+    if lat is None or lon is None:
+        return None, None
+    # Out of the metro area: wrong venue data or a plan outside the city.
+    if not (
+        MADRID_BOUNDS["lat"][0] <= lat <= MADRID_BOUNDS["lat"][1]
+        and MADRID_BOUNDS["lon"][0] <= lon <= MADRID_BOUNDS["lon"][1]
+    ):
+        return None, None
+    # Coordinates without a concrete venue are just "somewhere in Madrid":
+    # they stack hundreds of markers on Puerta del Sol.
+    lugar = _normalize_place_token(event.get("lugar"))
+    direccion = _normalize_place_token(event.get("direccion"))
+    if (not lugar or lugar in GENERIC_PLACES) and (not direccion or direccion in GENERIC_PLACES):
+        return None, None
+    return lat, lon
+
+
 def _round_coord(value: Any) -> float | None:
     if value is None:
         return None
@@ -64,6 +114,12 @@ def _round_coord(value: Any) -> float | None:
 
 
 def _slim_sessions(event: dict, today: date) -> list[dict]:
+    # For "rango"/"puntual" plans the stored sessions are just the window
+    # endpoints, not real dates a user can attend — showing them as
+    # "próximas fechas" is misleading, so the web feed only keeps sessions
+    # for genuinely multi-date plans.
+    if event.get("modo_fecha") != "multiple":
+        return []
     sessions = event.get("sesiones") or []
     future = [
         session
@@ -95,7 +151,7 @@ def _slim_source_links(event: dict) -> list[dict]:
 
 def slim_event(event: dict, today: date) -> dict:
     resumen = _cap(event.get("resumen"), SUMMARY_MAX_CHARS)
-    titulo = (event.get("titulo") or "").strip()
+    titulo = _smart_title((event.get("titulo") or "").strip())
     if resumen and titulo and resumen.casefold().rstrip(".…") == titulo.casefold().rstrip("."):
         resumen = None
 
@@ -108,6 +164,7 @@ def slim_event(event: dict, today: date) -> dict:
 
     metadata = event.get("metadata") or {}
     related_sources = event.get("fuentes_relacionadas") or []
+    lat, lon = _clean_coordinates(event)
 
     slim = {
         "id": event.get("id"),
@@ -124,8 +181,8 @@ def slim_event(event: dict, today: date) -> dict:
         "url_compra": event.get("url_compra") or None,
         "lugar": event.get("lugar") or None,
         "direccion": event.get("direccion") or None,
-        "latitud": _round_coord(event.get("latitud")),
-        "longitud": _round_coord(event.get("longitud")),
+        "latitud": lat,
+        "longitud": lon,
         "precio": event.get("precio"),
         "moneda": event.get("moneda"),
         "es_gratis": event.get("es_gratis"),
@@ -148,7 +205,7 @@ def slim_event(event: dict, today: date) -> dict:
 def slim_news(item: dict) -> dict:
     slim = {
         "id": item.get("id"),
-        "titulo": (item.get("titulo") or "").strip(),
+        "titulo": _smart_title((item.get("titulo") or "").strip()),
         "resumen": _cap(item.get("resumen"), 280),
         "imagen": item.get("imagen") or None,
         "fuente": item.get("fuente"),

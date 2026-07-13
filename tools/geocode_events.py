@@ -32,6 +32,30 @@ MADRID_BOUNDS = {"lat": (40.30, 40.55), "lon": (-3.85, -3.55)}
 # Nominatim rate limit: 1 request/second
 RATE_LIMIT_SECONDS = 1.1
 
+# Queries too generic to geocode: they all resolve to the city center and
+# produce a misleading stack of markers at Puerta del Sol.
+GENERIC_QUERIES = {
+    "madrid",
+    "madrid centro",
+    "centro",
+    "centro, madrid",
+    "online",
+    "españa",
+    "madrid, españa",
+    "comunidad de madrid",
+    "varias localizaciones",
+    "varios espacios",
+    "varias salas",
+    "varios locales",
+}
+
+
+def _is_generic_query(query: str) -> bool:
+    normalized = " ".join(query.lower().replace(",", " ").split())
+    if normalized in {q.replace(",", "") for q in GENERIC_QUERIES}:
+        return True
+    return len(normalized) < 8
+
 
 def _load_cache() -> dict[str, dict]:
     if CACHE_FILE.exists():
@@ -92,7 +116,7 @@ def geocode_events(
             continue
 
         query = addr or lugar
-        if not query or len(query.strip()) < 5:
+        if not query or len(query.strip()) < 5 or _is_generic_query(query):
             continue
 
         to_geocode.append((event, query))

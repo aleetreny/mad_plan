@@ -1,240 +1,174 @@
 {
   "trigger": {
-    "type": "scheduled",
-    "source": "local-verify",
-    "schedule": "15 4 * * * UTC",
-    "fever_mode": "full"
+    "type": "merge-only",
+    "source": "cli",
+    "schedule": null,
+    "fever_mode": null
   },
-  "started_at": "2026-07-13T17:51:22Z",
-  "finished_at": "2026-07-13T18:06:44Z",
-  "duration_seconds": 921.2,
+  "started_at": "2026-07-13T22:45:49Z",
+  "finished_at": "2026-07-13T22:45:50Z",
+  "duration_seconds": 1.3,
   "sources": [
-    {
-      "name": "biblioteca_nacional",
-      "kind": "plan",
-      "status": "ok",
-      "count": 1,
-      "duration_seconds": 1.4,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "casa_mexico",
-      "kind": "plan",
-      "status": "ok",
-      "count": 33,
-      "duration_seconds": 45.7,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "circulo_bellas_artes",
-      "kind": "plan",
-      "status": "ok",
-      "count": 20,
-      "duration_seconds": 4.3,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "datos_madrid",
-      "kind": "plan",
-      "status": "ok",
-      "count": 710,
-      "duration_seconds": 1.9,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "esmadrid",
-      "kind": "plan",
-      "status": "ok",
-      "count": 235,
-      "duration_seconds": 378.9,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "espacio_fundacion_telefonica",
-      "kind": "plan",
-      "status": "ok",
-      "count": 11,
-      "duration_seconds": 10.5,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "eventbrite",
-      "kind": "plan",
-      "status": "ok",
-      "count": 444,
-      "duration_seconds": 154.3,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "fever",
-      "kind": "plan",
-      "status": "ok",
-      "count": 414,
-      "duration_seconds": 458.2,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "fundacion_canal",
-      "kind": "plan",
-      "status": "ok",
-      "count": 1,
-      "duration_seconds": 3.0,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "fundacion_mapfre",
-      "kind": "plan",
-      "status": "ok",
-      "count": 1,
-      "duration_seconds": 1.5,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "gacetin_madrid",
-      "kind": "news",
-      "status": "ok",
-      "count": 61,
-      "duration_seconds": 3.4,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "ifema_madrid",
-      "kind": "plan",
-      "status": "ok",
-      "count": 48,
-      "duration_seconds": 8.3,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "madrid_secreto",
-      "kind": "plan",
-      "status": "ok",
-      "count": 248,
-      "duration_seconds": 541.9,
-      "error": null,
-      "stale": false
-    },
     {
       "name": "matadero",
       "kind": "plan",
       "status": "ok",
-      "count": 59,
-      "duration_seconds": 3.0,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "meetup",
-      "kind": "plan",
-      "status": "ok",
-      "count": 387,
-      "duration_seconds": 14.7,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "museo_reina_sofia",
-      "kind": "plan",
-      "status": "ok",
-      "count": 8,
-      "duration_seconds": 9.9,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "rockthesport",
-      "kind": "plan",
-      "status": "ok",
-      "count": 41,
-      "duration_seconds": 6.1,
-      "error": null,
-      "stale": false
-    },
-    {
-      "name": "sala_el_sol",
-      "kind": "plan",
-      "status": "ok",
-      "count": 25,
-      "duration_seconds": 10.7,
-      "error": null,
-      "stale": false
+      "count": 56
     },
     {
       "name": "teatros_canal",
       "kind": "plan",
       "status": "ok",
-      "count": 31,
-      "duration_seconds": 4.8,
-      "error": null,
-      "stale": false
+      "count": 31
     },
     {
-      "name": "ticketmaster",
+      "name": "circulo_bellas_artes",
       "kind": "plan",
       "status": "ok",
-      "count": 27,
-      "duration_seconds": 87.9,
-      "error": null,
-      "stale": false
+      "count": 20
     },
     {
-      "name": "timeout",
-      "kind": "news",
+      "name": "ifema_madrid",
+      "kind": "plan",
       "status": "ok",
-      "count": 108,
-      "duration_seconds": 32.1,
-      "error": null,
-      "stale": false
+      "count": 48
+    },
+    {
+      "name": "casa_mexico",
+      "kind": "plan",
+      "status": "ok",
+      "count": 33
+    },
+    {
+      "name": "espacio_fundacion_telefonica",
+      "kind": "plan",
+      "status": "ok",
+      "count": 11
+    },
+    {
+      "name": "museo_reina_sofia",
+      "kind": "plan",
+      "status": "ok",
+      "count": 8
+    },
+    {
+      "name": "biblioteca_nacional",
+      "kind": "plan",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "name": "fundacion_canal",
+      "kind": "plan",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "name": "fundacion_mapfre",
+      "kind": "plan",
+      "status": "ok",
+      "count": 1
+    },
+    {
+      "name": "sala_el_sol",
+      "kind": "plan",
+      "status": "ok",
+      "count": 25
+    },
+    {
+      "name": "fever",
+      "kind": "plan",
+      "status": "ok",
+      "count": 414
+    },
+    {
+      "name": "eventbrite",
+      "kind": "plan",
+      "status": "ok",
+      "count": 444
     },
     {
       "name": "wegow",
       "kind": "plan",
       "status": "ok",
-      "count": 46,
-      "duration_seconds": 15.7,
-      "error": null,
-      "stale": false
+      "count": 46
+    },
+    {
+      "name": "ticketmaster",
+      "kind": "plan",
+      "status": "ok",
+      "count": 27
+    },
+    {
+      "name": "datos_madrid",
+      "kind": "plan",
+      "status": "ok",
+      "count": 710
+    },
+    {
+      "name": "esmadrid",
+      "kind": "plan",
+      "status": "ok",
+      "count": 235
+    },
+    {
+      "name": "madrid_secreto",
+      "kind": "plan",
+      "status": "ok",
+      "count": 248
+    },
+    {
+      "name": "rockthesport",
+      "kind": "plan",
+      "status": "ok",
+      "count": 41
+    },
+    {
+      "name": "meetup",
+      "kind": "plan",
+      "status": "ok",
+      "count": 387
+    },
+    {
+      "name": "timeout",
+      "kind": "news",
+      "status": "ok",
+      "count": 108
+    },
+    {
+      "name": "gacetin_madrid",
+      "kind": "news",
+      "status": "ok",
+      "count": 61
     }
   ],
   "feeds": {
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 2742,
-      "web_count": 2742,
+      "count": 2453,
+      "web_count": 2426,
       "validation": {
-        "valid": true,
-        "total": 2742,
-        "with_price": 1371,
-        "with_location": 2692,
+        "valid": false,
+        "total": 2453,
+        "with_price": 1241,
+        "with_location": 2415,
         "by_source": {
-          "eventbrite": 444,
-          "datos_madrid": 710,
-          "matadero": 59,
-          "ticketmaster": 27,
+          "eventbrite": 438,
+          "datos_madrid": 618,
+          "ticketmaster": 15,
           "circulo_bellas_artes": 20,
-          "esmadrid": 235,
-          "fever": 414,
-          "madrid_secreto": 204,
+          "esmadrid": 226,
+          "fever": 408,
           "museo_reina_sofia": 8,
-          "meetup": 383,
-          "espacio_fundacion_telefonica": 11,
-          "sala_el_sol": 25,
+          "madrid_secreto": 154,
+          "meetup": 285,
+          "matadero": 55,
+          "espacio_fundacion_telefonica": 10,
+          "sala_el_sol": 19,
           "casa_mexico": 33,
-          "wegow": 46,
-          "rockthesport": 41,
+          "wegow": 42,
+          "rockthesport": 40,
           "ifema_madrid": 48,
           "biblioteca_nacional": 1,
           "fundacion_canal": 1,
@@ -242,13 +176,41 @@
           "teatros_canal": 31
         },
         "by_mode": {
-          "puntual": 517,
-          "multiple": 221,
-          "rango": 798,
-          "puntual_con_hora": 1143,
-          "sin_fecha": 63
+          "puntual": 493,
+          "multiple": 262,
+          "rango": 759,
+          "puntual_con_hora": 878,
+          "sin_fecha": 61
         },
-        "errors": []
+        "errors": [
+          "Plan fuera de ventana producto en plan:eventbrite:1993325466128",
+          "Plan fuera de ventana producto en plan:eventbrite:1993810333379",
+          "Plan fuera de ventana producto en plan:eventbrite:1987471835762",
+          "Plan fuera de ventana producto en plan:eventbrite:1993611928946",
+          "Plan fuera de ventana producto en plan:eventbrite:1986897927186",
+          "Plan fuera de ventana producto en plan:eventbrite:1978772239034",
+          "Plan fuera de ventana producto en plan:eventbrite:1146224752089",
+          "Plan fuera de ventana producto en plan:eventbrite:1979652549065",
+          "Plan fuera de ventana producto en plan:eventbrite:1979652288285",
+          "Plan fuera de ventana producto en plan:eventbrite:1984803632093",
+          "Plan fuera de ventana producto en plan:eventbrite:1986714981992",
+          "Plan fuera de ventana producto en plan:eventbrite:1986720241724",
+          "Plan fuera de ventana producto en plan:eventbrite:1987494454415",
+          "Plan fuera de ventana producto en plan:circulo_bellas_artes:los-hombres-lobo-de-castronegro",
+          "Plan fuera de ventana producto en plan:eventbrite:1990689646320",
+          "Plan fuera de ventana producto en plan:eventbrite:1981949514350",
+          "Plan fuera de ventana producto en plan:eventbrite:1993565477007",
+          "Plan fuera de ventana producto en plan:eventbrite:1980234948036",
+          "Plan fuera de ventana producto en plan:eventbrite:1989903169948",
+          "Plan fuera de ventana producto en plan:madrid_secreto:ms-fever-129923",
+          "Plan fuera de ventana producto en plan:madrid_secreto:ms-fever-151099",
+          "Plan fuera de ventana producto en plan:meetup:315021832",
+          "Plan fuera de ventana producto en plan:meetup:315386140",
+          "Plan fuera de ventana producto en plan:meetup:315317903",
+          "Plan fuera de ventana producto en plan:meetup:315579240",
+          "Plan fuera de ventana producto en plan:meetup:315590317",
+          "Plan fuera de ventana producto en plan:madrid_secreto:un-espectaculo-de-drones-iluminara-las-fiestas-de-una-localidad-de-la-sierra-de-madrid-se-sumaran-conciertos-gratuitos-de-rap-urbano-y-un-recital-de-la-carroza-del-teatro-real"
+        ]
       }
     },
     "noticias": {
