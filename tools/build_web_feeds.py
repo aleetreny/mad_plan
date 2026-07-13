@@ -11,6 +11,7 @@ from __future__ import annotations
 import json
 import unicodedata
 from datetime import date
+from html import unescape
 from pathlib import Path
 from typing import Any
 
@@ -52,10 +53,17 @@ def strip_placeholder_images(events: list[dict]) -> int:
     return stripped
 
 
+def _text(value: Any) -> str:
+    """Whitespace-collapse + decode stray HTML entities (&amp;, &quot;…)."""
+    return " ".join(unescape(unescape(str(value or ""))).split())
+
+
 def _cap(text: Any, limit: int) -> str | None:
     if not text:
         return None
-    value = " ".join(str(text).split())
+    value = _text(text)
+    if not value:
+        return None
     if len(value) <= limit:
         return value
     return value[: limit - 1].rsplit(" ", 1)[0] + "…"
@@ -151,7 +159,7 @@ def _slim_source_links(event: dict) -> list[dict]:
 
 def slim_event(event: dict, today: date) -> dict:
     resumen = _cap(event.get("resumen"), SUMMARY_MAX_CHARS)
-    titulo = _smart_title((event.get("titulo") or "").strip())
+    titulo = _smart_title(_text(event.get("titulo")))
     if resumen and titulo and resumen.casefold().rstrip(".…") == titulo.casefold().rstrip("."):
         resumen = None
 
@@ -179,8 +187,8 @@ def slim_event(event: dict, today: date) -> dict:
         "categoria_principal_norm": event.get("categoria_principal_norm"),
         "url": event.get("url") or None,
         "url_compra": event.get("url_compra") or None,
-        "lugar": event.get("lugar") or None,
-        "direccion": event.get("direccion") or None,
+        "lugar": _text(event.get("lugar")) or None,
+        "direccion": _text(event.get("direccion")) or None,
         "latitud": lat,
         "longitud": lon,
         "precio": event.get("precio"),
@@ -205,7 +213,7 @@ def slim_event(event: dict, today: date) -> dict:
 def slim_news(item: dict) -> dict:
     slim = {
         "id": item.get("id"),
-        "titulo": _smart_title((item.get("titulo") or "").strip()),
+        "titulo": _smart_title(_text(item.get("titulo"))),
         "resumen": _cap(item.get("resumen"), 280),
         "imagen": item.get("imagen") or None,
         "fuente": item.get("fuente"),
