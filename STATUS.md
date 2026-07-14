@@ -1,6 +1,19 @@
 # STATUS
 
-Última revisión: 2026-07-14 (ronda de QA profunda tras el overhaul).
+Última revisión: 2026-07-14 (web pública en GitHub Pages + fixes post-lanzamiento).
+
+## Producción
+
+- Web publicada: https://aleetreny.github.io/mad_plan/ (GitHub Pages, fuente
+  "GitHub Actions"). Se redespliega con cada push a main y tras el scrape
+  nocturno de las 04:15 UTC.
+- Primer run nocturno en CI: OK (12,5 min, 19/22 fuentes). eventbrite,
+  ticketmaster y biblioteca_nacional bloquean IPs de datacenter → pasan a
+  cloudscraper y su último scrape bueno queda versionado como respaldo, así
+  el feed no los pierde aunque CI no pueda scrapearlos.
+- Fix post-lanzamiento: el modal de detalle se abría detrás del mapa
+  (z-index de Leaflet vs overlays) — contenedor del mapa con `isolate` y
+  overlays a z-1100/1200; reproducido en la web publicada y verificado.
 
 ## QA 2026-07-14 — fallos encontrados y corregidos
 
