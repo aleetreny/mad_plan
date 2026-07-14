@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urljoin
 
+import cloudscraper
 import requests
 from bs4 import BeautifulSoup, Tag
 
@@ -411,7 +412,8 @@ def _extract_discovery_rows(session: requests.Session) -> list[dict[str, Any]]:
 
 
 def scrape_biblioteca_nacional() -> list[dict[str, Any]]:
-    session = requests.Session()
+    # cloudscraper: la BNE corta requests planos desde IPs de datacenter
+    session = cloudscraper.create_scraper()
     session.headers.update(HEADERS)
     discovered = _extract_discovery_rows(session)
     log.info("Found %d Biblioteca Nacional agenda candidates", len(discovered))

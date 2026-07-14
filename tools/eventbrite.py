@@ -13,6 +13,7 @@ import time
 from pathlib import Path
 from typing import Any
 
+import cloudscraper
 import requests
 from bs4 import BeautifulSoup
 
@@ -209,7 +210,8 @@ def _extract_eventbrite_detail_image(session: requests.Session, url: str | None)
 
 def scrape_eventbrite() -> list[dict]:
     """Scrape Eventbrite Madrid events across all categories."""
-    session = requests.Session()
+    # cloudscraper: Eventbrite rechaza requests planos desde IPs de datacenter
+    session = cloudscraper.create_scraper()
     session.headers.update(HEADERS)
     seen_urls: set[str] = set()
     events: list[dict] = []

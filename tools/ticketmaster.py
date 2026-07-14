@@ -17,6 +17,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
+import cloudscraper
 import requests
 from bs4 import BeautifulSoup
 
@@ -389,14 +390,15 @@ def _extract_record(session: requests.Session, group: list[dict[str, Any]]) -> d
 
 
 def scrape_ticketmaster_madrid() -> list[dict[str, Any]]:
-    session = requests.Session()
+    # cloudscraper: Ticketmaster bloquea requests planos desde IPs de datacenter
+    session = cloudscraper.create_scraper()
     session.headers.update(HEADERS)
 
     raw_events = _collect_raw_events(session)
     if not raw_events:
-        log.warning("No Ticketmaster Madrid events collected")
-        OUTPUT_FILE.write_text("[]\n", encoding="utf-8")
-        return []
+        # No sobrescribir el último output bueno con una lista vacía: un
+        # scrape sin resultados aquí es un fallo, no "no hay eventos".
+        raise RuntimeError("No Ticketmaster Madrid events collected")
 
     grouped = _group_raw_events(raw_events)
     log.info(

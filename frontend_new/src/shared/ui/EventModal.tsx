@@ -104,7 +104,7 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-[100] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6"
+        className="fixed inset-0 z-[1200] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6"
         onClick={onClose}
       >
         <motion.div

@@ -12,3 +12,8 @@ outputs/noticias_gacetin_madrid.json
 outputs/eventos_madrid_all.json
 outputs/noticias_madrid_all.json
 !outputs/eventos_web.json
+# Fuentes que bloquean IPs de datacenter: su último scrape bueno se versiona
+# como respaldo para que las ejecuciones de GitHub Actions no las pierdan.
+!outputs/eventos_eventbrite.json
+!outputs/eventos_ticketmaster.json
+!outputs/eventos_biblioteca_nacional.json

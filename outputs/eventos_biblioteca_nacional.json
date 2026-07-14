@@ -1,0 +1,68 @@
+[
+  {
+    "id": "plan:biblioteca_nacional:pedro-moreno-pro-domo-sua-arte-teatral-cinematografico",
+    "titulo": "Pedro Moreno. Pro domo sua. Arte teatral y cinematográfico",
+    "descripcion": "La exposición “Pedro Moreno. Pro domo sua. Arte teatral y cinematográfico” propone un recorrido por la extensa y brillante trayectoria artística y profesional de este destacado creador, Premio Nacional de Teatro y reconocido, entre otros galardones, con los Premios Max y Goya por la excelencia de su trabajo. La Biblioteca Nacional de España, institución a la que Pedro Moreno ha legado parte de su ingente obra y que el propio artista reconoce como su segunda casa —fuente de documentación clave para muchas de sus investigaciones sobre vestuario en contextos históricos—, acoge ahora esta exposición como un regreso simbólico del “hijo pródigo”. En coherencia con el “latinajo” del título, el propio Moreno nos acompaña a lo largo del recorrido, guiándonos como si estuviéramos en su casa y desvelando las claves de lo que contemplamos.​ Comisario Pedro Moreno",
+    "contenido": "La exposición “Pedro Moreno. Pro domo sua. Arte teatral y cinematográfico” propone un recorrido por la extensa y brillante trayectoria artística y profesional de este destacado creador, Premio Nacional de Teatro y reconocido, entre otros galardones, con los Premios Max y Goya por la excelencia de su trabajo. La Biblioteca Nacional de España, institución a la que Pedro Moreno ha legado parte de su ingente obra y que el propio artista reconoce como su segunda casa —fuente de documentación clave para muchas de sus investigaciones sobre vestuario en contextos históricos—, acoge ahora esta exposición como un regreso simbólico del “hijo pródigo”. En coherencia con el “latinajo” del título, el propio Moreno nos acompaña a lo largo del recorrido, guiándonos como si estuviéramos en su casa y desvelando las claves de lo que contemplamos.​ Comisario Pedro Moreno Entrada gratuita. Aforo limitado. Acceso: planta 0 Sala Hipóstila Horario De lunes a viernes de 10:00 a 20:00 h. Sábados, domingos y festivos cerrada. Último pase media hora antes del cierre. Horarios especiales y cierre de exposiciones Horarios especiales Calendario de horarios especiales y días de cierre",
+    "precio": 0.0,
+    "moneda": "EUR",
+    "lugar": "Sala Hipóstila",
+    "direccion": "Paseo de Recoletos, 20-22, 28071 Madrid",
+    "fecha_inicio": "2026-07-23",
+    "fecha_fin": "2027-01-10",
+    "fechas_disponibles": [
+      "2026-07-23T10:00:00+02:00",
+      "2027-01-10T14:00:00+01:00"
+    ],
+    "categorias": [
+      "Exposición"
+    ],
+    "etiquetas": [],
+    "url": "https://www.bne.es/es/agenda/pedro-moreno-pro-domo-sua-arte-teatral-cinematografico",
+    "url_compra": null,
+    "imagen": "https://www.bne.es/sites/default/files/styles/banner_obras/public/repositorio-imagenes/dib_18_5_174_4_r.cabecera.png?h=dce03d99&itok=om-yPiJ0",
+    "metadata": {
+      "card_text": "Exposición Pedro Moreno. Pro domo sua. Arte teatral y cinematográfico Del 23 de Julio de 2026 al 10 de Enero de 2027",
+      "horario": "Sala Hipóstila Horario De lunes a viernes de 10:00 a 20:00 h. Sábados, domingos y festivos cerrada. Último pase media hora antes del cierre. Horarios especiales y cierre de exposiciones Horarios especiales Calendario de horarios especiales y días de cierre"
+    },
+    "fuente": "biblioteca_nacional",
+    "fuente_id": "pedro-moreno-pro-domo-sua-arte-teatral-cinematografico",
+    "tipo": "plan",
+    "slug": "pedro-moreno-pro-domo-sua-arte-teatral-y-cinematografico",
+    "subtitulo": null,
+    "resumen": "La exposición “Pedro Moreno. Pro domo sua. Arte teatral y cinematográfico” propone un recorrido por la extensa y brillante trayectoria artística y profesional de este destacado creador, Premio Nacional de Teatro y reconocido, entre otros galardones, con los Premios Max y Goya por la excelencia de su trabajo. La Bibliot",
+    "categoria_principal": "Exposición",
+    "autor": null,
+    "url_articulo": null,
+    "latitud": null,
+    "longitud": null,
+    "es_gratis": true,
+    "modo_fecha": "rango",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-23T10:00:00+02:00",
+    "datetime_fin": "2027-01-10T14:00:00+01:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-23",
+        "datetime": "2026-07-23T10:00:00+02:00",
+        "tiene_hora": true
+      },
+      {
+        "fecha": "2027-01-10",
+        "datetime": "2027-01-10T14:00:00+01:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-23",
+    "proximo_datetime": "2026-07-23T10:00:00+02:00",
+    "sort_datetime": "2026-07-23T10:00:00+02:00",
+    "vigente_hasta": "2027-01-10T14:00:00+01:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:39:58Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true
+  }
+]

@@ -65,6 +65,12 @@ def main() -> None:
 
             page.locator('[data-testid="open-agenda"]').click(timeout=10_000)
             assert page.get_by_text("Mi agenda").first.is_visible(timeout=10_000)
+            page.wait_for_timeout(700)  # deja terminar la animación de entrada
+            drawer_box = page.locator('[aria-label="Mi agenda"]').bounding_box()
+            viewport = page.viewport_size or {"width": 1440}
+            assert drawer_box and drawer_box["x"] < viewport["width"] - 200, (
+                f"agenda drawer fuera de pantalla: {drawer_box}"
+            )
             page.get_by_role("button", name="Cerrar agenda").click(timeout=10_000)
 
             page.get_by_role("navigation", name="Secciones").get_by_role("button").nth(1).click(timeout=10_000)

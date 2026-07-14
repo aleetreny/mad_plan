@@ -22,7 +22,7 @@ export function AgendaDrawer({ open, events, onClose, onRemove, onOpenEvent }: A
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-[90] flex justify-end" onClick={onClose}>
+      <div className="fixed inset-0 z-[1100] flex justify-end" onClick={onClose}>
         <div className="absolute inset-0 bg-black/45 backdrop-blur-sm" />
         <motion.aside
           initial={{ x: '100%' }}

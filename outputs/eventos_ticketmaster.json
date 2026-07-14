@@ -1,0 +1,3239 @@
+[
+  {
+    "id": "plan:ticketmaster:698b43758ada2300016f6541",
+    "titulo": "DINOLANDIA Y EL BOSQUE ENCANTADO: 2 PARQUES EN UNO",
+    "subtitulo": null,
+    "descripcion": "DINOLANDIA Y EL BOSQUE ENCANTADO: 2 PARQUES EN UNO",
+    "contenido": "DINOLANDIA Y EL BOSQUE ENCANTADO: 2 PARQUES EN UNO",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Bosque Encantado",
+    "direccion": "Camino de Marañones, 4,, Madrid, 28680",
+    "latitud": 41.40892,
+    "longitud": 2.19546,
+    "fecha_inicio": "2026-07-14",
+    "fecha_fin": "2026-09-04",
+    "fechas_disponibles": [
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04"
+    ],
+    "categorias": [
+      "Otros"
+    ],
+    "etiquetas": [
+      "El bosque encantado y Dinolandia"
+    ],
+    "url": "https://www.universe.com/events/dinolandia-y-el-bosque-encantado-2-parques-en-uno-tickets-LK8S27?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/dinolandia-y-el-bosque-encantado-2-parques-en-uno-tickets-LK8S27?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/e46/8bb234bf-cee2-4ce6-9f25-1c376da51e46_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/dinolandia-y-el-bosque-encantado-2-parques-en-uno-tickets-LK8S27?ref=ticketmaster",
+    "fuente_id": "698b43758ada2300016f6541",
+    "tipo": "plan",
+    "slug": "dinolandia-y-el-bosque-encantado-2-parques-en-uno",
+    "resumen": "DINOLANDIA Y EL BOSQUE ENCANTADO: 2 PARQUES EN UNO",
+    "categoria_principal": "Otros",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-04",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-05",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-06",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-07",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-08",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-09",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-10",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-11",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-12",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-13",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-04",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-14",
+    "proximo_datetime": "2026-07-14T00:00:00+02:00",
+    "sort_datetime": "2026-07-14T00:00:00+02:00",
+    "vigente_hasta": "2026-09-04T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/dinolandia-y-el-bosque-encantado-2-parques-en-uno-tickets-LK8S27?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:69f1ce1ff43dff0001c4875c",
+    "titulo": "EVA Madrid | Batallas VR en la Arena Más Grande del Mundo",
+    "subtitulo": null,
+    "descripcion": "EVA Madrid | Batallas VR en la Arena Más Grande del Mundo",
+    "contenido": "EVA Madrid | Batallas VR en la Arena Más Grande del Mundo",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Polígono Industrial Las Mercedes",
+    "direccion": "San Blas, Madrid, 28022",
+    "latitud": 40.44665,
+    "longitud": -3.5819,
+    "fecha_inicio": "2026-07-14",
+    "fecha_fin": "2026-08-31",
+    "fechas_disponibles": [
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-31"
+    ],
+    "categorias": [
+      "Otros"
+    ],
+    "etiquetas": [
+      "EVA Madrid"
+    ],
+    "url": "https://www.universe.com/events/eva-madrid-batallas-vr-en-la-arena-mas-grande-del-mundo-tickets-JRP9C2?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/eva-madrid-batallas-vr-en-la-arena-mas-grande-del-mundo-tickets-JRP9C2?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/435/bbd3023d-f785-4d11-9a37-c58faf89b435_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/eva-madrid-batallas-vr-en-la-arena-mas-grande-del-mundo-tickets-JRP9C2?ref=ticketmaster",
+    "fuente_id": "69f1ce1ff43dff0001c4875c",
+    "tipo": "plan",
+    "slug": "eva-madrid-batallas-vr-en-la-arena-mas-grande-del-mundo",
+    "resumen": "EVA Madrid | Batallas VR en la Arena Más Grande del Mundo",
+    "categoria_principal": "Otros",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-04",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-05",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-06",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-10",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-11",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-12",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-13",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-31",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-14",
+    "proximo_datetime": "2026-07-14T00:00:00+02:00",
+    "sort_datetime": "2026-07-14T00:00:00+02:00",
+    "vigente_hasta": "2026-08-31T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/eva-madrid-batallas-vr-en-la-arena-mas-grande-del-mundo-tickets-JRP9C2?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:6a182d892f52ae00011ce55b",
+    "titulo": "Museo Banksy Madrid",
+    "subtitulo": null,
+    "descripcion": "Museo Banksy Madrid",
+    "contenido": "Museo Banksy Madrid",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Museo Banksy Madrid",
+    "direccion": "P.º de la Esperanza, 1, Madrid, 28005",
+    "latitud": 40.40373,
+    "longitud": -3.70619,
+    "fecha_inicio": "2026-07-14",
+    "fecha_fin": "2026-09-04",
+    "fechas_disponibles": [
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04"
+    ],
+    "categorias": [
+      "Arte y Teatro"
+    ],
+    "etiquetas": [
+      "Museo Banksy Madrid"
+    ],
+    "url": "https://www.universe.com/events/museo-banksy-madrid-tickets-X38GZF?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/museo-banksy-madrid-tickets-X38GZF?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/356/c2db41b9-0c8c-475d-a253-8530d0bce356_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/museo-banksy-madrid-tickets-X38GZF?ref=ticketmaster",
+    "fuente_id": "6a182d892f52ae00011ce55b",
+    "tipo": "plan",
+    "slug": "museo-banksy-madrid",
+    "resumen": "Museo Banksy Madrid",
+    "categoria_principal": "Arte y Teatro",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-04",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-05",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-06",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-07",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-08",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-09",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-10",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-11",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-12",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-13",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-04",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-14",
+    "proximo_datetime": "2026-07-14T00:00:00+02:00",
+    "sort_datetime": "2026-07-14T00:00:00+02:00",
+    "vigente_hasta": "2026-09-04T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/museo-banksy-madrid-tickets-X38GZF?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:698b509c6ef48400015d1c4f",
+    "titulo": "Tablao Flamenco 1911: El Tablao Más Antiguo del Mundo",
+    "subtitulo": null,
+    "descripcion": "Tablao Flamenco 1911: El Tablao Más Antiguo del Mundo",
+    "contenido": "Tablao Flamenco 1911: El Tablao Más Antiguo del Mundo",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Tablao Flamenco 1911",
+    "direccion": "Pl. de Sta. Ana, 15, Centro,, Madrid, 28012",
+    "latitud": 41.38152,
+    "longitud": 1.56931,
+    "fecha_inicio": "2026-07-14",
+    "fecha_fin": "2026-09-03",
+    "fechas_disponibles": [
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03"
+    ],
+    "categorias": [
+      "Música"
+    ],
+    "etiquetas": [
+      "Tablao Flamenco 1911"
+    ],
+    "url": "https://www.universe.com/events/tablao-flamenco-1911-el-tablao-mas-antiguo-del-mundo-tickets-96BY2G?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/tablao-flamenco-1911-el-tablao-mas-antiguo-del-mundo-tickets-96BY2G?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/255/de128b67-be61-4e62-ab34-b33b22be3255_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/tablao-flamenco-1911-el-tablao-mas-antiguo-del-mundo-tickets-96BY2G?ref=ticketmaster",
+    "fuente_id": "698b509c6ef48400015d1c4f",
+    "tipo": "plan",
+    "slug": "tablao-flamenco-1911-el-tablao-mas-antiguo-del-mundo",
+    "resumen": "Tablao Flamenco 1911: El Tablao Más Antiguo del Mundo",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-04",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-05",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-06",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-07",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-08",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-09",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-10",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-11",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-12",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-13",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-03",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-14",
+    "proximo_datetime": "2026-07-14T00:00:00+02:00",
+    "sort_datetime": "2026-07-14T00:00:00+02:00",
+    "vigente_hasta": "2026-09-03T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/tablao-flamenco-1911-el-tablao-mas-antiguo-del-mundo-tickets-96BY2G?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:6a4b734b53cb1491d5006b01",
+    "titulo": "Tablao Flamenco Las Tablas",
+    "subtitulo": null,
+    "descripcion": "Tablao Flamenco Las Tablas",
+    "contenido": "Tablao Flamenco Las Tablas",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Tablao Flamenco Las Tablas",
+    "direccion": "Plaza de España, 9, Madrid, 28008",
+    "latitud": 40.42198,
+    "longitud": -3.71363,
+    "fecha_inicio": "2026-07-14",
+    "fecha_fin": "2026-09-03",
+    "fechas_disponibles": [
+      "2026-07-14",
+      "2026-07-15",
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18",
+      "2026-07-19",
+      "2026-07-20",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-07-23",
+      "2026-07-24",
+      "2026-07-25",
+      "2026-07-26",
+      "2026-07-27",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-07-31",
+      "2026-08-01",
+      "2026-08-02",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-08",
+      "2026-08-09",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-15",
+      "2026-08-16",
+      "2026-08-17",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-22",
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29",
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03"
+    ],
+    "categorias": [
+      "Arte y Teatro"
+    ],
+    "etiquetas": [
+      "Tablao Flamenco Las Tablas"
+    ],
+    "url": "https://www.universe.com/events/tablao-flamenco-las-tablas-tickets-H5F34L?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/tablao-flamenco-las-tablas-tickets-H5F34L?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/9e7/ebdc1d6d-1396-4ca1-9ef3-8298cc25e9e7_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/tablao-flamenco-las-tablas-tickets-H5F34L?ref=ticketmaster",
+    "fuente_id": "6a4b734b53cb1491d5006b01",
+    "tipo": "plan",
+    "slug": "tablao-flamenco-las-tablas",
+    "resumen": "Tablao Flamenco Las Tablas",
+    "categoria_principal": "Arte y Teatro",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "en_curso",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-03",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-04",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-05",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-06",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-07",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-08",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-09",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-10",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-11",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-12",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-13",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-14",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-15",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-18",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-19",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-20",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-21",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-22",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-23",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-24",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-25",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-26",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-27",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-28",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-29",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-30",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-08-31",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-01",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-02",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-09-03",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-14",
+    "proximo_datetime": "2026-07-14T00:00:00+02:00",
+    "sort_datetime": "2026-07-14T00:00:00+02:00",
+    "vigente_hasta": "2026-09-03T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/tablao-flamenco-las-tablas-tickets-H5F34L?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:6992fde866c3d400015b3d7b",
+    "titulo": "WAH Show - Food, Music & Party",
+    "subtitulo": null,
+    "descripcion": "WAH Show - Food, Music & Party",
+    "contenido": "WAH Show - Food, Music & Party",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "IFEMA - Pabellón 5.1",
+    "direccion": "Av. Partenón, 5, Madrid, 28042",
+    "latitud": 40.46558,
+    "longitud": -3.61655,
+    "fecha_inicio": "2026-07-16",
+    "fecha_fin": "2026-07-18",
+    "fechas_disponibles": [
+      "2026-07-16",
+      "2026-07-17",
+      "2026-07-18"
+    ],
+    "categorias": [
+      "Otros"
+    ],
+    "etiquetas": [
+      "WAH Show"
+    ],
+    "url": "https://www.universe.com/events/wah-show-food-music-party-tickets-T345N7?ref=ticketmaster",
+    "url_articulo": "https://www.universe.com/events/wah-show-food-music-party-tickets-T345N7?ref=ticketmaster",
+    "url_compra": null,
+    "imagen": "https://s1.ticketm.net/dam/a/20d/a3c21e63-d50a-446e-bbd3-eeca56eb920d_RETINA_PORTRAIT_16_9.jpg",
+    "fecha_publicacion": null,
+    "fuente": "ticketmaster",
+    "tipo_origen": "partner:www.universe.com",
+    "url_fuente_editorial": "https://www.universe.com/events/wah-show-food-music-party-tickets-T345N7?ref=ticketmaster",
+    "fuente_id": "6992fde866c3d400015b3d7b",
+    "tipo": "plan",
+    "slug": "wah-show-food-music-party",
+    "resumen": "WAH Show - Food, Music & Party",
+    "categoria_principal": "Otros",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "multiple",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-07-16",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-17",
+        "datetime": null,
+        "tiene_hora": false
+      },
+      {
+        "fecha": "2026-07-18",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-07-16",
+    "proximo_datetime": "2026-07-16T00:00:00+02:00",
+    "sort_datetime": "2026-07-16T00:00:00+02:00",
+    "vigente_hasta": "2026-07-18T23:59:59+02:00",
+    "publicado_en": null,
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "partner:www.universe.com",
+      "url_fuente_editorial": "https://www.universe.com/events/wah-show-food-music-party-tickets-T345N7?ref=ticketmaster"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:508330826",
+    "titulo": "Una Cena Cantada",
+    "subtitulo": null,
+    "descripcion": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "contenido": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Café de la Ópera",
+    "direccion": "C. de Arrieta, 6, Madrid",
+    "latitud": 40.41877,
+    "longitud": -3.71017,
+    "fecha_inicio": "2026-07-17",
+    "fecha_fin": "2026-07-17",
+    "fechas_disponibles": [
+      "2026-07-17T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Música Clásica",
+      "Clásica",
+      "Classical/Vocal"
+    ],
+    "etiquetas": [
+      "Una Cena Cantada",
+      "El Café de la Ópera"
+    ],
+    "url": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/508330826",
+    "url_articulo": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/508330826",
+    "url_compra": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/508330826",
+    "imagen": "https://s1.ticketm.net/dam/a/584/e238a616-02b2-4c88-8af0-ccf5c9d60584_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-06-18T18:45:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/508330826",
+    "fuente_id": "508330826",
+    "tipo": "plan",
+    "slug": "una-cena-cantada",
+    "resumen": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-17T20:30:00+02:00",
+    "datetime_fin": "2026-07-17T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-17",
+        "datetime": "2026-07-17T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-17",
+    "proximo_datetime": "2026-07-17T20:30:00+02:00",
+    "sort_datetime": "2026-07-17T20:30:00+02:00",
+    "vigente_hasta": "2026-07-17T20:30:00+02:00",
+    "publicado_en": "2026-06-18T20:45:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/508330826"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:15748979",
+    "titulo": "Una Cena Cantada",
+    "subtitulo": null,
+    "descripcion": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "contenido": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Café de la Ópera",
+    "direccion": "C. de Arrieta, 6, Madrid",
+    "latitud": 40.41877,
+    "longitud": -3.71017,
+    "fecha_inicio": "2026-07-18",
+    "fecha_fin": "2026-07-18",
+    "fechas_disponibles": [
+      "2026-07-18T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Música Clásica",
+      "Clásica",
+      "Classical/Vocal"
+    ],
+    "etiquetas": [
+      "Una Cena Cantada",
+      "El Café de la Ópera"
+    ],
+    "url": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/15748979",
+    "url_articulo": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/15748979",
+    "url_compra": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/15748979",
+    "imagen": "https://s1.ticketm.net/dam/a/584/e238a616-02b2-4c88-8af0-ccf5c9d60584_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-06-22T12:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/15748979",
+    "fuente_id": "15748979",
+    "tipo": "plan",
+    "slug": "una-cena-cantada",
+    "resumen": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-18T20:30:00+02:00",
+    "datetime_fin": "2026-07-18T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-18",
+        "datetime": "2026-07-18T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-18",
+    "proximo_datetime": "2026-07-18T20:30:00+02:00",
+    "sort_datetime": "2026-07-18T20:30:00+02:00",
+    "vigente_hasta": "2026-07-18T20:30:00+02:00",
+    "publicado_en": "2026-06-22T14:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/15748979"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1381547263",
+    "titulo": "My Chemical Romance - The Black Parade 2026",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Iberdrola Music",
+    "direccion": "C/ Laguna Dalga, Madrid, 28021",
+    "latitud": 40.32866,
+    "longitud": -3.71094,
+    "fecha_inicio": "2026-07-18",
+    "fecha_fin": "2026-07-18",
+    "fechas_disponibles": [
+      "2026-07-18T21:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Indie/Alternativo",
+      "Alternativo",
+      "Rock alternativo"
+    ],
+    "etiquetas": [
+      "My Chemical Romance"
+    ],
+    "url": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-entradas/1381547263",
+    "url_articulo": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-entradas/1381547263",
+    "url_compra": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-entradas/1381547263",
+    "imagen": "https://s1.ticketm.net/dam/a/9a6/757c5f88-503e-4267-b7d1-ebdcee7d89a6_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-26T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-entradas/1381547263",
+    "fuente_id": "1381547263",
+    "tipo": "plan",
+    "slug": "my-chemical-romance-the-black-parade-2026",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléf",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-18T21:00:00+02:00",
+    "datetime_fin": "2026-07-18T21:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-18",
+        "datetime": "2026-07-18T21:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-18",
+    "proximo_datetime": "2026-07-18T21:00:00+02:00",
+    "sort_datetime": "2026-07-18T21:00:00+02:00",
+    "vigente_hasta": "2026-07-18T21:00:00+02:00",
+    "publicado_en": "2025-09-26T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-entradas/1381547263"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1574356352",
+    "titulo": "My Chemical Romance - The Black Parade 2026 | Paquetes VIP",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Iberdrola Music",
+    "direccion": "C/ Laguna Dalga, Madrid, 28021",
+    "latitud": 40.32866,
+    "longitud": -3.71094,
+    "fecha_inicio": "2026-07-18",
+    "fecha_fin": "2026-07-18",
+    "fechas_disponibles": [
+      "2026-07-18T21:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Indie/Alternativo",
+      "Alternativo",
+      "Rock alternativo"
+    ],
+    "etiquetas": [
+      "My Chemical Romance"
+    ],
+    "url": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-%7C-paquetes-vip-entradas/1574356352",
+    "url_articulo": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-%7C-paquetes-vip-entradas/1574356352",
+    "url_compra": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-%7C-paquetes-vip-entradas/1574356352",
+    "imagen": "https://s1.ticketm.net/dam/a/9a6/757c5f88-503e-4267-b7d1-ebdcee7d89a6_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-26T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-%7C-paquetes-vip-entradas/1574356352",
+    "fuente_id": "1574356352",
+    "tipo": "plan",
+    "slug": "my-chemical-romance-the-black-parade-2026-paquetes-vip",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción. Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa q",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-18T21:00:00+02:00",
+    "datetime_fin": "2026-07-18T21:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-18",
+        "datetime": "2026-07-18T21:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-18",
+    "proximo_datetime": "2026-07-18T21:00:00+02:00",
+    "sort_datetime": "2026-07-18T21:00:00+02:00",
+    "vigente_hasta": "2026-07-18T21:00:00+02:00",
+    "publicado_en": "2025-09-26T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/my-chemical-romance-the-black-parade-2026-%7C-paquetes-vip-entradas/1574356352"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:2025912160",
+    "titulo": "Eva Ayllon",
+    "subtitulo": null,
+    "descripcion": "Conocida también como la \"Reina del landó\", es considerada la mejor cultora de la música Afro Peruana, es una mujer que encanta con su voz a propios y extraños- Eva tiene 54 años de carrera artística cantándole al Perú ya todos los peruanos dentro de nuestro país y fuera de nuestras fronteras. Tiene más de 30 producciones discográficas, entre ellas discos de oro y platino, diez nominaciones al Grammy Latino y en el 2020 recibió el Premio a la Excelencia Musical. Entres sus producciones recientes . La versatilidad de su voz le empezará a incursionar en diversos géneros musicales, característica que la ha llevado a compartir escenario con grandes artistas de talla internacional como El Gran Combo de Puerto Rico, David Bisbal, Gilberto Santa Rosa, Soledad Pastorutti, Armando Manzanero, Inti Illimani Histórico, Diego El Cigala, Pedro Aznar, Albita, Luis Enrique, Gianmarco, Kalimba, Marc Anthony, Olga Tañon, Tania Libertad, Luis Jara, Juan Diego Flórez, Alex Lora, Los Kjarkas, entre otros. Horarios Apertura de puertas: 18:30h Edades Entrada prohibida a menores de 16 años.",
+    "contenido": "Conocida también como la \"Reina del landó\", es considerada la mejor cultora de la música Afro Peruana, es una mujer que encanta con su voz a propios y extraños- Eva tiene 54 años de carrera artística cantándole al Perú ya todos los peruanos dentro de nuestro país y fuera de nuestras fronteras. Tiene más de 30 producciones discográficas, entre ellas discos de oro y platino, diez nominaciones al Grammy Latino y en el 2020 recibió el Premio a la Excelencia Musical. Entres sus producciones recientes . La versatilidad de su voz le empezará a incursionar en diversos géneros musicales, característica que la ha llevado a compartir escenario con grandes artistas de talla internacional como El Gran Combo de Puerto Rico, David Bisbal, Gilberto Santa Rosa, Soledad Pastorutti, Armando Manzanero, Inti Illimani Histórico, Diego El Cigala, Pedro Aznar, Albita, Luis Enrique, Gianmarco, Kalimba, Marc Anthony, Olga Tañon, Tania Libertad, Luis Jara, Juan Diego Flórez, Alex Lora, Los Kjarkas, entre otros. Horarios Apertura de puertas: 18:30h Edades Entrada prohibida a menores de 16 años.",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Sala Black Box (P. Vistalegre)",
+    "direccion": "Acceso Norte. Calle Castrojeriz s/n, Madrid, 28025",
+    "latitud": 40.38681,
+    "longitud": -3.73952,
+    "fecha_inicio": "2026-07-23",
+    "fecha_fin": "2026-07-23",
+    "fechas_disponibles": [
+      "2026-07-23T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Latino",
+      "Latin"
+    ],
+    "etiquetas": [
+      "Eva Ayllon"
+    ],
+    "url": "https://www.ticketmaster.es/event/eva-ayllon-entradas/2025912160",
+    "url_articulo": "https://www.ticketmaster.es/event/eva-ayllon-entradas/2025912160",
+    "url_compra": "https://www.ticketmaster.es/event/eva-ayllon-entradas/2025912160",
+    "imagen": "https://s1.ticketm.net/dam/a/ceb/b8c62fb3-6c4a-4ce1-941c-82a3a4c06ceb_731031_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-02-12T12:45:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/eva-ayllon-entradas/2025912160",
+    "fuente_id": "2025912160",
+    "tipo": "plan",
+    "slug": "eva-ayllon",
+    "resumen": "Conocida también como la \"Reina del landó\", es considerada la mejor cultora de la música Afro Peruana, es una mujer que encanta con su voz a propios y extraños- Eva tiene 54 años de carrera artística cantándole al Perú ya todos los peruanos dentro de nuestro país y fuera de nuestras fronteras. Tiene más de 30 produccio",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-23T20:00:00+02:00",
+    "datetime_fin": "2026-07-23T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-23",
+        "datetime": "2026-07-23T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-23",
+    "proximo_datetime": "2026-07-23T20:00:00+02:00",
+    "sort_datetime": "2026-07-23T20:00:00+02:00",
+    "vigente_hasta": "2026-07-23T20:00:00+02:00",
+    "publicado_en": "2026-02-12T13:45:00+01:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/eva-ayllon-entradas/2025912160"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:85287008",
+    "titulo": "JET",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción.Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción.Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "La Riviera",
+    "direccion": "Paseo Bajo de la Virgen del Puerto, s/n, Madrid, 28005",
+    "latitud": 40.41305,
+    "longitud": -3.72215,
+    "fecha_inicio": "2026-07-23",
+    "fecha_fin": "2026-07-23",
+    "fechas_disponibles": [
+      "2026-07-23T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "JET"
+    ],
+    "url": "https://www.ticketmaster.es/event/jet-entradas/85287008",
+    "url_articulo": "https://www.ticketmaster.es/event/jet-entradas/85287008",
+    "url_compra": "https://www.ticketmaster.es/event/jet-entradas/85287008",
+    "imagen": "https://s1.ticketm.net/dam/a/563/c42b6f4d-d93c-4b45-903f-84ff0e457563_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-02-06T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/jet-entradas/85287008",
+    "fuente_id": "85287008",
+    "tipo": "plan",
+    "slug": "jet",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción.Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-23T20:30:00+02:00",
+    "datetime_fin": "2026-07-23T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-23",
+        "datetime": "2026-07-23T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-23",
+    "proximo_datetime": "2026-07-23T20:30:00+02:00",
+    "sort_datetime": "2026-07-23T20:30:00+02:00",
+    "vigente_hasta": "2026-07-23T20:30:00+02:00",
+    "publicado_en": "2026-02-06T11:00:00+01:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/jet-entradas/85287008"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:457088435",
+    "titulo": "FRANCO ESCAMILLA - 1995",
+    "subtitulo": null,
+    "descripcion": "Franco Escamilla – \"1995\" El reconocido comediante mexicano Franco Escamilla, conocido como \"El Amo del Sarcasmo\", regresa a los escenarios internacionales con su nuevo espectáculo \"1995\", un show de stand-up cargado de nostalgia, humor ácido y anécdotas personales que conectan con toda una generación. En este nuevo tour, Escamilla invita al público a viajar en el tiempo hasta uno de los años más icónicos de los noventa, explorando con su característico estilo irreverente los acontecimientos, recuerdos y situaciones que marcaron esa época. A través de historias hilarantes, observaciones inteligentes y giros inesperados, el comediante transforma la nostalgia en una experiencia llena de carcajadas. Con una mezcla de humor sarcástico, reflexiones sobre la vida cotidiana y anécdotas personales, \"1995\" ofrece un espectáculo dinámico que conecta tanto con quienes crecieron en los años noventa como con nuevas generaciones que disfrutan del estilo único de Escamilla. Tras conquistar escenarios en América y otras regiones del mundo, el artista llega ahora a Europa con una gira especial, presentando un show completamente en español que promete noches inolvidables de comedia y complicidad con el público. Duración del espectáculo 2:30h Horarios Apertura de puertas: 19:30h Edades Los menores de 16 años deben ir acompañados de un adulto responsable durante todo el evento y en la misma zona. Movilidad Reducida Plataforma específica con un acompañante. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 932 88 70 33. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Franco Escamilla – \"1995\" El reconocido comediante mexicano Franco Escamilla, conocido como \"El Amo del Sarcasmo\", regresa a los escenarios internacionales con su nuevo espectáculo \"1995\", un show de stand-up cargado de nostalgia, humor ácido y anécdotas personales que conectan con toda una generación. En este nuevo tour, Escamilla invita al público a viajar en el tiempo hasta uno de los años más icónicos de los noventa, explorando con su característico estilo irreverente los acontecimientos, recuerdos y situaciones que marcaron esa época. A través de historias hilarantes, observaciones inteligentes y giros inesperados, el comediante transforma la nostalgia en una experiencia llena de carcajadas. Con una mezcla de humor sarcástico, reflexiones sobre la vida cotidiana y anécdotas personales, \"1995\" ofrece un espectáculo dinámico que conecta tanto con quienes crecieron en los años noventa como con nuevas generaciones que disfrutan del estilo único de Escamilla. Tras conquistar escenarios en América y otras regiones del mundo, el artista llega ahora a Europa con una gira especial, presentando un show completamente en español que promete noches inolvidables de comedia y complicidad con el público. Duración del espectáculo 2:30h Horarios Apertura de puertas: 19:30h Edades Los menores de 16 años deben ir acompañados de un adulto responsable durante todo el evento y en la misma zona. Movilidad Reducida Plataforma específica con un acompañante. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 932 88 70 33. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Palacio Vistalegre",
+    "direccion": "Acceso Sur. C/ Matilde Hernández s/n, Madrid, 28025",
+    "latitud": 40.386,
+    "longitud": -3.7385,
+    "fecha_inicio": "2026-07-24",
+    "fecha_fin": "2026-07-24",
+    "fechas_disponibles": [
+      "2026-07-24T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Arte y Teatro",
+      "Comedia y monólogos",
+      "Comedia"
+    ],
+    "etiquetas": [
+      "Franco Escamilla"
+    ],
+    "url": "https://www.ticketmaster.es/event/franco-escamilla-1995-entradas/457088435",
+    "url_articulo": "https://www.ticketmaster.es/event/franco-escamilla-1995-entradas/457088435",
+    "url_compra": "https://www.ticketmaster.es/event/franco-escamilla-1995-entradas/457088435",
+    "imagen": "https://s1.ticketm.net/dam/a/55d/1086348d-24a8-4e0b-9eae-7192af23555d_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-03-20T09:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/franco-escamilla-1995-entradas/457088435",
+    "fuente_id": "457088435",
+    "tipo": "plan",
+    "slug": "franco-escamilla-1995",
+    "resumen": "Franco Escamilla – \"1995\" El reconocido comediante mexicano Franco Escamilla, conocido como \"El Amo del Sarcasmo\", regresa a los escenarios internacionales con su nuevo espectáculo \"1995\", un show de stand-up cargado de nostalgia, humor ácido y anécdotas personales que conectan con toda una generación. En este nuevo to",
+    "categoria_principal": "Arte y Teatro",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-24T20:30:00+02:00",
+    "datetime_fin": "2026-07-24T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-24",
+        "datetime": "2026-07-24T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-24",
+    "proximo_datetime": "2026-07-24T20:30:00+02:00",
+    "sort_datetime": "2026-07-24T20:30:00+02:00",
+    "vigente_hasta": "2026-07-24T20:30:00+02:00",
+    "publicado_en": "2026-03-20T10:00:00+01:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/franco-escamilla-1995-entradas/457088435"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1261981113",
+    "titulo": "Una Cena Cantada",
+    "subtitulo": null,
+    "descripcion": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "contenido": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Café de la Ópera",
+    "direccion": "C. de Arrieta, 6, Madrid",
+    "latitud": 40.41877,
+    "longitud": -3.71017,
+    "fecha_inicio": "2026-07-24",
+    "fecha_fin": "2026-07-24",
+    "fechas_disponibles": [
+      "2026-07-24T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Música Clásica",
+      "Clásica",
+      "Classical/Vocal"
+    ],
+    "etiquetas": [
+      "Una Cena Cantada",
+      "El Café de la Ópera"
+    ],
+    "url": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/1261981113",
+    "url_articulo": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/1261981113",
+    "url_compra": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/1261981113",
+    "imagen": "https://s1.ticketm.net/dam/a/584/e238a616-02b2-4c88-8af0-ccf5c9d60584_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-06-22T12:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/1261981113",
+    "fuente_id": "1261981113",
+    "tipo": "plan",
+    "slug": "una-cena-cantada",
+    "resumen": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-24T20:30:00+02:00",
+    "datetime_fin": "2026-07-24T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-24",
+        "datetime": "2026-07-24T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-24",
+    "proximo_datetime": "2026-07-24T20:30:00+02:00",
+    "sort_datetime": "2026-07-24T20:30:00+02:00",
+    "vigente_hasta": "2026-07-24T20:30:00+02:00",
+    "publicado_en": "2026-06-22T14:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/1261981113"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1192400285",
+    "titulo": "Perú Salsa All Stars - 2da Edición",
+    "subtitulo": null,
+    "descripcion": "Perú Salsa All Star – 2da Edición | Madrid Prepárate para vivir una noche inolvidable llena de ritmo, sabor y pura energía latina con la 2da edición de Perú Salsa All Star en Madrid. Este espectacular evento reunirá a grandes exponentes de la salsa y la música tropical en un mismo escenario, ofreciendo un show único que hará vibrar al público de principio a fin. Disfruta en vivo de artistas reconocidos como Daniela Darcourt, Masiel Málaga, Josimar & Su Yambú, Wilmer Cartagena, N’Samble y La Novel, quienes traerán lo mejor de su repertorio para hacerte bailar sin parar. La cita será en el emblemático Palacio Vistalegre, uno de los recintos más importantes de la ciudad, ideal para vivir una experiencia musical de primer nivel. Fecha: Sábado 25 de julio Lugar: Palacio Vistalegre, Madrid No te pierdas este gran encuentro de estrellas de la salsa peruana, donde la música, la cultura y la fiesta se unen en una sola noche. ¡Ven a disfrutar, cantar y bailar como nunca! b>Horarios Apertura de puertas: 18:30h Edades Los menores de 16 años deben ir acompañados de un adulto responsable durante todo el evento y en la misma zona. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Perú Salsa All Star – 2da Edición | Madrid Prepárate para vivir una noche inolvidable llena de ritmo, sabor y pura energía latina con la 2da edición de Perú Salsa All Star en Madrid. Este espectacular evento reunirá a grandes exponentes de la salsa y la música tropical en un mismo escenario, ofreciendo un show único que hará vibrar al público de principio a fin. Disfruta en vivo de artistas reconocidos como Daniela Darcourt, Masiel Málaga, Josimar & Su Yambú, Wilmer Cartagena, N’Samble y La Novel, quienes traerán lo mejor de su repertorio para hacerte bailar sin parar. La cita será en el emblemático Palacio Vistalegre, uno de los recintos más importantes de la ciudad, ideal para vivir una experiencia musical de primer nivel. Fecha: Sábado 25 de julio Lugar: Palacio Vistalegre, Madrid No te pierdas este gran encuentro de estrellas de la salsa peruana, donde la música, la cultura y la fiesta se unen en una sola noche. ¡Ven a disfrutar, cantar y bailar como nunca! b>Horarios Apertura de puertas: 18:30h Edades Los menores de 16 años deben ir acompañados de un adulto responsable durante todo el evento y en la misma zona. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Palacio Vistalegre",
+    "direccion": "Acceso Sur. C/ Matilde Hernández s/n, Madrid, 28025",
+    "latitud": 40.386,
+    "longitud": -3.7385,
+    "fecha_inicio": "2026-07-25",
+    "fecha_fin": "2026-07-25",
+    "fechas_disponibles": [
+      "2026-07-25T19:30:00+02:00"
+    ],
+    "categorias": [
+      "Festivales",
+      "Festival de Música",
+      "Música",
+      "Indefinido"
+    ],
+    "etiquetas": [
+      "Perú Salsa All Stars"
+    ],
+    "url": "https://www.ticketmaster.es/event/peru-salsa-all-stars-2da-edicion-entradas/1192400285",
+    "url_articulo": "https://www.ticketmaster.es/event/peru-salsa-all-stars-2da-edicion-entradas/1192400285",
+    "url_compra": "https://www.ticketmaster.es/event/peru-salsa-all-stars-2da-edicion-entradas/1192400285",
+    "imagen": "https://s1.ticketm.net/dam/a/891/6955d8f8-d7ef-4da2-a9a4-450c994a6891_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-04-01T08:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/peru-salsa-all-stars-2da-edicion-entradas/1192400285",
+    "fuente_id": "1192400285",
+    "tipo": "plan",
+    "slug": "peru-salsa-all-stars-2da-edicion",
+    "resumen": "Perú Salsa All Star – 2da Edición | Madrid Prepárate para vivir una noche inolvidable llena de ritmo, sabor y pura energía latina con la 2da edición de Perú Salsa All Star en Madrid. Este espectacular evento reunirá a grandes exponentes de la salsa y la música tropical en un mismo escenario, ofreciendo un show único qu",
+    "categoria_principal": "Festivales",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-25T19:30:00+02:00",
+    "datetime_fin": "2026-07-25T19:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-25",
+        "datetime": "2026-07-25T19:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-25",
+    "proximo_datetime": "2026-07-25T19:30:00+02:00",
+    "sort_datetime": "2026-07-25T19:30:00+02:00",
+    "vigente_hasta": "2026-07-25T19:30:00+02:00",
+    "publicado_en": "2026-04-01T10:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/peru-salsa-all-stars-2da-edicion-entradas/1192400285"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:883266671",
+    "titulo": "Una Cena Cantada",
+    "subtitulo": null,
+    "descripcion": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "contenido": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Café de la Ópera",
+    "direccion": "C. de Arrieta, 6, Madrid",
+    "latitud": 40.41877,
+    "longitud": -3.71017,
+    "fecha_inicio": "2026-07-25",
+    "fecha_fin": "2026-07-25",
+    "fechas_disponibles": [
+      "2026-07-25T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Música Clásica",
+      "Clásica",
+      "Classical/Vocal"
+    ],
+    "etiquetas": [
+      "Una Cena Cantada",
+      "El Café de la Ópera"
+    ],
+    "url": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/883266671",
+    "url_articulo": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/883266671",
+    "url_compra": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/883266671",
+    "imagen": "https://s1.ticketm.net/dam/a/584/e238a616-02b2-4c88-8af0-ccf5c9d60584_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-06-22T12:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/883266671",
+    "fuente_id": "883266671",
+    "tipo": "plan",
+    "slug": "una-cena-cantada",
+    "resumen": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-25T20:30:00+02:00",
+    "datetime_fin": "2026-07-25T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-25",
+        "datetime": "2026-07-25T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-25",
+    "proximo_datetime": "2026-07-25T20:30:00+02:00",
+    "sort_datetime": "2026-07-25T20:30:00+02:00",
+    "vigente_hasta": "2026-07-25T20:30:00+02:00",
+    "publicado_en": "2026-06-22T14:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/883266671"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:171086480",
+    "titulo": "Una Cena Cantada",
+    "subtitulo": null,
+    "descripcion": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "contenido": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "El Café de la Ópera",
+    "direccion": "C. de Arrieta, 6, Madrid",
+    "latitud": 40.41877,
+    "longitud": -3.71017,
+    "fecha_inicio": "2026-07-31",
+    "fecha_fin": "2026-07-31",
+    "fechas_disponibles": [
+      "2026-07-31T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Música Clásica",
+      "Clásica",
+      "Classical/Vocal"
+    ],
+    "etiquetas": [
+      "Una Cena Cantada",
+      "El Café de la Ópera"
+    ],
+    "url": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/171086480",
+    "url_articulo": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/171086480",
+    "url_compra": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/171086480",
+    "imagen": "https://s1.ticketm.net/dam/a/584/e238a616-02b2-4c88-8af0-ccf5c9d60584_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-06-22T12:05:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/171086480",
+    "fuente_id": "171086480",
+    "tipo": "plan",
+    "slug": "una-cena-cantada",
+    "resumen": "La noche más divertida y romántica en el corazón de Madrid. Una velada inolvidable con la magia de la Zarzuela. Apertura de puertas 20:30h Inicio espectáculo 20:45h",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-07-31T20:30:00+02:00",
+    "datetime_fin": "2026-07-31T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-07-31",
+        "datetime": "2026-07-31T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-07-31",
+    "proximo_datetime": "2026-07-31T20:30:00+02:00",
+    "sort_datetime": "2026-07-31T20:30:00+02:00",
+    "vigente_hasta": "2026-07-31T20:30:00+02:00",
+    "publicado_en": "2026-06-22T14:05:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/una-cena-cantada-entradas/171086480"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:502662842",
+    "titulo": "Plaza de Parking - The Weeknd: After Hours Til Dawn Tour 28-08-26",
+    "subtitulo": null,
+    "descripcion": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "contenido": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Parking Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-28",
+    "fecha_fin": "2026-08-28",
+    "fechas_disponibles": [
+      "2026-08-28"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd"
+    ],
+    "url": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26-entradas/502662842",
+    "url_articulo": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26-entradas/502662842",
+    "url_compra": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26-entradas/502662842",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-09T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26-entradas/502662842",
+    "fuente_id": "502662842",
+    "tipo": "plan",
+    "slug": "plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26",
+    "resumen": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-08-28",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-08-28",
+    "proximo_datetime": "2026-08-28T00:00:00+02:00",
+    "sort_datetime": "2026-08-28T00:00:00+02:00",
+    "vigente_hasta": "2026-08-28T23:59:59+02:00",
+    "publicado_en": "2025-09-09T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-28-08-26-entradas/502662842"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1894732982",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-28",
+    "fecha_fin": "2026-08-28",
+    "fechas_disponibles": [
+      "2026-08-28T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1894732982",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1894732982",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1894732982",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1894732982",
+    "fuente_id": "1894732982",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-28T20:00:00+02:00",
+    "datetime_fin": "2026-08-28T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-28",
+        "datetime": "2026-08-28T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-28",
+    "proximo_datetime": "2026-08-28T20:00:00+02:00",
+    "sort_datetime": "2026-08-28T20:00:00+02:00",
+    "vigente_hasta": "2026-08-28T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1894732982"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:60087277",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour | Paquetes VIP",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-28",
+    "fecha_fin": "2026-08-28",
+    "fechas_disponibles": [
+      "2026-08-28T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/60087277",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/60087277",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/60087277",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/60087277",
+    "fuente_id": "60087277",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour-paquetes-vip",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción. Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-28T20:00:00+02:00",
+    "datetime_fin": "2026-08-28T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-28",
+        "datetime": "2026-08-28T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-28",
+    "proximo_datetime": "2026-08-28T20:00:00+02:00",
+    "sort_datetime": "2026-08-28T20:00:00+02:00",
+    "vigente_hasta": "2026-08-28T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/60087277"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:955821833",
+    "titulo": "Plaza de Parking - The Weeknd: After Hours Til Dawn Tour 29-08-26",
+    "subtitulo": null,
+    "descripcion": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "contenido": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Parking Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-29",
+    "fecha_fin": "2026-08-29",
+    "fechas_disponibles": [
+      "2026-08-29"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd"
+    ],
+    "url": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26-entradas/955821833",
+    "url_articulo": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26-entradas/955821833",
+    "url_compra": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26-entradas/955821833",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-09T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26-entradas/955821833",
+    "fuente_id": "955821833",
+    "tipo": "plan",
+    "slug": "plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26",
+    "resumen": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-08-29",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-08-29",
+    "proximo_datetime": "2026-08-29T00:00:00+02:00",
+    "sort_datetime": "2026-08-29T00:00:00+02:00",
+    "vigente_hasta": "2026-08-29T23:59:59+02:00",
+    "publicado_en": "2025-09-09T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-29-08-26-entradas/955821833"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1513387482",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-29",
+    "fecha_fin": "2026-08-29",
+    "fechas_disponibles": [
+      "2026-08-29T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1513387482",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1513387482",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1513387482",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1513387482",
+    "fuente_id": "1513387482",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la ",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-29T20:00:00+02:00",
+    "datetime_fin": "2026-08-29T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-29",
+        "datetime": "2026-08-29T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-29",
+    "proximo_datetime": "2026-08-29T20:00:00+02:00",
+    "sort_datetime": "2026-08-29T20:00:00+02:00",
+    "vigente_hasta": "2026-08-29T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1513387482"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:278620179",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour | Paquetes VIP",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-29",
+    "fecha_fin": "2026-08-29",
+    "fechas_disponibles": [
+      "2026-08-29T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/278620179",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/278620179",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/278620179",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/278620179",
+    "fuente_id": "278620179",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour-paquetes-vip",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la ",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-29T20:00:00+02:00",
+    "datetime_fin": "2026-08-29T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-29",
+        "datetime": "2026-08-29T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-29",
+    "proximo_datetime": "2026-08-29T20:00:00+02:00",
+    "sort_datetime": "2026-08-29T20:00:00+02:00",
+    "vigente_hasta": "2026-08-29T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/278620179"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:2057149757",
+    "titulo": "Hermanos Gutierrez",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción. Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí Artista invitado: Céline Dessberg",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción. Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí Artista invitado: Céline Dessberg",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "La Riviera",
+    "direccion": "Paseo Bajo de la Virgen del Puerto, s/n, Madrid, 28005",
+    "latitud": 40.41305,
+    "longitud": -3.72215,
+    "fecha_inicio": "2026-08-29",
+    "fecha_fin": "2026-08-29",
+    "fechas_disponibles": [
+      "2026-08-29T20:30:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "Hermanos Gutiérrez"
+    ],
+    "url": "https://www.ticketmaster.es/event/hermanos-gutierrez-entradas/2057149757",
+    "url_articulo": "https://www.ticketmaster.es/event/hermanos-gutierrez-entradas/2057149757",
+    "url_compra": "https://www.ticketmaster.es/event/hermanos-gutierrez-entradas/2057149757",
+    "imagen": "https://s1.ticketm.net/dam/a/87a/468b7175-2c15-48b8-b8f4-6e9525dcf87a_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2026-02-13T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/hermanos-gutierrez-entradas/2057149757",
+    "fuente_id": "2057149757",
+    "tipo": "plan",
+    "slug": "hermanos-gutierrez",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción. Los menores de 16 años sólo podrán acceder al recinto acompañados de madre, padre o tutor/a legal. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa qu",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-29T20:30:00+02:00",
+    "datetime_fin": "2026-08-29T20:30:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-29",
+        "datetime": "2026-08-29T20:30:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-29",
+    "proximo_datetime": "2026-08-29T20:30:00+02:00",
+    "sort_datetime": "2026-08-29T20:30:00+02:00",
+    "vigente_hasta": "2026-08-29T20:30:00+02:00",
+    "publicado_en": "2026-02-13T11:00:00+01:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/hermanos-gutierrez-entradas/2057149757"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1171120704",
+    "titulo": "Plaza de Parking - The Weeknd: After Hours Til Dawn Tour 30-08-26",
+    "subtitulo": null,
+    "descripcion": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "contenido": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Parking Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-30",
+    "fecha_fin": "2026-08-30",
+    "fechas_disponibles": [
+      "2026-08-30"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd"
+    ],
+    "url": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26-entradas/1171120704",
+    "url_articulo": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26-entradas/1171120704",
+    "url_compra": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26-entradas/1171120704",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-10T12:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26-entradas/1171120704",
+    "fuente_id": "1171120704",
+    "tipo": "plan",
+    "slug": "plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26",
+    "resumen": "Alquiler de plaza de parking en el Riyadh Air Metropolitano, durante el concierto de The Weeknd.",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual",
+    "estado_temporal": "proximo",
+    "datetime_inicio": null,
+    "datetime_fin": null,
+    "tiene_hora_inicio": false,
+    "tiene_hora_fin": false,
+    "sesiones": [
+      {
+        "fecha": "2026-08-30",
+        "datetime": null,
+        "tiene_hora": false
+      }
+    ],
+    "proxima_fecha": "2026-08-30",
+    "proximo_datetime": "2026-08-30T00:00:00+02:00",
+    "sort_datetime": "2026-08-30T00:00:00+02:00",
+    "vigente_hasta": "2026-08-30T23:59:59+02:00",
+    "publicado_en": "2025-09-10T14:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/plaza-de-parking-the-weeknd-after-hours-til-dawn-tour-30-08-26-entradas/1171120704"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1765379991",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. Si deseas adquirir entradas para Personas de Movilidad Reducida, solicítalas en el teléfono 930 497 500 Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-30",
+    "fecha_fin": "2026-08-30",
+    "fechas_disponibles": [
+      "2026-08-30T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1765379991",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1765379991",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1765379991",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1765379991",
+    "fuente_id": "1765379991",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la ",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-30T20:00:00+02:00",
+    "datetime_fin": "2026-08-30T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-30",
+        "datetime": "2026-08-30T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-30",
+    "proximo_datetime": "2026-08-30T20:00:00+02:00",
+    "sort_datetime": "2026-08-30T20:00:00+02:00",
+    "vigente_hasta": "2026-08-30T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-entradas/1765379991"
+    }
+  },
+  {
+    "id": "plan:ticketmaster:1801701250",
+    "titulo": "The Weeknd: After Hours Til Dawn Tour | Paquetes VIP",
+    "subtitulo": null,
+    "descripcion": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "contenido": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la gira After Hours Til Dawn 2026, The Weeknd volverá a colaborar con Global Citizen y el Fondo Humanitario XO del Programa Mundial de Alimentos de las Naciones Unidas. Se donará 1 € de cada entrada vendida en Europa y 1 £ en el Reino Unido a estas dos organizaciones. La entrada VIP1 - The Timeless VIP Lounge Package incluye: • Asiento numerado de primera categoría • Acceso al VIP Lounge antes del show con: • Selección de aperitivos y dulces • 2 bebidas de cortesía para cocktails, cerveza, vino o refresco • Juegos interactivos y fotomatón • Un artículo de regalo de Nespresso y Samra Origins • DJ set pinchando las canciones de The Weeknd • Un regalo edición limitada de The Weeknd (exclusivo para VIPs) • Acreditación conmemorativa VIP y pulsera VIP Lounge • Oportunidad de hacerte una fotografía frente al photocall VIP para conmemorar la noche* • Oportunidad de compra de merchandising antes del show (donde disponible) • Staff VIP y punto de check-in *El artista NO participa Entradas Móviles Este es un evento exclusivamente con Entradas Móviles. Esto significa que no hay entradas en PDF ni en papel disponibles. ¡Tu móvil es tu entrada! Tus entradas serán escaneadas directamente desde tu app Ticketmaster en tu móvil. Obtén más información sobre Entradas Móviles aquí",
+    "precio": null,
+    "moneda": "EUR",
+    "lugar": "Estadio Riyadh Air Metropolitano",
+    "direccion": "Av. de Luis Aragonés, 4, Madrid, 28022",
+    "latitud": 40.43624,
+    "longitud": -3.59947,
+    "fecha_inicio": "2026-08-30",
+    "fecha_fin": "2026-08-30",
+    "fechas_disponibles": [
+      "2026-08-30T20:00:00+02:00"
+    ],
+    "categorias": [
+      "Música",
+      "Pop/Rock",
+      "Rock",
+      "Pop"
+    ],
+    "etiquetas": [
+      "The Weeknd",
+      "Playboi Carti"
+    ],
+    "url": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/1801701250",
+    "url_articulo": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/1801701250",
+    "url_compra": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/1801701250",
+    "imagen": "https://s1.ticketm.net/dam/a/3d0/f0586391-c689-4859-bc4f-2962c48cd3d0_EVENT_DETAIL_PAGE_16_9.jpg",
+    "fecha_publicacion": "2025-09-12T10:00:00Z",
+    "fuente": "ticketmaster",
+    "tipo_origen": "native:www.ticketmaster.es",
+    "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/1801701250",
+    "fuente_id": "1801701250",
+    "tipo": "plan",
+    "slug": "the-weeknd-after-hours-til-dawn-tour-paquetes-vip",
+    "resumen": "Aplica una cuota de servicio de 2€ por transacción.Artista Invitado: Playboi Carti Edades: Los menores de 16 años sólo podrán acceder al recinto acompañados de un adulto responsable con entrada en el mismo sector o puerta. *Todos los asistentes deben disponer de entrada, independientemente de su edad. Como parte de la ",
+    "categoria_principal": "Música",
+    "autor": null,
+    "es_gratis": null,
+    "modo_fecha": "puntual_con_hora",
+    "estado_temporal": "proximo",
+    "datetime_inicio": "2026-08-30T20:00:00+02:00",
+    "datetime_fin": "2026-08-30T20:00:00+02:00",
+    "tiene_hora_inicio": true,
+    "tiene_hora_fin": true,
+    "sesiones": [
+      {
+        "fecha": "2026-08-30",
+        "datetime": "2026-08-30T20:00:00+02:00",
+        "tiene_hora": true
+      }
+    ],
+    "proxima_fecha": "2026-08-30",
+    "proximo_datetime": "2026-08-30T20:00:00+02:00",
+    "sort_datetime": "2026-08-30T20:00:00+02:00",
+    "vigente_hasta": "2026-08-30T20:00:00+02:00",
+    "publicado_en": "2025-09-12T12:00:00+02:00",
+    "actualizado_en": null,
+    "scraped_en": "2026-07-14T07:41:20Z",
+    "timezone": "Europe/Madrid",
+    "valido_para_web": true,
+    "metadata": {
+      "tipo_origen": "native:www.ticketmaster.es",
+      "url_fuente_editorial": "https://www.ticketmaster.es/event/the-weeknd-after-hours-til-dawn-tour-%7C-paquetes-vip-entradas/1801701250"
+    }
+  }
+]
