@@ -4318,5 +4318,25 @@
     "lat": null,
     "lon": null,
     "query": "Plaza de España Crédito editorial"
+  },
+  "calle de arlabán, 1, madrid, 28014, españa": {
+    "lat": 40.417039,
+    "lon": -3.699592,
+    "query": "Calle de Arlabán, 1, Madrid, 28014"
+  },
+  "cuesta de santo domingo, 22, 28013, madrid, españa": {
+    "lat": 40.419764,
+    "lon": -3.708394,
+    "query": "Cuesta de Santo Domingo, 22, 28013"
+  },
+  "c. de san agustín, 6, madrid, 28014, españa": {
+    "lat": 40.414787,
+    "lon": -3.697042,
+    "query": "C. de San Agustín, 6, Madrid, 28014"
+  },
+  "c. de la ballesta, 7, madrid, 28004, españa": {
+    "lat": 40.421629,
+    "lon": -3.703541,
+    "query": "C. de la Ballesta, 7, Madrid, 28004"
   }
 }
