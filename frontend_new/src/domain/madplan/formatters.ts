@@ -21,8 +21,23 @@ export function getEndOfToday(now = new Date()): Date {
   return new Date(now.getFullYear(), now.getMonth(), now.getDate(), 23, 59, 59, 999);
 }
 
+/** Madrid's hour, wherever the visitor is: this is a Madrid-native product. */
+export function getMadridHour(now = new Date()): number {
+  try {
+    return Number(
+      new Intl.DateTimeFormat('es-ES', {
+        hour: 'numeric',
+        hour12: false,
+        timeZone: 'Europe/Madrid',
+      }).format(now),
+    );
+  } catch {
+    return now.getHours();
+  }
+}
+
 export function getCurrentThemeTime(now = new Date()): TimeOfDay {
-  const hour = now.getHours();
+  const hour = getMadridHour(now);
   if (hour >= 6 && hour < 12) return 'morning';
   if (hour >= 12 && hour < 18) return 'afternoon';
   if (hour >= 18 && hour < 22) return 'evening';

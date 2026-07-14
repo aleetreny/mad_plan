@@ -85,6 +85,26 @@ Smoke test end-to-end (requiere build previo):
 python tools/smoke_frontend.py
 ```
 
+## Despliegue (GitHub Pages)
+
+La web es 100 % estática (bundle de Vite + dos JSON), así que **GitHub Pages es
+suficiente** — no hace falta Vercel/Netlify. Pasos, una sola vez:
+
+1. En GitHub: **Settings → Pages → Source: "GitHub Actions"**.
+2. Lanza el workflow **"Desplegar web (GitHub Pages)"** desde la pestaña
+   Actions (o haz cualquier push a `main`).
+
+A partir de ahí la web se redespliega sola: con cada push de código y cada
+madrugada tras la actualización de datos (el workflow nocturno incluye un job
+de deploy, porque los commits del bot no disparan otros workflows). El build
+usa `base: './'`, por lo que funciona igual en `usuario.github.io/mad_plan/`
+que en local.
+
+Nota: en un repo privado la web publicada es accesible para cualquiera con la
+URL (la restricción de acceso a Pages solo existe en el plan Enterprise). Si
+algún día quieres dominio propio o protegerla con contraseña, entonces sí:
+Netlify/Vercel (gratis para proyectos personales) o Cloudflare Pages.
+
 ## Actualización automática (GitHub Actions)
 
 `.github/workflows/nightly_scrape.yml` corre el pipeline **una vez al día**

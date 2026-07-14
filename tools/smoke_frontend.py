@@ -47,7 +47,7 @@ def main() -> None:
 
             page.goto(base_url, wait_until="domcontentloaded", timeout=30_000)
 
-            page.get_by_text("¿Qué plan hay hoy en Madrid?").wait_for(timeout=30_000)
+            page.get_by_text("Qué hacer en Madrid").wait_for(timeout=30_000)
             page.locator('[data-testid="search-input"]').wait_for(timeout=30_000)
             page.locator('[data-testid="event-card"]').first.wait_for(timeout=30_000)
 

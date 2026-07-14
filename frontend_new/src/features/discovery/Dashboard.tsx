@@ -1,7 +1,8 @@
 import { lazy, Suspense, useDeferredValue, useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import { CalendarDays, Loader2, MapPin, Newspaper, Search, Sparkles, Ticket } from 'lucide-react';
+import { CalendarDays, Dices, Loader2, MapPin, Search } from 'lucide-react';
 import { SeoHead } from '../../app/seo/SeoHead';
+import { getCurrentThemeTime } from '../../domain/madplan/formatters';
 import {
   deriveCityStats,
   deriveFacetOptions,
@@ -25,6 +26,13 @@ import { VibeSelector } from '../preferences/VibeSelector';
 import { useDiscoveryState } from './useDiscoveryState';
 
 const MapView = lazy(() => import('./MapView').then((module) => ({ default: module.MapView })));
+
+const DAYPART_LINE: Record<ReturnType<typeof getCurrentThemeTime>, (n: string) => string> = {
+  morning: (n) => `Madrid amanece con ${n} planes`,
+  afternoon: (n) => `Madrid encara la tarde con ${n} planes`,
+  evening: (n) => `Madrid estira el día con ${n} planes`,
+  night: (n) => `Madrid trasnocha con ${n} planes`,
+};
 
 function formatUpdatedAt(updatedAt: Date | null): string | null {
   if (!updatedAt) return null;
@@ -81,6 +89,13 @@ export function Dashboard() {
   const filtersActive = hasActiveFilters(state);
   const updatedLabel = formatUpdatedAt(updatedAt);
 
+  function surpriseMe() {
+    const pool = events.filter((event) => event.isToday || event.isThisWeek || event.isOngoing);
+    const candidates = pool.length > 0 ? pool : events;
+    if (candidates.length === 0) return;
+    setSelectedEvent(candidates[Math.floor(Math.random() * candidates.length)]);
+  }
+
   const filterBar = (
     <FilterBar
       categories={facets.categories}
@@ -123,75 +138,80 @@ export function Dashboard() {
         {state.view === 'list' ? (
           <>
             <motion.section
-              initial={{ opacity: 0, y: 14 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3 }}
-              className="relative overflow-hidden rounded-[28px] border border-border/50 bg-[linear-gradient(150deg,var(--hero-from),var(--hero-to))] px-5 py-8 shadow-[0_18px_60px_rgba(0,0,0,0.14)] sm:px-8 sm:py-10"
+              className="masthead-rule pt-2"
             >
-              <div
-                className="pointer-events-none absolute inset-0 opacity-20"
-                style={{
-                  backgroundImage: 'radial-gradient(circle at 85% 10%, rgba(255,255,255,0.55), transparent 45%)',
-                }}
-              />
-              <div className="relative z-10 mx-auto max-w-3xl text-center">
-                <h2 className="font-display text-3xl font-bold leading-tight text-white sm:text-5xl">
-                  ¿Qué plan hay hoy en Madrid?
-                </h2>
-                <p className="mx-auto mt-3 max-w-xl text-sm leading-6 text-white/85 sm:text-base">
-                  Conciertos, expos, mercados y rutas de {facets.sources.length} fuentes, en un solo sitio y sin ruido.
-                </p>
+              <p className="text-[13px] font-medium text-muted-foreground first-letter:uppercase">
+                {new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/Madrid' }).format(new Date())}
+                <span className="mx-2 text-primary">·</span>
+                {DAYPART_LINE[getCurrentThemeTime()](stats.today.toLocaleString('es-ES'))}
+              </p>
 
-                <label className="mx-auto mt-6 block max-w-xl">
+              <h2 className="mt-3 max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
+                Qué hacer en Madrid, <em className="marker-underline">resuelto</em>.
+              </h2>
+              <p className="mt-4 max-w-xl text-[15px] leading-7 text-muted-foreground">
+                Conciertos, expos, mercados y rutas de {facets.sources.length} agendas distintas,
+                cruzadas y sin duplicados. Lo que antes eran veinte pestañas, ahora es esta.
+              </p>
+
+              <div className="mt-6 flex max-w-2xl flex-col gap-3 sm:flex-row sm:items-center">
+                <label className="min-w-0 flex-1">
                   <span className="sr-only">Buscar planes en Madrid</span>
                   <div className="relative">
-                    <Search className="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-slate-500" />
+                    <Search className="pointer-events-none absolute left-4 top-1/2 h-4.5 w-4.5 -translate-y-1/2 text-muted-foreground" />
                     <input
                       data-testid="search-input"
                       value={state.query}
                       onChange={(event) => setQuery(event.target.value)}
                       placeholder="Busca por artista, sala, barrio o tema…"
-                      className="h-13 w-full rounded-full border-0 bg-white/95 pl-11 pr-4 text-[15px] text-slate-900 shadow-[0_10px_36px_rgba(0,0,0,0.18)] outline-none ring-0 transition placeholder:text-slate-400 focus:bg-white"
+                      className="h-13 w-full rounded-2xl border border-border bg-card pl-11 pr-4 text-[15px] shadow-[0_2px_0_var(--border)] outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary focus:shadow-[0_2px_0_var(--primary)]"
                     />
                   </div>
                 </label>
-
-                <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-                  <button
-                    onClick={() => setDateFilter(state.dateFilter === 'today' ? 'all' : 'today')}
-                    aria-pressed={state.dateFilter === 'today'}
-                    className={`rounded-full px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/25 ${state.dateFilter === 'today' ? 'bg-white/35 ring-1 ring-white/60' : 'bg-white/15'}`}
-                  >
-                    Hoy · {stats.today}
-                  </button>
-                  <button
-                    onClick={() => setDateFilter(state.dateFilter === 'weekend' ? 'all' : 'weekend')}
-                    aria-pressed={state.dateFilter === 'weekend'}
-                    className={`rounded-full px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/25 ${state.dateFilter === 'weekend' ? 'bg-white/35 ring-1 ring-white/60' : 'bg-white/15'}`}
-                  >
-                    Este finde
-                  </button>
-                  <button
-                    onClick={() => setFreeOnly(!state.freeOnly)}
-                    aria-pressed={state.freeOnly}
-                    className={`rounded-full px-4 py-2 text-sm font-semibold text-white backdrop-blur-sm transition hover:bg-white/25 ${state.freeOnly ? 'bg-white/35 ring-1 ring-white/60' : 'bg-white/15'}`}
-                  >
-                    Gratis
-                  </button>
-                  <button
-                    onClick={() => setQuizOpen(true)}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-white px-4 py-2 text-sm font-bold text-slate-900 shadow-md transition hover:-translate-y-0.5"
-                  >
-                    <Sparkles className="h-4 w-4" />
-                    {profile.answeredQuiz ? 'Afinar mi perfil' : 'Planes a mi medida'}
-                  </button>
-                </div>
-
-                <p className="mt-5 text-xs font-medium text-white/70">
-                  {stats.total.toLocaleString('es-ES')} planes activos · {stats.freeToday} gratis hoy
-                  {updatedLabel ? ` · datos actualizados ${updatedLabel}` : ''}
-                </p>
+                <button
+                  onClick={surpriseMe}
+                  className="inline-flex h-13 flex-shrink-0 items-center justify-center gap-2 rounded-2xl border border-foreground bg-foreground px-5 text-sm font-semibold text-background transition-transform hover:-translate-y-0.5"
+                  title="Abre un plan al azar de esta semana"
+                >
+                  <Dices className="h-4.5 w-4.5" />
+                  Sorpréndeme
+                </button>
               </div>
+
+              <div className="mt-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm">
+                <button
+                  onClick={() => setDateFilter(state.dateFilter === 'today' ? 'all' : 'today')}
+                  aria-pressed={state.dateFilter === 'today'}
+                  className={`link-chip ${state.dateFilter === 'today' ? 'link-chip-active' : ''}`}
+                >
+                  Hoy tengo hueco
+                </button>
+                <button
+                  onClick={() => setDateFilter(state.dateFilter === 'weekend' ? 'all' : 'weekend')}
+                  aria-pressed={state.dateFilter === 'weekend'}
+                  className={`link-chip ${state.dateFilter === 'weekend' ? 'link-chip-active' : ''}`}
+                >
+                  Planazo de finde
+                </button>
+                <button
+                  onClick={() => setFreeOnly(!state.freeOnly)}
+                  aria-pressed={state.freeOnly}
+                  className={`link-chip ${state.freeOnly ? 'link-chip-active' : ''}`}
+                >
+                  A coste cero
+                </button>
+                <button onClick={() => setQuizOpen(true)} className="link-chip">
+                  {profile.answeredQuiz ? 'Afinar mi perfil' : 'Dime qué me pega'}
+                </button>
+              </div>
+
+              <p className="mt-5 pb-5 text-xs text-muted-foreground/80">
+                {stats.total.toLocaleString('es-ES')} planes vivos · {stats.freeToday} gratis hoy
+                {updatedLabel ? ` · actualizado ${updatedLabel}` : ''}
+              </p>
             </motion.section>
 
             <section aria-label="Elige tu vibe">
@@ -200,11 +220,11 @@ export function Dashboard() {
 
             {featuredEvents.length > 0 && !filtersActive ? (
               <section className="space-y-3">
-                <div className="flex items-center justify-between gap-3">
-                  <h3 className="flex items-center gap-2 font-display text-xl font-bold sm:text-2xl">
-                    <Sparkles className="h-5 w-5 text-primary" />
-                    Elegidos para ti
-                  </h3>
+                <div className="flex items-end justify-between gap-3">
+                  <div>
+                    <p className="kicker">Para ti</p>
+                    <h3 className="font-display text-xl font-bold sm:text-2xl">Elegidos con tu criterio</h3>
+                  </div>
                   <button
                     onClick={() => setQuizOpen(true)}
                     className="text-sm font-semibold text-primary hover:underline"
@@ -233,10 +253,8 @@ export function Dashboard() {
             <section className="space-y-4">
               <div className="flex flex-wrap items-end justify-between gap-3">
                 <div>
-                  <h3 className="flex items-center gap-2 font-display text-xl font-bold sm:text-2xl">
-                    <Ticket className="h-5 w-5 text-primary" />
-                    Todos los planes
-                  </h3>
+                  <p className="kicker">La agenda</p>
+                  <h3 className="font-display text-xl font-bold sm:text-2xl">Todos los planes</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
                     {rankedEvents.length.toLocaleString('es-ES')}{' '}
                     {rankedEvents.length === 1 ? 'plan' : 'planes'}
@@ -311,11 +329,11 @@ export function Dashboard() {
 
             {news.length > 0 ? (
               <section className="space-y-3 rounded-3xl border border-border/70 bg-card/60 p-5">
-                <div className="flex items-center justify-between gap-3">
-                  <h3 className="flex items-center gap-2 font-display text-xl font-bold">
-                    <Newspaper className="h-5 w-5 text-primary" />
-                    Radar Madrid
-                  </h3>
+                <div className="flex items-end justify-between gap-3">
+                  <div>
+                    <p className="kicker">El radar</p>
+                    <h3 className="font-display text-xl font-bold">Lo que se cuece en Madrid</h3>
+                  </div>
                   <button
                     onClick={() => setView('news')}
                     className="text-sm font-semibold text-primary hover:underline"
@@ -336,9 +354,10 @@ export function Dashboard() {
         {state.view === 'map' ? (
           <section className="space-y-4">
             <div>
-              <h2 className="font-display text-2xl font-bold sm:text-3xl">Madrid en el mapa</h2>
+              <p className="kicker">El plano</p>
+              <h2 className="font-display text-2xl font-bold sm:text-3xl">Madrid, calle a calle</h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                {rankedEvents.length.toLocaleString('es-ES')} planes con los filtros actuales. Toca un punto para ver el detalle.
+                {rankedEvents.length.toLocaleString('es-ES')} planes con los filtros actuales. Toca un punto para ver qué hay.
               </p>
             </div>
             {filterBar}
@@ -361,6 +380,7 @@ export function Dashboard() {
         {state.view === 'news' ? (
           <section className="space-y-4">
             <div>
+              <p className="kicker">El radar</p>
               <h2 className="font-display text-2xl font-bold sm:text-3xl">Actualidad de Madrid</h2>
               <p className="mt-1 text-sm text-muted-foreground">
                 Lo último sobre cultura, ocio y ciudad, directo de los medios locales.
@@ -387,11 +407,12 @@ export function Dashboard() {
       <footer className="mt-4 border-t border-border/70 bg-card/55">
         <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-2 px-4 py-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-6">
           <p>
-            <span className="font-display font-bold text-foreground">MadPlan</span> · la agenda de Madrid en un solo sitio.
+            <span className="font-display font-bold italic text-foreground">madplan<span className="not-italic text-primary">.</span></span>{' '}
+            — hecho en Madrid, para no perderse Madrid.
           </p>
           <p className="inline-flex items-center gap-1.5">
             <CalendarDays className="h-4 w-4" />
-            {updatedLabel ? `Datos actualizados ${updatedLabel}` : 'Datos de fuentes públicas de Madrid'}
+            {updatedLabel ? `Agenda actualizada ${updatedLabel}` : 'La agenda se refresca cada mañana'} · {facets.sources.length} fuentes
           </p>
         </div>
       </footer>

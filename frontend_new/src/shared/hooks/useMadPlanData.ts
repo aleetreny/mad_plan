@@ -41,10 +41,12 @@ export function useMadPlanData() {
     const controller = new AbortController();
 
     async function load() {
+      // Relative URLs so the app works both at the domain root and under a
+      // subpath like GitHub Pages' /mad_plan/.
       const [rawEvents, rawNews, manifest] = await Promise.all([
-        fetchJson<RawMadPlanEvent[]>('/outputs/eventos_web.json', controller.signal),
-        fetchJson<RawMadPlanNews[]>('/outputs/noticias_web.json', controller.signal),
-        fetchJson<PipelineManifest>('/outputs/pipeline_diario.json', controller.signal),
+        fetchJson<RawMadPlanEvent[]>('outputs/eventos_web.json', controller.signal),
+        fetchJson<RawMadPlanNews[]>('outputs/noticias_web.json', controller.signal),
+        fetchJson<PipelineManifest>('outputs/pipeline_diario.json', controller.signal),
       ]);
 
       if (controller.signal.aborted) return;

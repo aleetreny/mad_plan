@@ -52,18 +52,15 @@ export function Navbar({ view, onViewChange, agendaCount, onOpenAgenda }: Navbar
       <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between gap-2 px-3 py-3 sm:gap-3 sm:px-4 md:px-6">
         <button
           onClick={() => onViewChange('list')}
-          className="flex items-center gap-2.5"
+          className="group flex items-baseline gap-2"
           aria-label="Ir a la portada de MadPlan"
         >
-          <div className="grid h-10 w-10 place-items-center rounded-xl bg-primary font-display text-lg font-black text-primary-foreground shadow-[0_8px_24px_rgba(0,0,0,0.16)]">
-            M
-          </div>
-          <div className="hidden text-left min-[440px]:block">
-            <h1 className="font-display text-lg font-bold leading-none md:text-xl">MadPlan</h1>
-            <p className="mt-0.5 hidden text-[10px] font-semibold uppercase tracking-[0.22em] text-muted-foreground sm:block">
-              Planes en Madrid
-            </p>
-          </div>
+          <h1 className="font-display text-[22px] font-bold italic leading-none tracking-tight md:text-2xl">
+            madplan<span className="not-italic text-primary">.</span>
+          </h1>
+          <p className="hidden text-[11px] font-medium text-muted-foreground md:block">
+            la agenda de Madrid
+          </p>
         </button>
 
         <nav

@@ -45,6 +45,9 @@ function outputsPlugin() {
 }
 
 export default defineConfig({
+  // Relative base so the same bundle works at the domain root (serve.py,
+  // Vercel/Netlify) and under a subpath (GitHub Pages /mad_plan/).
+  base: './',
   plugins: [
     react(),
     tailwindcss(),
