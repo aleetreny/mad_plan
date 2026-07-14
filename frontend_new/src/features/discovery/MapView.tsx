@@ -86,7 +86,7 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
   return (
     // `isolate` creates a stacking context so Leaflet's internal z-indexes
     // (400-1000) can never sit above the app's modals and drawers.
-    <div className="relative isolate overflow-hidden rounded-3xl border border-border/70 shadow-[0_10px_36px_rgba(15,10,5,0.08)]" style={{ height: '620px' }}>
+    <div className="relative isolate overflow-hidden rounded-3xl border border-border/70 shadow-[0_10px_36px_rgba(15,10,5,0.08)] h-[65vh] min-h-[420px] sm:h-[620px]">
       <MapContainer
         center={MADRID_CENTER}
         zoom={12}

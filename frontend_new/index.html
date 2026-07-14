@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="La agenda de Madrid en un solo sitio: conciertos, expos, mercados y rutas con mapa, filtros útiles y agenda personal." />
     <meta name="theme-color" content="#c96f2d" />
+    <!-- Arranca la descarga del feed (el recurso más pesado) en paralelo con el JS -->
+    <link rel="preload" href="./outputs/eventos_web.json" as="fetch" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta name="robots" content="index,follow,max-image-preview:large" />
     <meta property="og:title" content="MadPlan · Planes en Madrid" />
     <meta property="og:description" content="La agenda de Madrid en un solo sitio: conciertos, expos, mercados y rutas con mapa y filtros útiles." />

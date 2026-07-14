@@ -79,7 +79,12 @@ export function useDiscoveryState() {
     setDateFilter: (dateFilter: DiscoveryDateFilter) => patch({ dateFilter }),
     setFreeOnly: (freeOnly: boolean) => patch({ freeOnly }),
     setZone: (zone: string | null) => patch({ zone }),
-    setView: (view: DiscoveryView) => patch({ view }, false),
+    setView: (view: DiscoveryView) => {
+      patch({ view }, false);
+      // Cambiar de pestaña debe llevarte al inicio de la nueva vista, no
+      // dejarte a mitad del scroll de la anterior.
+      window.scrollTo({ top: 0 });
+    },
     loadMore: () => setState((current) => ({ ...current, showCount: current.showCount + PAGE_SIZE })),
     clearAll: () => setState(DEFAULT_STATE),
   };

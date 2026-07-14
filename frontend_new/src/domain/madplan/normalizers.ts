@@ -19,12 +19,16 @@ function sanitizeText(value?: string | null): string | undefined {
   return value.replace(/\s+/g, ' ').trim() || undefined;
 }
 
+function isWebUrl(url?: string | null): url is string {
+  return Boolean(url && /^https?:\/\//i.test(url));
+}
+
 function normalizeSourceLinks(event: RawMadPlanEvent): SourceLink[] {
-  const links = (event.source_links || []).filter((link) => Boolean(link?.url));
-  if (event.url && !links.some((link) => link.url === event.url)) {
+  const links = (event.source_links || []).filter((link) => isWebUrl(link?.url));
+  if (isWebUrl(event.url) && !links.some((link) => link.url === event.url)) {
     links.unshift({ fuente: event.fuente, url: event.url, kind: 'detalle' });
   }
-  if (event.url_compra && !links.some((link) => link.url === event.url_compra)) {
+  if (isWebUrl(event.url_compra) && !links.some((link) => link.url === event.url_compra)) {
     links.unshift({ fuente: event.fuente, url: event.url_compra, kind: 'compra' });
   }
   return links;
@@ -83,9 +87,9 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
     descripcion,
     lugar: sanitizeText(event.lugar),
     direccion: sanitizeText(event.direccion),
-    imagen: sanitizeText(event.imagen),
-    url: sanitizeText(event.url),
-    url_compra: sanitizeText(event.url_compra),
+    imagen: isWebUrl(event.imagen) ? sanitizeText(event.imagen) : undefined,
+    url: isWebUrl(event.url) ? sanitizeText(event.url) : undefined,
+    url_compra: isWebUrl(event.url_compra) ? sanitizeText(event.url_compra) : undefined,
     primaryDate,
     endDate: dates.end,
     isOngoing: dates.isOngoing,
@@ -118,8 +122,8 @@ export function normalizeNewsItem(news: RawMadPlanNews): MadPlanNews {
     ...news,
     titulo: sanitizeText(news.titulo) || 'Noticia sin título',
     resumen: sanitizeText(news.resumen),
-    imagen: sanitizeText(news.imagen),
-    url: sanitizeText(news.url),
+    imagen: isWebUrl(news.imagen) ? sanitizeText(news.imagen) : undefined,
+    url: isWebUrl(news.url) ? sanitizeText(news.url) : undefined,
     publishedDate: parseMadPlanDate(news.sort_datetime || news.publicado_en),
     primaryCategory: sanitizeText(news.categoria_principal_norm) || 'Actualidad',
     sourceLabel: sourceLabel(news.fuente),

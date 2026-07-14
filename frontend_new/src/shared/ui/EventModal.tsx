@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
+import { useEffect, useRef, useState } from 'react';
 import {
   Bookmark,
   BookmarkCheck,
@@ -59,6 +58,7 @@ const LINK_KIND_LABELS: Record<string, string> = {
 
 export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgenda }: EventModalProps) {
   const [feedback, setFeedback] = useState<string | null>(null);
+  const dialogRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     if (!event) return;
@@ -67,6 +67,9 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
     }
     window.addEventListener('keydown', onKeyDown);
     document.body.style.overflow = 'hidden';
+    // Mueve el foco al diálogo para que Escape y el lector de pantalla
+    // funcionen sin un clic previo.
+    dialogRef.current?.focus({ preventScroll: true });
     return () => {
       window.removeEventListener('keydown', onKeyDown);
       document.body.style.overflow = '';
@@ -102,17 +105,15 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
   }
 
   return (
-    <AnimatePresence>
+    <>
       <div
-        className="fixed inset-0 z-[1200] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6"
+        className="anim-fade-in fixed inset-0 z-[1200] flex items-end justify-center bg-black/60 p-0 backdrop-blur-md sm:items-center sm:p-6"
         onClick={onClose}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 32 }}
-          transition={{ duration: 0.22 }}
-          className="relative max-h-[94vh] w-full max-w-3xl overflow-y-auto rounded-t-3xl bg-background shadow-[0_40px_90px_rgba(0,0,0,0.35)] sm:rounded-3xl"
+        <div
+          ref={dialogRef}
+          tabIndex={-1}
+          className="anim-fade-up relative max-h-[94vh] w-full max-w-3xl overflow-y-auto rounded-t-3xl bg-background shadow-[0_40px_90px_rgba(0,0,0,0.35)] outline-none sm:rounded-3xl"
           onClick={(dialogEvent) => dialogEvent.stopPropagation()}
           role="dialog"
           aria-modal="true"
@@ -285,8 +286,8 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
 
             {feedback ? <p className="text-sm font-medium text-primary">{feedback}</p> : null}
           </div>
-        </motion.div>
+        </div>
       </div>
-    </AnimatePresence>
+    </>
   );
 }

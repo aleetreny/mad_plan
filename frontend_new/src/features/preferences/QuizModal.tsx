@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { AnimatePresence, motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight, Sparkles, X } from 'lucide-react';
 import { BUDGET_LABELS, COMPANION_LABELS, ZONES } from '../../domain/madplan/constants';
 import type { BudgetPreference, CompanionMode, VibeMode } from '../../domain/madplan/types';
@@ -72,14 +71,14 @@ export function QuizModal({ open, onClose, onFinish }: QuizModalProps) {
   ][step];
 
   return (
-    <AnimatePresence>
-      <div className="fixed inset-0 z-[1200] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onClick={() => { onClose(); reset(); }}>
-        <motion.div
-          initial={{ opacity: 0, y: 24, scale: 0.98 }}
-          animate={{ opacity: 1, y: 0, scale: 1 }}
-          exit={{ opacity: 0, y: 24, scale: 0.98 }}
-          className="relative w-full max-w-2xl overflow-hidden rounded-[32px] bg-background shadow-[0_30px_90px_rgba(0,0,0,0.34)]"
+    <>
+      <div className="anim-fade-in fixed inset-0 z-[1200] flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm" onClick={() => { onClose(); reset(); }}>
+        <div
+          className="anim-fade-up relative w-full max-w-2xl overflow-hidden rounded-[32px] bg-background shadow-[0_30px_90px_rgba(0,0,0,0.34)]"
           onClick={(event) => event.stopPropagation()}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Quiz de preferencias"
         >
           <div className="h-1.5 bg-muted">
             <div className="h-full bg-primary transition-[width] duration-300" style={{ width: `${progress}%` }} />
@@ -242,9 +241,9 @@ export function QuizModal({ open, onClose, onFinish }: QuizModalProps) {
               </button>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
-    </AnimatePresence>
+    </>
   );
 }
 

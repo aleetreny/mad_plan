@@ -167,6 +167,29 @@
   }
 }
 
+/* Entrance animations (CSS-only; exit states are instant on purpose). */
+@keyframes madplan-fade-up {
+  from { opacity: 0; transform: translateY(22px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes madplan-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes madplan-slide-in-right {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+.anim-fade-up {
+  animation: madplan-fade-up 0.28s cubic-bezier(0.22, 0.9, 0.3, 1) both;
+}
+.anim-fade-in {
+  animation: madplan-fade-in 0.2s ease-out both;
+}
+.anim-slide-in-right {
+  animation: madplan-slide-in-right 0.3s cubic-bezier(0.22, 0.9, 0.3, 1) both;
+}
+
 /* Leaflet popup, restyled to match the app. */
 .madplan-popup .leaflet-popup-content-wrapper {
   border-radius: 16px;

@@ -1,4 +1,3 @@
-import { AnimatePresence, motion } from 'framer-motion';
 import { Bookmark, ExternalLink, Trash2, X } from 'lucide-react';
 import type { MadPlanEvent } from '../../domain/madplan/types';
 import { CategoryCover } from '../../shared/ui/CategoryCover';
@@ -21,15 +20,11 @@ export function AgendaDrawer({ open, events, onClose, onRemove, onOpenEvent }: A
   });
 
   return (
-    <AnimatePresence>
+    <>
       <div className="fixed inset-0 z-[1100] flex justify-end" onClick={onClose}>
-        <div className="absolute inset-0 bg-black/45 backdrop-blur-sm" />
-        <motion.aside
-          initial={{ x: '100%' }}
-          animate={{ x: 0 }}
-          exit={{ x: '100%' }}
-          transition={{ type: 'spring', stiffness: 260, damping: 28 }}
-          className="relative h-full w-full max-w-md overflow-y-auto border-l border-border/70 bg-background shadow-[0_24px_80px_rgba(0,0,0,0.32)]"
+        <div className="anim-fade-in absolute inset-0 bg-black/45 backdrop-blur-sm" />
+        <aside
+          className="anim-slide-in-right relative h-full w-full max-w-md overflow-y-auto border-l border-border/70 bg-background shadow-[0_24px_80px_rgba(0,0,0,0.32)]"
           onClick={(panelEvent) => panelEvent.stopPropagation()}
           role="dialog"
           aria-modal="true"
@@ -114,8 +109,8 @@ export function AgendaDrawer({ open, events, onClose, onRemove, onOpenEvent }: A
               ))
             )}
           </div>
-        </motion.aside>
+        </aside>
       </div>
-    </AnimatePresence>
+    </>
   );
 }

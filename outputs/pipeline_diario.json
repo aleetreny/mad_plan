@@ -5,9 +5,9 @@
     "schedule": null,
     "fever_mode": null
   },
-  "started_at": "2026-07-14T07:44:52Z",
-  "finished_at": "2026-07-14T07:44:54Z",
-  "duration_seconds": 2.1,
+  "started_at": "2026-07-14T12:24:46Z",
+  "finished_at": "2026-07-14T12:24:47Z",
+  "duration_seconds": 1.3,
   "sources": [
     {
       "name": "matadero",
@@ -198,27 +198,27 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 167,
-      "web_count": 167,
+      "count": 162,
+      "web_count": 162,
       "validation": {
         "valid": true,
-        "total": 167,
+        "total": 162,
         "by_source": {
-          "timeout": 106,
-          "gacetin_madrid": 61
+          "timeout": 102,
+          "gacetin_madrid": 60
         },
         "by_category": {
           "Restaurantes": 13,
-          "Cultura y Ocio": 61,
+          "Cultura y Ocio": 60,
           "Cine": 11,
-          "Qué hacer": 29,
+          "Qué hacer": 27,
           "Tiendas": 8,
-          "Arte": 13,
+          "Arte": 12,
           "Deportes": 5,
           "Música": 13,
           "Viaje": 4,
           "Teatro": 2,
-          "Niños": 5,
+          "Niños": 4,
           "Gay y lésbico": 3
         },
         "errors": []

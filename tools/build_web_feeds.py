@@ -138,12 +138,20 @@ def _slim_sessions(event: dict, today: date) -> list[dict]:
     return (future or sessions[-1:])[:MAX_SESSIONS]
 
 
+def _web_url(value: Any) -> str | None:
+    """Only http(s) URLs reach the web feed (drops mailto:, tel:, etc.)."""
+    url = str(value or "").strip()
+    if url.lower().startswith(("http://", "https://")):
+        return url
+    return None
+
+
 def _slim_source_links(event: dict) -> list[dict]:
     metadata = event.get("metadata") or {}
     links = metadata.get("source_links") or []
     slim: list[dict] = []
     for link in links[:MAX_SOURCE_LINKS]:
-        if not isinstance(link, dict) or not link.get("url"):
+        if not isinstance(link, dict) or not _web_url(link.get("url")):
             continue
         slim.append(
             {
@@ -185,8 +193,8 @@ def slim_event(event: dict, today: date) -> dict:
         "fuentes_relacionadas": related_sources if len(related_sources) > 1 else None,
         "categorias_normalizadas": event.get("categorias_normalizadas") or [],
         "categoria_principal_norm": event.get("categoria_principal_norm"),
-        "url": event.get("url") or None,
-        "url_compra": event.get("url_compra") or None,
+        "url": _web_url(event.get("url")),
+        "url_compra": _web_url(event.get("url_compra")),
         "lugar": _text(event.get("lugar")) or None,
         "direccion": _text(event.get("direccion")) or None,
         "latitud": lat,

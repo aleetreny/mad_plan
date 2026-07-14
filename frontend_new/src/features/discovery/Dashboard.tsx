@@ -1,6 +1,5 @@
 import { lazy, Suspense, useDeferredValue, useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
-import { CalendarDays, Dices, Loader2, MapPin, Search } from 'lucide-react';
+import { CalendarDays, Dices, Loader2, MapPin, Search, X } from 'lucide-react';
 import { SeoHead } from '../../app/seo/SeoHead';
 import { getCurrentThemeTime } from '../../domain/madplan/formatters';
 import {
@@ -83,11 +82,22 @@ export function Dashboard() {
     [events, effectiveState, profile],
   );
   const featuredEvents = useMemo(() => deriveFeaturedEvents(events, profile), [events, profile]);
-  const visibleEvents = deriveVisibleEvents(rankedEvents, state.showCount);
   const stats = useMemo(() => deriveCityStats(events, news), [events, news]);
   const agendaEvents = events.filter((event) => profile.agenda.includes(event.id));
   const filtersActive = hasActiveFilters(state);
   const updatedLabel = formatUpdatedAt(updatedAt);
+
+  // Los destacados no se repiten como primeras tarjetas de la parrilla.
+  const featuredShown = useMemo(
+    () => (!filtersActive ? featuredEvents.slice(0, 3) : []),
+    [featuredEvents, filtersActive],
+  );
+  const gridEvents = useMemo(() => {
+    if (featuredShown.length === 0) return rankedEvents;
+    const featuredIds = new Set(featuredShown.map((entry) => entry.event.id));
+    return rankedEvents.filter((entry) => !featuredIds.has(entry.event.id));
+  }, [rankedEvents, featuredShown]);
+  const visibleEvents = deriveVisibleEvents(gridEvents, state.showCount);
 
   function surpriseMe() {
     const pool = events.filter((event) => event.isToday || event.isThisWeek || event.isOngoing);
@@ -134,15 +144,10 @@ export function Dashboard() {
         onOpenAgenda={() => setAgendaOpen(true)}
       />
 
-      <main id="main-content" className="mx-auto flex w-full max-w-[1280px] flex-col gap-7 px-4 py-6 md:px-6 md:py-8">
+      <main id="main-content" className="mx-auto flex w-full max-w-[1440px] flex-col gap-7 px-4 py-6 md:px-6 md:py-8">
         {state.view === 'list' ? (
           <>
-            <motion.section
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3 }}
-              className="masthead-rule pt-2"
-            >
+            <section className="anim-fade-up masthead-rule pt-2">
               <p className="text-[13px] font-medium text-muted-foreground first-letter:uppercase">
                 {new Intl.DateTimeFormat('es-ES', { weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Europe/Madrid' }).format(new Date())}
                 <span className="mx-2 text-primary">·</span>
@@ -167,8 +172,17 @@ export function Dashboard() {
                       value={state.query}
                       onChange={(event) => setQuery(event.target.value)}
                       placeholder="Busca por artista, sala, barrio o tema…"
-                      className="h-13 w-full rounded-2xl border border-border bg-card pl-11 pr-4 text-[15px] shadow-[0_2px_0_var(--border)] outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary focus:shadow-[0_2px_0_var(--primary)]"
+                      className="h-13 w-full rounded-2xl border border-border bg-card pl-11 pr-10 text-[15px] shadow-[0_2px_0_var(--border)] outline-none transition-colors placeholder:text-muted-foreground/70 focus:border-primary focus:shadow-[0_2px_0_var(--primary)]"
                     />
+                    {state.query ? (
+                      <button
+                        onClick={() => setQuery('')}
+                        aria-label="Borrar búsqueda"
+                        className="absolute right-2.5 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-muted-foreground hover:bg-muted/60 hover:text-foreground"
+                      >
+                        <X className="h-4 w-4" />
+                      </button>
+                    ) : null}
                   </div>
                 </label>
                 <button
@@ -212,13 +226,13 @@ export function Dashboard() {
                 {stats.total.toLocaleString('es-ES')} planes vivos · {stats.freeToday} gratis hoy
                 {updatedLabel ? ` · actualizado ${updatedLabel}` : ''}
               </p>
-            </motion.section>
+            </section>
 
             <section aria-label="Elige tu vibe">
               <VibeSelector current={profile.vibe} onSelect={setVibe} />
             </section>
 
-            {featuredEvents.length > 0 && !filtersActive ? (
+            {featuredShown.length > 0 ? (
               <section className="space-y-3">
                 <div className="flex items-end justify-between gap-3">
                   <div>
@@ -233,7 +247,7 @@ export function Dashboard() {
                   </button>
                 </div>
                 <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-                  {featuredEvents.slice(0, 3).map(({ event, score }, index) => (
+                  {featuredShown.map(({ event, score }, index) => (
                     <EventCard
                       key={`featured-${event.id}`}
                       event={event}
@@ -256,8 +270,8 @@ export function Dashboard() {
                   <p className="kicker">La agenda</p>
                   <h3 className="font-display text-xl font-bold sm:text-2xl">Todos los planes</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    {rankedEvents.length.toLocaleString('es-ES')}{' '}
-                    {rankedEvents.length === 1 ? 'plan' : 'planes'}
+                    {gridEvents.length.toLocaleString('es-ES')}{' '}
+                    {gridEvents.length === 1 ? 'plan' : 'planes'}
                     {filtersActive ? ' con los filtros actuales' : ' en Madrid'}
                   </p>
                 </div>
@@ -280,7 +294,7 @@ export function Dashboard() {
                 </div>
               ) : null}
 
-              {!loading && !error && rankedEvents.length === 0 ? (
+              {!loading && !error && gridEvents.length === 0 ? (
                 <div className="rounded-3xl border border-dashed border-border/80 bg-card/45 p-10 text-center">
                   <h3 className="font-display text-2xl font-bold">Nada por aquí con esos filtros</h3>
                   <p className="mx-auto mt-2 max-w-md text-sm leading-6 text-muted-foreground">
@@ -295,9 +309,9 @@ export function Dashboard() {
                 </div>
               ) : null}
 
-              {!loading && rankedEvents.length > 0 ? (
+              {!loading && gridEvents.length > 0 ? (
                 <>
-                  <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+                  <div className="grid gap-3 min-[480px]:gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {visibleEvents.map(({ event, score }, index) => (
                       <EventCard
                         key={event.id}
@@ -313,13 +327,13 @@ export function Dashboard() {
                     ))}
                   </div>
 
-                  {state.showCount < rankedEvents.length ? (
+                  {state.showCount < gridEvents.length ? (
                     <div className="flex justify-center pt-1">
                       <button
                         onClick={loadMore}
                         className="rounded-full border border-border/80 bg-card px-6 py-3 text-sm font-semibold transition-colors hover:bg-muted/60"
                       >
-                        Ver más planes ({(rankedEvents.length - state.showCount).toLocaleString('es-ES')} más)
+                        Ver más planes ({(gridEvents.length - state.showCount).toLocaleString('es-ES')} más)
                       </button>
                     </div>
                   ) : null}
@@ -395,7 +409,7 @@ export function Dashboard() {
                 </p>
               </div>
             ) : null}
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
               {news.map((item) => (
                 <NewsCard key={item.id} news={item} variant="featured" />
               ))}
@@ -405,7 +419,7 @@ export function Dashboard() {
       </main>
 
       <footer className="mt-4 border-t border-border/70 bg-card/55">
-        <div className="mx-auto flex w-full max-w-[1280px] flex-col gap-2 px-4 py-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-6">
+        <div className="mx-auto flex w-full max-w-[1440px] flex-col gap-2 px-4 py-6 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between md:px-6">
           <p>
             <span className="font-display font-bold italic text-foreground">madplan<span className="not-italic text-primary">.</span></span>{' '}
             — hecho en Madrid, para no perderse Madrid.

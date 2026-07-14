@@ -49,7 +49,7 @@ export function Navbar({ view, onViewChange, agendaCount, onOpenAgenda }: Navbar
       >
         Saltar al contenido
       </a>
-      <div className="mx-auto flex w-full max-w-[1280px] items-center justify-between gap-2 px-3 py-3 sm:gap-3 sm:px-4 md:px-6">
+      <div className="mx-auto flex w-full max-w-[1440px] items-center justify-between gap-2 px-3 py-3 sm:gap-3 sm:px-4 md:px-6">
         <button
           onClick={() => onViewChange('list')}
           className="group flex items-baseline gap-2"
