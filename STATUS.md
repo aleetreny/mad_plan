@@ -1,6 +1,21 @@
 # STATUS
 
-Última revisión: 2026-07-14 (web pública en GitHub Pages + fixes post-lanzamiento).
+Última revisión: 2026-07-15 (respaldo anti-caché, deep-links y mejoras de producto).
+
+## Novedades 2026-07-15
+
+- **Fallo del refresh nocturno corregido**: la caché de Actions pisaba el
+  respaldo versionado de las fuentes bloqueadas (la web se quedó en 2.040
+  planes y el bot llegó a commitear un eventbrite vacío).
+  `tools/reconcile_fallbacks.py` corre tras el cache-restore y antes del
+  commit: gana siempre el snapshot más fresco y no vacío. Eventbrite además
+  ya no escribe `[]` al venir bloqueado.
+- **Deep-link por plan** (`?plan=<id>`): compartible, restaurable, y el botón
+  Compartir envía el enlace de madplan con el detalle abierto.
+- Filtro **"Mañana"**, precios de agregadores como **"desde X €"**, botón
+  **"Cerca de mí"** en el mapa (geolocalización con degradación elegante),
+  popup de venue con lista completa, skeletons de carga, focus trap en el
+  modal y **PWA** (manifest + iconos + og:image para compartir).
 
 ## Producción
 
