@@ -4338,5 +4338,50 @@
     "lat": 40.421629,
     "lon": -3.703541,
     "query": "C. de la Ballesta, 7, Madrid, 28004"
+  },
+  "calle de boltaña, 40, nave 1, madrid, 28022, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Boltaña, 40, Nave 1, Madrid, 28022"
+  },
+  "plaza de isabel ii, s/n, madrid, 28013, españa": {
+    "lat": 40.418152,
+    "lon": -3.709463,
+    "query": "Plaza de Isabel II, s/n, Madrid, 28013"
+  },
+  "plaza de alonso martínez, 3, 28004, madrid, españa": {
+    "lat": 40.428252,
+    "lon": -3.696173,
+    "query": "Plaza de Alonso Martínez, 3, 28004"
+  },
+  "plaza de chamberí, madrid, españa": {
+    "lat": 40.432799,
+    "lon": -3.697355,
+    "query": "Plaza de Chamberí"
+  },
+  "vallecas, madrid, españa": {
+    "lat": 40.38686,
+    "lon": -3.65918,
+    "query": "Vallecas"
+  },
+  "vía de servicio a-1, km 26, san sebastián de los reyes, 28707, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Vía de Servicio A-1, km 26, San Sebastián de los Reyes, 28707"
+  },
+  "a-6, km 8, 28023 madrid, 28023, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "A-6, Km 8, 28023 Madrid, 28023"
+  },
+  "calle jardines, 3, 28013, 28013, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Jardines, 3, 28013, 28013"
+  },
+  "calle ramírez de prado, 3, metro delicias, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Ramírez de Prado, 3, Metro Delicias"
   }
 }
