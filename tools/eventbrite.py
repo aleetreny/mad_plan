@@ -286,6 +286,11 @@ def scrape_eventbrite() -> list[dict]:
 
     events = normalize_plan_records(events, source="eventbrite")
 
+    if not events:
+        # Nunca sobrescribir el último output bueno con una lista vacía:
+        # cero eventos aquí significa scrape bloqueado, no "no hay planes".
+        raise RuntimeError("No Eventbrite events collected")
+
     # Save
     OUTPUT_FILE.write_text(
         json.dumps(events, indent=2, ensure_ascii=False), encoding="utf-8"

@@ -65,6 +65,7 @@ export function scoreEvent(event: MadPlanEvent, profile: UserProfile): number {
 function matchesDateFilter(event: MadPlanEvent, filter: DiscoveryDateFilter): boolean {
   if (filter === 'all') return true;
   if (filter === 'today') return event.isToday || event.isOngoing;
+  if (filter === 'tomorrow') return event.isTomorrow;
   if (filter === 'weekend') return event.isThisWeekend;
   if (filter === 'week') return event.isThisWeek || event.isOngoing;
   return event.isThisMonth || event.isOngoing;

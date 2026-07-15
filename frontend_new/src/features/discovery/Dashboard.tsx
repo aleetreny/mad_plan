@@ -1,4 +1,4 @@
-import { lazy, Suspense, useDeferredValue, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useDeferredValue, useMemo, useState } from 'react';
 import { CalendarDays, Dices, Loader2, MapPin, Search, X } from 'lucide-react';
 import { SeoHead } from '../../app/seo/SeoHead';
 import { getCurrentThemeTime } from '../../domain/madplan/formatters';
@@ -99,11 +99,32 @@ export function Dashboard() {
   }, [rankedEvents, featuredShown]);
   const visibleEvents = deriveVisibleEvents(gridEvents, state.showCount);
 
+  // Deep-link del detalle: abrir un plan escribe ?plan=<id> en la URL, de
+  // modo que el enlace se puede compartir y restaurar tal cual.
+  const [pendingPlanId, setPendingPlanId] = useState<string | null>(
+    () => new URLSearchParams(window.location.search).get('plan'),
+  );
+  const openEvent = useCallback((event: MadPlanEvent | null) => {
+    setPendingPlanId(null);
+    setSelectedEvent(event);
+    const params = new URLSearchParams(window.location.search);
+    if (event) params.set('plan', event.id);
+    else params.delete('plan');
+    const query = params.toString();
+    window.history.replaceState(null, '', `${window.location.pathname}${query ? `?${query}` : ''}`);
+  }, []);
+
+  // Estado derivado, no efecto: hasta la primera interacción, el ?plan= de la
+  // URL de llegada abre su detalle en cuanto los datos están disponibles.
+  const effectiveSelectedEvent =
+    selectedEvent ??
+    (pendingPlanId ? events.find((event) => event.id === pendingPlanId) ?? null : null);
+
   function surpriseMe() {
     const pool = events.filter((event) => event.isToday || event.isThisWeek || event.isOngoing);
     const candidates = pool.length > 0 ? pool : events;
     if (candidates.length === 0) return;
-    setSelectedEvent(candidates[Math.floor(Math.random() * candidates.length)]);
+    openEvent(candidates[Math.floor(Math.random() * candidates.length)]);
   }
 
   const filterBar = (
@@ -125,12 +146,20 @@ export function Dashboard() {
     />
   );
 
+  // Skeletons con la forma real de las tarjetas: la página "aparece" en vez
+  // de mostrar un spinner vacío mientras baja el feed.
   const loadingBlock = (
-    <div className="grid min-h-[320px] place-items-center rounded-3xl border border-border/70 bg-card/50">
-      <div className="text-center">
-        <Loader2 className="mx-auto h-8 w-8 animate-spin text-primary" />
-        <p className="mt-3 text-sm text-muted-foreground">Cargando los planes de Madrid…</p>
-      </div>
+    <div aria-busy="true" aria-label="Cargando planes" className="grid gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      {Array.from({ length: 8 }).map((_, index) => (
+        <div key={index} className="flex animate-pulse overflow-hidden rounded-2xl border border-border/60 bg-card sm:flex-col sm:rounded-3xl">
+          <div className="h-[122px] w-[112px] flex-shrink-0 bg-muted sm:aspect-[16/9] sm:h-auto sm:w-full" />
+          <div className="flex-1 space-y-2.5 p-4">
+            <div className="h-3 w-1/3 rounded-full bg-muted" />
+            <div className="h-4 w-5/6 rounded-full bg-muted" />
+            <div className="h-3 w-2/3 rounded-full bg-muted" />
+          </div>
+        </div>
+      ))}
     </div>
   );
 
@@ -253,7 +282,7 @@ export function Dashboard() {
                       event={event}
                       matchScore={score}
                       inAgenda={isInAgenda(event.id)}
-                      onOpen={() => setSelectedEvent(event)}
+                      onOpen={() => openEvent(event)}
                       onToggleAgenda={() =>
                         isInAgenda(event.id) ? removeFromAgenda(event.id) : addToAgenda(event.id)
                       }
@@ -318,7 +347,7 @@ export function Dashboard() {
                         event={event}
                         matchScore={profile.answeredQuiz || profile.vibe ? score : undefined}
                         inAgenda={isInAgenda(event.id)}
-                        onOpen={() => setSelectedEvent(event)}
+                        onOpen={() => openEvent(event)}
                         onToggleAgenda={() =>
                           isInAgenda(event.id) ? removeFromAgenda(event.id) : addToAgenda(event.id)
                         }
@@ -385,7 +414,7 @@ export function Dashboard() {
                   </div>
                 }
               >
-                <MapView events={rankedEvents.map((entry) => entry.event)} onOpenEvent={setSelectedEvent} />
+                <MapView events={rankedEvents.map((entry) => entry.event)} onOpenEvent={openEvent} />
               </Suspense>
             )}
           </section>
@@ -445,14 +474,14 @@ export function Dashboard() {
         }}
       />
       <EventModal
-        event={selectedEvent}
-        inAgenda={selectedEvent ? isInAgenda(selectedEvent.id) : false}
-        matchScore={selectedEvent ? rankedEvents.find((entry) => entry.event.id === selectedEvent.id)?.score : undefined}
-        onClose={() => setSelectedEvent(null)}
+        event={effectiveSelectedEvent}
+        inAgenda={effectiveSelectedEvent ? isInAgenda(effectiveSelectedEvent.id) : false}
+        matchScore={effectiveSelectedEvent ? rankedEvents.find((entry) => entry.event.id === effectiveSelectedEvent.id)?.score : undefined}
+        onClose={() => openEvent(null)}
         onToggleAgenda={() => {
-          if (!selectedEvent) return;
-          if (isInAgenda(selectedEvent.id)) removeFromAgenda(selectedEvent.id);
-          else addToAgenda(selectedEvent.id);
+          if (!effectiveSelectedEvent) return;
+          if (isInAgenda(effectiveSelectedEvent.id)) removeFromAgenda(effectiveSelectedEvent.id);
+          else addToAgenda(effectiveSelectedEvent.id);
         }}
       />
       <AgendaDrawer
@@ -462,7 +491,7 @@ export function Dashboard() {
         onRemove={removeFromAgenda}
         onOpenEvent={(event) => {
           setAgendaOpen(false);
-          setSelectedEvent(event);
+          openEvent(event);
         }}
       />
     </>

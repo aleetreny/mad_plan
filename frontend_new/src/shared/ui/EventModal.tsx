@@ -63,7 +63,30 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
   useEffect(() => {
     if (!event) return;
     function onKeyDown(keyEvent: KeyboardEvent) {
-      if (keyEvent.key === 'Escape') onClose();
+      if (keyEvent.key === 'Escape') {
+        onClose();
+        return;
+      }
+      // Focus trap: Tab circula dentro del diálogo, nunca hacia la página.
+      if (keyEvent.key === 'Tab' && dialogRef.current) {
+        const focusables = dialogRef.current.querySelectorAll<HTMLElement>(
+          'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+        );
+        if (focusables.length === 0) return;
+        const first = focusables[0];
+        const last = focusables[focusables.length - 1];
+        const active = document.activeElement;
+        if (keyEvent.shiftKey && (active === first || active === dialogRef.current)) {
+          keyEvent.preventDefault();
+          last.focus();
+        } else if (!keyEvent.shiftKey && active === last) {
+          keyEvent.preventDefault();
+          first.focus();
+        } else if (active && !dialogRef.current.contains(active)) {
+          keyEvent.preventDefault();
+          first.focus();
+        }
+      }
     }
     window.addEventListener('keydown', onKeyDown);
     document.body.style.overflow = 'hidden';
@@ -83,20 +106,23 @@ export function EventModal({ event, inAgenda, matchScore, onClose, onToggleAgend
   const body = activeEvent.descripcion || activeEvent.resumen;
 
   async function handleShare() {
-    const shareUrl = activeEvent.url || activeEvent.sourceLinks[0]?.url;
-    if (!shareUrl) return;
+    // Se comparte el plan DENTRO de madplan (deep-link ?plan=…), no la web
+    // de la fuente: quien recibe el enlace aterriza aquí con el detalle abierto.
+    const params = new URLSearchParams();
+    params.set('plan', activeEvent.id);
+    const shareUrl = `${window.location.origin}${window.location.pathname}?${params.toString()}`;
 
     try {
       if (navigator.share) {
         await navigator.share({
-          title: activeEvent.titulo,
+          title: `${activeEvent.titulo} · madplan`,
           text: activeEvent.resumen || activeEvent.primaryCategory,
           url: shareUrl,
         });
       } else {
         await navigator.clipboard.writeText(shareUrl);
-        setFeedback('Enlace copiado al portapapeles.');
-        window.setTimeout(() => setFeedback(null), 2000);
+        setFeedback('Enlace copiado: mándaselo a quien quieras.');
+        window.setTimeout(() => setFeedback(null), 2500);
       }
     } catch {
       setFeedback('No se pudo compartir ahora mismo.');

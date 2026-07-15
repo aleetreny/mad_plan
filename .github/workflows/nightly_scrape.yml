@@ -52,6 +52,12 @@ jobs:
           restore-keys: |
             madplan-sources-
 
+      - name: Reconciliar respaldos versionados con la caché
+        # La caché puede traer un output vacío o más viejo que el respaldo
+        # committeado (p. ej. de un run donde la fuente estaba bloqueada).
+        # Gana siempre el snapshot con scraped_en más reciente y no vacío.
+        run: python tools/reconcile_fallbacks.py
+
       - name: Instalar dependencias
         run: |
           python -m pip install --upgrade pip
@@ -89,6 +95,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Nunca commitear un respaldo vacío o más viejo que el ya versionado.
+          python tools/reconcile_fallbacks.py
           git add -f outputs/eventos_web.json outputs/noticias_web.json outputs/pipeline_diario.json outputs/geocode_cache.json
           # Respaldo versionado de las fuentes que bloquean IPs de datacenter:
           # si el runner logró scrapearlas, se refrescan; si no, quedan como están.

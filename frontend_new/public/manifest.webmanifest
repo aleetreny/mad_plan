@@ -1,0 +1,16 @@
+{
+  "name": "madplan — la agenda de Madrid",
+  "short_name": "madplan",
+  "description": "Qué hacer en Madrid, resuelto. Conciertos, expos, mercados y rutas de 20 fuentes, sin duplicados.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbf6ee",
+  "theme_color": "#c96f2d",
+  "lang": "es",
+  "icons": [
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

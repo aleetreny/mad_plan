@@ -10,7 +10,7 @@ export type CompanionMode = 'solo' | 'pair' | 'friends' | 'family' | null;
 
 export type DiscoveryView = 'list' | 'map' | 'news';
 
-export type DiscoveryDateFilter = 'all' | 'today' | 'weekend' | 'week' | 'month';
+export type DiscoveryDateFilter = 'all' | 'today' | 'tomorrow' | 'weekend' | 'week' | 'month';
 
 export interface SourceLink {
   fuente?: string | null;
@@ -94,6 +94,7 @@ export interface MadPlanEvent extends RawMadPlanEvent {
   isFree: boolean;
   hasCoordinates: boolean;
   isToday: boolean;
+  isTomorrow: boolean;
   isThisWeek: boolean;
   isThisWeekend: boolean;
   isThisMonth: boolean;

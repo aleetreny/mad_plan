@@ -14,7 +14,7 @@ const DEFAULT_STATE: DiscoveryState = {
 };
 
 function sanitizeDateFilter(value: string | null): DiscoveryDateFilter {
-  if (value === 'today' || value === 'weekend' || value === 'week' || value === 'month') return value;
+  if (value === 'today' || value === 'tomorrow' || value === 'weekend' || value === 'week' || value === 'month') return value;
   return 'all';
 }
 
@@ -39,15 +39,21 @@ function readInitialState(): DiscoveryState {
 }
 
 function writeStateToUrl(state: DiscoveryState) {
-  const params = new URLSearchParams();
+  // Parte de los params actuales para no pisar los que gestiona otro código
+  // (p. ej. `plan`, el deep-link del modal de detalle).
+  const params = new URLSearchParams(window.location.search);
+  const setOrDelete = (key: string, value: string | null) => {
+    if (value) params.set(key, value);
+    else params.delete(key);
+  };
 
-  if (state.query) params.set('q', state.query);
-  if (state.source) params.set('source', state.source);
-  if (state.category) params.set('category', state.category);
-  if (state.dateFilter !== 'all') params.set('when', state.dateFilter);
-  if (state.freeOnly) params.set('free', '1');
-  if (state.zone) params.set('zone', state.zone);
-  if (state.view !== 'list') params.set('view', state.view);
+  setOrDelete('q', state.query || null);
+  setOrDelete('source', state.source);
+  setOrDelete('category', state.category);
+  setOrDelete('when', state.dateFilter !== 'all' ? state.dateFilter : null);
+  setOrDelete('free', state.freeOnly ? '1' : null);
+  setOrDelete('zone', state.zone);
+  setOrDelete('view', state.view !== 'list' ? state.view : null);
 
   const query = params.toString();
   const nextUrl = `${window.location.pathname}${query ? `?${query}` : ''}`;

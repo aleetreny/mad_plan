@@ -197,9 +197,13 @@ export function formatRelativeDay(date: Date | null, now = new Date()): string {
   }).format(date);
 }
 
+/** Agregadores cuyo precio publicado es el mínimo del rango de entradas. */
+const FROM_PRICE_SOURCES = new Set(['fever', 'eventbrite', 'wegow', 'ticketmaster']);
+
 export function normalizePriceLabel(
   price?: number | string | null,
   isFree?: boolean | null,
+  source?: string | null,
 ): string | null {
   if (isFree || price === 0 || price === '0' || price === '0.0') return 'Gratis';
   if (price == null || price === '') return null;
@@ -207,11 +211,14 @@ export function normalizePriceLabel(
   const numeric = typeof price === 'number' ? price : Number(String(price).replace(',', '.'));
   if (!Number.isNaN(numeric)) {
     if (numeric === 0) return 'Gratis';
-    return new Intl.NumberFormat('es-ES', {
+    const formatted = new Intl.NumberFormat('es-ES', {
       style: 'currency',
       currency: 'EUR',
       maximumFractionDigits: Number.isInteger(numeric) ? 0 : 2,
     }).format(numeric);
+    // Los agregadores publican el precio mínimo: decir "desde" evita que
+    // el usuario sienta que le han cambiado el precio al llegar a la fuente.
+    return source && FROM_PRICE_SOURCES.has(source) ? `desde ${formatted}` : formatted;
   }
 
   return String(price);

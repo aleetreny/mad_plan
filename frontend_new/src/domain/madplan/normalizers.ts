@@ -101,7 +101,7 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
         : event.modo_fecha === 'sin_fecha'
           ? 'Cuando quieras'
           : 'Fecha por confirmar',
-    priceLabel: normalizePriceLabel(event.precio, event.es_gratis),
+    priceLabel: normalizePriceLabel(event.precio, event.es_gratis, event.fuente),
     locationLabel: formatLocationLabel(event),
     primaryCategory,
     categoriesList,
@@ -109,6 +109,10 @@ export function normalizeEvent(event: RawMadPlanEvent, now = new Date()): MadPla
     isFree: Boolean(event.es_gratis || event.precio === 0 || event.precio === '0'),
     hasCoordinates: isWithinMadrid(event.latitud, event.longitud),
     isToday: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= todayEnd),
+    isTomorrow: Boolean(
+      (primaryDate && primaryDate > todayEnd && primaryDate <= new Date(todayEnd.getTime() + 86400000)) ||
+      (dates.isOngoing && (!dates.end || dates.end > todayEnd)),
+    ),
     isThisWeek: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= weekEnd),
     isThisWeekend,
     isThisMonth: Boolean(primaryDate && primaryDate >= todayStart && primaryDate <= monthEnd),

@@ -1,7 +1,8 @@
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { CircleMarker, MapContainer, Popup, TileLayer, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { LocateFixed } from 'lucide-react';
 import { categoryMeta, MADRID_BOUNDS, MADRID_CENTER } from '../../domain/madplan/constants';
 import type { MadPlanEvent } from '../../domain/madplan/types';
 import { useTheme } from '../theme/context/useTheme';
@@ -10,8 +11,6 @@ const MAX_BOUNDS = L.latLngBounds(
   [MADRID_BOUNDS.latMin, MADRID_BOUNDS.lonMin],
   [MADRID_BOUNDS.latMax, MADRID_BOUNDS.lonMax],
 );
-
-const MAX_POPUP_EVENTS = 7;
 
 interface MapPoint {
   key: string;
@@ -50,6 +49,39 @@ interface MapViewProps {
 export function MapView({ events, onOpenEvent }: MapViewProps) {
   const { timeOfDay } = useTheme();
   const darkTiles = timeOfDay === 'night';
+  const mapRef = useRef<L.Map | null>(null);
+  const [userPos, setUserPos] = useState<[number, number] | null>(null);
+  const [locateMsg, setLocateMsg] = useState<string | null>(null);
+
+  function flashLocateMsg(message: string) {
+    setLocateMsg(message);
+    window.setTimeout(() => setLocateMsg(null), 3000);
+  }
+
+  function locateMe() {
+    if (!navigator.geolocation) {
+      flashLocateMsg('Tu navegador no permite la ubicación');
+      return;
+    }
+    navigator.geolocation.getCurrentPosition(
+      ({ coords }) => {
+        const { latitude, longitude } = coords;
+        const insideMadrid =
+          latitude >= MADRID_BOUNDS.latMin &&
+          latitude <= MADRID_BOUNDS.latMax &&
+          longitude >= MADRID_BOUNDS.lonMin &&
+          longitude <= MADRID_BOUNDS.lonMax;
+        if (!insideMadrid) {
+          flashLocateMsg('Parece que estás fuera de Madrid');
+          return;
+        }
+        setUserPos([latitude, longitude]);
+        mapRef.current?.flyTo([latitude, longitude], 14, { duration: 0.8 });
+      },
+      () => flashLocateMsg('No se pudo obtener tu ubicación'),
+      { timeout: 8000, maximumAge: 60000 },
+    );
+  }
 
   // Many events share one venue (Matadero, IFEMA…). One marker per venue
   // with the full list in the popup beats 50 stacked, unclickable dots.
@@ -88,6 +120,7 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
     // (400-1000) can never sit above the app's modals and drawers.
     <div className="relative isolate overflow-hidden rounded-3xl border border-border/70 shadow-[0_10px_36px_rgba(15,10,5,0.08)] h-[65vh] min-h-[420px] sm:h-[620px]">
       <MapContainer
+        ref={mapRef}
         center={MADRID_CENTER}
         zoom={12}
         minZoom={11}
@@ -103,6 +136,17 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
           url={`https://{s}.basemaps.cartocdn.com/${darkTiles ? 'dark_all' : 'light_all'}/{z}/{x}/{y}{r}.png`}
         />
         <FitBounds points={points} />
+        {userPos ? (
+          <CircleMarker
+            center={userPos}
+            radius={9}
+            pathOptions={{ color: '#ffffff', weight: 2.5, fillColor: '#2563eb', fillOpacity: 1 }}
+          >
+            <Popup closeButton={false} className="madplan-popup">
+              <p className="text-sm font-semibold">Estás aquí</p>
+            </Popup>
+          </CircleMarker>
+        ) : null}
         {points.map((point) => {
           const [first] = point.events;
           const count = point.events.length;
@@ -143,7 +187,7 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
                       {first.lugar || first.direccion || 'Mismo sitio'}
                     </h3>
                     <div className="mt-2 max-h-[210px] space-y-1 overflow-y-auto pr-1">
-                      {point.events.slice(0, MAX_POPUP_EVENTS).map((event) => (
+                      {point.events.map((event) => (
                         <button
                           key={event.id}
                           onClick={() => onOpenEvent(event)}
@@ -153,11 +197,6 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
                           {event.titulo.length > 52 ? `${event.titulo.slice(0, 51)}…` : event.titulo}
                         </button>
                       ))}
-                      {count > MAX_POPUP_EVENTS ? (
-                        <p className="px-1 pt-0.5 text-[11px] text-muted-foreground">
-                          y {count - MAX_POPUP_EVENTS} planes más en este sitio
-                        </p>
-                      ) : null}
                     </div>
                   </div>
                 )}
@@ -168,6 +207,21 @@ export function MapView({ events, onOpenEvent }: MapViewProps) {
       </MapContainer>
       <div className="pointer-events-none absolute bottom-3 left-3 z-[400] rounded-full bg-black/55 px-3 py-1.5 text-xs font-semibold text-white backdrop-blur-md">
         {totalOnMap} planes en {points.length} sitios
+      </div>
+      <div className="absolute right-3 top-3 z-[400] flex flex-col items-end gap-2">
+        <button
+          onClick={locateMe}
+          className="inline-flex h-10 items-center gap-2 rounded-full border border-border/70 bg-card/95 px-3.5 text-sm font-semibold shadow-[0_6px_20px_rgba(0,0,0,0.18)] backdrop-blur-md transition-colors hover:border-primary/50 hover:text-primary"
+          title="Centrar el mapa en tu ubicación"
+        >
+          <LocateFixed className="h-4 w-4" />
+          Cerca de mí
+        </button>
+        {locateMsg ? (
+          <p className="rounded-full bg-black/70 px-3 py-1.5 text-xs font-medium text-white backdrop-blur-md">
+            {locateMsg}
+          </p>
+        ) : null}
       </div>
     </div>
   );

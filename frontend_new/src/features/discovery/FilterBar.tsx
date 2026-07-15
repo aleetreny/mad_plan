@@ -23,6 +23,7 @@ interface FilterBarProps {
 const DATE_FILTER_LABELS: Record<DiscoveryDateFilter, string> = {
   all: 'Cuando sea',
   today: 'Hoy',
+  tomorrow: 'Mañana',
   weekend: 'Finde',
   week: '7 días',
   month: 'Este mes',
