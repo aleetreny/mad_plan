@@ -4383,5 +4383,15 @@
     "lat": null,
     "lon": null,
     "query": "calle Ramírez de Prado, 3, Metro Delicias"
+  },
+  "calle de hernani, 26, madrid, 28020, españa": {
+    "lat": 40.448222,
+    "lon": -3.701599,
+    "query": "Calle de Hernani, 26, Madrid, 28020"
+  },
+  "calle san bernardo 1, esquina plaza santo domingo, c.p. 28013, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle San Bernardo 1, esquina Plaza Santo Domingo, C.P. 28013, Madrid, 28013"
   }
 }
