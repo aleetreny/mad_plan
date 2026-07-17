@@ -4393,5 +4393,25 @@
     "lat": null,
     "lon": null,
     "query": "Calle San Bernardo 1, esquina Plaza Santo Domingo, C.P. 28013, Madrid, 28013"
+  },
+  "calle gran vía, 1, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Gran Vía, 1, Madrid, 28013"
+  },
+  "sala 1 condeduque (calle del conde duque, 11), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala 1 Condeduque (calle del Conde Duque, 11)"
+  },
+  "estadio ontime butarque, c. arquitectura, s/n, leganés, 28918, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Estadio Ontime Butarque, C. Arquitectura, s/n, Leganés, 28918"
+  },
+  "paseo a pie, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo a pie"
   }
 }
