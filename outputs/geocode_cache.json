@@ -4413,5 +4413,40 @@
     "lat": null,
     "lon": null,
     "query": "paseo a pie"
+  },
+  "colecciones reales, calle de bailén, sn, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Colecciones Reales, Calle de Bailén, SN, Madrid, 28013"
+  },
+  "c. de san vicente ferrer, 16, 28004, madrid, españa": {
+    "lat": 40.425716,
+    "lon": -3.702929,
+    "query": "C. de San Vicente Ferrer, 16, 28004"
+  },
+  "28741 rascafría, madrid y, real sitio de san ildefonso, 40100, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "28741 Rascafría, Madrid y, Real Sitio de San Ildefonso, 40100"
+  },
+  "plaza de colón y explanada del puente del rey (madrid río), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Colón y explanada del Puente del Rey (Madrid Río)"
+  },
+  "bate social store. c/ santa maría, 14, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Bate Social Store. C/ Santa María, 14"
+  },
+  "c. de atocha, 49, madrid, 28012, españa": {
+    "lat": 40.413134,
+    "lon": -3.700563,
+    "query": "C. de Atocha, 49, Madrid, 28012"
+  },
+  "escuela de coctelería de madrid (escom) pl. del conde del valle de súchil, 8, local, chamberí, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Escuela de Coctelería de Madrid (ESCOM) Pl. del Conde del Valle de Súchil, 8, Local, Chamberí"
   }
 }
