@@ -4448,5 +4448,15 @@
     "lat": null,
     "lon": null,
     "query": "Escuela de Coctelería de Madrid (ESCOM) Pl. del Conde del Valle de Súchil, 8, Local, Chamberí"
+  },
+  "paseo de la castellana, 89, madrid, 28046, españa": {
+    "lat": 40.449998,
+    "lon": -3.691885,
+    "query": "Paseo de la Castellana, 89, Madrid, 28046"
+  },
+  "cc parque sur, av. de gran bretaña, s/n, madrid, 28916, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "CC Parque Sur, Av. de Gran Bretaña, S/N, Madrid, 28916"
   }
 }
