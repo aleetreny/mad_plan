@@ -4458,5 +4458,25 @@
     "lat": null,
     "lon": null,
     "query": "CC Parque Sur, Av. de Gran Bretaña, S/N, Madrid, 28916"
+  },
+  "c. del puerto de maspalomas, 8, madrid, 28029, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. del Puerto de Maspalomas, 8, Madrid, 28029"
+  },
+  "c. de lope de vega, 9, madrid, 28014, españa": {
+    "lat": 40.413916,
+    "lon": -3.698279,
+    "query": "C. de Lope de Vega, 9, Madrid, 28014"
+  },
+  "plaza de castilla, madrid, españa": {
+    "lat": 40.466282,
+    "lon": -3.689664,
+    "query": "Plaza de Castilla"
+  },
+  "espacio la vaguada, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Espacio La Vaguada"
   }
 }
