@@ -4478,5 +4478,90 @@
     "lat": null,
     "lon": null,
     "query": "Espacio La Vaguada"
+  },
+  "calle de silva, 6, 28013, madrid, españa": {
+    "lat": 40.420569,
+    "lon": -3.707367,
+    "query": "Calle de Silva, 6, 28013"
+  },
+  "calle de arapiles, 5, madrid, 28015, españa": {
+    "lat": 40.432825,
+    "lon": -3.708254,
+    "query": "Calle de Arapiles, 5, Madrid, 28015"
+  },
+  "c. de los mancebos, 12, madrid, 28005, españa": {
+    "lat": 40.412191,
+    "lon": -3.712517,
+    "query": "C. de los Mancebos, 12, Madrid, 28005"
+  },
+  "cra de s. jerónimo, 2 (centro), madrid, españa": {
+    "lat": 40.416302,
+    "lon": -3.697873,
+    "query": "Cra de S. Jerónimo, 2 (Centro)"
+  },
+  "lavapiés, la latina, san francisco y vistillas (madrid capital), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Lavapiés, La Latina, San Francisco y Vistillas (Madrid Capital)"
+  },
+  "diferentes municipios de la comunidad de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes municipios de la Comunidad de Madrid"
+  },
+  "cuesta de san vicente, 44 (moncloa-aravaca), madrid, españa": {
+    "lat": 40.420854,
+    "lon": -3.718751,
+    "query": "Cuesta de San Vicente, 44 (Moncloa-Aravaca)"
+  },
+  "costanilla de los ángeles, 20 (centro), madrid, españa": {
+    "lat": 40.419538,
+    "lon": -3.707963,
+    "query": "Costanilla de los Ángeles, 20 (Centro)"
+  },
+  "lillo, 45870, madrid, españa": {
+    "lat": 40.374453,
+    "lon": -3.618715,
+    "query": "Lillo, 45870"
+  },
+  "p. de san francisco de sales, 39 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "P. de San Francisco de Sales, 39 (Chamberí)"
+  },
+  "av. de la constitucion, 23 (móstoles), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Av. de la Constitucion, 23 (Móstoles)"
+  },
+  "diferentes localizaciones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes localizaciones"
+  },
+  "c. de alcalá, 31 (centro), madrid, españa": {
+    "lat": 40.418666,
+    "lon": -3.698406,
+    "query": "C. de Alcalá, 31 (Centro)"
+  },
+  "diferentes localizaciones de la comunidad de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes localizaciones de la Comunidad de Madrid"
+  },
+  "c. de bailén, s/n (centro), madrid, españa": {
+    "lat": 40.411991,
+    "lon": -3.713891,
+    "query": "C. de Bailén, s/n (Centro)"
+  },
+  "paseo de recoletos, 23 (centro), madrid, españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "Paseo de Recoletos, 23 (Centro)"
+  },
+  "c. de alberto aguilera, 20 (centro), madrid, españa": {
+    "lat": 40.43042,
+    "lon": -3.714689,
+    "query": "C. de Alberto Aguilera, 20 (Centro)"
   }
 }
