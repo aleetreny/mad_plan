@@ -4563,5 +4563,25 @@
     "lat": 40.43042,
     "lon": -3.714689,
     "query": "C. de Alberto Aguilera, 20 (Centro)"
+  },
+  "villaconejos, madrid, españa": {
+    "lat": 40.410044,
+    "lon": -3.630673,
+    "query": "Villaconejos"
+  },
+  "teatro amaya, madrid, españa": {
+    "lat": 40.435147,
+    "lon": -3.697094,
+    "query": "Teatro Amaya"
+  },
+  "plaza de , y el concurso de pintura rápida del domingo 9 de agosto, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de España, y el concurso de pintura rápida del domingo 9 de agosto"
+  },
+  "calle san bernardo, 20, madrid, españa": {
+    "lat": 40.422629,
+    "lon": -3.707522,
+    "query": "Calle San Bernardo, 20, Madrid"
   }
 }
