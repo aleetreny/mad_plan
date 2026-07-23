@@ -4583,5 +4583,10 @@
     "lat": 40.422629,
     "lon": -3.707522,
     "query": "Calle San Bernardo, 20, Madrid"
+  },
+  "c. del olvido, 10, madrid, 28026, españa": {
+    "lat": 40.387057,
+    "lon": -3.703004,
+    "query": "C. del Olvido, 10, Madrid, 28026"
   }
 }
