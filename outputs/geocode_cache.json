@@ -4588,5 +4588,30 @@
     "lat": 40.387057,
     "lon": -3.703004,
     "query": "C. del Olvido, 10, Madrid, 28026"
+  },
+  "c. de silvano, 77, madrid, 28043, españa": {
+    "lat": 40.463038,
+    "lon": -3.637657,
+    "query": "C. de Silvano, 77, Madrid, 28043"
+  },
+  "plaza no estará definitivamente reservada, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza no estará definitivamente reservada"
+  },
+  "calle de alcalá, 42 (centro), madrid, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "Calle de Alcalá, 42 (Centro)"
+  },
+  "parque juan carlos i, madrid, españa": {
+    "lat": 40.460753,
+    "lon": -3.605771,
+    "query": "Parque Juan Carlos I"
+  },
+  "circuito de madrid jarama – race, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Circuito de Madrid Jarama – RACE"
   }
 }
