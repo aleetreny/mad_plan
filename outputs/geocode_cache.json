@@ -4613,5 +4613,10 @@
     "lat": null,
     "lon": null,
     "query": "Circuito de Madrid Jarama – RACE"
+  },
+  "terraza mercado de san antón, calle de augusto figueroa, 24, 3ª planta, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Terraza Mercado de San Antón, Calle de Augusto Figueroa, 24, 3ª planta, Madrid, 28004"
   }
 }
