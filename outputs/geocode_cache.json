@@ -4618,5 +4618,20 @@
     "lat": null,
     "lon": null,
     "query": "Terraza Mercado de San Antón, Calle de Augusto Figueroa, 24, 3ª planta, Madrid, 28004"
+  },
+  "c. de carlos arniches, 9, 5 4, madrid, 28005, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de Carlos Arniches, 9, 5 4, Madrid, 28005"
+  },
+  "c. de alonso cano, 10, madrid, 28010, españa": {
+    "lat": 40.436127,
+    "lon": -3.697863,
+    "query": "C. de Alonso Cano, 10, Madrid, 28010"
+  },
+  "calle de echegaray, 5, madrid, 28014, españa": {
+    "lat": 40.415913,
+    "lon": -3.699579,
+    "query": "Calle de Echegaray, 5, Madrid, 28014"
   }
 }
