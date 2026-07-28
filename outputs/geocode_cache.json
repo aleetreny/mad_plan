@@ -4633,5 +4633,10 @@
     "lat": 40.415913,
     "lon": -3.699579,
     "query": "Calle de Echegaray, 5, Madrid, 28014"
+  },
+  "c. de sagasta, 22, madrid, 28004, españa": {
+    "lat": 40.428021,
+    "lon": -3.698261,
+    "query": "C. de Sagasta, 22, Madrid, 28004"
   }
 }
