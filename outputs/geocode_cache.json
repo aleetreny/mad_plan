@@ -4638,5 +4638,10 @@
     "lat": 40.428021,
     "lon": -3.698261,
     "query": "C. de Sagasta, 22, Madrid, 28004"
+  },
+  "c. san lamberto, 11, posterior, cdad. lineal, 28017 madrid, , 28017, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. San Lamberto, 11, Posterior, Cdad. Lineal, 28017 Madrid, Spain, 28017"
   }
 }
