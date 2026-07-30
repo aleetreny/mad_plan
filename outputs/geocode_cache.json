@@ -4643,5 +4643,10 @@
     "lat": null,
     "lon": null,
     "query": "C. San Lamberto, 11, Posterior, Cdad. Lineal, 28017 Madrid, Spain, 28017"
+  },
+  "c. de ginzo de limia, 34, madrid, 28029, españa": {
+    "lat": 40.478009,
+    "lon": -3.702857,
+    "query": "C. de Ginzo de Limia, 34, Madrid, 28029"
   }
 }
