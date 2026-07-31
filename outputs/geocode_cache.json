@@ -4648,5 +4648,55 @@
     "lat": 40.478009,
     "lon": -3.702857,
     "query": "C. de Ginzo de Limia, 34, Madrid, 28029"
+  },
+  "galería de cristal de centrocentro. plaza de cibeles, 1, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Galería de Cristal de CentroCentro. Plaza de Cibeles, 1."
+  },
+  "manzanares el real. varias localizaciones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Manzanares el Real. Varias localizaciones."
+  },
+  "calle de serrano, 122, madrid, españa": {
+    "lat": 40.436964,
+    "lon": -3.685764,
+    "query": "calle de Serrano, 122"
+  },
+  "calle de cervantes, 11, madrid, españa": {
+    "lat": 40.414401,
+    "lon": -3.697436,
+    "query": "calle de Cervantes, 11"
+  },
+  "parque juan carlos i, s/n, 28042, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parque Juan Carlos I, s/n, 28042"
+  },
+  "paseo del prado, 8, madrid, españa": {
+    "lat": 40.416216,
+    "lon": -3.694932,
+    "query": "paseo del Prado, 8"
+  },
+  "sala 60 del edificio villanueva – museo del prado (paseo del prado s/n), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sala 60 del Edificio Villanueva – Museo del Prado (Paseo del Prado s/n)"
+  },
+  "paraninfo universidad complutense de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Paraninfo Universidad Complutense de Madrid"
+  },
+  "plaza mayor, la calle alfonso senra y el parque municipal de guadarrama, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza Mayor, la calle Alfonso Senra y el Parque Municipal de Guadarrama"
+  },
+  "calle teide, madrid, españa": {
+    "lat": 40.383983,
+    "lon": -3.664325,
+    "query": "Calle Teide"
   }
 }
