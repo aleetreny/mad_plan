@@ -4698,5 +4698,15 @@
     "lat": 40.383983,
     "lon": -3.664325,
     "query": "Calle Teide"
+  },
+  "av juan de borbón y battenberg, s/n, san lorenzo de el escorial, 28200, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Av Juan de Borbón y Battenberg, s/n, San Lorenzo de El Escorial, 28200"
+  },
+  "| crédito editorial: cortesía fundación casa de alba la exposición se inaugurará el 1 de octubre de 2026 y se podrá visitar hasta el 31 de en, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "| Crédito editorial: Cortesía Fundación Casa de Alba La exposición se inaugurará el 1 de octubre de 2026 y se podrá visitar hasta el 31 de en"
   }
 }
