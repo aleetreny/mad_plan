@@ -4708,5 +4708,20 @@
     "lat": null,
     "lon": null,
     "query": "| Crédito editorial: Cortesía Fundación Casa de Alba La exposición se inaugurará el 1 de octubre de 2026 y se podrá visitar hasta el 31 de en"
+  },
+  "pl. de la independencia, 3, 28001, madrid, españa": {
+    "lat": 40.420694,
+    "lon": -3.689427,
+    "query": "Pl. de la Independencia, 3, 28001"
+  },
+  "calle lavapiés, 9, 28012, madrid, españa": {
+    "lat": 40.411358,
+    "lon": -3.702847,
+    "query": "Calle Lavapiés, 9, 28012"
+  },
+  "calle de mejía lequerica, 8, madrid, 28004, españa": {
+    "lat": 40.426855,
+    "lon": -3.698279,
+    "query": "Calle de Mejía Lequerica, 8, Madrid, 28004"
   }
 }
