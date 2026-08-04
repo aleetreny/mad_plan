@@ -4733,5 +4733,15 @@
     "lat": null,
     "lon": null,
     "query": "Calle Gran Vía, 84, 28013 Madrid, 28013"
+  },
+  "calle de jacometrezo, 2, madrid, 28013, españa": {
+    "lat": 40.420199,
+    "lon": -3.706431,
+    "query": "Calle de Jacometrezo, 2, Madrid, 28013"
+  },
+  "paseo recoletos 41, 28004, madrid, españa": {
+    "lat": 40.424807,
+    "lon": -3.691407,
+    "query": "Paseo Recoletos 41, 28004"
   }
 }
