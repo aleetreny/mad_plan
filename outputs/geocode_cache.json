@@ -4743,5 +4743,30 @@
     "lat": 40.424807,
     "lon": -3.691407,
     "query": "Paseo Recoletos 41, 28004"
+  },
+  "calle de manuela malasaña, 5, madrid, 28004, españa": {
+    "lat": 40.428544,
+    "lon": -3.702781,
+    "query": "Calle de Manuela Malasaña, 5, Madrid, 28004"
+  },
+  "plaza pablo ruiz picasso, 1, madrid, 28020, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza Pablo Ruiz Picasso, 1, Madrid, 28020"
+  },
+  "plaza de san antonio (mariblanca, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de San Antonio (Mariblanca"
+  },
+  "plaza del general vara del rey, madrid, españa": {
+    "lat": 40.409578,
+    "lon": -3.708176,
+    "query": "plaza del General Vara del Rey"
+  },
+  "avenida de nuestra señora de retamar, s/n, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "avenida de Nuestra Señora de Retamar, s/n"
   }
 }
