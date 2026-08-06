@@ -4768,5 +4768,15 @@
     "lat": null,
     "lon": null,
     "query": "avenida de Nuestra Señora de Retamar, s/n"
+  },
+  "espacio se perciben de manera distinta, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio se perciben de manera distinta"
+  },
+  "| imagen cedida por: ministerio de ciencia, innovación y universidades presenciar un eclipse de estas características desde lugares como somo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "| Imagen cedida por: Ministerio de Ciencia, Innovación y Universidades Presenciar un eclipse de estas características desde lugares como Somo"
   }
 }
