@@ -4778,5 +4778,25 @@
     "lat": null,
     "lon": null,
     "query": "| Imagen cedida por: Ministerio de Ciencia, Innovación y Universidades Presenciar un eclipse de estas características desde lugares como Somo"
+  },
+  "plaza del padre vallet, madrid, españa": {
+    "lat": 40.435497,
+    "lon": -3.814282,
+    "query": "Plaza del Padre Vallet"
+  },
+  "calle parque ferial, 4, madrid, españa": {
+    "lat": 40.339608,
+    "lon": -3.823431,
+    "query": "calle Parque Ferial, 4"
+  },
+  "plaza del general vara de rey y la calle de la ribera de curtidores concentrarán buena parte de la energía de, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del General Vara de Rey y la calle de la Ribera de Curtidores concentrarán buena parte de la energía de"
+  },
+  "plaza de cervantes, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Cervantes"
   }
 }
