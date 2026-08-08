@@ -4798,5 +4798,15 @@
     "lat": null,
     "lon": null,
     "query": "Plaza de Cervantes"
+  },
+  "calle de villanueva, 26, 28001, madrid, españa": {
+    "lat": 40.422341,
+    "lon": -3.68605,
+    "query": "Calle de Villanueva, 26, 28001"
+  },
+  "plaza de la villa del municipio, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de la Villa del municipio"
   }
 }
