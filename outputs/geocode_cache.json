@@ -4808,5 +4808,15 @@
     "lat": null,
     "lon": null,
     "query": "plaza de la Villa del municipio"
+  },
+  "calle de ramos carrión, 6, madrid, 28002, españa": {
+    "lat": 40.446553,
+    "lon": -3.668899,
+    "query": "Calle de Ramos Carrión, 6, Madrid, 28002"
+  },
+  "c. de preciados, 33, centro, 28013 madrid, , 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de Preciados, 33, Centro, 28013 Madrid, Spain, 28013"
   }
 }
