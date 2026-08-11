@@ -5,9 +5,9 @@
     "schedule": "15 4 * * * UTC",
     "fever_mode": "full"
   },
-  "started_at": "2026-08-10T05:42:48Z",
-  "finished_at": "2026-08-10T06:06:44Z",
-  "duration_seconds": 1435.6,
+  "started_at": "2026-08-11T05:21:21Z",
+  "finished_at": "2026-08-11T05:47:24Z",
+  "duration_seconds": 1563.1,
   "sources": [
     {
       "name": "biblioteca_nacional",
@@ -23,8 +23,8 @@
       "name": "casa_mexico",
       "kind": "plan",
       "status": "ok",
-      "count": 36,
-      "duration_seconds": 46.3,
+      "count": 40,
+      "duration_seconds": 51.1,
       "error": null,
       "stale": false
     },
@@ -33,7 +33,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 3,
-      "duration_seconds": 6.6,
+      "duration_seconds": 7.5,
       "error": null,
       "stale": false
     },
@@ -41,8 +41,8 @@
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 612,
-      "duration_seconds": 1.3,
+      "count": 617,
+      "duration_seconds": 2.1,
       "error": null,
       "stale": false
     },
@@ -51,7 +51,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 192,
-      "duration_seconds": 485.5,
+      "duration_seconds": 606.8,
       "error": null,
       "stale": false
     },
@@ -60,7 +60,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 17,
-      "duration_seconds": 11.9,
+      "duration_seconds": 13.3,
       "error": null,
       "stale": false
     },
@@ -69,7 +69,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 447,
-      "duration_seconds": 0.5,
+      "duration_seconds": 0.4,
       "error": "exit 1:               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/mad_plan/mad_plan/tools/eventbrite.py\", line 292, in scrape_eventbrite\n    raise RuntimeError(\"No Eventbrite events collected\")\nRuntimeError: No Eventbrite events collected",
       "stale": true,
       "stale_since": "2026-07-15T07:56:34Z"
@@ -78,8 +78,8 @@
       "name": "fever",
       "kind": "plan",
       "status": "ok",
-      "count": 424,
-      "duration_seconds": 429.4,
+      "count": 428,
+      "duration_seconds": 466.4,
       "error": null,
       "stale": false
     },
@@ -88,7 +88,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 1,
-      "duration_seconds": 3.6,
+      "duration_seconds": 15.6,
       "error": null,
       "stale": false
     },
@@ -97,7 +97,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 1,
-      "duration_seconds": 1.4,
+      "duration_seconds": 3.0,
       "error": null,
       "stale": false
     },
@@ -105,8 +105,8 @@
       "name": "gacetin_madrid",
       "kind": "news",
       "status": "ok",
-      "count": 44,
-      "duration_seconds": 3.1,
+      "count": 42,
+      "duration_seconds": 3.7,
       "error": null,
       "stale": false
     },
@@ -115,7 +115,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 51,
-      "duration_seconds": 10.5,
+      "duration_seconds": 13.8,
       "error": null,
       "stale": false
     },
@@ -123,8 +123,8 @@
       "name": "madrid_secreto",
       "kind": "plan",
       "status": "ok",
-      "count": 255,
-      "duration_seconds": 653.9,
+      "count": 257,
+      "duration_seconds": 667.4,
       "error": null,
       "stale": false
     },
@@ -133,7 +133,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 166,
-      "duration_seconds": 14.8,
+      "duration_seconds": 17.2,
       "error": null,
       "stale": false
     },
@@ -141,8 +141,8 @@
       "name": "meetup",
       "kind": "plan",
       "status": "ok",
-      "count": 405,
-      "duration_seconds": 11.3,
+      "count": 404,
+      "duration_seconds": 12.7,
       "error": null,
       "stale": false
     },
@@ -151,7 +151,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 22,
-      "duration_seconds": 17.3,
+      "duration_seconds": 20.1,
       "error": null,
       "stale": false
     },
@@ -160,7 +160,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 55,
-      "duration_seconds": 12.0,
+      "duration_seconds": 16.7,
       "error": null,
       "stale": false
     },
@@ -168,8 +168,8 @@
       "name": "sala_el_sol",
       "kind": "plan",
       "status": "ok",
-      "count": 31,
-      "duration_seconds": 5.1,
+      "count": 32,
+      "duration_seconds": 7.4,
       "error": null,
       "stale": false
     },
@@ -178,7 +178,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 40,
-      "duration_seconds": 8.2,
+      "duration_seconds": 10.6,
       "error": null,
       "stale": false
     },
@@ -187,7 +187,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 27,
-      "duration_seconds": 0.4,
+      "duration_seconds": 0.6,
       "error": "exit 1:     response.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.13/x64/lib/python3.12/site-packages/requests/models.py\", line 1028, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ticketmaster.es/discover/madrid?language=es-es&page=0",
       "stale": true,
       "stale_since": "2026-07-14T07:41:20Z"
@@ -196,8 +196,8 @@
       "name": "timeout",
       "kind": "news",
       "status": "ok",
-      "count": 49,
-      "duration_seconds": 52.4,
+      "count": 45,
+      "duration_seconds": 57.8,
       "error": null,
       "stale": false
     },
@@ -206,7 +206,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 42,
-      "duration_seconds": 14.1,
+      "duration_seconds": 17.8,
       "error": null,
       "stale": false
     }
@@ -215,25 +215,25 @@
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 2507,
-      "web_count": 2204,
+      "count": 2519,
+      "web_count": 2215,
       "validation": {
         "valid": false,
-        "total": 2507,
-        "with_price": 1252,
-        "with_location": 2468,
+        "total": 2519,
+        "with_price": 1264,
+        "with_location": 2484,
         "by_source": {
           "ticketmaster": 16,
           "eventbrite": 440,
-          "datos_madrid": 552,
+          "datos_madrid": 557,
           "matadero": 164,
-          "fever": 420,
-          "museo_reina_sofia": 22,
-          "madrid_secreto": 152,
-          "meetup": 290,
+          "fever": 424,
+          "meetup": 287,
+          "madrid_secreto": 153,
           "esmadrid": 184,
-          "sala_el_sol": 25,
-          "casa_mexico": 36,
+          "sala_el_sol": 26,
+          "museo_reina_sofia": 22,
+          "casa_mexico": 40,
           "wegow": 38,
           "rockthesport": 54,
           "fundacion_mapfre": 1,
@@ -245,10 +245,10 @@
           "biblioteca_nacional": 1
         },
         "by_mode": {
-          "multiple": 253,
-          "puntual": 451,
-          "rango": 754,
-          "puntual_con_hora": 994,
+          "multiple": 257,
+          "puntual": 452,
+          "rango": 757,
+          "puntual_con_hora": 998,
           "sin_fecha": 55
         },
         "errors": [
@@ -308,26 +308,26 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 92,
-      "web_count": 92,
+      "count": 86,
+      "web_count": 86,
       "validation": {
         "valid": true,
-        "total": 92,
+        "total": 86,
         "by_source": {
-          "timeout": 48,
-          "gacetin_madrid": 44
+          "timeout": 44,
+          "gacetin_madrid": 42
         },
         "by_category": {
-          "Qué hacer": 19,
-          "Cultura y Ocio": 44,
-          "Teatro": 4,
           "Música": 4,
-          "Arte": 8,
+          "Qué hacer": 19,
+          "Cultura y Ocio": 42,
+          "Teatro": 4,
+          "Arte": 6,
           "Cine": 2,
           "Niños": 2,
-          "Deportes": 2,
+          "Deportes": 1,
           "Tiendas": 3,
-          "Restaurantes": 2,
+          "Restaurantes": 1,
           "Viaje": 2
         },
         "errors": []

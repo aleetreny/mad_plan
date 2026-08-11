@@ -4818,5 +4818,10 @@
     "lat": null,
     "lon": null,
     "query": "C. de Preciados, 33, Centro, 28013 Madrid, Spain, 28013"
+  },
+  "calle de velázquez, 47, madrid, 28001, españa": {
+    "lat": 40.427269,
+    "lon": -3.684132,
+    "query": "Calle de Velázquez, 47, Madrid, 28001"
   }
 }
