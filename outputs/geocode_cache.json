@@ -4823,5 +4823,35 @@
     "lat": 40.427269,
     "lon": -3.684132,
     "query": "Calle de Velázquez, 47, Madrid, 28001"
+  },
+  "calle doctor castelo, 4l, segovia, 40003, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Doctor Castelo, 4L, Segovia, 40003"
+  },
+  "parque de la bombilla, madrid, españa": {
+    "lat": 40.429831,
+    "lon": -3.728894,
+    "query": "Parque de La Bombilla"
+  },
+  "gran vía, 42, 28013, madrid, españa": {
+    "lat": 40.420444,
+    "lon": -3.705199,
+    "query": "Gran Vía, 42, 28013"
+  },
+  "salón de actos de condeduque, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Salón de Actos de Condeduque."
+  },
+  "enlosado de la catedral, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Enlosado de la Catedral"
+  },
+  "plaza de la paja, madrid, españa": {
+    "lat": 40.412988,
+    "lon": -3.711579,
+    "query": "plaza de la Paja"
   }
 }
