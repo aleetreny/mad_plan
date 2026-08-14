@@ -4868,5 +4868,65 @@
     "lat": null,
     "lon": null,
     "query": "Plaza de Cervantes o la de los Santos Niños"
+  },
+  "paseo de la castellana, 13, madrid, 28046, españa": {
+    "lat": 40.427878,
+    "lon": -3.69036,
+    "query": "Paseo de la Castellana, 13, Madrid, 28046"
+  },
+  "c. huertas (centro), madrid, españa": {
+    "lat": 40.413805,
+    "lon": -3.699826,
+    "query": "C. Huertas (Centro)"
+  },
+  "c. felipe de diego, 13 (puente de vallecas), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Felipe de Diego, 13 (Puente de Vallecas)"
+  },
+  "p. de picasso, 1 (buitrago del lozoya), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "P. de Picasso, 1 (Buitrago del Lozoya)"
+  },
+  "cuesta de san vicente, 44 (moncloa – aravaca), madrid, españa": {
+    "lat": 40.420854,
+    "lon": -3.718751,
+    "query": "Cuesta de San Vicente, 44 (Moncloa – Aravaca)"
+  },
+  "c. arquitecto lópez otero, s/n (moncloa – aravaca), madrid, españa": {
+    "lat": 40.443,
+    "lon": -3.731096,
+    "query": "C. Arquitecto López Otero, s/n (Moncloa – Aravaca)"
+  },
+  "plaza de la iglesia, s/n (nuevo baztán), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de la Iglesia, s/n (Nuevo Baztán)"
+  },
+  "c. de cea bermúdez, 1 (chamberí), madrid, españa": {
+    "lat": 40.439122,
+    "lon": -3.713468,
+    "query": "C. de Cea Bermúdez, 1 (Chamberí)"
+  },
+  "avda. del planetario esquina con c. de meneses (arganzuela), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avda. del Planetario esquina con C. de Meneses (Arganzuela)"
+  },
+  "plaza norte 2 tresaguas islazul la vaguada palafox luxury planetocio plenilunio premium parque corredor ri, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza Norte 2 TresAguas Islazul La Vaguada Palafox Luxury Planetocio Plenilunio Premium Parque Corredor Ri"
+  },
+  "c. santa engracia, 125 (chamberí), madrid, españa": {
+    "lat": 40.439194,
+    "lon": -3.700757,
+    "query": "C. Santa Engracia, 125 (Chamberí)"
+  },
+  "c. de atocha, 87 (barrio de las letras), madrid, españa": {
+    "lat": 40.411372,
+    "lon": -3.696978,
+    "query": "C. de Atocha, 87 (Barrio de las Letras)"
   }
 }
