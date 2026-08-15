@@ -4928,5 +4928,10 @@
     "lat": 40.411372,
     "lon": -3.696978,
     "query": "C. de Atocha, 87 (Barrio de las Letras)"
+  },
+  "cuesta de san vicente, 44, 28008, madrid, españa": {
+    "lat": 40.420854,
+    "lon": -3.718751,
+    "query": "Cuesta de San Vicente, 44, 28008"
   }
 }
