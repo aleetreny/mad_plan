@@ -4933,5 +4933,10 @@
     "lat": 40.420854,
     "lon": -3.718751,
     "query": "Cuesta de San Vicente, 44, 28008"
+  },
+  "cl. del marqués de sta. ana, 37, madrid, 28004, españa": {
+    "lat": 40.424966,
+    "lon": -3.704243,
+    "query": "Cl. del Marqués de Sta. Ana, 37, Madrid, 28004"
   }
 }
