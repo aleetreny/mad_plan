@@ -4938,5 +4938,60 @@
     "lat": 40.424966,
     "lon": -3.704243,
     "query": "Cl. del Marqués de Sta. Ana, 37, Madrid, 28004"
+  },
+  "c. de valderribas, 28, madrid, 28007, españa": {
+    "lat": 40.404495,
+    "lon": -3.676196,
+    "query": "C. de Valderribas, 28, Madrid, 28007"
+  },
+  "de alberto aguilera, 4, madrid, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Alberto Aguilera, 4, Madrid, 28015"
+  },
+  "c. de los químicos, 1, ['majadahonda', 'madrid'], 28222, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de los Químicos, 1, ['Majadahonda', 'Madrid'], 28222"
+  },
+  "marqués de vadillo, madrid, 28019, españa": {
+    "lat": 40.397446,
+    "lon": -3.716404,
+    "query": "Marqués de Vadillo, Madrid, 28019"
+  },
+  "de las tres cruces, 12, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de las Tres Cruces, 12, Madrid, 28013"
+  },
+  "de magallanes, 1, madrid, 28015, españa": {
+    "lat": 40.432433,
+    "lon": -3.705807,
+    "query": "de Magallanes, 1, Madrid, 28015"
+  },
+  "ortega y gasset, madrid, 28006, españa": {
+    "lat": 40.429849,
+    "lon": -3.674488,
+    "query": "Ortega y Gasset, Madrid, 28006"
+  },
+  "de carmen bruguera, 8, madrid, 28026, españa": {
+    "lat": 40.389099,
+    "lon": -3.702007,
+    "query": "de Carmen Bruguera, 8, Madrid, 28026"
+  },
+  "de cibeles, s/n, madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Cibeles, s/n, Madrid, 28014"
+  },
+  "de josé gutierrez abascal, 2, madrid, 28006, españa": {
+    "lat": 40.440013,
+    "lon": -3.689668,
+    "query": "de José Gutierrez Abascal, 2, Madrid, 28006"
+  },
+  "paseo de las delicias, 61 (arganzuela/palos de la frontera), madrid, españa": {
+    "lat": 40.401354,
+    "lon": -3.693893,
+    "query": "Paseo de las Delicias, 61 (Arganzuela/Palos de la Frontera)"
   }
 }
