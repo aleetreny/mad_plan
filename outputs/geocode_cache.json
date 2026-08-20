@@ -4993,5 +4993,40 @@
     "lat": 40.401354,
     "lon": -3.693893,
     "query": "Paseo de las Delicias, 61 (Arganzuela/Palos de la Frontera)"
+  },
+  "3olympia theatre, 72 dame street, dublin 2, d02 k135, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "3Olympia Theatre, 72 Dame Street, Dublin 2, D02 K135"
+  },
+  "colmenar viejo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Colmenar Viejo"
+  },
+  "mataelpino, madrid, españa": {
+    "lat": 40.439623,
+    "lon": -3.674704,
+    "query": "Mataelpino"
+  },
+  "el retiro, madrid, españa": {
+    "lat": 40.414946,
+    "lon": -3.683285,
+    "query": "El Retiro"
+  },
+  "calle de galileo, 26, madrid, 28015, españa": {
+    "lat": 40.432147,
+    "lon": -3.710252,
+    "query": "Calle de Galileo, 26, Madrid, 28015"
+  },
+  "calle san lamberto 11, posterior, la elipa, 28017, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle San Lamberto 11, Posterior, La Elipa, 28017"
+  },
+  "plaza de castilla parten varias líneas de autobuses interurbanos, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Castilla parten varias líneas de autobuses interurbanos"
   }
 }
