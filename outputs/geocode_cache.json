@@ -5028,5 +5028,30 @@
     "lat": null,
     "lon": null,
     "query": "Plaza de Castilla parten varias líneas de autobuses interurbanos"
+  },
+  "auditorio josé pernía calderón, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Auditorio José Pernía Calderón"
+  },
+  "petit palau - palau de la música catalana, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Petit Palau - Palau de la Música Catalana"
+  },
+  "salón real del gran hotel miramar, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Salón Real del Gran Hotel Miramar"
+  },
+  "calle picasso, madrid, españa": {
+    "lat": 40.408069,
+    "lon": -3.78381,
+    "query": "calle Picasso"
+  },
+  "plaza de cervantes y el recinto ferial de la isla del colegio concentrarán cerca de 300 actividades, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Cervantes y el recinto ferial de la Isla del Colegio concentrarán cerca de 300 actividades"
   }
 }
