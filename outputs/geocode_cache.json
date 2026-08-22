@@ -5053,5 +5053,35 @@
     "lat": null,
     "lon": null,
     "query": "plaza de Cervantes y el recinto ferial de la Isla del Colegio concentrarán cerca de 300 actividades"
+  },
+  "calle de raimundo fernández villaverde, 57, 28003, madrid, españa": {
+    "lat": 40.446675,
+    "lon": -3.696248,
+    "query": "Calle de Raimundo Fernández Villaverde, 57, 28003"
+  },
+  "plaza de , es un buen ejemplo de ello, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de España, es un buen ejemplo de ello"
+  },
+  "teatro en malasaña pintar tazas o hacer velas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro en Malasaña Pintar tazas o hacer velas"
+  },
+  "teatro en malasaña jugar a juegos de mesa en una cafetería, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro en Malasaña Jugar a juegos de mesa en una cafetería"
+  },
+  "calle de loreto y chicote, 9, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Loreto y Chicote, 9"
+  },
+  "espacio late «ese día no puedo, tengo club de lectura» y otras formas de ser una persona, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Espacio Late «Ese día no puedo, tengo club de lectura» y otras formas de ser una persona"
   }
 }
