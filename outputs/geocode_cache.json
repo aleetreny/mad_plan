@@ -5083,5 +5083,35 @@
     "lat": null,
     "lon": null,
     "query": "Espacio Late «Ese día no puedo, tengo club de lectura» y otras formas de ser una persona"
+  },
+  "de toledo, 39, madrid, 28005, españa": {
+    "lat": 40.412655,
+    "lon": -3.707419,
+    "query": "de Toledo, 39, Madrid, 28005"
+  },
+  "meneses, 4, madrid, 28045, españa": {
+    "lat": 40.391906,
+    "lon": -3.682084,
+    "query": "Meneses, 4, Madrid, 28045"
+  },
+  "arquitectura, s/n, leganés, 28918, madrid, españa": {
+    "lat": 40.339599,
+    "lon": -3.762738,
+    "query": "Arquitectura, s/n, Leganés, 28918"
+  },
+  "de gustavo adolfo bécquer, 64, alcalá de henares, 28806, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Gustavo Adolfo Bécquer, 64, Alcalá de Henares, 28806"
+  },
+  "planetario de madrid, españa": {
+    "lat": 40.392647,
+    "lon": -3.685306,
+    "query": "Planetario de Madrid"
+  },
+  "plaza de rutilio gaci, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Rutilio Gaci"
   }
 }
