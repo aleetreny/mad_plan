@@ -5113,5 +5113,30 @@
     "lat": null,
     "lon": null,
     "query": "plaza de Rutilio Gaci"
+  },
+  "plaza de toros, como la de las ventas, en, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de toros, como la de las Ventas, en"
+  },
+  "plaza don sabino, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza Don Sabino"
+  },
+  "espacio delicias, madrid, españa": {
+    "lat": 40.397936,
+    "lon": -3.688786,
+    "query": "Espacio Delicias"
+  },
+  "plaza del castillo , además de actuaciones musicales y animación repartida por el recorrido del mercado, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del Castillo , además de actuaciones musicales y animación repartida por el recorrido del mercado"
+  },
+  "teatro como victor palmero, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro como Victor Palmero"
   }
 }
