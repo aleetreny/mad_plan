@@ -5138,5 +5138,90 @@
     "lat": null,
     "lon": null,
     "query": "teatro como Victor Palmero"
+  },
+  "valencia 2026 – entradas de día 5 septiembre 2026 12:00 + más fechas disponibles desde 66,00 €, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Valencia 2026 – Entradas de día 5 septiembre 2026 12:00 + más fechas disponibles Desde 66,00 €"
+  },
+  "plaza de segovia (navalcarnero), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Segovia (Navalcarnero)"
+  },
+  "calle huertas, 2, madrid, españa": {
+    "lat": 40.339243,
+    "lon": -3.67826,
+    "query": "calle Huertas, 2"
+  },
+  "plaza de la constitución , pasando por las calles de stuart y del príncipe, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de la Constitución , pasando por las calles de Stuart y del Príncipe"
+  },
+  "casa de campo, madrid, españa": {
+    "lat": 40.424191,
+    "lon": -3.755858,
+    "query": "Casa de Campo"
+  },
+  "calle de alcalá, 13 (centro), madrid, españa": {
+    "lat": 40.417834,
+    "lon": -3.700702,
+    "query": "calle de Alcalá, 13 (Centro)"
+  },
+  "madrid río, españa": {
+    "lat": 40.400597,
+    "lon": -3.720755,
+    "query": "Madrid Río"
+  },
+  "calle de bailén, s/n (centro), madrid, españa": {
+    "lat": 40.412512,
+    "lon": -3.713763,
+    "query": "calle de Bailén, s/n (Centro)"
+  },
+  "calle de ríos rosas, 23 (chamberí), madrid, españa": {
+    "lat": 40.442543,
+    "lon": -3.699621,
+    "query": "calle de Ríos Rosas, 23 (Chamberí)"
+  },
+  "plaza de legazpi, 8 (legazpi), madrid, españa": {
+    "lat": 40.390949,
+    "lon": -3.694858,
+    "query": "Plaza de Legazpi, 8 (Legazpi)"
+  },
+  "paseo de la virgen del puerto, 1, madrid, españa": {
+    "lat": 40.419891,
+    "lon": -3.720392,
+    "query": "paseo de la Virgen del Puerto, 1"
+  },
+  "ronda de valencia, 2 (lavapiés), madrid, españa": {
+    "lat": 40.40607,
+    "lon": -3.699885,
+    "query": "ronda de Valencia, 2 (Lavapiés)"
+  },
+  "glorieta san antonio de la florida, 5 (manzanares), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "glorieta San Antonio de la Florida, 5 (Manzanares)"
+  },
+  "paseo alameda de osuna, 25 (alameda), madrid, españa": {
+    "lat": 40.457636,
+    "lon": -3.590261,
+    "query": "paseo Alameda de Osuna, 25 (Alameda)"
+  },
+  "carrera de s. jerónimo, s/n (centro), madrid, españa": {
+    "lat": 40.416302,
+    "lon": -3.697873,
+    "query": "carrera de S. Jerónimo, s/n (Centro)"
+  },
+  "calle de antonio sancha, 1 (alameda de osuna), madrid, españa": {
+    "lat": 40.458715,
+    "lon": -3.592532,
+    "query": "calle de Antonio Sancha, 1 (Alameda de Osuna)"
+  },
+  "calle del conde duque, 9, madrid, españa": {
+    "lat": 40.427602,
+    "lon": -3.710535,
+    "query": "calle del Conde Duque, 9"
   }
 }
