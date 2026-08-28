@@ -5223,5 +5223,20 @@
     "lat": 40.427602,
     "lon": -3.710535,
     "query": "calle del Conde Duque, 9"
+  },
+  "central de diseño, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Central de Diseño"
+  },
+  "museo arqueológico y paleontológico de la comunidad de madrid (plaza de las bernardas, s/n), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo Arqueológico y Paleontológico de la Comunidad de Madrid (plaza de las Bernardas, s/n)."
+  },
+  "recinto ferial casa de campo , próximo a las paradas de metro de alto de extremadura, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial Casa de Campo , próximo a las paradas de Metro de Alto de Extremadura"
   }
 }
