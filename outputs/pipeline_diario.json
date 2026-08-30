@@ -5,9 +5,9 @@
     "schedule": "15 4 * * * UTC",
     "fever_mode": "full"
   },
-  "started_at": "2026-08-29T11:02:58Z",
-  "finished_at": "2026-08-29T11:33:16Z",
-  "duration_seconds": 1817.6,
+  "started_at": "2026-08-30T09:55:35Z",
+  "finished_at": "2026-08-30T10:06:55Z",
+  "duration_seconds": 680.2,
   "sources": [
     {
       "name": "biblioteca_nacional",
@@ -23,8 +23,8 @@
       "name": "casa_mexico",
       "kind": "plan",
       "status": "ok",
-      "count": 47,
-      "duration_seconds": 52.9,
+      "count": 46,
+      "duration_seconds": 53.7,
       "error": null,
       "stale": false
     },
@@ -33,7 +33,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 6,
-      "duration_seconds": 3.1,
+      "duration_seconds": 5.1,
       "error": null,
       "stale": false
     },
@@ -41,7 +41,7 @@
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 811,
+      "count": 819,
       "duration_seconds": 1.7,
       "error": null,
       "stale": false
@@ -50,8 +50,8 @@
       "name": "esmadrid",
       "kind": "plan",
       "status": "ok",
-      "count": 215,
-      "duration_seconds": 853.1,
+      "count": 209,
+      "duration_seconds": 484.8,
       "error": null,
       "stale": false
     },
@@ -60,7 +60,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 29,
-      "duration_seconds": 26.9,
+      "duration_seconds": 27.1,
       "error": null,
       "stale": false
     },
@@ -69,7 +69,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 447,
-      "duration_seconds": 0.4,
+      "duration_seconds": 0.5,
       "error": "exit 1:               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/mad_plan/mad_plan/tools/eventbrite.py\", line 292, in scrape_eventbrite\n    raise RuntimeError(\"No Eventbrite events collected\")\nRuntimeError: No Eventbrite events collected",
       "stale": true,
       "stale_since": "2026-07-15T07:56:34Z"
@@ -79,7 +79,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 433,
-      "duration_seconds": 0.8,
+      "duration_seconds": 0.6,
       "error": null,
       "stale": false
     },
@@ -97,7 +97,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 1,
-      "duration_seconds": 1.6,
+      "duration_seconds": 1.0,
       "error": "scraper finished but produced no records",
       "stale": true,
       "stale_since": "2026-08-20T04:51:18Z"
@@ -107,7 +107,7 @@
       "kind": "news",
       "status": "ok",
       "count": 29,
-      "duration_seconds": 3.5,
+      "duration_seconds": 3.4,
       "error": null,
       "stale": false
     },
@@ -116,7 +116,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 54,
-      "duration_seconds": 11.7,
+      "duration_seconds": 11.9,
       "error": "exit 1:     self.prepare_url(url, params)\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 446, in prepare_url\n    raise InvalidURL(f\"Invalid URL {url!r}: No host supplied\")\nrequests.exceptions.InvalidURL: Invalid URL 'https://': No host supplied",
       "stale": true,
       "stale_since": "2026-08-24T04:59:47Z"
@@ -125,8 +125,8 @@
       "name": "madrid_secreto",
       "kind": "plan",
       "status": "ok",
-      "count": 341,
-      "duration_seconds": 640.5,
+      "count": 330,
+      "duration_seconds": 618.2,
       "error": null,
       "stale": false
     },
@@ -135,7 +135,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 181,
-      "duration_seconds": 21.5,
+      "duration_seconds": 19.1,
       "error": null,
       "stale": false
     },
@@ -143,8 +143,8 @@
       "name": "meetup",
       "kind": "plan",
       "status": "ok",
-      "count": 390,
-      "duration_seconds": 12.9,
+      "count": 398,
+      "duration_seconds": 17.0,
       "error": null,
       "stale": false
     },
@@ -152,8 +152,8 @@
       "name": "museo_reina_sofia",
       "kind": "plan",
       "status": "ok",
-      "count": 22,
-      "duration_seconds": 31.4,
+      "count": 21,
+      "duration_seconds": 30.5,
       "error": null,
       "stale": false
     },
@@ -161,8 +161,8 @@
       "name": "rockthesport",
       "kind": "plan",
       "status": "ok",
-      "count": 58,
-      "duration_seconds": 14.0,
+      "count": 57,
+      "duration_seconds": 13.2,
       "error": null,
       "stale": false
     },
@@ -170,8 +170,8 @@
       "name": "sala_el_sol",
       "kind": "plan",
       "status": "ok",
-      "count": 33,
-      "duration_seconds": 42.6,
+      "count": 43,
+      "duration_seconds": 52.7,
       "error": null,
       "stale": false
     },
@@ -180,7 +180,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 43,
-      "duration_seconds": 11.2,
+      "duration_seconds": 11.7,
       "error": null,
       "stale": false
     },
@@ -198,8 +198,8 @@
       "name": "timeout",
       "kind": "news",
       "status": "ok",
-      "count": 7,
-      "duration_seconds": 30.8,
+      "count": 84,
+      "duration_seconds": 39.7,
       "error": null,
       "stale": false
     },
@@ -207,8 +207,8 @@
       "name": "wegow",
       "kind": "plan",
       "status": "ok",
-      "count": 42,
-      "duration_seconds": 16.7,
+      "count": 40,
+      "duration_seconds": 16.2,
       "error": null,
       "stale": false
     }
@@ -217,29 +217,29 @@
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 2803,
-      "web_count": 2476,
+      "count": 2782,
+      "web_count": 2448,
       "validation": {
         "valid": false,
-        "total": 2803,
-        "with_price": 1426,
-        "with_location": 2775,
+        "total": 2782,
+        "with_price": 1407,
+        "with_location": 2751,
         "by_source": {
-          "ticketmaster": 15,
+          "ticketmaster": 16,
           "eventbrite": 438,
           "fever": 430,
-          "datos_madrid": 678,
+          "datos_madrid": 666,
+          "esmadrid": 202,
           "matadero": 180,
-          "sala_el_sol": 23,
-          "esmadrid": 208,
-          "madrid_secreto": 227,
-          "casa_mexico": 47,
-          "rockthesport": 57,
-          "museo_reina_sofia": 22,
-          "meetup": 303,
-          "wegow": 39,
+          "madrid_secreto": 216,
+          "casa_mexico": 46,
           "fundacion_mapfre": 1,
+          "museo_reina_sofia": 21,
+          "meetup": 304,
+          "wegow": 37,
+          "rockthesport": 56,
           "teatros_canal": 43,
+          "sala_el_sol": 34,
           "espacio_fundacion_telefonica": 29,
           "circulo_bellas_artes": 6,
           "ifema_madrid": 54,
@@ -247,11 +247,11 @@
           "biblioteca_nacional": 1
         },
         "by_mode": {
-          "multiple": 341,
-          "puntual": 471,
-          "rango": 782,
-          "puntual_con_hora": 1102,
-          "sin_fecha": 107
+          "multiple": 352,
+          "puntual": 473,
+          "rango": 778,
+          "puntual_con_hora": 1082,
+          "sin_fecha": 97
         },
         "errors": [
           "Plan fuera de ventana producto en plan:eventbrite:1992432364838",
@@ -310,21 +310,26 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 36,
-      "web_count": 36,
+      "count": 113,
+      "web_count": 113,
       "validation": {
         "valid": true,
-        "total": 36,
+        "total": 113,
         "by_source": {
-          "gacetin_madrid": 29,
-          "timeout": 7
+          "timeout": 84,
+          "gacetin_madrid": 29
         },
         "by_category": {
+          "Qué hacer": 31,
           "Cultura y Ocio": 29,
-          "Teatro": 2,
-          "Qué hacer": 2,
-          "Música": 2,
-          "Tiendas": 1
+          "Tiendas": 8,
+          "Música": 13,
+          "Restaurantes": 13,
+          "Cine": 2,
+          "Arte": 3,
+          "Teatro": 7,
+          "Niños": 4,
+          "Viaje": 3
         },
         "errors": []
       }
