@@ -5238,5 +5238,10 @@
     "lat": null,
     "lon": null,
     "query": "Recinto Ferial Casa de Campo , próximo a las paradas de Metro de Alto de Extremadura"
+  },
+  "de galileo, 100, madrid, 28015, españa": {
+    "lat": 40.438507,
+    "lon": -3.709849,
+    "query": "de Galileo, 100, Madrid, 28015"
   }
 }
