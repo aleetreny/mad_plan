@@ -5243,5 +5243,15 @@
     "lat": 40.438507,
     "lon": -3.709849,
     "query": "de Galileo, 100, Madrid, 28015"
+  },
+  "iglesia de la universidad comillas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Iglesia de la Universidad Comillas"
+  },
+  "c. juan ramón jiménez, 3, 28232 las rozas de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Juan Ramón Jiménez, 3, 28232 Las Rozas de Madrid"
   }
 }
