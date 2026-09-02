@@ -5253,5 +5253,15 @@
     "lat": null,
     "lon": null,
     "query": "C. Juan Ramón Jiménez, 3, 28232 Las Rozas de Madrid"
+  },
+  "al lado de la ola de surf, c. oslo, 53 centro comercial x, planta -1, madrid, 28922, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "al lado de la ola de surf, C. Oslo, 53 centro comercial X, Planta -1, Madrid, 28922"
+  },
+  "calle rosas de aravaca, nº 38 (distrito de aravaca, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Rosas de Aravaca, nº 38 (distrito de Aravaca"
   }
 }
