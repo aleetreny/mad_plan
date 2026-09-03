@@ -5,9 +5,9 @@
     "schedule": "15 4 * * * UTC",
     "fever_mode": "full"
   },
-  "started_at": "2026-09-02T08:51:00Z",
-  "finished_at": "2026-09-02T09:03:50Z",
-  "duration_seconds": 770.0,
+  "started_at": "2026-09-03T08:54:58Z",
+  "finished_at": "2026-09-03T09:08:32Z",
+  "duration_seconds": 814.1,
   "sources": [
     {
       "name": "biblioteca_nacional",
@@ -23,8 +23,8 @@
       "name": "casa_mexico",
       "kind": "plan",
       "status": "ok",
-      "count": 53,
-      "duration_seconds": 55.1,
+      "count": 57,
+      "duration_seconds": 59.2,
       "error": null,
       "stale": false
     },
@@ -33,7 +33,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 7,
-      "duration_seconds": 2.6,
+      "duration_seconds": 6.8,
       "error": null,
       "stale": false
     },
@@ -41,8 +41,8 @@
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 905,
-      "duration_seconds": 2.3,
+      "count": 934,
+      "duration_seconds": 2.1,
       "error": null,
       "stale": false
     },
@@ -50,8 +50,8 @@
       "name": "esmadrid",
       "kind": "plan",
       "status": "ok",
-      "count": 214,
-      "duration_seconds": 505.0,
+      "count": 183,
+      "duration_seconds": 668.9,
       "error": null,
       "stale": false
     },
@@ -59,8 +59,8 @@
       "name": "espacio_fundacion_telefonica",
       "kind": "plan",
       "status": "ok",
-      "count": 34,
-      "duration_seconds": 26.8,
+      "count": 33,
+      "duration_seconds": 32.4,
       "error": null,
       "stale": false
     },
@@ -69,7 +69,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 447,
-      "duration_seconds": 0.6,
+      "duration_seconds": 0.4,
       "error": "exit 1:               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/mad_plan/mad_plan/tools/eventbrite.py\", line 292, in scrape_eventbrite\n    raise RuntimeError(\"No Eventbrite events collected\")\nRuntimeError: No Eventbrite events collected",
       "stale": true,
       "stale_since": "2026-07-15T07:56:34Z"
@@ -79,7 +79,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 433,
-      "duration_seconds": 2.0,
+      "duration_seconds": 0.9,
       "error": null,
       "stale": false
     },
@@ -88,7 +88,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 2,
-      "duration_seconds": 3.3,
+      "duration_seconds": 167.4,
       "error": null,
       "stale": false
     },
@@ -97,7 +97,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 1,
-      "duration_seconds": 1.0,
+      "duration_seconds": 1.4,
       "error": "scraper finished but produced no records",
       "stale": true,
       "stale_since": "2026-08-20T04:51:18Z"
@@ -106,27 +106,26 @@
       "name": "gacetin_madrid",
       "kind": "news",
       "status": "ok",
-      "count": 33,
-      "duration_seconds": 2.9,
+      "count": 35,
+      "duration_seconds": 3.4,
       "error": null,
       "stale": false
     },
     {
       "name": "ifema_madrid",
       "kind": "plan",
-      "status": "failed",
+      "status": "ok",
       "count": 54,
-      "duration_seconds": 11.8,
-      "error": "exit 1:     self.prepare_url(url, params)\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 446, in prepare_url\n    raise InvalidURL(f\"Invalid URL {url!r}: No host supplied\")\nrequests.exceptions.InvalidURL: Invalid URL 'https://': No host supplied",
-      "stale": true,
-      "stale_since": "2026-08-24T04:59:47Z"
+      "duration_seconds": 16.5,
+      "error": null,
+      "stale": false
     },
     {
       "name": "madrid_secreto",
       "kind": "plan",
       "status": "ok",
-      "count": 345,
-      "duration_seconds": 705.5,
+      "count": 346,
+      "duration_seconds": 732.2,
       "error": null,
       "stale": false
     },
@@ -135,7 +134,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 186,
-      "duration_seconds": 14.8,
+      "duration_seconds": 15.6,
       "error": null,
       "stale": false
     },
@@ -143,8 +142,8 @@
       "name": "meetup",
       "kind": "plan",
       "status": "ok",
-      "count": 408,
-      "duration_seconds": 12.8,
+      "count": 404,
+      "duration_seconds": 12.9,
       "error": null,
       "stale": false
     },
@@ -152,8 +151,8 @@
       "name": "museo_reina_sofia",
       "kind": "plan",
       "status": "ok",
-      "count": 20,
-      "duration_seconds": 28.4,
+      "count": 19,
+      "duration_seconds": 34.7,
       "error": null,
       "stale": false
     },
@@ -161,8 +160,8 @@
       "name": "rockthesport",
       "kind": "plan",
       "status": "ok",
-      "count": 56,
-      "duration_seconds": 11.4,
+      "count": 57,
+      "duration_seconds": 11.7,
       "error": null,
       "stale": false
     },
@@ -170,8 +169,8 @@
       "name": "sala_el_sol",
       "kind": "plan",
       "status": "ok",
-      "count": 45,
-      "duration_seconds": 57.2,
+      "count": 44,
+      "duration_seconds": 52.3,
       "error": null,
       "stale": false
     },
@@ -179,8 +178,8 @@
       "name": "teatros_canal",
       "kind": "plan",
       "status": "ok",
-      "count": 63,
-      "duration_seconds": 12.3,
+      "count": 64,
+      "duration_seconds": 15.3,
       "error": null,
       "stale": false
     },
@@ -198,8 +197,8 @@
       "name": "timeout",
       "kind": "news",
       "status": "ok",
-      "count": 3,
-      "duration_seconds": 19.5,
+      "count": 2,
+      "duration_seconds": 20.0,
       "error": null,
       "stale": false
     },
@@ -208,7 +207,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 39,
-      "duration_seconds": 14.7,
+      "duration_seconds": 16.1,
       "error": null,
       "stale": false
     }
@@ -217,40 +216,40 @@
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 2928,
-      "web_count": 2578,
+      "count": 2938,
+      "web_count": 2588,
       "validation": {
         "valid": false,
-        "total": 2928,
-        "with_price": 1529,
-        "with_location": 2886,
+        "total": 2938,
+        "with_price": 1552,
+        "with_location": 2904,
         "by_source": {
           "ticketmaster": 16,
           "eventbrite": 438,
-          "fever": 428,
+          "fever": 429,
           "fundacion_mapfre": 1,
-          "datos_madrid": 744,
+          "datos_madrid": 774,
           "matadero": 185,
-          "casa_mexico": 53,
-          "sala_el_sol": 36,
-          "esmadrid": 208,
-          "museo_reina_sofia": 20,
-          "madrid_secreto": 229,
-          "meetup": 319,
-          "espacio_fundacion_telefonica": 34,
-          "teatros_canal": 63,
+          "teatros_canal": 64,
+          "esmadrid": 180,
           "circulo_bellas_artes": 7,
-          "rockthesport": 55,
+          "sala_el_sol": 36,
+          "casa_mexico": 57,
+          "rockthesport": 56,
+          "museo_reina_sofia": 19,
+          "madrid_secreto": 231,
+          "meetup": 320,
+          "espacio_fundacion_telefonica": 33,
           "wegow": 35,
           "ifema_madrid": 54,
           "fundacion_canal": 2,
           "biblioteca_nacional": 1
         },
         "by_mode": {
-          "multiple": 361,
+          "multiple": 374,
           "puntual": 487,
-          "rango": 797,
-          "puntual_con_hora": 1170,
+          "rango": 777,
+          "puntual_con_hora": 1187,
           "sin_fecha": 113
         },
         "errors": [
@@ -310,20 +309,19 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 36,
-      "web_count": 36,
+      "count": 37,
+      "web_count": 37,
       "validation": {
         "valid": true,
-        "total": 36,
+        "total": 37,
         "by_source": {
-          "gacetin_madrid": 33,
-          "timeout": 3
+          "gacetin_madrid": 35,
+          "timeout": 2
         },
         "by_category": {
-          "Cultura y Ocio": 33,
+          "Cultura y Ocio": 35,
           "Teatro": 1,
-          "Qué hacer": 1,
-          "Música": 1
+          "Qué hacer": 1
         },
         "errors": []
       }
