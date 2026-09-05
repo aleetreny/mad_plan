@@ -5278,5 +5278,25 @@
     "lat": null,
     "lon": null,
     "query": "Oslo 53 Alcorcón CC X-Madrid, 28922"
+  },
+  "chamartín-clara campoamor, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Chamartín-Clara Campoamor"
+  },
+  "calle agustín de foxa, s/n, 28036, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Agustín de Foxa, s/n, 28036"
+  },
+  "plaza a través del perfil del csic en eventbrite, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza a través del perfil del CSIC en Eventbrite"
+  },
+  "calle san dimas 3, madrid, españa": {
+    "lat": 40.427517,
+    "lon": -3.707508,
+    "query": "calle San Dimas 3"
   }
 }
