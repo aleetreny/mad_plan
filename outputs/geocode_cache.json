@@ -5308,5 +5308,10 @@
     "lat": null,
     "lon": null,
     "query": "plaza libre en otro de los recorridos será posible apuntarse a una lista de espera a través del correo res"
+  },
+  "centro comercial islazul, madrid, españa": {
+    "lat": 40.364927,
+    "lon": -3.73786,
+    "query": "Centro Comercial Islazul"
   }
 }
