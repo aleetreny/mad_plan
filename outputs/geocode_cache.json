@@ -5313,5 +5313,50 @@
     "lat": 40.364927,
     "lon": -3.73786,
     "query": "Centro Comercial Islazul"
+  },
+  "recinto ferial de leganés, madrid, españa": {
+    "lat": 40.324685,
+    "lon": -3.757817,
+    "query": "Recinto ferial de Leganés"
+  },
+  "calle alejandro sánchez, 94, madrid, 28019, españa": {
+    "lat": 40.39002,
+    "lon": -3.721686,
+    "query": "Calle Alejandro Sánchez, 94, Madrid, 28019"
+  },
+  "madrid, 28055, españa": {
+    "lat": 40.476924,
+    "lon": -3.610287,
+    "query": "Madrid, 28055"
+  },
+  "barrio de la elipa (ciudad lineal), madrid, españa": {
+    "lat": 40.422875,
+    "lon": -3.653875,
+    "query": "Barrio de La Elipa (Ciudad Lineal)"
+  },
+  "de los jardines, 3, madrid, 28013, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de los Jardines, 3, Madrid, 28013"
+  },
+  "complutense, madrid, 28040, españa": {
+    "lat": 40.437842,
+    "lon": -3.728495,
+    "query": "Complutense, Madrid, 28040"
+  },
+  "mercado de vallehermoso (calle de vallehermoso, 36), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Mercado de Vallehermoso (calle de Vallehermoso, 36)"
+  },
+  "plaza del caño, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza del Caño"
+  },
+  "recinto ferial y viceversa en el siguiente horario, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial y viceversa en el siguiente horario"
   }
 }
