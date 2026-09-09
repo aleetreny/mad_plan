@@ -5358,5 +5358,45 @@
     "lat": null,
     "lon": null,
     "query": "Recinto Ferial y viceversa en el siguiente horario"
+  },
+  "de san agustín, 7, madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de San Agustín, 7, Madrid, 28014"
+  },
+  "plaza de la constitución, la gran vía y otros espacios del municipio, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de la Constitución, la Gran Vía y otros espacios del municipio"
+  },
+  "de la isla de java, 2, madrid, 28034, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Isla de Java, 2, Madrid, 28034"
+  },
+  "plaza oficial del mclaren mastercard formula 1® team, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza oficial del McLaren Mastercard Formula 1® Team"
+  },
+  "calle de sevilla, 2, centro, madrid, españa": {
+    "lat": 40.416885,
+    "lon": -3.700103,
+    "query": "Calle de Sevilla, 2, Centro"
+  },
+  "museo de automoción de torrejón de la calzada , proyectado por mansilla + tuñón, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo de Automoción de Torrejón de la Calzada , proyectado por Mansilla + Tuñón"
+  },
+  "calle de alberto aguilera, 20, madrid, españa": {
+    "lat": 40.430132,
+    "lon": -3.70942,
+    "query": "calle de Alberto Aguilera, 20"
+  },
+  "espacio y cualquier persona, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio y cualquier persona"
   }
 }
