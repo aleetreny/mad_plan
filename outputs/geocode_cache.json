@@ -5398,5 +5398,55 @@
     "lat": null,
     "lon": null,
     "query": "espacio y cualquier persona"
+  },
+  "calle de conde de aranda, 24, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Conde de Aranda, 24"
+  },
+  "p.º de la castellana, 2 (salamanca), madrid, españa": {
+    "lat": 40.436107,
+    "lon": -3.688667,
+    "query": "P.º de la Castellana, 2 (Salamanca)"
+  },
+  "la vaguada, madrid, españa": {
+    "lat": 40.479036,
+    "lon": -3.706704,
+    "query": "La Vaguada"
+  },
+  "frente al edificio metrópolis (gran vía), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Frente al edificio Metrópolis (Gran Vía)"
+  },
+  "calle belén 4 (chueca – recoletos), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Belén 4 (Chueca – Recoletos)"
+  },
+  "plaza de colón, madrid, españa": {
+    "lat": 40.425348,
+    "lon": -3.690513,
+    "query": "Plaza de Colón"
+  },
+  "paseo de la castellana, 103, madrid, españa": {
+    "lat": 40.453993,
+    "lon": -3.691221,
+    "query": "Paseo de la Castellana, 103"
+  },
+  "plaza de callao se convertirá en un punto caliente de la competición, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Callao se convertirá en un punto caliente de la competición"
+  },
+  "palacio de santa bárbara, madrid, españa": {
+    "lat": 40.426312,
+    "lon": -3.697119,
+    "query": "Palacio de Santa Bárbara"
+  },
+  "plaza en 2026, sino de si sigue sintiéndose competitivo y, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza en 2026, sino de si sigue sintiéndose competitivo y"
   }
 }
