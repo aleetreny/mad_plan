@@ -5448,5 +5448,25 @@
     "lat": null,
     "lon": null,
     "query": "plaza en 2026, sino de si sigue sintiéndose competitivo y"
+  },
+  "av. de luis aragonés, 4, madrid, 28022, españa": {
+    "lat": 40.435076,
+    "lon": -3.600901,
+    "query": "Av. de Luis Aragonés, 4, Madrid, 28022"
+  },
+  "tr.ª de los jardines reales, 7, zaragoza, 50021, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Tr.ª de los Jardines Reales, 7, Zaragoza, 50021"
+  },
+  "avenida de felipe ii, s/n, madrid, 28009, españa": {
+    "lat": 40.423986,
+    "lon": -3.674224,
+    "query": "Avenida de Felipe II, s/n, Madrid, 28009"
+  },
+  "formula 3®: entrenamientos 11:05 h – 11:50 h | formula 2®: entrenamientos 13:30 h – 14:30 h | formula 1®: entrenamiento 1 15:00 h – 15:30 h, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Formula 3®: Entrenamientos 11:05 h – 11:50 h | Formula 2®: Entrenamientos 13:30 h – 14:30 h | Formula 1®: Entrenamiento 1 15:00 h – 15:30 h"
   }
 }
