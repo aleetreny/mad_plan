@@ -5468,5 +5468,60 @@
     "lat": null,
     "lon": null,
     "query": "Formula 3®: Entrenamientos 11:05 h – 11:50 h | Formula 2®: Entrenamientos 13:30 h – 14:30 h | Formula 1®: Entrenamiento 1 15:00 h – 15:30 h"
+  },
+  "museo arqueológico de alicante marq, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo Arqueológico de Alicante MARQ"
+  },
+  "calle antonio de cabezón, 2, 28034, madrid, españa": {
+    "lat": 40.496118,
+    "lon": -3.682,
+    "query": "Calle Antonio de Cabezón, 2, 28034"
+  },
+  "gran hotel sardinero, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Gran Hotel Sardinero"
+  },
+  "paseo federico garcía lorca, madrid, españa": {
+    "lat": 40.377925,
+    "lon": -3.620985,
+    "query": "paseo Federico García Lorca"
+  },
+  "formula 3®: carrera sprint 12:30 h – 13:30 h | formula 1®: entrenamiento 3 14:15 h- 15:05 h | formula 2®: carrera sprint 16:00 h – 17:00 h, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Formula 3®: Carrera Sprint 12:30 h – 13:30 h | Formula 1®: Entrenamiento 3 14:15 h- 15:05 h | Formula 2®: Carrera Sprint 16:00 h – 17:00 h"
+  },
+  "riyadh air metropolitano, madrid, españa": {
+    "lat": 40.43601,
+    "lon": -3.599699,
+    "query": "Riyadh Air Metropolitano"
+  },
+  "autocine madrid – c. de cabezón 2, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Autocine Madrid – C. de Cabezón 2"
+  },
+  "espacio pensado, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio pensado"
+  },
+  "diversos espacios en madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "diversos espacios en Madrid"
+  },
+  "diversas localizaciones: sierra de guadarrama, segovia y más, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "diversas localizaciones: Sierra de Guadarrama, Segovia y más"
+  },
+  "cam. de la moraleja, 147 (tres cantos), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cam. de la Moraleja, 147 (Tres Cantos)"
   }
 }
