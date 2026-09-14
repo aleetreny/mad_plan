@@ -5528,5 +5528,20 @@
     "lat": null,
     "lon": null,
     "query": "Formula 1®: Entrenamiento 3 14:15 h- 15:05 h | Formula 2®: Carrera Sprint 16:00 h – 17:00 h | Formula 1®: Clasificación 18:00 h – 18:50 h |"
+  },
+  "castellana, 133, madrid, 28046, españa": {
+    "lat": 40.433324,
+    "lon": -3.684132,
+    "query": "Castellana, 133, Madrid, 28046"
+  },
+  "calle de los madrazo, 29, madrid, españa": {
+    "lat": 40.417599,
+    "lon": -3.697258,
+    "query": "calle de Los Madrazo, 29"
+  },
+  "intercambiador de valdebebas, madrid, españa": {
+    "lat": 40.483199,
+    "lon": -3.61569,
+    "query": "Intercambiador de Valdebebas"
   }
 }
