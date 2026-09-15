@@ -5543,5 +5543,45 @@
     "lat": 40.483199,
     "lon": -3.61569,
     "query": "Intercambiador de Valdebebas"
+  },
+  "calle jesús maestro, 5, madrid, 28003, españa": {
+    "lat": 40.440784,
+    "lon": -3.710961,
+    "query": "Calle Jesús Maestro, 5, Madrid, 28003"
+  },
+  "sedes 2026: artespacio plot point, azarte, centro del títere, dt espacio escénico, el pasillo verde teatro, el umbral de primavera, la mirador, nave 73, réplika teatro, sala bululú 2120, sala cuarta pared, sala tarambana, teatro de las aguas, etc, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Sedes 2026: ArtEspacio Plot Point, AZarte, Centro del Títere, DT Espacio Escénico, El Pasillo Verde Teatro, El Umbral de Primavera, La Mirador, Nave 73, Réplika Teatro, Sala Bululú 2120, Sala Cuarta Pared, Sala Tarambana, Teatro de las Aguas, etc."
+  },
+  "de juan ignacio luca de tena , 20, madrid, 28027, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Juan Ignacio Luca de Tena , 20, Madrid, 28027"
+  },
+  "de bernardino obregón, 18, madrid, 28012, españa": {
+    "lat": 40.403944,
+    "lon": -3.700244,
+    "query": "de Bernardino Obregón, 18, Madrid, 28012"
+  },
+  "del príncipe de vergara, 146, madrid, 28002, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Príncipe de Vergara, 146, Madrid, 28002"
+  },
+  "de , s/n, madrid, 28008, españa": {
+    "lat": 40.459043,
+    "lon": -3.681151,
+    "query": "de España, s/n, Madrid, 28008"
+  },
+  "camino del molino, fuenlabrada, 28942, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Camino del Molino, Fuenlabrada, 28942"
+  },
+  "paseo de recoletos , en el tramo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo de Recoletos , en el tramo"
   }
 }
