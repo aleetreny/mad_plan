@@ -5583,5 +5583,35 @@
     "lat": null,
     "lon": null,
     "query": "paseo de Recoletos , en el tramo"
+  },
+  "c. de la ruda, 8 (centro, madrid, españa": {
+    "lat": 40.410533,
+    "lon": -3.707889,
+    "query": "C. de la Ruda, 8 (Centro"
+  },
+  "avenida de concha espina, 1, 28036, madrid, españa": {
+    "lat": 40.452178,
+    "lon": -3.687657,
+    "query": "Avenida de Concha Espina, 1, 28036"
+  },
+  "mercado de vallehermoso (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Mercado de Vallehermoso (Chamberí)"
+  },
+  "calle real con cam. de humanes a torrejón de velasco, torrejón de la calzada, madrid, 28991, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Real con Cam. de Humanes a Torrejón de Velasco, Torrejón de la Calzada, Madrid, 28991"
+  },
+  "el sótano (la latina), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "El Sótano (La Latina)"
+  },
+  "eneas 2026, madrid, españa": {
+    "lat": 40.379203,
+    "lon": -3.792983,
+    "query": "Eneas 2026"
   }
 }
