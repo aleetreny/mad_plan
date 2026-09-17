@@ -5613,5 +5613,20 @@
     "lat": 40.379203,
     "lon": -3.792983,
     "query": "Eneas 2026"
+  },
+  "avenida víctimas del terrorismo, nº 2, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida Víctimas del Terrorismo, nº 2"
+  },
+  "gran vía, 20 (centro), madrid, españa": {
+    "lat": 40.419969,
+    "lon": -3.700091,
+    "query": "Gran Vía, 20 (Centro)"
+  },
+  "fever immersive center en madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fever Immersive Center en Madrid"
   }
 }
