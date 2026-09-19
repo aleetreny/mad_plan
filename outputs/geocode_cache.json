@@ -5748,5 +5748,15 @@
     "lat": null,
     "lon": null,
     "query": "Museo Nacional Thyssen"
+  },
+  "calle del barquillo, 11, madrid, 28004, españa": {
+    "lat": 40.421047,
+    "lon": -3.695789,
+    "query": "Calle del Barquillo, 11, Madrid, 28004"
+  },
+  "calle la refitolería, 1, 40003 segovia, 40003, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle la Refitolería, 1, 40003 Segovia, 40003"
   }
 }
