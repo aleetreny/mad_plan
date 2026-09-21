@@ -5758,5 +5758,15 @@
     "lat": null,
     "lon": null,
     "query": "Calle la Refitolería, 1, 40003 Segovia, 40003"
+  },
+  "de fortuny, 53, madrid, 28010, españa": {
+    "lat": 40.43503,
+    "lon": -3.690259,
+    "query": "de Fortuny, 53, Madrid, 28010"
+  },
+  "espacio e n la tercera planta de x, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio e n la tercera planta de X"
   }
 }
