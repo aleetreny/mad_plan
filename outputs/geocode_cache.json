@@ -5768,5 +5768,40 @@
     "lat": null,
     "lon": null,
     "query": "espacio e n la tercera planta de X"
+  },
+  "plaza de olavide, madrid, 28010, españa": {
+    "lat": 40.432771,
+    "lon": -3.701034,
+    "query": "Plaza de Olavide, Madrid, 28010"
+  },
+  "del príncipe, 14, madrid, 28012, españa": {
+    "lat": 40.415605,
+    "lon": -3.700471,
+    "query": "del Príncipe, 14, Madrid, 28012"
+  },
+  "del planetario esquina a c/, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Planetario esquina a C/, Madrid"
+  },
+  "de palos de la frontera, 5, madrid, 28012, españa": {
+    "lat": 40.404695,
+    "lon": -3.696703,
+    "query": "de Palos de la Frontera, 5, Madrid, 28012"
+  },
+  "de pradillo, 12, madrid, 28002, españa": {
+    "lat": 40.448583,
+    "lon": -3.674728,
+    "query": "de Pradillo, 12, Madrid, 28002"
+  },
+  "camino del molino, s/n, fuenlabrada, 28942, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Camino del Molino, s/n, Fuenlabrada, 28942"
+  },
+  "plaza de callao se ha convertido en un lugar, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Callao se ha convertido en un lugar"
   }
 }
