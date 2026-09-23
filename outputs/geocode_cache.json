@@ -5803,5 +5803,25 @@
     "lat": null,
     "lon": null,
     "query": "Plaza de Callao se ha convertido en un lugar"
+  },
+  "calle de los concilios, 1, toledo, 45005, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de los Concilios, 1, Toledo, 45005"
+  },
+  "caja mágica, madrid, españa": {
+    "lat": 40.371328,
+    "lon": -3.681809,
+    "query": "Caja Mágica"
+  },
+  "hotel eurostars palacio buenavista, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Hotel Eurostars Palacio Buenavista"
+  },
+  "teatro griego del parque europa, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Griego del Parque Europa"
   }
 }
