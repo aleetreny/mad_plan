@@ -5823,5 +5823,20 @@
     "lat": null,
     "lon": null,
     "query": "Teatro Griego del Parque Europa"
+  },
+  "avenida de la depuradora s/n, aarganda del rey, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida de la depuradora s/n, Aarganda del Rey"
+  },
+  "auditorio municipal el espinillo , en el barrio de los rosales del distrito de villaverde, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Auditorio Municipal El Espinillo , en el barrio de Los Rosales del distrito de Villaverde"
+  },
+  "biáng biáng bar (chueca y mercado de vallehermoso) y los nueve locales de juancho’s bbq en madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Biáng Biáng Bar (Chueca y Mercado de Vallehermoso) y los nueve locales de Juancho’s BBQ en Madrid."
   }
 }
