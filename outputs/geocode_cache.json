@@ -5838,5 +5838,15 @@
     "lat": null,
     "lon": null,
     "query": "Biáng Biáng Bar (Chueca y Mercado de Vallehermoso) y los nueve locales de Juancho’s BBQ en Madrid."
+  },
+  "museo del enganche, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo del Enganche"
+  },
+  "sansan festival, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "SanSan Festival"
   }
 }
