@@ -5848,5 +5848,45 @@
     "lat": null,
     "lon": null,
     "query": "SanSan Festival"
+  },
+  "calle de las cigarreras, 6 (embajadores), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de las Cigarreras, 6 (Embajadores)"
+  },
+  "museo ikono madrid o al museo permanente legends, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo Ikono Madrid o al museo permanente Legends"
+  },
+  "calle del plomo 10 (arganzuela), madrid, españa": {
+    "lat": 40.392024,
+    "lon": -3.689451,
+    "query": "Calle del Plomo 10 (Arganzuela)"
+  },
+  "calle agustín de foxá nº 40 (chamartín), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Agustín de Foxá nº 40 (Chamartín)"
+  },
+  "calle de sancho dávila, 8 (ventas), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Sancho Dávila, 8 (Ventas)"
+  },
+  "recinto ferial de la cuña verde , y la entrada será gratuita, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial de la Cuña Verde , y la entrada será gratuita"
+  },
+  "puerto venecia, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Puerto Venecia"
+  },
+  "calle barquillo en un pop, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Barquillo en un pop"
   }
 }
