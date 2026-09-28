@@ -5888,5 +5888,10 @@
     "lat": null,
     "lon": null,
     "query": "calle Barquillo en un pop"
+  },
+  "c. de belén, 2, loc, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. de Belén, 2, Loc, Madrid, 28004"
   }
 }
