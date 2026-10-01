@@ -5923,5 +5923,85 @@
     "lat": null,
     "lon": null,
     "query": "plaza en las actividades de Madrid Otra Mirada"
+  },
+  "c. cardenal zúñiga, 12, segovia, 40003, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Cardenal Zúñiga, 12, Segovia, 40003"
+  },
+  "carabanchel (madrid), españa": {
+    "lat": 40.381206,
+    "lon": -3.754657,
+    "query": "Carabanchel (Madrid)"
+  },
+  "gran via, 41, madrid, 28013, españa": {
+    "lat": 40.420512,
+    "lon": -3.706678,
+    "query": "GRAN VIA, 41, Madrid, 28013"
+  },
+  "camino de perales, 23, madrid, 28041, españa": {
+    "lat": 40.368642,
+    "lon": -3.684334,
+    "query": "Camino de Perales, 23, Madrid, 28041"
+  },
+  "la casa encendida, madrid, españa": {
+    "lat": 40.40607,
+    "lon": -3.699885,
+    "query": "La Casa Encendida"
+  },
+  "paseo de recoletos, madrid, españa": {
+    "lat": 40.423728,
+    "lon": -3.689904,
+    "query": "Paseo de Recoletos"
+  },
+  "museo nacional del prado abrirá sus puertas en la primera edición «el prado de noche» d, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Museo Nacional del Prado abrirá sus puertas en la primera edición «El Prado de noche» d"
+  },
+  "museo del ferrocarril, madrid, españa": {
+    "lat": 40.399322,
+    "lon": -3.692149,
+    "query": "Museo del Ferrocarril"
+  },
+  "calle fortunata y jacinta, 5 (tetuán, madrid, españa": {
+    "lat": 40.45366,
+    "lon": -3.698736,
+    "query": "Calle Fortunata y Jacinta, 5 (Tetuán"
+  },
+  "calle alcántara 49 y 51 ⌛ duración aproximada, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Alcántara 49 y 51 ⌛ Duración aproximada"
+  },
+  "teatro no se trata de representar un shakeaspeare o calderón de la barca, sino de una se, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro no se trata de representar un Shakeaspeare o Calderón de la Barca, sino de una se"
+  },
+  "calle de alburquerque, 14, madrid, españa": {
+    "lat": 40.431076,
+    "lon": -3.701072,
+    "query": "calle de Alburquerque, 14"
+  },
+  "calle lanzarote (san sebastián de los reyes, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Lanzarote (San Sebastián de los Reyes"
+  },
+  "calle de sancho dávila, 8 (las ventas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle de Sancho Dávila, 8 (Las Ventas"
+  },
+  "calle de versalles, 10 (madrid, españa": {
+    "lat": 40.418021,
+    "lon": -3.612552,
+    "query": "calle de Versalles, 10 (Madrid"
+  },
+  "calle alcalá 42 (centro, madrid, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "calle Alcalá 42 (Centro"
   }
 }
