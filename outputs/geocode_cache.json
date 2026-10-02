@@ -6003,5 +6003,30 @@
     "lat": 40.418207,
     "lon": -3.696514,
     "query": "calle Alcalá 42 (Centro"
+  },
+  "fundación juan march madrid. calle castelló, 77, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fundación Juan March Madrid. Calle Castelló, 77"
+  },
+  "real academia de bellas artes de san fernando, madrid, españa": {
+    "lat": 40.417834,
+    "lon": -3.700702,
+    "query": "Real Academia de Bellas Artes de San Fernando"
+  },
+  "centrocentro, madrid, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "CentroCentro"
+  },
+  "paseo recoletos, 23 (madrid), españa": {
+    "lat": 40.422733,
+    "lon": -3.692271,
+    "query": "Paseo Recoletos, 23 (Madrid)"
+  },
+  "real jardín botánico de la complutense, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Real Jardín Botánico de la Complutense"
   }
 }
