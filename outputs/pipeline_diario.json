@@ -5,9 +5,9 @@
     "schedule": "15 4 * * * UTC",
     "fever_mode": "full"
   },
-  "started_at": "2026-10-03T09:50:37Z",
-  "finished_at": "2026-10-03T10:03:48Z",
-  "duration_seconds": 791.0,
+  "started_at": "2026-10-04T10:33:27Z",
+  "finished_at": "2026-10-04T10:46:04Z",
+  "duration_seconds": 756.7,
   "sources": [
     {
       "name": "biblioteca_nacional",
@@ -22,19 +22,18 @@
     {
       "name": "casa_mexico",
       "kind": "plan",
-      "status": "failed",
-      "count": 60,
-      "duration_seconds": 44.9,
-      "error": "exit 1:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 828, in generate\n    raise ConnectionError(e)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.casademexico.es', port=443): Read timed out.",
-      "stale": true,
-      "stale_since": "2026-09-30T10:33:06Z"
+      "status": "ok",
+      "count": 68,
+      "duration_seconds": 128.4,
+      "error": null,
+      "stale": false
     },
     {
       "name": "circulo_bellas_artes",
       "kind": "plan",
       "status": "ok",
-      "count": 28,
-      "duration_seconds": 7.5,
+      "count": 27,
+      "duration_seconds": 8.4,
       "error": null,
       "stale": false
     },
@@ -42,8 +41,8 @@
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 1469,
-      "duration_seconds": 2.2,
+      "count": 1402,
+      "duration_seconds": 2.0,
       "error": null,
       "stale": false
     },
@@ -51,8 +50,8 @@
       "name": "esmadrid",
       "kind": "plan",
       "status": "ok",
-      "count": 211,
-      "duration_seconds": 506.0,
+      "count": 206,
+      "duration_seconds": 659.2,
       "error": null,
       "stale": false
     },
@@ -60,8 +59,8 @@
       "name": "espacio_fundacion_telefonica",
       "kind": "plan",
       "status": "ok",
-      "count": 20,
-      "duration_seconds": 19.0,
+      "count": 19,
+      "duration_seconds": 17.9,
       "error": null,
       "stale": false
     },
@@ -98,7 +97,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 1,
-      "duration_seconds": 1.2,
+      "duration_seconds": 1.3,
       "error": "scraper finished but produced no records",
       "stale": true,
       "stale_since": "2026-08-20T04:51:18Z"
@@ -107,8 +106,8 @@
       "name": "gacetin_madrid",
       "kind": "news",
       "status": "ok",
-      "count": 77,
-      "duration_seconds": 6.2,
+      "count": 81,
+      "duration_seconds": 5.7,
       "error": null,
       "stale": false
     },
@@ -117,7 +116,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 51,
-      "duration_seconds": 16.1,
+      "duration_seconds": 14.9,
       "error": null,
       "stale": false
     },
@@ -125,8 +124,8 @@
       "name": "madrid_secreto",
       "kind": "plan",
       "status": "ok",
-      "count": 396,
-      "duration_seconds": 720.9,
+      "count": 386,
+      "duration_seconds": 687.3,
       "error": null,
       "stale": false
     },
@@ -134,8 +133,8 @@
       "name": "matadero",
       "kind": "plan",
       "status": "ok",
-      "count": 183,
-      "duration_seconds": 22.4,
+      "count": 180,
+      "duration_seconds": 23.1,
       "error": null,
       "stale": false
     },
@@ -143,8 +142,8 @@
       "name": "meetup",
       "kind": "plan",
       "status": "ok",
-      "count": 388,
-      "duration_seconds": 13.2,
+      "count": 391,
+      "duration_seconds": 14.8,
       "error": null,
       "stale": false
     },
@@ -152,8 +151,8 @@
       "name": "museo_reina_sofia",
       "kind": "plan",
       "status": "ok",
-      "count": 35,
-      "duration_seconds": 64.4,
+      "count": 33,
+      "duration_seconds": 47.0,
       "error": null,
       "stale": false
     },
@@ -161,8 +160,8 @@
       "name": "rockthesport",
       "kind": "plan",
       "status": "ok",
-      "count": 58,
-      "duration_seconds": 11.3,
+      "count": 51,
+      "duration_seconds": 9.4,
       "error": null,
       "stale": false
     },
@@ -170,8 +169,8 @@
       "name": "sala_el_sol",
       "kind": "plan",
       "status": "ok",
-      "count": 22,
-      "duration_seconds": 30.2,
+      "count": 21,
+      "duration_seconds": 35.4,
       "error": null,
       "stale": false
     },
@@ -179,8 +178,8 @@
       "name": "teatros_canal",
       "kind": "plan",
       "status": "ok",
-      "count": 69,
-      "duration_seconds": 16.1,
+      "count": 68,
+      "duration_seconds": 15.7,
       "error": null,
       "stale": false
     },
@@ -199,7 +198,7 @@
       "kind": "news",
       "status": "ok",
       "count": 98,
-      "duration_seconds": 31.3,
+      "duration_seconds": 28.2,
       "error": null,
       "stale": false
     },
@@ -208,7 +207,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 22,
-      "duration_seconds": 9.7,
+      "duration_seconds": 10.7,
       "error": null,
       "stale": false
     }
@@ -217,41 +216,41 @@
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 3513,
-      "web_count": 3046,
+      "count": 3429,
+      "web_count": 2953,
       "validation": {
         "valid": false,
-        "total": 3513,
-        "with_price": 2070,
-        "with_location": 3483,
+        "total": 3429,
+        "with_price": 2003,
+        "with_location": 3396,
         "by_source": {
           "ticketmaster": 16,
-          "eventbrite": 439,
+          "eventbrite": 440,
           "fever": 431,
           "fundacion_mapfre": 1,
-          "casa_mexico": 60,
-          "datos_madrid": 1283,
-          "esmadrid": 207,
-          "matadero": 177,
-          "teatros_canal": 68,
-          "circulo_bellas_artes": 28,
-          "madrid_secreto": 280,
-          "museo_reina_sofia": 35,
-          "meetup": 317,
-          "espacio_fundacion_telefonica": 20,
-          "sala_el_sol": 17,
-          "rockthesport": 57,
+          "datos_madrid": 1221,
+          "casa_mexico": 68,
+          "matadero": 174,
+          "esmadrid": 202,
+          "madrid_secreto": 277,
+          "museo_reina_sofia": 33,
+          "espacio_fundacion_telefonica": 19,
+          "meetup": 310,
+          "circulo_bellas_artes": 27,
           "ifema_madrid": 51,
+          "teatros_canal": 67,
           "fundacion_canal": 3,
+          "sala_el_sol": 16,
+          "rockthesport": 50,
           "wegow": 22,
           "biblioteca_nacional": 1
         },
         "by_mode": {
-          "multiple": 483,
-          "puntual": 505,
-          "rango": 788,
-          "puntual_con_hora": 1563,
-          "sin_fecha": 174
+          "multiple": 494,
+          "puntual": 500,
+          "rango": 785,
+          "puntual_con_hora": 1475,
+          "sin_fecha": 175
         },
         "errors": [
           "Plan fuera de ventana producto en plan:ticketmaster:698b43758ada2300016f6541",
@@ -310,18 +309,19 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 175,
-      "web_count": 175,
+      "count": 179,
+      "web_count": 179,
       "validation": {
         "valid": true,
-        "total": 175,
+        "total": 179,
         "by_source": {
-          "timeout": 98,
-          "gacetin_madrid": 77
+          "gacetin_madrid": 81,
+          "timeout": 98
         },
         "by_category": {
+          "Cultura y Ocio": 81,
+          "Niños": 2,
           "Arte": 12,
-          "Cultura y Ocio": 77,
           "Qué hacer": 38,
           "Tiendas": 9,
           "Teatro": 3,
@@ -330,8 +330,7 @@
           "Música": 11,
           "Deportes": 2,
           "Cine": 5,
-          "Viaje": 6,
-          "Niños": 1
+          "Viaje": 5
         },
         "errors": []
       }
