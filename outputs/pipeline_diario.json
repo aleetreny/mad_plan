@@ -5,16 +5,16 @@
     "schedule": "15 4 * * * UTC",
     "fever_mode": "full"
   },
-  "started_at": "2026-10-04T10:33:27Z",
-  "finished_at": "2026-10-04T10:46:04Z",
-  "duration_seconds": 756.7,
+  "started_at": "2026-10-05T11:25:14Z",
+  "finished_at": "2026-10-05T11:39:25Z",
+  "duration_seconds": 851.5,
   "sources": [
     {
       "name": "biblioteca_nacional",
       "kind": "plan",
       "status": "failed",
       "count": 1,
-      "duration_seconds": 0.5,
+      "duration_seconds": 0.3,
       "error": "exit 1:     response.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 1028, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.bne.es/es/agenda",
       "stale": true,
       "stale_since": "2026-07-29T06:44:11Z"
@@ -22,18 +22,19 @@
     {
       "name": "casa_mexico",
       "kind": "plan",
-      "status": "ok",
+      "status": "failed",
       "count": 68,
-      "duration_seconds": 128.4,
-      "error": null,
-      "stale": false
+      "duration_seconds": 51.8,
+      "error": "exit 1:                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 828, in generate\n    raise ConnectionError(e)\nrequests.exceptions.ConnectionError: HTTPSConnectionPool(host='www.casademexico.es', port=443): Read timed out.",
+      "stale": true,
+      "stale_since": "2026-10-04T10:36:34Z"
     },
     {
       "name": "circulo_bellas_artes",
       "kind": "plan",
       "status": "ok",
-      "count": 27,
-      "duration_seconds": 8.4,
+      "count": 29,
+      "duration_seconds": 7.5,
       "error": null,
       "stale": false
     },
@@ -41,8 +42,8 @@
       "name": "datos_madrid",
       "kind": "plan",
       "status": "ok",
-      "count": 1402,
-      "duration_seconds": 2.0,
+      "count": 1358,
+      "duration_seconds": 1.6,
       "error": null,
       "stale": false
     },
@@ -50,8 +51,8 @@
       "name": "esmadrid",
       "kind": "plan",
       "status": "ok",
-      "count": 206,
-      "duration_seconds": 659.2,
+      "count": 230,
+      "duration_seconds": 748.9,
       "error": null,
       "stale": false
     },
@@ -59,8 +60,8 @@
       "name": "espacio_fundacion_telefonica",
       "kind": "plan",
       "status": "ok",
-      "count": 19,
-      "duration_seconds": 17.9,
+      "count": 20,
+      "duration_seconds": 18.3,
       "error": null,
       "stale": false
     },
@@ -69,7 +70,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 447,
-      "duration_seconds": 0.8,
+      "duration_seconds": 0.5,
       "error": "exit 1:               ^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/mad_plan/mad_plan/tools/eventbrite.py\", line 292, in scrape_eventbrite\n    raise RuntimeError(\"No Eventbrite events collected\")\nRuntimeError: No Eventbrite events collected",
       "stale": true,
       "stale_since": "2026-07-15T07:56:34Z"
@@ -79,7 +80,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 433,
-      "duration_seconds": 0.8,
+      "duration_seconds": 0.5,
       "error": null,
       "stale": false
     },
@@ -88,7 +89,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 3,
-      "duration_seconds": 3.0,
+      "duration_seconds": 2.7,
       "error": null,
       "stale": false
     },
@@ -106,7 +107,7 @@
       "name": "gacetin_madrid",
       "kind": "news",
       "status": "ok",
-      "count": 81,
+      "count": 78,
       "duration_seconds": 5.7,
       "error": null,
       "stale": false
@@ -116,7 +117,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 51,
-      "duration_seconds": 14.9,
+      "duration_seconds": 15.2,
       "error": null,
       "stale": false
     },
@@ -124,8 +125,8 @@
       "name": "madrid_secreto",
       "kind": "plan",
       "status": "ok",
-      "count": 386,
-      "duration_seconds": 687.3,
+      "count": 365,
+      "duration_seconds": 752.5,
       "error": null,
       "stale": false
     },
@@ -133,8 +134,8 @@
       "name": "matadero",
       "kind": "plan",
       "status": "ok",
-      "count": 180,
-      "duration_seconds": 23.1,
+      "count": 176,
+      "duration_seconds": 19.7,
       "error": null,
       "stale": false
     },
@@ -142,8 +143,8 @@
       "name": "meetup",
       "kind": "plan",
       "status": "ok",
-      "count": 391,
-      "duration_seconds": 14.8,
+      "count": 412,
+      "duration_seconds": 13.1,
       "error": null,
       "stale": false
     },
@@ -151,8 +152,8 @@
       "name": "museo_reina_sofia",
       "kind": "plan",
       "status": "ok",
-      "count": 33,
-      "duration_seconds": 47.0,
+      "count": 32,
+      "duration_seconds": 69.8,
       "error": null,
       "stale": false
     },
@@ -160,8 +161,8 @@
       "name": "rockthesport",
       "kind": "plan",
       "status": "ok",
-      "count": 51,
-      "duration_seconds": 9.4,
+      "count": 50,
+      "duration_seconds": 8.6,
       "error": null,
       "stale": false
     },
@@ -169,8 +170,8 @@
       "name": "sala_el_sol",
       "kind": "plan",
       "status": "ok",
-      "count": 21,
-      "duration_seconds": 35.4,
+      "count": 20,
+      "duration_seconds": 43.5,
       "error": null,
       "stale": false
     },
@@ -179,7 +180,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 68,
-      "duration_seconds": 15.7,
+      "duration_seconds": 13.7,
       "error": null,
       "stale": false
     },
@@ -188,7 +189,7 @@
       "kind": "plan",
       "status": "failed",
       "count": 27,
-      "duration_seconds": 0.5,
+      "duration_seconds": 0.4,
       "error": "exit 1:     response.raise_for_status()\n  File \"/opt/hostedtoolcache/Python/3.12.14/x64/lib/python3.12/site-packages/requests/models.py\", line 1028, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://www.ticketmaster.es/discover/madrid?language=es-es&page=0",
       "stale": true,
       "stale_since": "2026-07-14T07:41:20Z"
@@ -197,8 +198,8 @@
       "name": "timeout",
       "kind": "news",
       "status": "ok",
-      "count": 98,
-      "duration_seconds": 28.2,
+      "count": 96,
+      "duration_seconds": 23.8,
       "error": null,
       "stale": false
     },
@@ -207,7 +208,7 @@
       "kind": "plan",
       "status": "ok",
       "count": 22,
-      "duration_seconds": 10.7,
+      "duration_seconds": 9.5,
       "error": null,
       "stale": false
     }
@@ -216,41 +217,41 @@
     "planes": {
       "output": "outputs/eventos_madrid_all.json",
       "web_output": "outputs/eventos_web.json",
-      "count": 3429,
-      "web_count": 2953,
+      "count": 3407,
+      "web_count": 2928,
       "validation": {
         "valid": false,
-        "total": 3429,
-        "with_price": 2003,
-        "with_location": 3396,
+        "total": 3407,
+        "with_price": 1956,
+        "with_location": 3372,
         "by_source": {
           "ticketmaster": 16,
           "eventbrite": 440,
-          "fever": 431,
+          "fever": 432,
           "fundacion_mapfre": 1,
-          "datos_madrid": 1221,
           "casa_mexico": 68,
-          "matadero": 174,
-          "esmadrid": 202,
-          "madrid_secreto": 277,
-          "museo_reina_sofia": 33,
-          "espacio_fundacion_telefonica": 19,
-          "meetup": 310,
-          "circulo_bellas_artes": 27,
+          "datos_madrid": 1186,
+          "matadero": 168,
+          "esmadrid": 228,
+          "circulo_bellas_artes": 29,
+          "museo_reina_sofia": 32,
+          "madrid_secreto": 253,
+          "meetup": 326,
+          "espacio_fundacion_telefonica": 20,
           "ifema_madrid": 51,
           "teatros_canal": 67,
           "fundacion_canal": 3,
-          "sala_el_sol": 16,
-          "rockthesport": 50,
+          "sala_el_sol": 15,
+          "rockthesport": 49,
           "wegow": 22,
           "biblioteca_nacional": 1
         },
         "by_mode": {
-          "multiple": 494,
-          "puntual": 500,
-          "rango": 785,
-          "puntual_con_hora": 1475,
-          "sin_fecha": 175
+          "multiple": 486,
+          "puntual": 505,
+          "rango": 799,
+          "puntual_con_hora": 1459,
+          "sin_fecha": 158
         },
         "errors": [
           "Plan fuera de ventana producto en plan:ticketmaster:698b43758ada2300016f6541",
@@ -309,28 +310,28 @@
     "noticias": {
       "output": "outputs/noticias_madrid_all.json",
       "web_output": "outputs/noticias_web.json",
-      "count": 179,
-      "web_count": 179,
+      "count": 174,
+      "web_count": 174,
       "validation": {
         "valid": true,
-        "total": 179,
+        "total": 174,
         "by_source": {
-          "gacetin_madrid": 81,
-          "timeout": 98
+          "timeout": 96,
+          "gacetin_madrid": 78
         },
         "by_category": {
-          "Cultura y Ocio": 81,
-          "Niños": 2,
-          "Arte": 12,
-          "Qué hacer": 38,
+          "Arte": 13,
+          "Música": 11,
+          "Viaje": 5,
+          "Qué hacer": 37,
+          "Restaurantes": 9,
+          "Cultura y Ocio": 78,
+          "Niños": 1,
           "Tiendas": 9,
           "Teatro": 3,
-          "Restaurantes": 10,
           "Locales de noche": 1,
-          "Música": 11,
           "Deportes": 2,
-          "Cine": 5,
-          "Viaje": 5
+          "Cine": 5
         },
         "errors": []
       }
