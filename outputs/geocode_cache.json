@@ -6103,5 +6103,20 @@
     "lat": null,
     "lon": null,
     "query": "teatro inspirado en Nunca Jamás, el regreso de un icónico musical clásico y otros planes"
+  },
+  "de silvano, 77, madrid, 28043, españa": {
+    "lat": 40.463038,
+    "lon": -3.637657,
+    "query": "de Silvano, 77, Madrid, 28043"
+  },
+  "del emperador carlos v, madrid, 28014, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del Emperador Carlos V, Madrid, 28014"
+  },
+  "plaza convertida en escenario, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza convertida en escenario"
   }
 }
