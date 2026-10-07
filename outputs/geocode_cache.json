@@ -6118,5 +6118,10 @@
     "lat": null,
     "lon": null,
     "query": "plaza convertida en escenario"
+  },
+  "avenida complutense, s/n, 28040, 28040, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida Complutense, s/n, 28040, 28040"
   }
 }
