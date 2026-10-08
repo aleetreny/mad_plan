@@ -6123,5 +6123,40 @@
     "lat": null,
     "lon": null,
     "query": "Avenida Complutense, s/n, 28040, 28040"
+  },
+  "rincón del arte nuevo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Rincón del Arte Nuevo"
+  },
+  "movistar koi esports center, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Movistar KOI eSports Center"
+  },
+  "brach madrid – hôtel evok collection gran vía, 20, madrid, 28013 gran vía, 20 (centro), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Brach Madrid – Hôtel Evok Collection Gran Vía, 20, Madrid, 28013 Gran Vía, 20 (Centro)"
+  },
+  "quiz room ventas calle de sancho dávila, 8, madrid, 28028 calle de sancho dávila, 8 (ventas), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Quiz Room Ventas Calle de Sancho Dávila, 8, Madrid, 28028 Calle de Sancho Dávila, 8 (Ventas)"
+  },
+  "the lenovo garage – autocine madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "The Lenovo GARAGE – Autocine Madrid"
+  },
+  "palacio de la prensa plaza del callao, 4, 28013 ilustre colegio oficial de médicos de madrid y palacio de la prensa, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Palacio de la Prensa Plaza del Callao, 4, 28013 Ilustre Colegio Oficial de Médicos de Madrid y Palacio de la Prensa"
+  },
+  "escuela de coctelería de madrid (escom), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Escuela de Coctelería de Madrid (ESCOM)"
   }
 }
