@@ -6158,5 +6158,25 @@
     "lat": null,
     "lon": null,
     "query": "Escuela de Coctelería de Madrid (ESCOM)"
+  },
+  "la bruja canalla, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "La Bruja Canalla"
+  },
+  "carrer de la pau, 12, sant adrià de besòs, 08930, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Carrer de la Pau, 12, Sant Adrià de Besòs, 08930"
+  },
+  "estadio bernabéu, madrid, españa": {
+    "lat": 40.453044,
+    "lon": -3.688197,
+    "query": "Estadio Bernabéu"
+  },
+  "calle belén, 2, madrid, españa": {
+    "lat": 40.412211,
+    "lon": -3.675055,
+    "query": "calle Belén, 2"
   }
 }
