@@ -6178,5 +6178,10 @@
     "lat": 40.412211,
     "lon": -3.675055,
     "query": "calle Belén, 2"
+  },
+  "teatro victoria, madrid, españa": {
+    "lat": 40.423754,
+    "lon": -3.70555,
+    "query": "Teatro Victoria"
   }
 }
