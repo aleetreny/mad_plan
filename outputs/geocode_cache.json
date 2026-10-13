@@ -6183,5 +6183,45 @@
     "lat": 40.423754,
     "lon": -3.70555,
     "query": "Teatro Victoria"
+  },
+  "de castelló, 77, madrid, 28006, españa": {
+    "lat": 40.431208,
+    "lon": -3.681222,
+    "query": "de Castelló, 77, Madrid, 28006"
+  },
+  "madrid, 28053, españa": {
+    "lat": 40.423728,
+    "lon": -3.689904,
+    "query": "Madrid, 28053"
+  },
+  "de la puebla, 15, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de la Puebla, 15, Madrid, 28004"
+  },
+  "serrano, 117, madrid, 28001, españa": {
+    "lat": 40.441109,
+    "lon": -3.687665,
+    "query": "Serrano, 117, Madrid, 28001"
+  },
+  "de atocha, 65, madrid, 28012, españa": {
+    "lat": 40.412469,
+    "lon": -3.699149,
+    "query": "de Atocha, 65, Madrid, 28012"
+  },
+  "de hilarión eslava, 38, madrid, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Hilarión Eslava, 38, Madrid, 28015"
+  },
+  "calle del marqués de la ensenada, 12, local 1, centro, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle del Marqués de la Ensenada, 12, Local 1, Centro, Madrid, 28004"
+  },
+  "del general martínez campos, 37, madrid, 28010, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "del General Martínez Campos, 37, Madrid, 28010"
   }
 }
