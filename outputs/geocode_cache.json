@@ -6223,5 +6223,20 @@
     "lat": null,
     "lon": null,
     "query": "del General Martínez Campos, 37, Madrid, 28010"
+  },
+  "la cabra calle infantas, 25, chueca, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "La Cabra Calle Infantas, 25, Chueca, Madrid"
+  },
+  "quiz room ventas calle de sancho dávila, 8, madrid, 28028, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Quiz Room Ventas Calle de Sancho Dávila, 8, Madrid, 28028"
+  },
+  "escuela de coctelería de madrid (escom) pl. del conde del valle de súchil, 8, local, chamberí, 28015, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Escuela de Coctelería de Madrid (ESCOM) Pl. del Conde del Valle de Súchil, 8, Local, Chamberí, 28015"
   }
 }
