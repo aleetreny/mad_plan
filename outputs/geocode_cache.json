@@ -6238,5 +6238,30 @@
     "lat": null,
     "lon": null,
     "query": "Escuela de Coctelería de Madrid (ESCOM) Pl. del Conde del Valle de Súchil, 8, Local, Chamberí, 28015"
+  },
+  "c. de alberto aguilera, 23, madrid, 28015, españa": {
+    "lat": 40.429617,
+    "lon": -3.711446,
+    "query": "C. de Alberto Aguilera, 23, Madrid, 28015"
+  },
+  "palacio de la prensa, madrid, españa": {
+    "lat": 40.420696,
+    "lon": -3.705935,
+    "query": "Palacio de la Prensa"
+  },
+  "teatro inspirado en nunca jamás, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "teatro inspirado en Nunca Jamás"
+  },
+  "espacio v22, madrid, españa": {
+    "lat": 40.448159,
+    "lon": -3.667732,
+    "query": "Espacio V22, Madrid."
+  },
+  "espacio en la tercera planta de x, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio en la tercera planta de X"
   }
 }
