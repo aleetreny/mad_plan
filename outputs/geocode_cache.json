@@ -6263,5 +6263,70 @@
     "lat": null,
     "lon": null,
     "query": "espacio en la tercera planta de X"
+  },
+  "diferentes salas de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes salas de Madrid"
+  },
+  "diferentes teatros y salas de la comunidad de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes teatros y salas de la Comunidad de Madrid"
+  },
+  "más de 100 edificios de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Más de 100 edificios de Madrid"
+  },
+  "diferentes cines y centros culturales de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes cines y centros culturales de Madrid"
+  },
+  "espacio abierto quinta de los molinos, madrid, españa": {
+    "lat": 40.447677,
+    "lon": -3.62926,
+    "query": "Espacio Abierto Quinta de los Molinos"
+  },
+  "diferentes sedes por todo madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes sedes por todo Madrid"
+  },
+  "diferentes salas y espacios de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Diferentes salas y espacios de Madrid"
+  },
+  "teatro circo price, madrid, españa": {
+    "lat": 40.406186,
+    "lon": -3.698755,
+    "query": "Teatro Circo Price"
+  },
+  "galería de cristal del palacio de cibeles, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Galería de Cristal del Palacio de Cibeles"
+  },
+  "centro de interpretación de madrid río, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Centro de Interpretación de Madrid Río"
+  },
+  "por todo madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Por todo Madrid"
+  },
+  "teatro de la abadía, madrid, españa": {
+    "lat": 40.435356,
+    "lon": -3.709591,
+    "query": "Teatro de la Abadía"
+  },
+  "carretera m-139, km 6, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Carretera M-139, km 6"
   }
 }
