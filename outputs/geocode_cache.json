@@ -6328,5 +6328,55 @@
     "lat": null,
     "lon": null,
     "query": "Carretera M-139, km 6"
+  },
+  "7ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "7ª planta"
+  },
+  "4ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "4ª planta"
+  },
+  "12ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "12ª planta"
+  },
+  "3ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "3ª planta"
+  },
+  "6ª planta, madrid, españa": {
+    "lat": 40.3339,
+    "lon": -3.600368,
+    "query": "6ª planta"
+  },
+  "10ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "10ª planta"
+  },
+  "5ª planta, madrid, españa": {
+    "lat": 40.33267,
+    "lon": -3.588626,
+    "query": "5ª planta"
+  },
+  "8ª planta, madrid, españa": {
+    "lat": 40.448307,
+    "lon": -3.579032,
+    "query": "8ª planta"
+  },
+  "11ª planta, madrid, españa": {
+    "lat": 40.33267,
+    "lon": -3.588626,
+    "query": "11ª planta"
+  },
+  "planta z, madrid, españa": {
+    "lat": 40.320588,
+    "lon": -3.60951,
+    "query": "Planta Z"
   }
 }
