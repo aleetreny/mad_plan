@@ -6378,5 +6378,10 @@
     "lat": 40.320588,
     "lon": -3.60951,
     "query": "Planta Z"
+  },
+  "calle de alcalá, 12, madrid, españa": {
+    "lat": 40.417201,
+    "lon": -3.700855,
+    "query": "Calle de Alcalá, 12"
   }
 }
