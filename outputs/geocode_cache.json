@@ -6383,5 +6383,15 @@
     "lat": 40.417201,
     "lon": -3.700855,
     "query": "Calle de Alcalá, 12"
+  },
+  "calle mayor, madrid, españa": {
+    "lat": 40.415105,
+    "lon": -3.71429,
+    "query": "calle Mayor"
+  },
+  "calle barquillo en un refugio decorativo en pleno centro de la capital, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Barquillo en un refugio decorativo en pleno centro de la capital"
   }
 }
