@@ -6393,5 +6393,35 @@
     "lat": null,
     "lon": null,
     "query": "calle Barquillo en un refugio decorativo en pleno centro de la capital"
+  },
+  "c. lanzarote, 2, san sebastián de los reyes, 28703, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C. Lanzarote, 2, San Sebastián de los Reyes, 28703"
+  },
+  "aranjuez (plaza de los coroneles y plaza de parejas), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Aranjuez (Plaza de los Coroneles y Plaza de Parejas)"
+  },
+  "centro social la villana, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Centro Social La Villana"
+  },
+  "iglesia del sagrado corazón, madrid, españa": {
+    "lat": 40.412087,
+    "lon": -3.712604,
+    "query": "Iglesia del Sagrado Corazón"
+  },
+  "paseo de la virgen del puerto, la cuesta de la vega, la calle mayor y, si finalmente puede atravesarse, la pu, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo de la Virgen del Puerto, la Cuesta de la Vega, la calle Mayor y, si finalmente puede atravesarse, la Pu"
+  },
+  "avenida de rosario manzaneque, 25 (torrelodones, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida de Rosario Manzaneque, 25 (Torrelodones"
   }
 }
