@@ -6423,5 +6423,20 @@
     "lat": null,
     "lon": null,
     "query": "Avenida de Rosario Manzaneque, 25 (Torrelodones"
+  },
+  "calle de velázquez, 8, madrid, 28001, españa": {
+    "lat": 40.422209,
+    "lon": -3.684198,
+    "query": "Calle de Velázquez, 8, Madrid, 28001"
+  },
+  "estación de esquí baqueira beret, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Estación de Esquí Baqueira Beret"
+  },
+  "teatros luchana luchana, 38, madrid, españa": {
+    "lat": 40.431869,
+    "lon": -3.698253,
+    "query": "Teatros Luchana Luchana, 38"
   }
 }
