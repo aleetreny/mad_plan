@@ -6438,5 +6438,25 @@
     "lat": 40.431869,
     "lon": -3.698253,
     "query": "Teatros Luchana Luchana, 38"
+  },
+  "plaza de nelson mandela, madrid, españa": {
+    "lat": 40.409723,
+    "lon": -3.703616,
+    "query": "Plaza de Nelson Mandela"
+  },
+  "calle bailén, frente al palacio real, y de ahí tomará dirección plaza mayor, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Bailén, frente al Palacio Real, y de ahí tomará dirección Plaza Mayor"
+  },
+  "espacio inmersivo, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio inmersivo"
+  },
+  "cine capitol gran vía, madrid, españa": {
+    "lat": 40.420512,
+    "lon": -3.706678,
+    "query": "Cine Capitol Gran Vía"
   }
 }
