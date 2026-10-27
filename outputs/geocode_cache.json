@@ -6458,5 +6458,35 @@
     "lat": 40.420512,
     "lon": -3.706678,
     "query": "Cine Capitol Gran Vía"
+  },
+  "de las cortes, 7, madrid, 28014, españa": {
+    "lat": 40.416971,
+    "lon": -3.696645,
+    "query": "de las Cortes, 7, Madrid, 28014"
+  },
+  "huerta del obispo, recinto amurallado del palacio arzobispal, calle cardenal sandoval y rojas, s/n, alcalá de henares, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Huerta del Obispo, recinto amurallado del Palacio Arzobispal, Calle Cardenal Sandoval y Rojas, s/n, Alcalá de Henares."
+  },
+  "campo de fútbol fernando torres, fuenlabrada, 28942, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Campo de Fútbol Fernando Torres, Fuenlabrada, 28942"
+  },
+  "c. de campoamor, 12, madrid, 28004, españa": {
+    "lat": 40.426026,
+    "lon": -3.695649,
+    "query": "C. de Campoamor, 12, Madrid, 28004"
+  },
+  "de los ángeles, 20, madrid, 28013, españa": {
+    "lat": 40.419538,
+    "lon": -3.707963,
+    "query": "de los Ángeles, 20, Madrid, 28013"
+  },
+  "the revolution place, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "The Revolution Place"
   }
 }
