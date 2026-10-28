@@ -6488,5 +6488,20 @@
     "lat": null,
     "lon": null,
     "query": "The Revolution Place"
+  },
+  "baqueira beret parking lot, 25598, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Baqueira Beret Parking Lot, 25598"
+  },
+  "espacio interactivo, diseñado, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio interactivo, diseñado"
+  },
+  "spark island madrid norte (prison island & spark vr), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Spark Island Madrid Norte (Prison Island & Spark VR)"
   }
 }
