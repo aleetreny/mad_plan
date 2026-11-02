@@ -21,7 +21,8 @@ concurrency:
 
 jobs:
   build-deploy:
-    runs-on: ubuntu-latest
+    # Imagen fijada para que un salto de ubuntu-latest no rompa el deploy.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     environment:
       name: github-pages

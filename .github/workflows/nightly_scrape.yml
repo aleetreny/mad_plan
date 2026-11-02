@@ -28,7 +28,9 @@ concurrency:
 
 jobs:
   scrape:
-    runs-on: ubuntu-latest
+    # Imagen fijada: ubuntu-latest saltó a 26.04 (oct-2026) y Playwright
+    # 1.58 no soporta Chromium ahí. Subir a mano cuando Playwright la soporte.
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
 
     steps:
@@ -68,7 +70,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
-          key: playwright-${{ runner.os }}-${{ hashFiles('requirements.txt') }}
+          key: playwright-${{ runner.os }}-${{ env.ImageOS }}-${{ hashFiles('requirements.txt') }}
 
       - name: Instalar Chromium
         run: python -m playwright install --with-deps chromium
@@ -115,7 +117,8 @@ jobs:
   # (continue-on-error).
   deploy-web:
     needs: scrape
-    runs-on: ubuntu-latest
+    # Imagen fijada para que un salto de ubuntu-latest no rompa el deploy.
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     continue-on-error: true
     environment:
