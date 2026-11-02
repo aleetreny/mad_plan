@@ -6503,5 +6503,30 @@
     "lat": null,
     "lon": null,
     "query": "Spark Island Madrid Norte (Prison Island & Spark VR)"
+  },
+  "chulona mía c. de nicolás sánchez, 92, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Chulona Mía C. de Nicolás Sánchez, 92"
+  },
+  "calle de alcalá, 42, madrid, 28014, españa": {
+    "lat": 40.418207,
+    "lon": -3.696514,
+    "query": "Calle de Alcalá, 42, Madrid, 28014"
+  },
+  "calle de san justo, 4, madrid, 28005, españa": {
+    "lat": 40.414394,
+    "lon": -3.709659,
+    "query": "Calle de San Justo, 4, Madrid, 28005"
+  },
+  "paseo de la chopera, 10 (arganzuela, madrid, españa": {
+    "lat": 40.392827,
+    "lon": -3.699313,
+    "query": "paseo de la Chopera, 10 (Arganzuela"
+  },
+  "c/ campoamor 12, madrid chloé le nectar, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "C/ Campoamor 12, Madrid Chloé Le Nectar"
   }
 }
