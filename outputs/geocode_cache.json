@@ -6528,5 +6528,25 @@
     "lat": null,
     "lon": null,
     "query": "C/ Campoamor 12, Madrid Chloé Le Nectar"
+  },
+  "recinto ferial del 3 de diciembre de 2026 al 10 de enero de 2027, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial del 3 de diciembre de 2026 al 10 de enero de 2027"
+  },
+  "fundación casa de méxico, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fundación Casa de México"
+  },
+  "teatros luchana c. de luchana, 38, madrid, españa": {
+    "lat": 40.431869,
+    "lon": -3.698253,
+    "query": "Teatros Luchana C. de Luchana, 38"
+  },
+  "centro cultural pilar miró pl. antonio maría segovia, madrid, españa": {
+    "lat": 40.381159,
+    "lon": -3.613481,
+    "query": "Centro Cultural Pilar Miró Pl. Antonio María Segovia"
   }
 }
