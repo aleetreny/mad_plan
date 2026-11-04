@@ -6548,5 +6548,35 @@
     "lat": 40.381159,
     "lon": -3.613481,
     "query": "Centro Cultural Pilar Miró Pl. Antonio María Segovia"
+  },
+  "calle del doctor cortezo, 8, madrid, 28012, españa": {
+    "lat": 40.413251,
+    "lon": -3.703916,
+    "query": "Calle del Doctor Cortezo, 8, Madrid, 28012"
+  },
+  "calle de echegaray, 18, madrid, 28014, españa": {
+    "lat": 40.415177,
+    "lon": -3.699641,
+    "query": "Calle de Echegaray, 18, Madrid, 28014"
+  },
+  "avenida camino del molino, s/n, fuenlabrada, 28942, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida Camino del Molino, s/n, Fuenlabrada, 28942"
+  },
+  "de barceló, 11, local b, madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "de Barceló, 11, local B, Madrid, 28004"
+  },
+  "c. de san bernardo, 49, madrid, 28015, españa": {
+    "lat": 40.425142,
+    "lon": -3.707832,
+    "query": "C. de San Bernardo, 49, Madrid, 28015"
+  },
+  "calle barceló, 11, 28004 madrid, 28004, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Barceló, 11, 28004 Madrid, 28004"
   }
 }
