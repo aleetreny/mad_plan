@@ -6578,5 +6578,40 @@
     "lat": null,
     "lon": null,
     "query": "Calle Barceló, 11, 28004 Madrid, 28004"
+  },
+  "calle gran vía, 22, 28013, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Gran Vía, 22, 28013"
+  },
+  "c. del príncipe, 28, madrid, 28012, españa": {
+    "lat": 40.4142,
+    "lon": -3.700149,
+    "query": "C. del Príncipe, 28, Madrid, 28012"
+  },
+  "palacio de los duques de santoña, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Palacio de los Duques de Santoña"
+  },
+  "calle fernández de los ríos, madrid, españa": {
+    "lat": 40.434999,
+    "lon": -3.706451,
+    "query": "calle Fernández de los Ríos"
+  },
+  "el rincón del patas calle la ruda, cascorro (el rastro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "El Rincón del Patas calle la Ruda, Cascorro (El Rastro), Madrid"
+  },
+  "gemswell surf madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Gemswell Surf Madrid"
+  },
+  "nuga castellana (paseo de la castellana, 202. chamartín), madrid, españa": {
+    "lat": 40.462566,
+    "lon": -3.688476,
+    "query": "NUGA Castellana (Paseo de la Castellana, 202. Chamartín)"
   }
 }
