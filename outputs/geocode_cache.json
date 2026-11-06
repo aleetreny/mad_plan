@@ -6613,5 +6613,15 @@
     "lat": 40.462566,
     "lon": -3.688476,
     "query": "NUGA Castellana (Paseo de la Castellana, 202. Chamartín)"
+  },
+  "autocine madrid c. de la isla de java, 2 (valverde), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Autocine Madrid C. de la Isla de Java, 2 (Valverde)"
+  },
+  "paseo al aire libre entre luces, regalos y puestos, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo al aire libre entre luces, regalos y puestos"
   }
 }
