@@ -6623,5 +6623,15 @@
     "lat": null,
     "lon": null,
     "query": "paseo al aire libre entre luces, regalos y puestos"
+  },
+  "c. de claudio coello, 67, madrid, 28001, españa": {
+    "lat": 40.428513,
+    "lon": -3.68626,
+    "query": "C. de Claudio Coello, 67, Madrid, 28001"
+  },
+  "plaza del callao, 4, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza del Callao, 4"
   }
 }
