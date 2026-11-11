@@ -6638,5 +6638,25 @@
     "lat": null,
     "lon": null,
     "query": "Calle Claudio Coello, 67 Madrid Cómo formar parte de Kérastase Society Consulta aquí precios y reserva ya"
+  },
+  "en los mejores cines, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "En los mejores cines"
+  },
+  "recinto ferial de torrejón de ardoz, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial de Torrejón de Ardoz"
+  },
+  "movistar arena av. felipe ii, s/n, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Movistar Arena Av. Felipe II, s/n"
+  },
+  "metropolitano, madrid, españa": {
+    "lat": 40.448358,
+    "lon": -3.712751,
+    "query": "Metropolitano"
   }
 }
