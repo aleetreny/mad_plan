@@ -6658,5 +6658,55 @@
     "lat": 40.448358,
     "lon": -3.712751,
     "query": "Metropolitano"
+  },
+  "carretera madrid barcelona, 0 km 33, n-ii, alcalá de henares, 28801, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Carretera Madrid Barcelona, 0 Km 33, N-II, Alcalá de Henares, 28801"
+  },
+  "av. de juan de borbón y battenberg, 2, 28200, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Av. de Juan de Borbón y Battenberg, 2, 28200"
+  },
+  "templo de debod, madrid, españa": {
+    "lat": 40.424069,
+    "lon": -3.717613,
+    "query": "Templo de Debod"
+  },
+  "parque del retiro, madrid, españa": {
+    "lat": 40.414946,
+    "lon": -3.683285,
+    "query": "Parque del Retiro"
+  },
+  "mercado de san miguel, madrid, españa": {
+    "lat": 40.415374,
+    "lon": -3.709015,
+    "query": "Mercado de San Miguel"
+  },
+  "la latina y barrio de las letras, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "La Latina y Barrio de las Letras"
+  },
+  "gran vía, madrid, españa": {
+    "lat": 40.421634,
+    "lon": -3.708072,
+    "query": "Gran Vía"
+  },
+  "calle poligono 14, 15, madrid, 28022, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle Poligono 14, 15, Madrid, 28022"
+  },
+  "la nave. calle cifuentes, 5, madrid, españa": {
+    "lat": 40.347428,
+    "lon": -3.696285,
+    "query": "La Nave. Calle Cifuentes, 5, Madrid."
+  },
+  "calle de mejía lequerica, 16, madrid, españa": {
+    "lat": 40.427372,
+    "lon": -3.69902,
+    "query": "Calle de Mejía Lequerica, 16, Madrid."
   }
 }
