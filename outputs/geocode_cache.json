@@ -6708,5 +6708,25 @@
     "lat": 40.427372,
     "lon": -3.69902,
     "query": "Calle de Mejía Lequerica, 16, Madrid."
+  },
+  "hotel palace plaza de cánovas del castillo (acceso al mercadillo), hotel palace, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Hotel Palace Plaza de Cánovas del Castillo (acceso al Mercadillo), Hotel Palace, Madrid"
+  },
+  "calle de gabriel lobo, 11 (el viso), madrid, españa": {
+    "lat": 40.443018,
+    "lon": -3.680781,
+    "query": "calle de Gabriel Lobo, 11 (El Viso)"
+  },
+  "calle de san justo, 4, madrid, españa": {
+    "lat": 40.414394,
+    "lon": -3.709659,
+    "query": "Calle de San Justo, 4"
+  },
+  "27ª planta, madrid, españa": {
+    "lat": 40.33267,
+    "lon": -3.588626,
+    "query": "27ª planta"
   }
 }
