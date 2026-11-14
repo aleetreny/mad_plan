@@ -6728,5 +6728,10 @@
     "lat": 40.33267,
     "lon": -3.588626,
     "query": "27ª planta"
+  },
+  "fabrik av. de la industria, 82, 28970 humanes de madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fabrik Av. de la Industria, 82, 28970 Humanes de Madrid"
   }
 }
