@@ -6733,5 +6733,85 @@
     "lat": null,
     "lon": null,
     "query": "Fabrik Av. de la Industria, 82, 28970 Humanes de Madrid"
+  },
+  "plaza de cibeles plaza de cibeles, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza de Cibeles Plaza de Cibeles, Madrid"
+  },
+  "movistar arena pl. de felipe ii, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Movistar Arena Pl. de Felipe II"
+  },
+  "teatro fernán gómez. centro cultural de la villa pl. colón, 4, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Fernán Gómez. Centro Cultural de la Villa Pl. Colón, 4"
+  },
+  "fundación juan march c. de castello, 77, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fundación Juan March C. de Castello, 77"
+  },
+  "teatros del canal c. cea bermúdez, 1, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatros del Canal C. Cea Bermúdez, 1"
+  },
+  "nave 11 centro danza matadero pl. legazpi, 8, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Nave 11 Centro Danza Matadero Pl. Legazpi, 8"
+  },
+  "iglesia de san jerónimo el real detrás del museo del prado, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Iglesia de San Jerónimo el Real Detrás del Museo del Prado, Madrid"
+  },
+  "c. del príncipe, 25, madrid, españa": {
+    "lat": 40.414896,
+    "lon": -3.699895,
+    "query": "C. del Príncipe, 25"
+  },
+  "llegada: estadio de vallecas, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Llegada: Estadio de Vallecas"
+  },
+  "museo nacional del prado p. del prado, madrid, españa": {
+    "lat": 40.413792,
+    "lon": -3.692041,
+    "query": "Museo Nacional del Prado P. del Prado"
+  },
+  "gran teatro caixabank príncipe pío cta. de san vincente, 44, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Gran Teatro CaixaBank Príncipe Pío Cta. de San Vincente, 44"
+  },
+  "centrocentro pl. de cibeles, 1, madrid, españa": {
+    "lat": 40.418966,
+    "lon": -3.692089,
+    "query": "CentroCentro Pl. de Cibeles, 1"
+  },
+  "estadio bernabéu av. concha espina, 1, madrid, españa": {
+    "lat": 40.452178,
+    "lon": -3.687657,
+    "query": "Estadio Bernabéu Av. Concha Espina, 1"
+  },
+  "real jardín botánico alfonso xiii ciudad universitaria – ucm, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Real Jardín Botánico Alfonso XIII Ciudad Universitaria – UCM"
+  },
+  "fundación canal p. de la castellana, 214, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fundación Canal P. de la Castellana, 214"
+  },
+  "calle 365 discoteca y cócteles madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Calle 365 Discoteca y cócteles Madrid"
   }
 }
