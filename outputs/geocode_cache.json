@@ -6813,5 +6813,20 @@
     "lat": null,
     "lon": null,
     "query": "Calle 365 Discoteca y cócteles Madrid"
+  },
+  "real jardín botánico de alfonso xiii avenida complutense, s/n, 28040 madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Real Jardín Botánico de Alfonso XIII Avenida Complutense, s/n, 28040 Madrid"
+  },
+  "umusic hotel madrid, españa": {
+    "lat": 40.415362,
+    "lon": -3.703794,
+    "query": "UMusic Hotel Madrid"
+  },
+  "plaza como a través de la web de la navideña, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza como a través de la web de La Navideña"
   }
 }
