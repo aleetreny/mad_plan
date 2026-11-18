@@ -6828,5 +6828,55 @@
     "lat": null,
     "lon": null,
     "query": "plaza como a través de la web de La Navideña"
+  },
+  "matadero plaza de legazpi, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Matadero Plaza de Legazpi"
+  },
+  "plaza de cibeles, madrid, españa": {
+    "lat": 40.41942,
+    "lon": -3.692538,
+    "query": "Plaza de Cibeles"
+  },
+  "patio central de conde duque, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Patio Central de Conde Duque"
+  },
+  "recinto ferial de torrejón de ardoz calle de minotauro, 20, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Recinto Ferial de Torrejón de Ardoz Calle de Minotauro, 20"
+  },
+  "matadero madrid matadero madrid (plaza de legazpi, 8), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Matadero Madrid Matadero Madrid (plaza de Legazpi, 8)"
+  },
+  "galería de cristal (palacio de cibeles) calle de montalbán, 1 (madrid), españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Galería de Cristal (Palacio de Cibeles) calle de Montalbán, 1 (Madrid)"
+  },
+  "palacio de hielo calle silvano, 77 (canillas), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Palacio de Hielo calle Silvano, 77 (Canillas)"
+  },
+  "pabellón de hielo de leganés avenida de alemania, 2 (leganés), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Pabellón de hielo de Leganés Avenida de Alemania, 2 (Leganés)."
+  },
+  "paseo de recoletos , como cada año, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "paseo de Recoletos , como cada año"
+  },
+  "teatro capitol, tina the rock experience ya se presentó en la cartelera madrileña, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Capitol, Tina The Rock Experience ya se presentó en la cartelera madrileña"
   }
 }
