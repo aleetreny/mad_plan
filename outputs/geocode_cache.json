@@ -6878,5 +6878,35 @@
     "lat": null,
     "lon": null,
     "query": "Teatro Capitol, Tina The Rock Experience ya se presentó en la cartelera madrileña"
+  },
+  "p.º de la castellana, 103, madrid, 28046, españa": {
+    "lat": 40.453993,
+    "lon": -3.691221,
+    "query": "P.º de la Castellana, 103, Madrid, 28046"
+  },
+  "el corte inglés calle del maestro victoria, 4 (centro), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "El Corte Inglés calle del Maestro Victoria, 4 (Centro)."
+  },
+  "café ruiz c. ruiz, 11, madrid, españa": {
+    "lat": 40.428139,
+    "lon": -3.70394,
+    "query": "Café Ruiz C. Ruiz, 11"
+  },
+  "p.º de la castellana, 202, 204, madrid, 28046, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "P.º de la Castellana, 202, 204, Madrid, 28046"
+  },
+  "circo price ronda de atocha, 35 (embajadores), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Circo Price Ronda de Atocha, 35 (Embajadores)"
+  },
+  "calle playa de aro a las 17, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Playa de Aro a las 17"
   }
 }
