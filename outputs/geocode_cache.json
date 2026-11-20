@@ -6908,5 +6908,10 @@
     "lat": null,
     "lon": null,
     "query": "calle Playa de Aro a las 17"
+  },
+  "teatro capitol, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Capitol"
   }
 }
