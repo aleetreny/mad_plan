@@ -6913,5 +6913,25 @@
     "lat": null,
     "lon": null,
     "query": "Teatro Capitol"
+  },
+  "gran vía, madrid, 28013, españa": {
+    "lat": 40.422655,
+    "lon": -3.709682,
+    "query": "Gran Vía, Madrid, 28013"
+  },
+  "glorieta de bilbao, 7, madrid, 28004, españa": {
+    "lat": 40.428709,
+    "lon": -3.701972,
+    "query": "Glorieta de Bilbao, 7, Madrid, 28004"
+  },
+  "navipark avenida de iker casillas, 1, parque finca liana, móstoles, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Navipark Avenida de Iker Casillas, 1, Parque Finca Liana, Móstoles"
+  },
+  "-30% entre el 24 y el 29 de noviembre con el código blackweekodisea, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "-30% entre el 24 y el 29 de noviembre con el código BLACKWEEKODISEA"
   }
 }
