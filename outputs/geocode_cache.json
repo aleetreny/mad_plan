@@ -6943,5 +6943,30 @@
     "lat": null,
     "lon": null,
     "query": "Teatro Capitol, pero también es otra idea de plan"
+  },
+  "cine doré (calle santa isabel, 3) y la casa encendida (ronda de valencia, 2), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Cine Doré (calle Santa Isabel, 3) y La Casa Encendida (Ronda de Valencia, 2)"
+  },
+  "plaza mayor de madrid, españa": {
+    "lat": 40.415395,
+    "lon": -3.706997,
+    "query": "Plaza Mayor de Madrid"
+  },
+  "movistar arena av. de felipe ii, s/n metro goya, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Movistar Arena Av. de Felipe II, s/n Metro Goya"
+  },
+  "calle preciados, madrid, españa": {
+    "lat": 40.419711,
+    "lon": -3.706952,
+    "query": "calle Preciados"
+  },
+  "espacio interactivo diseñado, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "espacio interactivo diseñado"
   }
 }
