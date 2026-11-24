@@ -6968,5 +6968,20 @@
     "lat": null,
     "lon": null,
     "query": "espacio interactivo diseñado"
+  },
+  "el corte inglés (sanchinarro) calle margarita de parma, 1, hortaleza, madrid, españa": {
+    "lat": 40.497715,
+    "lon": -3.661046,
+    "query": "El Corte Inglés (Sanchinarro) Calle Margarita de Parma, 1, Hortaleza, Madrid"
+  },
+  "medialab matadero pl. de legazpi, 8, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Medialab Matadero Pl. de Legazpi, 8"
+  },
+  "teatro eslava, madrid, españa": {
+    "lat": 40.41714,
+    "lon": -3.706477,
+    "query": "Teatro Eslava"
   }
 }
