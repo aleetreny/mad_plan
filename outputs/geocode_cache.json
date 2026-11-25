@@ -6983,5 +6983,20 @@
     "lat": 40.41714,
     "lon": -3.706477,
     "query": "Teatro Eslava"
+  },
+  "plaza mayor, la plazuela en el movistar arena o el estreno de naturaleza encendida (en el país de las mara, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Plaza Mayor, La Plazuela en el Movistar Arena o el estreno de Naturaleza Encendida (en el País de las Mara"
+  },
+  "c/ doña juana, 5, madrid, españa": {
+    "lat": 40.3968,
+    "lon": -3.692636,
+    "query": "c/ Doña Juana, 5"
+  },
+  "teatros del canal c. de cea bermúdez, 1 (chamberí), madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatros del Canal C. de Cea Bermúdez, 1 (Chamberí)"
   }
 }
