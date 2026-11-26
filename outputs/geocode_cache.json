@@ -6998,5 +6998,30 @@
     "lat": null,
     "lon": null,
     "query": "Teatros del Canal C. de Cea Bermúdez, 1 (Chamberí)"
+  },
+  "hipódromo de la zarzuela avenida padre huidobro, s/n, a-6, km 8, 28023 madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Hipódromo de la Zarzuela Avenida Padre Huidobro, s/n, A-6, km 8, 28023 Madrid"
+  },
+  "plaza de juan goytisol, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "plaza de Juan Goytisol"
+  },
+  "calle margarita de parma, 1, madrid, españa": {
+    "lat": 40.497715,
+    "lon": -3.661046,
+    "query": "calle Margarita de Parma, 1"
+  },
+  "palacio del capricho abrirá sus puertas al público la semana, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Palacio del Capricho abrirá sus puertas al público la semana"
+  },
+  "calle prim, 12, madrid, españa": {
+    "lat": 40.421847,
+    "lon": -3.69317,
+    "query": "Calle Prim, 12"
   }
 }
