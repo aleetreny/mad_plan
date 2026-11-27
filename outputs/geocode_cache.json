@@ -7023,5 +7023,20 @@
     "lat": 40.421847,
     "lon": -3.69317,
     "query": "Calle Prim, 12"
+  },
+  "el cañaveral, madrid, españa": {
+    "lat": 40.402525,
+    "lon": -3.555081,
+    "query": "El Cañaveral"
+  },
+  "avenida de madrid 37, 40500 riaza, segovia, , 40500, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Avenida De Madrid 37, 40500 Riaza, Segovia, Spain, 40500"
+  },
+  "calle serrano , en el distrito de salamanca, su primera tienda propia en el país, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "calle Serrano , en el distrito de Salamanca, su primera tienda propia en el país"
   }
 }
