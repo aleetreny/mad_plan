@@ -7038,5 +7038,30 @@
     "lat": null,
     "lon": null,
     "query": "calle Serrano , en el distrito de Salamanca, su primera tienda propia en el país"
+  },
+  "fundación juan march calle castelló, 77, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Fundación Juan March Calle Castelló, 77"
+  },
+  "parroquia de nuestra señora del perpetuo socorro, parroquia de nuestra señora de guadalupe y parroquia de san jerónimo el real, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Parroquia de Nuestra Señora del Perpetuo Socorro, Parroquia de Nuestra Señora de Guadalupe y Parroquia de San Jerónimo El Real"
+  },
+  "auditorio nacional (sala de cámara) calle del príncipe de vergara, 146, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Auditorio Nacional (Sala de Cámara) Calle del Príncipe de Vergara, 146"
+  },
+  "teatro real plaza de isabel ii, s/n, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Teatro Real Plaza de Isabel II, s/n"
+  },
+  "auditorio nacional (sala sinfónica) calle del príncipe de vergara, 146, madrid, españa": {
+    "lat": null,
+    "lon": null,
+    "query": "Auditorio Nacional (Sala Sinfónica) Calle del Príncipe de Vergara, 146"
   }
 }
